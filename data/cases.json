@@ -10936,6 +10936,615 @@
     "basis": "from downstream level"
    },
    "flags": []
+  },
+  {
+   "id": "bijanki-2020",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Bijanki KR, van Rooij SJH, Ely TD, Stevens JS, Inman CS, Fasano RE et al.",
+    "title": "Case Series: Unilateral Amygdala Ablation Ameliorates Post-Traumatic Stress Disorder Symptoms and Biomarkers.",
+    "journal": "Neurosurgery",
+    "year": 2020,
+    "volume": "87",
+    "issue": "4",
+    "pages": "796-802"
+   },
+   "ids": {
+    "doi": "10.1093/neuros/nyaa051",
+    "pmid": "32259241",
+    "pmcid": "PMC7593359"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7593359/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/32259241/",
+    "doi": "https://doi.org/10.1093/neuros/nyaa051",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1093%2Fneuros%2Fnyaa051"
+   },
+   "access": "Free full text",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Trauma & stressor-related"
+    ],
+    "specific": "Well-documented chronic PTSD, predating late-onset epilepsy",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Laser ablation of the right (non-dominant) amygdalohippocampal complex for medically refractory temporal lobe epilepsy",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Two people with long-standing PTSD had right amygdala laser ablation for epilepsy; both lost most of their PTSD symptoms, and in one, startle potentiation and fMRI fear responses fell too.",
+   "caveat": "Seizure control improved at the same time; two patients, one with prospective biomarkers.",
+   "tags": [
+    "amygdala",
+    "epilepsy-surgery",
+    "laser-ablation",
+    "ptsd",
+    "right-hemisphere",
+    "temporal"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, first pass)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Fits the right-amygdala account of PTSD and Koenigs 2008 (amygdala and vmPFC lesions protected veterans from PTSD). Xie 2026 replicated it.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "xie-2026",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Xie T, van Rooij SJH, Sun S, Bryson NK, Demarest P, Park H et al.",
+    "title": "Right amygdala ablation reduces maladaptive negative interpretation bias and symptoms in a patient with post-traumatic stress disorder.",
+    "journal": "Nat Commun",
+    "year": 2026,
+    "volume": "17",
+    "issue": "1",
+    "pages": "7868"
+   },
+   "ids": {
+    "doi": "10.1038/s41467-026-74099-5",
+    "pmid": "42331801",
+    "pmcid": "PMC13443746"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13443746/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/42331801/",
+    "doi": "https://doi.org/10.1038/s41467-026-74099-5",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1038%2Fs41467-026-74099-5"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Trauma & stressor-related"
+    ],
+    "specific": "Chronic PTSD with refractory epilepsy",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "SEEG-guided radiofrequency ablation of the right amygdala in a patient with refractory epilepsy",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "PTSD symptoms and negative interpretation bias fell right after right amygdala ablation in a man with epilepsy, while seizure frequency stayed the same; intracranial recordings tracked the change.",
+   "caveat": "A replication of Bijanki 2020 with a prospective design, so the effect was anticipated by the team; n of 1.",
+   "tags": [
+    "amygdala",
+    "epilepsy-surgery",
+    "ptsd",
+    "radiofrequency-ablation",
+    "replication",
+    "right-hemisphere",
+    "temporal"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, first pass)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Replicates Bijanki 2020. Fits the right-amygdala account of PTSD and Koenigs 2008 (amygdala and vmPFC lesions protected veterans from PTSD).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "gillespie-2019",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Gillespie CS, McMahon CJ",
+    "title": "Iatrogenic cerebral abscess leading to resolution of severe delusional disorder.",
+    "journal": "BMJ Case Rep",
+    "year": 2019,
+    "volume": "12",
+    "issue": "12",
+    "pages": "e232394"
+   },
+   "ids": {
+    "doi": "10.1136/bcr-2019-232394",
+    "pmid": "31796437",
+    "pmcid": "PMC7001695"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7001695/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/31796437/",
+    "doi": "https://doi.org/10.1136/bcr-2019-232394",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fbcr-2019-232394"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Long-standing organic delusional disorder (congenital hydrocephalus, cerebral palsy) needing psychiatric admission",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "Iatrogenic cerebral abscess after an intracranial pressure monitor, treated with 6 weeks of IV meropenem",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A woman with long-standing delusional disorder developed a brain abscess from a pressure monitor; after six weeks of meropenem her delusions and hallucinations went and she now lives independently.",
+   "caveat": "The abscess, the neurosurgery and the antibiotic cannot be separated; follow-up length needs the full text (free on PMC).",
+   "tags": [
+    "antibiotic",
+    "cerebral-abscess",
+    "delusional-disorder",
+    "infection",
+    "meropenem",
+    "psychosis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, first pass)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Joins older reports of psychosis remitting after brain infection, fever or antibiotics.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "malur-2000",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Malur C, Fink M, Francis A",
+    "title": "Can delirium relieve psychosis?",
+    "journal": "Compr Psychiatry",
+    "year": 2000,
+    "volume": "41",
+    "issue": "6",
+    "pages": "450-453"
+   },
+   "ids": {
+    "doi": "10.1053/comp.2000.16565",
+    "pmid": "11086151",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/11086151/",
+    "doi": "https://doi.org/10.1053/comp.2000.16565",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1053%2Fcomp.2000.16565"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 5,
+   "syndrome": {
+    "categories": [
+     "Psychotic",
+     "Mood"
+    ],
+    "specific": "Exacerbations of chronic major mental illness with psychotic and affective symptoms (inpatients aged 53-69)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Physiological stress",
+    "specific": "Incidental delirium from medication (4) or electrolyte disturbance (1)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "In five older inpatients, psychotic and affective symptoms improved or resolved as an incidental delirium from drugs or electrolytes cleared; the benefit lasted 1 to 5 months.",
+   "caveat": "Exacerbations often settle in hospital, and medications were washed out during the delirium.",
+   "tags": [
+    "delirium",
+    "depression",
+    "psychosis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, first pass)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Joins older observations that an incidental delirium, like ECT or insulin coma, can precede recovery (Malur 2000; Ueki 2004); never tested.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "baek-2022",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Baek SH, Kim JW, Lee YY, Kim JY, Kim SW, Kim JM",
+    "title": "Case report: Recovery of hallucinations and cognitive impairment after administration of donepezil in a patient with schizophrenia and carbon monoxide poisoning.",
+    "journal": "Front Psychiatry",
+    "year": 2022,
+    "volume": "13",
+    "issue": "",
+    "pages": "1071417"
+   },
+   "ids": {
+    "doi": "10.3389/fpsyt.2022.1071417",
+    "pmid": "36465281",
+    "pmcid": "PMC9715735"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9715735/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/36465281/",
+    "doi": "https://doi.org/10.3389/fpsyt.2022.1071417",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3389%2Ffpsyt.2022.1071417"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenia for 2 years with residual psychotic symptoms despite adequate treatment",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Donepezil for cognitive impairment from delayed neurological sequelae of carbon monoxide poisoning",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Donepezil, given for cognitive damage after carbon monoxide poisoning, also markedly improved a man's residual schizophrenic hallucinations.",
+   "caveat": "Carbon monoxide injury to the pallidum may itself ease psychosis (compare Galati 2013), and the delayed sequelae were recovering; one case.",
+   "tags": [
+    "carbon-monoxide",
+    "cholinergic",
+    "donepezil",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, first pass)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "Cholinesterase inhibitor trials in schizophrenia targeted cognition and were negative; no test in this setting.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "solmi-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Solmi M, Santonastaso P, Caccaro R, Favaro A",
+    "title": "A case of anorexia nervosa with comorbid Crohn's disease: beneficial effects of anti-TNF-α therapy?",
+    "journal": "Int J Eat Disord",
+    "year": 2013,
+    "volume": "46",
+    "issue": "6",
+    "pages": "639-641"
+   },
+   "ids": {
+    "doi": "10.1002/eat.22153",
+    "pmid": "23813727",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/23813727/",
+    "doi": "https://doi.org/10.1002/eat.22153",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2Feat.22153"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Long-lasting anorexia nervosa in a 26-year-old woman",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Infliximab for 4 months, then adalimumab, for Crohn's disease",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Long-lasting anorexia nervosa improved in weight and psychopathology over the months a woman received anti-TNF therapy for Crohn's disease.",
+   "caveat": "She was referred to an eating disorders unit at the same time, and better bowel control alone could aid weight gain.",
+   "tags": [
+    "adalimumab",
+    "anorexia",
+    "anti-tnf",
+    "crohns",
+    "infliximab"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, first pass)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "choo-2024",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Choo K, Wan HL, Chandwani N",
+    "title": "Potential role of metformin cessation in bipolar mania relapse, with subsequent resolution upon re-initiation: A case report.",
+    "journal": "Bipolar Disord",
+    "year": 2024,
+    "volume": "26",
+    "issue": "5",
+    "pages": "496-499"
+   },
+   "ids": {
+    "doi": "10.1111/bdi.13437",
+    "pmid": "38656477",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/38656477/",
+    "doi": "https://doi.org/10.1111/bdi.13437",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fbdi.13437"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Bipolar disorder, manic relapse",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Metformin (indication not given in the title)",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "Natural off-on"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Mania relapsed after metformin was stopped and resolved when it was restarted.",
+   "caveat": "Title-level appraisal (no abstract); concurrent psychiatric treatment and the metformin indication need the full text.",
+   "tags": [
+    "bipolar",
+    "insulin-resistance",
+    "mania",
+    "metformin",
+    "reversal"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, first pass)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Fits proposals linking insulin resistance to treatment-resistant bipolar disorder (Calkin and colleagues).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "romeo-2025",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Romeo VM",
+    "title": "Use of semaglutide in a 54-year-old patient with cocaine abuse and weight loss: a case report.",
+    "journal": "J Med Case Rep",
+    "year": 2025,
+    "volume": "19",
+    "issue": "1",
+    "pages": "57"
+   },
+   "ids": {
+    "doi": "10.1186/s13256-025-05049-w",
+    "pmid": "39962582",
+    "pmcid": "PMC11834608"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11834608/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/39962582/",
+    "doi": "https://doi.org/10.1186/s13256-025-05049-w",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1186%2Fs13256-025-05049-w"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Cocaine use disorder with obesity in a 54-year-old",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Semaglutide for obesity, titrated over 12 weeks",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Cocaine craving fell markedly over 12 weeks of semaglutide given for obesity.",
+   "caveat": "Craving rather than verified abstinence; short follow-up and a single author.",
+   "tags": [
+    "cocaine",
+    "craving",
+    "glp-1",
+    "semaglutide"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, first pass)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
   }
  ]
 }

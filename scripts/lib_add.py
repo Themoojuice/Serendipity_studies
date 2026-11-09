@@ -35,8 +35,8 @@ def add_records(R, cand, *, collection, found_via, today):
         if k["id"] in existing or (c.get("pmid") and c["pmid"] in lib_pmids):
             print("skip (already in library):", k["id"])
             continue
-        au = c.get("authorString") or ", ".join(c.get("authors", [])[:6])
-        au = au.rstrip(".")
+        names = [a.strip() for a in (c.get("authorString") or ", ".join(c.get("authors", []))).rstrip(".").split(", ") if a.strip()]
+        au = ", ".join(names[:6]) + (" et al." if len(names) > 6 else "")
         cit = dict(authors=au, title=c["title"], journal=c["journal"], year=int(c["year"]), volume=c.get("vol", ""),
                    issue=c.get("issue", ""), pages=c.get("pages", ""))
         doi, pmid, pmcid = (c.get("doi") or "").lower(), c.get("pmid", ""), c.get("pmcid", "")
