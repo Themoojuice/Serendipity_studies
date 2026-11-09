@@ -41,3 +41,4 @@ EMB_keto_v1,Embase via CKN,ketogenic/ketosis terms AND psychiatric terms,394,202
 EPMC_temporal_left_v1_3,Europe PMC (browser),"src AND A2 AND left/dominant temporal block AND B2 AND case design, NOT the first temporal block",275,2026-11-10,all screened; +1 case (Ohara 2004); Yeung 2020 already in library
 EPMC_broad_v1_2,Europe PMC (browser),"v1.2 broad, year-slice batch 2, ranks 400-1,499 fetched by ID",1100,2026-11-10,"screened (title, 39 abstracts); +3 provisional cases, 7 unsure; gold rank 1467 already in library"
 EPMC_broad_v1_2,Europe PMC (browser),"v1.2 broad, first-pass queue, ranks 700-1,799 fetched by ID",1100,2026-11-10,"screened (title, 27 abstracts); +8 provisional cases, 2 unsure; all 8 known cases in range recognised"
+EPMC_broad_v1_2,Europe PMC (browser),"v1.2 broad, first-pass queue, ranks 1,800-2,899 fetched by ID",1100,2026-11-10,"screened (title, 20 abstracts); +3 provisional cases, 1 unsure; all 4 known cases in range recognised"

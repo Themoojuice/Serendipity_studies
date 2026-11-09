@@ -23,12 +23,21 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
   - Left-sided temporal sweep (`EPMC_temporal_left_v1_3`, 275 new records, all screened): +1 case (Ohara 2004, `Personality` category added). The temporal sweep is now symmetric (852).
   - Laterality (lesion/TBI/neurosurgery cases, side as stated in the trigger, 44 cases): 10 left, 8 right, 3 bilateral, 23 unstated. Temporal: 6 right vs 1 left (3 of the right are epilepsy surgery). Left-sided cases are mostly frontal, basal ganglia or thalamic. 6 vs 1 is about what a coin gives 1 time in 8.
   - 138 records (126 cases, 12 context); ledger 47,184 rows; 13 `unsure`.
+- 2026-11-10 (later): **phase 1c — deeper Europe PMC screening, no reload needed.** The ledger already holds every ranked ID, so each chunk is fetched by ID (`EXT_ID:(…)` in batches of 100, per source) and screened. Shared helpers now in `scripts/lib_add.py`; screened rows are appended as new ledger rows with `supersedes` pointing at the blank row.
+  - Batch 2 ranks 400–1,499 (1,100): +3 cases (Ueki 2004, Tsolaki 2010, Diamond 2006), 7 unsure.
+  - First-pass ranks 700–1,799 (1,100): +8 cases (Bijanki 2020, Xie 2026, Gillespie 2019, Malur 2000, Baek 2022, Solmi 2013, Choo 2024, Romeo 2025), 2 unsure; all 8 known cases in range recognised.
+  - First-pass ranks 1,800–2,899 (1,100): +3 cases (Basheikh 2017, Shahani 2019, Hamdani 2013), 1 unsure; all 4 known cases recognised.
+  - 152 records (140 cases, 12 context; 91 Provisional); ledger 50,484 rows (47,184 current); 23 `unsure`.
+  - Laterality (lesion/TBI/neurosurgery, side from `trigger.specific`, 48 cases): 10 left, 11 right, 3 bilateral, 24 unstated. Temporal: 9 right vs 1 left, but most right-temporal cases are epilepsy surgery or amygdala ablation, where side follows the seizure focus and the right-amygdala PTSD hypothesis makes right-sided relief more publishable.
+  - Scope questions for Brendan (in the unsure pile): persistent genital arousal disorder (not DSM-5) abolished by varenicline with repeated off-on (Korda 2009); persistent sexual arousal syndrome remitting with ECT for bipolar depression (Yero 2006).
+- **Finding unscreened rows now:** current rows = rows whose `record_id` no one `supersedes`. First pass = notes starting `rank `; batch 2 = notes starting `year-slice batch 2, rank` with no `screened` in the notes.
+- **Stopping-rule state (protocol §10), Europe PMC broad:** first pass screened 0–2,899; last relevant record rank 2,671 (Mallet 2002, known), so 228 consecutive irrelevant so far; one more known case at 6,182. Batch 2 screened 0–1,499; last relevant 1,467; known case at 7,808. Batch 3 screened 0–59 of 1,440.
 - **Next, in order:**
-  1. Strings v1.3: make the Embase keto term ketogenic-only and rerun it (left-sided temporal terms done).
-  2. Europe PMC batch 2 ranks 400 to ~1,500 (gold rank 1467), then sample deeper per the stopping rule. To rebuild the ranked list: reload by `PUB_YEAR` slices, drop the first-pass records (ledger rows with query `EPMC_broad_v1_2` and notes starting `rank`), re-rank.
+  1. First pass ranks 2,900–3,999 (reaches 300 consecutive), then the 300-record random sample from 4,000–20,999. Batch 2 ranks 1,500–2,599, then its random sample. Batch 3 ranks 60–359, then sample.
+  2. Strings v1.3: make the Embase keto term ketogenic-only and rerun it (left-sided temporal terms done).
   3. Embase title set ranks 309–1,374 (mostly the score-9 band): screen, or random-sample per the stopping rule.
   4. PsycInfo via EBSCOhost (CKN) — not yet run.
-  5. Full-text appraisal of the 76 provisional records and 13 unsure (PMC free first, then CKN), with attribution grade, JBI score and `lesion.side` / `lesion.region` for the laterality analysis; promote to Included.
+  5. Full-text appraisal of the 91 provisional records and 23 unsure (PMC free first, then CKN), with attribution grade, JBI score and `lesion.side` / `lesion.region` for the laterality analysis; promote to Included.
   6. Calibration: 100 blinded records for Brendan.
 - Library restyle ("more Claude") is still due with the rebuild after step 5, alongside the new appraisal fields.
 

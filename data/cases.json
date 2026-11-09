@@ -11545,6 +11545,239 @@
     "basis": "from downstream level"
    },
    "flags": []
+  },
+  {
+   "id": "basheikh-2017",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Basheikh M",
+    "title": "Case report: Epilepsy surgical outcome for epileptic and non epileptic seizures with posttraumatic stress disorder and depression.",
+    "journal": "Epilepsy Behav Case Rep",
+    "year": 2017,
+    "volume": "8",
+    "issue": "",
+    "pages": "14-17"
+   },
+   "ids": {
+    "doi": "10.1016/j.ebcr.2017.05.001",
+    "pmid": "28664038",
+    "pmcid": "PMC5480229"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5480229/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/28664038/",
+    "doi": "https://doi.org/10.1016/j.ebcr.2017.05.001",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.ebcr.2017.05.001"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Trauma & stressor-related",
+     "Mood",
+     "Functional neurological"
+    ],
+    "specific": "PTSD and depression with psychogenic non-epileptic seizures, alongside drug-resistant epilepsy",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Right anterior temporal resection for right mesial temporal sclerosis",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "After a right anterior temporal resection for epilepsy, a man's non-epileptic seizures stopped along with his epileptic ones, and his PTSD and depression improved enough to cut his psychotropics.",
+   "caveat": "Seizure freedom itself relieves distress; 'remarkable improvement' needs measures from the full text (free on PMC).",
+   "tags": [
+    "depression",
+    "epilepsy-surgery",
+    "pnes",
+    "ptsd",
+    "right-hemisphere",
+    "temporal"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, first pass)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent: Reutens 1997 found chronic interictal psychosis unchanged, and seizure control is a confound (see Pintor 2022).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "shahani-2019",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Shahani L, Cervenka G",
+    "title": "Impact of surgical intervention on seizure and psychiatric symptoms in patients with temporal lobe epilepsy.",
+    "journal": "BMJ Case Rep",
+    "year": 2019,
+    "volume": "12",
+    "issue": "7",
+    "pages": "e229242"
+   },
+   "ids": {
+    "doi": "10.1136/bcr-2019-229242",
+    "pmid": "31352381",
+    "pmcid": "PMC6663174"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6663174/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/31352381/",
+    "doi": "https://doi.org/10.1136/bcr-2019-229242",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fbcr-2019-229242"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic",
+     "Mood"
+    ],
+    "specific": "Psychosis, depression and irritability needing antipsychotics, with refractory temporal lobe epilepsy",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Anterior temporal lobectomy and amygdalohippocampectomy for epilepsy",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A woman's psychosis, depression and irritability improved along with her seizures after anterior temporal lobectomy and amygdalohippocampectomy.",
+   "caveat": "Psychosis of epilepsy may simply follow seizure control; side of surgery and measures need the full text (free on PMC).",
+   "tags": [
+    "amygdala",
+    "depression",
+    "epilepsy-surgery",
+    "psychosis",
+    "temporal"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, first pass)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent: Reutens 1997 found chronic interictal psychosis unchanged, and seizure control is a confound (see Pintor 2022).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "hamdani-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Hamdani N, Doukhan R, Picard A, Tamouza R, Leboyer M",
+    "title": "A bipolar disorder patient becoming asymptomatic after adjunctive anti-filiarasis treatment: a case report.",
+    "journal": "BMC Psychiatry",
+    "year": 2013,
+    "volume": "13",
+    "issue": "",
+    "pages": "81"
+   },
+   "ids": {
+    "doi": "10.1186/1471-244x-13-81",
+    "pmid": "23497411",
+    "pmcid": "PMC3623878"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3623878/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/23497411/",
+    "doi": "https://doi.org/10.1186/1471-244x-13-81",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1186%2F1471-244x-13-81"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Severe manic episode of bipolar disorder, unresolved by standard treatment",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Two anthelmintics for Wuchereria bancrofti filariasis, found through eosinophilia",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A treatment-resistant manic episode resolved after anthelmintic treatment for filariasis found by chance through eosinophilia; psychotropics were unchanged.",
+   "caveat": "The infection may have been driving the episode (then E4); one case from a group researching infection in bipolar disorder.",
+   "tags": [
+    "anthelmintic",
+    "bipolar",
+    "filariasis",
+    "immune",
+    "infection",
+    "mania"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, first pass)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
   }
  ]
 }
