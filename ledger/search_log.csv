@@ -1,0 +1,28 @@
+query_id,Source,Query (short form),Hits,Date run,Notes
+,PubMed (connector),Case report + unexpected terms + remission terms + psychosis,18.0,2026-11-09,"Connector caps queries at 20 Boolean operators, so strings were split by syndrome"
+,PubMed (connector),…+ obsessive-compulsive / Tourette / tics,3.0,2026-11-09,
+,PubMed (connector),…+ addiction / alcohol / use disorder / smoking,31.0,2026-11-09,
+,PubMed (connector),…+ bipolar / mania / depression / eating disorders,17.0,2026-11-09,
+,PubMed (connector),Deep brain stimulation + comorbid/unexpected + target syndromes + remission,46.0,2026-11-09,
+,PubMed (connector),Case report + stroke/haemorrhage/lesion + OCD/addiction/smoking/Tourette + disappeared/remission,106.0,2026-11-09,
+,PubMed (connector),Transplant + schizophrenia/bipolar/OCD/autism/anorexia + remission,17.0,2026-11-09,
+,PubMed (connector),Case report + fever/pyrexia + schizophrenia/OCD/autism/bipolar + remission,52.0,2026-11-09,
+,PubMed (connector),Ketogenic/gluten-free/low-carb + psychosis/bipolar/OCD/eating disorder + case,38.0,2026-11-09,
+,PubMed (connector),GLP-1 drugs + alcohol/gambling/addiction/compulsive + case,34.0,2026-11-09,
+,PubMed (connector),Psychedelics + OCD/depression/addiction + relief/remission + case,7.0,2026-11-09,
+,PubMed (connector),Case report + chemotherapy/rituximab/immunosuppression/plasmapheresis + schizophrenia/bipolar/OCD,10.0,2026-11-09,
+,PubMed (connector),Case report + serendipitous/serendipity/unintended benefit + psychiatric terms,15.0,2026-11-09,
+,PubMed (connector),Case report + head injury/TBI/anaesthesia/gunshot/neurosurgery + psychiatric syndromes + remission,17.0,2026-11-09,
+,PubMed (connector),Case report + antibiotics/tonsillectomy + OCD/schizophrenia/bipolar + remission,29.0,2026-11-09,
+,Europe PMC full text (via browser),"Unexpected-resolution phrases × 6 syndrome groups × case-report filter, title + abstract + open-access body text",341.0,2026-11-09,New records after removing PubMed duplicates; precision under 2%
+,Consensus (semantic),Unexpected remission of chronic psychiatric disorder after treatment/injury aimed elsewhere,50.0,2026-11-09,Best yield per record: found 7 cases the keyword searches missed
+,Consensus (semantic),"Addiction remitted after medication, lesion or procedure for another condition",49.0,2026-11-09,Surfaced most of the lesion-addiction cluster
+,Consensus (semantic),"Schizophrenia/bipolar/OCD resolved after transplant, immunosuppression, infection, diet or surgery",50.0,2026-11-09,Mostly adverse-onset noise; 2 useful registry counterpoints
+,Embase via CKN,Not yet run,,,Needs your CKN sign-in in the built-in browser
+,APA PsycInfo via CKN,Not yet run,,,Needs your CKN sign-in in the built-in browser
+,Scite (trial),Not yet run,,,Citation chasing on final includes; start the 7-day Pro trial when ready
+,Unique PubMed records (after de-duplication),,424.0,,Computed in Python from the 15 PMID lists; 2 PMIDs had no Europe PMC record
+,Candidates by tier,,,,
+,A,,15.0,,
+,B,,16.0,,
+,C,,6.0,,

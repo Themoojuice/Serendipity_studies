@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serendipity Case Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Layout idea: a clinical reference index. Summary tiles, then a filter rail, then citation cards with a syndrome-coloured edge. */
+  --bg: #f2f4f6;
+  --surface: #ffffff;
+  --ink: #18212c;
+  --muted: #5a6573;
+  --line: #dbe0e6;
+  --accent: #1d5aa6;
+  --accent-soft: #e5edf8;
+  --free: #22704a;
+  --free-soft: #e2f2e9;
+  --warn: #8a5a00;
+  --warn-soft: #fbf1dc;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --s-psychotic: #7a4ea3; --s-mood: #23799a; --s-ocd: #b0611b; --s-substance: #b3394a;
+  --s-eating: #3a8a56; --s-impulse: #85701c; --s-paraphilic: #5d6b7c; --s-fnd: #98497a; --s-anxiety: #4469b0;
+  --radius: 10px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161c; --surface: #1a212a; --ink: #e6ebf1; --muted: #9aa6b4; --line: #2c3642;
+    --accent: #7fb0f0; --accent-soft: #1f3048; --free: #7fd3a4; --free-soft: #173326;
+    --warn: #f0c46e; --warn-soft: #3a2f17;
+    --s-psychotic: #b993e0; --s-mood: #6cc3e0; --s-ocd: #e3a466; --s-substance: #ef8592;
+    --s-eating: #7fcf9b; --s-impulse: #d8c26a; --s-paraphilic: #a9b6c6; --s-fnd: #df92c2; --s-anxiety: #93b3ee;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161c; --surface: #1a212a; --ink: #e6ebf1; --muted: #9aa6b4; --line: #2c3642;
+  --accent: #7fb0f0; --accent-soft: #1f3048; --free: #7fd3a4; --free-soft: #173326;
+  --warn: #f0c46e; --warn-soft: #3a2f17;
+  --s-psychotic: #b993e0; --s-mood: #6cc3e0; --s-ocd: #e3a466; --s-substance: #ef8592;
+  --s-eating: #7fcf9b; --s-impulse: #d8c26a; --s-paraphilic: #a9b6c6; --s-fnd: #df92c2; --s-anxiety: #93b3ee;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.5; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 20px 16px 48px; display: grid; gap: 18px; }
+header { display: grid; gap: 14px; }
+h1 { font-size: 26px; line-height: 1.2; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+.lede { margin: 0; color: var(--muted); max-width: 68ch; }
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.tile { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; }
+.tile b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; line-height: 1.2; }
+.tile span { color: var(--muted); font-size: 13px; }
+nav.tabs { display: flex; gap: 6px; border-bottom: 1px solid var(--line); }
+nav.tabs a { text-decoration: none; color: var(--muted); padding: 8px 12px; border-bottom: 2px solid transparent; font-weight: 500; }
+nav.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+.panel { display: grid; gap: 14px; }
+.controls { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; display: grid; gap: 10px; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.row > label.grp { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); min-width: 72px; }
+input[type="search"] { flex: 1 1 260px; font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); }
+select { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); }
+.chip { font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
+.chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c, var(--muted)); }
+.chip[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--ink); font-weight: 600; }
+.chip .n { color: var(--muted); font-variant-numeric: tabular-nums; font-weight: 400; }
+.toggle { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; }
+.active-tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.btn { font: inherit; font-size: 13px; padding: 5px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); font-weight: 600; }
+.btn.free { background: var(--free); border-color: var(--free); color: var(--surface); font-weight: 600; }
+.count { color: var(--muted); font-size: 14px; margin: 0; }
+.list { display: grid; gap: 10px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--stripe, var(--line)); border-radius: var(--radius); padding: 12px 14px; display: grid; gap: 6px; }
+.card.context { border-style: dashed; border-left-style: solid; }
+.meta-top { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12px; }
+.pill { padding: 1px 8px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); color: var(--muted); }
+.pill.syn { color: var(--ink); }
+.pill.syn::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--c); margin-right: 5px; vertical-align: 1px; }
+.pill.free { background: var(--free-soft); border-color: transparent; color: var(--free); font-weight: 600; }
+.pill.tier { font-family: var(--font-mono); }
+.pill.ctx { background: var(--warn-soft); color: var(--warn); border-color: transparent; }
+.pill.era-known { background: var(--accent-soft); color: var(--accent); border-color: transparent; font-weight: 600; }
+.pill.era-refuted { background: var(--warn-soft); color: var(--warn); border-color: transparent; font-weight: 600; text-decoration: line-through; text-decoration-thickness: 1px; }
+.pill.era-novel { border-style: dashed; color: var(--ink); }
+.card h3 { margin: 0; font-size: 16px; line-height: 1.35; text-wrap: balance; }
+.card h3 a { color: var(--ink); text-decoration: none; }
+.card h3 a:hover { color: var(--accent); text-decoration: underline; }
+.cite { margin: 0; color: var(--muted); font-size: 13px; }
+.summary { margin: 0; max-width: 75ch; }
+.facts { display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; margin: 2px 0 0; font-size: 13px; }
+.facts dt { color: var(--muted); }
+.facts dd { margin: 0; }
+.caveat { margin: 0; font-size: 13px; color: var(--warn); background: var(--warn-soft); border-radius: 6px; padding: 4px 8px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 2px; }
+.doi { font-family: var(--font-mono); font-size: 12.5px; word-break: break-all; }
+.tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.tag { font: inherit; font-family: var(--font-mono); font-size: 12px; padding: 1px 6px; border-radius: 6px; border: 0; background: var(--accent-soft); color: var(--accent); cursor: pointer; }
+.tag[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: var(--radius); padding: 18px; color: var(--muted); }
+.box { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; display: grid; gap: 10px; }
+.box h2 { margin: 0; font-size: 17px; }
+.box p { margin: 0; color: var(--muted); font-size: 14px; max-width: 75ch; }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+th, td { border: 1px solid var(--line); padding: 5px 8px; text-align: left; vertical-align: top; }
+th { background: var(--bg); font-weight: 600; }
+table.xtab td.num { text-align: center; min-width: 44px; }
+table.xtab th.col { writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; font-weight: 500; padding: 8px 4px; }
+.bars { display: grid; gap: 6px; }
+.bar { display: grid; grid-template-columns: minmax(120px, 220px) 1fr 36px; gap: 8px; align-items: center; font-size: 13px; }
+.bar .track { background: var(--bg); border-radius: 4px; height: 14px; overflow: hidden; border: 1px solid var(--line); }
+.bar .fill { background: var(--accent); height: 100%; }
+.bar .v { text-align: right; font-variant-numeric: tabular-nums; }
+.grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+textarea { width: 100%; min-height: 140px; font-family: var(--font-mono); font-size: 12px; background: var(--bg); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 8px; }
+.status { font-size: 13px; color: var(--free); min-height: 1.2em; }
+code { font-family: var(--font-mono); font-size: 12.5px; }
+[hidden] { display: none !important; }
+@media (max-width: 700px) {
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid2 { grid-template-columns: 1fr; }
+  .facts { grid-template-columns: 1fr; }
+  .facts dt { margin-top: 4px; }
+  .bar { grid-template-columns: minmax(90px, 140px) 1fr 30px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Serendipity Case Library</h1>
+    <p class="lede">Published cases where a serious psychiatric syndrome resolved after something aimed elsewhere: a stroke, a stimulator, a drug for another illness. Tap a title to open the full text, or the abstract when the paper is paywalled.</p>
+    <div class="tiles" id="tiles"></div>
+  </header>
+
+  <nav class="tabs" aria-label="Views">
+    <a href="#library" data-view="library">Library</a>
+    <a href="#stats" data-view="stats">Statistics</a>
+    <a href="#data" data-view="data">Data &amp; fields</a>
+  </nav>
+
+  <section class="panel" id="view-library">
+    <div class="controls">
+      <div class="row">
+        <label class="grp" for="q">Search</label>
+        <input type="search" id="q" placeholder="Title, author, journal, mechanism, notes">
+      </div>
+      <div class="row" id="f-syn"><label class="grp">Syndrome</label></div>
+      <div class="row" id="f-trig"><label class="grp">Trigger</label></div>
+      <div class="row">
+        <label class="grp" for="sort">Sort</label>
+        <select id="sort">
+          <option value="impact">Downstream impact</option>
+          <option value="new">Newest first</option>
+          <option value="old">Oldest first</option>
+          <option value="title">Title A–Z</option>
+        </select>
+      </div>
+      <div class="row">
+        <label class="grp" for="tier">Tier</label>
+        <select id="tier">
+          <option value="">All</option>
+          <option value="A">A: strong</option>
+          <option value="B">B: supporting</option>
+        </select>
+      </div>
+      <div class="row">
+        <label class="grp" for="era">Now</label>
+        <select id="era">
+          <option value="">Any status</option>
+          <option value="novel">Still unexplained</option>
+          <option value="emerging">Emerging</option>
+          <option value="known">Known now (unexpected then)</option>
+          <option value="refuted">Refuted</option>
+        </select>
+      </div>
+      <div class="row">
+        <label class="toggle"><input type="checkbox" id="freeOnly"> Free full text only</label>
+        <label class="toggle"><input type="checkbox" id="showCtx"> Show context records</label>
+      </div>
+      <div class="active-tags" id="activeTags" hidden></div>
+    </div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div class="list" id="list"></div>
+  </section>
+
+  <section class="panel" id="view-stats" hidden>
+    <p class="count" id="statsNote"></p>
+    <div class="box">
+      <h2>Syndrome × trigger</h2>
+      <p>Studies per cell. A study listed under two syndromes counts once in each row, so row totals can exceed the study count.</p>
+      <div class="scroll" id="xtab"></div>
+    </div>
+    <div class="grid2">
+      <div class="box"><h2>Downstream impact</h2><div class="bars" id="b-down"></div></div>
+      <div class="box"><h2>How the syndrome ended</h2><div class="bars" id="b-res"></div></div>
+      <div class="box"><h2>Studies by decade</h2><div class="bars" id="b-dec"></div></div>
+      <div class="box"><h2>Intent of the trigger</h2><div class="bars" id="b-intent"></div></div>
+      <div class="box"><h2>Where each finding stands now</h2><div class="bars" id="b-era"></div></div>
+    </div>
+  </section>
+
+  <section class="panel" id="view-data" hidden>
+    <div class="box">
+      <h2>Export</h2>
+      <p>Copies the studies that match the Library filters: one row per study, tags joined with semicolons. Paste into Excel, R or Python.</p>
+      <div class="row">
+        <button class="btn primary" id="copyCsv" type="button">Copy CSV</button>
+        <button class="btn" id="copyJson" type="button">Copy JSON</button>
+        <span class="status" id="copyStatus" role="status"></span>
+      </div>
+      <textarea id="exportBox" hidden aria-label="Export text"></textarea>
+    </div>
+    <div class="box">
+      <h2>Inclusion criteria</h2>
+      <ul id="criteria" style="margin:0;padding-left:20px"></ul>
+      <p id="unit"></p>
+    </div>
+    <div class="box">
+      <h2>Fields</h2>
+      <div class="scroll"><table id="fields"></table></div>
+    </div>
+    <div class="box">
+      <h2>Controlled vocabularies</h2>
+      <div class="scroll"><table id="vocab"></table></div>
+    </div>
+    <div class="box">
+      <h2>Adding cases</h2>
+      <p>The data lives in <code>data/cases.json</code> in the <a href="https://github.com/Themoojuice/Serendipity_studies" target="_blank" rel="noopener">Serendipity_studies repository</a>. Claude adds cases there: it checks the identifiers, fills every field, runs the validator and pushes, and this page updates within a minute or two. The screening ledger behind it is in <code>ledger/</code>.</p>
+    </div>
+  </section>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var SYN_VAR = {
+    "Psychotic": "--s-psychotic", "Mood": "--s-mood", "Obsessive-compulsive & tic": "--s-ocd",
+    "Substance & addictive": "--s-substance", "Eating": "--s-eating", "Impulse-control": "--s-impulse",
+    "Paraphilic": "--s-paraphilic", "Functional neurological": "--s-fnd", "Anxiety": "--s-anxiety"
+  };
+  var DATA = null, RECORDS = [];
+  var state = { q: "", syn: new Set(), trig: new Set(), tags: new Set(), tier: "", era: "", freeOnly: false, showCtx: false, sort: "impact" };
+
+  function $(id) { return document.getElementById(id); }
+  function el(tag, attrs, kids) {
+    var n = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) {
+      if (k === "text") n.textContent = attrs[k];
+      else if (k === "style") n.setAttribute("style", attrs[k]);
+      else if (k.indexOf("on") === 0) n.addEventListener(k.slice(2), attrs[k]);
+      else n.setAttribute(k, attrs[k]);
+    });
+    (kids || []).forEach(function (c) { if (c != null) n.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+    return n;
+  }
+  function synColor(c) { return "var(" + (SYN_VAR[c] || "--muted") + ")"; }
+  function citeLine(r) {
+    var c = r.citation, s = c.authors + " " + c.journal + " " + c.year;
+    if (c.volume) s += ";" + c.volume;
+    if (c.issue) s += "(" + c.issue + ")";
+    if (c.pages) s += ":" + c.pages;
+    return s;
+  }
+  function primaryLink(r) { return r.links.full_text || r.links.abstract || r.links.doi; }
+  function haystack(r) {
+    return [r.citation.title, r.citation.authors, r.citation.journal, r.summary, r.syndrome.specific,
+      r.trigger.specific, r.trigger.category, r.caveat, r.ids.doi, r.ids.pmid, r.tags.join(" "),
+      r.downstream.note, r.era.note].join(" ").toLowerCase();
+  }
+
+  function filtered() {
+    var q = state.q.trim().toLowerCase();
+    return RECORDS.filter(function (r) {
+      if (!state.showCtx && r.record_type !== "case") return false;
+      if (state.tier && r.tier !== state.tier) return false;
+      if (state.era && r.era.label !== state.era) return false;
+      if (state.freeOnly && !r.links.full_text) return false;
+      if (state.syn.size && !r.syndrome.categories.some(function (c) { return state.syn.has(c); })) return false;
+      if (state.trig.size && !state.trig.has(r.trigger.category)) return false;
+      var tagOk = true; state.tags.forEach(function (t) { if (r.tags.indexOf(t) < 0) tagOk = false; });
+      if (!tagOk) return false;
+      if (q && r._hay.indexOf(q) < 0) return false;
+      return true;
+    }).sort(function (a, b) {
+      if (state.sort === "new") return b.citation.year - a.citation.year;
+      if (state.sort === "old") return a.citation.year - b.citation.year;
+      if (state.sort === "title") return a.citation.title.localeCompare(b.citation.title);
+      var t = (a.record_type === "case" ? 0 : 1) - (b.record_type === "case" ? 0 : 1);
+      if (t) return t;
+      var d = b.downstream.level - a.downstream.level; if (d) return d;
+      var ti = (a.tier || "Z").localeCompare(b.tier || "Z"); if (ti) return ti;
+      return a.citation.year - b.citation.year;
+    });
+  }
+
+  function renderTiles() {
+    var cases = RECORDS.filter(function (r) { return r.record_type === "case"; });
+    var patients = cases.reduce(function (s, r) { return s + (r.n_patients || 0); }, 0);
+    var dupes = cases.filter(function (r) { return r.same_patient_as; }).length;
+    var free = cases.filter(function (r) { return r.links.full_text; }).length;
+    var tiles = [
+      [cases.length, "studies"],
+      [(patients - dupes) + "+", "patients"],
+      [Math.round(100 * free / cases.length) + "%", "free full text"],
+      [DATA.updated, "last updated"]
+    ];
+    var box = $("tiles"); box.innerHTML = "";
+    tiles.forEach(function (t) { box.appendChild(el("div", { class: "tile" }, [el("b", { text: String(t[0]) }), el("span", { text: t[1] })])); });
+  }
+
+  function renderFacetChips() {
+    var cases = RECORDS.filter(function (r) { return r.record_type === "case"; });
+    function count(fn) { var m = {}; cases.forEach(function (r) { fn(r).forEach(function (k) { m[k] = (m[k] || 0) + 1; }); }); return m; }
+    var sc = count(function (r) { return r.syndrome.categories; });
+    var tc = count(function (r) { return [r.trigger.category]; });
+    function build(rowId, list, counts, set, colorFn) {
+      var row = $(rowId);
+      Array.prototype.slice.call(row.querySelectorAll(".chip")).forEach(function (c) { c.remove(); });
+      list.filter(function (v) { return counts[v]; }).forEach(function (v) {
+        var b = el("button", { class: "chip", type: "button", "aria-pressed": set.has(v) ? "true" : "false" }, [
+          colorFn ? el("span", { class: "dot", style: "--c:" + colorFn(v) }) : null, v, el("span", { class: "n", text: String(counts[v]) })]);
+        b.addEventListener("click", function () { if (set.has(v)) set.delete(v); else set.add(v); renderFacetChips(); renderAll(); });
+        row.appendChild(b);
+      });
+    }
+    build("f-syn", DATA.vocabularies.syndrome_category, sc, state.syn, synColor);
+    build("f-trig", DATA.vocabularies.trigger_category, tc, state.trig, null);
+  }
+
+  function toggleTag(t) { if (state.tags.has(t)) state.tags.delete(t); else state.tags.add(t); renderAll(); }
+
+  function renderActiveTags() {
+    var box = $("activeTags"); box.innerHTML = "";
+    if (!state.tags.size) { box.hidden = true; return; }
+    box.hidden = false;
+    box.appendChild(el("span", { class: "grp", style: "font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em", text: "Tags" }));
+    state.tags.forEach(function (t) {
+      box.appendChild(el("button", { class: "tag", type: "button", "aria-pressed": "true", onclick: function () { toggleTag(t); } }, ["#" + t + " ×"]));
+    });
+    box.appendChild(el("button", { class: "btn", type: "button", onclick: function () { state.tags.clear(); renderAll(); } }, ["Clear tags"]));
+  }
+
+  var ERA_SHORT = { novel: "Still unexplained", emerging: "Emerging", known: "Known now · unexpected then", refuted: "Refuted" };
+
+  function card(r) {
+    var c0 = r.syndrome.categories[0];
+    var top = el("div", { class: "meta-top" });
+    r.syndrome.categories.forEach(function (c) { top.appendChild(el("span", { class: "pill syn", style: "--c:" + synColor(c), text: c })); });
+    top.appendChild(el("span", { class: "pill", text: r.trigger.category }));
+    if (r.record_type !== "case") top.appendChild(el("span", { class: "pill ctx", text: "Context, not a case" }));
+    if (r.tier) top.appendChild(el("span", { class: "pill tier", title: DATA.vocabularies.tier[r.tier], text: "Tier " + r.tier }));
+    if (r.status !== "Included") top.appendChild(el("span", { class: "pill ctx", text: r.status }));
+    top.appendChild(el("span", { class: "pill era-" + r.era.label, title: DATA.vocabularies.era[r.era.label], text: ERA_SHORT[r.era.label] }));
+    top.appendChild(el("span", { class: r.links.full_text ? "pill free" : "pill", text: r.access }));
+
+    var outcome = [r.outcome.resolution];
+    if (r.outcome.time_to_resolution) outcome.push("within " + r.outcome.time_to_resolution.toLowerCase());
+    if (r.outcome.follow_up) outcome.push("follow-up " + r.outcome.follow_up);
+    var facts = el("dl", { class: "facts" }, [
+      el("dt", { text: "Syndrome" }), el("dd", { text: r.syndrome.specific }),
+      el("dt", { text: "Trigger" }), el("dd", { text: r.trigger.specific + " (" + r.trigger.intent.toLowerCase() + ")" }),
+      el("dt", { text: "Outcome" }), el("dd", { text: outcome.join(", ") + (r.outcome.reversal !== "None reported" ? "; reversal: " + r.outcome.reversal.toLowerCase() : "") }),
+      el("dt", { text: "Patients" }), el("dd", { text: (r.n_patients == null ? "Not stated" : String(r.n_patients)) + " · " + r.design + (r.same_patient_as ? " · overlaps " + r.same_patient_as : "") })
+    ]);
+    var dd = el("dd", {}, [DATA.vocabularies.downstream_level[String(r.downstream.level)] + (r.downstream.note ? ": " + r.downstream.note : "")]);
+    r.downstream.links.forEach(function (l) { dd.appendChild(document.createTextNode(" ")); dd.appendChild(el("a", { href: "https://doi.org/" + l.doi, target: "_blank", rel: "noopener", text: l.label })); });
+    facts.appendChild(el("dt", { text: "Led to" })); facts.appendChild(dd);
+    facts.appendChild(el("dt", { text: "Now" }));
+    facts.appendChild(el("dd", { text: DATA.vocabularies.era[r.era.label] + (r.era.note ? ". " + r.era.note : "") + (r.era.basis !== "judged" ? " (provisional, set from the downstream level)" : "") }));
+
+    var actions = el("div", { class: "actions" });
+    if (r.links.full_text) actions.appendChild(el("a", { class: "btn free", href: r.links.full_text, target: "_blank", rel: "noopener" }, ["Full text ↗"]));
+    if (r.links.abstract) actions.appendChild(el("a", { class: "btn", href: r.links.abstract, target: "_blank", rel: "noopener" }, ["Abstract (PubMed) ↗"]));
+    if (r.ids.doi) actions.appendChild(el("span", { class: "doi" }, ["DOI ", el("a", { href: r.links.doi, target: "_blank", rel: "noopener", text: r.ids.doi })]));
+    else actions.appendChild(el("span", { class: "doi", text: "No DOI · PMID " + r.ids.pmid }));
+    r.links.alternates.forEach(function (a) { actions.appendChild(el("a", { class: "btn", href: a.url, target: "_blank", rel: "noopener" }, [a.label + " ↗"])); });
+
+    var tags = el("div", { class: "tags" });
+    r.tags.forEach(function (t) { tags.appendChild(el("button", { class: "tag", type: "button", "aria-pressed": state.tags.has(t) ? "true" : "false", onclick: function () { toggleTag(t); } }, ["#" + t])); });
+
+    return el("article", { class: "card" + (r.record_type !== "case" ? " context" : ""), style: "--stripe:" + synColor(c0) }, [
+      top,
+      el("h3", {}, [el("a", { href: primaryLink(r), target: "_blank", rel: "noopener", text: r.citation.title })]),
+      el("p", { class: "cite", text: citeLine(r) }),
+      el("p", { class: "summary", text: r.summary }),
+      facts,
+      r.caveat ? el("p", { class: "caveat", text: "Caveat: " + r.caveat }) : null,
+      actions, tags
+    ]);
+  }
+
+  function renderList() {
+    var rows = filtered();
+    var totalCases = RECORDS.filter(function (r) { return r.record_type === "case"; }).length;
+    $("count").textContent = "Showing " + rows.length + " of " + totalCases + " studies" + (state.showCtx ? " plus context records" : "");
+    var list = $("list"); list.innerHTML = "";
+    if (!rows.length) { list.appendChild(el("div", { class: "empty", text: "No studies match these filters. Clear a filter or a tag to widen the list." })); return; }
+    rows.forEach(function (r) { list.appendChild(card(r)); });
+  }
+
+  function bars(id, pairs) {
+    var box = $(id); box.innerHTML = "";
+    var max = Math.max.apply(null, pairs.map(function (p) { return p[1]; }).concat([1]));
+    pairs.forEach(function (p) {
+      box.appendChild(el("div", { class: "bar" }, [el("span", { text: p[0] }),
+        el("div", { class: "track" }, [el("div", { class: "fill", style: "width:" + (100 * p[1] / max) + "%" })]),
+        el("span", { class: "v", text: String(p[1]) })]));
+    });
+  }
+
+  function renderStats() {
+    var rows = filtered().filter(function (r) { return r.record_type === "case"; });
+    $("statsNote").textContent = "Figures cover the " + rows.length + " studies that match the current Library filters.";
+    var V = DATA.vocabularies;
+    var syns = V.syndrome_category.filter(function (s) { return rows.some(function (r) { return r.syndrome.categories.indexOf(s) >= 0; }); });
+    var trigs = V.trigger_category.filter(function (t) { return rows.some(function (r) { return r.trigger.category === t; }); });
+    var max = 1, m = {};
+    rows.forEach(function (r) { r.syndrome.categories.forEach(function (s) { var k = s + "|" + r.trigger.category; m[k] = (m[k] || 0) + 1; if (m[k] > max) max = m[k]; }); });
+    var t = el("table", { class: "xtab" });
+    var hr = el("tr", {}, [el("th", { text: "Syndrome \\ Trigger" })]);
+    trigs.forEach(function (tr) { hr.appendChild(el("th", { class: "col", text: tr })); });
+    hr.appendChild(el("th", { text: "Total" }));
+    t.appendChild(hr);
+    syns.forEach(function (s) {
+      var tr = el("tr", {}, [el("th", { text: s })]), tot = 0;
+      trigs.forEach(function (g) {
+        var v = m[s + "|" + g] || 0; tot += v;
+        var pct = Math.round(70 * v / max);
+        tr.appendChild(el("td", { class: "num", style: v ? "background: color-mix(in srgb, var(--accent) " + pct + "%, transparent); color:" + (pct > 40 ? "var(--surface)" : "var(--ink)") : "", text: v ? String(v) : "" }));
+      });
+      tr.appendChild(el("td", { class: "num", text: String(tot) }));
+      t.appendChild(tr);
+    });
+    var box = $("xtab"); box.innerHTML = ""; box.appendChild(t);
+
+    bars("b-down", Object.keys(V.downstream_level).map(function (k) { return [k + " · " + V.downstream_level[k], rows.filter(function (r) { return String(r.downstream.level) === k; }).length]; }));
+    bars("b-res", V.resolution.map(function (k) { return [k, rows.filter(function (r) { return r.outcome.resolution === k; }).length]; }));
+    var dec = {}; rows.forEach(function (r) { var d = Math.floor(r.citation.year / 10) * 10; dec[d] = (dec[d] || 0) + 1; });
+    var ds = Object.keys(dec).map(Number).sort(function (a, b) { return a - b; });
+    var allD = []; if (ds.length) for (var y = ds[0]; y <= ds[ds.length - 1]; y += 10) allD.push(y);
+    bars("b-dec", allD.map(function (d) { return [d + "s", dec[d] || 0]; }));
+    bars("b-intent", V.trigger_intent.map(function (k) { return [k, rows.filter(function (r) { return r.trigger.intent === k; }).length]; }));
+    bars("b-era", Object.keys(V.era).map(function (k) { return [ERA_SHORT[k], rows.filter(function (r) { return r.era.label === k; }).length]; }));
+  }
+
+  var COLS = [
+    ["id", "Stable record id (first author + year)", function (r) { return r.id; }],
+    ["record_type", "case = counts toward statistics; context = pooled, registry or cautionary paper", function (r) { return r.record_type; }],
+    ["status", "Included or Provisional (details unconfirmed)", function (r) { return r.status; }],
+    ["tier", "A strong, B supporting", function (r) { return r.tier || ""; }],
+    ["collections", "Which search round added it (top12, round1, round2)", function (r) { return r.collections.join(";"); }],
+    ["year", "Publication year", function (r) { return r.citation.year; }],
+    ["authors", "Authors as cited", function (r) { return r.citation.authors; }],
+    ["title", "Article title", function (r) { return r.citation.title; }],
+    ["journal", "Journal abbreviation", function (r) { return r.citation.journal; }],
+    ["volume", "", function (r) { return r.citation.volume; }],
+    ["issue", "", function (r) { return r.citation.issue; }],
+    ["pages", "", function (r) { return r.citation.pages; }],
+    ["doi", "Digital Object Identifier", function (r) { return r.ids.doi; }],
+    ["pmid", "PubMed ID", function (r) { return r.ids.pmid; }],
+    ["pmcid", "PubMed Central ID (free full text)", function (r) { return r.ids.pmcid; }],
+    ["access", "Free full text or Paywalled", function (r) { return r.access; }],
+    ["full_text_url", "Free full text link", function (r) { return r.links.full_text || ""; }],
+    ["abstract_url", "PubMed abstract link", function (r) { return r.links.abstract || ""; }],
+    ["design", "Study design (controlled)", function (r) { return r.design; }],
+    ["n_patients", "Patients in the paper; blank if not stated", function (r) { return r.n_patients == null ? "" : r.n_patients; }],
+    ["syndrome_primary", "First syndrome category (controlled)", function (r) { return r.syndrome.categories[0]; }],
+    ["syndrome_categories", "All syndrome categories (controlled, ;-joined)", function (r) { return r.syndrome.categories.join(";"); }],
+    ["syndrome_specific", "Syndrome as described", function (r) { return r.syndrome.specific; }],
+    ["chronic", "true / false / blank if unknown", function (r) { return r.syndrome.chronic == null ? "" : r.syndrome.chronic; }],
+    ["treatment_resistant", "true / false / blank if unknown", function (r) { return r.syndrome.treatment_resistant == null ? "" : r.syndrome.treatment_resistant; }],
+    ["trigger_category", "What ended it (controlled)", function (r) { return r.trigger.category; }],
+    ["trigger_specific", "Trigger as described", function (r) { return r.trigger.specific; }],
+    ["trigger_intent", "Why the trigger happened (controlled)", function (r) { return r.trigger.intent; }],
+    ["resolution", "Complete, Partial, Temporary, Unclear", function (r) { return r.outcome.resolution; }],
+    ["time_to_resolution", "As reported", function (r) { return r.outcome.time_to_resolution || ""; }],
+    ["follow_up", "As reported", function (r) { return r.outcome.follow_up || ""; }],
+    ["reversal", "None reported, Natural off-on, On-off rechallenge", function (r) { return r.outcome.reversal; }],
+    ["downstream_level", "0 none yet to 4 changed practice (ordinal)", function (r) { return r.downstream.level; }],
+    ["downstream_note", "What it led to", function (r) { return r.downstream.note; }],
+    ["era", "Where the finding stands now: novel, emerging, known (unexpected then, established since), refuted", function (r) { return r.era.label; }],
+    ["era_basis", "judged, or provisional from the downstream level", function (r) { return r.era.basis; }],
+    ["era_note", "When and how it became known or was refuted", function (r) { return r.era.note; }],
+    ["tags", "Free tags, ;-joined", function (r) { return r.tags.join(";"); }],
+    ["same_patient_as", "Id of a record describing the same patient (avoid double-counting)", function (r) { return r.same_patient_as || ""; }],
+    ["found_via", "Search source", function (r) { return r.found_via; }],
+    ["date_added", "Date added to the library", function (r) { return r.date_added; }],
+    ["caveat", "Main limitation", function (r) { return r.caveat; }]
+  ];
+
+  function toCsv(rows) {
+    function q(v) { v = v == null ? "" : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
+    return [COLS.map(function (c) { return c[0]; }).join(",")].concat(rows.map(function (r) { return COLS.map(function (c) { return q(c[2](r)); }).join(","); })).join("\n");
+  }
+
+  function copyText(text, label) {
+    var box = $("exportBox"), status = $("copyStatus");
+    function fallback() { box.hidden = false; box.value = text; box.focus(); box.select(); status.textContent = "Copy was blocked here. The " + label + " is selected below: copy it from the box."; }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { box.hidden = true; status.textContent = label + " copied: " + filtered().length + " rows."; }, fallback);
+      } else fallback();
+    } catch (e) { fallback(); }
+  }
+
+  function renderData() {
+    var ul = $("criteria"); ul.innerHTML = "";
+    DATA.inclusion_criteria.forEach(function (c) { ul.appendChild(el("li", { text: c })); });
+    $("unit").textContent = "Unit of record: " + DATA.unit_of_record + " Schema version " + DATA.schema_version + ".";
+    var f = $("fields"); f.innerHTML = "";
+    f.appendChild(el("tr", {}, [el("th", { text: "CSV column" }), el("th", { text: "Meaning" })]));
+    COLS.forEach(function (c) { f.appendChild(el("tr", {}, [el("td", {}, [el("code", { text: c[0] })]), el("td", { text: c[1] })])); });
+    var v = $("vocab"); v.innerHTML = "";
+    v.appendChild(el("tr", {}, [el("th", { text: "Field" }), el("th", { text: "Allowed values" })]));
+    Object.keys(DATA.vocabularies).forEach(function (k) {
+      var val = DATA.vocabularies[k];
+      var txt = Array.isArray(val) ? val.join(" · ") : Object.keys(val).map(function (x) { return x + " = " + val[x]; }).join(" · ");
+      v.appendChild(el("tr", {}, [el("td", {}, [el("code", { text: k })]), el("td", { text: txt })]));
+    });
+  }
+
+  function renderAll() { renderActiveTags(); renderList(); renderStats(); }
+
+  function route() {
+    var v = (location.hash || "#library").slice(1);
+    if (["library", "stats", "data"].indexOf(v) < 0) v = "library";
+    ["library", "stats", "data"].forEach(function (k) { $("view-" + k).hidden = k !== v; });
+    Array.prototype.forEach.call(document.querySelectorAll("nav.tabs a"), function (a) {
+      if (a.getAttribute("data-view") === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+    });
+  }
+
+  function init(data) {
+    DATA = data;
+    RECORDS = data.records.map(function (r) { r._hay = haystack(r); return r; });
+    renderTiles(); renderFacetChips(); renderData(); renderAll(); route();
+    $("q").addEventListener("input", function (e) { state.q = e.target.value; renderAll(); });
+    $("sort").addEventListener("change", function (e) { state.sort = e.target.value; renderAll(); });
+    $("tier").addEventListener("change", function (e) { state.tier = e.target.value; renderAll(); });
+    $("era").addEventListener("change", function (e) { state.era = e.target.value; renderAll(); });
+    $("freeOnly").addEventListener("change", function (e) { state.freeOnly = e.target.checked; renderAll(); });
+    $("showCtx").addEventListener("change", function (e) { state.showCtx = e.target.checked; renderAll(); });
+    $("copyCsv").addEventListener("click", function () { copyText(toCsv(filtered()), "CSV"); });
+    $("copyJson").addEventListener("click", function () {
+      var clean = filtered().map(function (r) { var o = JSON.parse(JSON.stringify(r)); delete o._hay; return o; });
+      copyText(JSON.stringify(clean, null, 1), "JSON");
+    });
+    window.addEventListener("hashchange", route);
+  }
+
+  fetch("data/cases.json", { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(init)
+    .catch(function (e) {
+      $("list").appendChild(el("div", { class: "empty", text: "The case data could not be loaded (" + e.message + "). Reload the page; if it persists, ask Claude to republish data/cases.json." }));
+    });
+})();
+</script>
+</body>
+</html>

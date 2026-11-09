@@ -1,0 +1,4068 @@
+{
+ "library": "Serendipity Case Library",
+ "schema_version": "1.1",
+ "updated": "2026-11-09",
+ "unit_of_record": "One published study (a paper). n_patients counts patients within it; same_patient_as links papers describing the same patient.",
+ "inclusion_criteria": [
+  "A serious psychiatric syndrome resolved or substantially improved.",
+  "The resolution was incidental: the triggering event or treatment was aimed at something else, or not aimed at all.",
+  "Individual patients or small series; lesion series allowed when built on individual cases.",
+  "Discoveries that were unexpected when reported but are established since stay in, labelled 'Known now'. Findings that later failed controlled testing are labelled 'Refuted'."
+ ],
+ "vocabularies": {
+  "syndrome_category": [
+   "Psychotic",
+   "Mood",
+   "Obsessive-compulsive & tic",
+   "Substance & addictive",
+   "Eating",
+   "Impulse-control",
+   "Paraphilic",
+   "Functional neurological",
+   "Anxiety"
+  ],
+  "trigger_category": [
+   "Acquired brain lesion",
+   "Traumatic brain injury",
+   "Neurosurgery",
+   "Brain stimulation",
+   "Medication for another condition",
+   "Recreational substance",
+   "Diet",
+   "Fever / infection",
+   "Seizures",
+   "Immune reset",
+   "Coma / anaesthesia"
+  ],
+  "trigger_intent": [
+   "Treatment for another condition",
+   "Injury or illness",
+   "Self-administered",
+   "Lifestyle change"
+  ],
+  "resolution": [
+   "Complete",
+   "Partial",
+   "Temporary",
+   "Unclear"
+  ],
+  "reversal": [
+   "None reported",
+   "Natural off-on",
+   "On-off rechallenge"
+  ],
+  "design": [
+   "Case report",
+   "Case series",
+   "Lesion series",
+   "Letter",
+   "Historical review",
+   "Pooled analysis",
+   "Registry study"
+  ],
+  "downstream_level": {
+   "0": "None yet",
+   "1": "Similar cases reported",
+   "2": "Pooled analysis or pilot study",
+   "3": "Randomised trial",
+   "4": "Changed practice or major prize"
+  },
+  "tier": {
+   "A": "Strong: high yield or well documented",
+   "B": "Supporting case or replication"
+  },
+  "era": {
+   "novel": "Still unexplained: nothing comparable established since",
+   "emerging": "Emerging: similar cases, pooled data or trials, not yet settled",
+   "known": "Known now: unexpected when reported, established since",
+   "refuted": "Refuted: failed under controlled testing"
+  }
+ },
+ "records": [
+  {
+   "id": "mallet-2002",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "top12"
+   ],
+   "citation": {
+    "authors": "Mallet L, Mesnage V, Houeto JL, et al.",
+    "title": "Compulsions, Parkinson's disease, and stimulation.",
+    "journal": "Lancet",
+    "year": 2002,
+    "volume": "360",
+    "issue": "9342",
+    "pages": "1302-1304"
+   },
+   "ids": {
+    "doi": "10.1016/s0140-6736(02)11339-0",
+    "pmid": "12414208",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/12414208/",
+    "doi": "https://doi.org/10.1016/s0140-6736(02)11339-0",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Severe obsessive-compulsive disorder (comorbid Parkinson's disease)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Subthalamic nucleus DBS for Parkinson's motor symptoms",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": "2 weeks",
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 3,
+    "note": "French STOC randomised crossover trial of subthalamic stimulation for OCD",
+    "links": [
+     {
+      "label": "Mallet et al., NEJM 2008",
+      "doi": "10.1056/NEJMoa0708514"
+     }
+    ]
+   },
+   "summary": "Compulsions disappeared two weeks after subthalamic stimulation for Parkinson's disease; Yale-Brown scores fell 58% and 64%.",
+   "caveat": "",
+   "tags": [
+    "dbs",
+    "ocd",
+    "parkinsons",
+    "rct-followed",
+    "replicated",
+    "subthalamic-nucleus"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "known",
+    "note": "Subthalamic stimulation for OCD went on to a randomised trial (Mallet, NEJM 2008).",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "naqvi-2007",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "top12"
+   ],
+   "citation": {
+    "authors": "Naqvi NH, Rudrauf D, Damasio H, Bechara A.",
+    "title": "Damage to the insula disrupts addiction to cigarette smoking.",
+    "journal": "Science",
+    "year": 2007,
+    "volume": "315",
+    "issue": "5811",
+    "pages": "531-534"
+   },
+   "ids": {
+    "doi": "10.1126/science.1135926",
+    "pmid": "17255515",
+    "pmcid": "PMC3698854"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3698854/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/17255515/",
+    "doi": "https://doi.org/10.1126/science.1135926",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Lesion series",
+   "n_patients": 19,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Tobacco addiction",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Insula damage from stroke or surgery",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "Lesion network mapping pooled such cases into one remission circuit",
+    "links": [
+     {
+      "label": "Joutsa et al., Nat Med 2022",
+      "doi": "10.1038/s41591-022-01834-y"
+     }
+    ]
+   },
+   "summary": "Smokers with insula damage were far more likely to quit at once, without relapse or persisting urge, than smokers with lesions elsewhere.",
+   "caveat": "19 insula-lesioned smokers; retrospective comparison with 50 non-insula lesions.",
+   "tags": [
+    "addiction",
+    "insula",
+    "lesion",
+    "pooled-analysis",
+    "replicated",
+    "smoking"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "known",
+    "note": "Addiction remission after insula and related lesions has since been pooled into one circuit (Joutsa, Nat Med 2022).",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "wagner-jauregg-1883",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "top12"
+   ],
+   "citation": {
+    "authors": "Whitrow M.",
+    "title": "Wagner-Jauregg and fever therapy.",
+    "journal": "Med Hist",
+    "year": 1990,
+    "volume": "34",
+    "issue": "3",
+    "pages": "294-310"
+   },
+   "ids": {
+    "doi": "10.1017/s0025727300052431",
+    "pmid": "2214949",
+    "pmcid": "PMC1036142"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1036142/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/2214949/",
+    "doi": "https://doi.org/10.1017/s0025727300052431",
+    "alternates": [
+     {
+      "label": "Tsay 2013, Yale J Biol Med (free)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3670443/"
+     }
+    ]
+   },
+   "access": "Free full text",
+   "design": "Historical review",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Severe psychosis (index patient, Vienna 1883)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "Erysipelas with high fever",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 4,
+    "note": "Malaria fever therapy for general paresis; first psychiatric Nobel Prize (1927)",
+    "links": []
+   },
+   "summary": "A woman's severe psychosis cleared after erysipelas; decades later Wagner-Jauregg induced fever deliberately and won the Nobel Prize.",
+   "caveat": "Secondary source; the 1887 German original is not online.",
+   "tags": [
+    "fever",
+    "historical",
+    "infection",
+    "nobel",
+    "psychosis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "known",
+    "note": "Fever therapy for general paresis won the 1927 Nobel Prize; the observation is now psychiatric history.",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "richards-2024",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "top12"
+   ],
+   "citation": {
+    "authors": "Richards JR, Dorand MF, Royal K, et al.",
+    "title": "Significant Decrease in Alcohol Use Disorder Symptoms Secondary to Semaglutide Therapy for Weight Loss: A Case Series.",
+    "journal": "J Clin Psychiatry",
+    "year": 2024,
+    "volume": "85",
+    "issue": "1",
+    "pages": "23m15068"
+   },
+   "ids": {
+    "doi": "10.4088/jcp.23m15068",
+    "pmid": "38019594",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": "https://www.psychiatrist.com/wp-content/uploads/2023/11/Significant-Decrease-Alcohol-Use-Disorder-Symptoms-jcp-23m15068.pdf",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/38019594/",
+    "doi": "https://doi.org/10.4088/jcp.23m15068",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case series",
+   "n_patients": 6,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Alcohol use disorder",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Semaglutide for weight loss",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 3,
+    "note": "Phase 2 randomised trial of semaglutide in alcohol use disorder",
+    "links": [
+     {
+      "label": "Hendershot et al., JAMA Psychiatry 2025",
+      "doi": "10.1001/jamapsychiatry.2024.4789"
+     }
+    ]
+   },
+   "summary": "All six patients prescribed semaglutide for weight had marked falls in Alcohol Use Disorders Identification Test scores (mean 9.5 points).",
+   "caveat": "",
+   "tags": [
+    "alcohol",
+    "glp1",
+    "rct-followed",
+    "replicated",
+    "semaglutide"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "kuhn-2007",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "top12"
+   ],
+   "citation": {
+    "authors": "Kuhn J, Lenartz D, Huff W, et al.",
+    "title": "Remission of alcohol dependency following deep brain stimulation of the nucleus accumbens: valuable therapeutic implications?",
+    "journal": "J Neurol Neurosurg Psychiatry",
+    "year": 2007,
+    "volume": "78",
+    "issue": "10",
+    "pages": "1152-1153"
+   },
+   "ids": {
+    "doi": "10.1136/jnnp.2006.113092",
+    "pmid": "17878197",
+    "pmcid": "PMC2117573"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2117573/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/17878197/",
+    "doi": "https://doi.org/10.1136/jnnp.2006.113092",
+    "alternates": [
+     {
+      "label": "Republished in BMJ Case Rep 2009 (free)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3030006/"
+     }
+    ]
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Alcohol dependence (comorbid)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Nucleus accumbens DBS for severe anxiety and secondary depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 3,
+    "note": "Double-blind randomised trial of accumbens DBS in treatment-resistant alcohol use disorder (Bach et al., Transl Psychiatry 2023)",
+    "links": []
+   },
+   "summary": "Accumbens stimulation barely helped the target anxiety disorder but produced an unintended remission of alcohol dependence.",
+   "caveat": "",
+   "tags": [
+    "alcohol",
+    "dbs",
+    "nucleus-accumbens",
+    "rct-followed"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "israel-2010",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "top12"
+   ],
+   "citation": {
+    "authors": "Israël M, Steiger H, Kolivakis T, McGregor L, Sadikot AF.",
+    "title": "Deep brain stimulation in the subgenual cingulate cortex for an intractable eating disorder.",
+    "journal": "Biol Psychiatry",
+    "year": 2010,
+    "volume": "67",
+    "issue": "9",
+    "pages": "e53-4"
+   },
+   "ids": {
+    "doi": "10.1016/j.biopsych.2009.11.016",
+    "pmid": "20044072",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/20044072/",
+    "doi": "https://doi.org/10.1016/j.biopsych.2009.11.016",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Chronic intractable eating disorder (restrictive)",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Subgenual cingulate DBS for treatment-resistant depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": "3 years",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "Phase 1 trial of subcallosal cingulate DBS in anorexia nervosa (Lipsman et al., Lancet 2013;381:1361-70)",
+    "links": []
+   },
+   "summary": "Stimulation aimed at refractory depression put the patient's comorbid chronic eating disorder into lasting remission, with weight normalised.",
+   "caveat": "",
+   "tags": [
+    "anorexia",
+    "dbs",
+    "eating",
+    "pilot-followed",
+    "subgenual-cingulate"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "moreno-delgado-1997",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "top12"
+   ],
+   "citation": {
+    "authors": "Moreno FA, Delgado PL.",
+    "title": "Hallucinogen-induced relief of obsessions and compulsions.",
+    "journal": "Am J Psychiatry",
+    "year": 1997,
+    "volume": "154",
+    "issue": "7",
+    "pages": "1037-1038"
+   },
+   "ids": {
+    "doi": "10.1176/ajp.154.7.1037b",
+    "pmid": "9210762",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/9210762/",
+    "doi": "https://doi.org/10.1176/ajp.154.7.1037b",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Obsessive-compulsive disorder",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Recreational substance",
+    "specific": "Psilocybin mushrooms",
+    "intent": "Self-administered"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "First psilocybin trial in OCD",
+    "links": [
+     {
+      "label": "Moreno et al., J Clin Psychiatry 2006",
+      "doi": "10.4088/JCP.v67n1110"
+     }
+    ]
+   },
+   "summary": "A man was free of obsessions during psilocybin intoxication, and relief persisted with repeated use despite tolerance to the psychedelic effects.",
+   "caveat": "",
+   "tags": [
+    "ocd",
+    "pilot-followed",
+    "psilocybin",
+    "psychedelic",
+    "replicated"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "miyaoka-2017",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "top12"
+   ],
+   "citation": {
+    "authors": "Miyaoka T, Wake R, Hashioka S, et al.",
+    "title": "Remission of Psychosis in Treatment-Resistant Schizophrenia following Bone Marrow Transplantation: A Case Report.",
+    "journal": "Front Psychiatry",
+    "year": 2017,
+    "volume": "8",
+    "issue": "",
+    "pages": "174"
+   },
+   "ids": {
+    "doi": "10.3389/fpsyt.2017.00174",
+    "pmid": "28983259",
+    "pmcid": "PMC5613125"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5613125/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/28983259/",
+    "doi": "https://doi.org/10.3389/fpsyt.2017.00174",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Treatment-resistant paranoid schizophrenia",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Immune reset",
+    "specific": "Bone marrow transplant for acute myeloid leukaemia",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": "30 days",
+    "follow_up": "8 years",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "Registry studies have since tested the immune-transfer idea (see context records)",
+    "links": []
+   },
+   "summary": "Psychosis almost vanished within 30 days of a marrow transplant for leukaemia and stayed gone off antipsychotics at 8 years.",
+   "caveat": "Confounded by post-transplant methotrexate, ciclosporin and tacrolimus.",
+   "tags": [
+    "immune",
+    "schizophrenia",
+    "transplant",
+    "treatment-resistant"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "kraft-westman-2009",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "top12"
+   ],
+   "citation": {
+    "authors": "Kraft BD, Westman EC.",
+    "title": "Schizophrenia, gluten, and low-carbohydrate, ketogenic diets: a case report and review of the literature.",
+    "journal": "Nutr Metab (Lond)",
+    "year": 2009,
+    "volume": "6",
+    "issue": "",
+    "pages": "10"
+   },
+   "ids": {
+    "doi": "10.1186/1743-7075-6-10",
+    "pmid": "19245705",
+    "pmcid": "PMC2652467"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2652467/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/19245705/",
+    "doi": "https://doi.org/10.1186/1743-7075-6-10",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenia with hallucinations since age 17",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Diet",
+    "specific": "Low-carbohydrate ketogenic diet for weight loss",
+    "intent": "Lifestyle change"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": "12 months (12 years per Palmer 2019)",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "Further ketogenic-diet cases (Palmer 2017, 2019; Laurent 2025)",
+    "links": []
+   },
+   "summary": "A 70-year-old's hallucinations of 53 years stopped abruptly after she started a ketogenic diet to lose weight.",
+   "caveat": "",
+   "tags": [
+    "diet",
+    "ketogenic",
+    "replicated",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "de-santis-1997",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "top12"
+   ],
+   "citation": {
+    "authors": "De Santis A, Addolorato G, Romito A, et al.",
+    "title": "Schizophrenic symptoms and SPECT abnormalities in a coeliac patient: regression after a gluten-free diet.",
+    "journal": "J Intern Med",
+    "year": 1997,
+    "volume": "242",
+    "issue": "5",
+    "pages": "421-423"
+   },
+   "ids": {
+    "doi": "10.1046/j.1365-2796.1997.00200.x",
+    "pmid": "9408073",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/9408073/",
+    "doi": "https://doi.org/10.1046/j.1365-2796.1997.00200.x",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Established 'schizophrenic' disorder (possibly secondary to coeliac disease)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Diet",
+    "specific": "Gluten-free diet for newly diagnosed coeliac disease",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "Later cases of gluten-related psychosis",
+    "links": []
+   },
+   "summary": "Psychiatric symptoms disappeared on a gluten-free diet, and frontal hypoperfusion on SPECT normalised with them.",
+   "caveat": "Arguably a misdiagnosed secondary psychosis.",
+   "tags": [
+    "coeliac",
+    "diet",
+    "gluten",
+    "imaging",
+    "psychosis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "solyom-1987",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "top12"
+   ],
+   "citation": {
+    "authors": "Solyom L, Turnbull IM, Wilensky M.",
+    "title": "A case of self-inflicted leucotomy.",
+    "journal": "Br J Psychiatry",
+    "year": 1987,
+    "volume": "151",
+    "issue": "",
+    "pages": "855-857"
+   },
+   "ids": {
+    "doi": "10.1192/bjp.151.6.855",
+    "pmid": "3502814",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/3502814/",
+    "doi": "https://doi.org/10.1192/bjp.151.6.855",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Disabling obsessive-compulsive disorder",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Traumatic brain injury",
+    "specific": "Self-inflicted gunshot wound, left frontal lobe",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "Heads a trail of lesion-OCD cases",
+    "links": []
+   },
+   "summary": "After a gunshot wound to the left frontal lobe, a 19-year-old's rituals were markedly reduced without intellectual decline.",
+   "caveat": "",
+   "tags": [
+    "frontal",
+    "gunshot",
+    "historical",
+    "ocd",
+    "tbi"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "yaryura-tobias-2003",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "top12"
+   ],
+   "citation": {
+    "authors": "Yaryura-Tobias JA, Neziroglu F.",
+    "title": "Basal ganglia hemorrhagic ablation associated with temporary suppression of obsessive-compulsive symptoms.",
+    "journal": "Rev Bras Psiquiatr",
+    "year": 2003,
+    "volume": "25",
+    "issue": "1",
+    "pages": "40-42"
+   },
+   "ids": {
+    "doi": "10.1590/s1516-44462003000100008",
+    "pmid": "12975678",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": "https://doi.org/10.1590/S1516-44462003000100008",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/12975678/",
+    "doi": "https://doi.org/10.1590/s1516-44462003000100008",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Severe obsessive-compulsive disorder",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Left basal ganglia haemorrhage",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "Natural off-on"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "Cited among lesion-OCD cases",
+    "links": []
+   },
+   "summary": "Severe OCD disappeared after a basal ganglia haemorrhage and returned as the blood was reabsorbed.",
+   "caveat": "",
+   "tags": [
+    "basal-ganglia",
+    "lesion",
+    "ocd",
+    "off-on"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "leonard-rapoport-1987",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round1"
+   ],
+   "citation": {
+    "authors": "Leonard HL, Rapoport JL.",
+    "title": "Relief of obsessive-compulsive symptoms by LSD and psilocin.",
+    "journal": "Am J Psychiatry",
+    "year": 1987,
+    "volume": "144",
+    "issue": "9",
+    "pages": "1239-1240"
+   },
+   "ids": {
+    "doi": "10.1176/ajp.144.9.1239b",
+    "pmid": "3631327",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/3631327/",
+    "doi": "https://doi.org/10.1176/ajp.144.9.1239b",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Severe obsessive-compulsive disorder with substance use",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Recreational substance",
+    "specific": "LSD and psilocin",
+    "intent": "Self-administered"
+   },
+   "outcome": {
+    "resolution": "Unclear",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "Same pathway as Moreno & Delgado 1997",
+    "links": []
+   },
+   "summary": "An adolescent with severe OCD reported relief of symptoms after taking LSD and psilocin.",
+   "caveat": "",
+   "tags": [
+    "lsd",
+    "ocd",
+    "psilocybin",
+    "psychedelic"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "palmer-2017",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round1"
+   ],
+   "citation": {
+    "authors": "Palmer CM.",
+    "title": "Ketogenic diet in the treatment of schizoaffective disorder: Two case studies.",
+    "journal": "Schizophr Res",
+    "year": 2017,
+    "volume": "189",
+    "issue": "",
+    "pages": "208-209"
+   },
+   "ids": {
+    "doi": "10.1016/j.schres.2017.01.053",
+    "pmid": "28162810",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/28162810/",
+    "doi": "https://doi.org/10.1016/j.schres.2017.01.053",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Treatment-resistant schizoaffective disorder",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Diet",
+    "specific": "Ketogenic diet started for weight loss",
+    "intent": "Lifestyle change"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "On-off rechallenge"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Two patients with refractory schizoaffective disorder improved on a ketogenic diet begun for weight loss, worsening when they stopped it.",
+   "caveat": "On-off pattern reported in a secondary summary; check the full text.",
+   "tags": [
+    "diet",
+    "ketogenic",
+    "rechallenge",
+    "schizoaffective"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "palmer-2019",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round1"
+   ],
+   "citation": {
+    "authors": "Palmer CM, Gilbert-Jaramillo J, Westman EC.",
+    "title": "The ketogenic diet and remission of psychotic symptoms in schizophrenia: Two case studies.",
+    "journal": "Schizophr Res",
+    "year": 2019,
+    "volume": "208",
+    "issue": "",
+    "pages": "439-440"
+   },
+   "ids": {
+    "doi": "10.1016/j.schres.2019.03.019",
+    "pmid": "30962118",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/30962118/",
+    "doi": "https://doi.org/10.1016/j.schres.2019.03.019",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Chronic schizophrenia",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Diet",
+    "specific": "Ketogenic diet",
+    "intent": "Lifestyle change"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": "Up to 12 years",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Two women with chronic schizophrenia in remission on a ketogenic diet, including a 12-year follow-up of the Kraft & Westman patient.",
+   "caveat": "One of the two patients is the Kraft & Westman 2009 patient: do not double-count.",
+   "tags": [
+    "diet",
+    "follow-up",
+    "ketogenic",
+    "schizophrenia"
+   ],
+   "same_patient_as": "kraft-westman-2009",
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "fontaine-2004",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round1"
+   ],
+   "citation": {
+    "authors": "Fontaine D, Mattei V, Borg M, et al.",
+    "title": "Effect of subthalamic nucleus stimulation on obsessive-compulsive disorder in a patient with Parkinson disease. Case report.",
+    "journal": "J Neurosurg",
+    "year": 2004,
+    "volume": "100",
+    "issue": "6",
+    "pages": "1084-1086"
+   },
+   "ids": {
+    "doi": "10.3171/jns.2004.100.6.1084",
+    "pmid": "15200126",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/15200126/",
+    "doi": "https://doi.org/10.3171/jns.2004.100.6.1084",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Severe obsessive-compulsive disorder of 16 years (comorbid Parkinson's disease)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Subthalamic nucleus DBS for Parkinson's disease",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": "1 year",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 3,
+    "note": "Independent replication of Mallet 2002; STOC trial followed",
+    "links": []
+   },
+   "summary": "Subthalamic stimulation for Parkinson's took a 16-year OCD from Yale-Brown 32 to 1 at one year.",
+   "caveat": "",
+   "tags": [
+    "dbs",
+    "ocd",
+    "parkinsons",
+    "replication",
+    "subthalamic-nucleus"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "known",
+    "note": "Replicated Mallet 2002; the randomised STOC trial followed.",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "oh-2011",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round1"
+   ],
+   "citation": {
+    "authors": "Oh JH, Ahn BY, Jo MK, et al.",
+    "title": "Obsessive-compulsive behavior disappearing after left capsular genu infarction.",
+    "journal": "Case Rep Neurol",
+    "year": 2011,
+    "volume": "3",
+    "issue": "1",
+    "pages": "18-20"
+   },
+   "ids": {
+    "doi": "10.1159/000323667",
+    "pmid": "21327181",
+    "pmcid": "PMC3037989"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3037989/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/21327181/",
+    "doi": "https://doi.org/10.1159/000323667",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Obsessive-compulsive behaviours (74-year-old woman)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Left capsular genu infarct",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Obsessive-compulsive behaviours disappeared after an infarct at the internal capsule genu, close to the capsulotomy target.",
+   "caveat": "",
+   "tags": [
+    "internal-capsule",
+    "lesion",
+    "ocd"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "sani-2007",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round1"
+   ],
+   "citation": {
+    "authors": "Sani G, Manfredi G, Pacchiarotti I, et al.",
+    "title": "A case of resolution of an acute psychotic episode after high fever.",
+    "journal": "CNS Spectr",
+    "year": 2007,
+    "volume": "12",
+    "issue": "6",
+    "pages": "447-450"
+   },
+   "ids": {
+    "doi": "10.1017/s1092852900015327",
+    "pmid": "17545955",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/17545955/",
+    "doi": "https://doi.org/10.1017/s1092852900015327",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Acute psychotic episode in schizoaffective disorder",
+    "chronic": false,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "High fever from a urinary infection",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Psychotic symptoms resolved immediately as a high fever abated, after antipsychotics had been stopped.",
+   "caveat": "Acute episode: spontaneous remission is plausible.",
+   "tags": [
+    "fever",
+    "infection",
+    "psychosis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "sandyk-1988",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round1"
+   ],
+   "citation": {
+    "authors": "Sandyk R, Awerbuch G.",
+    "title": "Marijuana and Tourette's syndrome.",
+    "journal": "J Clin Psychopharmacol",
+    "year": 1988,
+    "volume": "8",
+    "issue": "6",
+    "pages": "444-445"
+   },
+   "ids": {
+    "doi": "10.1097/00004714-198812000-00021",
+    "pmid": "3235704",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/3235704/",
+    "doi": "https://doi.org/10.1097/00004714-198812000-00021",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": null,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Tourette syndrome",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Recreational substance",
+    "specific": "Recreational cannabis",
+    "intent": "Self-administered"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 3,
+    "note": "Later THC trials in Tourette syndrome (Müller-Vahl)",
+    "links": []
+   },
+   "summary": "Patients with Tourette syndrome who smoked cannabis recreationally reported fewer tics, about half in one case.",
+   "caveat": "Number of patients not confirmed from the abstract.",
+   "tags": [
+    "cannabis",
+    "tics",
+    "tourette"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "moussawi-2016",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Moussawi K, Kalivas PW, Lee JW.",
+    "title": "Abstinence From Drug Dependence After Bilateral Globus Pallidus Hypoxic-Ischemic Injury.",
+    "journal": "Biol Psychiatry",
+    "year": 2016,
+    "volume": "80",
+    "issue": "9",
+    "pages": "e79-e80"
+   },
+   "ids": {
+    "doi": "10.1016/j.biopsych.2016.04.005",
+    "pmid": "27311800",
+    "pmcid": "PMC5238511"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5238511/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/27311800/",
+    "doi": "https://doi.org/10.1016/j.biopsych.2016.04.005",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Severe alcohol and opioid dependence",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Bilateral globus pallidus hypoxic-ischaemic injury after methadone overdose",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "Fed into the Joutsa 2022 pooled lesion analysis",
+    "links": []
+   },
+   "summary": "After an overdose damaged both globus pallidi, a woman with refractory alcohol and opioid dependence stayed abstinent.",
+   "caveat": "",
+   "tags": [
+    "addiction",
+    "alcohol",
+    "globus-pallidus",
+    "hypoxia",
+    "lesion",
+    "opioid"
+   ],
+   "same_patient_as": null,
+   "found_via": "Consensus",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "haque-2025",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Haque S, Bellmunt-Gil A, Davidson B, et al.",
+    "title": "Remission of alcohol use disorder following traumatic brain injury with focal orbitofrontal cortex hemorrhage: case report and network mapping.",
+    "journal": "Commun Med (Lond)",
+    "year": 2025,
+    "volume": "5",
+    "issue": "1",
+    "pages": "69"
+   },
+   "ids": {
+    "doi": "10.1038/s43856-025-00760-7",
+    "pmid": "40075136",
+    "pmcid": "PMC11903661"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11903661/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/40075136/",
+    "doi": "https://doi.org/10.1038/s43856-025-00760-7",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Chronic treatment-refractory alcohol use disorder",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Traumatic brain injury",
+    "specific": "Head injury with focal left orbitofrontal haemorrhage",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 42-year-old's refractory alcohol use disorder remitted after a focal orbitofrontal bleed; the lesion was mapped onto the addiction circuit.",
+   "caveat": "",
+   "tags": [
+    "addiction",
+    "alcohol",
+    "network-mapping",
+    "orbitofrontal",
+    "tbi"
+   ],
+   "same_patient_as": null,
+   "found_via": "Consensus",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "mackillop-2026",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "MacKillop EJA, McIntyre-Wood C, Vaughn DW, et al.",
+    "title": "The man who forgot his addiction: Sustained remission of cocaine use disorder following overdose-induced bilateral hippocampus stroke.",
+    "journal": "Clin Neuropsychol",
+    "year": 2026,
+    "volume": "",
+    "issue": "",
+    "pages": "1-18"
+   },
+   "ids": {
+    "doi": "10.1080/13854046.2026.2651223",
+    "pmid": "42011056",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/42011056/",
+    "doi": "https://doi.org/10.1080/13854046.2026.2651223",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Severe long-standing cocaine use disorder",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Bilateral hippocampal ischaemic stroke after cocaine overdose",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": "12 months",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 52-year-old with bilateral hippocampal stroke and dense amnesia remained in remission from cocaine use disorder at 12 months.",
+   "caveat": "",
+   "tags": [
+    "addiction",
+    "amnesia",
+    "cocaine",
+    "hippocampus",
+    "lesion"
+   ],
+   "same_patient_as": null,
+   "found_via": "Consensus",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "jarraya-2010",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Jarraya B, Brugières P, Tani N, et al.",
+    "title": "Disruption of cigarette smoking addiction after posterior cingulate damage.",
+    "journal": "J Neurosurg",
+    "year": 2010,
+    "volume": "113",
+    "issue": "6",
+    "pages": "1219-1221"
+   },
+   "ids": {
+    "doi": "10.3171/2010.6.jns10346",
+    "pmid": "20597598",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/20597598/",
+    "doi": "https://doi.org/10.3171/2010.6.jns10346",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Tobacco addiction",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Haemorrhage from an arteriovenous malformation, posterior cingulate cortex",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": "Immediate",
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 35-year-old's smoking addiction stopped immediately and completely after a posterior cingulate haemorrhage.",
+   "caveat": "",
+   "tags": [
+    "addiction",
+    "lesion",
+    "posterior-cingulate",
+    "smoking"
+   ],
+   "same_patient_as": null,
+   "found_via": "Consensus",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "yeung-2020",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Yeung A, Rapoport M.",
+    "title": "Paradoxical complete and spontaneous resolution of depression, psychosis, and suicidal ideation following a traumatic brain injury.",
+    "journal": "Brain Inj",
+    "year": 2020,
+    "volume": "34",
+    "issue": "10",
+    "pages": "1427-1430"
+   },
+   "ids": {
+    "doi": "10.1080/02699052.2020.1805125",
+    "pmid": "33331803",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/33331803/",
+    "doi": "https://doi.org/10.1080/02699052.2020.1805125",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Psychotic"
+    ],
+    "specific": "Depression with psychosis and suicidal ideation",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Traumatic brain injury",
+    "specific": "Closed-head left-hemisphere injury in a suicide attempt",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": "Immediate",
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 65-year-old's depression, psychosis and suicidal ideation resolved immediately after a left-hemisphere closed head injury.",
+   "caveat": "",
+   "tags": [
+    "depression",
+    "psychosis",
+    "tbi"
+   ],
+   "same_patient_as": null,
+   "found_via": "Consensus",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "smith-2025",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Smith S, Kumar M, Absher J.",
+    "title": "Frontal damage and resolution of schizophrenia in a patient with self-inflicted gunshot wound: a case report.",
+    "journal": "BMC Neurol",
+    "year": 2025,
+    "volume": "25",
+    "issue": "1",
+    "pages": "78"
+   },
+   "ids": {
+    "doi": "10.1186/s12883-024-03862-2",
+    "pmid": "39994665",
+    "pmcid": "PMC11849385"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11849385/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/39994665/",
+    "doi": "https://doi.org/10.1186/s12883-024-03862-2",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Paranoid schizophrenia",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Traumatic brain injury",
+    "specific": "Self-inflicted gunshot wound with frontal damage",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": "7 years",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Psychosis resolved after a frontal gunshot wound and was still resolved at reassessment seven years later.",
+   "caveat": "",
+   "tags": [
+    "frontal",
+    "gunshot",
+    "schizophrenia",
+    "tbi"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "erol-durgun-2026",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Erol Durgun O, Sivan M, Sapsford H, Haider J.",
+    "title": "Improvement in psychiatric symptoms after subdural haematoma and decompressive craniotomy.",
+    "journal": "BMJ Case Rep",
+    "year": 2026,
+    "volume": "19",
+    "issue": "4",
+    "pages": "e266529"
+   },
+   "ids": {
+    "doi": "10.1136/bcr-2025-266529",
+    "pmid": "41946537",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/41946537/",
+    "doi": "https://doi.org/10.1136/bcr-2025-266529",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Paranoid schizophrenia with autism and a personality disorder",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Traumatic brain injury",
+    "specific": "Left subdural haematoma and decompressive craniotomy",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Long-standing hallucinations and self-harm resolved after a subdural haematoma and craniotomy, and antipsychotics were tapered.",
+   "caveat": "Confounded by a structured rehabilitation setting and reduced polypharmacy.",
+   "tags": [
+    "confounded",
+    "neurosurgery",
+    "schizophrenia",
+    "tbi"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "diamond-2011",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Diamond A, Ondo WG.",
+    "title": "Resolution of severe obsessive--compulsive disorder after a small unilateral nondominant frontoparietal infarct.",
+    "journal": "Int J Neurosci",
+    "year": 2011,
+    "volume": "121",
+    "issue": "7",
+    "pages": "405-407"
+   },
+   "ids": {
+    "doi": "10.3109/00207454.2011.561941",
+    "pmid": "21426244",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/21426244/",
+    "doi": "https://doi.org/10.3109/00207454.2011.561941",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Severe obsessive-compulsive disorder",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Small right posterior frontoparietal infarct",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": "Immediate",
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Severe OCD disappeared immediately after a small right frontoparietal infarct.",
+   "caveat": "",
+   "tags": [
+    "frontoparietal",
+    "lesion",
+    "ocd"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "sosa-gomez-2026",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Sosa Gomez AE, Go RM, Valdez D.",
+    "title": "Seizure-Induced Resolution of Depressive and Psychotic Symptoms in a Pregnant Patient: A Case of Spontaneous Neuromodulation.",
+    "journal": "Cureus",
+    "year": 2026,
+    "volume": "18",
+    "issue": "6",
+    "pages": "e110418"
+   },
+   "ids": {
+    "doi": "10.7759/cureus.110418",
+    "pmid": "42422634",
+    "pmcid": "PMC13343248"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343248/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/42422634/",
+    "doi": "https://doi.org/10.7759/cureus.110418",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Psychotic"
+    ],
+    "specific": "Treatment-resistant depression with psychotic features",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Seizures",
+    "specific": "Spontaneous seizures during pregnancy",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 23-year-old's treatment-resistant psychotic depression resolved after spontaneous seizures in pregnancy.",
+   "caveat": "",
+   "tags": [
+    "convulsive",
+    "depression",
+    "pregnancy",
+    "psychosis",
+    "seizure"
+   ],
+   "same_patient_as": null,
+   "found_via": "Consensus",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "gupta-2026",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Gupta RR, Ramdurg S.",
+    "title": "Remission of Psychotic Symptoms Following Seizures in a Patient With an Episodic Psychotic Disorder.",
+    "journal": "Cureus",
+    "year": 2026,
+    "volume": "18",
+    "issue": "3",
+    "pages": "e104667"
+   },
+   "ids": {
+    "doi": "10.7759/cureus.104667",
+    "pmid": "41939690",
+    "pmcid": "PMC13048452"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13048452/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/41939690/",
+    "doi": "https://doi.org/10.7759/cureus.104667",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Relapse of an episodic psychotic disorder",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Seizures",
+    "specific": "Two febrile generalised seizures needing intensive care",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Psychosis remitted completely after two febrile generalised seizures and stayed in remission at follow-up.",
+   "caveat": "Episodic illness and partial antipsychotic response beforehand.",
+   "tags": [
+    "convulsive",
+    "fever",
+    "psychosis",
+    "seizure"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "faruqui-2022",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Faruqui Z, Kim C.",
+    "title": "The Incidental Resolution of Severe Alcohol Use Disorder during Esketamine Treatment of Major Depressive Disorder: A Case Report.",
+    "journal": "Case Rep Psychiatry",
+    "year": 2022,
+    "volume": "",
+    "issue": "",
+    "pages": "8992697"
+   },
+   "ids": {
+    "doi": "10.1155/2022/8992697",
+    "pmid": "36568330",
+    "pmcid": "PMC9779988"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9779988/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/36568330/",
+    "doi": "https://doi.org/10.1155/2022/8992697",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Severe alcohol use disorder",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Intranasal esketamine for treatment-resistant depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 61-year-old's severe alcohol use disorder resolved during esketamine treatment given for her depression.",
+   "caveat": "",
+   "tags": [
+    "alcohol",
+    "esketamine",
+    "ketamine"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "jewett-2020",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Jewett BE, Miller MN, Ligon LA, et al.",
+    "title": "Rapid and temporary improvement of depression and anxiety observed following niraparib administration: a case report.",
+    "journal": "BMC Psychiatry",
+    "year": 2020,
+    "volume": "20",
+    "issue": "1",
+    "pages": "171"
+   },
+   "ids": {
+    "doi": "10.1186/s12888-020-02590-4",
+    "pmid": "32295563",
+    "pmcid": "PMC7161116"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7161116/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/32295563/",
+    "doi": "https://doi.org/10.1186/s12888-020-02590-4",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Anxiety"
+    ],
+    "specific": "Recurrent major depression with generalised anxiety",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Niraparib (PARP inhibitor) maintenance for ovarian cancer",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": "Rapid",
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Depression and anxiety that had resisted several medicines resolved rapidly but temporarily after niraparib was started for ovarian cancer.",
+   "caveat": "",
+   "tags": [
+    "anxiety",
+    "depression",
+    "oncology",
+    "parp-inhibitor",
+    "temporary"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "downar-2012",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Downar J, Sankar A, Giacobbe P, Woodside B, Colton P.",
+    "title": "Unanticipated Rapid Remission of Refractory Bulimia Nervosa, during High-Dose Repetitive Transcranial Magnetic Stimulation of the Dorsomedial Prefrontal Cortex: A Case Report.",
+    "journal": "Front Psychiatry",
+    "year": 2012,
+    "volume": "3",
+    "issue": "",
+    "pages": "30"
+   },
+   "ids": {
+    "doi": "10.3389/fpsyt.2012.00030",
+    "pmid": "22529822",
+    "pmcid": "PMC3330246"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3330246/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/22529822/",
+    "doi": "https://doi.org/10.3389/fpsyt.2012.00030",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Severe refractory bulimia nervosa",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Dorsomedial prefrontal rTMS for comorbid depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": "After session 2",
+    "follow_up": "More than 2 months",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Twice-daily five-hour binge-purge episodes stopped after the second session of rTMS given for depression.",
+   "caveat": "",
+   "tags": [
+    "bulimia",
+    "dorsomedial-prefrontal",
+    "eating",
+    "rtms"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC full text",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "abdollahifard-2026",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Abdollahifard S, Mostafeenezhad N, Yousefi O, et al.",
+    "title": "Incidental resolution of pedophilia in a patient undergoing deep brain stimulation (DBS) for obsessive-compulsive disorder (OCD): a case report and long-term follow-up.",
+    "journal": "Neurol Sci",
+    "year": 2026,
+    "volume": "47",
+    "issue": "2",
+    "pages": "223"
+   },
+   "ids": {
+    "doi": "10.1007/s10072-026-08808-9",
+    "pmid": "41629421",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/41629421/",
+    "doi": "https://doi.org/10.1007/s10072-026-08808-9",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Paraphilic"
+    ],
+    "specific": "Paedophilic disorder (comorbid with refractory OCD)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Bed nucleus of stria terminalis / anterior capsule DBS for OCD",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": "Long-term",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Paedophilic desires resolved gradually after DBS for OCD, documented by serial assessments over long-term follow-up.",
+   "caveat": "",
+   "tags": [
+    "bnst",
+    "dbs",
+    "ocd",
+    "paraphilia"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "klok-2025",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Klok PM, Vermeulen M, Stone J, Bloem BR.",
+    "title": "Improvement of functional paralysis following unexpected comatose states.",
+    "journal": "Pract Neurol",
+    "year": 2025,
+    "volume": "25",
+    "issue": "6",
+    "pages": "562-565"
+   },
+   "ids": {
+    "doi": "10.1136/pn-2024-004510",
+    "pmid": "40335277",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/40335277/",
+    "doi": "https://doi.org/10.1136/pn-2024-004510",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Functional neurological"
+    ],
+    "specific": "Chronic functional paralysis",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Coma / anaesthesia",
+    "specific": "Medically induced coma for COVID respiratory distress; coma after an overdose",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Two patients' long-standing functional paralysis recovered after unplanned comatose states.",
+   "caveat": "",
+   "tags": [
+    "anaesthesia",
+    "coma",
+    "functional-neurological"
+   ],
+   "same_patient_as": null,
+   "found_via": "Consensus",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "hefzy-2011",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Hefzy H, Silver RW, Silver B.",
+    "title": "The no smoking sign--insular infarction.",
+    "journal": "J Neuroimaging",
+    "year": 2011,
+    "volume": "21",
+    "issue": "2",
+    "pages": "e169-70"
+   },
+   "ids": {
+    "doi": "10.1111/j.1552-6569.2010.00486.x",
+    "pmid": "20609039",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/20609039/",
+    "doi": "https://doi.org/10.1111/j.1552-6569.2010.00486.x",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Tobacco addiction (40 pack-years)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Insular ischaemic stroke",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": "5 months",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A heavy smoker stopped without aids or intent after an insular stroke, replicating Naqvi.",
+   "caveat": "",
+   "tags": [
+    "insula",
+    "lesion",
+    "replication",
+    "smoking"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "known",
+    "note": "Reported after the insula-smoking link was published (Naqvi 2007): a replication of an effect already known.",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "najeeb-2016",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Najeeb F, Silver B, Khan M.",
+    "title": "Cessation of Smoking and Alcohol Addiction Following Thalamic Hemorrhage.",
+    "journal": "Neurologist",
+    "year": 2016,
+    "volume": "21",
+    "issue": "6",
+    "pages": "91-92"
+   },
+   "ids": {
+    "doi": "10.1097/nrl.0000000000000091",
+    "pmid": "27801766",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/27801766/",
+    "doi": "https://doi.org/10.1097/nrl.0000000000000091",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Tobacco and alcohol use",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Left thalamic haemorrhage",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "After a thalamic bleed a woman stopped smoking abruptly, without craving, and developed an aversion to alcohol.",
+   "caveat": "",
+   "tags": [
+    "alcohol",
+    "lesion",
+    "smoking",
+    "thalamus"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "yuan-2025",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Yuan M, Xu R.",
+    "title": "Reduced nicotine dependence following traumatic brain injury in an elderly patient: a case report and literature review.",
+    "journal": "Front Hum Neurosci",
+    "year": 2025,
+    "volume": "19",
+    "issue": "",
+    "pages": "1619775"
+   },
+   "ids": {
+    "doi": "10.3389/fnhum.2025.1619775",
+    "pmid": "40746908",
+    "pmcid": "PMC12310724"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12310724/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/40746908/",
+    "doi": "https://doi.org/10.3389/fnhum.2025.1619775",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Heavy nicotine dependence (about 60 pack-years)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Traumatic brain injury",
+    "specific": "Severe head injury with subdural and subarachnoid haemorrhage",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": "6 months",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "An 87-year-old lost all nicotine craving after a severe head injury and was still abstinent at six months.",
+   "caveat": "",
+   "tags": [
+    "smoking",
+    "tbi"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "valadez-cuen-2024",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Valadez-Cuen K, Kozorosky E, Farahnik F, Garcia O.",
+    "title": "An Unexpected Outcome of an Ischemic Stroke on the Reward Pathways in the Human Brain.",
+    "journal": "HCA Healthc J Med",
+    "year": 2024,
+    "volume": "5",
+    "issue": "6",
+    "pages": "721-725"
+   },
+   "ids": {
+    "doi": "10.36518/2689-0216.1707",
+    "pmid": "39790695",
+    "pmcid": "PMC11708937"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11708937/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/39790695/",
+    "doi": "https://doi.org/10.36518/2689-0216.1707",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Extensive smoking history",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Left basal ganglia stroke including caudate and nucleus accumbens",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 63-year-old smoker stopped after a stroke involving the caudate and nucleus accumbens.",
+   "caveat": "",
+   "tags": [
+    "basal-ganglia",
+    "lesion",
+    "nucleus-accumbens",
+    "smoking"
+   ],
+   "same_patient_as": null,
+   "found_via": "Consensus",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "pantoni-1997",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Pantoni L, Poggesi L, Repice A, Inzitari D.",
+    "title": "Disappearance of motor tics after Wernicke's encephalopathy in a patient with Tourette's syndrome.",
+    "journal": "Neurology",
+    "year": 1997,
+    "volume": "48",
+    "issue": "2",
+    "pages": "381-383"
+   },
+   "ids": {
+    "doi": "10.1212/wnl.48.2.381",
+    "pmid": "9040726",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/9040726/",
+    "doi": "https://doi.org/10.1212/wnl.48.2.381",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Tourette syndrome",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Wernicke encephalopathy with a dorsal midbrain lesion",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 48-year-old's motor tics disappeared after a dorsal midbrain lesion from thiamine deficiency.",
+   "caveat": "",
+   "tags": [
+    "lesion",
+    "midbrain",
+    "tics",
+    "tourette",
+    "wernicke"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "kosel-2007",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Kosel M, Sturm V, Frick C, et al.",
+    "title": "Mood improvement after deep brain stimulation of the internal globus pallidus for tardive dyskinesia in a patient suffering from major depression.",
+    "journal": "J Psychiatr Res",
+    "year": 2007,
+    "volume": "41",
+    "issue": "9",
+    "pages": "801-803"
+   },
+   "ids": {
+    "doi": "10.1016/j.jpsychires.2006.07.010",
+    "pmid": "16962613",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/16962613/",
+    "doi": "https://doi.org/10.1016/j.jpsychires.2006.07.010",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Treatment-refractory major depressive episode",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Internal globus pallidus DBS for tardive dyskinesia",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": "18 months",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Pallidal stimulation for tardive dyskinesia also substantially improved a refractory depression.",
+   "caveat": "",
+   "tags": [
+    "dbs",
+    "depression",
+    "globus-pallidus"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "sciortino-2021",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Sciortino D, Schiena G, Cantù F, Maggioni E, Brambilla P.",
+    "title": "Case Report: Repeated Transcranial Magnetic Stimulation Improves Comorbid Binge Eating Disorder in Two Female Patients With Treatment-Resistant Bipolar Depression.",
+    "journal": "Front Psychiatry",
+    "year": 2021,
+    "volume": "12",
+    "issue": "",
+    "pages": "732066"
+   },
+   "ids": {
+    "doi": "10.3389/fpsyt.2021.732066",
+    "pmid": "34955908",
+    "pmcid": "PMC8695790"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8695790/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/34955908/",
+    "doi": "https://doi.org/10.3389/fpsyt.2021.732066",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Binge eating disorder (comorbid bipolar II depression)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Accelerated iTBS to left dorsolateral prefrontal cortex for bipolar depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Binge eating improved in two women given accelerated theta-burst stimulation for bipolar depression.",
+   "caveat": "",
+   "tags": [
+    "binge-eating",
+    "eating",
+    "itbs",
+    "rtms"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "rammouz-2024",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Rammouz I, El Oumary O, Aalouane R, Souirti Z, Boujraf S.",
+    "title": "Unexpected improvement in nicotine consumption after low-frequency repetitive magnetic stimulation.",
+    "journal": "Int J Psychiatry Clin Pract",
+    "year": 2024,
+    "volume": "28",
+    "issue": "2",
+    "pages": "142-144"
+   },
+   "ids": {
+    "doi": "10.1080/13651501.2024.2417651",
+    "pmid": "39417536",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/39417536/",
+    "doi": "https://doi.org/10.1080/13651501.2024.2417651",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Tobacco use",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "1 Hz rTMS for depression and OCD",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Cigarette consumption fell unexpectedly in a man receiving low-frequency rTMS for depression and OCD.",
+   "caveat": "",
+   "tags": [
+    "rtms",
+    "smoking"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "barbieri-2005",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Barbieri V, Lo Russo G, Francione S, Scarone S, Gambini O.",
+    "title": "Association of temporal lobe epilepsy and obsessive-compulsive disorder in a patient successfully treated with right temporal lobectomy.",
+    "journal": "Epilepsy Behav",
+    "year": 2005,
+    "volume": "6",
+    "issue": "4",
+    "pages": "617-619"
+   },
+   "ids": {
+    "doi": "10.1016/j.yebeh.2005.02.010",
+    "pmid": "15907757",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/15907757/",
+    "doi": "https://doi.org/10.1016/j.yebeh.2005.02.010",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Obsessive-compulsive disorder beginning with temporal lobe epilepsy",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Right temporal lobectomy for epilepsy",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": "1 year",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "OCD that began with temporal lobe epilepsy went into near-complete remission after epilepsy surgery.",
+   "caveat": "",
+   "tags": [
+    "epilepsy",
+    "neurosurgery",
+    "ocd",
+    "temporal-lobe"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "meilinger-2026",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Meilinger A, Campbell MA, Reynolds HM, Chavez AS.",
+    "title": "The Role of Glucagon-Like Peptide-1 Receptor Agonists in Prompting a Meaningful Improvement in Alcohol Use Disorder.",
+    "journal": "J Prim Care Community Health",
+    "year": 2026,
+    "volume": "17",
+    "issue": "",
+    "pages": "21501319261437615"
+   },
+   "ids": {
+    "doi": "10.1177/21501319261437615",
+    "pmid": "41914511",
+    "pmcid": "PMC13039557"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13039557/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/41914511/",
+    "doi": "https://doi.org/10.1177/21501319261437615",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "High-risk alcohol use",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Semaglutide for obesity",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": "10 months",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A man prescribed semaglutide for obesity cut his drinking substantially over 10 months.",
+   "caveat": "",
+   "tags": [
+    "alcohol",
+    "glp1",
+    "replication",
+    "semaglutide"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "hill-2025",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Hill O, Hughes S, Singh A, Ang-Rabanes M, Mogallapu R.",
+    "title": "The role of dulaglutide in the treatment of alcohol use disorder: a case report.",
+    "journal": "Front Psychiatry",
+    "year": 2025,
+    "volume": "16",
+    "issue": "",
+    "pages": "1420316"
+   },
+   "ids": {
+    "doi": "10.3389/fpsyt.2025.1420316",
+    "pmid": "40375882",
+    "pmcid": "PMC12078295"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12078295/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/40375882/",
+    "doi": "https://doi.org/10.3389/fpsyt.2025.1420316",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Alcohol use disorder (about 90 beers a month)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Dulaglutide for weight loss",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Drinking fell in a man started on dulaglutide for weight loss.",
+   "caveat": "",
+   "tags": [
+    "alcohol",
+    "dulaglutide",
+    "glp1",
+    "replication"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "takizawa-2026",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Takizawa H, Tsuda A, Suriki H, Amagane H.",
+    "title": "Tirzepatide reduced alcohol use in three patients with alcohol-associated liver disease, type 2 diabetes, and obesity.",
+    "journal": "Endocrinol Diabetes Metab Case Rep",
+    "year": 2026,
+    "volume": "",
+    "issue": "2",
+    "pages": "EDM260002"
+   },
+   "ids": {
+    "doi": "10.1530/edm-26-0002",
+    "pmid": "41925328",
+    "pmcid": "PMC13052794"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13052794/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/41925328/",
+    "doi": "https://doi.org/10.1530/edm-26-0002",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case series",
+   "n_patients": 3,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Alcohol use (one with alcohol use disorder)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Tirzepatide for type 2 diabetes and obesity",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Three patients with alcohol-related liver disease drank less after starting tirzepatide.",
+   "caveat": "",
+   "tags": [
+    "alcohol",
+    "glp1",
+    "replication",
+    "tirzepatide"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "guerdjikova-2026",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Guerdjikova AI, Walter LL, McElroy SL.",
+    "title": "Improvement of Compulsive Shopping on Tirzepatide: A Case Report.",
+    "journal": "J Clin Psychopharmacol",
+    "year": 2026,
+    "volume": "46",
+    "issue": "3",
+    "pages": "338-339"
+   },
+   "ids": {
+    "doi": "10.1097/jcp.0000000000002135",
+    "pmid": "41632102",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/41632102/",
+    "doi": "https://doi.org/10.1097/jcp.0000000000002135",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Impulse-control"
+    ],
+    "specific": "Compulsive buying",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Tirzepatide",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Compulsive shopping improved on tirzepatide.",
+   "caveat": "No abstract; indication for tirzepatide not confirmed.",
+   "tags": [
+    "compulsive-buying",
+    "glp1",
+    "tirzepatide"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "kelly-2026",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Kelly H, Davis T.",
+    "title": "Incidental Resolution of Dopamine Agonist Induced Impulse Control Disorder with GLP-1 Receptor Agonist.",
+    "journal": "Mov Disord Clin Pract",
+    "year": 2026,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1002/mdc3.70704",
+    "pmid": "42260955",
+    "pmcid": "PMC13338974"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13338974/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/42260955/",
+    "doi": "https://doi.org/10.1002/mdc3.70704",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Impulse-control"
+    ],
+    "specific": "Dopamine agonist-induced impulse control disorder",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "GLP-1 receptor agonist",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "An impulse control disorder caused by a dopamine agonist resolved incidentally on a GLP-1 receptor agonist.",
+   "caveat": "No abstract; details from title only.",
+   "tags": [
+    "dopamine-agonist",
+    "glp1",
+    "impulse-control"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC full text",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "lugo-radillo-2021",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Lugo-Radillo A, Cortes-Lopez JL.",
+    "title": "Long-term Amelioration of OCD Symptoms in a Patient with Chronic Consumption of Psilocybin-containing Mushrooms.",
+    "journal": "J Psychoactive Drugs",
+    "year": 2021,
+    "volume": "53",
+    "issue": "2",
+    "pages": "146-148"
+   },
+   "ids": {
+    "doi": "10.1080/02791072.2020.1849879",
+    "pmid": "33225874",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/33225874/",
+    "doi": "https://doi.org/10.1080/02791072.2020.1849879",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Obsessive-compulsive disorder",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Recreational substance",
+    "specific": "Chronic psilocybin mushroom use",
+    "intent": "Self-administered"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A man's OCD improved meaningfully and lastingly with chronic consumption of psilocybin mushrooms.",
+   "caveat": "",
+   "tags": [
+    "ocd",
+    "psilocybin",
+    "psychedelic",
+    "replication"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "jansson-1984",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Jansson B, Kristjánsson E, Nilsson L.",
+    "title": "[Schizophrenic psychosis disappearing after patient is given gluten-free diet].",
+    "journal": "Lakartidningen",
+    "year": 1984,
+    "volume": "81",
+    "issue": "6",
+    "pages": "448-449"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "6700311",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/6700311/",
+    "doi": null,
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenic psychosis",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Diet",
+    "specific": "Gluten-free diet",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Swedish report of schizophrenic psychosis disappearing on a gluten-free diet, 13 years before De Santis.",
+   "caveat": "Swedish, no abstract: reason for the diet unconfirmed.",
+   "tags": [
+    "diet",
+    "gluten",
+    "historical",
+    "non-english",
+    "psychosis"
+   ],
+   "same_patient_as": null,
+   "found_via": "PubMed",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "joutsa-2022",
+   "record_type": "context",
+   "status": "Included",
+   "tier": null,
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Joutsa J, Moussawi K, Siddiqi SH, et al.",
+    "title": "Brain lesions disrupting addiction map to a common human brain circuit.",
+    "journal": "Nat Med",
+    "year": 2022,
+    "volume": "28",
+    "issue": "6",
+    "pages": "1249-1255"
+   },
+   "ids": {
+    "doi": "10.1038/s41591-022-01834-y",
+    "pmid": "35697842",
+    "pmcid": "PMC9205767"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9205767/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/35697842/",
+    "doi": "https://doi.org/10.1038/s41591-022-01834-y",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Pooled analysis",
+   "n_patients": 129,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Smoking addiction (two lesion cohorts) with alcohol risk validation",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Focal brain lesions",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Unclear",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "Lesions that ended smoking addiction sat in many places but mapped to one connected circuit, now a neuromodulation target.",
+   "caveat": "",
+   "tags": [
+    "addiction",
+    "lesion",
+    "network-mapping",
+    "pooled-analysis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "ekstrom-2022",
+   "record_type": "context",
+   "status": "Included",
+   "tier": null,
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Ekström LD, Pahnke S, Larfors G, et al.",
+    "title": "No evidence for transmission of psychosis, bipolar or depressive disorder via hematopoietic stem cell transplantation: A Swedish registry study.",
+    "journal": "Psychiatry Clin Neurosci",
+    "year": 2022,
+    "volume": "76",
+    "issue": "10",
+    "pages": "526-527"
+   },
+   "ids": {
+    "doi": "10.1111/pcn.13448",
+    "pmid": "35796307",
+    "pmcid": "PMC9804901"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9804901/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/35796307/",
+    "doi": "https://doi.org/10.1111/pcn.13448",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Registry study",
+   "n_patients": null,
+   "syndrome": {
+    "categories": [
+     "Psychotic",
+     "Mood"
+    ],
+    "specific": "Psychosis, bipolar and depressive disorders",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Immune reset",
+    "specific": "Haematopoietic stem cell transplant",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Unclear",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A national registry found no donor-to-recipient transmission of psychiatric disorders, weakening the immune-transfer reading of Miyaoka 2017.",
+   "caveat": "",
+   "tags": [
+    "counterpoint",
+    "registry",
+    "transplant"
+   ],
+   "same_patient_as": null,
+   "found_via": "Consensus",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "romer-2024",
+   "record_type": "context",
+   "status": "Included",
+   "tier": null,
+   "collections": [
+    "round2"
+   ],
+   "citation": {
+    "authors": "Rømer TB, Sengeløv H, Christensen RHB, Benros ME.",
+    "title": "Associations Between Mental Disorders in Donors and Matched Recipients of Hematopoietic Stem Cell Transplants: A Population-Based Cohort Study.",
+    "journal": "Biol Psychiatry Glob Open Sci",
+    "year": 2024,
+    "volume": "4",
+    "issue": "6",
+    "pages": "100389"
+   },
+   "ids": {
+    "doi": "10.1016/j.bpsgos.2024.100389",
+    "pmid": "39416658",
+    "pmcid": "PMC11480220"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11480220/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/39416658/",
+    "doi": "https://doi.org/10.1016/j.bpsgos.2024.100389",
+    "alternates": []
+   },
+   "access": "Free full text",
+   "design": "Registry study",
+   "n_patients": 464,
+   "syndrome": {
+    "categories": [
+     "Psychotic",
+     "Mood"
+    ],
+    "specific": "Mental disorders in donor-recipient pairs",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Immune reset",
+    "specific": "Haematopoietic stem cell transplant",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Unclear",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Danish cohort of 464 related donor-recipient pairs testing whether transplants transmit mental disorders.",
+   "caveat": "n counts donor-recipient pairs, not patients.",
+   "tags": [
+    "counterpoint",
+    "registry",
+    "transplant"
+   ],
+   "same_patient_as": null,
+   "found_via": "Consensus",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   }
+  },
+  {
+   "id": "wagemaker-cade-1977",
+   "record_type": "context",
+   "status": "Included",
+   "tier": null,
+   "collections": [
+    "round1"
+   ],
+   "citation": {
+    "authors": "Wagemaker H, Cade R.",
+    "title": "The use of hemodialysis in chronic schizophrenia.",
+    "journal": "Am J Psychiatry",
+    "year": 1977,
+    "volume": "134",
+    "issue": "6",
+    "pages": "684-685"
+   },
+   "ids": {
+    "doi": "10.1176/ajp.134.6.684",
+    "pmid": "869035",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/869035/",
+    "doi": "https://doi.org/10.1176/ajp.134.6.684",
+    "alternates": []
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": null,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Chronic drug-resistant schizophrenia",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Immune reset",
+    "specific": "Haemodialysis",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Unclear",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 3,
+    "note": "Failed under sham-controlled testing",
+    "links": [
+     {
+      "label": "Dialysis of schizophrenic patients: a double-blind study, Am J Psychiatry 1980",
+      "doi": "10.1176/ajp.137.10.1220"
+     }
+    ]
+   },
+   "summary": "Uncontrolled remissions on dialysis set off a treatment wave that collapsed in sham-controlled trials: the cautionary tale.",
+   "caveat": "Deliberate treatment, not an accident; kept as the counterexample.",
+   "tags": [
+    "cautionary",
+    "failed-replication",
+    "haemodialysis",
+    "psychosis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Web search",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: Europe PMC record matched",
+   "era": {
+    "label": "refuted",
+    "note": "Remissions on dialysis did not survive sham-controlled testing (1980).",
+    "basis": "judged"
+   }
+  }
+ ]
+}
