@@ -1,0 +1,40 @@
+{
+ "version": "themes-1.0",
+ "date": "2026-11-10",
+ "platform": "Europe PMC REST (searchPOST), browser; Embase via CKN",
+ "purpose": "Targeted sweeps requested by Brendan on 2026-11-10: ketogenic/metabolic triggers, and temporal-lobe (especially right-sided) lesions.",
+ "blocks": {
+  "src": "(SRC:MED OR SRC:PMC OR SRC:PPR) NOT TITLE:(rat OR rats OR mice OR mouse OR rodent OR rodents)",
+  "A2": "= blocks_v1_2.A2_syndrome in strings_v1.json",
+  "B2": "= blocks_v1_2.B2_resolution in strings_v1.json",
+  "E": "(PUB_TYPE:\"Case Reports\" OR PUB_TYPE:\"Letter\" OR TITLE_ABS:(\"case report\" OR \"a case of\" OR \"we report\" OR \"we describe\" OR \"we present\" OR \"a patient\" OR \"case series\" OR \"single case\" OR \"year-old\"))",
+  "K_keto": "TITLE_ABS:(ketogenic OR ketosis OR \"ketone ester\" OR \"exogenous ketone\" OR \"beta-hydroxybutyrate\" OR \"low-carbohydrate\" OR \"low carbohydrate\" OR \"very low carbohydrate\" OR carnivore OR \"modified Atkins\" OR \"Atkins diet\" OR \"medium-chain triglyceride\" OR \"intermittent fasting\" OR \"therapeutic fasting\" OR \"metabolic therapy\" OR \"metabolic psychiatry\")",
+  "T_temporal": "TITLE_ABS:(lobectomy OR \"temporal lobe resection\" OR \"temporal resection\" OR amygdalohippocampectomy OR \"amygdalectomy\" OR \"temporal lobe surgery\" OR \"epilepsy surgery\" OR \"temporal lobe lesion\" OR \"temporal lesion\" OR \"temporal lobe damage\" OR \"right temporal\" OR \"right hemisphere\" OR \"right hemispheric\" OR \"temporal lobe infarct\" OR \"temporal haemorrhage\" OR \"temporal hemorrhage\")"
+ },
+ "queries": {
+  "EPMC_keto_cases_v1": {
+   "string": "src AND A2 AND K_keto AND E",
+   "hits": 208,
+   "note": "Count re-checked 2026-11-10: 208."
+  },
+  "EPMC_keto_trials_v1": {
+   "string": "src AND A2 AND K_keto AND trial terms (exact trial block not retained)",
+   "hits": 54,
+   "note": "Reconstruction with (PUB_TYPE:\"Randomized Controlled Trial\" OR PUB_TYPE:\"Clinical Trial\") returns 49 on 2026-11-10. Trials are excluded as cases (E5) and linked as downstream evidence."
+  },
+  "EPMC_temporal_v1": {
+   "string": "src AND A2 AND T_temporal AND B2 AND E",
+   "hits": 577,
+   "note": "Count re-checked 2026-11-10: 577."
+  },
+  "EMB_keto_v1": {
+   "string": "Embase: ketogenic/ketosis terms AND psychiatric terms (exact string not retained)",
+   "hits": 394,
+   "note": "Too broad: 'ketosis' pulled in diabetic and alcoholic ketoacidosis."
+  }
+ },
+ "known_problems": [
+  "T_temporal includes right-sided terms only ('right temporal', 'right hemisphere'), which biases a laterality comparison. v1.3 adds the matching left-sided terms and runs both.",
+  "K_keto 'ketosis' should be ketogenic-context only in Embase (e.g. 'nutritional ketosis'), not bare 'ketosis'."
+ ]
+}

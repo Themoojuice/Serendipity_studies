@@ -1,7 +1,7 @@
 {
  "library": "Serendipity Case Library",
  "schema_version": "1.2",
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "unit_of_record": "One published study (a paper). n_patients counts patients within it; same_patient_as links papers describing the same patient.",
  "inclusion_criteria": [
   "A serious psychiatric syndrome resolved or substantially improved.",
@@ -48,7 +48,8 @@
    "Self-administered",
    "Lifestyle change",
    "Medication error",
-   "Life event"
+   "Life event",
+   "Deliberate test (trial)"
   ],
   "resolution": [
    "Complete",
@@ -70,7 +71,10 @@
    "Pooled analysis",
    "Registry study",
    "Conference abstract",
-   "Preprint"
+   "Preprint",
+   "Randomised trial",
+   "Open-label trial",
+   "Review"
   ],
   "downstream_level": {
    "0": "None yet",
@@ -782,9 +786,26 @@
     "reversal": "None reported"
    },
    "downstream": {
-    "level": 1,
-    "note": "Further ketogenic-diet cases (Palmer 2017, 2019; Laurent 2025)",
-    "links": []
+    "level": 3,
+    "links": [
+     {
+      "label": "Danan 2022 (31 inpatients)",
+      "doi": "10.3389/fpsyt.2022.951376"
+     },
+     {
+      "label": "Sethi 2024 (pilot)",
+      "doi": "10.1016/j.psychres.2024.115866"
+     },
+     {
+      "label": "Gao 2026 (RCT, depression)",
+      "doi": "10.1001/jamapsychiatry.2025.4431"
+     },
+     {
+      "label": "Abram 2026 (RCT, psychosis)",
+      "doi": "10.1093/schbul/sbag082"
+     }
+    ],
+    "note": "Ketogenic diet trials followed: open-label (Danan 2022, Sethi 2024) and randomised (Gao 2026, Abram 2026). A 1965 pilot (Pacheco) predates it."
    },
    "summary": "A 70-year-old's hallucinations of 53 years stopped abruptly after she started a ketogenic diet to lose weight.",
    "caveat": "",
@@ -800,8 +821,8 @@
    "verified": "2026-11-09: Europe PMC record matched",
    "era": {
     "label": "emerging",
-    "note": "",
-    "basis": "from downstream level"
+    "basis": "judged",
+    "note": "Randomised evidence so far is modest in depression (Gao 2026) and suggestive in psychosis (Abram 2026)."
    },
    "flags": []
   },
@@ -1159,9 +1180,26 @@
     "reversal": "On-off rechallenge"
    },
    "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
+    "level": 3,
+    "links": [
+     {
+      "label": "Danan 2022 (31 inpatients)",
+      "doi": "10.3389/fpsyt.2022.951376"
+     },
+     {
+      "label": "Sethi 2024 (pilot)",
+      "doi": "10.1016/j.psychres.2024.115866"
+     },
+     {
+      "label": "Gao 2026 (RCT, depression)",
+      "doi": "10.1001/jamapsychiatry.2025.4431"
+     },
+     {
+      "label": "Abram 2026 (RCT, psychosis)",
+      "doi": "10.1093/schbul/sbag082"
+     }
+    ],
+    "note": "Ketogenic diet trials followed: open-label (Danan 2022, Sethi 2024) and randomised (Gao 2026, Abram 2026). A 1965 pilot (Pacheco) predates it."
    },
    "summary": "Two patients with refractory schizoaffective disorder improved on a ketogenic diet begun for weight loss, worsening when they stopped it.",
    "caveat": "On-off pattern reported in a secondary summary; check the full text.",
@@ -1177,8 +1215,8 @@
    "verified": "2026-11-09: Europe PMC record matched",
    "era": {
     "label": "emerging",
-    "note": "",
-    "basis": "from downstream level"
+    "basis": "judged",
+    "note": "Randomised evidence so far is modest in depression (Gao 2026) and suggestive in psychosis (Abram 2026)."
    },
    "flags": []
   },
@@ -1234,9 +1272,26 @@
     "reversal": "None reported"
    },
    "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
+    "level": 3,
+    "links": [
+     {
+      "label": "Danan 2022 (31 inpatients)",
+      "doi": "10.3389/fpsyt.2022.951376"
+     },
+     {
+      "label": "Sethi 2024 (pilot)",
+      "doi": "10.1016/j.psychres.2024.115866"
+     },
+     {
+      "label": "Gao 2026 (RCT, depression)",
+      "doi": "10.1001/jamapsychiatry.2025.4431"
+     },
+     {
+      "label": "Abram 2026 (RCT, psychosis)",
+      "doi": "10.1093/schbul/sbag082"
+     }
+    ],
+    "note": "Ketogenic diet trials followed: open-label (Danan 2022, Sethi 2024) and randomised (Gao 2026, Abram 2026). A 1965 pilot (Pacheco) predates it."
    },
    "summary": "Two women with chronic schizophrenia in remission on a ketogenic diet, including a 12-year follow-up of the Kraft & Westman patient.",
    "caveat": "One of the two patients is the Kraft & Westman 2009 patient: do not double-count.",
@@ -1252,8 +1307,8 @@
    "verified": "2026-11-09: Europe PMC record matched",
    "era": {
     "label": "emerging",
-    "note": "",
-    "basis": "from downstream level"
+    "basis": "judged",
+    "note": "Randomised evidence so far is modest in depression (Gao 2026) and suggestive in psychosis (Abram 2026)."
    },
    "flags": []
   },
@@ -5672,7 +5727,9 @@
    "caveat": "Seizure control and medication changes after surgery could contribute.",
    "tags": [
     "epilepsy-surgery",
+    "epilepsy-surgery-confound",
     "ocd",
+    "right-temporal",
     "temporal-lobe"
    ],
    "same_patient_as": null,
@@ -6547,6 +6604,7 @@
    "tags": [
     "lesion",
     "ocd",
+    "right-temporal",
     "tbi"
    ],
    "same_patient_as": null,
@@ -6943,7 +7001,9 @@
    "caveat": "Seizure control itself may have helped.",
    "tags": [
     "epilepsy-surgery",
+    "epilepsy-surgery-confound",
     "ocd",
+    "right-temporal",
     "temporal-lobe"
    ],
    "same_patient_as": null,
@@ -7316,6 +7376,7 @@
    "caveat": "Symptom-level change; other features of the illness not reported.",
    "tags": [
     "hallucinations",
+    "right-temporal",
     "schizoaffective",
     "stroke",
     "temporal-lobe"
@@ -7388,9 +7449,10 @@
     "links": []
    },
    "summary": "Tourette syndrome improved after surgery for intractable temporal lobe epilepsy.",
-   "caveat": "Antiepileptic changes after surgery could contribute.",
+   "caveat": "Antiepileptic changes after surgery could contribute. Depression and anxiety fall after epilepsy surgery on average (Hernandez Poblete 2024), so seizure control is a live alternative.",
    "tags": [
     "epilepsy-surgery",
+    "epilepsy-surgery-confound",
     "tourette"
    ],
    "same_patient_as": null,
@@ -8364,6 +8426,7 @@
    "tags": [
     "cingulate",
     "epilepsy-surgery",
+    "epilepsy-surgery-confound",
     "ocd"
    ],
    "same_patient_as": null,
@@ -8514,6 +8577,7 @@
     "anorexia",
     "bulimia",
     "lesion",
+    "right-temporal",
     "temporal-lobe"
    ],
    "same_patient_as": null,
@@ -8827,6 +8891,1743 @@
     "basis": "from downstream level"
    },
    "flags": []
+  },
+  {
+   "id": "pacheco-1965",
+   "record_type": "context",
+   "status": "Included",
+   "tier": null,
+   "collections": [
+    "themes-2026-11-10"
+   ],
+   "citation": {
+    "authors": "Pacheco A, Easterling WS, Pryer MW",
+    "title": "A pilot study of the ketogenic diet in schizophrenia.",
+    "journal": "Am J Psychiatry",
+    "year": 1965,
+    "volume": "121",
+    "issue": "",
+    "pages": "1110-1111"
+   },
+   "ids": {
+    "doi": "10.1176/ajp.121.11.1110",
+    "pmid": "14283310",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/14283310/",
+    "doi": "https://doi.org/10.1176/ajp.121.11.1110",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fajp.121.11.1110"
+   },
+   "access": "Paywalled",
+   "design": "Open-label trial",
+   "n_patients": null,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenia",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Diet",
+    "specific": "Ketogenic diet",
+    "intent": "Deliberate test (trial)"
+   },
+   "outcome": {
+    "resolution": "Unclear",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 3,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 1965 pilot of the ketogenic diet in schizophrenia, largely forgotten until the serendipitous 2009 case revived the idea.",
+   "caveat": "No abstract indexed; the result needs the full text.",
+   "tags": [
+    "historical",
+    "ketogenic",
+    "schizophrenia",
+    "trial"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: Europe PMC record matched",
+   "flags": [],
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "danan-2022",
+   "record_type": "context",
+   "status": "Included",
+   "tier": null,
+   "collections": [
+    "themes-2026-11-10"
+   ],
+   "citation": {
+    "authors": "Danan A, Westman EC, Saslow LR, Ede G",
+    "title": "The Ketogenic Diet for Refractory Mental Illness: A Retrospective Analysis of 31 Inpatients.",
+    "journal": "Front Psychiatry",
+    "year": 2022,
+    "volume": "13",
+    "issue": "",
+    "pages": "951376"
+   },
+   "ids": {
+    "doi": "10.3389/fpsyt.2022.951376",
+    "pmid": "35873236",
+    "pmcid": "PMC9299263"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9299263/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/35873236/",
+    "doi": "https://doi.org/10.3389/fpsyt.2022.951376",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3389%2Ffpsyt.2022.951376"
+   },
+   "access": "Free full text",
+   "design": "Case series",
+   "n_patients": 31,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Psychotic"
+    ],
+    "specific": "Refractory major depression, bipolar disorder and schizoaffective disorder (inpatients)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Diet",
+    "specific": "Ketogenic diet (≤20 g carbohydrate a day) added to inpatient care",
+    "intent": "Deliberate test (trial)"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 3,
+    "note": "",
+    "links": []
+   },
+   "summary": "In 28 adherent inpatients with refractory illness, mean HAM-D fell from 25.4 to 7.7 on a strict ketogenic diet, with psychosis and metabolic markers also improving.",
+   "caveat": "Retrospective and uncontrolled, in an intensive inpatient setting.",
+   "tags": [
+    "bipolar",
+    "case-series",
+    "depression",
+    "ketogenic",
+    "schizoaffective"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: Europe PMC record matched",
+   "flags": [],
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "sethi-2024",
+   "record_type": "context",
+   "status": "Included",
+   "tier": null,
+   "collections": [
+    "themes-2026-11-10"
+   ],
+   "citation": {
+    "authors": "Sethi S, Wakeham D, Ketter T, Hooshmand F, Bjornstad J, Richards B et al.",
+    "title": "Ketogenic Diet Intervention on Metabolic and Psychiatric Health in Bipolar and Schizophrenia: A Pilot Trial.",
+    "journal": "Psychiatry Res",
+    "year": 2024,
+    "volume": "335",
+    "issue": "",
+    "pages": "115866"
+   },
+   "ids": {
+    "doi": "10.1016/j.psychres.2024.115866",
+    "pmid": "38547601",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/38547601/",
+    "doi": "https://doi.org/10.1016/j.psychres.2024.115866",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.psychres.2024.115866"
+   },
+   "access": "Paywalled",
+   "design": "Open-label trial",
+   "n_patients": 23,
+   "syndrome": {
+    "categories": [
+     "Psychotic",
+     "Mood"
+    ],
+    "specific": "Schizophrenia or bipolar disorder with metabolic abnormalities",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Diet",
+    "specific": "Four-month ketogenic diet",
+    "intent": "Deliberate test (trial)"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 3,
+    "note": "",
+    "links": []
+   },
+   "summary": "In a 4-month single-arm pilot, BPRS scores fell 32% in schizophrenia, CGI severity improved 31%, and no participant still met metabolic syndrome criteria.",
+   "caveat": "Single-arm and open-label; psychiatric gains were in adherent participants.",
+   "tags": [
+    "bipolar",
+    "ketogenic",
+    "pilot",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: Europe PMC record matched",
+   "flags": [],
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "gao-2026",
+   "record_type": "context",
+   "status": "Included",
+   "tier": null,
+   "collections": [
+    "themes-2026-11-10"
+   ],
+   "citation": {
+    "authors": "Gao M, Kirk M, Knight H, Lash E, Michalopoulou M, Guess N et al.",
+    "title": "A Ketogenic Diet for Treatment-Resistant Depression: A Randomized Clinical Trial.",
+    "journal": "JAMA Psychiatry",
+    "year": 2026,
+    "volume": "83",
+    "issue": "4",
+    "pages": "331-340"
+   },
+   "ids": {
+    "doi": "10.1001/jamapsychiatry.2025.4431",
+    "pmid": "41637092",
+    "pmcid": "PMC12874075"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12874075/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/41637092/",
+    "doi": "https://doi.org/10.1001/jamapsychiatry.2025.4431",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1001%2Fjamapsychiatry.2025.4431"
+   },
+   "access": "Free full text",
+   "design": "Randomised trial",
+   "n_patients": 88,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Treatment-resistant depression (PHQ-9 ≥15)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Diet",
+    "specific": "Six-week ketogenic diet vs an active healthy-diet control",
+    "intent": "Deliberate test (trial)"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 3,
+    "note": "",
+    "links": []
+   },
+   "summary": "Ketogenic diet beat an active healthy-diet control by 2.2 PHQ-9 points at 6 weeks (P = .05); the 1.9-point gap at 12 weeks was not significant.",
+   "caveat": "Both arms improved markedly (by about 10 and 8 points); diets cannot be blinded.",
+   "tags": [
+    "depression",
+    "ketogenic",
+    "rct"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: Europe PMC record matched",
+   "flags": [],
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "abram-2026",
+   "record_type": "context",
+   "status": "Included",
+   "tier": null,
+   "collections": [
+    "themes-2026-11-10"
+   ],
+   "citation": {
+    "authors": "Abram SV, Kyner JM, Vu A, Naeem Z, Sethi S, Jacob MS et al.",
+    "title": "Metabolic Improvements with a Ketogenic Diet Correlate with Symptom Improvement in Psychosis: A Randomized Controlled Trial.",
+    "journal": "Schizophr Bull",
+    "year": 2026,
+    "volume": "52",
+    "issue": "4",
+    "pages": "sbag082"
+   },
+   "ids": {
+    "doi": "10.1093/schbul/sbag082",
+    "pmid": "42415343",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/42415343/",
+    "doi": "https://doi.org/10.1093/schbul/sbag082",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1093%2Fschbul%2Fsbag082"
+   },
+   "access": "Paywalled",
+   "design": "Randomised trial",
+   "n_patients": 58,
+   "syndrome": {
+    "categories": [
+     "Psychotic",
+     "Mood"
+    ],
+    "specific": "Schizophrenia-spectrum and bipolar I disorder (outpatients)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Diet",
+    "specific": "One-month ketogenic diet vs diet as usual, with a 4-month extension",
+    "intent": "Deliberate test (trial)"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 3,
+    "note": "",
+    "links": []
+   },
+   "summary": "In the first randomised trial in psychosis, metabolic health, cognition and symptoms improved, and depressive improvement tracked ketosis rather than weight loss.",
+   "caveat": "One-month randomised phase; small; the extension was uncontrolled.",
+   "tags": [
+    "bipolar",
+    "ketogenic",
+    "mechanism",
+    "rct",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: Europe PMC record matched",
+   "flags": [],
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "hernandez-poblete-2024",
+   "record_type": "context",
+   "status": "Included",
+   "tier": null,
+   "collections": [
+    "themes-2026-11-10"
+   ],
+   "citation": {
+    "authors": "Hernandez Poblete N, Gay F, Salvo F, Micoulaud-Franchi JA, Bienvenu T, Coelho J",
+    "title": "Resective epilepsy surgery and its impact on depression in adults: a systematic review, meta-analysis, and implications for future research.",
+    "journal": "J Neurol Neurosurg Psychiatry",
+    "year": 2024,
+    "volume": "95",
+    "issue": "10",
+    "pages": "956-965"
+   },
+   "ids": {
+    "doi": "10.1136/jnnp-2023-333073",
+    "pmid": "38443157",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/38443157/",
+    "doi": "https://doi.org/10.1136/jnnp-2023-333073",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fjnnp-2023-333073"
+   },
+   "access": "Paywalled",
+   "design": "Pooled analysis",
+   "n_patients": 2563,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Depression in adults with drug-resistant epilepsy",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Resective epilepsy surgery",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "Across 25 studies and 2,563 adults, depression was less common after resective epilepsy surgery (risk ratio 0.70, 95% CI 0.53–0.91), from 6 months onwards.",
+   "caveat": "Key confound for lesion cases after epilepsy surgery: seizure control and medication change, not the resection itself, may drive remission.",
+   "tags": [
+    "confound",
+    "depression",
+    "epilepsy-surgery",
+    "meta-analysis",
+    "temporal-lobe"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: Europe PMC record matched",
+   "flags": [],
+   "era": {
+    "label": "known",
+    "note": "Established by pooled data by 2024.",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "pintor-2022",
+   "record_type": "context",
+   "status": "Included",
+   "tier": null,
+   "collections": [
+    "themes-2026-11-10"
+   ],
+   "citation": {
+    "authors": "Pintor L",
+    "title": "Temporal Lobectomy: Does It Worsen or Improve Presurgical Psychiatric Disorders?",
+    "journal": "Curr Top Behav Neurosci",
+    "year": 2022,
+    "volume": "55",
+    "issue": "",
+    "pages": "307-327"
+   },
+   "ids": {
+    "doi": "10.1007/7854_2021_224",
+    "pmid": "33959938",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/33959938/",
+    "doi": "https://doi.org/10.1007/7854_2021_224",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1007%2F7854_2021_224"
+   },
+   "access": "Paywalled",
+   "design": "Review",
+   "n_patients": null,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Anxiety",
+     "Psychotic"
+    ],
+    "specific": "Psychiatric disorders in temporal lobe epilepsy",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Temporal lobectomy",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "After temporal lobectomy, depression and anxiety usually fall by 12 months, yet de novo psychosis appears in 1–14%: the temporal lobe swings psychiatric state both ways.",
+   "caveat": "Narrative review chapter.",
+   "tags": [
+    "confound",
+    "epilepsy-surgery",
+    "review",
+    "temporal-lobe"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: Europe PMC record matched",
+   "flags": [],
+   "era": {
+    "label": "known",
+    "note": "Bidirectional psychiatric change after temporal lobectomy was well described by the 2010s.",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "uher-2005",
+   "record_type": "context",
+   "status": "Included",
+   "tier": null,
+   "collections": [
+    "themes-2026-11-10"
+   ],
+   "citation": {
+    "authors": "Uher R, Treasure J",
+    "title": "Brain lesions and eating disorders.",
+    "journal": "J Neurol Neurosurg Psychiatry",
+    "year": 2005,
+    "volume": "76",
+    "issue": "6",
+    "pages": "852-857"
+   },
+   "ids": {
+    "doi": "10.1136/jnnp.2004.048819",
+    "pmid": "15897510",
+    "pmcid": "PMC1739667"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1739667/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/15897510/",
+    "doi": "https://doi.org/10.1136/jnnp.2004.048819",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fjnnp.2004.048819"
+   },
+   "access": "Free full text",
+   "design": "Review",
+   "n_patients": 54,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Eating disorders with brain damage (54 published cases)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Focal brain lesions",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Unclear",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "In 54 published cases, the characteristic eating-disorder syndromes went with right frontal and temporal lesions, the same territory whose damage has also ended eating disorders.",
+   "caveat": "Mostly lesions that caused rather than cured eating disorders.",
+   "tags": [
+    "eating",
+    "laterality",
+    "lesion",
+    "review",
+    "right-hemisphere"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: Europe PMC record matched",
+   "flags": [],
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   }
+  },
+  {
+   "id": "freeman-2001",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Freeman TW, Kimbrell T",
+    "title": "A \"cure\" for chronic combat-related posttraumatic stress disorder secondary to a right frontal lobe infarct: a case report.",
+    "journal": "J Neuropsychiatry Clin Neurosci",
+    "year": 2001,
+    "volume": "13",
+    "issue": "1",
+    "pages": "106-109"
+   },
+   "ids": {
+    "doi": "10.1176/jnp.13.1.106",
+    "pmid": "11207337",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/11207337/",
+    "doi": "https://doi.org/10.1176/jnp.13.1.106",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fjnp.13.1.106"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Trauma & stressor-related"
+    ],
+    "specific": "Chronic combat-related PTSD",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Right frontal lobe infarct",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A combat veteran's intrusive memories, nightmares and avoidance stopped after a right frontal stroke; the hyperarousal stayed.",
+   "caveat": "History comes partly from family; arousal symptoms persisted, so the PTSD was only partly abolished.",
+   "tags": [
+    "frontal",
+    "lesion",
+    "ptsd",
+    "right-hemisphere",
+    "stroke"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Fits later lesion work: Koenigs 2008 found vmPFC and amygdala damage protected Vietnam veterans from PTSD.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "dusoir-2005",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Dusoir H, Owens C, Forbes RB, Morrow JI, Flynn PA, McCarron MO",
+    "title": "Anorexia nervosa remission following left thalamic stroke.",
+    "journal": "J Neurol Neurosurg Psychiatry",
+    "year": 2005,
+    "volume": "76",
+    "issue": "1",
+    "pages": "144-145"
+   },
+   "ids": {
+    "doi": "10.1136/jnnp.2004.041459",
+    "pmid": "15608021",
+    "pmcid": "PMC1739327"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1739327/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/15608021/",
+    "doi": "https://doi.org/10.1136/jnnp.2004.041459",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fjnnp.2004.041459"
+   },
+   "access": "Free full text",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Anorexia nervosa",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Left thalamic stroke",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Anorexia nervosa remitted after a left thalamic stroke.",
+   "caveat": "Short report; illness duration, measures and follow-up need the full text (free on PMC).",
+   "tags": [
+    "anorexia",
+    "left-hemisphere",
+    "lesion",
+    "stroke",
+    "thalamus"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "One of a small set of eating-disorder remissions after brain lesions (see Uher & Treasure 2005).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "ho-2001",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Ho AW, Birmingham CL",
+    "title": "Anorexia nervosa remission during an episode of encephalitis.",
+    "journal": "Int J Eat Disord",
+    "year": 2001,
+    "volume": "29",
+    "issue": "1",
+    "pages": "97-99"
+   },
+   "ids": {
+    "doi": "10.1002/1098-108x(200101)29:1<97::aid-eat17>3.0.co;2-2",
+    "pmid": "11135342",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/11135342/",
+    "doi": "https://doi.org/10.1002/1098-108x(200101)29:1<97::aid-eat17>3.0.co;2-2",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2F1098-108x%28200101%2929%3A1%3C97%3A%3Aaid-eat17%3E3.0.co%3B2-2"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Anorexia nervosa (weight 37.8 kg)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "Encephalitis with hypoxic brain injury",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "Natural off-on"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Anorexic behaviour vanished during encephalitis with hypoxic brain injury and came back once the neurological signs cleared.",
+   "caveat": "Weight gain may partly reflect inpatient care during the illness.",
+   "tags": [
+    "anorexia",
+    "encephalitis",
+    "hypoxia",
+    "reversal"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "One of a small set of eating-disorder remissions after brain insults; the return with recovery is the informative part.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "calache-1991",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Calache MJ, Achamallah NS",
+    "title": "Spontaneous remission of depression after attempted suicide by hanging: a case report and literature review.",
+    "journal": "Int J Psychosom",
+    "year": 1991,
+    "volume": "38",
+    "issue": "1-4",
+    "pages": "89-91"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "1778691",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/1778691/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Major depression",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Physiological stress",
+    "specific": "Cardiopulmonary arrest and anoxic encephalopathy after attempted hanging",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Depression remitted after a hanging attempt caused cardiac arrest and anoxic brain injury, with no lasting neurological deficit.",
+   "caveat": "Psychosocial change after a suicide attempt is a strong alternative explanation; the authors discuss it.",
+   "tags": [
+    "depression",
+    "hypoxia",
+    "suicide-attempt"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "rubin-1985",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Rubin AL, Charney DS, Price LH, Heninger GR",
+    "title": "Rapid improvement of delusional depression following drug-induced seizures: case report.",
+    "journal": "J Clin Psychiatry",
+    "year": 1985,
+    "volume": "46",
+    "issue": "4",
+    "pages": "146-147"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "3920210",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/3920210/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Psychotic"
+    ],
+    "specific": "Prolonged unipolar psychotic depression, unresponsive to antidepressants",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Seizures",
+    "specific": "Two drug-induced grand mal seizures",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Treatment-resistant psychotic depression improved rapidly after two grand mal seizures caused by medication.",
+   "caveat": "'Rapid improvement' rather than stated remission; durability needs the full text.",
+   "tags": [
+    "depression",
+    "psychotic-depression",
+    "seizure"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "known",
+    "note": "Seizures relieving depression is the principle of convulsive therapy; unexpected here as unplanned seizures.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "spiers-2016",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Spiers A, Kompardt I, Tait A",
+    "title": "Organic psychosis improving after a seizure.",
+    "journal": "Aust N Z J Psychiatry",
+    "year": 2016,
+    "volume": "50",
+    "issue": "12",
+    "pages": "1211-1212"
+   },
+   "ids": {
+    "doi": "10.1177/0004867416656261",
+    "pmid": "27357715",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/27357715/",
+    "doi": "https://doi.org/10.1177/0004867416656261",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F0004867416656261"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Organic (secondary) psychosis",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Seizures",
+    "specific": "A spontaneous seizure",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "An organic psychosis improved after a spontaneous seizure (Australian and New Zealand report).",
+   "caveat": "Letter without an abstract; the underlying cause and its course need the full text.",
+   "tags": [
+    "australia",
+    "psychosis",
+    "secondary-psychosis",
+    "seizure"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "known",
+    "note": "Seizures relieving psychosis is the principle of convulsive therapy (Meduna, 1934).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "wilcox-2008",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Wilcox JA",
+    "title": "Depression cured by stroke.",
+    "journal": "Ann Clin Psychiatry",
+    "year": 2008,
+    "volume": "20",
+    "issue": "3",
+    "pages": "171"
+   },
+   "ids": {
+    "doi": "10.1080/10401230802177730",
+    "pmid": "18633743",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/18633743/",
+    "doi": "https://doi.org/10.1080/10401230802177730",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F10401230802177730"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Depression",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Stroke",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Depression was 'cured' by a stroke.",
+   "caveat": "One-page letter without an abstract; site, severity and follow-up need the full text.",
+   "tags": [
+    "depression",
+    "lesion",
+    "stroke"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Joins other reports of mood disorders remitting after stroke; lesion-network analyses are recent.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "odeh-1989",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Odeh M, Bassan H, Oliven A",
+    "title": "Relief of depression after stroke.",
+    "journal": "J Fam Pract",
+    "year": 1989,
+    "volume": "29",
+    "issue": "5",
+    "pages": "471-472"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "2809516",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/2809516/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Depression",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Stroke",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Depression lifted after a stroke.",
+   "caveat": "Two-page report without an abstract; site and follow-up need the full text.",
+   "tags": [
+    "depression",
+    "lesion",
+    "stroke"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Joins other reports of mood disorders remitting after stroke; lesion-network analyses are recent.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "martin-santos-1950",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "MARTIN SANTOS L",
+    "title": "[Case of anxiety depression cured following a slight stroke].",
+    "journal": "Rev Clin Esp",
+    "year": 1950,
+    "volume": "38",
+    "issue": "5",
+    "pages": "382-384"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "14786702",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/14786702/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Anxiety"
+    ],
+    "specific": "Anxious depression",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "A minor stroke",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Anxious depression was cured after a minor stroke (1950, Spanish).",
+   "caveat": "Spanish-language paper without an abstract; details need the full text.",
+   "tags": [
+    "anxiety",
+    "depression",
+    "lesion",
+    "spanish",
+    "stroke"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Joins other reports of mood disorders remitting after stroke; lesion-network analyses are recent.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "behar-1999",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Behar D, Schaller J, Easter D, Hofmann M",
+    "title": "\"Miraculous\" recovery from severe chronic psychosis after coma from septicemia.",
+    "journal": "J Neuropsychiatry Clin Neurosci",
+    "year": 1999,
+    "volume": "11",
+    "issue": "3",
+    "pages": "412-413"
+   },
+   "ids": {
+    "doi": "10.1176/jnp.11.3.412-a",
+    "pmid": "10440023",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/10440023/",
+    "doi": "https://doi.org/10.1176/jnp.11.3.412-a",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fjnp.11.3.412-a"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Severe chronic psychosis",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Coma / anaesthesia",
+    "specific": "Coma from septicaemia",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Severe chronic psychosis cleared after a coma caused by septicaemia.",
+   "caveat": "Letter without an abstract; fever, sepsis and coma are confounded, and follow-up needs the full text.",
+   "tags": [
+    "coma",
+    "fever",
+    "psychosis",
+    "sepsis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Joins older reports of psychosis remitting after fever, infection or coma.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "galati-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Galati S, Städler C",
+    "title": "Schizophrenia symptoms relieved by CO-induced pallidal lesion: a case report.",
+    "journal": "J Neuropsychiatry Clin Neurosci",
+    "year": 2013,
+    "volume": "25",
+    "issue": "2",
+    "pages": "E52-3"
+   },
+   "ids": {
+    "doi": "10.1176/appi.neuropsych.12060139",
+    "pmid": "23686065",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/23686065/",
+    "doi": "https://doi.org/10.1176/appi.neuropsych.12060139",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fappi.neuropsych.12060139"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenia",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Carbon monoxide poisoning with pallidal lesions",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Schizophrenia symptoms eased after carbon monoxide poisoning damaged the globus pallidus.",
+   "caveat": "Letter without an abstract; which symptoms improved, and for how long, needs the full text.",
+   "tags": [
+    "carbon-monoxide",
+    "globus-pallidus",
+    "lesion",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "ferrao-2003",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Ferrão YA, Scheidt B",
+    "title": "Basal ganglia hemorrhagic ablation causing temporary suppression of trichotillomania symptoms.",
+    "journal": "Braz J Psychiatry",
+    "year": 2003,
+    "volume": "25",
+    "issue": "4",
+    "pages": "262-3, author reply 263"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "15330004",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/15330004/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Trichotillomania",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Basal ganglia haemorrhage",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Hair-pulling stopped for a while after a basal ganglia haemorrhage.",
+   "caveat": "Letter; the suppression was temporary and its length needs the full text.",
+   "tags": [
+    "basal-ganglia",
+    "haemorrhage",
+    "lesion",
+    "trichotillomania"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "takano-2002",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Takano M, Takano Y, Sato I",
+    "title": "Unexpected beneficial effect of stellate ganglion block in a schizophrenic patient.",
+    "journal": "Can J Anaesth",
+    "year": 2002,
+    "volume": "49",
+    "issue": "7",
+    "pages": "758-759"
+   },
+   "ids": {
+    "doi": "10.1007/bf03017464",
+    "pmid": "12193502",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/12193502/",
+    "doi": "https://doi.org/10.1007/bf03017464",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1007%2Fbf03017464"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenia",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Stellate ganglion block",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A stellate ganglion block given by anaesthetists had an unexpected beneficial effect on schizophrenia.",
+   "caveat": "Letter without an abstract; the indication for the block and the size of the effect need the full text.",
+   "tags": [
+    "schizophrenia",
+    "stellate-ganglion-block",
+    "sympathetic"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "Stellate ganglion block later entered trials for PTSD, not for psychosis.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "wahed-1934",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Wahed AKMA",
+    "title": "A Case of Schizophrenia with Superimposed Benign Tertian Malaria Cured with Atebrin.",
+    "journal": "Ind Med Gaz",
+    "year": 1934,
+    "volume": "69",
+    "issue": "9",
+    "pages": "509-510"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "29009138",
+    "pmcid": "PMC5158953"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5158953/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/29009138/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenia",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "Superimposed benign tertian malaria, treated with atebrin (mepacrine)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Schizophrenia was reported cured after the patient caught malaria and was treated with atebrin (1934, India).",
+   "caveat": "Diagnostic standards of 1934; fever, the antimalarial and natural remission cannot be separated.",
+   "tags": [
+    "fever",
+    "historical",
+    "malaria",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "Malarial fever therapy, established for general paresis (Wagner-Jauregg, 1917), was tried in schizophrenia and abandoned.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "hoirisch-clapauch-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Hoirisch-Clapauch S, Nardi AE",
+    "title": "Psychiatric remission with warfarin: Should psychosis be addressed as plasminogen activator imbalance?",
+    "journal": "Med Hypotheses",
+    "year": 2013,
+    "volume": "80",
+    "issue": "2",
+    "pages": "137-141"
+   },
+   "ids": {
+    "doi": "10.1016/j.mehy.2012.11.011",
+    "pmid": "23211375",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/23211375/",
+    "doi": "https://doi.org/10.1016/j.mehy.2012.11.011",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.mehy.2012.11.011"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 5,
+   "syndrome": {
+    "categories": [
+     "Psychotic",
+     "Mood"
+    ],
+    "specific": "Psychotic illness, including chronic schizophrenia and long-term depression",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Long-term warfarin for thrombosis, in patients with thrombophilias",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Five psychotic patients on long-term warfarin for blood clots remitted and stayed off psychotropics for 2 to 11 years.",
+   "caveat": "Hypothesis paper in Medical Hypotheses by the authors of the plasminogen-activator theory; selection and diagnoses need checking.",
+   "tags": [
+    "anticoagulation",
+    "psychosis",
+    "thrombophilia",
+    "warfarin"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": [
+    "venue",
+    "overclaim"
+   ]
   }
  ]
 }
