@@ -22,7 +22,8 @@
    "Anxiety",
    "Trauma & stressor-related",
    "Neurodevelopmental",
-   "Catatonia"
+   "Catatonia",
+   "Personality"
   ],
   "trigger_category": [
    "Acquired brain lesion",
@@ -10628,6 +10629,86 @@
     "venue",
     "overclaim"
    ]
+  },
+  {
+   "id": "ohara-2004",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1b"
+   ],
+   "citation": {
+    "authors": "Ohara K, Nishii R, Nakajima T, Kokai M, Morita Y",
+    "title": "[Alterations of symptoms with borderline personality disorder after fronto-temporal traumatic brain injury. A case study].",
+    "journal": "Seishin Shinkeigaku Zasshi",
+    "year": 2004,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "15179796",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/15179796/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Personality",
+     "Mood"
+    ],
+    "specific": "Borderline personality disorder with recurrent self-mutilation for 10 years",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Traumatic brain injury",
+    "specific": "Left fronto-temporal injury (orbital and dorsolateral cortex) from a suicide jump",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": "5 years",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Self-mutilation, emptiness and manipulativeness disappeared after a left fronto-temporal brain injury, with 5 years of follow-up.",
+   "caveat": "She was left with aphasia and severe executive and memory deficits, so this may be loss of capacity rather than a targeted effect. Published in Japanese; side from the abstract.",
+   "tags": [
+    "borderline",
+    "frontal",
+    "japanese",
+    "left-hemisphere",
+    "lesion",
+    "self-harm",
+    "tbi",
+    "temporal-lobe"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (temporal-lobe sweep, left-sided terms)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
   }
  ]
 }

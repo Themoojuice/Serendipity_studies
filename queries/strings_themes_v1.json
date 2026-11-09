@@ -9,7 +9,8 @@
   "B2": "= blocks_v1_2.B2_resolution in strings_v1.json",
   "E": "(PUB_TYPE:\"Case Reports\" OR PUB_TYPE:\"Letter\" OR TITLE_ABS:(\"case report\" OR \"a case of\" OR \"we report\" OR \"we describe\" OR \"we present\" OR \"a patient\" OR \"case series\" OR \"single case\" OR \"year-old\"))",
   "K_keto": "TITLE_ABS:(ketogenic OR ketosis OR \"ketone ester\" OR \"exogenous ketone\" OR \"beta-hydroxybutyrate\" OR \"low-carbohydrate\" OR \"low carbohydrate\" OR \"very low carbohydrate\" OR carnivore OR \"modified Atkins\" OR \"Atkins diet\" OR \"medium-chain triglyceride\" OR \"intermittent fasting\" OR \"therapeutic fasting\" OR \"metabolic therapy\" OR \"metabolic psychiatry\")",
-  "T_temporal": "TITLE_ABS:(lobectomy OR \"temporal lobe resection\" OR \"temporal resection\" OR amygdalohippocampectomy OR \"amygdalectomy\" OR \"temporal lobe surgery\" OR \"epilepsy surgery\" OR \"temporal lobe lesion\" OR \"temporal lesion\" OR \"temporal lobe damage\" OR \"right temporal\" OR \"right hemisphere\" OR \"right hemispheric\" OR \"temporal lobe infarct\" OR \"temporal haemorrhage\" OR \"temporal hemorrhage\")"
+  "T_temporal": "TITLE_ABS:(lobectomy OR \"temporal lobe resection\" OR \"temporal resection\" OR amygdalohippocampectomy OR \"amygdalectomy\" OR \"temporal lobe surgery\" OR \"epilepsy surgery\" OR \"temporal lobe lesion\" OR \"temporal lesion\" OR \"temporal lobe damage\" OR \"right temporal\" OR \"right hemisphere\" OR \"right hemispheric\" OR \"temporal lobe infarct\" OR \"temporal haemorrhage\" OR \"temporal hemorrhage\")",
+  "T_left": "TITLE_ABS:(\"left temporal\" OR \"left hemisphere\" OR \"left hemispheric\" OR \"dominant temporal\" OR \"dominant hemisphere\")"
  },
  "queries": {
   "EPMC_keto_cases_v1": {
@@ -31,10 +32,15 @@
    "string": "Embase: ketogenic/ketosis terms AND psychiatric terms (exact string not retained)",
    "hits": 394,
    "note": "Too broad: 'ketosis' pulled in diabetic and alcoholic ketoacidosis."
+  },
+  "EPMC_temporal_left_v1_3": {
+   "string": "src AND A2 AND T_left AND B2 AND E NOT T_temporal",
+   "hits": 275,
+   "note": "The left-sided complement of EPMC_temporal_v1; together they give the symmetric set (852 on 2026-11-10). T_temporal has no 'non-dominant' terms, so 'dominant' here slightly favours the left."
   }
  },
  "known_problems": [
-  "T_temporal includes right-sided terms only ('right temporal', 'right hemisphere'), which biases a laterality comparison. v1.3 adds the matching left-sided terms and runs both.",
+  "Fixed 2026-11-10 by EPMC_temporal_left_v1_3. T_temporal's neutral terms (lobectomy, epilepsy surgery, temporal lesion) already caught both sides.",
   "K_keto 'ketosis' should be ketogenic-context only in Embase (e.g. 'nutritional ketosis'), not bare 'ketosis'."
  ]
 }

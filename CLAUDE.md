@@ -19,14 +19,16 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
 - 2026-11-10: **phase 1b.**
   - Europe PMC broad set fully loaded by `PUB_YEAR` slices: 43,109 of 43,112. The 22,109 records beyond the first pass: batch 2 (20,669, **ranks 0–399 screened**; gold cases at ranks 41, 100, 115, 122, 1467, 7808) and batch 3 (1,440, ranks 0–59, nothing). Browser export in `/home/claude/work/raw/epmc_b2b3.txt` (gone when the session ends; the ledger holds every row).
   - Theme sweeps (`queries/strings_themes_v1.json`): ketogenic/metabolic (Europe PMC 208 cases + 54 trials; Embase 394) and temporal lobe (577). Keto: **no new serendipitous cases**; almost all reports are deliberate metabolic therapy (E3). 5 keto trials and 3 temporal reviews added as context records.
-  - **+15 provisional cases** → 137 records (125 cases, 12 context). Ledger 46,909 rows; 13 `unsure`.
-  - Laterality so far (lesion/neurosurgery cases, side as stated in the trigger): 9 left, 8 right, 3 bilateral, 23 unstated. 6 of the 8 right-sided are temporal (3 are epilepsy surgery); no left-sided case is temporal. The temporal sweep used right-sided terms only, so this is not yet a fair comparison.
+  - **+15 provisional cases** from Europe PMC batch 2.
+  - Left-sided temporal sweep (`EPMC_temporal_left_v1_3`, 275 new records, all screened): +1 case (Ohara 2004, `Personality` category added). The temporal sweep is now symmetric (852).
+  - Laterality (lesion/TBI/neurosurgery cases, side as stated in the trigger, 44 cases): 10 left, 8 right, 3 bilateral, 23 unstated. Temporal: 6 right vs 1 left (3 of the right are epilepsy surgery). Left-sided cases are mostly frontal, basal ganglia or thalamic. 6 vs 1 is about what a coin gives 1 time in 8.
+  - 138 records (126 cases, 12 context); ledger 47,184 rows; 13 `unsure`.
 - **Next, in order:**
-  1. Strings v1.3: add left-sided temporal terms and rerun the temporal sweep; make the Embase keto term ketogenic-only.
+  1. Strings v1.3: make the Embase keto term ketogenic-only and rerun it (left-sided temporal terms done).
   2. Europe PMC batch 2 ranks 400 to ~1,500 (gold rank 1467), then sample deeper per the stopping rule. To rebuild the ranked list: reload by `PUB_YEAR` slices, drop the first-pass records (ledger rows with query `EPMC_broad_v1_2` and notes starting `rank`), re-rank.
   3. Embase title set ranks 309–1,374 (mostly the score-9 band): screen, or random-sample per the stopping rule.
   4. PsycInfo via EBSCOhost (CKN) — not yet run.
-  5. Full-text appraisal of the 75 provisional records and 13 unsure (PMC free first, then CKN), with attribution grade, JBI score and `lesion.side` / `lesion.region` for the laterality analysis; promote to Included.
+  5. Full-text appraisal of the 76 provisional records and 13 unsure (PMC free first, then CKN), with attribution grade, JBI score and `lesion.side` / `lesion.region` for the laterality analysis; promote to Included.
   6. Calibration: 100 blinded records for Brendan.
 - Library restyle ("more Claude") is still due with the rebuild after step 5, alongside the new appraisal fields.
 
