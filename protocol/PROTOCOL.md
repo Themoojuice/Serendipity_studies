@@ -65,7 +65,7 @@ JBI Critical Appraisal Checklist for Case Reports, 8 items, scored Yes = 1 (out 
 
 Flags are logged in the ledger's `flags` column (semicolon-separated), never hidden, and each one caps the case at tier C.
 
-`retracted` (exclude, keep the ledger row) · `concern` (expression of concern) · `venue` (open-access journal not in DOAJ, journal not in MEDLINE with no other quality signal, or a hijacked title) · `mill` (paper-mill signals) · `media-first` (a lead only, never a case) · `overclaim` · `coi-trigger` (conflict of interest with the trigger) · `altmed` · `no-followup`
+`retracted` (exclude, keep the ledger row) · `concern` (expression of concern) · `venue` (open-access journal not in DOAJ, journal not in MEDLINE with no other quality signal, or a hijacked title) · `mill` (paper-mill signals) · `media-first` (a lead only, never a case) · `overclaim` · `coi-trigger` (conflict of interest with the trigger) · `altmed` · `no-followup` · `preprint`
 
 ## 8. Exclusion reason codes
 
@@ -93,3 +93,4 @@ E1 not psychiatric, or not serious · E2 not resolved · E3 expected or targeted
 ## Changelog
 
 - 2026-11-09 · v1.0 · Protocol locked from the dossier. Era labels added (schema 1.1). Storage: this repository.
+- 2026-11-09 · v1.1 · Strings tuned to v1.2 on the gold set (resolution block was the recall bottleneck). Broad results are ranked by `scripts/rank_titles.py` and screened in rank order. Schema 1.2: CKN access links, `flags` (adds `preprint`), tier C, vocabulary for catatonia, trauma, neurodevelopmental, non-brain procedures, systemic illness, life events, hormonal triggers, physiological stress, medication errors, conference abstracts and preprints. New includes enter as Provisional until full-text appraisal.

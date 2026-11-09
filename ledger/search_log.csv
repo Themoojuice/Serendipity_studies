@@ -26,3 +26,10 @@ query_id,Source,Query (short form),Hits,Date run,Notes
 ,A,,15.0,,
 ,B,,16.0,,
 ,C,,6.0,,
+EPMC_S1_v1_1,Europe PMC (browser),v1.1 S1: syndrome AND resolution AND unexpected AND case design,554,2026-11-09,tuning run
+EPMC_S2_v1_1,Europe PMC (browser),"v1.1 S2: 14 trigger families, union with S1",8627,2026-11-09,gold recall 27/50; replaced by v1.2
+EPMC_broad_v1_2,Europe PMC (browser),v1.2 broad: A2 AND B2 AND (D_all OR C) AND E,43112,2026-11-09,"gold recall 42/50 (33/40 tuning, 9/10 holdout); 21,000 loaded (deep paging stopped); ranked by title score; ranks 0-699 screened"
+EPMC_S1_v1_2,Europe PMC (browser),v1.2 S1 only,2881,2026-11-09,gold 12/50; count only
+EMB_S1_v1_1,Embase via CKN,"v1.1 S1, Embase-only records ([embase]/lim NOT [medline]/lim, humans)",578,2026-11-09,all screened
+EMB_broad_v1_2,Embase via CKN,"v1.2 broad, Embase-only",30333,2026-11-09,count only; not pulled (bulk-download caution)
+EMB_title_v1_2,Embase via CKN,"v1.2 with syndrome AND (resolution OR unexpected) restricted to title, Embase-only",1375,2026-11-09,ranked; ranks 0-308 screened

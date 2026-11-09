@@ -30,6 +30,7 @@ for rid, n in Counter(ids).items():
 idset = set(ids)
 
 DOI = re.compile(r"^10\.\d{4,9}/\S+$")
+FLAGS = {"retracted", "concern", "venue", "mill", "media-first", "overclaim", "coi-trigger", "altmed", "no-followup", "preprint"}
 for r in R:
     rid = r["id"]
     if r["record_type"] not in ("case", "context"):
@@ -53,7 +54,7 @@ for r in R:
         err(rid, "missing or bad era label")
     elif era["label"] in ("known", "refuted") and not era.get("note"):
         err(rid, "known/refuted era label needs a note saying when and how")
-    if not (r["links"]["full_text"] or r["links"]["abstract"] or r["links"]["doi"]):
+    if not (r["links"]["full_text"] or r["links"]["abstract"] or r["links"]["doi"] or r["links"].get("ckn")):
         err(rid, "no clickable link")
     if r["ids"]["doi"] and not DOI.match(r["ids"]["doi"]):
         err(rid, f"malformed DOI {r['ids']['doi']}")
@@ -63,8 +64,11 @@ for r in R:
         err(rid, f"malformed PMID {r['ids']['pmid']}")
     if r["ids"]["pmcid"] and not re.match(r"^PMC\d+$", r["ids"]["pmcid"]):
         err(rid, f"malformed PMCID {r['ids']['pmcid']}")
-    if not r["ids"]["doi"] and r["links"]["abstract"] is None and r["links"]["full_text"] is None:
-        err(rid, "abstract-only records need a DOI or PMID so the PDF can be found")
+    if not r["ids"]["doi"] and r["links"]["abstract"] is None and r["links"]["full_text"] is None and not r["links"].get("ckn"):
+        err(rid, "records without full text need a DOI, PMID or CKN link so the PDF can be found")
+    for fl in r.get("flags", []):
+        if fl not in FLAGS:
+            err(rid, f"unknown flag {fl}")
     sp = r.get("same_patient_as")
     if sp and sp not in idset:
         err(rid, f"same_patient_as points to unknown id {sp}")

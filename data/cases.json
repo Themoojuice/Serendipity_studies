@@ -1,6 +1,6 @@
 {
  "library": "Serendipity Case Library",
- "schema_version": "1.1",
+ "schema_version": "1.2",
  "updated": "2026-11-09",
  "unit_of_record": "One published study (a paper). n_patients counts patients within it; same_patient_as links papers describing the same patient.",
  "inclusion_criteria": [
@@ -19,7 +19,10 @@
    "Impulse-control",
    "Paraphilic",
    "Functional neurological",
-   "Anxiety"
+   "Anxiety",
+   "Trauma & stressor-related",
+   "Neurodevelopmental",
+   "Catatonia"
   ],
   "trigger_category": [
    "Acquired brain lesion",
@@ -32,13 +35,20 @@
    "Fever / infection",
    "Seizures",
    "Immune reset",
-   "Coma / anaesthesia"
+   "Coma / anaesthesia",
+   "Surgery or procedure (outside the brain)",
+   "Systemic illness",
+   "Life event",
+   "Hormonal / reproductive",
+   "Physiological stress"
   ],
   "trigger_intent": [
    "Treatment for another condition",
    "Injury or illness",
    "Self-administered",
-   "Lifestyle change"
+   "Lifestyle change",
+   "Medication error",
+   "Life event"
   ],
   "resolution": [
    "Complete",
@@ -58,7 +68,9 @@
    "Letter",
    "Historical review",
    "Pooled analysis",
-   "Registry study"
+   "Registry study",
+   "Conference abstract",
+   "Preprint"
   ],
   "downstream_level": {
    "0": "None yet",
@@ -69,7 +81,8 @@
   },
   "tier": {
    "A": "Strong: high yield or well documented",
-   "B": "Supporting case or replication"
+   "B": "Supporting case or replication",
+   "C": "Logged: qualifies, but weak, abstract-only or flagged"
   },
   "era": {
    "novel": "Still unexplained: nothing comparable established since",
@@ -105,7 +118,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/12414208/",
     "doi": "https://doi.org/10.1016/s0140-6736(02)11339-0",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fs0140-6736%2802%2911339-0"
    },
    "access": "Paywalled",
    "design": "Case series",
@@ -157,7 +171,8 @@
     "label": "known",
     "note": "Subthalamic stimulation for OCD went on to a randomised trial (Mallet, NEJM 2008).",
     "basis": "judged"
-   }
+   },
+   "flags": []
   },
   {
    "id": "naqvi-2007",
@@ -185,7 +200,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3698854/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/17255515/",
     "doi": "https://doi.org/10.1126/science.1135926",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1126%2Fscience.1135926"
    },
    "access": "Free full text",
    "design": "Lesion series",
@@ -237,7 +253,8 @@
     "label": "known",
     "note": "Addiction remission after insula and related lesions has since been pooled into one circuit (Joutsa, Nat Med 2022).",
     "basis": "judged"
-   }
+   },
+   "flags": []
   },
   {
    "id": "wagner-jauregg-1883",
@@ -270,7 +287,8 @@
       "label": "Tsay 2013, Yale J Biol Med (free)",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3670443/"
      }
-    ]
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1017%2Fs0025727300052431"
    },
    "access": "Free full text",
    "design": "Historical review",
@@ -316,7 +334,8 @@
     "label": "known",
     "note": "Fever therapy for general paresis won the 1927 Nobel Prize; the observation is now psychiatric history.",
     "basis": "judged"
-   }
+   },
+   "flags": []
   },
   {
    "id": "richards-2024",
@@ -344,7 +363,8 @@
     "full_text": "https://www.psychiatrist.com/wp-content/uploads/2023/11/Significant-Decrease-Alcohol-Use-Disorder-Symptoms-jcp-23m15068.pdf",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/38019594/",
     "doi": "https://doi.org/10.4088/jcp.23m15068",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4088%2Fjcp.23m15068"
    },
    "access": "Free full text",
    "design": "Case series",
@@ -395,7 +415,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "kuhn-2007",
@@ -428,7 +449,8 @@
       "label": "Republished in BMJ Case Rep 2009 (free)",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3030006/"
      }
-    ]
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fjnnp.2006.113092"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -473,7 +495,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "israel-2010",
@@ -501,7 +524,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/20044072/",
     "doi": "https://doi.org/10.1016/j.biopsych.2009.11.016",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.biopsych.2009.11.016"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -547,7 +571,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "moreno-delgado-1997",
@@ -575,7 +600,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/9210762/",
     "doi": "https://doi.org/10.1176/ajp.154.7.1037b",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fajp.154.7.1037b"
    },
    "access": "Paywalled",
    "design": "Letter",
@@ -626,7 +652,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "miyaoka-2017",
@@ -654,7 +681,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5613125/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/28983259/",
     "doi": "https://doi.org/10.3389/fpsyt.2017.00174",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3389%2Ffpsyt.2017.00174"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -699,7 +727,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "kraft-westman-2009",
@@ -727,7 +756,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2652467/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/19245705/",
     "doi": "https://doi.org/10.1186/1743-7075-6-10",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1186%2F1743-7075-6-10"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -772,7 +802,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "de-santis-1997",
@@ -800,7 +831,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/9408073/",
     "doi": "https://doi.org/10.1046/j.1365-2796.1997.00200.x",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1046%2Fj.1365-2796.1997.00200.x"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -846,7 +878,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "solyom-1987",
@@ -874,7 +907,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/3502814/",
     "doi": "https://doi.org/10.1192/bjp.151.6.855",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1192%2Fbjp.151.6.855"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -920,7 +954,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "yaryura-tobias-2003",
@@ -948,7 +983,8 @@
     "full_text": "https://doi.org/10.1590/S1516-44462003000100008",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/12975678/",
     "doi": "https://doi.org/10.1590/s1516-44462003000100008",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1590%2Fs1516-44462003000100008"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -993,7 +1029,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "leonard-rapoport-1987",
@@ -1021,7 +1058,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/3631327/",
     "doi": "https://doi.org/10.1176/ajp.144.9.1239b",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fajp.144.9.1239b"
    },
    "access": "Paywalled",
    "design": "Letter",
@@ -1066,7 +1104,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "palmer-2017",
@@ -1094,7 +1133,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/28162810/",
     "doi": "https://doi.org/10.1016/j.schres.2017.01.053",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.schres.2017.01.053"
    },
    "access": "Paywalled",
    "design": "Case series",
@@ -1139,7 +1179,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "palmer-2019",
@@ -1167,7 +1208,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/30962118/",
     "doi": "https://doi.org/10.1016/j.schres.2019.03.019",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.schres.2019.03.019"
    },
    "access": "Paywalled",
    "design": "Case series",
@@ -1212,7 +1254,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "fontaine-2004",
@@ -1240,7 +1283,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/15200126/",
     "doi": "https://doi.org/10.3171/jns.2004.100.6.1084",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3171%2Fjns.2004.100.6.1084"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -1286,7 +1330,8 @@
     "label": "known",
     "note": "Replicated Mallet 2002; the randomised STOC trial followed.",
     "basis": "judged"
-   }
+   },
+   "flags": []
   },
   {
    "id": "oh-2011",
@@ -1314,7 +1359,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3037989/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/21327181/",
     "doi": "https://doi.org/10.1159/000323667",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1159%2F000323667"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -1358,7 +1404,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "sani-2007",
@@ -1386,7 +1433,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/17545955/",
     "doi": "https://doi.org/10.1017/s1092852900015327",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1017%2Fs1092852900015327"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -1430,7 +1478,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "sandyk-1988",
@@ -1458,7 +1507,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/3235704/",
     "doi": "https://doi.org/10.1097/00004714-198812000-00021",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2F00004714-198812000-00021"
    },
    "access": "Paywalled",
    "design": "Letter",
@@ -1502,7 +1552,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "moussawi-2016",
@@ -1530,7 +1581,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5238511/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/27311800/",
     "doi": "https://doi.org/10.1016/j.biopsych.2016.04.005",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.biopsych.2016.04.005"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -1577,7 +1629,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "haque-2025",
@@ -1605,7 +1658,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11903661/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/40075136/",
     "doi": "https://doi.org/10.1038/s43856-025-00760-7",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1038%2Fs43856-025-00760-7"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -1651,7 +1705,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "mackillop-2026",
@@ -1679,7 +1734,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/42011056/",
     "doi": "https://doi.org/10.1080/13854046.2026.2651223",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F13854046.2026.2651223"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -1725,7 +1781,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "jarraya-2010",
@@ -1753,7 +1810,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/20597598/",
     "doi": "https://doi.org/10.3171/2010.6.jns10346",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3171%2F2010.6.jns10346"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -1798,7 +1856,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "yeung-2020",
@@ -1826,7 +1885,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/33331803/",
     "doi": "https://doi.org/10.1080/02699052.2020.1805125",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F02699052.2020.1805125"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -1871,7 +1931,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "smith-2025",
@@ -1899,7 +1960,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11849385/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/39994665/",
     "doi": "https://doi.org/10.1186/s12883-024-03862-2",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1186%2Fs12883-024-03862-2"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -1944,7 +2006,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "erol-durgun-2026",
@@ -1972,7 +2035,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/41946537/",
     "doi": "https://doi.org/10.1136/bcr-2025-266529",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fbcr-2025-266529"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -2017,7 +2081,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "diamond-2011",
@@ -2045,7 +2110,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/21426244/",
     "doi": "https://doi.org/10.3109/00207454.2011.561941",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3109%2F00207454.2011.561941"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -2089,7 +2155,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "sosa-gomez-2026",
@@ -2117,7 +2184,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343248/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/42422634/",
     "doi": "https://doi.org/10.7759/cureus.110418",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.7759%2Fcureus.110418"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -2164,7 +2232,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "gupta-2026",
@@ -2192,7 +2261,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13048452/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/41939690/",
     "doi": "https://doi.org/10.7759/cureus.104667",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.7759%2Fcureus.104667"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -2237,7 +2307,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "faruqui-2022",
@@ -2265,7 +2336,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9779988/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/36568330/",
     "doi": "https://doi.org/10.1155/2022/8992697",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1155%2F2022%2F8992697"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -2309,7 +2381,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "jewett-2020",
@@ -2337,7 +2410,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7161116/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/32295563/",
     "doi": "https://doi.org/10.1186/s12888-020-02590-4",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1186%2Fs12888-020-02590-4"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -2384,7 +2458,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "downar-2012",
@@ -2412,7 +2487,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3330246/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/22529822/",
     "doi": "https://doi.org/10.3389/fpsyt.2012.00030",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3389%2Ffpsyt.2012.00030"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -2457,7 +2533,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "abdollahifard-2026",
@@ -2485,7 +2562,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/41629421/",
     "doi": "https://doi.org/10.1007/s10072-026-08808-9",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1007%2Fs10072-026-08808-9"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -2530,7 +2608,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "klok-2025",
@@ -2558,7 +2637,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/40335277/",
     "doi": "https://doi.org/10.1136/pn-2024-004510",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fpn-2024-004510"
    },
    "access": "Paywalled",
    "design": "Case series",
@@ -2602,7 +2682,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "hefzy-2011",
@@ -2630,7 +2711,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/20609039/",
     "doi": "https://doi.org/10.1111/j.1552-6569.2010.00486.x",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fj.1552-6569.2010.00486.x"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -2675,7 +2757,8 @@
     "label": "known",
     "note": "Reported after the insula-smoking link was published (Naqvi 2007): a replication of an effect already known.",
     "basis": "judged"
-   }
+   },
+   "flags": []
   },
   {
    "id": "najeeb-2016",
@@ -2703,7 +2786,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/27801766/",
     "doi": "https://doi.org/10.1097/nrl.0000000000000091",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fnrl.0000000000000091"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -2748,7 +2832,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "yuan-2025",
@@ -2776,7 +2861,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12310724/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/40746908/",
     "doi": "https://doi.org/10.3389/fnhum.2025.1619775",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3389%2Ffnhum.2025.1619775"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -2819,7 +2905,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "valadez-cuen-2024",
@@ -2847,7 +2934,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11708937/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/39790695/",
     "doi": "https://doi.org/10.36518/2689-0216.1707",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.36518%2F2689-0216.1707"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -2892,7 +2980,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "pantoni-1997",
@@ -2920,7 +3009,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/9040726/",
     "doi": "https://doi.org/10.1212/wnl.48.2.381",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1212%2Fwnl.48.2.381"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -2966,7 +3056,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "kosel-2007",
@@ -2994,7 +3085,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/16962613/",
     "doi": "https://doi.org/10.1016/j.jpsychires.2006.07.010",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.jpsychires.2006.07.010"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -3038,7 +3130,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "sciortino-2021",
@@ -3066,7 +3159,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8695790/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/34955908/",
     "doi": "https://doi.org/10.3389/fpsyt.2021.732066",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3389%2Ffpsyt.2021.732066"
    },
    "access": "Free full text",
    "design": "Case series",
@@ -3111,7 +3205,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "rammouz-2024",
@@ -3139,7 +3234,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/39417536/",
     "doi": "https://doi.org/10.1080/13651501.2024.2417651",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F13651501.2024.2417651"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -3182,7 +3278,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "barbieri-2005",
@@ -3210,7 +3307,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/15907757/",
     "doi": "https://doi.org/10.1016/j.yebeh.2005.02.010",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.yebeh.2005.02.010"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -3255,7 +3353,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "meilinger-2026",
@@ -3283,7 +3382,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13039557/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/41914511/",
     "doi": "https://doi.org/10.1177/21501319261437615",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F21501319261437615"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -3328,7 +3428,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "hill-2025",
@@ -3356,7 +3457,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12078295/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/40375882/",
     "doi": "https://doi.org/10.3389/fpsyt.2025.1420316",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3389%2Ffpsyt.2025.1420316"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -3401,7 +3503,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "takizawa-2026",
@@ -3429,7 +3532,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13052794/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/41925328/",
     "doi": "https://doi.org/10.1530/edm-26-0002",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1530%2Fedm-26-0002"
    },
    "access": "Free full text",
    "design": "Case series",
@@ -3474,7 +3578,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "guerdjikova-2026",
@@ -3502,7 +3607,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/41632102/",
     "doi": "https://doi.org/10.1097/jcp.0000000000002135",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fjcp.0000000000002135"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -3546,7 +3652,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "kelly-2026",
@@ -3574,7 +3681,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13338974/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/42260955/",
     "doi": "https://doi.org/10.1002/mdc3.70704",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2Fmdc3.70704"
    },
    "access": "Free full text",
    "design": "Case report",
@@ -3618,7 +3726,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "lugo-radillo-2021",
@@ -3646,7 +3755,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/33225874/",
     "doi": "https://doi.org/10.1080/02791072.2020.1849879",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F02791072.2020.1849879"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -3691,7 +3801,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "jansson-1984",
@@ -3719,7 +3830,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/6700311/",
     "doi": null,
-    "alternates": []
+    "alternates": [],
+    "ckn": null
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -3765,7 +3877,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "joutsa-2022",
@@ -3793,7 +3906,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9205767/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/35697842/",
     "doi": "https://doi.org/10.1038/s41591-022-01834-y",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1038%2Fs41591-022-01834-y"
    },
    "access": "Free full text",
    "design": "Pooled analysis",
@@ -3838,7 +3952,8 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "ekstrom-2022",
@@ -3866,7 +3981,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9804901/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/35796307/",
     "doi": "https://doi.org/10.1111/pcn.13448",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fpcn.13448"
    },
    "access": "Free full text",
    "design": "Registry study",
@@ -3911,7 +4027,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "romer-2024",
@@ -3939,7 +4056,8 @@
     "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11480220/",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/39416658/",
     "doi": "https://doi.org/10.1016/j.bpsgos.2024.100389",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.bpsgos.2024.100389"
    },
    "access": "Free full text",
    "design": "Registry study",
@@ -3984,7 +4102,8 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   }
+   },
+   "flags": []
   },
   {
    "id": "wagemaker-cade-1977",
@@ -4012,7 +4131,8 @@
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/869035/",
     "doi": "https://doi.org/10.1176/ajp.134.6.684",
-    "alternates": []
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fajp.134.6.684"
    },
    "access": "Paywalled",
    "design": "Case series",
@@ -4062,7 +4182,4651 @@
     "label": "refuted",
     "note": "Remissions on dialysis did not survive sham-controlled testing (1980).",
     "basis": "judged"
-   }
+   },
+   "flags": []
+  },
+  {
+   "id": "hosseini-2026",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Hosseini SH, Abbasi B, Abedian Kenari F",
+    "title": "Unexpected Improvement of Obsessive–Compulsive Disorder Symptoms Following the Mistaken Prescription of Clomiphene: A Novel Perspective on Hormonal Influences in OCD",
+    "journal": "Case Rep Psychiatry",
+    "year": 2026,
+    "volume": "2026",
+    "issue": "",
+    "pages": "4931083"
+   },
+   "ids": {
+    "doi": "10.1155/crps/4931083",
+    "pmid": "42306636",
+    "pmcid": "PMC13266362"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13266362/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/42306636/",
+    "doi": "https://doi.org/10.1155/crps/4931083",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L2046384074"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1155%2Fcrps%2F4931083"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Postpartum-onset OCD, relapsed after clomipramine was stopped",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Clomiphene (a fertility drug) dispensed in error instead of clomipramine",
+    "intent": "Medication error"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Relapsed OCD improved after a pharmacy error supplied clomiphene, a fertility drug, in place of clomipramine.",
+   "caveat": "Improvement rather than remission, in a patient with a history of good treatment response.",
+   "tags": [
+    "hormonal",
+    "medication-error",
+    "ocd",
+    "serendipity"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "bedell-2025",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Bedell BR et al.",
+    "title": "A Severe Case of Pica Resolved With GLP-1 Agonist Therapy",
+    "journal": "J Endocr Soc",
+    "year": 2025,
+    "volume": "9",
+    "issue": "Suppl 1",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1210/jendso/bvaf149.178",
+    "pmid": "",
+    "pmcid": "PMC12545837"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12545837/",
+    "abstract": null,
+    "doi": "https://doi.org/10.1210/jendso/bvaf149.178",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1210%2Fjendso%2Fbvaf149.178"
+   },
+   "access": "Free full text",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Severe pica",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "GLP-1 receptor agonist for obesity",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Severe pica disappeared after a GLP-1 receptor agonist was started for weight loss.",
+   "caveat": "Conference abstract; duration of pica and follow-up not given.",
+   "tags": [
+    "conference-abstract",
+    "eating",
+    "glp-1",
+    "pica"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "richards-2022",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Richards J et al.",
+    "title": "Case Series: Successful Treatment of Moderate to Severe Binge Eating with GLP-1 Agonist Semaglutide",
+    "journal": "Obesity",
+    "year": 2022,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1002/oby.23626",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1002/oby.23626",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2Foby.23626"
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 5,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Moderate to severe binge eating disorder (Binge Eating Scale)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Semaglutide given for obesity, per clinic protocol",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Five obesity-clinic patients' binge eating scores fell after semaglutide was started for weight.",
+   "caveat": "Retrospective chart review in an obesity clinic, abstract only.",
+   "tags": [
+    "binge-eating",
+    "case-series",
+    "conference-abstract",
+    "glp-1"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "fernandes-2020",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Fernandes CP et al.",
+    "title": "P.689 Anorexia nervosa remission after an infective endocarditis with cerebral embolism: a case report",
+    "journal": "European Neuropsychopharmacology",
+    "year": 2020,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1016/j.euroneuro.2020.09.510",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1016/j.euroneuro.2020.09.510",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L2009014126"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.euroneuro.2020.09.510"
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Anorexia nervosa",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Infective endocarditis with cerebral embolism",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Anorexia nervosa went into remission after infective endocarditis sent emboli to the brain.",
+   "caveat": "Conference abstract; lesion sites and follow-up need the poster or full text.",
+   "tags": [
+    "anorexia",
+    "conference-abstract",
+    "embolism",
+    "lesion"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "mathew-2019",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Mathew PG et al.",
+    "title": "Up in smoke: Erenumab induced nausea exacerbated by smoking resulting in smoking cessation",
+    "journal": "Headache",
+    "year": 2019,
+    "volume": "59 Suppl 1",
+    "issue": "",
+    "pages": "1-208"
+   },
+   "ids": {
+    "doi": "10.1111/head.13549",
+    "pmid": "31290138",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/31290138/",
+    "doi": "https://doi.org/10.1111/head.13549",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L628695150"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fhead.13549"
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Nicotine dependence, 1–2 packs a day for about 30 years",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Erenumab for migraine; its nausea was made worse by smoking",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A lifelong heavy smoker stopped after erenumab, a migraine drug, caused nausea that smoking made worse.",
+   "caveat": "An aversive side effect rather than a change in craving; abstract only.",
+   "tags": [
+    "aversion",
+    "conference-abstract",
+    "migraine",
+    "smoking"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "kim-2016",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Kim JW, Bae KY, Kim SW, Kang HJ, Shin IS, Yoon JS et al.",
+    "title": "Treatment-resistant depression entering remission following a seizure during the course of repetitive transcranial magnetic stimulation",
+    "journal": "Psychiatry Investig",
+    "year": 2016,
+    "volume": "13",
+    "issue": "4",
+    "pages": "468-471"
+   },
+   "ids": {
+    "doi": "10.4306/pi.2016.13.4.468",
+    "pmid": "27482250",
+    "pmcid": "PMC4965659"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4965659/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/27482250/",
+    "doi": "https://doi.org/10.4306/pi.2016.13.4.468",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L611616082"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4306%2Fpi.2016.13.4.468"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Treatment-resistant depression",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Seizures",
+    "specific": "A seizure during a course of rTMS",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Treatment-resistant depression remitted after an accidental seizure during repetitive transcranial magnetic stimulation.",
+   "caveat": "The rTMS course itself may have contributed.",
+   "tags": [
+    "adverse-event",
+    "depression",
+    "rtms",
+    "seizure"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "known",
+    "note": "Seizures relieving depression is the principle of convulsive therapy (1930s); unexpected here as a single accidental seizure.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "canan-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Canan F, Sinani G, Aydinoglu U",
+    "title": "Body dysmorphic disorder incidentally treated with bupropion",
+    "journal": "J Clin Psychopharmacol",
+    "year": 2013,
+    "volume": "33",
+    "issue": "1",
+    "pages": "133-134"
+   },
+   "ids": {
+    "doi": "10.1097/01.jcp.0000426183.74325.fe",
+    "pmid": "23288237",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/23288237/",
+    "doi": "https://doi.org/10.1097/01.jcp.0000426183.74325.fe",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2F01.jcp.0000426183.74325.fe"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Body dysmorphic disorder (preoccupation with his face)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Bupropion SR for smoking cessation",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A man taking bupropion to quit smoking found his body dysmorphic preoccupation had faded by week 8.",
+   "caveat": "No standardised measure in the abstract; bupropion has antidepressant effects. First reported as a 2011 conference abstract.",
+   "tags": [
+    "bdd",
+    "bupropion",
+    "smoking"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "pardo-gonzalez-2023",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Pardo González C, Tellez Gomez A, Sanjuán Ortiz C, Ribes Cuenca J, Beltrán Cristancho D, Ribes Jordán G",
+    "title": "Case report: Improvement of chronic mania after Steven-Johnson syndrome",
+    "journal": "Eur Psychiatry",
+    "year": 2023,
+    "volume": "66",
+    "issue": "Suppl 1",
+    "pages": "S694-S695"
+   },
+   "ids": {
+    "doi": "10.1192/j.eurpsy.2023.1453",
+    "pmid": "",
+    "pmcid": "PMC10661348"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10661348/",
+    "abstract": null,
+    "doi": "https://doi.org/10.1192/j.eurpsy.2023.1453",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L642170603"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1192%2Fj.eurpsy.2023.1453"
+   },
+   "access": "Free full text",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Chronic mania in bipolar disorder with intellectual disability and epilepsy",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Systemic illness",
+    "specific": "Stevens–Johnson syndrome 14 days after starting cariprazine",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Chronic mania improved after an episode of Stevens–Johnson syndrome.",
+   "caveat": "Medication changes forced by the reaction confound attribution; abstract only.",
+   "tags": [
+    "conference-abstract",
+    "mania",
+    "sjs",
+    "systemic-illness"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "felizardo-2023",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Felizardo M, Freitas C",
+    "title": "Persistent delusional disorder: psychopathological remission associated with clozapine-induced epileptic seizures",
+    "journal": "Eur Psychiatry",
+    "year": 2023,
+    "volume": "66",
+    "issue": "Suppl 1",
+    "pages": "S1076-S1076"
+   },
+   "ids": {
+    "doi": "10.1192/j.eurpsy.2023.2286",
+    "pmid": "",
+    "pmcid": "PMC10479170"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10479170/",
+    "abstract": null,
+    "doi": "https://doi.org/10.1192/j.eurpsy.2023.2286",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L642173590"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1192%2Fj.eurpsy.2023.2286"
+   },
+   "access": "Free full text",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Persistent delusional disorder",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Seizures",
+    "specific": "Clozapine-induced epileptic seizures",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Persistent delusional disorder remitted after clozapine provoked epileptic seizures.",
+   "caveat": "Clozapine itself may have been effective; abstract only.",
+   "tags": [
+    "clozapine",
+    "conference-abstract",
+    "delusional-disorder",
+    "seizure"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "known",
+    "note": "Seizures relieving psychosis is the principle of convulsive therapy (Meduna, 1934).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "gerken-2022",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Gerken P et al.",
+    "title": "(95) Severe Obsessive-Compulsive Disorder Symptom Remission After Brain Stroke: A Case Report",
+    "journal": "Journal of the Academy of Consultation-Liaison Psychiatry",
+    "year": 2022,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1016/j.jaclp.2022.10.098",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1016/j.jaclp.2022.10.098",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L2021104062"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.jaclp.2022.10.098"
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Severe contamination OCD since age 19",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Ischaemic stroke in the basal ganglia",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Ten years of severe contamination OCD remitted after an ischaemic stroke in the basal ganglia.",
+   "caveat": "Conference abstract; lesion detail and follow-up need the full text.",
+   "tags": [
+    "basal-ganglia",
+    "conference-abstract",
+    "ocd",
+    "stroke"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "durbin-2022",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Durbin A et al.",
+    "title": "Remission of Gilles de la Tourette Syndrome Following Dehydration",
+    "journal": "Mov Disord",
+    "year": 2022,
+    "volume": "",
+    "issue": "",
+    "pages": "S1-S666"
+   },
+   "ids": {
+    "doi": "10.1002/mds.29223",
+    "pmid": "36104979",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/36104979/",
+    "doi": "https://doi.org/10.1002/mds.29223",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L639305180"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2Fmds.29223"
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Gilles de la Tourette syndrome since age 7",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Physiological stress",
+    "specific": "Heat-induced dehydration (follow-up of the Brasic patient)",
+    "intent": "Self-administered"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Follow-up of the man whose Tourette syndrome remitted after hot-tub dehydration: still doing well years later.",
+   "caveat": "Same patient as Brasic 2018; abstract only.",
+   "tags": [
+    "conference-abstract",
+    "dehydration",
+    "follow-up",
+    "heat",
+    "tourette"
+   ],
+   "same_patient_as": "brasic-2018",
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "aminzade-2021",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Aminzade Z, Tehrani Fateh S, Jalili Khoshnoud R, Ashrafi F, Salari M",
+    "title": "Deep brain stimulation of anteromedial globus pallidus internus improved OCD rather than tics in a Gilles de la Tourette syndrome patient",
+    "journal": "Clin Case Rep",
+    "year": 2021,
+    "volume": "9",
+    "issue": "12",
+    "pages": "e05204"
+   },
+   "ids": {
+    "doi": "10.1002/ccr3.5204",
+    "pmid": "34938561",
+    "pmcid": "PMC8659610"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8659610/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/34938561/",
+    "doi": "https://doi.org/10.1002/ccr3.5204",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L2014573390"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2Fccr3.5204"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "OCD component of refractory Tourette syndrome",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Anteromedial globus pallidus internus DBS for tics",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "DBS aimed at tics left them unchanged but almost completely resolved the patient's OCD.",
+   "caveat": "OCD is part of the Tourette spectrum, so the target was adjacent rather than unrelated.",
+   "tags": [
+    "dbs",
+    "gpi",
+    "ocd",
+    "tourette"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "huhne-2021",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Hühne V, Vigne P, de Menezes GB, Fontenelle LF",
+    "title": "The Remission of Social Anxiety Disorder After Trauma: A Case Report of Posttraumatic Growth?",
+    "journal": "Front Psychiatry",
+    "year": 2021,
+    "volume": "12",
+    "issue": "",
+    "pages": "692637"
+   },
+   "ids": {
+    "doi": "10.3389/fpsyt.2021.692637",
+    "pmid": "34589004",
+    "pmcid": "PMC8473609"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8473609/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/34589004/",
+    "doi": "https://doi.org/10.3389/fpsyt.2021.692637",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L636072904"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3389%2Ffpsyt.2021.692637"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Anxiety"
+    ],
+    "specific": "Social anxiety disorder",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Life event",
+    "specific": "A traumatic event (posttraumatic growth)",
+    "intent": "Life event"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Long-standing social anxiety disorder remitted after a traumatic event, framed as posttraumatic growth.",
+   "caveat": "Psychological mechanism; measures need checking in the full text.",
+   "tags": [
+    "posttraumatic-growth",
+    "social-anxiety",
+    "trauma"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "vendrell-serres-2021",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Vendrell-Serres J, Soto-Angona Ó, Rodríguez-Urrutia A, Arteaga-Henríquez G, Ramos-Quiroga JA",
+    "title": "Improvement of functional neurological disorder after administration of esketamine nasal spray: a case report",
+    "journal": "Ther Adv Psychopharmacol",
+    "year": 2021,
+    "volume": "11",
+    "issue": "",
+    "pages": "20451253211022187"
+   },
+   "ids": {
+    "doi": "10.1177/20451253211022187",
+    "pmid": "34188796",
+    "pmcid": "PMC8212365"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8212365/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/34188796/",
+    "doi": "https://doi.org/10.1177/20451253211022187",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L2012842623"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F20451253211022187"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Functional neurological"
+    ],
+    "specific": "Functional neurological disorder with treatment-resistant depression",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Esketamine nasal spray for treatment-resistant depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Functional neurological symptoms improved when esketamine was given for comorbid treatment-resistant depression.",
+   "caveat": "Mood improved at the same time, so the effect may run through depression.",
+   "tags": [
+    "comorbid",
+    "esketamine",
+    "fnd"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "van-den-hoven-2021",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "van den Hoven DJ et al.",
+    "title": "Remission of catatonia after intravenous propofol infusion for unrelated reasons",
+    "journal": "Netherlands Journal of Critical Care",
+    "year": 2021,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L2014030201"
+     }
+    ],
+    "ckn": "http://resolver.ebscohost.com/openurl?sid=EMBASE&sid=EMBASE&issn=&id=doi:&atitle=Remission+of+catatonia+after+intravenous+propofol+infusion+for+unrelated+reasons&stitle=Neth.+J.+Crit.+Care&title=Netherlands+Journal+of+Critical+Care&volume=29&issue=5&spage=222&epage=225&aulast=van+den+Hoven&aufirst=D.J.&auinit=D.J.&aufull=van+den+Hoven+D.J.&coden=&isbn=&pages=222-225&date=2021&auinit1=D&auinitm=J"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Catatonia"
+    ],
+    "specific": "Catatonia in recurrent depressive disorder after a stroke, partly lorazepam-responsive",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Coma / anaesthesia",
+    "specific": "Propofol infusion given for an unrelated reason",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Catatonia that lorazepam only partly relieved resolved abruptly during a propofol infusion given for something else.",
+   "caveat": "Catatonia was weeks old, not chronic.",
+   "tags": [
+    "anaesthesia",
+    "catatonia",
+    "gaba",
+    "propofol"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "collyer-2020",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Collyer R et al.",
+    "title": "Faecal microbiota transplantation alleviates symptoms of depression in individuals with irritable bowel syndrome: A case series",
+    "journal": "Medicine in Microecology",
+    "year": 2020,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1016/j.medmic.2020.100029",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1016/j.medmic.2020.100029",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L2010110460"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.medmic.2020.100029"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 3,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Depression with irritable bowel syndrome",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Faecal microbiota transplantation for irritable bowel syndrome",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Mood improved in three people given faecal microbiota transplants for irritable bowel syndrome.",
+   "caveat": "Retrospective record review; outcome measures heterogeneous.",
+   "tags": [
+    "case-series",
+    "depression",
+    "fmt",
+    "microbiome"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "achamrah-2020",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Achamrah N, Grigioni S, Coëffier M, Ainseba N, Déchelotte P",
+    "title": "Gastric Necrosis After Binge Eating in Bulimia: Recovery From Eating Disorder After Total Gastrectomy",
+    "journal": "Front Psychiatry",
+    "year": 2020,
+    "volume": "11",
+    "issue": "",
+    "pages": "741"
+   },
+   "ids": {
+    "doi": "10.3389/fpsyt.2020.00741",
+    "pmid": "32903630",
+    "pmcid": "PMC7438759"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7438759/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/32903630/",
+    "doi": "https://doi.org/10.3389/fpsyt.2020.00741",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L632588049"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3389%2Ffpsyt.2020.00741"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Bulimia nervosa for 15 years",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Total gastrectomy for gastric necrosis after a binge",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Fifteen years of bulimia nervosa eased markedly after an emergency total gastrectomy.",
+   "caveat": "Bingeing becomes physically limited after gastrectomy, so behaviour change is not clean evidence of remission.",
+   "tags": [
+    "bulimia",
+    "gastrectomy",
+    "surgery"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "jarvinen-2019",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Järvinen A, Laine MK, Tikkanen R, Castrén ML",
+    "title": "Beneficial effects of GLP-1 agonist in a Male with compulsive food-related behavior associated with autism",
+    "journal": "Front Psychiatry",
+    "year": 2019,
+    "volume": "10",
+    "issue": "",
+    "pages": "97"
+   },
+   "ids": {
+    "doi": "10.3389/fpsyt.2019.00097",
+    "pmid": "30881319",
+    "pmcid": "PMC6405420"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6405420/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/30881319/",
+    "doi": "https://doi.org/10.3389/fpsyt.2019.00097",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L627943439"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3389%2Ffpsyt.2019.00097"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating",
+     "Neurodevelopmental"
+    ],
+    "specific": "Severe obsessive food craving and binge eating in autism",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Liraglutide (a GLP-1 agonist)",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Obsessive food craving and binge eating in a man with autism eased on liraglutide.",
+   "caveat": "Indication needs checking; weight management was a stated aim.",
+   "tags": [
+    "autism",
+    "binge-eating",
+    "glp-1"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "shreedhara-2018",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Shreedhara AS, Bhargava GK, Kenchaiah R, Ravindranadh CM, Arima A, Bharath RD et al.",
+    "title": "Improvement in obsessive-compulsive disorder following right anterior temporal lobectomy and amygdalohippocampectomy in a patient with refractory temporal lobe epilepsy with right mesial temporal sclerosis",
+    "journal": "Ann Indian Acad Neurol",
+    "year": 2018,
+    "volume": "21",
+    "issue": "4",
+    "pages": "321-324"
+   },
+   "ids": {
+    "doi": "10.4103/aian.aian-399-17",
+    "pmid": "30532367",
+    "pmcid": "PMC6238557"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6238557/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/30532367/",
+    "doi": "https://doi.org/10.4103/aian.aian-399-17",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L624816550"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4103%2Faian.aian-399-17"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "OCD with refractory temporal lobe epilepsy",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Right anterior temporal lobectomy with amygdalohippocampectomy for epilepsy",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "OCD improved after a right temporal lobectomy done to stop epileptic seizures.",
+   "caveat": "Seizure control and medication changes after surgery could contribute.",
+   "tags": [
+    "epilepsy-surgery",
+    "ocd",
+    "temporal-lobe"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Follows Kanner 1993 and Guarnieri 2005.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "sair-2018",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Sair A et al.",
+    "title": "Remission of obsessive-compulsive symptoms following temporoparietal haemorrhage: a case report",
+    "journal": "Psychiatry and Clinical Psychopharmacology",
+    "year": 2018,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1080/24750573.2017.1410336",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1080/24750573.2017.1410336",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L623612493"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F24750573.2017.1410336"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Obsessive-compulsive disorder",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Temporoparietal haemorrhage",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Obsessive-compulsive symptoms remitted after a temporoparietal haemorrhage.",
+   "caveat": "Chronicity and measures need the full text.",
+   "tags": [
+    "haemorrhage",
+    "lesion",
+    "ocd"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "sumner-2017",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Sumner E et al.",
+    "title": "Decreased antipsychotic dose requirements after bithalamic infarcts in a patient with chronic schizophrenia",
+    "journal": "Journal of Neuropsychiatry and Clinical Neurosciences",
+    "year": 2017,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1176/appi.neuropsych.16110299",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1176/appi.neuropsych.16110299",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L620923503"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fappi.neuropsych.16110299"
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Chronic schizophrenia",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Bilateral thalamic infarcts (artery of Percheron occlusion)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A man with chronic schizophrenia needed far less antipsychotic after bilateral thalamic strokes.",
+   "caveat": "Dose requirement is an indirect measure, and he was severely amnestic after the stroke.",
+   "tags": [
+    "conference-abstract",
+    "schizophrenia",
+    "stroke",
+    "thalamus"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "ali-2015",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Ali R, Shebak SS",
+    "title": "Deep brain stimulation in the globus pallidus internus in a woman with parkinson’s disease treats depression but does not improve parkinsonian symptoms: A case report",
+    "journal": "Prim Care Companion CNS Disord",
+    "year": 2015,
+    "volume": "17",
+    "issue": "4",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.4088/pcc.14l01750",
+    "pmid": "26693031",
+    "pmcid": "PMC4664559"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4664559/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/26693031/",
+    "doi": "https://doi.org/10.4088/pcc.14l01750",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L606490114"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4088%2Fpcc.14l01750"
+   },
+   "access": "Free full text",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Depression with Parkinson's disease",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Globus pallidus internus DBS for Parkinson's disease (no motor benefit)",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Pallidal DBS for Parkinson's disease failed to help her movement but relieved her depression.",
+   "caveat": "Letter; depression severity and duration need checking.",
+   "tags": [
+    "dbs",
+    "depression",
+    "gpi",
+    "parkinsons"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "coffey-2014",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Coffey MJ et al.",
+    "title": "Resolution of childhood onset attention deficit hyperactivity disorder after electroconvulsive therapy for major depression in adolescence",
+    "journal": "Journal of ECT",
+    "year": 2014,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1097/yct.0000000000000158",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1097/yct.0000000000000158",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L618520282"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fyct.0000000000000158"
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Neurodevelopmental"
+    ],
+    "specific": "Childhood-onset ADHD",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Bifrontal ECT for adolescent major depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A teenager's childhood ADHD resolved after a course of ECT given for depression.",
+   "caveat": "Abstract only; depressive symptoms can mimic and amplify ADHD.",
+   "tags": [
+    "adhd",
+    "adolescent",
+    "conference-abstract",
+    "ect"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "brieler-2014",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Brieler J, Del Core M",
+    "title": "Resolution of positive symptoms of schizophrenia after traumatic brain injury",
+    "journal": "Prim Care Companion CNS Disord",
+    "year": 2014,
+    "volume": "16",
+    "issue": "5",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.4088/pcc.14l01652",
+    "pmid": "25667803",
+    "pmcid": "PMC4321008"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4321008/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/25667803/",
+    "doi": "https://doi.org/10.4088/pcc.14l01652",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L606475256"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4088%2Fpcc.14l01652"
+   },
+   "access": "Free full text",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenia",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Traumatic brain injury",
+    "specific": "Traumatic brain injury",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Positive symptoms of schizophrenia resolved after a traumatic brain injury.",
+   "caveat": "Letter; injury site and follow-up need the full text.",
+   "tags": [
+    "schizophrenia",
+    "tbi"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "nakama-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Nakama H et al.",
+    "title": "Case report of a 24-year-old man with resolution of treatment-resistant major depressive disorder and comorbid PTSD using rTMS",
+    "journal": "Journal of ECT",
+    "year": 2013,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1097/yct.0b013e3182a2705d",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1097/yct.0b013e3182a2705d",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L52798916"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fyct.0b013e3182a2705d"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Trauma & stressor-related"
+    ],
+    "specific": "PTSD with treatment-resistant depression",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Left dorsolateral prefrontal rTMS for treatment-resistant depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Comorbid PTSD remitted alongside depression during rTMS given for the depression.",
+   "caveat": "Comorbid improvement; PTSD may have tracked mood.",
+   "tags": [
+    "comorbid",
+    "ptsd",
+    "rtms"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "zakrzewski-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Zakrzewski C et al.",
+    "title": "Dextromethorphan/quinidine attenuates compulsive shopping behaviors and pseudobulbar affect in individuals with traumatic brain injury",
+    "journal": "Neurology",
+    "year": 2013,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L71130659"
+     }
+    ],
+    "ckn": "http://resolver.ebscohost.com/openurl?sid=EMBASE&sid=EMBASE&issn=&id=doi:&atitle=Dextromethorphan%2Fquinidine+attenuates+compulsive+shopping+behaviors+and+pseudobulbar+affect+in+individuals+with+traumatic+brain+injury&stitle=Neurology&title=Neurology&volume=80&issue=1&spage=&epage=&aulast=Zakrzewski&aufirst=Christine&auinit=C.&aufull=Zakrzewski+C.&coden=&isbn=&pages=-&date=2013&auinit1=C&auinitm="
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 12,
+   "syndrome": {
+    "categories": [
+     "Impulse-control"
+    ],
+    "specific": "Compulsive shopping after traumatic brain injury",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Dextromethorphan/quinidine for pseudobulbar affect",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Compulsive shopping after brain injury eased in patients given dextromethorphan/quinidine for pathological crying and laughing.",
+   "caveat": "Retrospective series of 12; how many shopped compulsively is unclear from the abstract.",
+   "tags": [
+    "compulsive-buying",
+    "conference-abstract",
+    "dextromethorphan",
+    "tbi"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "bagnati-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Bagnati P et al.",
+    "title": "Abrupt disruption of nicotine addiction and apathy after a strategic acute brain ichemia",
+    "journal": "Neurology",
+    "year": 2013,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L71130741"
+     }
+    ],
+    "ckn": "http://resolver.ebscohost.com/openurl?sid=EMBASE&sid=EMBASE&issn=&id=doi:&atitle=Abrupt+disruption+of+nicotine+addiction+and+apathy+after+a+strategic+acute+brain+ichemia&stitle=Neurology&title=Neurology&volume=80&issue=1&spage=&epage=&aulast=Bagnati&aufirst=Pablo&auinit=P.&aufull=Bagnati+P.&coden=&isbn=&pages=-&date=2013&auinit1=P&auinitm="
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Nicotine addiction",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Strategic acute brain ischaemia in reward-circuit pathways (MRI and DTI)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Nicotine addiction stopped abruptly after a small stroke in reward-circuit pathways, along with new apathy.",
+   "caveat": "Abstract only; apathy may explain the loss of drive to smoke.",
+   "tags": [
+    "conference-abstract",
+    "reward-circuit",
+    "smoking",
+    "stroke"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "known",
+    "note": "Replicates the lesion-induced addiction remission shown by Naqvi 2007 and pooled by Joutsa 2022.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "sandeep-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Sandeep B et al.",
+    "title": "Spontaneous remission in anorexia nervosa following a spiritual experience: A case report",
+    "journal": "Indian Journal of Psychiatry",
+    "year": 2013,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L70991505"
+     }
+    ],
+    "ckn": "http://resolver.ebscohost.com/openurl?sid=EMBASE&sid=EMBASE&issn=&id=doi:&atitle=Spontaneous+remission+in+anorexia+nervosa+following+a+spiritual+experience%3A+A+case+report&stitle=Indian+J.+Psychiatry&title=Indian+Journal+of+Psychiatry&volume=55&issue=&spage=S131&epage=&aulast=Sandeep&aufirst=B.&auinit=B.&aufull=Sandeep+B.&coden=&isbn=&pages=S131-&date=2013&auinit1=B&auinitm="
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Anorexia nervosa for 4 years in an adolescent",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Life event",
+    "specific": "A spiritual experience",
+    "intent": "Life event"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "An adolescent's four-year anorexia nervosa remitted after a spiritual experience.",
+   "caveat": "Abstract only; no follow-up or measures reported.",
+   "tags": [
+    "anorexia",
+    "conference-abstract",
+    "spiritual"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "boudjani-2012",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Boudjani H et al.",
+    "title": "Cocaine addiction relieved by a striatal lesion: Cues to a future treatment approach?",
+    "journal": "Stroke",
+    "year": 2012,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1161/01.str.0000422054.44193.87",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1161/01.str.0000422054.44193.87",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L70919111"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1161%2F01.str.0000422054.44193.87"
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Cocaine addiction",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Dorsolateral striatal stroke (presented with hemiparesis)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Cocaine addiction was relieved after a stroke in the dorsolateral striatum.",
+   "caveat": "Abstract only; follow-up length unknown.",
+   "tags": [
+    "cocaine",
+    "conference-abstract",
+    "striatum",
+    "stroke"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "known",
+    "note": "Fits the lesion-addiction literature after Naqvi 2007.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "hosseini-2012",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Hosseini SH, Azari P, Abdi R, Alizadeh-Navaei R",
+    "title": "Suppression of obsessive-compulsive symptoms after head trauma",
+    "journal": "Case Rep Med",
+    "year": 2012,
+    "volume": "2012",
+    "issue": "",
+    "pages": "909614"
+   },
+   "ids": {
+    "doi": "10.1155/2012/909614",
+    "pmid": "22956962",
+    "pmcid": "PMC3432563"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3432563/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/22956962/",
+    "doi": "https://doi.org/10.1155/2012/909614",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L365637591"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1155%2F2012%2F909614"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Severe OCD",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Traumatic brain injury",
+    "specific": "Right temporo-parieto-frontal lesion after head trauma",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Severe OCD disappeared after head trauma damaged the right temporal, parietal and frontal lobes.",
+   "caveat": "Measures and follow-up need the full text.",
+   "tags": [
+    "lesion",
+    "ocd",
+    "tbi"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "kalenderoglu-2011",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Kalenderoglu A et al.",
+    "title": "Treatment refractory OCD which entered remission after heroin use: Case report",
+    "journal": "Turkiye Klinikleri Journal of Medical Sciences",
+    "year": 2011,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.5336/medsci.2009-13928",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.5336/medsci.2009-13928",
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L362359202"
+     }
+    ],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.5336%2Fmedsci.2009-13928"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Treatment-refractory OCD",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Recreational substance",
+    "specific": "Heroin use",
+    "intent": "Self-administered"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Treatment-refractory OCD went into remission when the patient began using heroin.",
+   "caveat": "Ongoing opioid use; follow-up and measures need the full text.",
+   "tags": [
+    "heroin",
+    "ocd",
+    "opioid"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "emerging",
+    "note": "Opioid effects on OCD had been reported with tramadol and morphine.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "vartian-2004",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Vartian BA et al.",
+    "title": "Spontaneous long-term smoking cessation in a patient with schizophrenia after treatment with ziprasidone",
+    "journal": "Addictive Disorders and their Treatment",
+    "year": 2004,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L39186957"
+     }
+    ],
+    "ckn": "http://resolver.ebscohost.com/openurl?sid=EMBASE&sid=EMBASE&issn=&id=doi:&atitle=Spontaneous+long-term+smoking+cessation+in+a+patient+with+schizophrenia+after+treatment+with+ziprasidone&stitle=Addict.+Disord.+Treat.&title=Addictive+Disorders+and+their+Treatment&volume=3&issue=3&spage=138&epage=143&aulast=Vartian&aufirst=Brian+A.&auinit=B.A.&aufull=Vartian+B.A.&coden=ADTTA&isbn=&pages=138-143&date=2004&auinit1=B&auinitm=A"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Nicotine dependence in schizophrenia",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Ziprasidone for schizophrenia",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A man with schizophrenia stopped smoking nine days after starting ziprasidone and was still abstinent two years later.",
+   "caveat": "Single observation; smokers do quit spontaneously.",
+   "tags": [
+    "antipsychotic",
+    "schizophrenia",
+    "smoking"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "stuve-2003",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Stuve W et al.",
+    "title": "Remission of schizophrenia following discontinuation of lamotrigine",
+    "journal": "Tijdschrift voor Psychiatrie",
+    "year": 2003,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L37069948"
+     }
+    ],
+    "ckn": "http://resolver.ebscohost.com/openurl?sid=EMBASE&sid=EMBASE&issn=&id=doi:&atitle=Remission+of+schizophrenia+following+discontinuation+of+lamotrigine&stitle=Tijdschr.+Psychiatr.&title=Tijdschrift+voor+Psychiatrie&volume=45&issue=8&spage=525&epage=528&aulast=Stuve&aufirst=W.&auinit=W.&aufull=Stuve+W.&coden=TPSYB&isbn=&pages=525-528&date=2003&auinit1=W&auinitm="
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Difficult-to-treat paranoid schizophrenia with epilepsy",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Lamotrigine for epilepsy: remission on it, relapse when stopped",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "Natural off-on"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Paranoid schizophrenia remitted while the patient took lamotrigine for epilepsy and relapsed when it was stopped.",
+   "caveat": "Dutch-language paper with an English abstract; timing evidence only.",
+   "tags": [
+    "glutamate",
+    "lamotrigine",
+    "reversal",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "curran-1995",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Curran S et al.",
+    "title": "Resolution of panic disorder during pregnancy",
+    "journal": "Irish Journal of Psychological Medicine",
+    "year": 1995,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L25281852"
+     }
+    ],
+    "ckn": "http://resolver.ebscohost.com/openurl?sid=EMBASE&sid=EMBASE&issn=&id=doi:&atitle=Resolution+of+panic+disorder+during+pregnancy&stitle=IR.+J.+PSYCHOL.+MED.&title=Irish+Journal+of+Psychological+Medicine&volume=12&issue=3&spage=107&epage=108&aulast=Curran&aufirst=S.&auinit=S.&aufull=Curran+S.&coden=IPMEE&isbn=&pages=107-108&date=1995&auinit1=S&auinitm="
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Anxiety"
+    ],
+    "specific": "Severe long-standing panic disorder",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Hormonal / reproductive",
+    "specific": "Pregnancy (relapse after delivery)",
+    "intent": "Life event"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "Natural off-on"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Severe long-standing panic disorder fully remitted during pregnancy and relapsed after delivery.",
+   "caveat": "Pregnancy-related remission of panic is recognised, so the surprise is modest.",
+   "tags": [
+    "hormonal",
+    "panic",
+    "pregnancy",
+    "reversal"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "kanner-1993",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Kanner AM et al.",
+    "title": "Remission of an obsessive-compulsive disorder following a right temporal lobectomy",
+    "journal": "Neuropsychiatry, Neuropsychology and Behavioral Neurology",
+    "year": 1993,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [
+     {
+      "label": "Embase record (CKN login)",
+      "url": "https://www.embase.com/records?subaction=viewrecord&id=L23112865"
+     }
+    ],
+    "ckn": "http://resolver.ebscohost.com/openurl?sid=EMBASE&sid=EMBASE&issn=&id=doi:&atitle=Remission+of+an+obsessive-compulsive+disorder+following+a+right+temporal+lobectomy&stitle=NEUROPSYCHIATRY+NEUROPSYCHOL.+BEHAV.+NEUROL.&title=Neuropsychiatry%2C+Neuropsychology+and+Behavioral+Neurology&volume=6&issue=2&spage=126&epage=129&aulast=Kanner&aufirst=A.M.&auinit=A.M.&aufull=Kanner+A.M.&coden=NNNEE&isbn=&pages=126-129&date=1993&auinit1=A&auinitm=M"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "OCD with intractable complex partial seizures",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Right anterior temporal lobectomy for epilepsy",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "OCD remitted after a right temporal lobectomy performed for intractable seizures.",
+   "caveat": "Seizure control itself may have helped.",
+   "tags": [
+    "epilepsy-surgery",
+    "ocd",
+    "temporal-lobe"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase (CKN)",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "emerging",
+    "note": "Later replicated by Guarnieri 2005 and Shreedhara 2018.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "zhang-2024",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Zhang J, Hsieh Y, Zheng K, Xu J",
+    "title": "Managing abdominal cocoon syndrome complicated by intestinal necrosis and unexpected amelioration of depression after surgery: a case report.",
+    "journal": "J Med Case Rep",
+    "year": 2024,
+    "volume": "18",
+    "issue": "1",
+    "pages": "322"
+   },
+   "ids": {
+    "doi": "10.1186/s13256-024-04650-9",
+    "pmid": "38970114",
+    "pmcid": "PMC11227164"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11227164/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/38970114/",
+    "doi": "https://doi.org/10.1186/s13256-024-04650-9",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1186%2Fs13256-024-04650-9"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Depression on antidepressants",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Laparotomy for abdominal cocoon with intestinal necrosis (no greater omentum)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Depression improved and antidepressants were stopped after surgery for an abdominal cocoon.",
+   "caveat": "Improvement was self-reported at 3 months.",
+   "tags": [
+    "abdominal-surgery",
+    "depression",
+    "gut-brain"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "liu-2026",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Liu YA, Chen YC",
+    "title": "Hemodialysis dramatically alleviates treatment-refractory psychosis in a subject with schizoaffective disorder.",
+    "journal": "Asian J Psychiatr",
+    "year": 2026,
+    "volume": "116",
+    "issue": "",
+    "pages": "104813"
+   },
+   "ids": {
+    "doi": "10.1016/j.ajp.2025.104813",
+    "pmid": "41485447",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/41485447/",
+    "doi": "https://doi.org/10.1016/j.ajp.2025.104813",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.ajp.2025.104813"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Treatment-refractory schizoaffective disorder",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Haemodialysis (indication to be checked in the full text)",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Treatment-refractory psychosis eased markedly once haemodialysis began.",
+   "caveat": "Letter without an abstract; why dialysis was started is unverified.",
+   "tags": [
+    "dialysis",
+    "schizoaffective"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "Dialysis as a treatment for schizophrenia was tested and refuted around 1980 (see Wagemaker & Cade 1977).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "lipov-2024",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Lipov EG, Rolain H, Lammers L",
+    "title": "Unanticipated elimination of bulimia symptoms following a cervical sympathetic block for treating Post-Traumatic Stress Disorder (PTSD) : A Case Report",
+    "journal": "Research Square (preprint)",
+    "year": 2024,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.21203/rs.3.rs-3970755/v1",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.21203/rs.3.rs-3970755/v1",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.21203%2Frs.3.rs-3970755%2Fv1"
+   },
+   "access": "Paywalled",
+   "design": "Preprint",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Bulimia nervosa with PTSD",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Cervical sympathetic block for PTSD",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Bulimia symptoms disappeared after a cervical sympathetic block given for PTSD.",
+   "caveat": "Preprint by a proponent of the block for PTSD; bulimia was partly framed as trauma-driven.",
+   "tags": [
+    "bulimia",
+    "preprint",
+    "ptsd",
+    "sympathetic-block"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": [
+    "preprint",
+    "coi-trigger"
+   ]
+  },
+  {
+   "id": "gong-2024",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Gong JY, Wentworth JM",
+    "title": "Resolution of symptoms of binge eating disorder associated with semaglutide treatment for obesity and type 1 diabetes.",
+    "journal": "Intern Med J",
+    "year": 2024,
+    "volume": "54",
+    "issue": "9",
+    "pages": "1586-1587"
+   },
+   "ids": {
+    "doi": "10.1111/imj.16499",
+    "pmid": "39239945",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/39239945/",
+    "doi": "https://doi.org/10.1111/imj.16499",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fimj.16499"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Binge eating disorder",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Semaglutide for obesity and type 1 diabetes",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Binge eating disorder symptoms resolved after semaglutide was started for obesity and type 1 diabetes.",
+   "caveat": "Letter without an abstract; duration and measures need the full text.",
+   "tags": [
+    "binge-eating",
+    "glp-1",
+    "semaglutide"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "tsang-2023",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Tsang YYC, Hui NY, Chan SKW",
+    "title": "Resolution of Auditory Hallucinations After Right Temporal Haemorrhagic Stroke in a Patient With Clozapine-Resistant Schizoaffective Disorder: a Case Report.",
+    "journal": "East Asian Arch Psychiatry",
+    "year": 2023,
+    "volume": "33",
+    "issue": "4",
+    "pages": "126-130"
+   },
+   "ids": {
+    "doi": "10.12809/eaap2340",
+    "pmid": "38955785",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/38955785/",
+    "doi": "https://doi.org/10.12809/eaap2340",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.12809%2Feaap2340"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Clozapine-resistant schizoaffective disorder with persistent auditory hallucinations",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Right superior temporal haemorrhagic stroke (ruptured AVM) and excision",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Auditory hallucinations that resisted clozapine and maintenance ECT stopped after a right temporal haemorrhage.",
+   "caveat": "Symptom-level change; other features of the illness not reported.",
+   "tags": [
+    "hallucinations",
+    "schizoaffective",
+    "stroke",
+    "temporal-lobe"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "sun-2023",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Sun F, Zhang G, Zhang X",
+    "title": "Improvement of Tourette syndrome symptoms after intractable temporal lobe epileptic surgery: a case report.",
+    "journal": "Int J Neurosci",
+    "year": 2023,
+    "volume": "133",
+    "issue": "7",
+    "pages": "806-811"
+   },
+   "ids": {
+    "doi": "10.1080/00207454.2021.1990914",
+    "pmid": "34623200",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/34623200/",
+    "doi": "https://doi.org/10.1080/00207454.2021.1990914",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F00207454.2021.1990914"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Tourette syndrome with temporal lobe epilepsy",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Temporal lobe epilepsy surgery",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Tourette syndrome improved after surgery for intractable temporal lobe epilepsy.",
+   "caveat": "Antiepileptic changes after surgery could contribute.",
+   "tags": [
+    "epilepsy-surgery",
+    "tourette"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "moccia-2022",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Moccia L, Lanzotti P, Pepe M, Palumbo L, Janiri D, Camardese G et al.",
+    "title": "Remission of functional motor symptoms following esketamine administration in a patient with treatment-resistant depression: a single-case report.",
+    "journal": "Int Clin Psychopharmacol",
+    "year": 2022,
+    "volume": "37",
+    "issue": "1",
+    "pages": "21-24"
+   },
+   "ids": {
+    "doi": "10.1097/yic.0000000000000378",
+    "pmid": "34825899",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/34825899/",
+    "doi": "https://doi.org/10.1097/yic.0000000000000378",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fyic.0000000000000378"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Functional neurological"
+    ],
+    "specific": "Functional movement disorder with treatment-resistant depression",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Weekly intranasal esketamine for treatment-resistant depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Functional movement symptoms remitted during esketamine treatment for depression.",
+   "caveat": "Comorbid improvement; mood may mediate.",
+   "tags": [
+    "comorbid",
+    "esketamine",
+    "fnd"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "bright-2018",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Bright B, Bright R, Bright P, Limaye A",
+    "title": "Ankylosing spondylitis, chronic fatigue and depression improved after stromal vascular fraction treatment for osteoarthritis: a case report.",
+    "journal": "J Med Case Rep",
+    "year": 2018,
+    "volume": "12",
+    "issue": "1",
+    "pages": "238"
+   },
+   "ids": {
+    "doi": "10.1186/s13256-018-1776-y",
+    "pmid": "30153860",
+    "pmcid": "PMC6114853"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6114853/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/30153860/",
+    "doi": "https://doi.org/10.1186/s13256-018-1776-y",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1186%2Fs13256-018-1776-y"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Depression with ankylosing spondylitis and chronic fatigue",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Autologous adipose stromal vascular fraction injection for osteoarthritis",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Depression lifted alongside ankylosing spondylitis and fatigue after stem-cell-fraction injections for osteoarthritis.",
+   "caveat": "Authors are associated with a commercial cell-therapy provider; self-report outcomes.",
+   "tags": [
+    "depression",
+    "inflammation",
+    "stem-cells"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": [
+    "coi-trigger"
+   ]
+  },
+  {
+   "id": "funayama-2016",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Funayama M, Kato M, Mimura M",
+    "title": "Disappearance of treatment-resistant depression after damage to the orbitofrontal cortex and subgenual cingulate area: a case study.",
+    "journal": "BMC Neurol",
+    "year": 2016,
+    "volume": "16",
+    "issue": "1",
+    "pages": "198"
+   },
+   "ids": {
+    "doi": "10.1186/s12883-016-0717-x",
+    "pmid": "27756252",
+    "pmcid": "PMC5069923"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5069923/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/27756252/",
+    "doi": "https://doi.org/10.1186/s12883-016-0717-x",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1186%2Fs12883-016-0717-x"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Treatment-resistant major depression for 14 years",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Subarachnoid haemorrhage damaging the orbitofrontal cortex and subgenual cingulate",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Fourteen years of treatment-resistant depression disappeared after a haemorrhage damaged the orbitofrontal and subgenual cingulate cortex.",
+   "caveat": "Mild personality change accompanied the recovery.",
+   "tags": [
+    "depression",
+    "haemorrhage",
+    "orbitofrontal",
+    "subgenual-cingulate"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "The subgenual cingulate is the target of DBS for depression (Mayberg 2005).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "jawaid-2016",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Jawaid H, Younus S, Mesiya H",
+    "title": "Remission of Psychosis in Treatment-resistant Schizophrenia Following a Seizure: A Case Report.",
+    "journal": "Innov Clin Neurosci",
+    "year": 2016,
+    "volume": "13",
+    "issue": "5-6",
+    "pages": "78-80"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "27800285",
+    "pmcid": "PMC5077258"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5077258/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/27800285/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Treatment-resistant schizophrenia",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Seizures",
+    "specific": "Clozapine-induced seizure",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Treatment-resistant schizophrenia remitted only after clozapine caused a seizure.",
+   "caveat": "Clozapine response can be delayed.",
+   "tags": [
+    "clozapine",
+    "schizophrenia",
+    "seizure"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "known",
+    "note": "Seizures relieving psychosis is the principle of convulsive therapy (Meduna, 1934).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "donoghue-2015",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Donoghue AC, Roback MG, Cullen KR",
+    "title": "Remission From Behavioral Dysregulation in a Child With PTSD After Receiving Procedural Ketamine.",
+    "journal": "Pediatrics",
+    "year": 2015,
+    "volume": "136",
+    "issue": "3",
+    "pages": "e694-6"
+   },
+   "ids": {
+    "doi": "10.1542/peds.2014-4152",
+    "pmid": "26260717",
+    "pmcid": "PMC5534263"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5534263/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/26260717/",
+    "doi": "https://doi.org/10.1542/peds.2014-4152",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1542%2Fpeds.2014-4152"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Trauma & stressor-related"
+    ],
+    "specific": "PTSD with severe aggression and emotional dysregulation in a child",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Coma / anaesthesia",
+    "specific": "Procedural ketamine sedation",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A child's refractory PTSD-related aggression remitted for 8–13 days after ketamine given for procedural sedation.",
+   "caveat": "Effect was temporary; repeated observations strengthen it.",
+   "tags": [
+    "anaesthesia",
+    "child",
+    "ketamine",
+    "ptsd"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Ketamine's antidepressant effect in adults was known by 2015; the paediatric PTSD effect was not.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "lauritsen-2015",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Lauritsen L, Vinberg M",
+    "title": "[Depression remitted after subarachnoid haemorrhage].",
+    "journal": "Ugeskr Laeger",
+    "year": 2015,
+    "volume": "177",
+    "issue": "2A",
+    "pages": "22-23"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "25612950",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/25612950/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Treatment-resistant depression for 3 years (many drug trials)",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Subarachnoid haemorrhage",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Three years of treatment-resistant depression resolved abruptly after a subarachnoid haemorrhage.",
+   "caveat": "Danish-language paper with an English abstract.",
+   "tags": [
+    "depression",
+    "haemorrhage"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "setsaas-2014",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Setsaas A, Vaaler AE",
+    "title": "Can cycles of chills and fever resolve bipolar disorder mania?",
+    "journal": "BMJ Case Rep",
+    "year": 2014,
+    "volume": "2014",
+    "issue": "",
+    "pages": "bcr2013203127"
+   },
+   "ids": {
+    "doi": "10.1136/bcr-2013-203127",
+    "pmid": "24728894",
+    "pmcid": "PMC3987565"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3987565/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/24728894/",
+    "doi": "https://doi.org/10.1136/bcr-2013-203127",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fbcr-2013-203127"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Treatment-resistant bipolar mania",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "Recurrent cycles of chills and fever",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Treatment-resistant mania appeared to resolve as a result of recurrent fevers.",
+   "caveat": "Mania is episodic, so spontaneous resolution is a real alternative.",
+   "tags": [
+    "fever",
+    "immune",
+    "mania"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Echoes fever therapy (Wagner-Jauregg).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "rosenblat-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Rosenblat JD, Devarajan S",
+    "title": "Resolution of electroconvulsive therapy refractory major depressive disorder with unintentional hypoglycemic seizure: a case report.",
+    "journal": "J ECT",
+    "year": 2013,
+    "volume": "29",
+    "issue": "3",
+    "pages": "e47-8"
+   },
+   "ids": {
+    "doi": "10.1097/yct.0b013e318290fc20",
+    "pmid": "23670025",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/23670025/",
+    "doi": "https://doi.org/10.1097/yct.0b013e318290fc20",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fyct.0b013e318290fc20"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Major depression refractory to medication and 15 ECT treatments",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Seizures",
+    "specific": "Accidental hypoglycaemic seizure (type 1 diabetes)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Depression that 15 ECT treatments barely touched resolved completely after one accidental hypoglycaemic seizure.",
+   "caveat": "Delayed ECT response cannot be excluded.",
+   "tags": [
+    "depression",
+    "ect-refractory",
+    "hypoglycaemia",
+    "seizure"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "known",
+    "note": "Seizure as antidepressant is the ECT principle; striking here because ECT had failed.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "harrison-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Harrison R, Rucklidge JJ, Blampied N",
+    "title": "Use of micronutrients attenuates cannabis and nicotine abuse as evidenced from a reversal design: a case study.",
+    "journal": "J Psychoactive Drugs",
+    "year": 2013,
+    "volume": "45",
+    "issue": "2",
+    "pages": "168-178"
+   },
+   "ids": {
+    "doi": "10.1080/02791072.2013.785840",
+    "pmid": "23909004",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/23909004/",
+    "doi": "https://doi.org/10.1080/02791072.2013.785840",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F02791072.2013.785840"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Cannabis and nicotine use",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Broad-spectrum micronutrients taken for psychiatric symptoms such as ADHD",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "On-off rechallenge"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Cannabis and nicotine use fell on micronutrients taken for other psychiatric symptoms, rose when stopped and fell again when restarted.",
+   "caveat": "The micronutrient formula is a commercial product promoted by this research group.",
+   "tags": [
+    "cannabis",
+    "micronutrients",
+    "reversal",
+    "smoking"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": [
+    "coi-trigger"
+   ]
+  },
+  {
+   "id": "muskens-2012",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Muskens JB, Schellekens AF, de Leeuw FE, Tendolkar I, Hepark S",
+    "title": "Damage in the dorsal striatum alleviates addictive behavior.",
+    "journal": "Gen Hosp Psychiatry",
+    "year": 2012,
+    "volume": "34",
+    "issue": "6",
+    "pages": "702.e9-702.e11"
+   },
+   "ids": {
+    "doi": "10.1016/j.genhosppsych.2012.01.008",
+    "pmid": "22325630",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/22325630/",
+    "doi": "https://doi.org/10.1016/j.genhosppsych.2012.01.008",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.genhosppsych.2012.01.008"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Alcohol and nicotine addiction",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Dorsal striatal stroke",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Alcohol and nicotine addiction stopped after a stroke in the dorsal striatum, with abstinence at follow-up.",
+   "caveat": "Single case; follow-up length needs the full text.",
+   "tags": [
+    "alcohol",
+    "smoking",
+    "striatum",
+    "stroke"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "known",
+    "note": "Fits the lesion-addiction literature after Naqvi 2007, pooled by Joutsa 2022.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "mantione-2010",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Mantione M, van de Brink W, Schuurman PR, Denys D",
+    "title": "Smoking cessation and weight loss after chronic deep brain stimulation of the nucleus accumbens: therapeutic and research implications: case report.",
+    "journal": "Neurosurgery",
+    "year": 2010,
+    "volume": "66",
+    "issue": "1",
+    "pages": "E218; discussion E218"
+   },
+   "ids": {
+    "doi": "10.1227/01.neu.0000360570.40339.64",
+    "pmid": "20023526",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/20023526/",
+    "doi": "https://doi.org/10.1227/01.neu.0000360570.40339.64",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1227%2F01.neu.0000360570.40339.64"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Nicotine dependence (with obesity and refractory OCD)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Nucleus accumbens DBS for refractory OCD",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "A woman given accumbens DBS for OCD quit smoking and lost weight without trying.",
+   "caveat": "Smoking cessation was a side observation.",
+   "tags": [
+    "dbs",
+    "nucleus-accumbens",
+    "ocd",
+    "smoking"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Accumbens DBS for addiction has since reached pilot studies.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "etches-2009",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Etches SM, Schmidt M, Alda M, Hajek T, Kahn DA",
+    "title": "Resolution of bipolar II and panic disorders following subarachnoid hemorrhage.",
+    "journal": "J Psychiatr Pract",
+    "year": 2009,
+    "volume": "15",
+    "issue": "2",
+    "pages": "145-149"
+   },
+   "ids": {
+    "doi": "10.1097/01.pra.0000348368.42042.e2",
+    "pmid": "19339849",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/19339849/",
+    "doi": "https://doi.org/10.1097/01.pra.0000348368.42042.e2",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2F01.pra.0000348368.42042.e2"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Anxiety"
+    ],
+    "specific": "Treatment-resistant bipolar II and panic disorder for 25 years",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Subarachnoid haemorrhage with vasospasm stroke",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Twenty-five years of treatment-resistant bipolar II and panic disorder resolved after a subarachnoid haemorrhage and stroke.",
+   "caveat": "Stroke site and follow-up need the full text.",
+   "tags": [
+    "bipolar",
+    "haemorrhage",
+    "panic",
+    "stroke"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "guarnieri-2005",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Guarnieri R, Araújo D, Carlotti CG, Assirati JA, Hallak JE, Velasco TR et al.",
+    "title": "Suppression of obsessive-compulsive symptoms after epilepsy surgery.",
+    "journal": "Epilepsy Behav",
+    "year": 2005,
+    "volume": "7",
+    "issue": "2",
+    "pages": "316-319"
+   },
+   "ids": {
+    "doi": "10.1016/j.yebeh.2005.05.024",
+    "pmid": "16043417",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/16043417/",
+    "doi": "https://doi.org/10.1016/j.yebeh.2005.05.024",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.yebeh.2005.05.024"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "OCD symptoms with intractable epilepsy",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Epilepsy surgery including unilateral anterior cingulate ablation",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Two men's obsessive-compulsive symptoms remitted after epilepsy surgery that ablated the anterior cingulate.",
+   "caveat": "Seizure control may contribute.",
+   "tags": [
+    "cingulate",
+    "epilepsy-surgery",
+    "ocd"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Anterior cingulotomy is a psychosurgical target for OCD.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "thomas-2003",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Thomas SG, Kellner CH",
+    "title": "Remission of major depression and obsessive-compulsive disorder after a single unilateral ECT.",
+    "journal": "J ECT",
+    "year": 2003,
+    "volume": "19",
+    "issue": "1",
+    "pages": "50-51"
+   },
+   "ids": {
+    "doi": "10.1097/00124509-200303000-00011",
+    "pmid": "12621279",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/12621279/",
+    "doi": "https://doi.org/10.1097/00124509-200303000-00011",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2F00124509-200303000-00011"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Major depression with OCD",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "A single unilateral ECT for depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Both major depression and OCD remitted after a single unilateral ECT treatment.",
+   "caveat": "Letter without an abstract; a single ECT is an unusual dose.",
+   "tags": [
+    "depression",
+    "ect",
+    "ocd"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "levine-2003",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Levine R, Lipson S, Devinsky O",
+    "title": "Resolution of eating disorders after right temporal lesions.",
+    "journal": "Epilepsy Behav",
+    "year": 2003,
+    "volume": "4",
+    "issue": "6",
+    "pages": "781-783"
+   },
+   "ids": {
+    "doi": "10.1016/j.yebeh.2003.08.011",
+    "pmid": "14698720",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/14698720/",
+    "doi": "https://doi.org/10.1016/j.yebeh.2003.08.011",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.yebeh.2003.08.011"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Bulimia nervosa; anorexia nervosa",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Right temporal lesions (epileptogenic focus; head-injury encephalomalacia)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Two women's eating disorders, one bulimia and one anorexia, resolved after right temporal brain lesions.",
+   "caveat": "Mood also improved, which may mediate.",
+   "tags": [
+    "anorexia",
+    "bulimia",
+    "lesion",
+    "temporal-lobe"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "de-filippis-2026",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "de Filippis LG, Bruno A",
+    "title": "<span data-teams=\"true\">Reduction of Cocaine Craving and Sustained Abstinence During Tirzepatide Treatment in Two Patients with Obesity: A Case Report",
+    "journal": "Preprints.org (preprint)",
+    "year": 2026,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.20944/preprints202610.2170.v1",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.20944/preprints202610.2170.v1",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.20944%2Fpreprints202610.2170.v1"
+   },
+   "access": "Paywalled",
+   "design": "Preprint",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Long-standing weekly intranasal cocaine use",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Tirzepatide for obesity",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Two people with obesity reported less cocaine craving and sustained abstinence on tirzepatide.",
+   "caveat": "Preprint; not yet peer reviewed.",
+   "tags": [
+    "cocaine",
+    "glp-1",
+    "preprint",
+    "tirzepatide"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": [
+    "preprint"
+   ]
+  },
+  {
+   "id": "viglione-2025",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Viglione LL, Ilchef R",
+    "title": "Resolution of catatonia after propofol anaesthesia.",
+    "journal": "Australas Psychiatry",
+    "year": 2025,
+    "volume": "33",
+    "issue": "5",
+    "pages": "857"
+   },
+   "ids": {
+    "doi": "10.1177/10398562251330046",
+    "pmid": "40238682",
+    "pmcid": "PMC12528783"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12528783/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/40238682/",
+    "doi": "https://doi.org/10.1177/10398562251330046",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F10398562251330046"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Catatonia"
+    ],
+    "specific": "Catatonia",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Coma / anaesthesia",
+    "specific": "Propofol anaesthesia",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Catatonia resolved after propofol anaesthesia (Australian report).",
+   "caveat": "Duration and prior treatment need the full text.",
+   "tags": [
+    "anaesthesia",
+    "australia",
+    "catatonia",
+    "propofol"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "mira-2024",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Mira V, Baunez C, Eusebio A, Witjas T, Benchetrit E, Azulay JP",
+    "title": "Cocaine and dopamine abuse improved by subthalamic nucleus deep brain stimulation in one Parkinsonian patient.",
+    "journal": "Psychiatry Clin Neurosci",
+    "year": 2024,
+    "volume": "78",
+    "issue": "12",
+    "pages": "829-830"
+   },
+   "ids": {
+    "doi": "10.1111/pcn.13738",
+    "pmid": "39350435",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/39350435/",
+    "doi": "https://doi.org/10.1111/pcn.13738",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fpcn.13738"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Cocaine use and dopamine dysregulation in Parkinson's disease",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Subthalamic nucleus DBS for Parkinson's disease",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Cocaine and dopamine-medication misuse improved after subthalamic DBS for Parkinson's disease.",
+   "caveat": "Dopaminergic medication was likely reduced after DBS, which explains part of it.",
+   "tags": [
+    "cocaine",
+    "dbs",
+    "parkinsons",
+    "stn"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "brasic-2018",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1a"
+   ],
+   "citation": {
+    "authors": "Robert Brašić J, Mari Z, Lerner A, Raymont V, Zaidi E, Wong DF",
+    "title": "Remission of Gilles de la Tourette Syndrome after Heat-Induced Dehydration.",
+    "journal": "Int J Phys Med Rehabil",
+    "year": 2018,
+    "volume": "6",
+    "issue": "3",
+    "pages": "472"
+   },
+   "ids": {
+    "doi": "10.4172/2329-9096.1000472",
+    "pmid": "30090843",
+    "pmcid": "PMC6078428"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6078428/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/30090843/",
+    "doi": "https://doi.org/10.4172/2329-9096.1000472",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4172%2F2329-9096.1000472"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Gilles de la Tourette syndrome since age 7 (YGTSS 55)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Physiological stress",
+    "specific": "Heat-induced dehydration: 3–4 hours in a 39–40°C hot tub",
+    "intent": "Self-administered"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Tourette syndrome eased for two years (YGTSS 55 to 13) after hours in a very hot tub left him dehydrated.",
+   "caveat": "First reported as a 2011 conference abstract; later follow-up in Durbin 2022.",
+   "tags": [
+    "dehydration",
+    "heat",
+    "tourette"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC",
+   "date_added": "2026-11-09",
+   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
   }
  ]
 }

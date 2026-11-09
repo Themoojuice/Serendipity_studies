@@ -90,6 +90,8 @@ select { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-
 .pill.ctx { background: var(--warn-soft); color: var(--warn); border-color: transparent; }
 .pill.era-known { background: var(--accent-soft); color: var(--accent); border-color: transparent; font-weight: 600; }
 .pill.era-refuted { background: var(--warn-soft); color: var(--warn); border-color: transparent; font-weight: 600; text-decoration: line-through; text-decoration-thickness: 1px; }
+.pill.flag { background: var(--warn-soft); color: var(--warn); border-color: transparent; }
+.btn.ckn { border-style: dashed; }
 .pill.era-novel { border-style: dashed; color: var(--ink); }
 .card h3 { margin: 0; font-size: 16px; line-height: 1.35; text-wrap: balance; }
 .card h3 a { color: var(--ink); text-decoration: none; }
@@ -172,6 +174,7 @@ code { font-family: var(--font-mono); font-size: 12.5px; }
           <option value="">All</option>
           <option value="A">A: strong</option>
           <option value="B">B: supporting</option>
+          <option value="C">C: logged (weak or flagged)</option>
         </select>
       </div>
       <div class="row">
@@ -351,6 +354,7 @@ code { font-family: var(--font-mono); font-size: 12.5px; }
     box.appendChild(el("button", { class: "btn", type: "button", onclick: function () { state.tags.clear(); renderAll(); } }, ["Clear tags"]));
   }
 
+  var FLAG_TEXT = { "preprint": "Preprint", "coi-trigger": "Conflict of interest", "venue": "Questionable venue", "retracted": "Retracted", "concern": "Expression of concern", "mill": "Paper-mill signals", "media-first": "Press only", "overclaim": "Over-claims", "altmed": "Alternative-medicine framing", "no-followup": "No follow-up" };
   var ERA_SHORT = { novel: "Still unexplained", emerging: "Emerging", known: "Known now · unexpected then", refuted: "Refuted" };
 
   function card(r) {
@@ -361,6 +365,7 @@ code { font-family: var(--font-mono); font-size: 12.5px; }
     if (r.record_type !== "case") top.appendChild(el("span", { class: "pill ctx", text: "Context, not a case" }));
     if (r.tier) top.appendChild(el("span", { class: "pill tier", title: DATA.vocabularies.tier[r.tier], text: "Tier " + r.tier }));
     if (r.status !== "Included") top.appendChild(el("span", { class: "pill ctx", text: r.status }));
+    (r.flags || []).forEach(function (f) { top.appendChild(el("span", { class: "pill flag", title: FLAG_TEXT[f] || f, text: "⚑ " + (FLAG_TEXT[f] || f) })); });
     top.appendChild(el("span", { class: "pill era-" + r.era.label, title: DATA.vocabularies.era[r.era.label], text: ERA_SHORT[r.era.label] }));
     top.appendChild(el("span", { class: r.links.full_text ? "pill free" : "pill", text: r.access }));
 
@@ -384,6 +389,7 @@ code { font-family: var(--font-mono); font-size: 12.5px; }
     if (r.links.abstract) actions.appendChild(el("a", { class: "btn", href: r.links.abstract, target: "_blank", rel: "noopener" }, ["Abstract (PubMed) ↗"]));
     if (r.ids.doi) actions.appendChild(el("span", { class: "doi" }, ["DOI ", el("a", { href: r.links.doi, target: "_blank", rel: "noopener", text: r.ids.doi })]));
     else actions.appendChild(el("span", { class: "doi", text: "No DOI · PMID " + r.ids.pmid }));
+    if (r.links.ckn) actions.appendChild(el("a", { class: "btn ckn", href: r.links.ckn, target: "_blank", rel: "noopener", title: "Opens through Queensland Health CKN (OpenAthens login)" }, ["Via CKN ↗"]));
     r.links.alternates.forEach(function (a) { actions.appendChild(el("a", { class: "btn", href: a.url, target: "_blank", rel: "noopener" }, [a.label + " ↗"])); });
 
     var tags = el("div", { class: "tags" });
@@ -458,7 +464,9 @@ code { font-family: var(--font-mono); font-size: 12.5px; }
     ["id", "Stable record id (first author + year)", function (r) { return r.id; }],
     ["record_type", "case = counts toward statistics; context = pooled, registry or cautionary paper", function (r) { return r.record_type; }],
     ["status", "Included or Provisional (details unconfirmed)", function (r) { return r.status; }],
-    ["tier", "A strong, B supporting", function (r) { return r.tier || ""; }],
+    ["tier", "A strong, B supporting, C logged (weak or flagged)", function (r) { return r.tier || ""; }],
+    ["flags", "Integrity and sensationalism flags, ; separated", function (r) { return (r.flags || []).join("; "); }],
+    ["ckn_link", "Full text via Queensland Health CKN (needs CKN login)", function (r) { return r.links.ckn || ""; }],
     ["collections", "Which search round added it (top12, round1, round2)", function (r) { return r.collections.join(";"); }],
     ["year", "Publication year", function (r) { return r.citation.year; }],
     ["authors", "Authors as cited", function (r) { return r.citation.authors; }],

@@ -1,0 +1,209 @@
+{
+ "seed": 20261109,
+ "method": "random.Random(seed).sample of library cases with a PMID, 2026-11-09",
+ "holdout": [
+  {
+   "id": "downar-2012",
+   "pmid": "22529822"
+  },
+  {
+   "id": "jansson-1984",
+   "pmid": "6700311"
+  },
+  {
+   "id": "kosel-2007",
+   "pmid": "16962613"
+  },
+  {
+   "id": "kraft-westman-2009",
+   "pmid": "19245705"
+  },
+  {
+   "id": "mallet-2002",
+   "pmid": "12414208"
+  },
+  {
+   "id": "richards-2024",
+   "pmid": "38019594"
+  },
+  {
+   "id": "sandyk-1988",
+   "pmid": "3235704"
+  },
+  {
+   "id": "sosa-gomez-2026",
+   "pmid": "42422634"
+  },
+  {
+   "id": "yaryura-tobias-2003",
+   "pmid": "12975678"
+  },
+  {
+   "id": "yeung-2020",
+   "pmid": "33331803"
+  }
+ ],
+ "tuning": [
+  {
+   "id": "abdollahifard-2026",
+   "pmid": "41629421"
+  },
+  {
+   "id": "barbieri-2005",
+   "pmid": "15907757"
+  },
+  {
+   "id": "de-santis-1997",
+   "pmid": "9408073"
+  },
+  {
+   "id": "diamond-2011",
+   "pmid": "21426244"
+  },
+  {
+   "id": "erol-durgun-2026",
+   "pmid": "41946537"
+  },
+  {
+   "id": "faruqui-2022",
+   "pmid": "36568330"
+  },
+  {
+   "id": "fontaine-2004",
+   "pmid": "15200126"
+  },
+  {
+   "id": "guerdjikova-2026",
+   "pmid": "41632102"
+  },
+  {
+   "id": "gupta-2026",
+   "pmid": "41939690"
+  },
+  {
+   "id": "haque-2025",
+   "pmid": "40075136"
+  },
+  {
+   "id": "hefzy-2011",
+   "pmid": "20609039"
+  },
+  {
+   "id": "hill-2025",
+   "pmid": "40375882"
+  },
+  {
+   "id": "israel-2010",
+   "pmid": "20044072"
+  },
+  {
+   "id": "jarraya-2010",
+   "pmid": "20597598"
+  },
+  {
+   "id": "jewett-2020",
+   "pmid": "32295563"
+  },
+  {
+   "id": "kelly-2026",
+   "pmid": "42260955"
+  },
+  {
+   "id": "klok-2025",
+   "pmid": "40335277"
+  },
+  {
+   "id": "kuhn-2007",
+   "pmid": "17878197"
+  },
+  {
+   "id": "leonard-rapoport-1987",
+   "pmid": "3631327"
+  },
+  {
+   "id": "lugo-radillo-2021",
+   "pmid": "33225874"
+  },
+  {
+   "id": "mackillop-2026",
+   "pmid": "42011056"
+  },
+  {
+   "id": "meilinger-2026",
+   "pmid": "41914511"
+  },
+  {
+   "id": "miyaoka-2017",
+   "pmid": "28983259"
+  },
+  {
+   "id": "moreno-delgado-1997",
+   "pmid": "9210762"
+  },
+  {
+   "id": "moussawi-2016",
+   "pmid": "27311800"
+  },
+  {
+   "id": "najeeb-2016",
+   "pmid": "27801766"
+  },
+  {
+   "id": "naqvi-2007",
+   "pmid": "17255515"
+  },
+  {
+   "id": "oh-2011",
+   "pmid": "21327181"
+  },
+  {
+   "id": "palmer-2017",
+   "pmid": "28162810"
+  },
+  {
+   "id": "palmer-2019",
+   "pmid": "30962118"
+  },
+  {
+   "id": "pantoni-1997",
+   "pmid": "9040726"
+  },
+  {
+   "id": "rammouz-2024",
+   "pmid": "39417536"
+  },
+  {
+   "id": "sani-2007",
+   "pmid": "17545955"
+  },
+  {
+   "id": "sciortino-2021",
+   "pmid": "34955908"
+  },
+  {
+   "id": "smith-2025",
+   "pmid": "39994665"
+  },
+  {
+   "id": "solyom-1987",
+   "pmid": "3502814"
+  },
+  {
+   "id": "takizawa-2026",
+   "pmid": "41925328"
+  },
+  {
+   "id": "valadez-cuen-2024",
+   "pmid": "39790695"
+  },
+  {
+   "id": "wagner-jauregg-1883",
+   "pmid": "2214949"
+  },
+  {
+   "id": "yuan-2025",
+   "pmid": "40746908"
+  }
+ ],
+ "no_pmid": []
+}
