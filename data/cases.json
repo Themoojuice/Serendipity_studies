@@ -10709,6 +10709,233 @@
     "basis": "from downstream level"
    },
    "flags": []
+  },
+  {
+   "id": "ueki-2004",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Ueki H, Ogawa N",
+    "title": "Resolution of delusional depression after recovery from delirium.",
+    "journal": "Compr Psychiatry",
+    "year": 2004,
+    "volume": "45",
+    "issue": "3",
+    "pages": "230-234"
+   },
+   "ids": {
+    "doi": "10.1016/j.comppsych.2003.12.009",
+    "pmid": "15124155",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/15124155/",
+    "doi": "https://doi.org/10.1016/j.comppsych.2003.12.009",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.comppsych.2003.12.009"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 3,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Psychotic"
+    ],
+    "specific": "Delusional (psychotic) depression",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Physiological stress",
+    "specific": "Incidental delirium: drug-induced in two, respiratory distress with asphyxia in one",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Three patients' delusional depression resolved after they recovered from an incidental delirium, caused by medication in two and by respiratory distress with asphyxia in the third.",
+   "caveat": "Psychotic depression often remits with treatment; the authors also credit amnesia and supportive care, and chronicity needs the full text.",
+   "tags": [
+    "delirium",
+    "depression",
+    "hypoxia",
+    "psychotic-depression"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Joins older observations that delirium or unplanned seizures can lift depression (an ECT-like effect); never tested.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "tsolaki-2010",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Tsolaki M, Messini CZ, Siapera M, Fotiadou F, Delaporta D, Karatolias A",
+    "title": "Depression, extrapyramidal symptoms, dementia and an unexpected outcome: a case report.",
+    "journal": "Cases J",
+    "year": 2010,
+    "volume": "3",
+    "issue": "",
+    "pages": "47"
+   },
+   "ids": {
+    "doi": "10.1186/1757-1626-3-47",
+    "pmid": "20181069",
+    "pmcid": "PMC2831020"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2831020/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/20181069/",
+    "doi": "https://doi.org/10.1186/1757-1626-3-47",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1186%2F1757-1626-3-47"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Depression with anxiety, parkinsonism and cognitive decline, unchanged after 9 months of treatment",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Physiological stress",
+    "specific": "Suicide attempt with second-degree burns and respiratory compromise, then intensive care",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Nine months of treatment-unresponsive depression, with parkinsonism and cognitive decline, remitted after a suicide attempt with burns and intensive care; still in remission two years later.",
+   "caveat": "The parkinsonism vanished too, which puts the original diagnosis in question; psychosocial change after a suicide attempt is an alternative explanation.",
+   "tags": [
+    "burns",
+    "depression",
+    "parkinsonism",
+    "suicide-attempt"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "diamond-2006",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Diamond A, Kenney C, Jankovic J",
+    "title": "Effect of vagal nerve stimulation in a case of Tourette's syndrome and complex partial epilepsy.",
+    "journal": "Mov Disord",
+    "year": 2006,
+    "volume": "21",
+    "issue": "8",
+    "pages": "1273-1275"
+   },
+   "ids": {
+    "doi": "10.1002/mds.20949",
+    "pmid": "16703589",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/16703589/",
+    "doi": "https://doi.org/10.1002/mds.20949",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2Fmds.20949"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Tourette syndrome in a 30-year-old man",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Vagus nerve stimulator implanted for medication-refractory complex partial epilepsy",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "On-off rechallenge"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A man's tics improved after a vagus nerve stimulator was implanted for epilepsy; a rater blinded to whether the stimulator was on or off scored fewer motor and vocal tics with it on.",
+   "caveat": "Tics fluctuate, the on/off comparison is a single pair of videos, and better seizure control may contribute.",
+   "tags": [
+    "epilepsy",
+    "reversal",
+    "tics",
+    "tourette",
+    "vagus-nerve-stimulation"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
   }
  ]
 }
