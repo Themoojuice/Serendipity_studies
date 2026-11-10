@@ -47,3 +47,5 @@ EPMC_broad_v1_2,Europe PMC (browser),"first pass: random 300 of ranks 4,000-20,9
 EPMC_broad_v1_2,Europe PMC (browser),"batch 2: ranks 1,500-1,799 + random 300 of ranks 1,800+ (seed 20261110)",600,2026-11-10,"stopping check: 0 includes; 332 consecutive irrelevant since 1,467 -> both criteria met"
 EPMC_broad_v1_2,Europe PMC (browser),batch 3: ranks 60-359 + random 300 of ranks 360+ (seed 20261110),600,2026-11-10,stopping check: 0 includes -> both criteria met
 EPMC_broad_v1_2,Europe PMC (browser),"rerank_v1: top 1,000 of 35,270 unscreened (first pass + batch 2), classifier queries/rerank_model_v1.json",1000,2026-11-10,"6 includes, 5 unsure; held-out Kraft & Westman 2009 at 1, Solyom 1987 at 354"
+EPMC_broad_v1_2,Europe PMC (browser),"rerank_v1: new ranks 1,000-1,999",1000,2026-11-10,"2 includes (ranks 1,435 and 1,622); 300 consecutive irrelevant at 1,623-1,922"
+EPMC_broad_v1_2,Europe PMC (browser),"rerank_v1: random 300 of new ranks 1,600-35,269 (seed 20261111)",300,2026-11-10,stopping check: 0 includes -> both criteria met; first-pass and batch-2 tails stopped

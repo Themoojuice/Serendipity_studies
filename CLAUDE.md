@@ -37,19 +37,19 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
   - 153 records (141 cases, 12 context); ledger 53,084 rows (47,184 current); 23 `unsure`.
 - 2026-11-10 (night): **phase 1c — re-ranked tail (protocol v1.3).** Classifier (`scripts/rerank_train.py`, TF-IDF + logistic regression, CV AUC 0.971) scored the 35,270 unscreened first-pass + batch-2 records in the browser; order in `queries/rerank_v1_order.csv` (columns `new_rank,queue,old_rank,other_id,score,...`). Held-out cases moved 6,182→1 (Kraft & Westman), 7,808→354 (Solyom), 9,842→5,036 (Makris).
   - New order ranks 0–999 screened (`scripts/batches/b2026_11_10_epmc_rerank_top1000.py`): **+6 cases** (Zuschlag 2016, Silva 2021, Stevens 1990, Rizzo 2008, Serratrice 2002, Juiz-Fernández 2022), 5 unsure. Yield about 1 per 170 titles, against 1 per 600 in the old order; 5 of the 6 sat in the top 560.
-  - Last possibly relevant record at new rank 884 (unsure), so only 115 consecutive irrelevant so far: the stopping rule is not yet met in the new order.
+  - Ranks 1,000–1,999 (`scripts/batches/b2026_11_10_epmc_rerank_1000_2000_stop.py`): **+2 cases** (Yousefzadeh-Fard 2013, an insula-stroke lesion series in opium addiction, the opioid analogue of Naqvi 2007; Grootendorst-van Mil 2018, clozapine-resistant psychosis responding after pneumonia raised clozapine levels).
+  - **Stopping rule met (protocol v1.3.1):** 300 consecutive irrelevant at ranks 1,623–1,922, and 0/300 in a seeded random sample of ranks 1,600–35,269 (seed 20261111).
   - Scope question for Brendan (unsure pile): persistent stuttering (DSM-5 childhood-onset fluency disorder) stopping on baclofen for alcohol dependence, with on-off rechallenge (Beraha 2017).
-  - 159 records (147 cases, 12 context); ledger 54,087 rows (47,184 current); 27 `unsure`.
+  - 161 records (149 cases, 12 context); ledger 55,385 rows (47,184 current); 27 `unsure`.
   - Browser state (lost when the tab closes): `window.SC` = scored tail sorted by score, with `nr` = new rank; `window.fetchChunk([[old_rank, key], ...])` fetches core records into `window.OUT`. To rebuild: load `queries/rerank_model_v1.json` and score the blank rows' title+abstract, or just read `queries/rerank_v1_order.csv`.
 - **Finding unscreened rows now:** current rows (no one `supersedes` them) with a **blank decision**. First pass = notes starting `rank `; batch 2 = `year-slice batch 2`; batch 3 = `year-slice batch 3`. Re-ranked rows' notes carry `rerank_v1 rank N`.
-- **Stopping-rule state (protocol §10), Europe PMC broad:** first pass screened 0–3,999 plus a 300 sample → not stopped (1 include in the sample). Batch 2 and batch 3 → both criteria met. Re-ranked order (v1.3): ranks 0–999 screened, 115 consecutive irrelevant → not met.
+- **Stopping-rule state (protocol §10), Europe PMC broad:** first pass screened 0–3,999 plus a 300 sample → not stopped (1 include in the sample). Batch 2 and batch 3 → both criteria met. Re-ranked order (v1.3): ranks 0–1,999 plus a 300 sample screened → **both criteria met; the Europe PMC broad set is done** (batch 3 met earlier).
 - **Next, in order:**
-  1. Continue the re-ranked order from rank 1,000 until 300 consecutive irrelevant, then a seeded random 300 from the remainder of `rerank_v1_order.csv`.
-  2. Strings v1.3: make the Embase keto term ketogenic-only and rerun it (left-sided temporal terms done).
-  3. Embase title set ranks 309–1,374 (mostly the score-9 band): screen, or random-sample per the stopping rule.
-  4. PsycInfo via EBSCOhost (CKN) — not yet run.
-  5. Full-text appraisal of the 91 provisional records and 23 unsure (PMC free first, then CKN), with attribution grade, JBI score and `lesion.side` / `lesion.region` for the laterality analysis; promote to Included.
-  6. Calibration: 100 blinded records for Brendan.
+  1. Strings v1.3: make the Embase keto term ketogenic-only and rerun it (left-sided temporal terms done).
+  2. Embase title set ranks 309–1,374 (mostly the score-9 band): screen, or re-rank with the classifier and apply the stopping rule.
+  3. PsycInfo via EBSCOhost (CKN) — not yet run.
+  4. Full-text appraisal of the ~100 provisional records and 27 unsure (PMC free first, then CKN), with attribution grade, JBI score and `lesion.side` / `lesion.region` for the laterality analysis; promote to Included.
+  5. Calibration: 100 blinded records for Brendan.
 - Library restyle ("more Claude") is still due with the rebuild after step 5, alongside the new appraisal fields.
 
 ## How searches actually run (the network matters)
