@@ -11858,6 +11858,470 @@
     "basis": "from downstream level"
    },
    "flags": []
+  },
+  {
+   "id": "zuschlag-2016",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Zuschlag ZD, Lalich CJ, Short EB, Hamner M, Kahn DA",
+    "title": "Pyrotherapy for the Treatment of Psychosis in the 21st Century: A Case Report and Literature Review.",
+    "journal": "J Psychiatr Pract",
+    "year": 2016,
+    "volume": "22",
+    "issue": "5",
+    "pages": "410-415"
+   },
+   "ids": {
+    "doi": "10.1097/pra.0000000000000181",
+    "pmid": "27648506",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/27648506/",
+    "doi": "https://doi.org/10.1097/pra.0000000000000181",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fpra.0000000000000181"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizoaffective disorder with severe psychotic symptoms",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "Bacteraemia with high fever",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A woman with schizoaffective disorder and severe psychosis had a striking remission of psychotic symptoms after a bacteraemia with high fever.",
+   "caveat": "Duration of remission and concurrent medication changes need the full text; the report is framed as a revival of pyrotherapy.",
+   "tags": [
+    "bacteraemia",
+    "fever",
+    "psychosis",
+    "pyrotherapy",
+    "schizoaffective"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Fever-linked remission of psychosis has a long anecdotal history (Wagner-Jauregg, in library) but no modern controlled test.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "silva-2021",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Silva A, Politi P, Brondino N, Olivola M",
+    "title": "Efficacy of IV immunoglobulins on depressive symptoms and self-injury: A case report",
+    "journal": "Eur Psychiatry",
+    "year": 2021,
+    "volume": "64",
+    "issue": "Suppl 1",
+    "pages": "S673-S673"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": "PMC9480233"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9480233/",
+    "abstract": null,
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Free full text",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Personality",
+     "Mood"
+    ],
+    "specific": "Borderline personality disorder with a depressive episode, self-injury ideation and repeated acting out",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Immune reset",
+    "specific": "Intravenous immunoglobulin for a myasthenia gravis flare",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "After intravenous immunoglobulin for myasthenia, a woman with borderline personality disorder had full remission of a depressive episode, stopped acting out and had less self-injury ideation.",
+   "caveat": "Conference abstract; follow-up one month; other medicines unchanged but the myasthenia flare itself may have been depressogenic.",
+   "tags": [
+    "borderline-personality",
+    "depression",
+    "immunoglobulin",
+    "ivig",
+    "myasthenia",
+    "self-injury"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "stevens-1990",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Stevens JR",
+    "title": "Psychiatric consequences of temporal lobectomy for intractable seizures: a 20-30-year follow-up of 14 cases.",
+    "journal": "Psychol Med",
+    "year": 1990,
+    "volume": "20",
+    "issue": "3",
+    "pages": "529-545"
+   },
+   "ids": {
+    "doi": "10.1017/s0033291700017049",
+    "pmid": "2236362",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/2236362/",
+    "doi": "https://doi.org/10.1017/s0033291700017049",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1017%2Fs0033291700017049"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 14,
+   "syndrome": {
+    "categories": [
+     "Personality",
+     "Impulse-control"
+    ],
+    "specific": "Incapacitating paranoid personality disorder (one patient) and explosive rage attacks (another), with temporal lobe epilepsy",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Temporal lobectomy for intractable seizures",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "In a 20-30-year follow-up of 14 temporal lobectomies, one patient with incapacitating paranoid personality disorder and one with explosive rage both improved markedly; others developed psychosis.",
+   "caveat": "Two relevant patients in a series where six got worse or newly psychotic; side of surgery per patient needs the full text.",
+   "tags": [
+    "epilepsy-surgery",
+    "long-follow-up",
+    "paranoid-personality",
+    "rage",
+    "temporal-lobectomy"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent, and seizure control is a confound (see Pintor 2022).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "rizzo-2008",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Rizzo R, Marino S, Gulisano M, Robertson MM",
+    "title": "The successful use of ondansetron in a boy with both leukemia and Tourette syndrome.",
+    "journal": "J Child Neurol",
+    "year": 2008,
+    "volume": "23",
+    "issue": "1",
+    "pages": "108-111"
+   },
+   "ids": {
+    "doi": "10.1177/0883073807307085",
+    "pmid": "18184945",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/18184945/",
+    "doi": "https://doi.org/10.1177/0883073807307085",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F0883073807307085"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Tourette syndrome in an 8-year-old boy",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Ondansetron for chemotherapy-induced nausea (acute lymphoblastic leukaemia)",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "Natural off-on"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A boy with Tourette syndrome given ondansetron for chemotherapy nausea had his tics settle too; they came back when the dose was cut.",
+   "caveat": "Child with leukaemia and chemotherapy, so many moving parts; tics wax and wane naturally.",
+   "tags": [
+    "5ht3",
+    "chemotherapy",
+    "child",
+    "leukaemia",
+    "ondansetron",
+    "tics",
+    "tourette"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "A small randomised trial of ondansetron added to haloperidol in Tourette syndrome (Toren 2005, recalled, not checked) was positive; not adopted.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "serratrice-2002",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Serratrice J, Disdier P, Kaladjian A, Granel B, Azorin JM, Laugier R et al.",
+    "title": "[Psychosis revealing a silent celiac disease in a young women with trisomy 21].",
+    "journal": "Presse Med",
+    "year": 2002,
+    "volume": "31",
+    "issue": "33",
+    "pages": "1551-1553"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "12422480",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/12422480/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic",
+     "Mood"
+    ],
+    "specific": "Psychosis with hallucinations, depression, anorexia and withdrawal in a 41-year-old woman with Down syndrome",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Diet",
+    "specific": "Gluten-free diet for silent coeliac disease (anti-gliadin antibodies, no villous atrophy)",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A woman with Down syndrome and new psychosis and depression improved strikingly and lastingly after 12 months on a gluten-free diet for silent coeliac disease.",
+   "caveat": "Arguably a secondary psychosis, as with De Santis 1997; duration before the diet unclear; slow response over a year. Published in French.",
+   "tags": [
+    "coeliac",
+    "depression",
+    "down-syndrome",
+    "gluten-free-diet",
+    "psychosis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Gluten-linked psychosis remains contested; see De Santis 1997 and Jansson 1984 in library.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "juiz-fernandez-2022",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Juiz-Fernández A, Chavarría-Miranda A, Prieto-González A, Rodríguez-Osorio X",
+    "title": "[No fear of anything: epilepsy, psychiatric comorbidity and surgery. A clinical case report].",
+    "journal": "Rev Neurol",
+    "year": 2022,
+    "volume": "75",
+    "issue": "10",
+    "pages": "319-321"
+   },
+   "ids": {
+    "doi": "10.33588/rn.7510.2022145",
+    "pmid": "36354301",
+    "pmcid": "PMC10280768"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10280768/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/36354301/",
+    "doi": "https://doi.org/10.33588/rn.7510.2022145",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.33588%2Frn.7510.2022145"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Anxiety",
+     "Mood"
+    ],
+    "specific": "Anxiety-depressive syndrome and phobias with drug-resistant right mesial temporal epilepsy",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Right anteromedial temporal lobectomy for epilepsy",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A woman's phobias and anxious depression improved along with her seizures after a right anteromedial temporal lobectomy.",
+   "caveat": "Interictal versus seizure-bound symptoms not separable from the abstract; extent of improvement unstated. Published in Spanish.",
+   "tags": [
+    "amygdala",
+    "anxiety",
+    "epilepsy-surgery",
+    "phobia",
+    "right-temporal",
+    "temporal-lobectomy"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent, and seizure control is a confound (see Pintor 2022).",
+    "basis": "judged"
+   },
+   "flags": []
   }
  ]
 }
