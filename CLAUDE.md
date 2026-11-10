@@ -39,8 +39,10 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
   - New order ranks 0–999 screened (`scripts/batches/b2026_11_10_epmc_rerank_top1000.py`): **+6 cases** (Zuschlag 2016, Silva 2021, Stevens 1990, Rizzo 2008, Serratrice 2002, Juiz-Fernández 2022), 5 unsure. Yield about 1 per 170 titles, against 1 per 600 in the old order; 5 of the 6 sat in the top 560.
   - Ranks 1,000–1,999 (`scripts/batches/b2026_11_10_epmc_rerank_1000_2000_stop.py`): **+2 cases** (Yousefzadeh-Fard 2013, an insula-stroke lesion series in opium addiction, the opioid analogue of Naqvi 2007; Grootendorst-van Mil 2018, clozapine-resistant psychosis responding after pneumonia raised clozapine levels).
   - **Stopping rule met (protocol v1.3.1):** 300 consecutive irrelevant at ranks 1,623–1,922, and 0/300 in a seeded random sample of ranks 1,600–35,269 (seed 20261111).
-  - Scope question for Brendan (unsure pile): persistent stuttering (DSM-5 childhood-onset fluency disorder) stopping on baclofen for alcohol dependence, with on-off rechallenge (Beraha 2017).
-  - 161 records (149 cases, 12 context); ledger 55,385 rows (47,184 current); 27 `unsure`.
+  - Scope decision (v1.3.2): Beraha 2017 (stuttering, baclofen, on-off rechallenge) included as a one-off. Brendan doesn't want stuttering searched; the library is about serious psychiatric syndromes.
+  - 162 records (150 cases, 12 context; 101 Provisional); ledger 55,386 rows (47,184 current); 26 `unsure`.
+  - Tidy pass: `scripts/audit_library.py` added (ledger forks, trace, duplicates, link/ID agreement, era basis, text hygiene, and an 8-word copy check of summaries against locally cached abstracts). Clean: no hard problems; 105 summaries copy-checked, none shares 8 words with its abstract. Ho 2001 DOI link percent-encoded. Site tested headless: 150/162 render, search works, no broken links, no console errors.
+  - Open tidy items: 39 records have empty caveats (mostly older Included ones); on a phone the filter panel fills the first screen, and newer syndrome categories have no colour (grey dots) — both for the restyle.
   - Browser state (lost when the tab closes): `window.SC` = scored tail sorted by score, with `nr` = new rank; `window.fetchChunk([[old_rank, key], ...])` fetches core records into `window.OUT`. To rebuild: load `queries/rerank_model_v1.json` and score the blank rows' title+abstract, or just read `queries/rerank_v1_order.csv`.
 - **Finding unscreened rows now:** current rows (no one `supersedes` them) with a **blank decision**. First pass = notes starting `rank `; batch 2 = `year-slice batch 2`; batch 3 = `year-slice batch 3`. Re-ranked rows' notes carry `rerank_v1 rank N`.
 - **Stopping-rule state (protocol §10), Europe PMC broad:** first pass screened 0–3,999 plus a 300 sample → not stopped (1 include in the sample). Batch 2 and batch 3 → both criteria met. Re-ranked order (v1.3): ranks 0–1,999 plus a 300 sample screened → **both criteria met; the Europe PMC broad set is done** (batch 3 met earlier).
@@ -68,7 +70,7 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
 
 - **It's public, and GitHub Pages serves `main`.** Commit only metadata, our own summaries, and links. **Never commit abstracts, full texts or PDFs.**
 - Published case details only. Nothing from Brendan's clinical work, ever.
-- `data/cases.json` is the source of truth for the library. Edit it with a script, then run `python3 scripts/validate_cases.py`. It must print OK before any commit.
+- `data/cases.json` is the source of truth for the library. Edit it with a script, then run `python3 scripts/validate_cases.py`. It must print OK before any commit. `python3 scripts/audit_library.py` runs the deeper checks (exit 1 on a hard problem); run it before larger commits.
 - `ledger/records.csv` is append-only (see `ledger/README.md`).
 - Every library record must trace to at least one ledger row.
 - Every new record carries `era`. A `known` or `refuted` label needs a note saying when and how.

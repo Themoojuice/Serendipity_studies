@@ -9678,7 +9678,7 @@
    "links": {
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/11135342/",
-    "doi": "https://doi.org/10.1002/1098-108x(200101)29:1<97::aid-eat17>3.0.co;2-2",
+    "doi": "https://doi.org/10.1002/1098-108x(200101)29:1%3C97::aid-eat17%3E3.0.co;2-2",
     "alternates": [],
     "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2F1098-108x%28200101%2929%3A1%3C97%3A%3Aaid-eat17%3E3.0.co%3B2-2"
    },
@@ -12467,6 +12467,82 @@
     "pneumonia",
     "schizoaffective",
     "treatment-resistant"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
+   "date_added": "2026-11-10",
+   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "beraha-2017",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Beraha E, Bodewits P, van den Brink W, Wiers R",
+    "title": "Speaking fluently with baclofen?",
+    "journal": "BMJ Case Rep",
+    "year": 2017,
+    "volume": "2017",
+    "issue": "",
+    "pages": "bcr-2016-218714"
+   },
+   "ids": {
+    "doi": "10.1136/bcr-2016-218714",
+    "pmid": "28495786",
+    "pmcid": "PMC5534838"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5534838/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/28495786/",
+    "doi": "https://doi.org/10.1136/bcr-2016-218714",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fbcr-2016-218714"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Neurodevelopmental"
+    ],
+    "specific": "Stuttering (childhood-onset fluency disorder) in a man with alcohol dependence",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Baclofen 120 mg/day for alcohol dependence",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "On-off rechallenge"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A man's stuttering stopped on baclofen given for alcohol dependence, came back when it was stopped, and stopped again when it was restarted.",
+   "caveat": "Onset and duration of the stuttering need the full text; reduced drinking and anxiety are confounders. Included as a one-off for its rechallenge evidence; stuttering is not a target syndrome.",
+   "tags": [
+    "alcohol-dependence",
+    "baclofen",
+    "gaba-b",
+    "rechallenge",
+    "stuttering"
    ],
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
