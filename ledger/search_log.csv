@@ -43,3 +43,6 @@ EPMC_broad_v1_2,Europe PMC (browser),"v1.2 broad, year-slice batch 2, ranks 400-
 EPMC_broad_v1_2,Europe PMC (browser),"v1.2 broad, first-pass queue, ranks 700-1,799 fetched by ID",1100,2026-11-10,"screened (title, 27 abstracts); +8 provisional cases, 2 unsure; all 8 known cases in range recognised"
 EPMC_broad_v1_2,Europe PMC (browser),"v1.2 broad, first-pass queue, ranks 1,800-2,899 fetched by ID",1100,2026-11-10,"screened (title, 20 abstracts); +3 provisional cases, 1 unsure; all 4 known cases in range recognised"
 EPMC_broad_v1_2,Europe PMC (browser),"v1.2 broad, first-pass queue, ranks 2,900-3,999 fetched by ID",1100,2026-11-10,"screened (title, 6 abstracts); no includes; 1,328 consecutive irrelevant since rank 2,671"
+EPMC_broad_v1_2,Europe PMC (browser),"first pass: random 300 of ranks 4,000-20,999 (seed 20261110)",300,2026-11-10,"stopping check: 1 include (rank 9,842, Makris 2021) -> queue not stopped"
+EPMC_broad_v1_2,Europe PMC (browser),"batch 2: ranks 1,500-1,799 + random 300 of ranks 1,800+ (seed 20261110)",600,2026-11-10,"stopping check: 0 includes; 332 consecutive irrelevant since 1,467 -> both criteria met"
+EPMC_broad_v1_2,Europe PMC (browser),batch 3: ranks 60-359 + random 300 of ranks 360+ (seed 20261110),600,2026-11-10,stopping check: 0 includes -> both criteria met
