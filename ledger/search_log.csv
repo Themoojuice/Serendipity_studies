@@ -49,3 +49,4 @@ EPMC_broad_v1_2,Europe PMC (browser),batch 3: ranks 60-359 + random 300 of ranks
 EPMC_broad_v1_2,Europe PMC (browser),"rerank_v1: top 1,000 of 35,270 unscreened (first pass + batch 2), classifier queries/rerank_model_v1.json",1000,2026-11-10,"6 includes, 5 unsure; held-out Kraft & Westman 2009 at 1, Solyom 1987 at 354"
 EPMC_broad_v1_2,Europe PMC (browser),"rerank_v1: new ranks 1,000-1,999",1000,2026-11-10,"2 includes (ranks 1,435 and 1,622); 300 consecutive irrelevant at 1,623-1,922"
 EPMC_broad_v1_2,Europe PMC (browser),"rerank_v1: random 300 of new ranks 1,600-35,269 (seed 20261111)",300,2026-11-10,stopping check: 0 includes -> both criteria met; first-pass and batch-2 tails stopped
+CIT_EPMC_v1,Europe PMC (browser),citations + references of 130 library cases (PMID/PMCID),3806,2026-11-13,"3,625 new or unscreened; classifier order; ranks 0-933 + random 300 screened; 9 cases + 1 context, 6 unsure; stopping rule met"

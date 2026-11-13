@@ -47,7 +47,7 @@ def add_records(R, cand, *, collection, found_via, today):
         lang = LANG.get(c.get("lang"), None)
         caveat = k["caveat"] + (f" Published in {lang}." if lang and lang.lower() not in k["caveat"].lower() else "")
         d["records"].append({
-            "id": k["id"], "record_type": "case", "status": "Provisional", "tier": k["tier"], "collections": [collection],
+            "id": k["id"], "record_type": k.get("record_type", "case"), "status": "Provisional", "tier": k.get("tier"), "collections": [collection],
             "citation": cit, "ids": {"doi": doi, "pmid": pmid, "pmcid": pmcid}, "links": links,
             "access": "Free full text" if pmcid else "Paywalled",
             "design": k["design"], "n_patients": k["n"],

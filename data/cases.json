@@ -1,7 +1,7 @@
 {
  "library": "Serendipity Case Library",
  "schema_version": "1.2",
- "updated": "2026-11-10",
+ "updated": "2026-11-13",
  "unit_of_record": "One published study (a paper). n_patients counts patients within it; same_patient_as links papers describing the same patient.",
  "inclusion_criteria": [
   "A serious psychiatric syndrome resolved or substantially improved.",
@@ -12550,6 +12550,767 @@
    "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
    "era": {
     "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "mclaughlin-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "McLaughlin NC, Didie ER, Machado AG, Haber SN, Eskandar EN, Greenberg BD",
+    "title": "Improvements in anorexia symptoms after deep brain stimulation for intractable obsessive-compulsive disorder.",
+    "journal": "Biol Psychiatry",
+    "year": 2013,
+    "volume": "73",
+    "issue": "9",
+    "pages": "e29-31"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "23128051",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/23128051/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Anorexia nervosa alongside intractable OCD",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Deep brain stimulation for intractable OCD",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Anorexia symptoms improved after deep brain stimulation given for intractable OCD.",
+   "caveat": "The OCD improved too, and the eating disorder may have followed it.",
+   "tags": [
+    "anorexia-nervosa",
+    "comorbidity",
+    "dbs",
+    "ocd"
+   ],
+   "same_patient_as": null,
+   "found_via": "Citation route v1 (Europe PMC citations and references)",
+   "date_added": "2026-11-13",
+   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Deep brain stimulation for anorexia itself was being trialled from 2013 (recalled, not checked).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "hanes-1996",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Hanes KR",
+    "title": "Serotonin, psilocybin, and body dysmorphic disorder: a case report.",
+    "journal": "J Clin Psychopharmacol",
+    "year": 1996,
+    "volume": "16",
+    "issue": "2",
+    "pages": "188-189"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "8690834",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/8690834/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Body dysmorphic disorder",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Recreational substance",
+    "specific": "Psilocybin",
+    "intent": "Self-administered"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Body dysmorphic disorder improved with psilocybin use.",
+   "caveat": "Self-administered, so expectancy and mood effects are likely.",
+   "tags": [
+    "body-dysmorphic-disorder",
+    "psilocybin",
+    "psychedelic",
+    "serotonin"
+   ],
+   "same_patient_as": null,
+   "found_via": "Citation route v1 (Europe PMC citations and references)",
+   "date_added": "2026-11-13",
+   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Psilocybin for body dysmorphic disorder has since had a small open-label trial (recalled, not checked).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "echizen-2021",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Echizen K, Sakakibara E, Suga M, Kasai K",
+    "title": "Improvements in obsessive-compulsive disorder and schizophrenia after left putaminal hemorrhage.",
+    "journal": "Psychiatry Clin Neurosci",
+    "year": 2021,
+    "volume": "75",
+    "issue": "11",
+    "pages": "354-355"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "34387923",
+    "pmcid": "PMC9135119"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9135119/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/34387923/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Free full text",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic",
+     "Psychotic"
+    ],
+    "specific": "OCD with schizophrenia",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Left putaminal haemorrhage",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Both OCD and schizophrenia improved after a left putaminal haemorrhage.",
+   "caveat": "",
+   "tags": [
+    "basal-ganglia",
+    "haemorrhage",
+    "left",
+    "ocd",
+    "putamen",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Citation route v1 (Europe PMC citations and references)",
+   "date_added": "2026-11-13",
+   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "erbay-2022",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Erbay LG, Erbay MF, Kamışlı S, Demirbay S, Ünal S",
+    "title": "Refractory obsessive-compulsive disorder with symptoms regressing after thalamic infarction: A case report.",
+    "journal": "Neurol India",
+    "year": 2022,
+    "volume": "70",
+    "issue": "1",
+    "pages": "399-401"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "35263927",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/35263927/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Refractory OCD",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Thalamic infarction",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Treatment-refractory OCD regressed after a thalamic infarct.",
+   "caveat": "",
+   "tags": [
+    "cstc-loop",
+    "infarct",
+    "ocd",
+    "stroke",
+    "thalamus"
+   ],
+   "same_patient_as": null,
+   "found_via": "Citation route v1 (Europe PMC citations and references)",
+   "date_added": "2026-11-13",
+   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "coutinho-2016",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Coutinho G, Miele F, Moll J, Mattos P, de Oliveira-Souza R",
+    "title": "Remission of lifelong episodic dyscontrol after bilateral dorsolateral temporal lobe damage.",
+    "journal": "Neurocase",
+    "year": 2016,
+    "volume": "22",
+    "issue": "3",
+    "pages": "339-345"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "27351865",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/27351865/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Impulse-control"
+    ],
+    "specific": "Lifelong episodic dyscontrol (recurrent aggressive outbursts)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Traumatic brain injury",
+    "specific": "Bilateral dorsolateral temporal lobe injury",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 45-year-old woman's lifelong outbursts of aggression stopped for good after a bilateral temporal lobe injury.",
+   "caveat": "Personality change after brain injury can blunt drive in general, not aggression alone.",
+   "tags": [
+    "aggression",
+    "bilateral",
+    "intermittent-explosive",
+    "personality-change",
+    "tbi",
+    "temporal-lobe"
+   ],
+   "same_patient_as": null,
+   "found_via": "Citation route v1 (Europe PMC citations and references)",
+   "date_added": "2026-11-13",
+   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "hemming-1993",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Hemming M, Yellowlees PM",
+    "title": "Effective treatment of Tourette's syndrome with marijuana.",
+    "journal": "J Psychopharmacol",
+    "year": 1993,
+    "volume": "7",
+    "issue": "4",
+    "pages": "389-391"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "22291003",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/22291003/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Tourette syndrome",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Recreational substance",
+    "specific": "Marijuana",
+    "intent": "Self-administered"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "Tourette symptoms improved with marijuana, after the authors ruled out other treatments as the cause.",
+   "caveat": "Tics wax and wane, and use was probably self-treatment.",
+   "tags": [
+    "cannabis",
+    "marijuana",
+    "thc",
+    "tics",
+    "tourette"
+   ],
+   "same_patient_as": null,
+   "found_via": "Citation route v1 (Europe PMC citations and references)",
+   "date_added": "2026-11-13",
+   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "THC was later tested in small randomised trials in Tourette syndrome (Müller-Vahl, early 2000s; recalled, not checked).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "borchardt-1987",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Borchardt CM, Popkin MK",
+    "title": "Delirium and the resolution of depression.",
+    "journal": "J Clin Psychiatry",
+    "year": 1987,
+    "volume": "48",
+    "issue": "9",
+    "pages": "373-375"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "3624208",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/3624208/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Long-standing depressive disorder",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Systemic illness",
+    "specific": "Protracted delirium during a flare of major medical illness",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Two patients' long-standing depression remitted after a protracted delirium during a flare of medical illness.",
+   "caveat": "Recovery from the medical illness itself may have lifted the depression.",
+   "tags": [
+    "delirium",
+    "depression",
+    "medical-illness",
+    "restitution"
+   ],
+   "same_patient_as": null,
+   "found_via": "Citation route v1 (Europe PMC citations and references)",
+   "date_added": "2026-11-13",
+   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "daumezon-1954",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Daumezon G, Cor J, Moor L",
+    "title": "[Disappearance of grave obsessional phenomena after auto-lobotomy in a severely unbalanced individual].",
+    "journal": "Ann Med Psychol (Paris)",
+    "year": 1954,
+    "volume": "112",
+    "issue": "1",
+    "pages": "93-97"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "13148864",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/13148864/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Severe obsessional illness",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Traumatic brain injury",
+    "specific": "Self-inflicted frontal injury (self-lobotomy)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Severe obsessional symptoms disappeared after a man injured his own frontal lobes.",
+   "caveat": " Published in French.",
+   "tags": [
+    "frontal-lobe",
+    "historical",
+    "lobotomy",
+    "ocd",
+    "self-injury"
+   ],
+   "same_patient_as": null,
+   "found_via": "Citation route v1 (Europe PMC citations and references)",
+   "date_added": "2026-11-13",
+   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "known",
+    "note": "Prefrontal leucotomy for severe obsessional illness was in use by 1954; the injury reproduced it.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "jing-2021",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Jing C, Jing C, Zheng L, Hong G, Zheng J, Yu L et al.",
+    "title": "Disruption of Cigarette Smoking Addiction After Dorsal Striatum Damage.",
+    "journal": "Front Behav Neurosci",
+    "year": 2021,
+    "volume": "15",
+    "issue": "",
+    "pages": "646337"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "33867951",
+    "pmcid": "PMC8046924"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8046924/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/33867951/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Free full text",
+   "design": "Lesion series",
+   "n_patients": 31,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Cigarette smoking addiction",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Acute infarction involving the dorsal striatum (11 smokers, against 20 with infarcts elsewhere)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Smokers whose infarcts involved the dorsal striatum quit more easily and without relapse than stroke controls.",
+   "caveat": "Recruited by phone after discharge, so recall and survival bias apply.",
+   "tags": [
+    "caudate",
+    "dorsal-striatum",
+    "lesion-series",
+    "putamen",
+    "smoking",
+    "stroke"
+   ],
+   "same_patient_as": null,
+   "found_via": "Citation route v1 (Europe PMC citations and references)",
+   "date_added": "2026-11-13",
+   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Extends the insula finding (Naqvi 2007) to the dorsal striatum; compare Gaznick 2014.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "gaznick-2014",
+   "record_type": "context",
+   "status": "Provisional",
+   "tier": null,
+   "collections": [
+    "phase1c"
+   ],
+   "citation": {
+    "authors": "Gaznick N, Tranel D, McNutt A, Bechara A",
+    "title": "Basal ganglia plus insula damage yields stronger disruption of smoking addiction than basal ganglia damage alone.",
+    "journal": "Nicotine Tob Res",
+    "year": 2014,
+    "volume": "16",
+    "issue": "4",
+    "pages": "445-453"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "24169814",
+    "pmcid": "PMC3954424"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3954424/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/24169814/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Free full text",
+   "design": "Lesion series",
+   "n_patients": 63,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Nicotine dependence in smokers with stroke",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Stroke damaging the basal ganglia, with or without the insula",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "In 63 smokers followed for a year after stroke, basal ganglia damage, more so with insula involvement, led to more and longer-lasting cessation than damage elsewhere.",
+   "caveat": "",
+   "tags": [
+    "basal-ganglia",
+    "insula",
+    "prospective",
+    "smoking",
+    "stroke"
+   ],
+   "same_patient_as": null,
+   "found_via": "Citation route v1 (Europe PMC citations and references)",
+   "date_added": "2026-11-13",
+   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
     "note": "",
     "basis": "from downstream level"
    },

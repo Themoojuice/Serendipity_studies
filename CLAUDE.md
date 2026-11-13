@@ -43,6 +43,8 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
   - 162 records (150 cases, 12 context; 101 Provisional); ledger 55,386 rows (47,184 current); 26 `unsure`.
   - Tidy pass: `scripts/audit_library.py` added (ledger forks, trace, duplicates, link/ID agreement, era basis, text hygiene, and an 8-word copy check of summaries against locally cached abstracts). Clean: no hard problems; 105 summaries copy-checked, none shares 8 words with its abstract. Ho 2001 DOI link percent-encoded. Site tested headless: 150/162 render, search works, no broken links, no console errors.
   - 2026-11-13 tidy: 26 empty caveats filled, each with one specific competing explanation (`scripts/batches/b2026_11_13_caveats.py`); 13 left empty on purpose. **Caveats are never boilerplate** (Brendan hates generic disclaimers): one concrete alternative explanation, or nothing. Site: filters collapse behind a "Filters" heading on phones; trauma, neurodevelopmental, catatonia and personality now have colours.
+- 2026-11-13: **citation route v1 (protocol v1.4).** Scite needs a paid plan, and the PubMed connector has no cited-by links, so the route runs on Europe PMC `/citations` + `/references` in the laptop browser (`scripts/batches/b2026_11_13_citation_route_v1.py`). 3,806 linked records; the 3,625 new or unscreened ranked with the v1.3 classifier; ranks 0–933 + random 300 screened → **stopping rule met**. **+9 cases** (McLaughlin 2013, Hanes 1996, Echizen 2021, Erbay 2022, Coutinho 2016, Hemming 1993, Borchardt 1987, Daumezon 1954, Jing 2021) and Gaznick 2014 as a context record; 6 unsure, several with no abstract (one may be the Grootendorst-van Mil patient again). Capture–recapture: database 150, citation 48, overlap 39 → ≈185 total, so ≥ ~25 still unfound.
+  - 172 records (159 cases, 13 context; 111 Provisional); ledger 59,192 rows (50,990 current); 32 `unsure`.
   - Browser state (lost when the tab closes): `window.SC` = scored tail sorted by score, with `nr` = new rank; `window.fetchChunk([[old_rank, key], ...])` fetches core records into `window.OUT`. To rebuild: load `queries/rerank_model_v1.json` and score the blank rows' title+abstract, or just read `queries/rerank_v1_order.csv`.
 - **Finding unscreened rows now:** current rows (no one `supersedes` them) with a **blank decision**. First pass = notes starting `rank `; batch 2 = `year-slice batch 2`; batch 3 = `year-slice batch 3`. Re-ranked rows' notes carry `rerank_v1 rank N`.
 - **Stopping-rule state (protocol §10), Europe PMC broad:** first pass screened 0–3,999 plus a 300 sample → not stopped (1 include in the sample). Batch 2 and batch 3 → both criteria met. Re-ranked order (v1.3): ranks 0–1,999 plus a 300 sample screened → **both criteria met; the Europe PMC broad set is done** (batch 3 met earlier).
@@ -50,8 +52,9 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
   1. Strings v1.3: make the Embase keto term ketogenic-only and rerun it (left-sided temporal terms done).
   2. Embase title set ranks 309–1,374 (mostly the score-9 band): screen, or re-rank with the classifier and apply the stopping rule.
   3. PsycInfo via EBSCOhost (CKN) — not yet run.
-  4. Full-text appraisal of the ~100 provisional records and 27 unsure (PMC free first, then CKN), with attribution grade, JBI score and `lesion.side` / `lesion.region` for the laterality analysis; promote to Included.
-  5. Calibration: 100 blinded records for Brendan.
+  4. Citation route v2: chase the 19 new cases from v1 and any later includes (one more hop) until a round adds nothing.
+  5. Full-text appraisal of the ~110 provisional records and 32 unsure (PMC free first, then CKN), with attribution grade, JBI score and `lesion.side` / `lesion.region` for the laterality analysis; promote to Included.
+  6. Calibration: 100 blinded records for Brendan.
 - Library restyle ("more Claude") is still due with the rebuild after step 5, alongside the new appraisal fields.
 
 ## How searches actually run (the network matters)
