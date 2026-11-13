@@ -159,7 +159,7 @@
     ]
    },
    "summary": "Compulsions disappeared two weeks after subthalamic stimulation for Parkinson's disease; Yale-Brown scores fell 58% and 64%.",
-   "caveat": "",
+   "caveat": "Dopaminergic doses usually fall after subthalamic surgery, and levodopa can drive compulsive behaviour.",
    "tags": [
     "dbs",
     "ocd",
@@ -404,7 +404,7 @@
     ]
    },
    "summary": "All six patients prescribed semaglutide for weight had marked falls in Alcohol Use Disorders Identification Test scores (mean 9.5 points).",
-   "caveat": "",
+   "caveat": "Retrospective chart review; weight-loss motivation and clinic contact could also cut drinking.",
    "tags": [
     "alcohol",
     "glp1",
@@ -485,7 +485,7 @@
     "links": []
    },
    "summary": "Accumbens stimulation barely helped the target anxiety disorder but produced an unintended remission of alcohol dependence.",
-   "caveat": "",
+   "caveat": "Motivation and closer follow-up after surgery could explain abstinence.",
    "tags": [
     "alcohol",
     "dbs",
@@ -560,7 +560,7 @@
     "links": []
    },
    "summary": "Stimulation aimed at refractory depression put the patient's comorbid chronic eating disorder into lasting remission, with weight normalised.",
-   "caveat": "",
+   "caveat": "The depression improved too, so the eating disorder may have followed mood.",
    "tags": [
     "anorexia",
     "dbs",
@@ -641,7 +641,7 @@
     ]
    },
    "summary": "A man was free of obsessions during psilocybin intoxication, and relief persisted with repeated use despite tolerance to the psychedelic effects.",
-   "caveat": "",
+   "caveat": "Self-reported, uncontrolled use; expectancy effects likely.",
    "tags": [
     "ocd",
     "pilot-followed",
@@ -809,7 +809,7 @@
     "note": "Ketogenic diet trials followed: open-label (Danan 2022, Sethi 2024) and randomised (Gao 2026, Abram 2026). A 1965 pilot (Pacheco) predates it."
    },
    "summary": "A 70-year-old's hallucinations of 53 years stopped abruptly after she started a ketogenic diet to lose weight.",
-   "caveat": "",
+   "caveat": "Weight loss, dropping gluten and a changed routine are inseparable from ketosis.",
    "tags": [
     "diet",
     "ketogenic",
@@ -960,7 +960,7 @@
     "links": []
    },
    "summary": "After a gunshot wound to the left frontal lobe, a 19-year-old's rituals were markedly reduced without intellectual decline.",
-   "caveat": "",
+   "caveat": "Care and life changes after a suicide attempt may contribute.",
    "tags": [
     "frontal",
     "gunshot",
@@ -1111,7 +1111,7 @@
     "links": []
    },
    "summary": "An adolescent with severe OCD reported relief of symptoms after taking LSD and psilocin.",
-   "caveat": "",
+   "caveat": "Adolescent self-report; how long relief lasted is unclear.",
    "tags": [
     "lsd",
     "ocd",
@@ -1370,7 +1370,7 @@
     "links": []
    },
    "summary": "Subthalamic stimulation for Parkinson's took a 16-year OCD from Yale-Brown 32 to 1 at one year.",
-   "caveat": "",
+   "caveat": "Surgeons hoped stimulation would also help the OCD, so the benefit was not wholly unexpected.",
    "tags": [
     "dbs",
     "ocd",
@@ -1668,7 +1668,7 @@
     "links": []
    },
    "summary": "After an overdose damaged both globus pallidi, a woman with refractory alcohol and opioid dependence stayed abstinent.",
-   "caveat": "",
+   "caveat": "Cognitive impairment and supervised living after the injury could explain abstinence.",
    "tags": [
     "addiction",
     "alcohol",
@@ -1821,7 +1821,7 @@
     "links": []
    },
    "summary": "A 52-year-old with bilateral hippocampal stroke and dense amnesia remained in remission from cocaine use disorder at 12 months.",
-   "caveat": "",
+   "caveat": "Dense amnesia and dependent living limit access to cocaine.",
    "tags": [
     "addiction",
     "amnesia",
@@ -2272,7 +2272,7 @@
     "links": []
    },
    "summary": "A 23-year-old's treatment-resistant psychotic depression resolved after spontaneous seizures in pregnancy.",
-   "caveat": "",
+   "caveat": "Pregnancy itself coincided with the seizures and the recovery.",
    "tags": [
     "convulsive",
     "depression",
@@ -2423,7 +2423,7 @@
     "links": []
    },
    "summary": "A 61-year-old's severe alcohol use disorder resolved during esketamine treatment given for her depression.",
-   "caveat": "",
+   "caveat": "Esketamine also lifted the depression, and less drinking may follow mood.",
    "tags": [
     "alcohol",
     "esketamine",
@@ -2498,7 +2498,7 @@
     "links": []
    },
    "summary": "Depression and anxiety that had resisted several medicines resolved rapidly but temporarily after niraparib was started for ovarian cancer.",
-   "caveat": "",
+   "caveat": "The benefit faded; starting cancer maintenance treatment carries its own expectancy.",
    "tags": [
     "anxiety",
     "depression",
@@ -2574,7 +2574,7 @@
     "links": []
    },
    "summary": "Twice-daily five-hour binge-purge episodes stopped after the second session of rTMS given for depression.",
-   "caveat": "",
+   "caveat": "The same course treated the depression, and bulimia may have followed mood.",
    "tags": [
     "bulimia",
     "dorsomedial-prefrontal",
@@ -2649,7 +2649,7 @@
     "links": []
    },
    "summary": "Paedophilic desires resolved gradually after DBS for OCD, documented by serial assessments over long-term follow-up.",
-   "caveat": "",
+   "caveat": "If the paedophilic urges were obsessional, OCD relief would explain their fading.",
    "tags": [
     "bnst",
     "dbs",
@@ -2724,7 +2724,7 @@
     "links": []
    },
    "summary": "Two patients' long-standing functional paralysis recovered after unplanned comatose states.",
-   "caveat": "",
+   "caveat": "In functional disorder, coma offers expectation and a face-saving route to recovery.",
    "tags": [
     "anaesthesia",
     "coma",
@@ -3096,7 +3096,7 @@
     "links": []
    },
    "summary": "A 48-year-old's motor tics disappeared after a dorsal midbrain lesion from thiamine deficiency.",
-   "caveat": "",
+   "caveat": "Tics often wane by middle age.",
    "tags": [
     "lesion",
     "midbrain",
@@ -3172,7 +3172,7 @@
     "links": []
    },
    "summary": "Pallidal stimulation for tardive dyskinesia also substantially improved a refractory depression.",
-   "caveat": "",
+   "caveat": "Relief from disabling tardive dyskinesia may itself have lifted the depression.",
    "tags": [
     "dbs",
     "depression",
@@ -3246,7 +3246,7 @@
     "links": []
    },
    "summary": "Binge eating improved in two women given accelerated theta-burst stimulation for bipolar depression.",
-   "caveat": "",
+   "caveat": "The same course treated the depression, and binge eating may have followed mood.",
    "tags": [
     "binge-eating",
     "eating",
@@ -3321,7 +3321,7 @@
     "links": []
    },
    "summary": "Cigarette consumption fell unexpectedly in a man receiving low-frequency rTMS for depression and OCD.",
-   "caveat": "",
+   "caveat": "Smoking may have fallen as mood and OCD improved.",
    "tags": [
     "rtms",
     "smoking"
@@ -3394,7 +3394,7 @@
     "links": []
    },
    "summary": "OCD that began with temporal lobe epilepsy went into near-complete remission after epilepsy surgery.",
-   "caveat": "",
+   "caveat": "The OCD began with the epilepsy, so remission may simply follow seizure control.",
    "tags": [
     "epilepsy",
     "neurosurgery",
@@ -3469,7 +3469,7 @@
     "links": []
    },
    "summary": "A man prescribed semaglutide for obesity cut his drinking substantially over 10 months.",
-   "caveat": "",
+   "caveat": "Weight-loss counselling and clinic contact came with the drug.",
    "tags": [
     "alcohol",
     "glp1",
@@ -3544,7 +3544,7 @@
     "links": []
    },
    "summary": "Drinking fell in a man started on dulaglutide for weight loss.",
-   "caveat": "",
+   "caveat": "Weight-loss programme contact came with the drug.",
    "tags": [
     "alcohol",
     "dulaglutide",
@@ -3619,7 +3619,7 @@
     "links": []
    },
    "summary": "Three patients with alcohol-related liver disease drank less after starting tirzepatide.",
-   "caveat": "",
+   "caveat": "Only one of the three had alcohol use disorder; liver-disease advice to stop drinking came with the drug.",
    "tags": [
     "alcohol",
     "glp1",
@@ -3842,7 +3842,7 @@
     "links": []
    },
    "summary": "A man's OCD improved meaningfully and lastingly with chronic consumption of psilocybin mushrooms.",
-   "caveat": "",
+   "caveat": "Mushroom use may have been self-treatment rather than incidental.",
    "tags": [
     "ocd",
     "psilocybin",

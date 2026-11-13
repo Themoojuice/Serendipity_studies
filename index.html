@@ -25,6 +25,7 @@
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
   --s-psychotic: #7a4ea3; --s-mood: #23799a; --s-ocd: #b0611b; --s-substance: #b3394a;
   --s-eating: #3a8a56; --s-impulse: #85701c; --s-paraphilic: #5d6b7c; --s-fnd: #98497a; --s-anxiety: #4469b0;
+  --s-trauma: #2f8c88; --s-neurodev: #6b8a1f; --s-catatonia: #7d5a3c; --s-personality: #c0507a;
   --radius: 10px;
   color-scheme: light;
 }
@@ -34,7 +35,7 @@
     --accent: #7fb0f0; --accent-soft: #1f3048; --free: #7fd3a4; --free-soft: #173326;
     --warn: #f0c46e; --warn-soft: #3a2f17;
     --s-psychotic: #b993e0; --s-mood: #6cc3e0; --s-ocd: #e3a466; --s-substance: #ef8592;
-    --s-eating: #7fcf9b; --s-impulse: #d8c26a; --s-paraphilic: #a9b6c6; --s-fnd: #df92c2; --s-anxiety: #93b3ee;
+    --s-eating: #7fcf9b; --s-impulse: #d8c26a; --s-paraphilic: #a9b6c6; --s-fnd: #df92c2; --s-anxiety: #93b3ee; --s-trauma: #74d1cc; --s-neurodev: #b6d36a; --s-catatonia: #cfa57f; --s-personality: #f29cbc;
     color-scheme: dark;
   }
 }
@@ -43,7 +44,7 @@
   --accent: #7fb0f0; --accent-soft: #1f3048; --free: #7fd3a4; --free-soft: #173326;
   --warn: #f0c46e; --warn-soft: #3a2f17;
   --s-psychotic: #b993e0; --s-mood: #6cc3e0; --s-ocd: #e3a466; --s-substance: #ef8592;
-  --s-eating: #7fcf9b; --s-impulse: #d8c26a; --s-paraphilic: #a9b6c6; --s-fnd: #df92c2; --s-anxiety: #93b3ee;
+  --s-eating: #7fcf9b; --s-impulse: #d8c26a; --s-paraphilic: #a9b6c6; --s-fnd: #df92c2; --s-anxiety: #93b3ee; --s-trauma: #74d1cc; --s-neurodev: #b6d36a; --s-catatonia: #cfa57f; --s-personality: #f29cbc;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -127,6 +128,8 @@ textarea { width: 100%; min-height: 140px; font-family: var(--font-mono); font-s
 .status { font-size: 13px; color: var(--free); min-height: 1.2em; }
 code { font-family: var(--font-mono); font-size: 12.5px; }
 [hidden] { display: none !important; }
+details.filters > summary { cursor: pointer; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); padding: 6px 0; list-style-position: inside; }
+details.filters[open] > summary { margin-bottom: 4px; }
 @media (max-width: 700px) {
   .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .grid2 { grid-template-columns: 1fr; }
@@ -157,6 +160,8 @@ code { font-family: var(--font-mono); font-size: 12.5px; }
         <label class="grp" for="q">Search</label>
         <input type="search" id="q" placeholder="Title, author, journal, mechanism, notes">
       </div>
+      <details class="filters" id="filtersBox" open>
+        <summary>Filters</summary>
       <div class="row" id="f-syn"><label class="grp">Syndrome</label></div>
       <div class="row" id="f-trig"><label class="grp">Trigger</label></div>
       <div class="row">
@@ -191,6 +196,7 @@ code { font-family: var(--font-mono); font-size: 12.5px; }
         <label class="toggle"><input type="checkbox" id="freeOnly"> Free full text only</label>
         <label class="toggle"><input type="checkbox" id="showCtx"> Show context records</label>
       </div>
+      </details>
       <div class="active-tags" id="activeTags" hidden></div>
     </div>
     <p class="count" id="count" aria-live="polite"></p>
@@ -250,8 +256,11 @@ code { font-family: var(--font-mono); font-size: 12.5px; }
   var SYN_VAR = {
     "Psychotic": "--s-psychotic", "Mood": "--s-mood", "Obsessive-compulsive & tic": "--s-ocd",
     "Substance & addictive": "--s-substance", "Eating": "--s-eating", "Impulse-control": "--s-impulse",
-    "Paraphilic": "--s-paraphilic", "Functional neurological": "--s-fnd", "Anxiety": "--s-anxiety"
+    "Paraphilic": "--s-paraphilic", "Functional neurological": "--s-fnd", "Anxiety": "--s-anxiety",
+    "Trauma & stressor-related": "--s-trauma", "Neurodevelopmental": "--s-neurodev", "Catatonia": "--s-catatonia",
+    "Personality": "--s-personality"
   };
+  if (window.matchMedia && window.matchMedia("(max-width: 700px)").matches) { var fb = document.getElementById("filtersBox"); if (fb) fb.removeAttribute("open"); }
   var DATA = null, RECORDS = [];
   var state = { q: "", syn: new Set(), trig: new Set(), tags: new Set(), tier: "", era: "", freeOnly: false, showCtx: false, sort: "impact" };
 

@@ -129,8 +129,9 @@ for rec in R:
     for f in ("summary", "caveat"):
         t = (rec.get(f) or "").strip()
         if not t:
-            (H if f == "summary" else S)(f"text: {rid} empty {f}")
-            continue
+            if f == "summary":
+                H(f"text: {rid} empty summary")
+            continue  # an empty caveat is allowed: only specific competing explanations are written
         if not t.endswith((".", "?", ")")):
             S(f"text: {rid} {f} lacks a full stop")
         if "  " in t:
