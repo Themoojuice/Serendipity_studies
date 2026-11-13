@@ -52,7 +52,7 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
   1. Strings v1.3: make the Embase keto term ketogenic-only and rerun it (left-sided temporal terms done).
   2. Embase title set ranks 309–1,374 (mostly the score-9 band): screen, or re-rank with the classifier and apply the stopping rule.
   3. PsycInfo via EBSCOhost (CKN) — not yet run.
-  4. Citation route v2: chase the 19 new cases from v1 and any later includes (one more hop) until a round adds nothing.
+  4. Citation route v2: chase the 9 cases added by v1 and any later includes (one more hop) until a round adds nothing.
   5. Full-text appraisal of the ~110 provisional records and 32 unsure (PMC free first, then CKN), with attribution grade, JBI score and `lesion.side` / `lesion.region` for the laterality analysis; promote to Included.
   6. Calibration: 100 blinded records for Brendan.
 - Library restyle ("more Claude") is still due with the rebuild after step 5, alongside the new appraisal fields.
