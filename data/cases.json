@@ -17827,6 +17827,310 @@
     "basis": "from downstream level"
    },
    "flags": []
+  },
+  {
+   "id": "vieweg-1985",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Vieweg WVR, Rowe WT, David JJ",
+    "title": "Possible ameliorating effect of captopril treatment and hyperosmolar coma in a patient with psychosis, intermittent hyponatremia, and polydipsia",
+    "journal": "Psychiatric Hospital",
+    "year": 1985,
+    "volume": "16",
+    "issue": "4",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fwww.embase.com%2Frecords%3Fsubaction%3Dviewrecord%26id%3DL16200416"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Disorganised schizophrenia with psychosis, intermittent hyponatraemia and polydipsia (PIP syndrome)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Coma / anaesthesia",
+    "specific": "Captopril, with a transient hyperosmolar coma induced inadvertently at the same time",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 46-year-old man with disorganised schizophrenia and water intoxication improved strikingly, in both his psychosis and his drinking, after an accidental hyperosmolar coma that coincided with captopril; all treatment could then be stopped.",
+   "caveat": "The coma and the captopril came together, so the coma may deserve the credit, much as insulin coma once did.",
+   "tags": [
+    "ace-inhibitor",
+    "captopril",
+    "hyperosmolar-coma",
+    "polydipsia",
+    "schizophrenia",
+    "water-intoxication"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase via CKN (EMB_unexp_v1, EMB_nonEng_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (Embase record); not in PubMed; co-author spelled 'Davis' in Embase, 'David' in the group's PubMed records",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "matsui-2004",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Matsui H, Udaka F, Oda M, Kubori T, Nishinaka K, Kameyama M",
+    "title": "[Two cases of Parkinson's disease in which visual hallucinations disappeared after cataract surgery].",
+    "journal": "No To Shinkei",
+    "year": 2004,
+    "volume": "56",
+    "issue": "4",
+    "pages": "351-4"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "15237728",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/15237728/",
+    "doi": null,
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fwww.embase.com%2Frecords%3Fsubaction%3Dviewrecord%26id%3DL38855778"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Visual hallucinations in Parkinson's disease, poorly controlled by medication (one woman also had musical hallucinations)",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Surgery for severe bilateral cataracts",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Two women in their seventies with Parkinson's disease and dense cataracts in both eyes had hallucinations that drugs had not settled; both stopped seeing things soon after their cataracts were removed.",
+   "caveat": "Severe cataract may have made these partly Charles Bonnet-type release hallucinations, which better vision would be expected to end. Published in Japanese.",
+   "tags": [
+    "cataract",
+    "charles-bonnet",
+    "parkinsons",
+    "surgery",
+    "visual-hallucinations"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase via CKN (EMB_unexp_v1, EMB_nonEng_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (Embase record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "grunstein-2017",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Grunstein PF, Fazleen A, Sankaran P",
+    "title": "Schizophrenia and obstructive sleep apnea: Could CPAP cure both?",
+    "journal": "Am J Respir Crit Care Med",
+    "year": 2017,
+    "volume": "195",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fwww.embase.com%2Frecords%3Fsubaction%3Dviewrecord%26id%3DL617706822"
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenia-like illness of 8 months in a 65-year-old man (delusions, hallucinations, thought disorder, negative symptoms), never treated with antipsychotics",
+    "chronic": false,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "CPAP for severe obstructive sleep apnoea (54 apnoeas an hour)",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": "3 months",
+    "follow_up": "about 7 months on CPAP",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 65-year-old man referred for severe sleep apnoea had an untreated 8-month schizophrenia-like illness; three months into faithful CPAP use he was back at work and free of psychotic features.",
+   "caveat": "Onset in his sixties alongside severe nocturnal hypoxaemia makes a secondary, hypoxic psychosis plausible, in which case CPAP treated its cause.",
+   "tags": [
+    "cpap",
+    "hypoxaemia",
+    "late-onset-psychosis",
+    "obstructive-sleep-apnoea",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase via CKN (EMB_unexp_v1, EMB_nonEng_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (Embase record); Embase DOI field looks like a session code, not used",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "corte-2025",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Corte AF, Linan CBA, Fillmann GP, Soares AB, Villalobos JRG, de Lima KA et al.",
+    "title": "Electroconvulsive therapy in a patient with psychogenic nonepileptic seizures and treatment-resistant depression: a case report",
+    "journal": "J Bras Psiquiatr",
+    "year": 2025,
+    "volume": "74",
+    "issue": "",
+    "pages": "e20250027"
+   },
+   "ids": {
+    "doi": "10.1590/0047-2085-2025-0027",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1590/0047-2085-2025-0027",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1590%2F0047-2085-2025-0027"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Functional neurological"
+    ],
+    "specific": "Psychogenic non-epileptic seizures with treatment-resistant depression and repeated suicide attempts in a 38-year-old woman",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Twelve sessions of ECT chosen for the worsening depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 38-year-old woman given ECT because her treatment-resistant depression was worsening, with fresh suicide attempts, had no further non-epileptic seizures by the end of twelve sessions, which surprised her team.",
+   "caveat": "Functional seizures rise and fall with distress, so the steep drop in her depression scores may explain it. Published in Portuguese.",
+   "tags": [
+    "ect",
+    "functional-neurological-disorder",
+    "psychogenic-nonepileptic-seizures",
+    "treatment-resistant-depression"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase via CKN (EMB_unexp_v1, EMB_nonEng_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (Embase record)",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
   }
  ]
 }
