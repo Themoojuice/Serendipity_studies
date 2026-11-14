@@ -16164,6 +16164,1669 @@
     "basis": "from downstream level"
    },
    "flags": []
+  },
+  {
+   "id": "fontana-2019",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Fontana RS, Clark FA, Griffeth B",
+    "title": "Functional Neurological Symptom Disorder Spontaneously Remits After Electroconvulsive Therapy.",
+    "journal": "J ECT",
+    "year": 2019,
+    "volume": "35",
+    "issue": "2",
+    "pages": "e10"
+   },
+   "ids": {
+    "doi": "10.1097/yct.0000000000000527",
+    "pmid": "30095557",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/30095557/",
+    "doi": "https://doi.org/10.1097/yct.0000000000000527",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fyct.0000000000000527"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Functional neurological"
+    ],
+    "specific": "Functional neurological symptom disorder (tremor indexed) for 2 years, with depression with catatonia, GAD and PTSD",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "ECT (indexed with her depression and catatonia)",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 49-year-old woman, admitted three times in two years after a complicated cardiac ablation, had functional neurological symptoms alongside depression with catatonia; the functional symptoms remitted after ECT.",
+   "caveat": "Functional symptoms often travel with mood, so lifting the depression may have carried them away.",
+   "tags": [
+    "catatonia",
+    "ect",
+    "functional-neurological-disorder",
+    "tremor"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "yovell-1994",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Yovell Y, Opler LA",
+    "title": "Clozapine reverses cocaine craving in a treatment-resistant mentally ill chemical abuser: a case report and a hypothesis.",
+    "journal": "J Nerv Ment Dis",
+    "year": 1994,
+    "volume": "182",
+    "issue": "10",
+    "pages": "591-2"
+   },
+   "ids": {
+    "doi": "10.1097/00005053-199410000-00017",
+    "pmid": "7931211",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/7931211/",
+    "doi": "https://doi.org/10.1097/00005053-199410000-00017",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2F00005053-199410000-00017"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Cocaine dependence with craving in treatment-resistant schizoaffective disorder",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Clozapine for treatment-resistant schizoaffective disorder",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 37-year-old man with treatment-resistant schizoaffective disorder lost his cocaine craving and stopped using once on clozapine, and the change lasted.",
+   "caveat": "Clozapine's blood-monitoring regime brings frequent contact and supervision, which itself discourages use.",
+   "tags": [
+    "clozapine",
+    "cocaine",
+    "craving",
+    "dual-diagnosis",
+    "schizoaffective"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "Retrospective and small prospective studies later linked clozapine with less substance use in psychosis (2000s; recalled, not checked); no definitive trial.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "taylor-1978",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Taylor P, Gillman PK, Gaind R",
+    "title": "Alpha-methyldopa in schizophrenia.",
+    "journal": "J Clin Psychiatry",
+    "year": 1978,
+    "volume": "39",
+    "issue": "11",
+    "pages": "815-6"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "721785",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/721785/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenia",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Overdose of alpha-methyldopa (an antihypertensive) in a suicide attempt",
+    "intent": "Self-administered"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "Natural off-on"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "After an overdose of alpha-methyldopa, a schizophrenic man's psychosis cleared completely, then returned suddenly a few weeks later; the authors point to the drug's interference with dopamine.",
+   "caveat": "The overdose and its aftermath (admission, sedation, a suicidal crisis passing) could account for a short lull.",
+   "tags": [
+    "dopamine",
+    "methyldopa",
+    "overdose",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "dukarm-2005",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Dukarm CP",
+    "title": "Bulimia nervosa and attention deficit hyperactivity disorder: a possible role for stimulant medication.",
+    "journal": "J Womens Health (Larchmt)",
+    "year": 2005,
+    "volume": "14",
+    "issue": "4",
+    "pages": "345-50"
+   },
+   "ids": {
+    "doi": "10.1089/jwh.2005.14.345",
+    "pmid": "15916509",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/15916509/",
+    "doi": "https://doi.org/10.1089/jwh.2005.14.345",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1089%2Fjwh.2005.14.345"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 6,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Bulimia nervosa with comorbid ADHD",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Dextroamphetamine for comorbid ADHD",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "Six patients with bulimia nervosa and ADHD all stopped bingeing and purging once dextroamphetamine was started for their ADHD, and their weight stayed healthy.",
+   "caveat": "Appetite suppression alone could stop the binges without touching the eating disorder's core beliefs.",
+   "tags": [
+    "adhd",
+    "appetite",
+    "bulimia",
+    "dextroamphetamine",
+    "stimulant"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "Stimulants were later trialled in binge-eating disorder (lisdexamfetamine approved for it in the US in 2015; recalled, not checked); bulimia nervosa itself has no large trial.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "fujiwara-2025",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Fujiwara S, Okamura Y, Wake H, Tanami H, Ishida T, Mizuno M",
+    "title": "From surgical treatment to psychiatric progress in refractory obsessive-compulsive disorder: A case report.",
+    "journal": "PCN Rep",
+    "year": 2025,
+    "volume": "4",
+    "issue": "3",
+    "pages": "e70201"
+   },
+   "ids": {
+    "doi": "10.1002/pcn5.70201",
+    "pmid": "40909875",
+    "pmcid": "PMC12405736"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405736/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/40909875/",
+    "doi": "https://doi.org/10.1002/pcn5.70201",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2Fpcn5.70201"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Severe, long-standing, treatment-resistant OCD (contamination fears, compulsive defecation rituals)",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Laparoscopic rectopexy for rectal prolapse and incontinence caused by her compulsions",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A woman in her 50s whose defecation rituals had caused rectal prolapse and incontinence cut her cleaning compulsions sharply once rectopexy cured the incontinence, and then took up regular psychiatric care.",
+   "caveat": "Curing the incontinence removed the soiling that triggered the cleaning, so the rituals may have lost their trigger rather than the OCD easing.",
+   "tags": [
+    "contamination",
+    "ocd",
+    "rectal-prolapse",
+    "surgery"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "deon-2012",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Deon LL, Kalichman MA, Booth CL, Slavin KV, Gaebler-Spira DJ",
+    "title": "Pallidal deep-brain stimulation associated with complete remission of self-injurious behaviors in a patient with Lesch-Nyhan syndrome: a case report.",
+    "journal": "J Child Neurol",
+    "year": 2012,
+    "volume": "27",
+    "issue": "1",
+    "pages": "117-20"
+   },
+   "ids": {
+    "doi": "10.1177/0883073811415853",
+    "pmid": "21940691",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/21940691/",
+    "doi": "https://doi.org/10.1177/0883073811415853",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F0883073811415853"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Neurodevelopmental"
+    ],
+    "specific": "Self-injurious behaviour in Lesch-Nyhan syndrome",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Pallidal deep brain stimulation for hypertonia and dystonia",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "A boy with Lesch-Nyhan syndrome, given pallidal deep brain stimulation to ease hypertonia for comfort and wheelchair positioning, stopped self-injuring over the following 2.5 years.",
+   "caveat": "Less dystonic pain and fewer restraints may have reduced the triggers for self-injury.",
+   "tags": [
+    "deep-brain-stimulation",
+    "dystonia",
+    "globus-pallidus",
+    "lesch-nyhan",
+    "self-injury"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "known",
+    "note": "Self-injury remitting after pallidal DBS in Lesch-Nyhan syndrome had been reported from the early 2000s (recalled, not checked).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "reimer-2009",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Reimer J, Fink T, Bläker M, Schäfer I, Otte C",
+    "title": "Successful treatment of psychosis with infliximab in a patient with Crohn's disease.",
+    "journal": "Schizophr Res",
+    "year": 2009,
+    "volume": "109",
+    "issue": "1-3",
+    "pages": "194-5"
+   },
+   "ids": {
+    "doi": "10.1016/j.schres.2009.01.018",
+    "pmid": "19223267",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/19223267/",
+    "doi": "https://doi.org/10.1016/j.schres.2009.01.018",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.schres.2009.01.018"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic",
+     "Catatonia"
+    ],
+    "specific": "Catatonic psychosis of uncertain cause, starting 7 weeks into steroid treatment for Crohn's disease",
+    "chronic": false,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Infliximab (anti-TNF-alpha) for Crohn's disease",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 23-year-old woman with Crohn's disease, admitted catatonic and psychotic, recovered as infliximab brought her Crohn's into remission.",
+   "caveat": "Tapering the steroids as the Crohn's settled is the obvious competing explanation; the authors judge the timing atypical for steroid psychosis.",
+   "tags": [
+    "catatonia",
+    "crohns-disease",
+    "inflammation",
+    "infliximab",
+    "tnf-alpha"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "cavenar-1977",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Cavenar JO, Spaulding JG",
+    "title": "Depressive disorders and religious conversions.",
+    "journal": "J Nerv Ment Dis",
+    "year": 1977,
+    "volume": "165",
+    "issue": "3",
+    "pages": "209-12"
+   },
+   "ids": {
+    "doi": "10.1097/00005053-197709000-00009",
+    "pmid": "894274",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/894274/",
+    "doi": "https://doi.org/10.1097/00005053-197709000-00009",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2F00005053-197709000-00009"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 4,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Depressive illness (resolved in the two of four patients with hysterical personalities)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Life event",
+    "specific": "Religious conversion",
+    "intent": "Life event"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Of four depressed patients who underwent religious conversion, the two with hysterical personalities recovered afterwards; the two with obsessional personalities did not, and both died by suicide.",
+   "caveat": "Conversion may mark a recovery already under way rather than cause it.",
+   "tags": [
+    "depression",
+    "personality",
+    "psychological-trigger",
+    "religious-conversion"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "macleod-1990",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Macleod AD",
+    "title": "Respiratory depression and melancholia.",
+    "journal": "Int J Psychiatry Med",
+    "year": 1990,
+    "volume": "20",
+    "issue": "4",
+    "pages": "383-91"
+   },
+   "ids": {
+    "doi": "10.2190/m3cw-g06y-jh4j-0yun",
+    "pmid": "2086525",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/2086525/",
+    "doi": "https://doi.org/10.2190/m3cw-g06y-jh4j-0yun",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.2190%2Fm3cw-g06y-jh4j-0yun"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Major depressive episode of 6 months (melancholia)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Physiological stress",
+    "specific": "Acute respiratory crisis in asthma needing assisted ventilation",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 56-year-old asthmatic woman's 6-month depressive episode resolved after a respiratory crisis that needed assisted ventilation; the author proposes the induced delirium as the active ingredient, as in older shock treatments.",
+   "caveat": "Surviving a near-fatal illness changes circumstances and care, which can lift depression without any physiology.",
+   "tags": [
+    "asthma",
+    "delirium",
+    "hypoxia",
+    "physiological-stress",
+    "ventilation"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "yates-1988",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Yates A, Shisslak CM, Allender JR, Wolman W",
+    "title": "Plastic surgery and the bulimic patient.",
+    "journal": "International Journal of Eating Disorders",
+    "year": 1988,
+    "volume": "7",
+    "issue": "4",
+    "pages": "557-560"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fresearch.ebsco.com%2Fc%2Flrpoh2%2Fdetails%2F54dedabwvz%3Fdb%3Dpsyh"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Bulimia nervosa in two women aged 19 and 20",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Cosmetic surgery they sought to make their bodies more acceptable",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Two young women with bulimia had cosmetic surgery to make their bodies more acceptable to themselves; the bulimia remitted markedly afterwards, but only for a while.",
+   "caveat": "Post-operative recovery interrupts binge-purge routines and brings close supervision.",
+   "tags": [
+    "body-image",
+    "bulimia",
+    "cosmetic-surgery"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record)",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "nagata-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Nagata T, Shinagawa S, Tagai K, Nakayama K",
+    "title": "A case in which mirtazapine reduced auditory hallucinations in a patient with Parkinson disease.",
+    "journal": "Int Psychogeriatr",
+    "year": 2013,
+    "volume": "25",
+    "issue": "7",
+    "pages": "1199-201"
+   },
+   "ids": {
+    "doi": "10.1017/s1041610212002037",
+    "pmid": "23195073",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/23195073/",
+    "doi": "https://doi.org/10.1017/s1041610212002037",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1017%2Fs1041610212002037"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Auditory hallucinations in Parkinson's disease, unrelieved by cutting antiparkinsonian drugs or by atypical antipsychotics",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Mirtazapine for comorbid depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 48-year-old woman with Parkinson's disease whose auditory hallucinations had resisted dose cuts and antipsychotics lost them within 4 weeks of mirtazapine started for her depression.",
+   "caveat": "Hallucinations in Parkinson's disease track sleep and mood, both of which mirtazapine improves.",
+   "tags": [
+    "5ht2a",
+    "hallucinations",
+    "mirtazapine",
+    "parkinsons"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "Three separate reports (2007, 2013, 2014) of hallucinations stopping on mirtazapine given for depression or sleep; no trial found so far.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "yilmaz-2014",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Yılmaz S, Bilgiç A",
+    "title": "The possible effect of methylphenidate on kleptomania in a school-age girl with attention-deficit/hyperactivity disorder.",
+    "journal": "Eur Child Adolesc Psychiatry",
+    "year": 2014,
+    "volume": "23",
+    "issue": "5",
+    "pages": "361-3"
+   },
+   "ids": {
+    "doi": "10.1007/s00787-013-0484-9",
+    "pmid": "24122344",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/24122344/",
+    "doi": "https://doi.org/10.1007/s00787-013-0484-9",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1007%2Fs00787-013-0484-9"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Impulse-control"
+    ],
+    "specific": "Kleptomania (stealing since kindergarten) with ADHD in a 7-year-old",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Methylphenidate for ADHD",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 7-year-old girl who had stolen since kindergarten stopped completely once methylphenidate was started for her ADHD.",
+   "caveat": "At 7, stealing may be ADHD impulsivity, which methylphenidate treats directly, rather than kleptomania.",
+   "tags": [
+    "adhd",
+    "child",
+    "kleptomania",
+    "methylphenidate"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "puente-1985",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Puente AE",
+    "title": "Research participation as therapeutic for schizophrenia: A case study.",
+    "journal": "Psychosocial Rehabilitation Journal",
+    "year": 1985,
+    "volume": "8",
+    "issue": "4",
+    "pages": "95-98"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fresearch.ebsco.com%2Fc%2Flrpoh2%2Fdetails%2Fbvnz473cw5%3Fdb%3Dpsyh"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenia",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Life event",
+    "specific": "Helping design and run a study of 200 psychiatric patients' understanding of their illness",
+    "intent": "Life event"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 26-year-old man with schizophrenia improved, then remitted, after taking an active part in designing and running a study of how 200 psychiatric patients understood their illness, an idea that came from him.",
+   "caveat": "He was presumably on antipsychotics throughout, and remission at 26 is common enough to be coincidence.",
+   "tags": [
+    "meaning",
+    "psychological-trigger",
+    "research-participation",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record)",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "godschalx-dekker-2014",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Godschalx-Dekker JA, Siegers HP",
+    "title": "Reduction of parkinsonism and psychosis with mirtazapine: a case report.",
+    "journal": "Pharmacopsychiatry",
+    "year": 2014,
+    "volume": "47",
+    "issue": "3",
+    "pages": "81-3"
+   },
+   "ids": {
+    "doi": "10.1055/s-0034-1367014",
+    "pmid": "24504487",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/24504487/",
+    "doi": "https://doi.org/10.1055/s-0034-1367014",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1055%2Fs-0034-1367014"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Persistent nocturnal visual hallucinations in a parkinsonian disorder despite reduced dopaminergic drugs, quetiapine, clozapine and rivastigmine",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Mirtazapine prescribed for sleep",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A man's nocturnal visual hallucinations, which had outlasted quetiapine, clozapine and rivastigmine, stopped almost at once when mirtazapine was given for sleep, and his parkinsonism eased as well.",
+   "caveat": "Better sleep alone can quiet nocturnal hallucinations in parkinsonian disorders.",
+   "tags": [
+    "hallucinations",
+    "mirtazapine",
+    "parkinsons",
+    "sleep"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "Three separate reports (2007, 2013, 2014) of hallucinations stopping on mirtazapine given for depression or sleep; no trial found so far.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "kastner-2016",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Kastner T, Walsh K, Shulman L, et al",
+    "title": "Ketamine and the core symptoms of autism.",
+    "journal": "International Journal on Disability and Human Development",
+    "year": 2016,
+    "volume": "15",
+    "issue": "1",
+    "pages": "121-123"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fresearch.ebsco.com%2Fc%2Flrpoh2%2Fdetails%2F6wjalkratn%3Fdb%3Dpsyh"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Neurodevelopmental"
+    ],
+    "specific": "Autism with severe intellectual disability",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Ketamine given for another purpose ('adventitious', per the authors)",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A patient with autism and severe intellectual disability showed a dramatic but short-lived remission of core autistic features after ketamine given for another purpose; the authors warn against reading too much into it.",
+   "caveat": "Ketamine's dissociative and sedative after-effects can mimic reduced repetitive behaviour for hours.",
+   "tags": [
+    "autism",
+    "intellectual-disability",
+    "ketamine",
+    "nmda"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record)",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "morena-1994",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Morena G, Sunderland B, Billig N",
+    "title": "Midazolam and the treatment of catatonia in major depression in an older adult.",
+    "journal": "Psychosomatics",
+    "year": 1994,
+    "volume": "35",
+    "issue": "4",
+    "pages": "392-5"
+   },
+   "ids": {
+    "doi": "10.1016/s0033-3182(94)71760-6",
+    "pmid": "8084989",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/8084989/",
+    "doi": "https://doi.org/10.1016/s0033-3182(94)71760-6",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fs0033-3182%2894%2971760-6"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Catatonia",
+     "Mood"
+    ],
+    "specific": "Catatonia in major depression in a 74-year-old man",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Midazolam as sedation for an MRI",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 4,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 74-year-old man's catatonia lifted briefly when he was sedated with midazolam for an MRI; in that window he described his depression and suicidal thoughts, and lorazepam with nortriptyline then brought a dramatic recovery.",
+   "caveat": "",
+   "tags": [
+    "benzodiazepine",
+    "catatonia",
+    "midazolam",
+    "mri-sedation",
+    "older-adult"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "known",
+    "note": "Benzodiazepine reversal of catatonia had been reported from the early 1980s (lorazepam; recalled, not checked) and the lorazepam challenge later became standard; in 1994 it was not yet routine.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "terao-1999",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Terao T, Nakamura J, Inatomi H, Eto A",
+    "title": "Schizophrenia and bladder stones.",
+    "journal": "Aust N Z J Psychiatry",
+    "year": 1999,
+    "volume": "33",
+    "issue": "5",
+    "pages": "769-70"
+   },
+   "ids": {
+    "doi": "10.1080/0004867990475",
+    "pmid": "10545010",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/10545010/",
+    "doi": "https://doi.org/10.1080/0004867990475",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F0004867990475"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Treatment-refractory schizophrenia in a 62-year-old man",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Surgical removal of a large bladder stone",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 62-year-old man with refractory schizophrenia, investigated for dysuria, had a large bladder stone removed; afterwards his mental state was much improved along with the dysuria.",
+   "caveat": "Pain and urinary symptoms are stressors that can inflame psychosis, so relief may have removed an aggravating factor rather than touched the illness.",
+   "tags": [
+    "bladder-stone",
+    "pain",
+    "schizophrenia",
+    "surgery"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "berner-2008",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Berner JE",
+    "title": "A case of sodium oxybate treatment of tardive dyskinesia and bipolar disorder.",
+    "journal": "J Clin Psychiatry",
+    "year": 2008,
+    "volume": "69",
+    "issue": "5",
+    "pages": "862"
+   },
+   "ids": {
+    "doi": "10.4088/jcp.v69n0522a",
+    "pmid": "18681764",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/18681764/",
+    "doi": "https://doi.org/10.4088/jcp.v69n0522a",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4088%2Fjcp.v69n0522a"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Continuously cycling bipolar disorder (about 4 manic episodes a year), failing lithium, carbamazepine, oxcarbazepine, divalproex and benzodiazepines",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Sodium oxybate for fibromyalgia",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 51-year-old woman with continuously cycling bipolar disorder, unresponsive to lithium and three anticonvulsants, improved profoundly, as did her tardive dyskinesia, once sodium oxybate was prescribed for fibromyalgia.",
+   "caveat": "Olanzapine had been stopped four months earlier, which may itself have changed her course.",
+   "tags": [
+    "bipolar",
+    "fibromyalgia",
+    "gaba-b",
+    "rapid-cycling",
+    "sodium-oxybate",
+    "tardive-dyskinesia"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "maddigan-2004",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Maddigan B, Young N, Ledrew K",
+    "title": "Letter to the editor [Mania curing fever?].",
+    "journal": "Can Child Adolesc Psychiatr Rev",
+    "year": 2004,
+    "volume": "13",
+    "issue": "4",
+    "pages": "119"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "19030491",
+    "pmcid": "PMC2538709"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2538709/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/19030491/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Free full text",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Psychotic"
+    ],
+    "specific": "Psychotic mania in a 14-year-old girl (earlier depression on paroxetine), worsening on risperidone, divalproex and temazepam",
+    "chronic": false,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "Febrile influenza on day 21 of admission",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "Natural off-on"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 14-year-old girl's mania, worsening through three weeks of medication changes, vanished the day she developed influenza with fever and came back two days later.",
+   "caveat": "All medicines were held that same day, so a break from drug effects competes with the fever.",
+   "tags": [
+    "adolescent",
+    "fever",
+    "influenza",
+    "intercurrent-illness",
+    "mania"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "known",
+    "note": "Psychosis lifting during fever was long recognised (Wagner-Jauregg's malaria therapy, 1917); here the lull lasted two days.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "ward-1975",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Ward NG",
+    "title": "Successful lithium treatment of transvestism associated with manic-depression.",
+    "journal": "J Nerv Ment Dis",
+    "year": 1975,
+    "volume": "161",
+    "issue": "3",
+    "pages": "204-6"
+   },
+   "ids": {
+    "doi": "10.1097/00005053-197509000-00009",
+    "pmid": "1176977",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/1176977/",
+    "doi": "https://doi.org/10.1097/00005053-197509000-00009",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2F00005053-197509000-00009"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Paraphilic",
+     "Mood"
+    ],
+    "specific": "Transvestism for 2 years in a 24-year-old man with manic-depressive illness",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Lithium for manic-depressive illness",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 24-year-old manic-depressive man's two years of cross-dressing stopped soon after lithium was started for his mood disorder and had not returned a year later.",
+   "caveat": "If the cross-dressing was driven by mood states, as the author suggests, lithium treated its cause rather than the paraphilia.",
+   "tags": [
+    "bipolar",
+    "lithium",
+    "paraphilia",
+    "transvestism"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "koethe-2007",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Koethe D, Dietl T, Leweke FM, Friess E",
+    "title": "Cessation of complex visual hallucinations during treatment with mirtazapine.",
+    "journal": "Pharmacopsychiatry",
+    "year": 2007,
+    "volume": "40",
+    "issue": "2",
+    "pages": "82-3"
+   },
+   "ids": {
+    "doi": "10.1055/s-2007-961818",
+    "pmid": "17447179",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/17447179/",
+    "doi": "https://doi.org/10.1055/s-2007-961818",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1055%2Fs-2007-961818"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Complex visual hallucinations of unknown cause (one woman also with 2 years of treatment-resistant acoustic hallucinations)",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Mirtazapine for a depressive syndrome",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Two women aged 54 and 78 with unexplained complex visual hallucinations, one with two years of treatment-resistant hallucinations, stopped hallucinating once mirtazapine was started for depression.",
+   "caveat": "Hallucinations in older people often track mood and sleep, both of which mirtazapine improves.",
+   "tags": [
+    "depression",
+    "mirtazapine",
+    "older-adult",
+    "visual-hallucinations"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "Three separate reports (2007, 2013, 2014) of hallucinations stopping on mirtazapine given for depression or sleep; no trial found so far.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "nahm-2009",
+   "record_type": "context",
+   "status": "Provisional",
+   "tier": null,
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Nahm M, Greyson B",
+    "title": "Terminal lucidity in patients with chronic schizophrenia and dementia: a survey of the literature.",
+    "journal": "J Nerv Ment Dis",
+    "year": 2009,
+    "volume": "197",
+    "issue": "12",
+    "pages": "942-4"
+   },
+   "ids": {
+    "doi": "10.1097/nmd.0b013e3181c22583",
+    "pmid": "20010032",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/20010032/",
+    "doi": "https://doi.org/10.1097/nmd.0b013e3181c22583",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fnmd.0b013e3181c22583"
+   },
+   "access": "Paywalled",
+   "design": "Review",
+   "n_patients": null,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Chronic schizophrenia, dementia and other severe mental disorders",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Physiological stress",
+    "specific": "Approaching death (terminal lucidity)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A literature survey of 'terminal lucidity', the unexpected return of mental clarity shortly before death: 49 retrievable case reports in mental disorders, most recorded before 1849, set beside the febrile remissions of neurosyphilis.",
+   "caveat": "",
+   "tags": [
+    "antique-sources",
+    "dementia",
+    "fever",
+    "schizophrenia",
+    "terminal-lucidity"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
   }
  ]
 }
