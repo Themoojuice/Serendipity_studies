@@ -14331,6 +14331,457 @@
     "modern_reading": "Opioid use disorder",
     "why_read": "Sakel's original accident, replayed thirty years later and aimed at the addiction this time."
    }
+  },
+  {
+   "id": "canan-2012",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1d"
+   ],
+   "citation": {
+    "authors": "Canan F., Sinani G., Aydinoglu U",
+    "title": "Body dysmorphic disorder incidentally treated with bupropion: A case report",
+    "journal": "J Clin Psychopharmacol",
+    "year": 2012,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1097/jcp.0b013e31827c2f2f",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1097/jcp.0b013e31827c2f2f",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fjcp.0b013e31827c2f2f"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Body dysmorphic disorder",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Bupropion",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Body dysmorphic disorder improved incidentally on bupropion.",
+   "caveat": "",
+   "tags": [
+    "body-dysmorphic-disorder",
+    "bupropion",
+    "noradrenaline-dopamine"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase via CKN (EMB_title_v1_2, re-ranked v1.3)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "sharma-2008",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1d"
+   ],
+   "citation": {
+    "authors": "Sharma A., Drake J., Qasimyar M., Tucker S",
+    "title": "Improvement in depressive symptoms with felbamate: A case report",
+    "journal": "Prim Care Companion J Clin Psychiatry",
+    "year": 2008,
+    "volume": "10",
+    "issue": "3",
+    "pages": "252"
+   },
+   "ids": {
+    "doi": "10.4088/pcc.v10n0312d",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.4088/pcc.v10n0312d",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4088%2Fpcc.v10n0312d"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Depression",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Felbamate (antiepileptic)",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Depressive symptoms improved on felbamate, an antiepileptic.",
+   "caveat": "Better seizure control can lift mood on its own.",
+   "tags": [
+    "antiepileptic",
+    "depression",
+    "felbamate",
+    "nmda"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase via CKN (EMB_title_v1_2, re-ranked v1.3)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "ido-2017",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1d"
+   ],
+   "citation": {
+    "authors": "Ido Y., Nagamine T., Okamura T., Tasaki M., Fukuo K",
+    "title": "Prebiotic lactosucrose may improve not only constipation but also psychotic symptoms of schizophrenia",
+    "journal": "International Medical Journal",
+    "year": 2017,
+    "volume": "24",
+    "issue": "3",
+    "pages": "305-306"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fwww.embase.com%2Frecords%3Fsubaction%3Dviewrecord%26id%3DL616850333"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenia",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Diet",
+    "specific": "Prebiotic lactosucrose for constipation",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Psychotic symptoms of schizophrenia improved with a prebiotic given for constipation.",
+   "caveat": "Relief of severe constipation, common on clozapine, can ease agitation and distress.",
+   "tags": [
+    "constipation",
+    "gut-brain",
+    "microbiome",
+    "prebiotic",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase via CKN (EMB_title_v1_2, re-ranked v1.3)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Gut-microbiome interventions in schizophrenia are being trialled; results so far are mixed (recalled, not checked).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "gota-garces-2017",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1d"
+   ],
+   "citation": {
+    "authors": "Gota Garces J.M., Garcia Lopez R., Porras Segovia A., Munoz Negro J.E., Garcia Jimenez J., Gutierrez Rojas L",
+    "title": "About a case suicide attempt as a trigger of remission in obsessive and compulsive disorder",
+    "journal": "Eur Psychiatry",
+    "year": 2017,
+    "volume": "41",
+    "issue": "",
+    "pages": "S641"
+   },
+   "ids": {
+    "doi": "10.1016/j.eurpsy.2017.01.1059",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1016/j.eurpsy.2017.01.1059",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.eurpsy.2017.01.1059"
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Late-onset, severe, treatment-refractory OCD",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Life event",
+    "specific": "Failed suicide attempt",
+    "intent": "Life event"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 73-year-old woman's severe, refractory late-onset OCD remitted suddenly after a failed suicide attempt.",
+   "caveat": "Any physical injury or hypoxia from the attempt needs the full text, as does the length of remission.",
+   "tags": [
+    "late-onset",
+    "ocd",
+    "older-adult",
+    "suicide-attempt"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase via CKN (EMB_title_v1_2, re-ranked v1.3)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "auffret-2020",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1d"
+   ],
+   "citation": {
+    "authors": "Auffret M., Geny C., Lees A., Verin M",
+    "title": "Spontaneous smoking cessation in a parkinsonian patient treated with apomorphine pump",
+    "journal": "Mov Disord",
+    "year": 2020,
+    "volume": "35",
+    "issue": "Suppl 1",
+    "pages": "S437-S438"
+   },
+   "ids": {
+    "doi": "10.1002/mds.28268",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": "https://doi.org/10.1002/mds.28268",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2Fmds.28268"
+   },
+   "access": "Paywalled",
+   "design": "Conference abstract",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Nicotine dependence (about 20 a day for over 30 years, earlier failed quits)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Continuous subcutaneous apomorphine infusion for Parkinson's disease",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A woman with Parkinson's disease and long-standing nicotine dependence stopped smoking without difficulty after starting an apomorphine pump.",
+   "caveat": "Parkinson's disease itself is linked to lower reward from smoking.",
+   "tags": [
+    "apomorphine",
+    "dopamine-agonist",
+    "nicotine",
+    "parkinsons",
+    "smoking"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase via CKN (EMB_title_v1_2, re-ranked v1.3)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "vender-1996",
+   "record_type": "context",
+   "status": "Provisional",
+   "tier": null,
+   "collections": [
+    "phase1d"
+   ],
+   "citation": {
+    "authors": "Vender S., Civitarese G., Loconte M",
+    "title": "Pseudo-recovery in schizophrenic patients with intercurrent physical disorders",
+    "journal": "New Trends in Experimental and Clinical Psychiatry",
+    "year": 1996,
+    "volume": "12",
+    "issue": "1",
+    "pages": "31-37"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fwww.embase.com%2Frecords%3Fsubaction%3Dviewrecord%26id%3DL26157003"
+   },
+   "access": "Paywalled",
+   "design": "Review",
+   "n_patients": null,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Chronic schizophrenia",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Systemic illness",
+    "specific": "Intercurrent physical illness",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "An essay on the transient remission of chronic schizophrenia during intercurrent physical illness, described as well known and analysed in psychodynamic terms.",
+   "caveat": "",
+   "tags": [
+    "fever",
+    "intercurrent-illness",
+    "pseudo-recovery",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase via CKN (EMB_title_v1_2, re-ranked v1.3)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
   }
  ]
 }

@@ -52,3 +52,5 @@ EPMC_broad_v1_2,Europe PMC (browser),"rerank_v1: random 300 of new ranks 1,600-3
 CIT_EPMC_v1,Europe PMC (browser),citations + references of 130 library cases (PMID/PMCID),3806,2026-11-13,"3,625 new or unscreened; classifier order; ranks 0-933 + random 300 screened; 9 cases + 1 context, 6 unsure; stopping rule met"
 EPMC_antique_v1,Europe PMC (browser),"A: period syndrome terms AND recovery terms in title, 1800-1969",305,2026-11-14,
 EPMC_antique_v1,Europe PMC (browser),"B: period syndrome terms AND trigger terms in title, 1800-1969",333,2026-11-14,"604 distinct, 595 new, all titles screened; 12 antique cases, 9 unsure"
+EMB_keto_v1_3,Embase via CKN,"A AND ketogenic-only block AND E, Embase-only, humans",121,2026-11-14,"107 previously excluded, 2 library, 12 new: no includes"
+EMB_title_v1_2,Embase via CKN,"rerun as search #5: A:ti AND (B:ti OR U:ti) AND E AND Embase-only, humans; 1,071 unscreened ranked with v1.3 classifier",1402,2026-11-14,"ranks 0-714 + random 300 screened; 5 cases + 1 context, 7 unsure records; stopping rule met"
