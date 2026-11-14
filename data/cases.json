@@ -14782,6 +14782,1388 @@
     "basis": "from downstream level"
    },
    "flags": []
+  },
+  {
+   "id": "ripsman-2025",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Ripsman DA, Ahmadi Karvigh S, Kiaei S, Fitzpatrick W, Moien-Afshari F",
+    "title": "Transient Resolution of Tics After Left Temporal Lobe Resection for Refractory Epilepsy.",
+    "journal": "Can J Neurol Sci",
+    "year": 2025,
+    "volume": "",
+    "issue": "",
+    "pages": "1-3"
+   },
+   "ids": {
+    "doi": "10.1017/cjn.2025.2",
+    "pmid": "39851087",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/39851087/",
+    "doi": "https://doi.org/10.1017/cjn.2025.2",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1017%2Fcjn.2025.2"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Severe Tourette syndrome with motor and vocal tics",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Left (dominant) mesial anterior temporal lobectomy for drug-resistant epilepsy",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Severe motor and vocal tics cleared for a time after a left anterior temporal lobectomy for drug-resistant epilepsy. The two earlier reports the authors cite went the other way: tics worsened after right-sided resections.",
+   "caveat": "Tics wax and wane on their own, so a lull after surgery can be coincidence.",
+   "tags": [
+    "epilepsy-surgery",
+    "left-temporal",
+    "temporal-lobectomy",
+    "tics",
+    "tourette"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "marchetti-2001",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Marchetti RL, Tavares AG, Gronich G, Fiore LA, Ferraz RB",
+    "title": "Complete remission of epileptic psychosis after temporal lobectomy: case report.",
+    "journal": "Arq Neuropsiquiatr",
+    "year": 2001,
+    "volume": "59",
+    "issue": "3-B",
+    "pages": "802-5"
+   },
+   "ids": {
+    "doi": "10.1590/s0004-282x2001000500028",
+    "pmid": "11593287",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/11593287/",
+    "doi": "https://doi.org/10.1590/s0004-282x2001000500028",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1590%2Fs0004-282x2001000500028"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Chronic, treatment-refractory interictal psychosis of temporal lobe epilepsy (right mesial temporal sclerosis)",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Neurosurgery",
+    "specific": "Right temporal lobectomy for refractory complex partial seizures",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 47-year-old woman whose postictal psychoses had become a chronic, refractory interictal psychosis was seizure-free and psychosis-free after a right temporal lobectomy; long-standing personality traits stayed.",
+   "caveat": "The psychosis grew out of the epilepsy, so removing the seizure focus may simply have removed its cause.",
+   "tags": [
+    "epilepsy-surgery",
+    "interictal-psychosis",
+    "mesial-temporal-sclerosis",
+    "right-temporal",
+    "temporal-lobectomy"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "fontenelle-2000",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Fontenelle L, Soares ID, Marques C, Rangé B, Mendlowicz MV, Versiani M",
+    "title": "Sudden remission of obsessive-compulsive disorder by involuntary, massive exposure.",
+    "journal": "Can J Psychiatry",
+    "year": 2000,
+    "volume": "45",
+    "issue": "7",
+    "pages": "666-7"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "11056831",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/11056831/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "Extreme OCD with HIV-contamination fears, avoidance and rituals",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Life event",
+    "specific": "One involuntary, massive exposure to avoided stimuli, following a panic attack with marked depersonalisation",
+    "intent": "Life event"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 32-year-old taxi driver, terrified of carrying HIV home from his passengers, remitted completely after a panic attack with depersonalisation left him unable to go on with his rituals: one massive, involuntary exposure.",
+   "caveat": "A depressive or dissociative shift after the panic attack could have blunted the obsessional drive rather than extinguished it.",
+   "tags": [
+    "depersonalisation",
+    "exposure",
+    "ocd",
+    "panic-attack",
+    "single-session"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "known",
+    "note": "Exposure with response prevention was the standard behavioural treatment for OCD by 2000; the surprise is complete remission after a single unplanned, involuntary exposure.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "chimowitz-1990",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Chimowitz MI, Furlan AJ",
+    "title": "Resolution of psychotic depression after right temporoparietal infarction.",
+    "journal": "J Nerv Ment Dis",
+    "year": 1990,
+    "volume": "178",
+    "issue": "7",
+    "pages": "458-9"
+   },
+   "ids": {
+    "doi": "10.1097/00005053-199007000-00008",
+    "pmid": "2366060",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/2366060/",
+    "doi": "https://doi.org/10.1097/00005053-199007000-00008",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2F00005053-199007000-00008"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Psychotic"
+    ],
+    "specific": "Agitated psychotic depression",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Right temporoparietal infarct",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "An agitated, psychotically depressed 70-year-old man had a right temporoparietal stroke, swung briefly into hypomania, then returned to his usual mood from before the depression.",
+   "caveat": "He may already have been responding to antidepressant treatment; the full text should say what he was on.",
+   "tags": [
+    "hypomania",
+    "psychotic-depression",
+    "right-hemisphere",
+    "stroke",
+    "temporoparietal"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "silverstone-1991",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Silverstone P, Fahy T",
+    "title": "A case of depression responding to spontaneous epilepsy but not ECT.",
+    "journal": "Br J Psychiatry",
+    "year": 1991,
+    "volume": "159",
+    "issue": "",
+    "pages": "446-7"
+   },
+   "ids": {
+    "doi": "10.1192/bjp.159.3.446b",
+    "pmid": "1958969",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/1958969/",
+    "doi": "https://doi.org/10.1192/bjp.159.3.446b",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1192%2Fbjp.159.3.446b"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Severe depression in long-standing manic-depressive illness, unresponsive to repeated ECT",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Seizures",
+    "specific": "Spontaneous grand mal seizures (indexing points to drug withdrawal and carbamazepine)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A severely depressed 67-year-old man with long-standing manic-depressive illness improved after spontaneous grand mal seizures, though repeated ECT had done nothing.",
+   "caveat": "If the seizures came from stopping a drug, the drug change could itself explain the mood shift.",
+   "tags": [
+    "carbamazepine",
+    "depression",
+    "ect",
+    "seizures",
+    "spontaneous-seizure"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "known",
+    "note": "Convulsive therapy rests on the antidepressant effect of seizures (1938); the surprise is spontaneous seizures working after repeated ECT had not.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "ohmura-2025",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Ohmura J, Sussman CB, Zamani A, Nedeljkovic SS, Lyndon S",
+    "title": "Acute Amnesia Resulting in Complete Relief of Pain, Depression, and Anxiety.",
+    "journal": "J Pain Symptom Manage",
+    "year": 2025,
+    "volume": "70",
+    "issue": "4",
+    "pages": "e280-e283"
+   },
+   "ids": {
+    "doi": "10.1016/j.jpainsymman.2025.06.015",
+    "pmid": "40633788",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/40633788/",
+    "doi": "https://doi.org/10.1016/j.jpainsymman.2025.06.015",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.jpainsymman.2025.06.015"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Anxiety"
+    ],
+    "specific": "Depression and anxiety for 6.5 years with chronic pain, through many drug combinations and spinal fusion",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Acute brain injury leaving her amnesic (headache, confusion, slurred speech, unsteady gait)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 44-year-old woman lost her chronic pain, depression and anxiety all at once after an acute brain injury left her amnesic. The authors propose memory as the common thread holding the three in place.",
+   "caveat": "If her opioids or other medicines were stopped or changed in hospital, that alone could shift pain and mood.",
+   "tags": [
+    "amnesia",
+    "anxiety",
+    "brain-injury",
+    "chronic-pain",
+    "depression",
+    "memory",
+    "opioids"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "gordon-1948",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Gordon A",
+    "title": "Prognostic significance of incidental acute somatic disorders in the course of psychoses; reevaluation of five cases 14 years later.",
+    "journal": "Arch Neurol Psychiatry",
+    "year": 1948,
+    "volume": "59",
+    "issue": "5",
+    "pages": "646-52"
+   },
+   "ids": {
+    "doi": "10.1001/archneurpsyc.1948.02300400082005",
+    "pmid": "18892877",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/18892877/",
+    "doi": "https://doi.org/10.1001/archneurpsyc.1948.02300400082005",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1001%2Farchneurpsyc.1948.02300400082005"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 5,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Intermittent psychotic attacks (period diagnoses)",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "Incidental lobar or bronchopneumonia and other acute somatic illness",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Five patients with recurrent psychotic attacks stopped having them after an incidental pneumonia or other acute illness, and were still free of attacks when re-examined 14 years later.",
+   "caveat": "Recurrent psychoses can burn out over 14 years without help, and the abstract gives no diagnoses.",
+   "tags": [
+    "fever",
+    "intercurrent-illness",
+    "long-follow-up",
+    "pneumonia",
+    "shock-therapy"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "known",
+    "note": "Psychosis easing during intercurrent fever was long recognised and underlay malaria therapy (Wagner-Jauregg, 1917); a lasting cure was not expected.",
+    "basis": "judged"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Definite intermittent psychotic symptoms; incidental acute somatic disorders (lobar and bronchopneumonia)",
+    "modern_reading": "Recurrent psychotic episodes of uncertain diagnosis (periodic psychosis, bipolar or schizoaffective illness)",
+    "why_read": "Fourteen years of follow-up is rare in this literature, and Gordon sets the illness effect beside the new shock therapies."
+   },
+   "observed_year": 1934
+  },
+  {
+   "id": "maluquer-2002",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Maluquer SS, Arranz B, San L",
+    "title": "Depression improvement with calcium heparin.",
+    "journal": "Gen Hosp Psychiatry",
+    "year": 2002,
+    "volume": "24",
+    "issue": "6",
+    "pages": "450-1"
+   },
+   "ids": {
+    "doi": "10.1016/s0163-8343(02)00212-8",
+    "pmid": "12490350",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/12490350/",
+    "doi": "https://doi.org/10.1016/s0163-8343(02)00212-8",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fs0163-8343%2802%2900212-8"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Recurrent depression resistant to conventional antidepressants",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Subcutaneous calcium heparin as thrombosis prophylaxis after hip replacement",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 64-year-old man with recurrent, antidepressant-resistant depression recovered fully in hospital after a hip replacement, on unchanged fluoxetine plus prophylactic calcium heparin. The abstract breaks off as heparin is stopped two months later; the indexing ('recurrence') hints at relapse.",
+   "caveat": "Relief from a painful hip after major surgery can lift mood on its own.",
+   "tags": [
+    "anticoagulant",
+    "depression",
+    "heparin",
+    "thromboprophylaxis",
+    "vascular-depression"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "Three separate reports (2002, 2013, 2018) of depression lifting on heparins given for clotting; no trial found so far.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "colli-2003",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Colli JE, Beck TE",
+    "title": "Recovery from bulimia nervosa through near-death experience: A case study.",
+    "journal": "Journal of Near-Death Studies",
+    "year": 2003,
+    "volume": "22",
+    "issue": "1",
+    "pages": "33-55"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fresearch.ebsco.com%2Fc%2Flrpoh2%2Fdetails%2Fp67toh2p6z%3Fdb%3Dpsyh"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Bulimia nervosa, framed by the authors as complex PTSD after childhood abuse",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Life event",
+    "specific": "Near-death experience during a suicide attempt",
+    "intent": "Life event"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A woman recovered from bulimia nervosa after a near-death experience during a suicide attempt; the authors, who revisited the experience with her under hypnosis, credit what it taught her about choice.",
+   "caveat": "Recovery unfolded alongside psychotherapy and hypnotic regression, which may have done the work.",
+   "tags": [
+    "bulimia",
+    "hypnosis",
+    "near-death-experience",
+    "psychological-trigger",
+    "suicide-attempt"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record)",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "fujii-2005",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Fujii T, Otsuba Y, Suzuki K, Endo K, Yamadori A",
+    "title": "Improvement of obsessive-compulsive disorder following left putaminal hemorrhage.",
+    "journal": "Eur Neurol",
+    "year": 2005,
+    "volume": "54",
+    "issue": "3",
+    "pages": "166-70"
+   },
+   "ids": {
+    "doi": "10.1159/000090109",
+    "pmid": "16340210",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/16340210/",
+    "doi": "https://doi.org/10.1159/000090109",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1159%2F000090109"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "OCD since age 43 (15 years)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Left putaminal haemorrhage (untreated hypertension)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 58-year-old man who had had OCD since 43 improved after a left putaminal haemorrhage.",
+   "caveat": "",
+   "tags": [
+    "basal-ganglia",
+    "haemorrhage",
+    "left-hemisphere",
+    "ocd",
+    "putamen"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "ozawa-1999",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Ozawa Y, Koyano H, Akama T",
+    "title": "Complete recovery from intractable bulimia nervosa by the surgical cure of primary hyperparathyroidism.",
+    "journal": "Int J Eat Disord",
+    "year": 1999,
+    "volume": "26",
+    "issue": "1",
+    "pages": "107-10"
+   },
+   "ids": {
+    "doi": "10.1002/(sici)1098-108x(199907)26:1<107::aid-eat15>3.0.co;2-u",
+    "pmid": "10349592",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/10349592/",
+    "doi": "https://doi.org/10.1002/(sici)1098-108x(199907)26:1%3C107::aid-eat15%3E3.0.co;2-u",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2F%28sici%291098-108x%28199907%2926%3A1%3C107%3A%3Aaid-eat15%3E3.0.co%3B2-u"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Bulimia nervosa for over 10 years (binge eating, self-induced vomiting)",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Parathyroidectomy for primary hyperparathyroidism",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 29-year-old Japanese woman's bulimia of more than 10 years stopped completely once surgery cured her primary hyperparathyroidism; her depression and anxiety eased too.",
+   "caveat": "Hypercalcaemia causes nausea and vomiting, so part of the bulimic picture may have come from the hyperparathyroidism itself.",
+   "tags": [
+    "bulimia",
+    "calcium",
+    "endocrine",
+    "hyperparathyroidism",
+    "parathyroidectomy"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "arora-2006",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Arora M, Praharaj SK",
+    "title": "Stevens-Johnson syndrome (SJS) leading to resolution of mania.",
+    "journal": "Aust N Z J Psychiatry",
+    "year": 2006,
+    "volume": "40",
+    "issue": "2",
+    "pages": "193-4"
+   },
+   "ids": {
+    "doi": "10.1111/j.1440-1614.2006.01774_2.x",
+    "pmid": "16476139",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/16476139/",
+    "doi": "https://doi.org/10.1111/j.1440-1614.2006.01774_2.x",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fj.1440-1614.2006.01774_2.x"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Mania with psychotic features (YMRS 53), worsening again on carbamazepine, olanzapine and lithium after ECT",
+    "chronic": false,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Systemic illness",
+    "specific": "Stevens-Johnson syndrome",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 23-year-old man's psychotic mania, sliding back after ECT despite carbamazepine, olanzapine and lithium, resolved after he developed Stevens-Johnson syndrome.",
+   "caveat": "He had been getting worse on carbamazepine, so stopping it once the reaction appeared is a competing explanation.",
+   "tags": [
+    "carbamazepine",
+    "immune",
+    "intercurrent-illness",
+    "mania",
+    "stevens-johnson"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "delisle-1991",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Delisle JD",
+    "title": "Catatonia unexpectedly reversed by midazolam.",
+    "journal": "Am J Psychiatry",
+    "year": 1991,
+    "volume": "148",
+    "issue": "6",
+    "pages": "809"
+   },
+   "ids": {
+    "doi": "10.1176/ajp.148.6.809a",
+    "pmid": "1801768",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/1801768/",
+    "doi": "https://doi.org/10.1176/ajp.148.6.809a",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fajp.148.6.809a"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Catatonia",
+     "Psychotic"
+    ],
+    "specific": "Catatonia in schizophrenia after stopping maintenance medication",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Midazolam premedication for an endoscopy",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "On-off rechallenge"
+   },
+   "downstream": {
+    "level": 4,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 24-year-old woman with schizophrenia, catatonic after stopping her maintenance medication, came out of it briefly when given midazolam before an endoscopy, and again on two later doses. Published replies note that ECT was not possible.",
+   "caveat": "",
+   "tags": [
+    "benzodiazepine",
+    "catatonia",
+    "midazolam",
+    "premedication",
+    "rechallenge"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "known",
+    "note": "Benzodiazepine reversal of catatonia had been reported from the early 1980s (lorazepam; recalled, not checked) and the lorazepam challenge later became standard; in 1991 it was still news to many.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "feldinger-2013",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Feldinger LE",
+    "title": "Recurrent and consistent improvement of cognitive impairment and depression after short time of treatment with enoxaparin.",
+    "journal": "J Am Geriatr Soc",
+    "year": 2013,
+    "volume": "61",
+    "issue": "7",
+    "pages": "1240-1"
+   },
+   "ids": {
+    "doi": "10.1111/jgs.12332",
+    "pmid": "23855864",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/23855864/",
+    "doi": "https://doi.org/10.1111/jgs.12332",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fjgs.12332"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "New depression with cognitive decline in an 88-year-old",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Short courses of enoxaparin (indexing lists a fall and hip fracture)",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "An 88-year-old man with new depression and cognitive decline improved after short courses of enoxaparin; the title reports the improvement recurring and consistent, so the full text may show repeated on-off courses.",
+   "caveat": "Delirium after a hip fracture can look like depression with cognitive decline and clear as the patient recovers.",
+   "tags": [
+    "anticoagulant",
+    "cognition",
+    "depression",
+    "enoxaparin",
+    "heparin",
+    "older-adult"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "Three separate reports (2002, 2013, 2018) of depression lifting on heparins given for clotting; no trial found so far.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "graham-2018",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Graham D, Wu QX, Gilligan I, Ismail R, Walker M",
+    "title": "Improvement of late life depression after therapeutic enoxaparin: two case reports.",
+    "journal": "Australas Psychiatry",
+    "year": 2018,
+    "volume": "26",
+    "issue": "5",
+    "pages": "534-536"
+   },
+   "ids": {
+    "doi": "10.1177/1039856218797441",
+    "pmid": "30198320",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/30198320/",
+    "doi": "https://doi.org/10.1177/1039856218797441",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F1039856218797441"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Late-life depression in inpatients",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Therapeutic enoxaparin for pulmonary embolism",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Two older inpatients being treated for depression developed pulmonary emboli; both improved markedly once on therapeutic enoxaparin, with nothing else in their depression treatment changed.",
+   "caveat": "Treating a pulmonary embolism relieves breathlessness, hypoxia and fear, any of which weighs on mood.",
+   "tags": [
+    "enoxaparin",
+    "heparin",
+    "late-life-depression",
+    "pulmonary-embolism",
+    "vascular-depression"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "Three separate reports (2002, 2013, 2018) of depression lifting on heparins given for clotting; no trial found so far.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "liu-2016",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Liu YW, Chang C, Chen TY, Chang HA, Kao YC, Tzeng NS",
+    "title": "Refractory depression with catatonic features was remitted with administration of intravenous dopamine and consequent bupropion as maintenance treatment.",
+    "journal": "Aust N Z J Psychiatry",
+    "year": 2016,
+    "volume": "50",
+    "issue": "6",
+    "pages": "599"
+   },
+   "ids": {
+    "doi": "10.1177/0004867415616697",
+    "pmid": "26560841",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/26560841/",
+    "doi": "https://doi.org/10.1177/0004867415616697",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F0004867415616697"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Catatonia"
+    ],
+    "specific": "Treatment-refractory depression with catatonic features",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Intravenous dopamine for septic shock from urosepsis, then bupropion maintenance",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "An older woman with refractory catatonic depression, septic after urinary retention, came out of it when intravenous dopamine was given for septic shock; bupropion then kept her well.",
+   "caveat": "Treating the sepsis and retention removed a medical stressor that can deepen catatonia.",
+   "tags": [
+    "bupropion",
+    "catatonia",
+    "depression",
+    "dopamine",
+    "septic-shock"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "nguyen-2021",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Nguyen M, Varapravan S, Sharma V",
+    "title": "Schizoaffective disorder: Symptom remission following pneumosepsis.",
+    "journal": "Bipolar Disord",
+    "year": 2021,
+    "volume": "23",
+    "issue": "4",
+    "pages": "423-425"
+   },
+   "ids": {
+    "doi": "10.1111/bdi.13032",
+    "pmid": "33217127",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/33217127/",
+    "doi": "https://doi.org/10.1111/bdi.13032",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fbdi.13032"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic",
+     "Mood"
+    ],
+    "specific": "Schizoaffective disorder, bipolar type",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "Presumed pneumosepsis treated with broad-spectrum antibiotics",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 56-year-old man with schizoaffective disorder, partway through a switch to clozapine, developed presumed pneumosepsis; his symptoms remitted and he stayed well afterwards on a simpler regimen without clozapine.",
+   "caveat": "Infection raises clozapine levels (as in Grootendorst-van Mil 2018), so a brief clozapine surge may have done the work.",
+   "tags": [
+    "clozapine",
+    "intercurrent-illness",
+    "pneumonia",
+    "schizoaffective",
+    "sepsis"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "vender-1990",
+   "record_type": "context",
+   "status": "Provisional",
+   "tier": null,
+   "collections": [
+    "phase1e"
+   ],
+   "citation": {
+    "authors": "Vender S, Sommi M, Mazzacane F",
+    "title": "Lo schizofrenico e la malattia somatica. A proposito di sorprendenti remissioni dei sintomi psicotici.",
+    "journal": "Archivio di Psicologia, Neurologia e Psichiatria",
+    "year": 1990,
+    "volume": "51",
+    "issue": "2",
+    "pages": "247-263"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": null,
+    "doi": null,
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fresearch.ebsco.com%2Fc%2Flrpoh2%2Fdetails%2Fqhvlzgbxob%3Fdb%3Dpsyh"
+   },
+   "access": "Paywalled",
+   "design": "Review",
+   "n_patients": null,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenia",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Systemic illness",
+    "specific": "Intercurrent physical illness",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "An Italian discussion, with several case histories, of psychotic symptoms in schizophrenia lifting for a while during physical illness; an earlier paper from the group behind Vender 1996.",
+   "caveat": "Published in Italian.",
+   "tags": [
+    "intercurrent-illness",
+    "pseudo-recovery",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record)",
+   "era": {
+    "label": "emerging",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
   }
  ]
 }
