@@ -1,7 +1,7 @@
 {
  "library": "Serendipity Case Library",
  "schema_version": "1.3",
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "unit_of_record": "One published study (a paper). n_patients counts patients within it; same_patient_as links papers describing the same patient.",
  "inclusion_criteria": [
   "A serious psychiatric syndrome resolved or substantially improved.",
@@ -13340,6 +13340,997 @@
     "basis": "from downstream level"
    },
    "flags": []
+  },
+  {
+   "id": "anon-1844-pleuropneumonia",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "Anonymous",
+    "title": "Cure of Acute Mania by Pleuro-Pneumonia.",
+    "journal": "Med Exam (Phila)",
+    "year": 1844,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "38122512",
+    "pmcid": "PMC10325453"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10325453/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/38122512/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Acute mania",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "Pleuropneumonia",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "An acute mania was cured by an attack of pleuropneumonia.",
+   "caveat": "",
+   "tags": [
+    "fever",
+    "intercurrent-illness",
+    "mania",
+    "pneumonia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Intercurrent fever ending insanity was a recurring 19th-century observation and led to Wagner-Jauregg's fever therapy (1917); fever in modern psychosis is anecdotal.",
+    "basis": "judged"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Acute mania",
+    "modern_reading": "Acute manic episode, possibly delirium",
+    "why_read": "An early instance of the intercurrent-illness cures that later underpinned fever therapy."
+   }
+  },
+  {
+   "id": "starr-1845",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "Starr TH",
+    "title": "Case of Insanity, with Gangrene and Mortification of a Limb; Followed by Recovery.",
+    "journal": "Prov Med Surg J",
+    "year": 1845,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1136/bmj.s1-9.20.308",
+    "pmid": "20793712",
+    "pmcid": "PMC2559043"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2559043/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/20793712/",
+    "doi": "https://doi.org/10.1136/bmj.s1-9.20.308",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fbmj.s1-9.20.308"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Insanity",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Systemic illness",
+    "specific": "Gangrene and mortification of a limb",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A patient's insanity cleared after gangrene of a limb.",
+   "caveat": "",
+   "tags": [
+    "asylum",
+    "gangrene",
+    "intercurrent-illness",
+    "sepsis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Intercurrent fever ending insanity was a recurring 19th-century observation and led to Wagner-Jauregg's fever therapy (1917); fever in modern psychosis is anecdotal.",
+    "basis": "judged"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Insanity",
+    "modern_reading": "Unspecified psychosis",
+    "why_read": "Recovery through a life-threatening septic illness, decades before anyone named inflammation."
+   }
+  },
+  {
+   "id": "perry-1869",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "Perry WT",
+    "title": "Insanity Cured by the Removal of Carious Teeth.",
+    "journal": "Am J Dent Sci",
+    "year": 1869,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "30748350",
+    "pmcid": "PMC6011628"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6011628/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/30748350/",
+    "doi": null,
+    "alternates": [
+     {
+      "label": "Dental Register reprint (PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6910379/"
+     }
+    ],
+    "ckn": null
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Insanity",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Extraction of carious teeth",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Insanity was cured after decayed teeth were removed (reported in two dental journals).",
+   "caveat": "Dental sepsis and pain may have been driving a delirium rather than a primary psychosis.",
+   "tags": [
+    "dental",
+    "focal-infection",
+    "insanity",
+    "tooth-extraction"
+   ],
+   "same_patient_as": null,
+   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "refuted",
+    "note": "The focal-infection theory behind later mass tooth extraction for insanity (Cotton, 1920s) was discredited.",
+    "basis": "judged"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Insanity",
+    "modern_reading": "Unclear; delirium from dental sepsis is possible",
+    "why_read": "Fifty years before Henry Cotton pulled teeth to cure psychosis, a dental cure was already in print."
+   }
+  },
+  {
+   "id": "anon-1890-influenza",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "Anonymous",
+    "title": "Insanity Cured by Influenza.",
+    "journal": "Hospital (Lond 1886)",
+    "year": 1890,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "29826908",
+    "pmcid": "PMC5236999"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5236999/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/29826908/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Insanity",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "Influenza (1889-90 pandemic)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Insanity was cured by an attack of influenza during the 1889-90 pandemic.",
+   "caveat": "",
+   "tags": [
+    "fever",
+    "influenza",
+    "insanity",
+    "pandemic"
+   ],
+   "same_patient_as": null,
+   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Intercurrent fever ending insanity was a recurring 19th-century observation and led to Wagner-Jauregg's fever therapy (1917); fever in modern psychosis is anecdotal.",
+    "basis": "judged"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Insanity",
+    "modern_reading": "Unspecified psychosis",
+    "why_read": "The same pandemic that produced influenzal psychoses also produced reported cures."
+   }
+  },
+  {
+   "id": "lanphear-1895",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "Lanphear E",
+    "title": "A Case of Insanity Cured by Removal of a Fibroid Tumor of the Ovary.",
+    "journal": "South Med Rec",
+    "year": 1895,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "36025593",
+    "pmcid": "PMC9155773"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9155773/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/36025593/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Insanity",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Surgery or procedure (outside the brain)",
+    "specific": "Removal of an ovarian fibroid",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A woman's insanity was cured after removal of a fibroid tumour of the ovary.",
+   "caveat": "Gynaecological surgery was then sometimes done to cure insanity, so the intent needs checking.",
+   "tags": [
+    "gynaecological-surgery",
+    "insanity",
+    "ovary",
+    "reflex-insanity"
+   ],
+   "same_patient_as": null,
+   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "refuted",
+    "note": "Reflex-insanity theory and gynaecological surgery for insanity (Battey's operation) were abandoned.",
+    "basis": "judged"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Insanity (reflex insanity era)",
+    "modern_reading": "Unclear; possibly an affective or psychotic episode",
+    "why_read": "A window on reflex-insanity thinking, where pelvic organs were blamed for madness."
+   }
+  },
+  {
+   "id": "mckenzie-1912",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "McKenzie D",
+    "title": "Hysterical Deafness Diagnosed (and Cured) by the Caloric Vestibular Test.",
+    "journal": "Proc R Soc Med",
+    "year": 1912,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1177/003591571200501112",
+    "pmid": "19976214",
+    "pmcid": "PMC2005163"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2005163/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/19976214/",
+    "doi": "https://doi.org/10.1177/003591571200501112",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F003591571200501112"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Functional neurological"
+    ],
+    "specific": "Hysterical deafness",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Caloric vestibular test, done for diagnosis",
+    "intent": "Deliberate test (trial)"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Hysterical deafness was cured by the caloric vestibular test used to diagnose it.",
+   "caveat": "Suggestion during a dramatic test is the obvious alternative.",
+   "tags": [
+    "caloric-test",
+    "diagnostic-test",
+    "functional-deafness",
+    "hysteria",
+    "vestibular"
+   ],
+   "same_patient_as": null,
+   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Vestibular stimulation is being re-examined in functional and mood disorders (recalled, not checked).",
+    "basis": "judged"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Hysterical deafness",
+    "modern_reading": "Functional hearing loss (functional neurological disorder)",
+    "why_read": "A diagnostic test doubling as the cure, the same move made in modern functional neurology."
+   }
+  },
+  {
+   "id": "cohen-lipton-1950",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "COHEN M, LIPTON LM",
+    "title": "Spontaneous remission of schizophrenic psychoses following maternal death; report of 3 cases.",
+    "journal": "Psychiatr Q",
+    "year": 1950,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1007/bf02229830",
+    "pmid": "14797874",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/14797874/",
+    "doi": "https://doi.org/10.1007/bf02229830",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1007%2Fbf02229830"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": 3,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Schizophrenic psychoses",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Life event",
+    "specific": "Death of the patient's mother",
+    "intent": "Life event"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Three patients' schizophrenic psychoses remitted after their mothers died.",
+   "caveat": "",
+   "tags": [
+    "bereavement",
+    "family",
+    "maternal-death",
+    "schizophrenia"
+   ],
+   "same_patient_as": null,
+   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Schizophrenic psychoses",
+    "modern_reading": "Schizophrenia by 1950 American criteria, which were broad",
+    "why_read": "Read through the period's theory of the schizophrenogenic mother, but the observation stands on its own."
+   }
+  },
+  {
+   "id": "babinski-voltaic",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "BABINSKI J",
+    "title": "[Cure of a case of melancholia after a provoked attack of voltaic vertigo].",
+    "journal": "Ann Med Psychol (Paris)",
+    "year": 1950,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "15425999",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/15425999/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Melancholia",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Provoked attack of galvanic (voltaic) vertigo",
+    "intent": "Deliberate test (trial)"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Melancholia was cured after Babinski provoked an attack of galvanic vertigo.",
+   "caveat": " Published in French.",
+   "tags": [
+    "babinski",
+    "galvanic-vestibular-stimulation",
+    "melancholia",
+    "vestibular"
+   ],
+   "same_patient_as": null,
+   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Vestibular stimulation is being re-examined in functional and mood disorders (recalled, not checked).",
+    "basis": "judged"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Mélancolie",
+    "modern_reading": "Melancholic depression",
+    "why_read": "Babinski died in 1932, so this 1950 item reprints or recounts an earlier report (original date not checked)."
+   }
+  },
+  {
+   "id": "thompson-1953",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "THOMPSON GN, BIELINSKI B",
+    "title": "Improvement in psychosis following conditioned-reflex treatment for alcoholism.",
+    "journal": "J Nerv Ment Dis",
+    "year": 1953,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1097/00005053-195306000-00006",
+    "pmid": "13109514",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/13109514/",
+    "doi": "https://doi.org/10.1097/00005053-195306000-00006",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2F00005053-195306000-00006"
+   },
+   "access": "Paywalled",
+   "design": "Case series",
+   "n_patients": null,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Psychosis with alcoholism",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Conditioned-reflex (aversion) treatment for alcoholism",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Psychosis improved after conditioned-reflex aversion treatment given for alcoholism.",
+   "caveat": "Abstinence alone could explain the improvement if the psychosis was alcohol-related.",
+   "tags": [
+    "alcoholism",
+    "aversion-therapy",
+    "emetine",
+    "psychosis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Psychosis",
+    "modern_reading": "Uncertain mix of primary and alcohol-related psychosis",
+    "why_read": "Nausea-based aversion conditioning, now abandoned, with an unexpected psychiatric side-effect."
+   }
+  },
+  {
+   "id": "gardes-1954",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "GARDES A, SCHNETZLER JP",
+    "title": "[Puerperal psychosis cured by antituberculous medication].",
+    "journal": "J Med Bord",
+    "year": 1954,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "13184256",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/13184256/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Puerperal psychosis",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Antituberculous medication",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "A puerperal psychosis was cured during antituberculous treatment (1954, French).",
+   "caveat": " Published in French.",
+   "tags": [
+    "iproniazid",
+    "isoniazid",
+    "maoi",
+    "puerperal-psychosis",
+    "tuberculosis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "known",
+    "note": "Mood effects of the antituberculous hydrazides (iproniazid, isoniazid) led to the first antidepressants in 1957.",
+    "basis": "judged"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Psychose puerpérale",
+    "modern_reading": "Postpartum psychosis",
+    "why_read": "Caught in the same year the antituberculous drugs were showing mood effects in sanatoria."
+   }
+  },
+  {
+   "id": "petersen-1956",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "PETERSEN S",
+    "title": "A case of cerebral air embolism with curative effect on psychosis.",
+    "journal": "Acta Psychiatr Neurol Scand Suppl",
+    "year": 1956,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "10.1111/j.1600-0447.1956.tb01695.x",
+    "pmid": "13354463",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/13354463/",
+    "doi": "https://doi.org/10.1111/j.1600-0447.1956.tb01695.x",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fj.1600-0447.1956.tb01695.x"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Psychosis",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Acquired brain lesion",
+    "specific": "Cerebral air embolism",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A psychosis improved after a cerebral air embolism.",
+   "caveat": "",
+   "tags": [
+    "air-embolism",
+    "brain-injury",
+    "psychosis"
+   ],
+   "same_patient_as": null,
+   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Psychosis",
+    "modern_reading": "Unspecified psychosis",
+    "why_read": "An accidental, diffuse brain insult acting like the shock treatments of its day."
+   }
+  },
+  {
+   "id": "cotlar-1957",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "COTLAR N",
+    "title": "Coma and psychosis following possible insulin hypersensitivity; with remission of narcotic addiction after severe hypoglycemic shock.",
+    "journal": "Tex State J Med",
+    "year": 1957,
+    "volume": "",
+    "issue": "",
+    "pages": ""
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "13486545",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/13486545/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Narcotic addiction",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Coma / anaesthesia",
+    "specific": "Severe hypoglycaemic shock with coma (possible insulin hypersensitivity)",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "Narcotic addiction remitted after a severe hypoglycaemic coma, possibly from insulin hypersensitivity.",
+   "caveat": "Insulin was then used in withdrawal regimens, so the insulin may have been deliberate and only the shock accidental.",
+   "tags": [
+    "addiction",
+    "coma",
+    "hypoglycaemia",
+    "insulin",
+    "opioid"
+   ],
+   "same_patient_as": null,
+   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "era": {
+    "label": "novel",
+    "note": "Echoes Sakel, whose insulin coma therapy grew from accidental hypoglycaemia during morphine withdrawal; never tested for addiction.",
+    "basis": "judged"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "historical": {
+    "original_terms": "Narcotic addiction",
+    "modern_reading": "Opioid use disorder",
+    "why_read": "Sakel's original accident, replayed thirty years later and aimed at the addiction this time."
+   }
   }
  ]
 }
