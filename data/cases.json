@@ -14425,17 +14425,17 @@
    },
    "ids": {
     "doi": "10.4088/pcc.v10n0312d",
-    "pmid": "",
-    "pmcid": ""
+    "pmid": "18615165",
+    "pmcid": "PMC2446483"
    },
    "links": {
-    "full_text": null,
-    "abstract": null,
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2446483/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/18615165/",
     "doi": "https://doi.org/10.4088/pcc.v10n0312d",
     "alternates": [],
     "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4088%2Fpcc.v10n0312d"
    },
-   "access": "Paywalled",
+   "access": "Free full text",
    "design": "Letter",
    "n_patients": 1,
    "syndrome": {
@@ -14473,7 +14473,7 @@
    "same_patient_as": null,
    "found_via": "Embase via CKN (EMB_title_v1_2, re-ranked v1.3)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC; 2026-11-14: PMID and PMCID found via Europe PMC (citation route v2)",
    "era": {
     "label": "novel",
     "note": "",
@@ -18129,6 +18129,310 @@
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "schweickert-1997",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Schweickert LA, Strober M, Moskowitz A",
+    "title": "Efficacy of methylphenidate in bulimia nervosa comorbid with attention-deficit hyperactivity disorder: a case report.",
+    "journal": "Int J Eat Disord",
+    "year": 1997,
+    "volume": "21",
+    "issue": "3",
+    "pages": "299-301"
+   },
+   "ids": {
+    "doi": "10.1002/(sici)1098-108x(199704)21:3<299::aid-eat11>3.0.co;2-w",
+    "pmid": "9097204",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/9097204/",
+    "doi": "https://doi.org/10.1002/(sici)1098-108x(199704)21:3%3C299::aid-eat11%3E3.0.co;2-w",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2F%28sici%291098-108x%28199704%2921%3A3%3C299%3A%3Aaid-eat11%3E3.0.co%3B2-w"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Eating"
+    ],
+    "specific": "Bulimia nervosa (binge eating) with comorbid ADHD",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Methylphenidate for comorbid ADHD",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "A patient with bulimia nervosa binged much less after methylphenidate was prescribed for comorbid ADHD.",
+   "caveat": "Methylphenidate dulls appetite, so fewer binges need not mean the bulimia itself changed.",
+   "tags": [
+    "adhd",
+    "binge-eating",
+    "bulimia",
+    "methylphenidate",
+    "stimulant"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC citations (CIT_EPMC_v2)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (Europe PMC record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "Methylphenidate and other stimulants given for ADHD were reported to curb binge eating from 1997 on (this record, Drimmer 2003, Dukarm 2005); lisdexamfetamine was later approved for binge-eating disorder in the US (recalled, not checked).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "taira-2003",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Taira T, Kobayashi T, Hori T",
+    "title": "Disappearance of self-mutilating behavior in a patient with lesch-nyhan syndrome after bilateral chronic stimulation of the globus pallidus internus. Case report.",
+    "journal": "J Neurosurg",
+    "year": 2003,
+    "volume": "98",
+    "issue": "2",
+    "pages": "414-6"
+   },
+   "ids": {
+    "doi": "10.3171/jns.2003.98.2.0414",
+    "pmid": "12593632",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/12593632/",
+    "doi": "https://doi.org/10.3171/jns.2003.98.2.0414",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3171%2Fjns.2003.98.2.0414"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Neurodevelopmental"
+    ],
+    "specific": "Self-mutilation in Lesch-Nyhan syndrome",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Brain stimulation",
+    "specific": "Bilateral chronic stimulation of the globus pallidus internus to control dystonic movements",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 19-year-old man with Lesch-Nyhan syndrome given bilateral pallidal stimulation to control dystonia stopped self-mutilating, an effect the surgeons had not sought; the first report of its kind.",
+   "caveat": "The authors allow that the self-injury may have been partly secondary to the dystonia, which the stimulation treated.",
+   "tags": [
+    "deep-brain-stimulation",
+    "dystonia",
+    "globus-pallidus",
+    "lesch-nyhan",
+    "self-injury"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC citations (CIT_EPMC_v2)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (Europe PMC record); identifiers from PubMed",
+   "era": {
+    "label": "known",
+    "note": "Pallidal DBS in Lesch-Nyhan syndrome was repeated in later reports and series (Deon 2012; clinical outcome series 2021) and gathered in a 2023 systematic review; self-injury is now one of its aims.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "pozzi-2014",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Pozzi M, Piccinini L, Gallo M, Motta F, Radice S, Clementi E",
+    "title": "Treatment of motor and behavioural symptoms in three Lesch-Nyhan patients with intrathecal baclofen.",
+    "journal": "Orphanet J Rare Dis",
+    "year": 2014,
+    "volume": "9",
+    "issue": "",
+    "pages": "208"
+   },
+   "ids": {
+    "doi": "10.1186/s13023-014-0208-3",
+    "pmid": "25497359",
+    "pmcid": "PMC4266221"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4266221/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/25497359/",
+    "doi": "https://doi.org/10.1186/s13023-014-0208-3",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1186%2Fs13023-014-0208-3"
+   },
+   "access": "Free full text",
+   "design": "Case series",
+   "n_patients": 3,
+   "syndrome": {
+    "categories": [
+     "Neurodevelopmental"
+    ],
+    "specific": "Behavioural symptoms of Lesch-Nyhan syndrome (self-injurious behaviour indexed) no longer helped by earlier treatments",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Intrathecal baclofen for motor symptoms",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "Three men with Lesch-Nyhan syndrome who no longer benefited from earlier treatments were given intrathecal baclofen for their motor symptoms; their behaviour improved too, which the authors had not expected.",
+   "caveat": "Less spasticity and pain could ease distress-driven behaviour without acting on it directly.",
+   "tags": [
+    "baclofen",
+    "gaba-b",
+    "intrathecal",
+    "lesch-nyhan",
+    "self-injury"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC citations (CIT_EPMC_v2)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (Europe PMC record); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "miyazaki-2023",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Miyazaki K, Uchiyama M",
+    "title": "An adolescent boy with kleptomania and attention-deficit hyperactivity disorder treated with methylphenidate and guanfacine: A case report.",
+    "journal": "Neuropsychopharmacol Rep",
+    "year": 2023,
+    "volume": "43",
+    "issue": "4",
+    "pages": "650-653"
+   },
+   "ids": {
+    "doi": "10.1002/npr2.12394",
+    "pmid": "37921065",
+    "pmcid": "PMC10739163"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10739163/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/37921065/",
+    "doi": "https://doi.org/10.1002/npr2.12394",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2Fnpr2.12394"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Impulse-control"
+    ],
+    "specific": "Kleptomania with ADHD in a 16-year-old boy",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Extended-release methylphenidate for ADHD (guanfacine added later for the hours when it wore off)",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "Natural off-on"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 16-year-old boy who stole things he did not need stole far less once methylphenidate was started for his ADHD; at 19 the stealing returned only when the drug wore off, and guanfacine covered those hours.",
+   "caveat": "At 16, impulsive stealing from ADHD is hard to tell apart from kleptomania.",
+   "tags": [
+    "adhd",
+    "adolescent",
+    "guanfacine",
+    "kleptomania",
+    "methylphenidate"
+   ],
+   "same_patient_as": null,
+   "found_via": "Europe PMC citations (CIT_EPMC_v2)",
+   "date_added": "2026-11-14",
+   "verified": "2026-11-14: abstract-level appraisal (Europe PMC record); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "Earlier letters (2011, Yilmaz 2014) had reported methylphenidate for ADHD reducing stealing.",
+    "basis": "judged"
    },
    "flags": []
   }
