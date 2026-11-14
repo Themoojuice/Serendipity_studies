@@ -30,7 +30,9 @@ for rid, n in Counter(ids).items():
 idset = set(ids)
 
 DOI = re.compile(r"^10\.\d{4,9}/\S+$")
-FLAGS = {"retracted", "concern", "venue", "mill", "media-first", "overclaim", "coi-trigger", "altmed", "no-followup", "preprint"}
+FLAGS = {"retracted", "concern", "venue", "mill", "media-first", "overclaim", "coi-trigger", "altmed", "no-followup", "preprint", "antique-bar"}
+ANTIQUE_BEFORE = 1970
+HIST_KEYS = {"original_terms", "modern_reading", "why_read"}
 for r in R:
     rid = r["id"]
     if r["record_type"] not in ("case", "context"):
@@ -69,6 +71,18 @@ for r in R:
     for fl in r.get("flags", []):
         if fl not in FLAGS:
             err(rid, f"unknown flag {fl}")
+    oy = r.get("observed_year")
+    if oy is not None and not (isinstance(oy, int) and 1500 <= oy <= 2027):
+        err(rid, f"observed_year {oy!r} must be an integer year")
+    h = r.get("historical")
+    if h is not None:
+        if not isinstance(h, dict) or set(h) - HIST_KEYS or not all(isinstance(v, str) for v in h.values()):
+            err(rid, f"historical must be an object with only {sorted(HIST_KEYS)} as strings")
+    if "antique-bar" in r.get("flags", []):
+        if (oy or int(r["citation"]["year"])) >= ANTIQUE_BEFORE:
+            err(rid, "antique-bar flag on a record observed in or after 1970")
+        if not (h and h.get("why_read")):
+            err(rid, "antique-bar records need historical.why_read")
     sp = r.get("same_patient_as")
     if sp and sp not in idset:
         err(rid, f"same_patient_as points to unknown id {sp}")

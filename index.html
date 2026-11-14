@@ -89,6 +89,9 @@ select { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-
 .pill.free { background: var(--free-soft); border-color: transparent; color: var(--free); font-weight: 600; }
 .pill.tier { font-family: var(--font-mono); }
 .pill.ctx { background: var(--warn-soft); color: var(--warn); border-color: transparent; }
+.pill.antique { background: #f3e6cf; color: #7a5420; border-color: transparent; font-weight: 600; }
+@media (prefers-color-scheme: dark) { .pill.antique { background: #4a3a22; color: #f0d6a8; } }
+.card.antique { background-image: linear-gradient(90deg, rgba(196,150,80,0.07), transparent 40%); }
 .pill.era-known { background: var(--accent-soft); color: var(--accent); border-color: transparent; font-weight: 600; }
 .pill.era-refuted { background: var(--warn-soft); color: var(--warn); border-color: transparent; font-weight: 600; text-decoration: line-through; text-decoration-thickness: 1px; }
 .pill.flag { background: var(--warn-soft); color: var(--warn); border-color: transparent; }
@@ -193,6 +196,14 @@ details.filters[open] > summary { margin-bottom: 4px; }
         </select>
       </div>
       <div class="row">
+        <label class="grp" for="period">Period</label>
+        <select id="period">
+          <option value="">All periods</option>
+          <option value="antique">Antique (observed before 1970)</option>
+          <option value="modern">1970 onwards</option>
+        </select>
+      </div>
+      <div class="row">
         <label class="toggle"><input type="checkbox" id="freeOnly"> Free full text only</label>
         <label class="toggle"><input type="checkbox" id="showCtx"> Show context records</label>
       </div>
@@ -262,7 +273,7 @@ details.filters[open] > summary { margin-bottom: 4px; }
   };
   if (window.matchMedia && window.matchMedia("(max-width: 700px)").matches) { var fb = document.getElementById("filtersBox"); if (fb) fb.removeAttribute("open"); }
   var DATA = null, RECORDS = [];
-  var state = { q: "", syn: new Set(), trig: new Set(), tags: new Set(), tier: "", era: "", freeOnly: false, showCtx: false, sort: "impact" };
+  var state = { q: "", syn: new Set(), trig: new Set(), tags: new Set(), tier: "", era: "", period: "", freeOnly: false, showCtx: false, sort: "impact" };
 
   function $(id) { return document.getElementById(id); }
   function el(tag, attrs, kids) {
@@ -297,6 +308,8 @@ details.filters[open] > summary { margin-bottom: 4px; }
       if (!state.showCtx && r.record_type !== "case") return false;
       if (state.tier && r.tier !== state.tier) return false;
       if (state.era && r.era.label !== state.era) return false;
+      if (state.period === "antique" && !isAntique(r)) return false;
+      if (state.period === "modern" && isAntique(r)) return false;
       if (state.freeOnly && !r.links.full_text) return false;
       if (state.syn.size && !r.syndrome.categories.some(function (c) { return state.syn.has(c); })) return false;
       if (state.trig.size && !state.trig.has(r.trigger.category)) return false;
@@ -305,8 +318,8 @@ details.filters[open] > summary { margin-bottom: 4px; }
       if (q && r._hay.indexOf(q) < 0) return false;
       return true;
     }).sort(function (a, b) {
-      if (state.sort === "new") return b.citation.year - a.citation.year;
-      if (state.sort === "old") return a.citation.year - b.citation.year;
+      if (state.sort === "new") return obsYear(b) - obsYear(a);
+      if (state.sort === "old") return obsYear(a) - obsYear(b);
       if (state.sort === "title") return a.citation.title.localeCompare(b.citation.title);
       var t = (a.record_type === "case" ? 0 : 1) - (b.record_type === "case" ? 0 : 1);
       if (t) return t;
@@ -363,14 +376,17 @@ details.filters[open] > summary { margin-bottom: 4px; }
     box.appendChild(el("button", { class: "btn", type: "button", onclick: function () { state.tags.clear(); renderAll(); } }, ["Clear tags"]));
   }
 
-  var FLAG_TEXT = { "preprint": "Preprint", "coi-trigger": "Conflict of interest", "venue": "Questionable venue", "retracted": "Retracted", "concern": "Expression of concern", "mill": "Paper-mill signals", "media-first": "Press only", "overclaim": "Over-claims", "altmed": "Alternative-medicine framing", "no-followup": "No follow-up" };
+  var FLAG_TEXT = { "preprint": "Preprint", "coi-trigger": "Conflict of interest", "venue": "Questionable venue", "retracted": "Retracted", "concern": "Expression of concern", "mill": "Paper-mill signals", "media-first": "Press only", "overclaim": "Over-claims", "altmed": "Alternative-medicine framing", "no-followup": "No follow-up", "antique-bar": "Period evidence standard" };
   var ERA_SHORT = { novel: "Still unexplained", emerging: "Emerging", known: "Known now · unexpected then", refuted: "Refuted" };
 
+  function obsYear(r) { return r.observed_year || Number(r.citation.year); }
+  function isAntique(r) { return obsYear(r) < 1970; }
   function card(r) {
     var c0 = r.syndrome.categories[0];
     var top = el("div", { class: "meta-top" });
     r.syndrome.categories.forEach(function (c) { top.appendChild(el("span", { class: "pill syn", style: "--c:" + synColor(c), text: c })); });
     top.appendChild(el("span", { class: "pill", text: r.trigger.category }));
+    if (isAntique(r)) top.appendChild(el("span", { class: "pill antique", title: "Antique section: first observed before 1970, judged by period standards", text: "Antique · " + obsYear(r) }));
     if (r.record_type !== "case") top.appendChild(el("span", { class: "pill ctx", text: "Context, not a case" }));
     if (r.tier) top.appendChild(el("span", { class: "pill tier", title: DATA.vocabularies.tier[r.tier], text: "Tier " + r.tier }));
     if (r.status !== "Included") top.appendChild(el("span", { class: "pill ctx", text: r.status }));
@@ -387,6 +403,11 @@ details.filters[open] > summary { margin-bottom: 4px; }
       el("dt", { text: "Outcome" }), el("dd", { text: outcome.join(", ") + (r.outcome.reversal !== "None reported" ? "; reversal: " + r.outcome.reversal.toLowerCase() : "") }),
       el("dt", { text: "Patients" }), el("dd", { text: (r.n_patients == null ? "Not stated" : String(r.n_patients)) + " · " + r.design + (r.same_patient_as ? " · overlaps " + r.same_patient_as : "") })
     ]);
+    if (r.historical) {
+      if (r.historical.original_terms) { facts.appendChild(el("dt", { text: "As described" })); facts.appendChild(el("dd", { text: r.historical.original_terms })); }
+      if (r.historical.modern_reading) { facts.appendChild(el("dt", { text: "Modern reading" })); facts.appendChild(el("dd", { text: r.historical.modern_reading })); }
+      if (r.historical.why_read) { facts.appendChild(el("dt", { text: "Why read it" })); facts.appendChild(el("dd", { text: r.historical.why_read })); }
+    }
     var dd = el("dd", {}, [DATA.vocabularies.downstream_level[String(r.downstream.level)] + (r.downstream.note ? ": " + r.downstream.note : "")]);
     r.downstream.links.forEach(function (l) { dd.appendChild(document.createTextNode(" ")); dd.appendChild(el("a", { href: "https://doi.org/" + l.doi, target: "_blank", rel: "noopener", text: l.label })); });
     facts.appendChild(el("dt", { text: "Led to" })); facts.appendChild(dd);
@@ -404,7 +425,7 @@ details.filters[open] > summary { margin-bottom: 4px; }
     var tags = el("div", { class: "tags" });
     r.tags.forEach(function (t) { tags.appendChild(el("button", { class: "tag", type: "button", "aria-pressed": state.tags.has(t) ? "true" : "false", onclick: function () { toggleTag(t); } }, ["#" + t])); });
 
-    return el("article", { class: "card" + (r.record_type !== "case" ? " context" : ""), style: "--stripe:" + synColor(c0) }, [
+    return el("article", { class: "card" + (r.record_type !== "case" ? " context" : "") + (isAntique(r) ? " antique" : ""), style: "--stripe:" + synColor(c0) }, [
       top,
       el("h3", {}, [el("a", { href: primaryLink(r), target: "_blank", rel: "noopener", text: r.citation.title })]),
       el("p", { class: "cite", text: citeLine(r) }),
@@ -566,6 +587,7 @@ details.filters[open] > summary { margin-bottom: 4px; }
     $("sort").addEventListener("change", function (e) { state.sort = e.target.value; renderAll(); });
     $("tier").addEventListener("change", function (e) { state.tier = e.target.value; renderAll(); });
     $("era").addEventListener("change", function (e) { state.era = e.target.value; renderAll(); });
+    $("period").addEventListener("change", function (e) { state.period = e.target.value; if (e.target.value === "antique") { state.sort = "old"; var so = $("sort"); if (so) so.value = "old"; } renderAll(); });
     $("freeOnly").addEventListener("change", function (e) { state.freeOnly = e.target.checked; renderAll(); });
     $("showCtx").addEventListener("change", function (e) { state.showCtx = e.target.checked; renderAll(); });
     $("copyCsv").addEventListener("click", function () { copyText(toCsv(filtered()), "CSV"); });

@@ -1,13 +1,14 @@
 {
  "library": "Serendipity Case Library",
- "schema_version": "1.2",
+ "schema_version": "1.3",
  "updated": "2026-11-13",
  "unit_of_record": "One published study (a paper). n_patients counts patients within it; same_patient_as links papers describing the same patient.",
  "inclusion_criteria": [
   "A serious psychiatric syndrome resolved or substantially improved.",
   "The resolution was incidental: the triggering event or treatment was aimed at something else, or not aimed at all.",
   "Individual patients or small series; lesion series allowed when built on individual cases.",
-  "Discoveries that were unexpected when reported but are established since stay in, labelled 'Known now'. Findings that later failed controlled testing are labelled 'Refuted'."
+  "Discoveries that were unexpected when reported but are established since stay in, labelled 'Known now'. Findings that later failed controlled testing are labelled 'Refuted'.",
+  "Antique section: cases first observed before 1970, sorted by observed_year (the year of the original observation, which can predate the citation). Period diagnoses are accepted as written, resolution may be narrative, and follow-up may be missing; such records carry the flag antique-bar. Deliberate exposures (E3) and secondary syndromes resolving with their cause (E4) are still excluded, except that the incidental founding observation behind a later deliberate therapy is eligible. Each antique record carries historical: the diagnosis in the period's own terms, a likely modern reading, and why it is worth reading."
  ],
  "vocabularies": {
   "syndrome_category": [
@@ -340,7 +341,13 @@
     "note": "Fever therapy for general paresis won the 1927 Nobel Prize; the observation is now psychiatric history.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "observed_year": 1883,
+   "historical": {
+    "original_terms": "Acute psychosis (Vienna asylum, 1883)",
+    "modern_reading": "Probably an acute psychotic or affective episode; not general paresis",
+    "why_read": "The intercurrent-fever observation that led, over 34 years, to malaria therapy and psychiatry's only Nobel Prize."
+   }
   },
   {
    "id": "richards-2024",
@@ -10175,7 +10182,13 @@
     "note": "Joins other reports of mood disorders remitting after stroke; lesion-network analyses are recent.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "observed_year": 1950,
+   "historical": {
+    "original_terms": "Anxious depression",
+    "modern_reading": "Probably melancholic or agitated depression",
+    "why_read": "A pre-antidepressant observation that a small stroke could end a depression, decades before lesion-network mapping."
+   }
   },
   {
    "id": "behar-1999",
@@ -10549,7 +10562,13 @@
     "note": "Malarial fever therapy, established for general paresis (Wagner-Jauregg, 1917), was tried in schizophrenia and abandoned.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "observed_year": 1934,
+   "historical": {
+    "original_terms": "Schizophrenia",
+    "modern_reading": "Schizophrenia as diagnosed in 1930s India; course before the fever unclear",
+    "why_read": "Natural malaria, not inoculated, at the height of fever-therapy enthusiasm; the atebrin cure muddies which one mattered."
+   }
   },
   {
    "id": "hoirisch-clapauch-2013",
@@ -13161,7 +13180,13 @@
     "note": "Prefrontal leucotomy for severe obsessional illness was in use by 1954; the injury reproduced it.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "observed_year": 1954,
+   "historical": {
+    "original_terms": "Grave obsessional phenomena in a severely unbalanced individual",
+    "modern_reading": "Severe OCD, possibly with a personality disorder",
+    "why_read": "A self-inflicted frontal injury reproducing the leucotomy surgeons were then performing for the same illness."
+   }
   },
   {
    "id": "jing-2021",
