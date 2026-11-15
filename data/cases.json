@@ -18817,6 +18817,82 @@
     "basis": "judged"
    },
    "flags": []
+  },
+  {
+   "id": "riestra-2026",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Riestra JM, Munsar Z, Opler DJ",
+    "title": "Unexpected Improvement in Obsessive-Compulsive Disorder Symptoms Following Initiation of Bupropion",
+    "journal": "Prim Care Companion CNS Disord",
+    "year": 2026,
+    "volume": "28",
+    "issue": "4",
+    "pages": "26cr04209"
+   },
+   "ids": {
+    "doi": "10.4088/pcc.26cr04209",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": "https://www.psychiatrist.com/pcc/improvement-obsessive-compulsive-disorder-symptoms-bupropion/",
+    "abstract": null,
+    "doi": "https://doi.org/10.4088/pcc.26cr04209",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4088%2Fpcc.26cr04209"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Obsessive-compulsive & tic"
+    ],
+    "specific": "OCD (contamination aversions, musical obsessions, ordering rituals) with comorbid major depression in a 23-year-old woman who could not tolerate SSRIs",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Bupropion 150 mg/day for the depression and amotivation",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": "about 1 month",
+    "follow_up": "3 years",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 23-year-old woman whose OCD had kept her out of any job that involved touching fruit was started on bupropion for depression after two SSRIs failed; within a month her obsessions and rituals had faded, and three years later they had not come back.",
+   "caveat": "She was also taking N-acetylcysteine, which has some evidence in OCD, and lifting her depression may have loosened the rituals.",
+   "tags": [
+    "bupropion",
+    "depression",
+    "dopamine",
+    "noradrenaline",
+    "ocd"
+   ],
+   "same_patient_as": null,
+   "found_via": "Embase via CKN (EMB_unexpOutcome_v1)",
+   "date_added": "2026-11-15",
+   "verified": "2026-11-15: full text read (psychiatrist.com, free); no PMID yet",
+   "era": {
+    "label": "emerging",
+    "note": "Bupropion is not an OCD treatment; a few earlier reports were mixed, and Canan 2012 described body dysmorphic disorder remitting on it.",
+    "basis": "judged"
+   },
+   "flags": []
   }
  ]
 }

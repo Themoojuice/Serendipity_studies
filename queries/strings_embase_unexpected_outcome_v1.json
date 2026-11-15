@@ -1,0 +1,13 @@
+{
+ "database": "Embase via CKN (embase.com advanced search)",
+ "run_date": "2026-11-15",
+ "queries": [
+  {"query_id": "EMB_unexpOutcome_v1", "history": "#2 then #3",
+   "string_2": "'unexpected outcome of drug treatment'/exp AND 'mental disease'/exp/mj AND ('case report'/de OR 'case study'/de OR 'clinical article'/de) AND [humans]/lim",
+   "hits_2": 2381,
+   "string_3": "#2 AND (remission OR remitted OR resolv* OR resolution OR disappear* OR abolish* OR ameliorat* OR alleviat* OR ceased OR cessation OR improv* OR beneficial OR recover*):ti,ab NOT ('drug induced'/exp OR induced:ti OR induce:ti OR associated:ti)",
+   "hits_3": 814,
+   "notes": "Emtree indexes 'unexpected outcome of drug treatment' (77,979 records alone, search #1). Combined with a psychiatric disorder as a major focus and a case design, then narrowed to resolution wording and away from drug-induced syndromes. The UI showed 824 for #3; the results endpoint returned 814 distinct records."}
+ ],
+ "screening": "814 records; 643 new or blank in the ledger, every title screened in classifier order, abstracts or full text read for every candidate."
+}
