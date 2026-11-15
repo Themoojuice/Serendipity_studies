@@ -1,0 +1,10 @@
+{
+ "database": "Europe PMC (searches the OCR text of scanned PMC back issues)",
+ "run_date": "2026-11-15",
+ "queries": [
+  {"query_id": "ANT_FT_v1", "hits": 308,
+   "string": "(\"recovered his reason\" OR \"recovered her reason\" OR \"restored to reason\" OR \"reason was restored\" OR \"reason returned\" OR \"sanity returned\" OR \"sanity was restored\" OR \"cured of his insanity\" OR \"cured of her insanity\" OR \"insanity disappeared\" OR \"delusions disappeared\" OR \"his delusions vanished\" OR \"her delusions vanished\" OR \"became perfectly sane\" OR \"became quite sane\" OR \"perfectly rational\" OR \"mental symptoms disappeared\" OR \"mental condition cleared\" OR \"mind became clear\") AND (insanity OR insane OR lunatic OR melancholia OR mania OR \"dementia praecox\" OR asylum) AND PUB_YEAR:[1800 TO 1950]"},
+  {"query_id": "ANT_FT_v1_case_titles", "hits": 45, "note": "same phrases plus a few more, AND TITLE:(case OR cases OR recovery OR cure OR cured), 1800-1955; a check on how many hits are case-titled; no extra candidates found"}
+ ],
+ "notes": "Europe PMC indexes the OCR text of scanned 19th- and early 20th-century PMC articles, so phrase searches reach the body text. Most hits are container sections (reviews, society reports, news, 'Clinical Memoranda'), which cannot be judged from the title. Reading needs the page images: PMC serves them as plain images (the PDFs sit behind a proof-of-work check); a page was fetched in the browser, re-encoded and OCR'd locally with tesseract, never stored in the repo. PMC began challenging repeated article fetches after about ten pages, so reading stopped there."
+}
