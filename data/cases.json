@@ -1,7 +1,7 @@
 {
  "library": "Serendipity Case Library",
  "schema_version": "1.3",
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "unit_of_record": "One published study (a paper). n_patients counts patients within it; same_patient_as links papers describing the same patient.",
  "inclusion_criteria": [
   "A serious psychiatric syndrome resolved or substantially improved.",
@@ -18432,6 +18432,83 @@
    "era": {
     "label": "emerging",
     "note": "Earlier letters (2011, Yilmaz 2014) had reported methylphenidate for ADHD reducing stealing.",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "ray-2016",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Ray SM, Kious BM",
+    "title": "Sustained Resolution of Panic Disorder, Agoraphobia, and Generalized Anxiety Disorder With a Single Ketamine Infusion: A Case Report.",
+    "journal": "Prim Care Companion CNS Disord",
+    "year": 2016,
+    "volume": "18",
+    "issue": "4",
+    "pages": "15l01899"
+   },
+   "ids": {
+    "doi": "10.4088/pcc.15l01899",
+    "pmid": "27828703",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": "https://www.psychiatrist.com/pcc/resolution-of-panic-disorder-with-ketamine/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/27828703/",
+    "doi": "https://doi.org/10.4088/pcc.15l01899",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4088%2Fpcc.15l01899"
+   },
+   "access": "Free full text",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Anxiety"
+    ],
+    "specific": "Treatment-refractory panic disorder, agoraphobia and generalised anxiety disorder (with major depression) in a 34-year-old woman, largely housebound despite escitalopram, lamotrigine and ECT",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "A single 0.5 mg/kg ketamine infusion given in the emergency department for neck pain from herniated discs",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": "days",
+    "follow_up": "at least 10 weeks, still in remission after a car accident 2 months later",
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 34-year-old woman, housebound for years by panic disorder and agoraphobia that escitalopram, lamotrigine and ECT had barely touched, was given one ketamine infusion in the emergency department for neck pain; her panic attacks stopped, she began going out alone and started a business, and the remission was still holding months later.",
+   "caveat": "Her questionnaire scores were already low before the infusion, so the change was mostly behavioural, and months of ECT and lamotrigine may have been building towards it.",
+   "tags": [
+    "agoraphobia",
+    "analgesia",
+    "emergency-department",
+    "generalised-anxiety",
+    "ketamine",
+    "panic-disorder"
+   ],
+   "same_patient_as": null,
+   "found_via": "unsure pile, full-text appraisal",
+   "date_added": "2026-11-15",
+   "verified": "2026-11-15: full text read (psychiatrist.com, free); identifiers from PubMed",
+   "era": {
+    "label": "emerging",
+    "note": "Ketamine's antidepressant effect was established by 2016; its effect on panic and agoraphobia was unreported at the time (the authors' search found nothing).",
     "basis": "judged"
    },
    "flags": []
