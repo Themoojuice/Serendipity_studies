@@ -18664,6 +18664,159 @@
     "basis": "from downstream level"
    },
    "flags": []
+  },
+  {
+   "id": "benazzi-1993",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "B",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Benazzi F, Mazzoli M, Rossi E",
+    "title": "Auditory hallucinations suppressed by etizolam in a patient with schizophrenia.",
+    "journal": "Can J Psychiatry",
+    "year": 1993,
+    "volume": "38",
+    "issue": "8",
+    "pages": "574-5"
+   },
+   "ids": {
+    "doi": "10.1177/070674379303800810",
+    "pmid": "7902201",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/7902201/",
+    "doi": "https://doi.org/10.1177/070674379303800810",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F070674379303800810"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Persistent accusatory second-person auditory hallucinations in a 32-year-old woman with 15 years of schizophrenia, unchanged by years of depot fluphenazine and haloperidol",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Etizolam 2 mg/day added for the anxiety the voices caused",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "On-off rechallenge"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 32-year-old woman whose accusing voices had outlasted years of depot antipsychotics was given etizolam for the anxiety they caused; to her doctors' surprise the voices went within a week, came back each time the drug was stopped and went again when it was restarted, three times over, and estazolam could not stand in for it.",
+   "caveat": "Reviews of the day already credited benzodiazepines with some antipsychotic effect, so the surprise was the drug more than the class.",
+   "tags": [
+    "auditory-hallucinations",
+    "benzodiazepine",
+    "etizolam",
+    "rechallenge",
+    "schizophrenia",
+    "thienodiazepine"
+   ],
+   "same_patient_as": null,
+   "found_via": "unsure pile, full-text appraisal",
+   "date_added": "2026-11-15",
+   "verified": "2026-11-15: full text read (PDF supplied by Brendan via CKN); identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Reviews of the time suggested benzodiazepines could have antipsychotic effects as add-ons; etizolam itself had not been reported (the authors found nothing).",
+    "basis": "judged"
+   },
+   "flags": []
+  },
+  {
+   "id": "levine-1996",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Levine J, Cholestoy A, Zimmerman J",
+    "title": "Possible antidepressant effect of minocycline.",
+    "journal": "Am J Psychiatry",
+    "year": 1996,
+    "volume": "153",
+    "issue": "4",
+    "pages": "582"
+   },
+   "ids": {
+    "doi": "10.1176/ajp.153.4.582b",
+    "pmid": "8599421",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/8599421/",
+    "doi": "https://doi.org/10.1176/ajp.153.4.582b",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fajp.153.4.582b"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Depression in a woman with bipolar disorder",
+    "chronic": null,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Minocycline 150 mg/day for sinusitis",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "A woman with bipolar disorder whose depression improved markedly while she took minocycline for sinusitis; the first report of the antidepressant effect later tested in trials.",
+   "caveat": "The sinus infection itself may have been deepening her depression, so clearing it could have lifted her mood without any direct drug effect.",
+   "tags": [
+    "antibiotic",
+    "bipolar-depression",
+    "inflammation",
+    "minocycline",
+    "sinusitis"
+   ],
+   "same_patient_as": null,
+   "found_via": "unsure pile, full-text appraisal",
+   "date_added": "2026-11-15",
+   "verified": "2026-11-15: letter not read; indication (minocycline for sinusitis) and outcome from the Torrey & Davis 2012 review (supplied by Brendan); identifiers from Europe PMC",
+   "era": {
+    "label": "emerging",
+    "note": "Minocycline was later tested as an antidepressant in small trials, pooled in a 2017 meta-analysis (Rosenblat and McIntyre); not standard treatment.",
+    "basis": "judged"
+   },
+   "flags": []
   }
  ]
 }
