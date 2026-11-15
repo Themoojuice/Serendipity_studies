@@ -1,0 +1,10 @@
+{
+ "database": "Embase via CKN",
+ "run_date": "2026-11-15",
+ "query_id": "EMB_broad_v1_2 (rerun, capped pull)",
+ "string": "queries/strings_v1_embase.json -> queries.EMB_broad_v1_2 (unchanged)",
+ "history": "#4",
+ "hits": 30456,
+ "pull": "top 2,000 by Embase relevance (GET /rest/searches/4/articles?order=RELEVANCE), paced 0.7 s",
+ "screening": "1,333 new or blank; classifier order ranks 0-333 screened, then a seeded random 300 (seed 20261115) of ranks 334-1,332 -> stopping rule met with 0 includes; 47 library cases sat inside the 2,000."
+}

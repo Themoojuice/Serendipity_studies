@@ -69,10 +69,12 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
   - 243 records (227 cases, 16 context); ledger 68,804 rows; 43 unsure rows.
 - 2026-11-15 (evening, Brendan on CKN): **Embase Emtree 'unexpected outcome of drug treatment' (protocol v1.7.5)** (`scripts/batches/b2026_11_15_embase_unexpected_outcome.py`, `queries/strings_embase_unexpected_outcome_v1.json`): 814 records, 643 new or blank, all screened → **+1 case** (Riestra 2026: bupropion for depression, OCD gone for 3 years). Low yield; indexers use the term loosely.
   - 244 records (228 cases, 16 context); ledger 69,628 rows; 43 unsure rows.
+- 2026-11-15 (evening): **Embase broad Embase-only set, capped pull (protocol v1.7.6)** (`scripts/batches/b2026_11_15_embase_broad_capped.py`): EMB_broad_v1_2 rerun (#4, 30,456); top 2,000 by Embase relevance pulled; 1,333 new or blank; ranks 0–333 + random 300 screened → **stopping rule met, 0 cases**. 47 library cases were already inside the 2,000. Next item 1 is closed as a capped pull; the other 28,456 were not pulled.
+  - 244 records (228 cases, 16 context); ledger 71,630 rows; 44 unsure rows.
 - **Finding unscreened rows now:** current rows (no one `supersedes` them) with a **blank decision**. First pass = notes starting `rank `; batch 2 = `year-slice batch 2`; batch 3 = `year-slice batch 3`. Re-ranked rows' notes carry `rerank_v1 rank N`.
 - **Stopping-rule state (protocol §10), Europe PMC broad:** first pass screened 0–3,999 plus a 300 sample → not stopped (1 include in the sample). Batch 2 and batch 3 → both criteria met. Re-ranked order (v1.3): ranks 0–1,999 plus a 300 sample screened → **both criteria met; the Europe PMC broad set is done** (batch 3 met earlier).
 - **Next, in order:**
-  1. Embase broad Embase-only set (30,333 counted, never pulled): too big to pull whole. Options: re-rank a capped pull, or narrower title/abstract strings per syndrome; decide with Brendan.
+  1. (done 2026-11-15: Embase broad set as a capped pull, top 2,000 by relevance, 0 cases.)
   2. (done 2026-11-14: keto rerun, Embase title set.)
   3. (done 2026-11-14: PsycInfo title query; a broader title/abstract PsycInfo string is possible if the capture–recapture gap needs closing.)
   4. (done 2026-11-14: citation routes v2 (+4) and v3 (+0, converged). Rerun one hop from any later includes.)
