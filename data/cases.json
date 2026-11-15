@@ -18512,6 +18512,158 @@
     "basis": "judged"
    },
    "flags": []
+  },
+  {
+   "id": "andreou-2008",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Andreou C, Syngelakis M, Karavatos A",
+    "title": "Metformine for psychosis associated with the menstrual cycle in a patient with polycystic ovary syndrome.",
+    "journal": "Arch Womens Ment Health",
+    "year": 2008,
+    "volume": "11",
+    "issue": "5-6",
+    "pages": "387-8"
+   },
+   "ids": {
+    "doi": "10.1007/s00737-008-0032-7",
+    "pmid": "18827957",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/18827957/",
+    "doi": "https://doi.org/10.1007/s00737-008-0032-7",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1007%2Fs00737-008-0032-7"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Menstrual psychosis: manic and psychotic episodes in the days before each period since menarche, only partly helped by antipsychotics and mood stabilisers, in a young woman with polycystic ovary syndrome",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Metformin 850 mg/day for polycystic ovary syndrome, given because her menstrual dysfunction persisted",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "A young woman whose manic and psychotic episodes had arrived with her periods since adolescence, barely touched by antipsychotics and mood stabilisers, was started on metformin for polycystic ovary syndrome; once her cycles became regular, the episodes all but stopped for the following year.",
+   "caveat": "If anovulatory oestrogen swings were driving the episodes, restoring ovulation treated their cause rather than the psychosis.",
+   "tags": [
+    "menstrual-psychosis",
+    "metformin",
+    "oestrogen",
+    "ovulation",
+    "polycystic-ovary-syndrome"
+   ],
+   "same_patient_as": null,
+   "found_via": "unsure pile, full-text appraisal",
+   "date_added": "2026-11-15",
+   "verified": "2026-11-15: full text read through CKN (Springer); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
+  },
+  {
+   "id": "abe-2016",
+   "record_type": "case",
+   "status": "Provisional",
+   "tier": "C",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Abe K, Chiba Y, Katsuse O, Hirayasu Y",
+    "title": "A Case of Parkinson Disease With Both Visual Hallucination and Pain Improved by Gabapentin.",
+    "journal": "Clin Neuropharmacol",
+    "year": 2016,
+    "volume": "39",
+    "issue": "1",
+    "pages": "55-6"
+   },
+   "ids": {
+    "doi": "10.1097/wnf.0000000000000122",
+    "pmid": "26757314",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/26757314/",
+    "doi": "https://doi.org/10.1097/wnf.0000000000000122",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fwnf.0000000000000122"
+   },
+   "access": "Paywalled",
+   "design": "Case report",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Psychotic"
+    ],
+    "specific": "Visual hallucinations of insects, felt as painfully invading his body, in an 81-year-old man with advanced Parkinson's disease, persisting despite standard measures",
+    "chronic": null,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Gabapentin given to ease his pain",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 0,
+    "note": "",
+    "links": []
+   },
+   "summary": "An 81-year-old man with advanced Parkinson's disease saw insects that he felt burrowing into him; standard measures had failed, and gabapentin given for the pain ended both the pain and the hallucinations.",
+   "caveat": "The pain was part of the hallucinatory experience, so relieving it may have removed what kept the insects coming.",
+   "tags": [
+    "gabapentin",
+    "pain",
+    "parkinsons",
+    "tactile-hallucinations",
+    "visual-hallucinations"
+   ],
+   "same_patient_as": null,
+   "found_via": "unsure pile, full-text appraisal",
+   "date_added": "2026-11-15",
+   "verified": "2026-11-15: published abstract read through CKN (Ovid); identifiers from PubMed",
+   "era": {
+    "label": "novel",
+    "note": "",
+    "basis": "from downstream level"
+   },
+   "flags": []
   }
  ]
 }
