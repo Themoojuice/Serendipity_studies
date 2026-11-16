@@ -2008,6 +2008,219 @@
      "why": "Tics ending after a left temporal lobectomy"
     }
    ]
+  },
+  {
+   "case_id": "pozzi-2014",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Lifelong self-injury needing restraints doesn't stop on its own within days."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic and stable."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Genetically confirmed Lesch-Nyhan syndrome."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "All earlier drugs were weaned just before implantation; sleep improved."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Less dystonia and ballism means fewer involuntary blows; two became drowsy."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Caregiver-reported counts after a major intervention."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Caregiver interviews, no behaviour scale."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Three men, the same rapid change once the dose was stable, restraints removed and the effect held for 5 to 16 months. What can't be told apart is whether behaviour improved in its own right or because the body stopped flailing.",
+   "hypotheses": [
+    {
+     "claim": "Less dystonia, ballism, pain and sleep loss removed the triggers and mechanics of the self-injury.",
+     "chain": "Intrathecal baclofen → spinal GABA-B → spasticity, dystonia and ballism fall; sleep improves → fewer involuntary blows and less distress → self-injury stops",
+     "mechanisms": [
+      "Interoceptive and visceral input",
+      "Sleep and circadian rhythm"
+     ],
+     "latency_fit": "Fits",
+     "for": "Dystonia scores fell by about three-quarters; sleep improved; ballism was abolished.",
+     "against": "Lesch-Nyhan self-injury is compulsive and distressing, not just a by-product of movement.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Behaviour counts came from caregiver interviews, and motor symptoms improved at the same time.",
+     "test": "Whether self-injury tracks dystonia scores across dose changes."
+    },
+    {
+     "claim": "GABA-B activation functionally opposed hypersensitive D1 signalling in the basal ganglia (the authors' reading).",
+     "chain": "Baclofen → GABA-B receptors inhibit adenylyl cyclase, opposing D1 stimulation → less dopaminergic drive to self-injure",
+     "mechanisms": [
+      "GABA",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Fits the D1 supersensitivity model of Lesch-Nyhan self-injury.",
+     "against": "Intrathecal baclofen acts mainly on the spinal cord; brain levels are low.",
+     "confidence": "Low",
+     "uncertainty_driver": "No way in the data to separate a central behavioural effect from the motor one.",
+     "test": "Blinded dose reductions with behaviour and dystonia rated separately."
+    }
+   ],
+   "related": [
+    {
+     "id": "taira-2003",
+     "why": "Pallidal DBS for dystonia ended self-mutilation in Lesch-Nyhan syndrome"
+    }
+   ]
+  },
+  {
+   "case_id": "basheikh-2017",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "PTSD and depression of a few years can ease on their own."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Not judged against a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Functional seizures, PTSD and depression may have been partly driven by drug-resistant epilepsy."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Antiepileptics simplified to lamotrigine; the relief of seizure freedom."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He functioned better, not less."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A successful operation is a powerful event, and functional seizures respond to belief and context."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No psychiatric scales; 'resolved' at 4 weeks is the authors' word."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Everything improved together at four weeks, which fits removing the burden of epilepsy as well as any circuit effect. Without scales the case can only say that it happened.",
+   "hypotheses": [
+    {
+     "claim": "Ending the epileptic seizures removed the threat and disability that sustained the PTSD, depression and functional seizures.",
+     "chain": "Seizure freedom → less fear, injury and disability; renewed control → arousal falls → PTSD, depression and functional seizures settle",
+     "mechanisms": [
+      "Meaning and life reorganisation",
+      "Threat and arousal"
+     ],
+     "latency_fit": "Fits",
+     "for": "All improved together within four weeks; functional seizures often stop after epilepsy surgery (authors).",
+     "against": "PTSD rooted in military trauma wouldn't obviously depend on seizure control.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No psychiatric scales before or after.",
+     "test": "PTSD and depression scales before and after surgery in patients with similar comorbidity."
+    },
+    {
+     "claim": "Removing the right amygdala and hippocampus damped the fear circuitry behind the PTSD.",
+     "chain": "Right mesial temporal resection → less amygdala-driven threat responding → PTSD symptoms fall",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "A right-sided resection including mesial structures; the right-amygdala PTSD hypothesis.",
+     "against": "No measures; the resection's extent isn't detailed.",
+     "confidence": "Low",
+     "uncertainty_driver": "Resection extent and symptom severity are both undocumented.",
+     "test": "PTSD outcomes after right versus left temporal resections."
+    }
+   ],
+   "related": [
+    {
+     "id": "shreedhara-2018",
+     "why": "OCD better after right temporal lobectomy"
+    },
+    {
+     "id": "corte-2025",
+     "why": "Non-epileptic seizures gone after ECT given for depression"
+    }
+   ]
+  },
+  {
+   "case_id": "aminzade-2021",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Twenty-four years of refractory OCD."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic and stable before surgery."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-documented OCD within Tourette syndrome."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Medicines changed repeatedly, including fluvoxamine 250 mg later."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Tics got worse, so there was no general damping."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Open-label DBS with frequent programming visits."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Only two Y-BOCS values; session timing in the table is ambiguous."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "OCD improved as stimulation was optimised while tics worsened: a dissociation no general effect would produce. The medication changes keep it from being cleaner.",
+   "hypotheses": [
+    {
+     "claim": "Stimulation spread into the associative-limbic territory of anteromedial GPi, modulating the OCD loop more than the motor loop.",
+     "chain": "Anteromedial GPi stimulation → volume of tissue activated reaches associative and limbic pallidal fields → OCD loop modulated; motor (tic) loop less so",
+     "mechanisms": [
+      "Stimulation of a circuit"
+     ],
+     "latency_fit": "Fits",
+     "for": "OCD improved while tics didn't; response varied with settings (volume of tissue activated shown in the paper).",
+     "against": "Anteromedial GPi usually helps tics; medication changes muddy the course.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Only two Y-BOCS values and many medication changes, so the dose-response is loosely reconstructed.",
+     "test": "Blinded on–off stimulation with Y-BOCS and tic ratings at fixed medication."
+    }
+   ],
+   "related": [
+    {
+     "id": "taira-2003",
+     "why": "Pallidal DBS for dystonia ended self-mutilation in Lesch-Nyhan syndrome"
+    }
+   ]
   }
  ]
 }

@@ -8366,7 +8366,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -8374,13 +8374,186 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "borderline",
+      "note": "DBS was for Tourette syndrome, whose OCD was part of the disability, and anteromedial GPi has been used for isolated OCD."
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Anteromedial GPi stimulation helping OCD had been reported (authors); the surprise was OCD improving while tics didn't."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Y-BOCS 38 → 9; symptoms varied with settings (a dose-response, not a documented off-on); medicines changed repeatedly, including fluvoxamine later."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "32-year-old man",
+     "age": 32,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -24,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Severe, disabling OCD from 8 (tics from 5); adult ADHD, anxiety, sleep disorder"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -10,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Behavioural therapy and many drugs: sertraline 200 mg, clomipramine 300 mg, venlafaxine, citalopram, mirtazapine, buspirone, aripiprazole, pimozide 12 mg",
+       "to": -0.1
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Before surgery",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 38
+        },
+        {
+         "scale": "PUTS",
+         "value": 28
+        }
+       ]
+      },
+      {
+       "kind": "cointervention",
+       "t": -1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Bilateral anteromedial globus pallidus internus electrodes implanted under local anaesthesia"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Stimulation switched on (1 V, 80 µs, 85 Hz)"
+      },
+      {
+       "kind": "assessment",
+       "t": 4,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Tics better"
+      },
+      {
+       "kind": "first_change",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "OCD better, tics as before; sertraline halved",
+       "state": "Partial"
+      },
+      {
+       "kind": "best_response",
+       "t": 8,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Optimal settings: OCD dramatically better, tics worse; clomipramine, buspirone and venlafaxine stopped",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 9
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 14,
+       "unit": "months",
+       "precision": "approx",
+       "label": "OCD still improved; a new eyebrow tic; now venlafaxine 75 mg, aripiprazole 35 mg, fluvoxamine 250 mg, pimozide 4 mg",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "PUTS",
+         "value": 23
+        }
+       ],
+       "note": "Session timing in the paper's table is ambiguous."
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Stimulation target",
+    "side": "Bilateral",
+    "regions": [
+     "Globus pallidus"
+    ],
+    "specific": "Anteromedial globus pallidus internus, both sides (right x 15.2, y 6.4, z −7.7; left x −14.3, y 7.3, z −9.4)",
+    "aetiology": "Not applicable",
+    "imaging": "MRI and CT",
+    "mappable": "Coordinates"
+   },
+   "derived": {
+    "latency_days": 42,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 24.0,
+    "follow_up_days": 426.125,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "Y-BOCS",
+      "before": 38,
+      "after": 9,
+      "change_pct": -76.3
+     },
+     {
+      "scale": "PUTS",
+      "before": 28,
+      "after": 23,
+      "change_pct": -17.9
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -15899,7 +16072,7 @@
    "id": "basheikh-2017",
    "record_type": "case",
    "status": "Provisional",
-   "tier": "C",
+   "tier": "B",
    "collections": [
     "phase1c"
    ],
@@ -15966,7 +16139,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, first pass)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent: Reutens 1997 found chronic interictal psychosis unchanged, and seizure control is a confound (see Pintor 2022).",
@@ -15974,13 +16147,150 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Depression, PTSD and functional seizures in drug-resistant epilepsy may all lean on the epilepsy and its burden."
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "Non-epileptic seizures often stop after successful epilepsy surgery (Reuber's series, cited by the authors)."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "No psychiatric scales; seizure freedom and a simpler antiepileptic regimen came with the improvement."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "48-year-old man",
+     "age": 48,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -6,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Non-epileptic 'spells' from 42: asymmetric shaking for 5–10 minutes, almost daily"
+      },
+      {
+       "kind": "assessment",
+       "t": -5,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Epileptic seizures from 43 (focal to bilateral tonic-clonic every 1–2 months); depression diagnosed at 43"
+      },
+      {
+       "kind": "diagnosis",
+       "t": -4,
+       "unit": "years",
+       "precision": "approx",
+       "label": "PTSD diagnosed at 44, related to military experience"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -4,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Phenytoin, levetiracetam, carbamazepine, clobazam, lamotrigine, valproate, lacosamide in combinations; antidepressants (unnamed)",
+       "to": -0.1
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Four-week video-EEG admission: epileptic seizures from right mesial temporal sclerosis and non-epileptic seizures both confirmed"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Right anterior temporal resection (pathology: hippocampal sclerosis with focal cortical dysplasia type 3A)"
+      },
+      {
+       "kind": "best_response",
+       "t": 4,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "No seizures of either kind; depression and PTSD reported resolved",
+       "state": "Remitted"
+      },
+      {
+       "kind": "cointervention",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Antidepressants stopped without tapering: a transient return of depression and PTSD symptoms, settled after the psychiatrist adjusted medicines",
+       "note": "Timing not stated."
+      },
+      {
+       "kind": "follow_up",
+       "t": 1,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Free of all seizures on lamotrigine alone; psychiatric symptoms settled; psychotropics much reduced",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Resection or ablation",
+    "side": "Right",
+    "regions": [
+     "Temporal, medial (amygdala, hippocampus)",
+     "Temporal, lateral"
+    ],
+    "specific": "Right anterior temporal resection for mesial temporal sclerosis with focal cortical dysplasia type 3A",
+    "aetiology": "Surgery",
+    "imaging": "MRI",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 28,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 6.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -24112,7 +24422,7 @@
    "id": "pozzi-2014",
    "record_type": "case",
    "status": "Provisional",
-   "tier": "C",
+   "tier": "B",
    "collections": [
     "phase1f"
    ],
@@ -24176,7 +24486,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC citations (CIT_EPMC_v2)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (Europe PMC record); identifiers from PubMed",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -24184,13 +24494,267 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Scored on patient 1. Self-injury counted daily from caregiver interviews, not a standardised scale; earlier drugs weaned just before implantation; dystonia improved at the same time."
+    },
+    "jbi": {
+     "checklist": "Case series",
+     "answers": [
+      "U",
+      "Y",
+      "Y",
+      "U",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "NA"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Patient 1",
+     "age": 19,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -16,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Classic Lesch-Nyhan syndrome: severe self-injury and involuntary aggression (punching, biting) from early childhood"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -7,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Trihexyphenidyl (2006–2010); S-adenosyl methionine with waning effect, stopped before implantation",
+       "to": -0.01
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Finger biting about 10 a day, punching 10, lip biting 2–3; permanent whole-body restraint; 2 hours' sleep",
+       "scores": [
+        {
+         "scale": "UDRS (dystonia)",
+         "value": 22
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Intrathecal baclofen pump implanted; titrated to 380 µg a day"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Within three days of reaching the stable dose (titration time not stated): ballism gone, aggression and self-injury stopped",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 16,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Finger biting about 3 a day, no punching; restraint only occasionally on the right arm; better sleep and speech",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "UDRS (dystonia)",
+         "value": 5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "patient": "Patient 2",
+     "age": 39,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -30,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Severe finger biting; permanent finger protection; dystonia and ballism from 9"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -16,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Risperidone (1998–2011); levetiracetam, clonazepam, sertraline, zopiclone, all weaned in February 2014",
+       "to": -0.01
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Finger biting about 20 a day, lip biting 2",
+       "scores": [
+        {
+         "scale": "UDRS (dystonia)",
+         "value": 23
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Intrathecal baclofen pump implanted; titrated to 270 µg a day"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Within three days of reaching the stable dose (titration time not stated): ballism gone, aggression and self-injury stopped",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Finger biting about 5 a day, no lip biting; finger protection removed; moderate nausea, daytime drowsiness",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "UDRS (dystonia)",
+         "value": 6.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "patient": "Patient 3",
+     "age": 20,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -18,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Punching himself and others; strong retropulsion, dystonia and ballism"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -18,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Enzyme replacement (1996–2010), mesenchymal stem cells (2012), gabapentin (weaned March 2014)",
+       "to": -0.01
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Punching 2–3 a day, finger biting 3–4, lip biting 1–2",
+       "scores": [
+        {
+         "scale": "UDRS (dystonia)",
+         "value": 38
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Intrathecal baclofen pump implanted; titrated to 550 µg a day"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Within three days of reaching the stable dose (titration time not stated): ballism gone, aggression and self-injury stopped",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 5,
+       "unit": "months",
+       "precision": "exact",
+       "label": "No self-injury or aggression; mild drowsiness",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "UDRS (dystonia)",
+         "value": 11
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 3,
+    "latency_band": "1-13 days",
+    "latency_bound": "at least",
+    "baseline_years": 16.0,
+    "follow_up_days": 487.0,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "UDRS (dystonia)",
+      "before": 22,
+      "after": 5,
+      "change_pct": -77.3
+     }
+    ],
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 5,
+    "jbi_of": 10,
+    "rule_tier": "B"
    }
   },
   {
