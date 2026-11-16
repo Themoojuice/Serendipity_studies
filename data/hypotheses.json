@@ -1780,6 +1780,234 @@
      "why": "Psychosis gone after frontal gunshot damage"
     }
    ]
+  },
+  {
+   "case_id": "hamdani-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "A manic episode treated for months may simply have run its course."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Admitted at an extreme (YMRS 43, restraint)."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "If the filariasis drove the mania, this is a secondary syndrome treated at its cause."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Valproate, started weeks before, could have been taking effect."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He became calmer and euthymic, not sedated."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Not relevant in severe mania."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No follow-up length; the authors' group researches infection in bipolar disorder."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "A YMRS fall from 43 to 9 two weeks into anthelmintics, after months of failed drugs, is striking, but a delayed valproate response and the episode's natural end compete closely.",
+   "hypotheses": [
+    {
+     "claim": "A delayed response to valproate, or the episode running its natural course.",
+     "chain": "Valproate from about three weeks before → full antimanic effect arriving; manic episodes end on their own over months",
+     "mechanisms": [
+      "Ion channels and excitability"
+     ],
+     "latency_fit": "Fits",
+     "for": "Valproate had just been added; the episode was already months old.",
+     "against": "Months of adequate treatment had failed, and the change came abruptly at two weeks into anthelmintics.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No valproate levels and no dates for the episode's start.",
+     "test": "Valproate levels and a YMRS series before the anthelmintics."
+    },
+    {
+     "claim": "Clearing the parasite removed a Th1-driven inflammatory push on mood circuits.",
+     "chain": "Filarial infection → chronic Th1 inflammation (IFN-γ, TNF) → mood circuits destabilised → anthelmintics kill the parasite → inflammation settles → mania resolves",
+     "mechanisms": [
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Fits",
+     "for": "Active infection with hypereosinophilia; euthymia tracked parasite clearance (authors).",
+     "against": "No inflammatory markers; filariasis is common and usually psychiatrically silent.",
+     "confidence": "Low",
+     "uncertainty_driver": "No cytokines or inflammatory markers before and after.",
+     "test": "IL-6, TNF and eosinophils before and after, alongside YMRS."
+    },
+    {
+     "claim": "Albendazole or ivermectin acted directly: a Th2 shift or mitochondrial effects.",
+     "chain": "Albendazole → Th2 cytokines (IL-5, IL-13) damp Th1 activity; ivermectin → mitochondrial effects → mood stabilised",
+     "mechanisms": [
+      "Inflammation and cytokines",
+      "Bioenergetics and mitochondria"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Both mechanisms are proposed by the authors.",
+     "against": "Ivermectin barely enters the brain (authors); no supporting data in the case.",
+     "confidence": "Low",
+     "uncertainty_driver": "Purely pharmacological reasoning; nothing measured.",
+     "test": "The same drugs in an uninfected patient with mania."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "makris-2021",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Resignation syndrome lifts with safety and hope, often after months; six months is typical."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Steadily unresponsive for months."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Functional coma, catatonia, or a state partly driven by pain and bladder dysfunction."
+    },
+    "cointervention": {
+     "rating": "Likely",
+     "why": "Months of better housing, support, fluoxetine and bladder care, with asylum prospects improving."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "She became more responsive, not less."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Surgery is a powerful event for a family seeking help."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No follow-up length; outcome described briefly."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "The authors leave the cause open, rightly. Six months is about when resignation syndrome lifts with care, and everything else was changing too. What remains interesting is the abruptness within a week of the operation.",
+   "hypotheses": [
+    {
+     "claim": "Accumulated safety, support and hope reached a turning point, with the operation as a meaningful event for the family.",
+     "chain": "Better housing and support over months → family hope renewed → child re-engages; the operation marks a turning point",
+     "mechanisms": [
+      "Social and environmental change",
+      "Meaning and life reorganisation"
+     ],
+     "latency_fit": "Fits",
+     "for": "Six months fits the usual course; the family's support had been renewed.",
+     "against": "The change was abrupt, within a week of surgery.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Nothing documents the family's circumstances or hope at the time.",
+     "test": "Recovery timing in similar children relative to asylum news and medical events."
+    },
+    {
+     "claim": "Relieving chronic pain and visceral distress (tethered cord, neurogenic bladder) removed a bodily driver of the withdrawal.",
+     "chain": "Tethered cord → pain, urinary retention, constipation → distress feeding withdrawal → de-tethering relieves it → re-engagement",
+     "mechanisms": [
+      "Interoceptive and visceral input"
+     ],
+     "latency_fit": "Fits",
+     "for": "Within a week of de-tethering; bladder retention had worsened before surgery.",
+     "against": "Bladder care had begun earlier; resignation syndrome lifts on its own.",
+     "confidence": "Low",
+     "uncertainty_driver": "No pain or bladder measures around the operation.",
+     "test": "Pain scores and bladder function before and after, against responsiveness."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "shreedhara-2018",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Sixteen years of OCD."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Not judged against a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Interictal OC symptoms in temporal lobe epilepsy may be driven by the seizures."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Seizures fell; whether the SSRI continued isn't stated."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Removing the amygdala can blunt fear and anxiety in general."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Relief after successful surgery."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Y-BOCS at three time points."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Y-BOCS fell from 25 to 3 with antiepileptics unchanged, and held at a year. Seizures only lessened, so the OCD fell further than the epilepsy did.",
+   "hypotheses": [
+    {
+     "claim": "Removing the right amygdala and hippocampus took out a limbic node feeding fear-driven obsessions.",
+     "chain": "Right amygdala and hippocampus resected → loss of limbic input to the orbitofrontal-striatal loop → contamination fear and rituals fade",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Y-BOCS 25 → 3 on unchanged antiepileptics; her fear aura and contamination fear both implicate the amygdala; similar lobectomy reports.",
+     "against": "First reassessed at 6 months; seizures also fell.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No measure between surgery and 6 months, so the time course is unknown.",
+     "test": "Y-BOCS in the weeks after surgery; OCD outcome in seizure-free and non-seizure-free lobectomy patients."
+    },
+    {
+     "claim": "Fewer seizures and interictal discharges removed a seizure-driven part of the OCD.",
+     "chain": "Epileptogenic focus removed → fewer discharges spreading to limbic and frontal circuits → OC symptoms fall",
+     "mechanisms": [
+      "Ion channels and excitability"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "OCD tends to worsen with uncontrolled temporal lobe epilepsy (authors).",
+     "against": "Seizures only lessened (ILAE class 2), yet the OCD nearly vanished.",
+     "confidence": "Low",
+     "uncertainty_driver": "No post-operative EEG to relate discharges to symptoms.",
+     "test": "Post-operative EEG and Y-BOCS together."
+    }
+   ],
+   "related": [
+    {
+     "id": "juiz-fernandez-2022",
+     "why": "Rat phobia and depression better after right anteromedial temporal resection"
+    },
+    {
+     "id": "ripsman-2025",
+     "why": "Tics ending after a left temporal lobectomy"
+    }
+   ]
   }
  ]
 }

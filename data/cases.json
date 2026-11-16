@@ -8987,7 +8987,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "Follows Kanner 1993 and Guarnieri 2005.",
@@ -8995,13 +8995,168 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "OCD remitting after temporal lobectomy had been reported before (Kanner, Guarnieri; cited by the authors)."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Interictal OC symptoms in temporal lobe epilepsy may be seizure-linked."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Y-BOCS 25 → 3 → 2; first reassessed at 6 months, so timing unknown; antiepileptics unchanged to 6 months."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "33-year-old woman",
+     "age": 33,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "assessment",
+       "t": -22,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Temporal lobe seizures from 11: fear aura, automatisms, left arm posturing"
+      },
+      {
+       "kind": "onset",
+       "t": -16,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Contamination fears with washing rituals after defecation, harm obsessions, magical thinking"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "SSRI: about 40% better"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Two seizures a month on lamotrigine, levetiracetam and clobazam; right mesial temporal sclerosis",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 25
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Right anterior temporal lobectomy with amygdalohippocampectomy"
+      },
+      {
+       "kind": "best_response",
+       "t": 6,
+       "unit": "months",
+       "precision": "at most",
+       "label": "OCD much better, seizures fewer; antiepileptics unchanged",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 3
+        }
+       ]
+      },
+      {
+       "kind": "cointervention",
+       "t": 10,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Levetiracetam tapered; topiramate started"
+      },
+      {
+       "kind": "follow_up",
+       "t": 12,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Still much better; quality of life improved",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 2
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Resection or ablation",
+    "side": "Right",
+    "regions": [
+     "Temporal, medial (amygdala, hippocampus)",
+     "Temporal, lateral"
+    ],
+    "specific": "Standard right anterior temporal lobectomy with amygdalohippocampectomy for right mesial temporal sclerosis",
+    "aetiology": "Surgery",
+    "imaging": "MRI",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 182.625,
+    "latency_band": "Over 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 16.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "Y-BOCS",
+      "before": 25,
+      "after": 2,
+      "change_pct": -92.0
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -15918,7 +16073,7 @@
    "id": "hamdani-2013",
    "record_type": "case",
    "status": "Provisional",
-   "tier": "C",
+   "tier": "A",
    "collections": [
     "phase1c"
    ],
@@ -15983,7 +16138,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, first pass)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -15991,20 +16146,157 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "If the filariasis was driving the mania, treating it treated the cause (an E4-type secondary syndrome)."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "YMRS 43 to 9; psychotropic doses unchanged and encephalopathy excluded (authors); valproate had been started weeks before."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "31-year-old man",
+     "age": 31,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "diagnosis",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Depression with delusions three years earlier; haloperidol; two admissions in Congo; this is a third relapse"
+      },
+      {
+       "kind": "onset",
+       "t": -2,
+       "unit": "months",
+       "precision": "at least",
+       "label": "Manic episode: agitation, aggression, grandiose, mystical and persecutory delusions; restraint and seclusion",
+       "scores": [
+        {
+         "scale": "YMRS",
+         "value": 43
+        }
+       ]
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -2,
+       "unit": "months",
+       "precision": "at least",
+       "label": "Clonazepam 8 mg, loxapine 400 mg, cyamemazine 400 mg, aripiprazole 25 mg, olanzapine, amisulpride 1,200 mg, each for weeks, with good adherence"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -3,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Valproate 1,250 mg a day for several weeks, without effect (continued)"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Hypereosinophilia → Wuchereria bancrofti filariasis on immunodiagnosis; no filarial symptoms; MRI normal"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Ivermectin plus albendazole; psychotropic doses unchanged"
+      },
+      {
+       "kind": "best_response",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Agitation and aggression clearly reduced; no sign of encephalopathy",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "YMRS",
+         "value": 9
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Euthymic as the parasite cleared on immunodiagnosis",
+       "state": "Remitted",
+       "note": "Timing not stated."
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 14,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 0.17,
+    "follow_up_days": 60.875,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "YMRS",
+      "before": 43,
+      "after": 9,
+      "change_pct": -79.1
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
    "id": "makris-2021",
    "record_type": "case",
    "status": "Provisional",
-   "tier": "C",
+   "tier": "B",
    "collections": [
     "phase1c"
    ],
@@ -16072,7 +16364,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, stopping-rule random sample)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -16080,13 +16372,135 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Chronic pain and bladder dysfunction from the tethered cord may have been part of what drove the withdrawal."
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "Resignation syndrome usually lifts over months with safety and care, which she was receiving."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "AVPU plotted over time; fluoxetine, psychosocial support and bladder care ran throughout, not separated."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "9-year-old girl",
+     "age": 9,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "assessment",
+       "t": -4,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Bomb blast (2015): leg and back injuries, brother killed; femur operations away from family"
+      },
+      {
+       "kind": "onset",
+       "t": -6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Witnessed a fatal stabbing in the camp; within days stopped speaking, shut her eyes, swallowed only when fed"
+      },
+      {
+       "kind": "assessment",
+       "t": -5,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Admitted in Athens: eyes shut, mute, unresponsive; resignation syndrome (grade 1) versus catatonia; EEG awake rhythm"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -5,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Benzodiazepines ineffective and tapered; low-dose risperidone for night terrors; fluoxetine started"
+      },
+      {
+       "kind": "cointervention",
+       "t": -5,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Better housing; continuous psychological, social and legal support"
+      },
+      {
+       "kind": "cointervention",
+       "t": -4,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Tethered cord with syringohydromyelia, neurogenic bladder, kidney stone: catheterisation, laxatives, antibiotics for two urinary infections"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "De-tethering operation (L4–L5 hemilaminectomy)"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "Opening her eyes more, responding to her surroundings, simple conversations; no memory of the unresponsive months",
+       "state": "Partial"
+      },
+      {
+       "kind": "cointervention",
+       "t": 1.5,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Asylum granted (April 2020)"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 7,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 0.5,
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
