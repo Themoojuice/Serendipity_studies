@@ -1253,6 +1253,226 @@
      "why": "Semaglutide for obesity, drinking fell"
     }
    ]
+  },
+  {
+   "case_id": "sciortino-2021",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Patient 1's binge eating had come and gone for years."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Patient 1 had just gained 12 kg in two months, a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Typical binge eating disorder in both."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Medicines unchanged for 4 weeks before and during."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Neither became less active."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Open label, though nobody was looking at eating."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No eating scale; frequency from recall at the end of the cycle; interview-only follow-up."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Two patients, the same timing, medicines unchanged, and depression that barely moved: the binge effect looks specific rather than riding on mood. Without a binge diary, though, the size of the change rests on recall.",
+   "hypotheses": [
+    {
+     "claim": "Prefrontal iTBS strengthened top-down control over binge urges.",
+     "chain": "Accelerated iTBS at left dorsolateral prefrontal cortex → more excitable inhibitory-control node → urge-to-binge coupling weakened → binges stop",
+     "mechanisms": [
+      "Stimulation of a circuit"
+     ],
+     "latency_fit": "Fits",
+     "for": "Same timing in both; depression barely improved, so the effect looks specific; echoes Downar's dorsomedial case.",
+     "against": "No eating measures; 12-week follow-up only; open label.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No binge-eating scale or diary, so frequency comes from recall at the end of the cycle.",
+     "test": "Sham-controlled accelerated iTBS with daily binge diaries."
+    }
+   ],
+   "related": [
+    {
+     "id": "downar-2012",
+     "why": "Dorsomedial prefrontal rTMS stopped refractory bulimia, with rechallenge"
+    }
+   ]
+  },
+  {
+   "case_id": "yuan-2025",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Fifty a day for decades."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Not judged against a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Plain heavy nicotine dependence."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "A month of enforced abstinence with pneumonia and emphysema; family supervision afterwards."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Frontal damage, atrophy and age can reduce initiative of every kind."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Nothing was offered for smoking."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Reported by the patient's first-degree relative; no scales."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "The striking detail is not that he stopped but that a 50-a-day smoker had no craving or withdrawal. The report, by a relative and without scales, can't carry more than that.",
+   "hypotheses": [
+    {
+     "claim": "Damage to frontal reward-regulation circuitry removed nicotine craving.",
+     "chain": "Right frontal contusion and diffuse injury → disrupted frontostriatal reward circuitry → nicotine loses its pull → no craving or withdrawal",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Abrupt loss of craving with no withdrawal; persisting right frontal damage on MRI.",
+     "against": "Right frontal cortex isn't the insula; diffuse atrophy and leukoaraiosis blur any localisation.",
+     "confidence": "Low",
+     "uncertainty_driver": "Localisation is coarse (contusion plus bilateral subdurals), so no network can be tested.",
+     "test": "Lesion network mapping of the contusion against the addiction remission network."
+    },
+    {
+     "claim": "Hospital-enforced abstinence during an acute illness broke the habit, and post-injury apathy kept it broken.",
+     "chain": "A month on the ward with pneumonia → no cigarettes → habit interrupted; less initiative after the injury → doesn't restart",
+     "mechanisms": [
+      "Social and environmental change",
+      "Global suppression (sedation, apathy, cognitive loss)"
+     ],
+     "latency_fit": "Fits",
+     "for": "A month in hospital at 87; family supervision afterwards.",
+     "against": "Enforced abstinence in a 50-a-day smoker normally brings withdrawal and craving.",
+     "confidence": "Low",
+     "uncertainty_driver": "No withdrawal or craving scale, and the reporter is a relative.",
+     "test": "Withdrawal ratings in comparable smokers admitted without brain injury."
+    }
+   ],
+   "related": [
+    {
+     "id": "naqvi-2007",
+     "why": "Insula lesions ending smoking"
+    },
+    {
+     "id": "haque-2025",
+     "why": "Orbitofrontal contusion ending alcohol craving"
+    }
+   ]
+  },
+  {
+   "case_id": "hill-2025",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Drinking fell on the drug and came straight back off it."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Came for weight, not at a drinking crisis."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Moderate-to-severe alcohol use disorder on AUDIT."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Diet and exercise counselling and clinic contact; bupropion continued."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Feeling full after drinking: slowed gastric emptying blunts intake of anything."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Pre-contemplative about drinking; the drug was for weight."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-reported beers and AUDIT; wife confirmed adherence."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "On the drug, drinking fell 90 to about 6 a month; off it (insurance lost) it returned within two weeks and reached baseline within four months; and on it, binges clustered in the two days before each weekly dose. That is reversal and a dose-timing effect in one man.",
+   "hypotheses": [
+    {
+     "claim": "GLP-1 receptor activation reduced alcohol reward and craving.",
+     "chain": "Dulaglutide → GLP-1 receptors in reward and satiety regions → less dopamine response to alcohol, reduced urges → drinking falls; wears off before each dose and on stopping",
+     "mechanisms": [
+      "Neuropeptide (oxytocin, orexin, other)",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Reduced urges and cravings, not just fullness; end-of-dose binges; relapse within two weeks of stopping.",
+     "against": "Fullness after drinking suggests a gut contribution; diet counselling ran alongside.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Self-reported drinking with no biomarker, so the size of the effect is uncertain.",
+     "test": "Phosphatidylethanol across the dosing week and through a stop-restart."
+    },
+    {
+     "claim": "Slowed gastric emptying and satiety made drinking physically unappealing.",
+     "chain": "Dulaglutide → delayed gastric emptying → fullness after a few beers → less drinking",
+     "mechanisms": [
+      "Interoceptive and visceral input"
+     ],
+     "latency_fit": "Fits",
+     "for": "He reported feeling full after drinking.",
+     "against": "He also reported fewer urges, and binges returned exactly when the drug's effect waned.",
+     "confidence": "Low",
+     "uncertainty_driver": "Satiety and craving weren't rated separately.",
+     "test": "Separate satiety and craving ratings across the dosing week."
+    }
+   ],
+   "related": [
+    {
+     "id": "kelly-2026",
+     "why": "Semaglutide ending an impulse control disorder, with rechallenge"
+    },
+    {
+     "id": "meilinger-2026",
+     "why": "Semaglutide for obesity, drinking fell"
+    },
+    {
+     "id": "takizawa-2026",
+     "why": "Tirzepatide, three heavy drinkers drank less"
+    }
+   ]
   }
  ]
 }

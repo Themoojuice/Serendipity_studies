@@ -4897,7 +4897,7 @@
    "outcome": {
     "resolution": "Complete",
     "time_to_resolution": null,
-    "follow_up": "6 months",
+    "follow_up": null,
     "reversal": "None reported"
    },
    "downstream": {
@@ -4906,7 +4906,7 @@
     "links": []
    },
    "summary": "An 87-year-old lost all nicotine craving after a severe head injury and was still abstinent at six months.",
-   "caveat": "",
+   "caveat": "A month in hospital with pneumonia enforced abstinence, which explains not smoking, though not the absent craving and withdrawal.",
    "tags": [
     "smoking",
     "tbi"
@@ -4914,7 +4914,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -4922,13 +4922,136 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Smoking stopping after brain lesions was known since the insula studies (2007)."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "A month in hospital with pneumonia and emphysema at 87 forces abstinence, and many smokers don't restart after such an admission."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "No smoking scale; hospital abstinence and the acute illness not separated. The corresponding author is the patient's first-degree relative."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "87-year-old man",
+     "age": 87,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -50,
+       "unit": "years",
+       "precision": "approx",
+       "label": "At least 50 cigarettes a day for decades (about 60 pack-years)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Fall: bilateral frontotemporal subdural haematomas, right frontal contusion, subarachnoid haemorrhage, skull fracture; conscious throughout"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "A month in hospital: pneumonia (ceftazidime), mannitol, nimodipine, levetiracetam, metoprolol; no smoking on the ward"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "No craving or withdrawal seen by staff or family",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Recovered and mobile; abstinent, no craving",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 3,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Abstinent, no craving (patient and daughter separately)",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Abstinent without craving; MRI: right frontal malacia, atrophy, leukoaraiosis",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Injury",
+    "side": "Right",
+    "regions": [
+     "Frontal, other"
+    ],
+    "specific": "Right frontal contusion with haemorrhage, plus bilateral frontotemporal subdural haematomas and subarachnoid blood; right frontal malacia on MRI at 6 months",
+    "aetiology": "Trauma",
+    "imaging": "MRI and CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 7,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 50.0,
+    "follow_up_days": 182.625,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -5250,7 +5373,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -5258,13 +5381,273 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "By 2021 there was a case report and reviews of prefrontal rTMS for binge eating (the authors cite them)."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "Patient 1's binge eating had waxed and waned for years."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Scored on patient 2. No binge-eating scale or diary; medicines unchanged for 4 weeks before and during, stated."
+    },
+    "jbi": {
+     "checklist": "Case series",
+     "answers": [
+      "Y",
+      "N",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "NA"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Patient 1",
+     "age": 45,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "assessment",
+       "t": -32,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Anorexia nervosa at 13, then bulimia for 10 years, then remission"
+      },
+      {
+       "kind": "onset",
+       "t": -7,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Binge eating disorder from 38: night-time fridge binges, waxing and waning"
+      },
+      {
+       "kind": "assessment",
+       "t": -2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Three or four binges a week; 12 kg gained; bipolar II depression after a switch to vortioxetine; lamotrigine 150 mg, vortioxetine 20 mg"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Accelerated iTBS to left dorsolateral prefrontal cortex: 18 sessions over 6 days in 3 weeks; medicines unchanged for 4 weeks before and throughout",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 12
+        },
+        {
+         "scale": "MADRS",
+         "value": 25
+        }
+       ]
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Binges less frequent",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 12
+        },
+        {
+         "scale": "MADRS",
+         "value": 23
+        }
+       ]
+      },
+      {
+       "kind": "best_response",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Binges gone (reported at the end of the cycle); depression barely changed",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 10
+        },
+        {
+         "scale": "MADRS",
+         "value": 23
+        }
+       ]
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "End of the stimulation cycle"
+      },
+      {
+       "kind": "follow_up",
+       "t": 15,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Twelve weeks after the cycle: still no binges; 4 kg lighter",
+       "state": "Remitted"
+      }
+     ]
+    },
+    {
+     "patient": "Patient 2",
+     "age": 28,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -10,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Binge eating since her first depression; daily during depressive phases"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -10,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Valproate, fluoxetine, citalopram, venlafaxine, bupropion; now clomipramine 150 mg and pregabalin 225 mg",
+       "to": -0.25
+      },
+      {
+       "kind": "assessment",
+       "t": -3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Seasonal bipolar II depression for 3 months; binges almost every evening"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Accelerated iTBS to left dorsolateral prefrontal cortex: 18 sessions over 6 days in 3 weeks; medicines unchanged for 4 weeks before and throughout",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 22
+        },
+        {
+         "scale": "MADRS",
+         "value": 41
+        }
+       ]
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Binges less frequent",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 18
+        },
+        {
+         "scale": "MADRS",
+         "value": 34
+        }
+       ]
+      },
+      {
+       "kind": "best_response",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Binges gone (reported at the end of the cycle); depression moderate",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 17
+        },
+        {
+         "scale": "MADRS",
+         "value": 34
+        }
+       ]
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "End of the stimulation cycle"
+      },
+      {
+       "kind": "follow_up",
+       "t": 15,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Twelve weeks after the cycle: still no binges; 2 kg lighter",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 14,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 7.0,
+    "follow_up_days": 105,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "HAM-D",
+      "before": 12,
+      "after": 10,
+      "change_pct": -16.7
+     },
+     {
+      "scale": "MADRS",
+      "before": 25,
+      "after": 23,
+      "change_pct": -8.0
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 6,
+    "jbi_of": 10,
+    "rule_tier": "B"
    }
   },
   {
@@ -5637,7 +6020,7 @@
    "id": "hill-2025",
    "record_type": "case",
    "status": "Included",
-   "tier": "B",
+   "tier": "A",
    "collections": [
     "round2"
    ],
@@ -5682,15 +6065,15 @@
     "resolution": "Partial",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "None reported"
+    "reversal": "Natural off-on"
    },
    "downstream": {
     "level": 1,
     "note": "",
     "links": []
    },
-   "summary": "Drinking fell in a man started on dulaglutide for weight loss.",
-   "caveat": "Weight-loss programme contact came with the drug.",
+   "summary": "A 44-year-old drinking about 90 beers a month cut down to a few a month within 12 weeks of dulaglutide for weight loss, binged mainly in the days before each injection, and was back to 90 a month within four months of losing the drug with his insurance.",
+   "caveat": "Diet and exercise counselling started with the drug, and he never wanted to cut down, so expectation and contact are an incomplete explanation.",
    "tags": [
     "alcohol",
     "dulaglutide",
@@ -5700,7 +6083,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -5708,13 +6091,158 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "By the mid-2020s GLP-1 agonists were known to reduce drinking in animals and early human studies."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "Duration of the drinking not stated; AUDIT before and after; diet counselling alongside; drinking returned within two weeks of a documented stop."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "44-year-old man",
+     "age": 44,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Dulaglutide 0.75 mg weekly for prediabetes and weight (semaglutide not covered). BMI 41.8; about 90 beers a month, never treated, not wanting to change",
+       "scores": [
+        {
+         "scale": "AUDIT",
+         "value": 19
+        }
+       ]
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Diet and exercise counselling; bupropion continued for mood"
+      },
+      {
+       "kind": "first_change",
+       "t": 56,
+       "unit": "days",
+       "precision": "at most",
+       "label": "About 30 beers a month; feels full after drinking, fewer urges; still binges in the two days before each injection",
+       "state": "Partial"
+      },
+      {
+       "kind": "cointervention",
+       "t": 56,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Dulaglutide increased to 1.5 mg"
+      },
+      {
+       "kind": "best_response",
+       "t": 84,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Four to eight beers a month, no cravings; BMI 37.3",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "AUDIT",
+         "value": 6
+        }
+       ]
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Lost his insurance on retiring; dulaglutide stopped, other medicines continued"
+      },
+      {
+       "kind": "relapse",
+       "t": 6.5,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Drinking again two weeks after stopping"
+      },
+      {
+       "kind": "assessment",
+       "t": 10,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Back to about 90 beers a month within four months",
+       "state": "Worse"
+      },
+      {
+       "kind": "follow_up",
+       "t": 334,
+       "unit": "days",
+       "precision": "exact",
+       "label": "90–100 beers a month; naltrexone tried, poorly tolerated and not taken",
+       "state": "Worse"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 56,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "follow_up_days": 334,
+    "durability": "Lost",
+    "timeline_reversal": "Natural off-on",
+    "measures": [
+     {
+      "scale": "AUDIT",
+      "before": 19,
+      "after": 6,
+      "change_pct": -68.4
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
