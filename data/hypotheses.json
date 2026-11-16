@@ -1,7 +1,7 @@
 {
  "layer": "Hypotheses: our reading of what happened in each case",
  "schema_version": "1.0",
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "rules": [
   "This file is ours, not the papers'. Facts about a case live in data/cases.json; if hypothesising turns up a factual error, fix the case record there.",
   "Every entry rates all seven boring explanations before proposing a mechanism. A case beats the null only when none is Likely.",
@@ -287,6 +287,418 @@
     }
    ],
    "questions": "Was the daily cold-medicine intake compulsion or dependence? If dependence, this is partly a substance case."
+  },
+  {
+   "case_id": "jewett-2020",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Three responses within a day of each start don't fit spontaneous fluctuation."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Months of steady symptoms before; the change was abrupt and repeated."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Recurrent depression and anxiety diagnosed by her psychiatrist; no sign of bipolarity on history or screening."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Antidepressants were switched a few weeks in, though after the first response and with only partial benefit."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Niraparib caused insomnia, not sedation; the change was a lift, not a damping."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Each restart was known to her, and a cancer treatment invites hope; short-lived lifts fit expectancy too."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Recalled at a 10-month interview; no scores during the responses."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Three exposures, three responses within about a day, each fading over 10 to 14 days. Rechallenge is the strongest feature a single case can have, and the built-in time limit is itself a clue. Expectancy is the main rival.",
+   "hypotheses": [
+    {
+     "claim": "PARP inhibition briefly damped neuroinflammatory signalling, lifting mood within hours until compensation set in.",
+     "chain": "Niraparib → PARP1 blocked → less NF-κB activation and IL-1β release → monoamine and glutamate signalling recover → mood lifts; compensation within two weeks",
+     "mechanisms": [
+      "Inflammation and cytokines",
+      "Microglia and glia"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "PARP1 drives NF-κB and cytokines; minocycline, an antidepressant in trials, also inhibits PARP (the authors' point).",
+     "against": "Under 12 hours is fast for an anti-inflammatory route; no inflammatory markers were measured.",
+     "confidence": "Low",
+     "uncertainty_driver": "No inflammatory markers before or during a response, so the route can't be checked in her.",
+     "test": "CRP and IL-6 before and a day after a restart, alongside a mood rating; or the same quick response to another PARP inhibitor."
+    },
+    {
+     "claim": "PARP inhibition conserved NAD+ and shifted neuronal energy metabolism quickly, with tolerance over two weeks.",
+     "chain": "Niraparib → PARP stops consuming NAD+ → NAD+ and sirtuin/mitochondrial activity rise → rapid change in neuronal energetics → mood lifts; homeostatic adjustment by two weeks",
+     "mechanisms": [
+      "Bioenergetics and mitochondria",
+      "Intracellular signalling"
+     ],
+     "latency_fit": "Fits",
+     "for": "The speed and the tachyphylaxis suit an acute metabolic shift better than slow immune remodelling.",
+     "against": "Entirely inferred from pharmacology; nothing in the case measured energetics; 100 mg worked as well as 300 mg.",
+     "confidence": "Low",
+     "uncertainty_driver": "No biomarker of any kind; this rests on what the drug does, not on anything observed in her.",
+     "test": "Patient-reported mood in PARP-inhibitor trial data, by drug and by days since each dose start."
+    }
+   ],
+   "related": [
+    {
+     "id": "levine-1996",
+     "why": "Minocycline, also a PARP inhibitor, improving bipolar depression"
+    }
+   ]
+  },
+  {
+   "case_id": "gupta-2026",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Likely",
+     "why": "An episodic illness whose last episode remitted with treatment; this relapse was days old."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Admitted at the height of a relapse."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "The psychosis itself was well described before any medical event."
+    },
+    "cointervention": {
+     "rating": "Likely",
+     "why": "Olanzapine and valproate started three days before the seizures and were continued; antiepileptics in intensive care."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Alert, oriented and back to daily life at follow-up."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Nothing to expect from."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No ratings; follow-up only several weeks."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "The authors say it themselves: treatment response and the natural course explain this. Fever, drowsiness and a high CK after starting olanzapine also leave a drug reaction on the table. Kept for the seizure–psychosis lineage, not as evidence.",
+   "hypotheses": [
+    {
+     "claim": "An ordinary response to olanzapine and valproate in a days-old relapse that had responded to treatment before.",
+     "chain": "Olanzapine (D2 blockade) and valproate from day −3 → psychosis easing by day −1 → complete remission over the next week",
+     "mechanisms": [
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Improvement had begun before the seizures; the previous episode responded to medication.",
+     "against": "Remission was complete rather than partial within about a week.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No ratings either side of the seizures, so we can't see whether the trajectory bent at them.",
+     "test": "Ratings before and after the intensive care stay, against an expected olanzapine response curve."
+    },
+    {
+     "claim": "The seizures and febrile systemic illness acted like ECT: a network reset with an inflammatory push.",
+     "chain": "Two generalised seizures plus fever (CRP 90) → widespread network and neuroendocrine change, as in convulsive therapy → psychosis gone after recovery",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)",
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Fits",
+     "for": "Two generalised seizures and a big inflammatory response came just before remission; clozapine-seizure cases show the same pattern.",
+     "against": "Two short seizures are far less than an ECT course, and treatment had already started.",
+     "confidence": "Low",
+     "uncertainty_driver": "Treatment began three days before the seizures, so the two can't be separated in time.",
+     "test": "A remission that holds after antipsychotics stop would favour the seizures; relapse on stopping favours treatment."
+    }
+   ],
+   "related": [
+    {
+     "id": "jawaid-2016",
+     "why": "Treatment-resistant schizophrenia remitting after a clozapine-induced seizure"
+    },
+    {
+     "id": "felizardo-2023",
+     "why": "Delusional disorder remitting after clozapine-provoked seizures"
+    }
+   ]
+  },
+  {
+   "case_id": "kraft-westman-2009",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Sixty-three years of near-daily hallucinations, gone within eight days."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Not presenting at a peak; seen for weight loss."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Visual and command hallucinations from age 7, depression since the 1940s and repeated self-harm: possibly not schizophrenia alone, which changes what a diet could act on."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Weight loss, more energy and closer clinic contact came with the diet; she also had sleep apnoea."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "More energy, not less."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "An enthusiastic, closely followed new regimen."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-report only; no scale; ketosis never measured."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Abrupt loss of lifelong hallucinations a week into a diet, held for a year, is hard to put down to chance. Which part of the diet did it is wide open, and the lapses without recurrence are the most interesting clue.",
+   "hypotheses": [
+    {
+     "claim": "Ketosis changed brain energy metabolism and excitability, the anticonvulsant mechanism, damping hallucinations.",
+     "chain": "Under 20 g carbohydrate → hepatic ketones → β-hydroxybutyrate as neuronal fuel; GABA up, glutamate release down, mitochondrial efficiency up → perceptual network hyperexcitability damped",
+     "mechanisms": [
+      "Metabolic state (ketosis, insulin, glucose)",
+      "Bioenergetics and mitochondria",
+      "GABA"
+     ],
+     "latency_fit": "Fits",
+     "for": "Eight days matches the onset of ketosis plus a few days; the library's ketogenic context records report similar gains in deliberate trials.",
+     "against": "Ketosis was never confirmed, and lapses of several days back onto carbohydrate didn't bring the voices back.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No ketone measurement, so we don't know she was in ketosis at all.",
+     "test": "Ketones during a lapse: voices staying away while out of ketosis would mean the effect isn't ketosis itself."
+    },
+    {
+     "claim": "Removing gluten removed an immune or exorphin trigger (the Dohan hypothesis, the authors' lead).",
+     "chain": "Bread, pasta and potatoes gone → no gluten exposure → less gut-derived immune activation or opioid-like peptides → psychosis settles",
+     "mechanisms": [
+      "Gut-brain axis",
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Gluten-free diets help a subgroup in small trials (authors).",
+     "against": "Anti-gliadin IgG negative; lapses onto bread and pasta didn't bring the voices back.",
+     "confidence": "Low",
+     "uncertainty_driver": "Serology was taken three months into the diet, when it would be negative anyway.",
+     "test": "Coeliac serology before starting, or a blinded gluten challenge."
+    },
+    {
+     "claim": "Weight loss and better sleep apnoea improved sleep and arousal, and the hallucinations eased.",
+     "chain": "Weight loss → less obstructive apnoea → better sleep and oxygenation → fewer hallucinations",
+     "mechanisms": [
+      "Sleep and circadian rhythm",
+      "Respiratory and blood gases"
+     ],
+     "latency_fit": "Doesn't fit",
+     "for": "She had obstructive sleep apnoea and morbid obesity; the library has a CPAP remission of a schizophrenia-like illness.",
+     "against": "About 5 kg lost by day 26 is too little to change apnoea in 8 days.",
+     "confidence": "Low",
+     "uncertainty_driver": "Sleep and apnoea were never reassessed.",
+     "test": "A sleep study or Epworth score before and after."
+    }
+   ],
+   "related": [
+    {
+     "id": "grunstein-2017",
+     "why": "Schizophrenia-like illness remitting on CPAP for sleep apnoea"
+    },
+    {
+     "id": "pacheco-1965",
+     "why": "1965 pilot of the ketogenic diet in schizophrenia (context)"
+    },
+    {
+     "id": "sethi-2024",
+     "why": "Ketogenic diet trial in serious mental illness (context)"
+    }
+   ]
+  },
+  {
+   "case_id": "miyaoka-2017",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "An illness of about a year; some early psychoses remit after a poor start, though rarely off all medicines for eight years."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Stable, severe symptoms through the trial isolation."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Psychosis began within about a year of the leukaemia: a leukaemia-related or paraneoplastic process cured by the transplant would make this a secondary psychosis."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Methotrexate, ciclosporin and tacrolimus are immunomodulators; paradoxical improvement off antipsychotics can't be excluded (authors)."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Back at full-time work."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "The transplant was for leukaemia."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "PANSS and GAF documented; eight-year follow-up."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Treatment-resistant psychosis gone within a month of the transplant, off all antipsychotics, and still gone eight years later. The two live rivals, an occult leukaemia-driven psychosis and the immunosuppressants given afterwards, would both still make this an immune story.",
+   "hypotheses": [
+    {
+     "claim": "Replacing the immune system removed an immune driver of the psychosis.",
+     "chain": "Conditioning ablates host immune cells → donor haematopoiesis (and, over months, marrow-derived cells in the brain) → loss of autoreactive or pro-inflammatory clones → psychosis remits",
+     "mechanisms": [
+      "Inflammation and cytokines",
+      "Microglia and glia"
+     ],
+     "latency_fit": "Fits",
+     "for": "Remission tracked engraftment and lasted eight years off antipsychotics; the mirror case, psychosis after a transplant from a donor with schizophrenia, is cited by the authors.",
+     "against": "Microglial replacement takes longer than 30 days (the authors' own point); no immune markers or autoantibodies were tested.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No pre-transplant autoimmune work-up (neuronal antibodies, CSF), so antibody-mediated psychosis can't be told from a broader immune reset.",
+     "test": "Stored pre-transplant serum or CSF tested for neuronal surface antibodies; similar remissions in other transplanted patients with psychosis."
+    },
+    {
+     "claim": "Post-transplant immunosuppression suppressed T-cell-driven inflammation, and the psychosis remitted under it.",
+     "chain": "Methotrexate, ciclosporin, then tacrolimus → T-cell activation suppressed → less neuroinflammation → psychosis eases",
+     "mechanisms": [
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Fits",
+     "for": "Calcineurin inhibitors were started at day 0 and week 3, just before the improvement.",
+     "against": "The remission lasted years, presumably after immunosuppression stopped.",
+     "confidence": "Low",
+     "uncertainty_driver": "We aren't told when immunosuppression ended relative to the sustained remission.",
+     "test": "Whether psychosis stayed away after tacrolimus was withdrawn."
+    },
+    {
+     "claim": "The psychosis was secondary to the leukaemia (paraneoplastic or CNS involvement), and treating the leukaemia ended it.",
+     "chain": "Pre-clinical leukaemia → cytokines or CNS infiltration → psychosis → transplant cures the leukaemia → psychosis ends",
+     "mechanisms": [
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Fits",
+     "for": "Psychosis began within about a year of the leukaemia's presentation.",
+     "against": "Normal MRI and EEG, no neurological signs; psychosis came up to a year before any leukaemia symptoms.",
+     "confidence": "Low",
+     "uncertainty_driver": "Blood counts at the onset of psychosis weren't reported.",
+     "test": "A blood film or count from when the psychosis began."
+    }
+   ],
+   "related": [
+    {
+     "id": "silva-2021",
+     "why": "Depressive episode remitting after intravenous immunoglobulin"
+    }
+   ]
+  },
+  {
+   "case_id": "faruqui-2022",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Decades of heavy drinking, stopped within two weeks."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Came for depression treatment, not at a drinking crisis."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "If the drinking was self-medication for depression, it ended because the depression did."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Twice-weekly supervised clinic visits; a motivational session after the binge."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "More active and working, not less."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "She sought ketamine after hearing another patient's story."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Abstinence self-reported, with no biomarkers or drinking scale."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "No boring explanation is Likely, but abstinence rests on self-report and the depression lifted alongside it. The case can't say whether esketamine acted on drinking or on the mood behind it.",
+   "hypotheses": [
+    {
+     "claim": "Esketamine acted on the drinking directly: NMDA blockade loosened drinking memories and reduced craving and impulsivity.",
+     "chain": "Esketamine → NMDA blockade and a burst of plasticity → reconsolidation of drinking cues disrupted, less impulsivity → craving falls within two weeks",
+     "mechanisms": [
+      "Glutamate",
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Fits",
+     "for": "She reported less desire and impulsivity, not just better mood; ketamine has reduced drinking in small trials (recalled, not checked).",
+     "against": "Her depression lifted at the same time; the binge on the lower dose fits a dose effect but also an ordinary lapse.",
+     "confidence": "Low",
+     "uncertainty_driver": "Mood and drinking changed together and were never measured separately over time.",
+     "test": "Session-by-session craving ratings alongside PHQ-9: craving falling before mood would favour a direct effect."
+    },
+    {
+     "claim": "Drinking was self-medication for depression, and lifting the depression removed the reason to drink (the authors' reading).",
+     "chain": "Esketamine → rapid antidepressant effect → less dysphoria, anger and anxiety → less drive to drink",
+     "mechanisms": [
+      "Glutamate"
+     ],
+     "latency_fit": "Fits",
+     "for": "Lifelong depression came first; anger and anxiety settled along with the drinking.",
+     "against": "Earlier antidepressants failed, so there's no test of whether mood relief alone stops her drinking.",
+     "confidence": "Low",
+     "uncertainty_driver": "Same as above: no separate timeline for mood and drinking.",
+     "test": "Whether drinking returns if the depression relapses while esketamine continues."
+    }
+   ],
+   "related": [
+    {
+     "id": "ray-2016",
+     "why": "Ketamine for neck pain, refractory panic and agoraphobia remitted"
+    }
+   ]
   }
  ]
 }

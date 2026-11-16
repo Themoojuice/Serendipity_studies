@@ -1,7 +1,7 @@
 {
  "library": "Serendipity Case Library",
  "schema_version": "1.4",
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "unit_of_record": "One published study (a paper). n_patients counts patients within it; same_patient_as links papers describing the same patient.",
  "inclusion_criteria": [
   "A serious psychiatric syndrome resolved or substantially improved.",
@@ -918,8 +918,8 @@
    },
    "outcome": {
     "resolution": "Complete",
-    "time_to_resolution": "30 days",
-    "follow_up": "8 years",
+    "time_to_resolution": null,
+    "follow_up": null,
     "reversal": "None reported"
    },
    "downstream": {
@@ -938,7 +938,7 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -946,20 +946,167 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "PANSS and GAF plotted in the figure; stopping antipsychotics and the immunosuppressants named as confounders, not excluded."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "24-year-old man",
+     "age": 24,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "At 23: insomnia, irritability, then persecutory delusions and voices"
+      },
+      {
+       "kind": "diagnosis",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Paranoid schizophrenia (DSM-IV-TR); EEG, CT and MRI normal"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Quetiapine 300 mg, then risperidone 12 mg and olanzapine 20 mg added, family-supervised: no response (treatment-resistant)"
+      },
+      {
+       "kind": "cointervention",
+       "t": -2,
+       "unit": "weeks",
+       "precision": "at least",
+       "label": "Acute myeloid leukaemia diagnosed (fever, joint pain, bleeding); pre-transplant treatment not described"
+      },
+      {
+       "kind": "cointervention",
+       "t": -14,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Seven-day trial isolation; all antipsychotics stopped; still hallucinating and deluded"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Bone marrow transplant; 34 days in a germ-free unit, no antipsychotics"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Methotrexate and ciclosporin to prevent graft-versus-host disease"
+      },
+      {
+       "kind": "cointervention",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Early graft-versus-host disease: tacrolimus replaced ciclosporin"
+      },
+      {
+       "kind": "best_response",
+       "t": 30,
+       "unit": "days",
+       "precision": "at most",
+       "label": "Psychotic symptoms almost gone, off all antipsychotics (PANSS and GAF in the paper's figure)",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 2,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Psychosis and functioning still much improved",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 4,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Still much improved",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 8,
+       "unit": "years",
+       "precision": "exact",
+       "label": "No residual symptoms, no antipsychotics, working at a large company",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 30,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 1.0,
+    "follow_up_days": 2922.0,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
    "id": "kraft-westman-2009",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "B",
    "collections": [
     "top12"
    ],
@@ -991,7 +1138,7 @@
     "categories": [
      "Psychotic"
     ],
-    "specific": "Schizophrenia with hallucinations since age 17",
+    "specific": "Schizophrenia diagnosed at 17; near-daily hallucinations since age 7",
     "chronic": true,
     "treatment_resistant": true
    },
@@ -1003,7 +1150,7 @@
    "outcome": {
     "resolution": "Complete",
     "time_to_resolution": null,
-    "follow_up": "12 months (12 years per Palmer 2019)",
+    "follow_up": null,
     "reversal": "None reported"
    },
    "downstream": {
@@ -1028,7 +1175,7 @@
     ],
     "note": "Ketogenic diet trials followed: open-label (Danan 2022, Sethi 2024) and randomised (Gao 2026, Abram 2026). A 1965 pilot (Pacheco) predates it."
    },
-   "summary": "A 70-year-old's hallucinations of 53 years stopped abruptly after she started a ketogenic diet to lose weight.",
+   "summary": "A 70-year-old's hallucinations, near-daily since childhood despite many antipsychotics, stopped about 8 days after she began a ketogenic diet to lose weight, and stayed away for a year.",
    "caveat": "Weight loss, dropping gluten and a changed routine are inseparable from ketosis.",
    "tags": [
     "diet",
@@ -1039,7 +1186,7 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "basis": "judged",
@@ -1047,13 +1194,147 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "No change in medicines stated; lapses off the diet without recurrence count against reversal; ketosis never confirmed."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "C.D.",
+     "age": 70,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -63,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Near-daily voices and visions (skeletons; voices telling her to hurt herself) since age 7"
+      },
+      {
+       "kind": "diagnosis",
+       "t": -53,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Schizophrenia diagnosed at 17: paranoia, disorganised speech, hallucinations"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -6,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Lithium, olanzapine, ziprasidone, aripiprazole 30 mg, lamotrigine, quetiapine 900 mg without lasting benefit; now risperidone 4 mg",
+       "to": -0.42,
+       "note": "Timing not stated; placed across the admission years."
+      },
+      {
+       "kind": "assessment",
+       "t": -6,
+       "unit": "years",
+       "precision": "exact",
+       "label": "At least five admissions in six years for suicide attempts and worse psychosis; the last 5 months before the diet",
+       "to": -0.42
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Low-carbohydrate ketogenic diet (under 20 g a day) for weight loss; 141 kg, BMI 53"
+      },
+      {
+       "kind": "assessment",
+       "t": 7,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Feeling well, more energy"
+      },
+      {
+       "kind": "first_change",
+       "t": 8,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Woke without voices or skeletons for the first time",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 26,
+       "unit": "days",
+       "precision": "exact",
+       "label": "No voices or visions; no medicine change; 136 kg",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 3,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Anti-gliadin IgG negative (13 U), taken off gluten"
+      },
+      {
+       "kind": "follow_up",
+       "t": 12,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Still no hallucinations, despite 2–3 lapses of several days onto bread, pasta and cake; 131 kg",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 8,
+    "latency_band": "1-13 days",
+    "baseline_years": 63.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -2802,7 +3083,7 @@
    "id": "gupta-2026",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "C",
    "collections": [
     "round2"
    ],
@@ -2854,8 +3135,8 @@
     "note": "",
     "links": []
    },
-   "summary": "Psychosis remitted completely after two febrile generalised seizures and stayed in remission at follow-up.",
-   "caveat": "Episodic illness and partial antipsychotic response beforehand.",
+   "summary": "A days-old relapse of episodic psychosis, already easing on newly started olanzapine and valproate, had fully remitted after two seizures and a febrile illness needing intensive care, and stayed remitted at follow-up.",
+   "caveat": "Olanzapine and valproate began three days before the seizures and the relapse was days old, so an ordinary treatment response explains the remission.",
    "tags": [
     "convulsive",
     "fever",
@@ -2865,7 +3146,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -2873,20 +3154,137 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "A relapse only days old, already easing two days into olanzapine and valproate; the authors themselves favour treatment response plus natural course."
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Antipsychotic and mood stabiliser started three days before the seizures; no ratings."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Criterion 1 is doubtful (a days-old relapse of an illness that responded to treatment before) and T4 is close to failing. Brendan: consider excluding."
+   },
+   "timeline": [
+    {
+     "patient": "36-year-old woman",
+     "age": 36,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "diagnosis",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "First psychotic episode (voices, persecutory beliefs) remitted on medication; stopped two months after remission"
+      },
+      {
+       "kind": "onset",
+       "t": -5,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Relapse: suspicion and persecutory delusions over several days"
+      },
+      {
+       "kind": "cointervention",
+       "t": -3,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Admitted; olanzapine and valproate started (doses not given)"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Psychotic symptoms lessening but drowsy and less interactive",
+       "state": "Partial"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Two generalised tonic-clonic seizures, then fever and falling consciousness; intubated, intensive care; CRP 90, CK-MB 616; MRI and EEG normal"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Antiepileptic treatment; psychiatric medicines adjusted during intensive care"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "After extubation: alert, no delusions or other psychotic symptoms",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 5,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Several weeks after discharge: still well, back to daily routine",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 7,
+    "latency_band": "1-13 days",
+    "baseline_years": 0.01,
+    "follow_up_days": 35,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
    "id": "faruqui-2022",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "B",
    "collections": [
     "round2"
    ],
@@ -2948,7 +3346,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -2956,13 +3354,161 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "By 2022 ketamine was in trials for alcohol use disorder (authors cite a 2022 review), so an effect on drinking was conceivable."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Drinking may have been driven by the depression; treating the depression would then end it, which is the authors' own reading."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "No measure of drinking (no AUDIT or biomarkers); depression lifted at the same time; motivational therapy after the lapse."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "61-year-old woman",
+     "age": 61,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "treatment_failed",
+       "t": -1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "For depression: psychotherapy, paroxetine, bupropion and probably levomilnacipran, without much benefit (timing not stated)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Intranasal esketamine 56 mg twice weekly; paroxetine 30 mg continued. Severe alcohol use disorder and severe depression",
+       "scores": [
+        {
+         "scale": "PHQ-9",
+         "value": 23
+        }
+       ]
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "Stopped drinking: less desire and less impulsivity",
+       "state": "Remitted"
+      },
+      {
+       "kind": "relapse",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "One binge while still on the lower dose",
+       "to": 10
+      },
+      {
+       "kind": "cointervention",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "One session of motivational therapy after the binge"
+      },
+      {
+       "kind": "assessment",
+       "t": 7.5,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Session 15",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 13
+        }
+       ]
+      },
+      {
+       "kind": "best_response",
+       "t": 12,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Alcohol-free again; esketamine moved to weekly, then 84 mg weekly",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 36,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Session 46: alcohol-free, depression minimal, working as a nurse, 35 lb lighter",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "PHQ-9",
+         "value": 4
+        },
+        {
+         "scale": "HAM-D",
+         "value": 4
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 14,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "follow_up_days": 252,
+    "durability": "Lost, then regained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "PHQ-9",
+      "before": 23,
+      "after": 4,
+      "change_pct": -82.6
+     }
+    ],
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -3013,17 +3559,17 @@
    },
    "outcome": {
     "resolution": "Temporary",
-    "time_to_resolution": "Rapid",
+    "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "None reported"
+    "reversal": "On-off rechallenge"
    },
    "downstream": {
     "level": 0,
     "note": "",
     "links": []
    },
-   "summary": "Depression and anxiety that had resisted several medicines resolved rapidly but temporarily after niraparib was started for ovarian cancer.",
-   "caveat": "The benefit faded; starting cancer maintenance treatment carries its own expectancy.",
+   "summary": "A 61-year-old's depression and anxiety, resistant to several medicines, cleared within 12 hours of starting niraparib for ovarian cancer, faded after two weeks, and returned and cleared again with each hold and restart.",
+   "caveat": "She knew when each restart happened, and each lift faded within two weeks, a shape expectancy could also produce.",
    "tags": [
     "anxiety",
     "depression",
@@ -3034,7 +3580,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -3042,13 +3588,207 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 1,
+     "note": "Antidepressant switch a few weeks in was reported and contrasted with the niraparib responses; no rating scales until 10 months."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "61-year-old woman",
+     "age": 61,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -26,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Mild depression with headaches after a hysterectomy at 35"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -7,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Nortriptyline, citalopram, paroxetine, trazodone, venlafaxine: partial benefit (before the cancer; timing not stated)"
+      },
+      {
+       "kind": "diagnosis",
+       "t": -6.75,
+       "unit": "years",
+       "precision": "approx",
+       "label": "First major depressive episode after the ovarian cancer diagnosis; sertraline helped for years"
+      },
+      {
+       "kind": "diagnosis",
+       "t": -9,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Cancer recurrence: recurrent major depression and new generalised anxiety disorder"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Escitalopram 20 mg, buspirone 30 mg added at 4 months, lorazepam as needed: still depressed and anxious"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Niraparib 300 mg at night, maintenance after chemotherapy (CA-125 already normal)"
+      },
+      {
+       "kind": "first_change",
+       "t": 12,
+       "unit": "hours",
+       "precision": "at most",
+       "label": "Woke the next morning free of depression and anxiety for the first time since the recurrence",
+       "state": "Remitted"
+      },
+      {
+       "kind": "relapse",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "The lift faded after about two weeks, still on niraparib"
+      },
+      {
+       "kind": "cointervention",
+       "t": 4,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Escitalopram and buspirone stopped; desvenlafaxine 50 mg and mirtazapine 45 mg started (several weeks in)"
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Niraparib held for two weeks: thrombocytopenia"
+      },
+      {
+       "kind": "relapse",
+       "t": 5,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Mood worse during the hold, especially anxiety"
+      },
+      {
+       "kind": "exposure_restart",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Niraparib restarted at 200 mg"
+      },
+      {
+       "kind": "best_response",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Dramatic improvement again, lasting about 10 days"
+      },
+      {
+       "kind": "relapse",
+       "t": 7.5,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Faded again"
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 3.5,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Held again: neutropenia"
+      },
+      {
+       "kind": "exposure_restart",
+       "t": 4,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Restarted at 100 mg"
+      },
+      {
+       "kind": "best_response",
+       "t": 4,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Large improvement, especially in anxiety, for about 10 days"
+      },
+      {
+       "kind": "relapse",
+       "t": 4.3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Faded again; later 100 mg every other day"
+      },
+      {
+       "kind": "follow_up",
+       "t": 10,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Psychiatric interview: mildly dysphoric and anxious but stable on desvenlafaxine and niraparib; no hypomania",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0.5,
+    "latency_band": "Under a day",
+    "latency_bound": "at most",
+    "baseline_years": 26.0,
+    "follow_up_days": 304.375,
+    "durability": "Lost",
+    "timeline_reversal": "On-off rechallenge",
+    "attribution_score": 5,
+    "attribution_grade": "A",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
