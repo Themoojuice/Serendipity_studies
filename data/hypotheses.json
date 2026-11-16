@@ -1473,6 +1473,313 @@
      "why": "Tirzepatide, three heavy drinkers drank less"
     }
    ]
+  },
+  {
+   "case_id": "viglione-2025",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Catatonia a day old can lift spontaneously."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "He was unchanged overnight, then changed within the anaesthetic recovery."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Catatonia in psychotic depression; MRI and CSF normal."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Nothing else was given before the anaesthetic."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He became more active, not less."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "The anaesthetic was for investigations."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "A letter; no catatonia rating."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Catatonic signs went within the anaesthetic recovery while the psychotic depression stayed: a selective effect on catatonia, like a lorazepam challenge. Real, but not surprising pharmacology.",
+   "hypotheses": [
+    {
+     "claim": "Propofol's GABA-A potentiation, with NMDA blockade, reversed catatonia the way a lorazepam challenge does.",
+     "chain": "Propofol → GABA-A potentiation (and NMDA block) → restores the GABA hypoactivity of catatonia in basal ganglia and supplementary motor circuits → motor signs lift",
+     "mechanisms": [
+      "GABA",
+      "Glutamate"
+     ],
+     "latency_fit": "Fits",
+     "for": "Motor signs lifted within the recovery period while delusions and voices stayed; three earlier propofol reports.",
+     "against": "No catatonia rating; sevoflurane was given too.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No rating before and after, and two anaesthetics at once.",
+     "test": "A lorazepam challenge, or Bush–Francis scores around propofol alone."
+    },
+    {
+     "claim": "Anaesthesia reset the motor circuits, as sleep or coma can.",
+     "chain": "Deep anaesthesia → global suppression and re-emergence of cortical–basal ganglia activity → stuck motor state released",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)"
+     ],
+     "latency_fit": "Fits",
+     "for": "A single anaesthetic preceded the change.",
+     "against": "Can't be separated from GABA-A action with the drugs used.",
+     "confidence": "Low",
+     "uncertainty_driver": "Same as above.",
+     "test": "Whether a non-GABAergic anaesthetic does the same."
+    }
+   ],
+   "related": [
+    {
+     "id": "morena-1994",
+     "why": "Midazolam for an MRI lifted catatonia"
+    }
+   ]
+  },
+  {
+   "case_id": "juiz-fernandez-2022",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Depression and phobia severity fluctuate over years."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Not presenting at a psychiatric peak."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Seizure-linked (interictal) depression ends when seizures do, which would make it secondary."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Seizure freedom, then stopping antiepileptics (levetiracetam can lower mood)."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Amygdala removal dampens fear in general, not just the phobia."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Relief at becoming seizure-free."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "One sentence of outcome, no measure, no date."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "The phobia's disappearance after amygdala removal is the interesting, plausible part, but the report gives a sentence, not data.",
+   "hypotheses": [
+    {
+     "claim": "Removing the right amygdala abolished the conditioned fear behind the phobia.",
+     "chain": "Right amygdala resected → loss of the hub for conditioned fear and its expression → phobic response gone",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "The phobia specifically disappeared; phobias involve amygdala hyperactivation (authors).",
+     "against": "No measure or timing; mood change may be seizure-related.",
+     "confidence": "Low",
+     "uncertainty_driver": "One sentence of outcome, with no scale or date.",
+     "test": "A behavioural approach test or fear-conditioning task after surgery."
+    },
+    {
+     "claim": "Ending the seizures, and withdrawing levetiracetam, lifted a seizure-linked depression.",
+     "chain": "Epileptogenic focus removed → no seizures or interictal discharges → interictal dysphoria resolves; levetiracetam stopped",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Ion channels and excitability"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Seizure freedom came with the mood improvement.",
+     "against": "Doesn't explain the phobia going.",
+     "confidence": "Low",
+     "uncertainty_driver": "No dates for mood change against seizure freedom and drug withdrawal.",
+     "test": "Mood ratings before and after antiepileptic withdrawal."
+    }
+   ],
+   "related": [
+    {
+     "id": "ripsman-2025",
+     "why": "Tics ending after a left temporal lobectomy"
+    }
+   ]
+  },
+  {
+   "case_id": "echizen-2021",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Twenty-seven years of OCD gone overnight."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Not judged against a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-documented OCD and schizophrenia with different treatment responses."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Medicines were withdrawn afterwards, not added."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "The authors looked for apathy and cognitive loss and found more activity, not less."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Not relevant."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Baseline scores rated retrospectively."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Overnight, complete and durable OCD remission off medication, with the main rival (apathy) explicitly looked for and absent. One of the cleaner lesion cases in the library.",
+   "hypotheses": [
+    {
+     "claim": "The haemorrhage disrupted a hyperactive left putaminal node in the cortico-striato-thalamo-cortical loop shared by OCD and psychosis.",
+     "chain": "Left putamen destroyed → loop hyperactivity damped → obsessions and compulsions stop; delusions lose their salience ('I don't care')",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Overnight, complete, durable OCD remission off medication with no apathy; earlier left putaminal OCD cases.",
+     "against": "A single lesion improving two disorders could also be non-specific, though none was found.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "The lesion's exact extent (capsule involvement) isn't mapped.",
+     "test": "Lesion network mapping from the CT and MRI figures against OCD lesion networks."
+    },
+    {
+     "claim": "Damage to the adjacent anterior limb of the internal capsule acted like a capsulotomy.",
+     "chain": "Haematoma extends to the anterior limb → frontothalamic fibres cut → as in anterior capsulotomy, OCD remits",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "The anterior limb is the capsulotomy and DBS target for OCD (authors).",
+     "against": "Capsule involvement is a guess from proximity.",
+     "confidence": "Low",
+     "uncertainty_driver": "Capsule involvement isn't confirmed.",
+     "test": "Review of the MRI or tractography for anterior limb damage."
+    }
+   ],
+   "related": [
+    {
+     "id": "fujii-2005",
+     "why": "Fifteen-year OCD ending after a left putaminal haemorrhage"
+    },
+    {
+     "id": "yaryura-tobias-2003",
+     "why": "Severe OCD ending after a left basal ganglia haemorrhage"
+    },
+    {
+     "id": "oh-2011",
+     "why": "OC behaviour ending after a left capsular genu infarct"
+    }
+   ]
+  },
+  {
+   "case_id": "hosseini-2012",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Thirty years of untreated OCD."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Not judged against a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic contamination and checking OCD."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Three months of coma and intensive care, then rehabilitation and a changed life."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "A three-month coma usually leaves deficits; MMSE 30 at 9 years, but executive function wasn't tested."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Not relevant."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "A very brief report; when the baseline Y-BOCS was taken isn't stated."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Thirty years of OCD absent for nine years after a severe injury, with a normal MMSE. The coma means the damage was probably more diffuse than the named contusion.",
+   "hypotheses": [
+    {
+     "claim": "Right temporoparietal and white-matter damage disrupted the cortico-striatal circuit sustaining the obsessions.",
+     "chain": "Contusion plus white-matter injury → disconnection within association circuits linked to the basal ganglia → OCD loop no longer sustained",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Durable nine-year remission with Y-BOCS 0 and a normal MMSE.",
+     "against": "Temporoparietal cortex isn't a core OCD node; diffuse axonal injury is likely after a three-month coma.",
+     "confidence": "Low",
+     "uncertainty_driver": "A three-month coma implies diffuse injury, so the responsible lesion can't be localised.",
+     "test": "Lesion network mapping of the contusion; executive and apathy testing."
+    },
+    {
+     "claim": "Diffuse injury from the prolonged coma reduced frontal-subcortical drive.",
+     "chain": "Severe diffuse injury → reduced frontal-subcortical drive → obsessional drive gone",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)",
+      "Global suppression (sedation, apathy, cognitive loss)"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Three months in coma.",
+     "against": "MMSE 30 and no cognitive problems reported.",
+     "confidence": "Low",
+     "uncertainty_driver": "No executive or apathy testing.",
+     "test": "Frontal Assessment Battery and an apathy scale."
+    }
+   ],
+   "related": [
+    {
+     "id": "echizen-2021",
+     "why": "OCD and schizophrenia gone after a left putaminal haemorrhage"
+    },
+    {
+     "id": "smith-2025",
+     "why": "Psychosis gone after frontal gunshot damage"
+    }
+   ]
   }
  ]
 }

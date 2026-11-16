@@ -9961,7 +9961,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -9969,13 +9969,140 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Y-BOCS 30 before (date unstated) and 0 after; the coma and its aftermath not discussed as confounders."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "44-year-old woman",
+     "age": 44,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -30,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Contamination and doubting obsessions with washing and checking from adolescence; never treated"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Rated before the accident (timing of the rating not stated)",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 30
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Car accident: temporoparietal haemorrhagic contusion; coma for three months"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "On emerging from the coma, the obsessions and compulsions were gone",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 9,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Still gone; MMSE 30; right temporal atrophy on MRI",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 0
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Injury",
+    "side": "Right",
+    "regions": [
+     "Temporal, lateral",
+     "Parietal"
+    ],
+    "specific": "Temporoparietal haemorrhagic contusion; at 9 years right temporal atrophy with temporal-horn dilatation and white-matter foci in parietal, frontal and temporal lobes",
+    "aetiology": "Trauma",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 91.312,
+    "latency_band": "Over 3 months",
+    "baseline_years": 30.0,
+    "follow_up_days": 3287.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "Y-BOCS",
+      "before": 30,
+      "after": 0,
+      "change_pct": -100.0
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 5,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -12338,7 +12465,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -12346,13 +12473,124 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "GABAergic drugs relieving catatonia is standard (the lorazepam challenge), and three propofol reports preceded this."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "Catatonia a day old and untreated can lift on its own."
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Catatonia of about a day, untreated; nothing else given before the anaesthetic; no catatonia rating."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
+    "note": "Criterion 1 not met on a strict reading (acute, untreated catatonia). Kept as a pharmacological-challenge observation; Brendan to decide."
+   },
+   "timeline": [
+    {
+     "patient": "66-year-old man",
+     "age": 66,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -8,
+       "unit": "days",
+       "precision": "approx",
+       "label": "A week of 'stress', insomnia and poor food and fluid intake; one earlier admission for psychotic depression"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Found standing motionless and unresponsive for four hours: stupor, mutism, waxy flexibility"
+      },
+      {
+       "kind": "assessment",
+       "t": -2,
+       "unit": "hours",
+       "precision": "approx",
+       "label": "Next morning on the neurology ward: unchanged"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "hours",
+       "precision": "exact",
+       "label": "General anaesthesia for MRI and lumbar puncture: propofol 120 mg IV, then sevoflurane"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "hours",
+       "precision": "at most",
+       "label": "In recovery: no longer mute or stuporous; still slowed, blocked and perplexed, with somatic delusions and derogatory voices",
+       "state": "Partial"
+      },
+      {
+       "kind": "cointervention",
+       "t": 1,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Mental health unit: lorazepam, venlafaxine, olanzapine; MRI and CSF normal"
+      },
+      {
+       "kind": "follow_up",
+       "t": 4,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Psychotic depression with catatonia remitted on treatment, without ECT",
+       "state": "Remitted",
+       "note": "Timing not stated."
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0.042,
+    "latency_band": "Under a day",
+    "latency_bound": "at most",
+    "baseline_years": 0.02,
+    "follow_up_days": 28,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -16352,7 +16590,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent, and seizure control is a confound (see Pintor 2022).",
@@ -16360,13 +16598,134 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Amygdala removal reducing fear was expected in principle (the authors' own reasoning)."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Depression in drug-resistant temporal lobe epilepsy is often driven by the seizures."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "No measure, no timing of the improvement; seizure freedom and antiepileptic withdrawal not separated."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "51-year-old woman",
+     "age": 51,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "assessment",
+       "t": -8,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Epilepsy began (2008): two nocturnal tonic seizures; lamotrigine helped"
+      },
+      {
+       "kind": "onset",
+       "t": -4,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Under psychiatric care for depression, body-image distortion and a marked phobia of rats and mice (start not stated)"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -4,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Seizures back in 2012 (focal impaired awareness); eslicarbazepine and levetiracetam failed; depression persisted"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Right anteromedial temporal resection for right mesial temporal sclerosis: amygdala, hippocampus, parahippocampal structures, temporal pole (2016)"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "years",
+       "precision": "at most",
+       "label": "Mood much better and the rat phobia gone",
+       "state": "Remitted"
+      },
+      {
+       "kind": "cointervention",
+       "t": 1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Seizure-free; antiepileptics later withdrawn"
+      },
+      {
+       "kind": "follow_up",
+       "t": 2,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Seizure-free and off antiepileptics for a year; mood and phobia still better",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Resection or ablation",
+    "side": "Right",
+    "regions": [
+     "Temporal, medial (amygdala, hippocampus)"
+    ],
+    "specific": "Right anteromedial temporal resection: amygdala, hippocampus, parahippocampal structures and temporal pole",
+    "aetiology": "Surgery",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 365.25,
+    "latency_band": "Over 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 4.0,
+    "follow_up_days": 730.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -16800,7 +17159,7 @@
    "id": "echizen-2021",
    "record_type": "case",
    "status": "Provisional",
-   "tier": "C",
+   "tier": "A",
    "collections": [
     "phase1c"
    ],
@@ -16853,8 +17212,8 @@
     "note": "",
     "links": []
    },
-   "summary": "Both OCD and schizophrenia improved after a left putaminal haemorrhage.",
-   "caveat": "",
+   "summary": "A 51-year-old's 27-year OCD and 22-year schizophrenia, unrelieved by antipsychotics, fluvoxamine and CBT, were gone or much reduced the morning after a left putaminal haemorrhage, and stayed so off all psychiatric medicines.",
+   "caveat": "Her pre-stroke scores were rated in hindsight, so the size of the change rests partly on memory.",
    "tags": [
     "basal-ganglia",
     "haemorrhage",
@@ -16866,7 +17225,7 @@
    "same_patient_as": null,
    "found_via": "Citation route v1 (Europe PMC citations and references)",
    "date_added": "2026-11-13",
-   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -16874,13 +17233,199 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-13",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Y-BOCS and PANSS before (rated retrospectively) and after; apathy and cognitive loss looked for and absent; medicines withdrawn, not added."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "53-year-old woman",
+     "age": 51,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -27,
+       "unit": "years",
+       "precision": "approx",
+       "label": "OCD from 24: checking, contamination washing for over 30 minutes"
+      },
+      {
+       "kind": "diagnosis",
+       "t": -22,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Schizophrenia at 29: blaming voices, delusions that her family were fake and that she was being poisoned"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -22,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Haloperidol 10 mg and chlorpromazine for 3 months: psychosis partly better, OCD unchanged"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -20,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Six months of CBT and fluvoxamine up to 225 mg: OCD unchanged",
+       "note": "Timing not stated."
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Unemployed since 32; rated retrospectively for the years before the haemorrhage",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 37
+        },
+        {
+         "scale": "PANSS",
+         "value": 85
+        },
+        {
+         "scale": "mGAF",
+         "value": 21,
+         "higher_is_better": true
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Left putaminal haemorrhage with intraventricular rupture, treated conservatively"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Woke the next day with the OCD gone and psychosis much reduced ('I sometimes feel like I'm hearing voices or being watched, but I don't care')",
+       "state": "Partial"
+      },
+      {
+       "kind": "cointervention",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Antipsychotics and fluvoxamine tapered off",
+       "note": "Timing not stated."
+      },
+      {
+       "kind": "follow_up",
+       "t": 2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Off all psychiatric medicines without relapse; chores, leisure and shopping she couldn't do before; no apathy or cognitive problems",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 0
+        },
+        {
+         "scale": "PANSS",
+         "value": 51
+        },
+        {
+         "scale": "mGAF",
+         "value": 68,
+         "higher_is_better": true
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Putamen"
+    ],
+    "specific": "Left putaminal haemorrhage with intraventricular rupture; the adjacent anterior limb of the internal capsule possibly involved (authors)",
+    "aetiology": "Haemorrhage",
+    "imaging": "MRI and CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "baseline_years": 27.0,
+    "follow_up_days": 730.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "Y-BOCS",
+      "before": 37,
+      "after": 0,
+      "change_pct": -100.0
+     },
+     {
+      "scale": "PANSS",
+      "before": 85,
+      "after": 51,
+      "change_pct": -40.0
+     },
+     {
+      "scale": "mGAF",
+      "before": 21,
+      "after": 68,
+      "change_pct": 223.8
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
