@@ -5481,7 +5481,7 @@
    "outcome": {
     "resolution": "Partial",
     "time_to_resolution": null,
-    "follow_up": "10 months",
+    "follow_up": null,
     "reversal": "None reported"
    },
    "downstream": {
@@ -5490,7 +5490,7 @@
     "links": []
    },
    "summary": "A man prescribed semaglutide for obesity cut his drinking substantially over 10 months.",
-   "caveat": "Weight-loss counselling and clinic contact came with the drug.",
+   "caveat": "Testosterone replacement began the same week, and improved mood or energy could have cut his drinking too.",
    "tags": [
     "alcohol",
     "glp1",
@@ -5500,7 +5500,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -5508,13 +5508,129 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "By the mid-2020s GLP-1 agonists were known to reduce alcohol and nicotine craving (trials and a meta-analysis), so a reward effect was conceivable."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "AUDIT before and after; when the drinking fell isn't reported; testosterone started the same week and wasn't discussed."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "34-year-old man",
+     "age": 34,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -4,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Heavy drinking and weight gain for four years: couldn't stop once started; a drink-driving conviction"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Semaglutide 0.25 mg weekly for obesity (BMI 37), titrated to 2.4 mg; about 15 drinks a week with weekly binges; 9 of 11 DSM-5 criteria",
+       "scores": [
+        {
+         "scale": "AUDIT",
+         "value": 27
+        }
+       ]
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Testosterone 100 mg intramuscularly weekly for hypogonadism, started the same week"
+      },
+      {
+       "kind": "best_response",
+       "t": 10,
+       "unit": "months",
+       "precision": "at most",
+       "label": "Desire to drink gone: about half a beer a month; BMI 28.6",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "AUDIT",
+         "value": 7
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 10,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Better mood, relationships and bipolar control",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 304.375,
+    "latency_band": "Over 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 4.0,
+    "follow_up_days": 304.375,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "AUDIT",
+      "before": 27,
+      "after": 7,
+      "change_pct": -74.1
+     }
+    ],
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -5668,7 +5784,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -5676,13 +5792,212 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "By the mid-2020s GLP-1 agonists were known to reduce alcohol and nicotine craving (trials and a meta-analysis), so a reward effect was conceivable."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "New diabetes and liver-disease diagnoses are themselves reasons to drink less."
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "Two of the three had no alcohol use disorder, and case 3 had already cut down after the first visit."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Scored on case 1 (the one with alcohol use disorder). Intake self-reported; the authors state no extra counselling or effort."
+    },
+    "jbi": {
+     "checklist": "Case series",
+     "answers": [
+      "N",
+      "U",
+      "Y",
+      "U",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "NA"
+     ]
+    },
+    "note": "Only case 1 meets criterion 1; cases 2 and 3 are heavy drinking without a diagnosis."
+   },
+   "timeline": [
+    {
+     "patient": "Case 1",
+     "age": 49,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -27,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Heavy drinking since his twenties (107–284 g ethanol a day)"
+      },
+      {
+       "kind": "diagnosis",
+       "t": -6,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Alcohol use disorder and alcohol-related liver disease (biopsy A2F2) at 43"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Nalmefene cut intake to 40 g a day; later back to 55 g a day despite drunken falls and an admission"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Tirzepatide 2.5 mg weekly for new type 2 diabetes and obesity; 55 g a day; GGT 904, HbA1c 8.8%"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "28 g a day; cravings down; transient lethargy after meals",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 5,
+       "unit": "months",
+       "precision": "exact",
+       "label": "FIB-4 2.57, HbA1c 5.7%, 85 kg",
+       "state": "Partial"
+      }
+     ]
+    },
+    {
+     "patient": "Case 2",
+     "age": 66,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -46,
+       "unit": "years",
+       "precision": "approx",
+       "label": "413–553 g ethanol a week since 20; no alcohol use disorder diagnosis"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Tirzepatide 2.5 mg weekly"
+      },
+      {
+       "kind": "cointervention",
+       "t": 4,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Increased to 5 mg"
+      },
+      {
+       "kind": "best_response",
+       "t": 8,
+       "unit": "months",
+       "precision": "at most",
+       "label": "56–78 g a week; 'became gradually bored while drinking'; GGT 220 → 59",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 8,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Liver and metabolic indices improved",
+       "state": "Partial"
+      }
+     ]
+    },
+    {
+     "patient": "Case 3",
+     "age": 52,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -32,
+       "unit": "years",
+       "precision": "approx",
+       "label": "276–620 g ethanol a week since 20; no alcohol use disorder diagnosis"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Intake already down to 42–84 g a week after the first clinic visit"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Tirzepatide 2.5 mg weekly; nausea for 3 days after each dose"
+      },
+      {
+       "kind": "cointervention",
+       "t": 11,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Increased to 5 mg"
+      },
+      {
+       "kind": "best_response",
+       "t": 6,
+       "unit": "months",
+       "precision": "at most",
+       "label": "14 g a month; 65 kg",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Liver and metabolic indices normal",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 30.438,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 27.0,
+    "follow_up_days": 152.188,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 4,
+    "jbi_of": 10,
+    "rule_tier": "B"
    }
   },
   {
@@ -5772,7 +6087,7 @@
    "id": "kelly-2026",
    "record_type": "case",
    "status": "Included",
-   "tier": "B",
+   "tier": "A",
    "collections": [
     "round2"
    ],
@@ -5817,15 +6132,15 @@
     "resolution": "Complete",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "None reported"
+    "reversal": "On-off rechallenge"
    },
    "downstream": {
     "level": 0,
     "note": "",
     "links": []
    },
-   "summary": "An impulse control disorder caused by a dopamine agonist resolved incidentally on a GLP-1 receptor agonist.",
-   "caveat": "No abstract; details from title only.",
+   "summary": "A 46-year-old's pramipexole-induced hypersexuality and compulsive shopping stopped on semaglutide given for proteinuria, crept back the day before each weekly dose and when he ran out, and stayed away for six months on an unchanged agonist.",
+   "caveat": "The impulse control disorder had driven affairs and a large debt just before, and that crisis may have prompted restraint of its own.",
    "tags": [
     "dopamine-agonist",
     "glp1",
@@ -5834,7 +6149,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC full text",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -5842,13 +6157,139 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "By the mid-2020s GLP-1 agonists were known to reduce alcohol and nicotine craving (trials and a meta-analysis), so a reward effect was conceivable."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 1,
+     "note": "Duration of the impulse control disorder not stated; dopaminergic regimen explicitly unchanged; no ICD scale."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "46-year-old man",
+     "age": 46,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "assessment",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Young-onset Parkinson's on pramipexole 1.5 mg three times daily and levodopa. Pramipexole had brought intrusive infidelity thoughts; a dose cut helped but he raised it again for motor benefit. Now hypersexual thoughts with affairs, and compulsive shopping (US$30,000)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Semaglutide 1 mg weekly for proteinuria; pramipexole and levodopa unchanged"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "months",
+       "precision": "at most",
+       "label": "Hypersexual thoughts stopped completely ('water on a fire')",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Mild return of the thoughts the day before each weekly dose, gone after each injection",
+       "to": 5
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 4,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Ran out of semaglutide by accident",
+       "note": "Order as reported; timing not stated."
+      },
+      {
+       "kind": "relapse",
+       "t": 4.1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Impulse control disorder returned"
+      },
+      {
+       "kind": "exposure_restart",
+       "t": 4.2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Semaglutide resumed"
+      },
+      {
+       "kind": "best_response",
+       "t": 4.3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Thoughts gone again",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Six months on semaglutide: no hypersexuality or compulsive spending; motor control good on unchanged dopaminergic drugs",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 30.438,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "follow_up_days": 182.625,
+    "durability": "Lost, then regained",
+    "timeline_reversal": "On-off rechallenge",
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {

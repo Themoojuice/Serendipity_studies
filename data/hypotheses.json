@@ -1019,6 +1019,240 @@
      "why": "Six bulimia patients abstinent on dextroamphetamine for ADHD"
     }
    ]
+  },
+  {
+   "case_id": "kelly-2026",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Agonist-driven impulse control disorder on an unchanged dose doesn't usually stop by itself."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Started at a crisis: affairs and a US$30,000 spending debt."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "A typical dopamine-agonist impulse control disorder."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "The marital and financial fallout may have motivated restraint."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "GLP-1 agonists suppress appetite and may blunt drive in general."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Semaglutide was for his kidneys; nobody expected this."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-report only; no impulse control scale."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "An effect that wears off the day before each weekly dose and returns when the drug runs out is a dose-response and a rechallenge in one patient, with the agonist that caused the disorder held constant.",
+   "hypotheses": [
+    {
+     "claim": "GLP-1 receptor activation damped the mesolimbic reward signalling that the dopamine agonist had sensitised.",
+     "chain": "Semaglutide → GLP-1 receptors in ventral tegmental area and nucleus accumbens → less dopamine release to rewards → over-valuation of sexual and shopping rewards dampened",
+     "mechanisms": [
+      "Neuropeptide (oxytocin, orexin, other)",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "End-of-dose return and relapse on running out; semaglutide blunts alcohol-evoked dopamine release in rodents (authors).",
+     "against": "Semaglutide's half-life is about a week, so a sharp wear-off the day before the next dose is more than drug levels alone predict.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Self-report only: no impulse control rating across the dosing cycle or the run-out.",
+     "test": "A validated impulse control rating (such as QUIP-RS) across the injection cycle and a documented pause."
+    },
+    {
+     "claim": "General suppression of appetite and drive, not a specific effect on the impulse control disorder.",
+     "chain": "Semaglutide → less hunger and less 'wanting' in general → fewer impulsive acts of every kind",
+     "mechanisms": [
+      "Global suppression (sedation, apathy, cognitive loss)"
+     ],
+     "latency_fit": "Fits",
+     "for": "GLP-1 agonists reduce food reward broadly.",
+     "against": "He kept working and playing pickleball; motor drive and function stayed good.",
+     "confidence": "Low",
+     "uncertainty_driver": "Mood, apathy and other rewards weren't assessed.",
+     "test": "An apathy scale alongside impulse control ratings."
+    }
+   ],
+   "related": [
+    {
+     "id": "meilinger-2026",
+     "why": "Semaglutide for obesity, drinking fell"
+    },
+    {
+     "id": "takizawa-2026",
+     "why": "Tirzepatide, three heavy drinkers drank less"
+    }
+   ]
+  },
+  {
+   "case_id": "meilinger-2026",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Heavy drinking fluctuates, and four years is not long."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "He came for weight loss, not at a drinking crisis."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Severe alcohol use disorder by DSM-5 count and AUDIT."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Testosterone started the same week; weight-clinic contact; bipolar care elsewhere."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Appetite suppression and nausea cut intake of anything."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "He started semaglutide after hearing about others' success, though for weight."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-report and AUDIT only."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "A 20-point AUDIT fall is real, but with testosterone started the same week, no timing and no biomarker, the case can only join the GLP-1 tally.",
+   "hypotheses": [
+    {
+     "claim": "GLP-1 receptor activation reduced the reward value of alcohol.",
+     "chain": "Semaglutide → GLP-1 receptors in reward circuits → less dopamine response to alcohol → craving falls",
+     "mechanisms": [
+      "Neuropeptide (oxytocin, orexin, other)",
+      "Dopamine"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "He described the desire to drink disappearing; consistent with trials and the other GLP-1 cases here.",
+     "against": "No record of when drinking fell relative to the dose steps.",
+     "confidence": "Low",
+     "uncertainty_driver": "No timeline of drinking against the titration schedule.",
+     "test": "A drinking diary against the dose steps; drinking returning if semaglutide stops."
+    },
+    {
+     "claim": "Testosterone replacement improved mood and energy, and drinking fell with it.",
+     "chain": "Testosterone for hypogonadism → better mood, energy and confidence → less drinking",
+     "mechanisms": [
+      "Sex steroids and reproduction"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Started the same week; hypogonadism can lower mood.",
+     "against": "Testosterone isn't known to end heavy drinking.",
+     "confidence": "Low",
+     "uncertainty_driver": "No mood ratings, and the two drugs started together.",
+     "test": "Drinking after either drug is stopped alone."
+    }
+   ],
+   "related": [
+    {
+     "id": "kelly-2026",
+     "why": "Semaglutide ending a dopamine-agonist impulse control disorder, with rechallenge"
+    },
+    {
+     "id": "takizawa-2026",
+     "why": "Tirzepatide, three heavy drinkers drank less"
+    }
+   ]
+  },
+  {
+   "case_id": "takizawa-2026",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Heavy drinking falls with age and illness."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Case 3 had already cut down after the first visit, before tirzepatide."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Two of three didn't have alcohol use disorder, so the 'syndrome' is mostly heavy drinking."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "New diabetes and liver diagnoses, clinic visits and metabolic improvement all came with the drug."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Nausea after each dose (case 3) and post-meal lethargy (case 1)."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Tirzepatide was for diabetes, and no one framed it as an alcohol treatment."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-reported intake; no AUDIT or biomarker of drinking for case 1."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Three heavy drinkers drinking less on tirzepatide fits the GLP-1 pattern, but only one has the syndrome and every patient got a new diagnosis and clinic contact at the same time. Case 2's 'bored while drinking' is the most specific detail.",
+   "hypotheses": [
+    {
+     "claim": "GLP-1/GIP receptor activation reduced the reward value of alcohol.",
+     "chain": "Tirzepatide → GLP-1 (and GIP) receptor signalling in reward circuits → less dopamine response to alcohol → drinking becomes boring",
+     "mechanisms": [
+      "Neuropeptide (oxytocin, orexin, other)",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Case 1's craving fell within a month; case 2 found drinking boring; the other GLP-1 cases here.",
+     "against": "Low doses; no measure of craving or reward.",
+     "confidence": "Low",
+     "uncertainty_driver": "Self-reported intake with no biomarker, in patients who all got new reasons to cut down.",
+     "test": "Phosphatidylethanol or GGT tracked against dose, and craving ratings."
+    },
+    {
+     "claim": "Gastrointestinal effects made drinking unpleasant.",
+     "chain": "Tirzepatide → nausea, slowed gastric emptying, post-meal lethargy → alcohol less pleasant → less drinking",
+     "mechanisms": [
+      "Interoceptive and visceral input"
+     ],
+     "latency_fit": "Fits",
+     "for": "Case 3 had nausea for 3 days after each dose; case 1 had lethargy after meals.",
+     "against": "The authors say drinking didn't fall because of lasting GI effects; case 3's nausea eased while intake stayed low.",
+     "confidence": "Low",
+     "uncertainty_driver": "Side effects weren't tracked against drinking.",
+     "test": "Drinking across the weekly cycle: less on nausea days would favour this."
+    }
+   ],
+   "related": [
+    {
+     "id": "kelly-2026",
+     "why": "Semaglutide ending a dopamine-agonist impulse control disorder, with rechallenge"
+    },
+    {
+     "id": "meilinger-2026",
+     "why": "Semaglutide for obesity, drinking fell"
+    }
+   ]
   }
  ]
 }
