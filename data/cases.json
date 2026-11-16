@@ -1,7 +1,7 @@
 {
  "library": "Serendipity Case Library",
- "schema_version": "1.3",
- "updated": "2026-11-15",
+ "schema_version": "1.4",
+ "updated": "2026-11-16",
  "unit_of_record": "One published study (a paper). n_patients counts patients within it; same_patient_as links papers describing the same patient.",
  "inclusion_criteria": [
   "A serious psychiatric syndrome resolved or substantially improved.",
@@ -95,6 +95,147 @@
    "emerging": "Emerging: similar cases, pooled data or trials, not yet settled",
    "known": "Known now: unexpected when reported, established since",
    "refuted": "Refuted: failed under controlled testing"
+  },
+  "appraisal_basis": {
+   "Title": "Judged from the title only",
+   "Abstract": "Judged from the abstract (or a database record's abstract)",
+   "Full text": "Full text read",
+   "Secondary source": "Read through a later paper or review that describes the case",
+   "Unrecorded": "Added in the first rounds, before the appraisal basis was recorded"
+  },
+  "unexpectedness_result": [
+   "pass",
+   "borderline"
+  ],
+  "jbi_checklist": {
+   "Case report": 8,
+   "Case series": 10
+  },
+  "jbi_answer": [
+   "Y",
+   "N",
+   "U",
+   "NA"
+  ],
+  "timeline_event": {
+   "onset": "Syndrome began",
+   "diagnosis": "Diagnosed",
+   "treatment_failed": "Treatment tried without lasting benefit",
+   "cointervention": "Other change around the time (possible confounder)",
+   "exposure_start": "Exposure began (t = 0)",
+   "exposure_stop": "Exposure stopped or ended",
+   "exposure_restart": "Exposure restarted",
+   "first_change": "First improvement",
+   "best_response": "Best response",
+   "relapse": "Symptoms returned",
+   "assessment": "Assessment or observation",
+   "follow_up": "Last follow-up"
+  },
+  "time_unit": {
+   "minutes": 0.0006944444444444445,
+   "hours": 0.041666666666666664,
+   "days": 1,
+   "weeks": 7,
+   "months": 30.4375,
+   "years": 365.25
+  },
+  "time_precision": {
+   "exact": "As stated, to the unit given",
+   "approx": "About this time (the paper says about, several, early, and so on)",
+   "at most": "Within this time: an upper bound",
+   "at least": "After at least this time: a lower bound"
+  },
+  "clinical_state": [
+   "Remitted",
+   "Partial",
+   "Unchanged",
+   "Worse"
+  ],
+  "sex": [
+   "F",
+   "M",
+   "Not stated"
+  ],
+  "lesion_kind": [
+   "Lesion",
+   "Injury",
+   "Resection or ablation",
+   "Stimulation target"
+  ],
+  "lesion_side": [
+   "Left",
+   "Right",
+   "Bilateral",
+   "Midline",
+   "Unstated"
+  ],
+  "lesion_region": [
+   "Prefrontal, dorsolateral",
+   "Prefrontal, ventromedial",
+   "Orbitofrontal",
+   "Anterior cingulate",
+   "Frontal, other",
+   "Insula",
+   "Temporal, lateral",
+   "Temporal, medial (amygdala, hippocampus)",
+   "Parietal",
+   "Occipital",
+   "Caudate",
+   "Putamen",
+   "Ventral striatum (nucleus accumbens)",
+   "Globus pallidus",
+   "Internal capsule",
+   "Thalamus",
+   "Subthalamic nucleus",
+   "Hypothalamus",
+   "Bed nucleus of the stria terminalis",
+   "Midbrain",
+   "Pons",
+   "Medulla",
+   "Cerebellum",
+   "Corpus callosum",
+   "White matter, other",
+   "Diffuse or multifocal",
+   "Vagus nerve",
+   "Spinal cord",
+   "Unstated"
+  ],
+  "lesion_aetiology": [
+   "Ischaemic stroke",
+   "Haemorrhage",
+   "Hypoxic-ischaemic",
+   "Trauma",
+   "Tumour",
+   "Surgery",
+   "Infection",
+   "Demyelination",
+   "Not applicable",
+   "Other"
+  ],
+  "imaging": [
+   "MRI",
+   "CT",
+   "MRI and CT",
+   "Other",
+   "None reported"
+  ],
+  "mappable": {
+   "Coordinates": "Coordinates or a normalised lesion mask are given",
+   "Figure": "Images are shown, so the lesion could be traced onto a template",
+   "Description only": "Named structures only, no images",
+   "No": "No usable localisation"
+  },
+  "latency_band": {
+   "Under a day": "First change within 24 hours of the exposure",
+   "1-13 days": "Within two weeks",
+   "2 weeks to 3 months": "Weeks",
+   "Over 3 months": "Months or longer"
+  },
+  "durability": {
+   "Sustained": "Still improved at the last follow-up, with no return",
+   "Lost": "Symptoms returned and did not settle again",
+   "Lost, then regained": "Symptoms returned, then settled again (often on re-exposure)",
+   "Unknown": "No follow-up after the response"
   }
  },
  "records": [
@@ -178,7 +319,16 @@
     "note": "Subthalamic stimulation for OCD went on to a randomised trial (Mallet, NEJM 2008).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "naqvi-2007",
@@ -260,7 +410,16 @@
     "note": "Addiction remission after insula and related lesions has since been pooled into one circuit (Joutsa, Nat Med 2022).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "wagner-jauregg-1883",
@@ -347,6 +506,15 @@
     "original_terms": "Acute psychosis (Vienna asylum, 1883)",
     "modern_reading": "Probably an acute psychotic or affective episode; not general paresis",
     "why_read": "The intercurrent-fever observation that led, over 34 years, to malaria therapy and psychiatry's only Nobel Prize."
+   },
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -428,7 +596,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "kuhn-2007",
@@ -508,7 +685,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "israel-2010",
@@ -584,7 +770,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "moreno-delgado-1997",
@@ -665,7 +860,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "miyaoka-2017",
@@ -740,7 +944,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "kraft-westman-2009",
@@ -832,7 +1045,16 @@
     "basis": "judged",
     "note": "Randomised evidence so far is modest in depression (Gao 2026) and suggestive in psychosis (Abram 2026)."
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "de-santis-1997",
@@ -908,7 +1130,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "solyom-1987",
@@ -984,7 +1215,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "yaryura-tobias-2003",
@@ -1059,7 +1299,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "leonard-rapoport-1987",
@@ -1134,7 +1383,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "palmer-2017",
@@ -1226,7 +1484,16 @@
     "basis": "judged",
     "note": "Randomised evidence so far is modest in depression (Gao 2026) and suggestive in psychosis (Abram 2026)."
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "palmer-2019",
@@ -1318,7 +1585,16 @@
     "basis": "judged",
     "note": "Randomised evidence so far is modest in depression (Gao 2026) and suggestive in psychosis (Abram 2026)."
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "fontaine-2004",
@@ -1394,7 +1670,16 @@
     "note": "Replicated Mallet 2002; the randomised STOC trial followed.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "oh-2011",
@@ -1462,13 +1747,129 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-16: full text read (PMC page, through Claude's web reader); identifiers from Europe PMC",
    "era": {
     "label": "emerging",
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Full text",
+    "date": "2026-11-16",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Onset around 68 with hypertension and diabetes: late-onset OC behaviour is often secondary to brain disease, and the cold-medicine habit may be dependence rather than compulsion."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Medicines, infection and dehydration ruled out; abulia and amnesia argued away rather than assessed."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "74-year-old woman",
+     "age": 74,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -6,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Cleaning, hand-washing, white gloves outdoors; daily milk, cold medicine and herbal pills (family report)",
+       "to": -5
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Left internal capsule genu infarct: sudden memory loss and odd behaviour"
+      },
+      {
+       "kind": "first_change",
+       "t": 0,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Family: the rituals stopped abruptly with the stroke"
+      },
+      {
+       "kind": "assessment",
+       "t": 9,
+       "unit": "days",
+       "precision": "exact",
+       "label": "First seen (CT on day 10): memory, language and executive deficits, little speech or facial expression; still wearing her gloves",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 4,
+       "unit": "months",
+       "precision": "exact",
+       "label": "No gloves; rituals still absent (the only follow-up)",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Internal capsule"
+    ],
+    "specific": "Genu of the left internal capsule (low density on CT, shown in figure 1)",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 0,
+    "latency_band": "Under a day",
+    "baseline_years": 5.5,
+    "follow_up_days": 121.75,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
+   }
   },
   {
    "id": "sani-2007",
@@ -1542,7 +1943,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "sandyk-1988",
@@ -1616,7 +2026,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "moussawi-2016",
@@ -1693,7 +2112,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "haque-2025",
@@ -1769,7 +2197,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "mackillop-2026",
@@ -1845,7 +2282,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "jarraya-2010",
@@ -1920,7 +2366,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "yeung-2020",
@@ -1995,7 +2450,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "smith-2025",
@@ -2070,7 +2534,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "erol-durgun-2026",
@@ -2145,7 +2618,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "diamond-2011",
@@ -2219,7 +2701,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "sosa-gomez-2026",
@@ -2296,7 +2787,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "gupta-2026",
@@ -2371,7 +2871,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "faruqui-2022",
@@ -2445,7 +2954,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "jewett-2020",
@@ -2522,7 +3040,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "downar-2012",
@@ -2597,7 +3124,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "abdollahifard-2026",
@@ -2672,7 +3208,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "klok-2025",
@@ -2746,7 +3291,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "hefzy-2011",
@@ -2821,7 +3375,16 @@
     "note": "Reported after the insula-smoking link was published (Naqvi 2007): a replication of an effect already known.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "najeeb-2016",
@@ -2896,7 +3459,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "yuan-2025",
@@ -2969,7 +3541,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "valadez-cuen-2024",
@@ -3044,7 +3625,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "pantoni-1997",
@@ -3120,7 +3710,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "kosel-2007",
@@ -3194,7 +3793,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "sciortino-2021",
@@ -3269,7 +3877,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "rammouz-2024",
@@ -3342,7 +3959,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "barbieri-2005",
@@ -3417,7 +4043,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "meilinger-2026",
@@ -3492,7 +4127,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "hill-2025",
@@ -3567,7 +4211,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "takizawa-2026",
@@ -3642,7 +4295,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "guerdjikova-2026",
@@ -3716,7 +4378,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "kelly-2026",
@@ -3790,7 +4461,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "lugo-radillo-2021",
@@ -3865,7 +4545,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "jansson-1984",
@@ -3941,7 +4630,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "joutsa-2022",
@@ -4016,7 +4714,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "ekstrom-2022",
@@ -4091,7 +4798,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "romer-2024",
@@ -4166,7 +4882,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "wagemaker-cade-1977",
@@ -4246,7 +4971,16 @@
     "note": "Remissions on dialysis did not survive sham-controlled testing (1980).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "hosseini-2026",
@@ -4326,7 +5060,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "bedell-2025",
@@ -4401,7 +5144,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "richards-2022",
@@ -4476,7 +5228,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "fernandes-2020",
@@ -4556,7 +5317,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "mathew-2019",
@@ -4636,7 +5406,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "kim-2016",
@@ -4716,7 +5495,16 @@
     "note": "Seizures relieving depression is the principle of convulsive therapy (1930s); unexpected here as a single accidental seizure.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "canan-2013",
@@ -4790,7 +5578,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "pardo-gonzalez-2023",
@@ -4870,7 +5667,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "felizardo-2023",
@@ -4950,7 +5756,16 @@
     "note": "Seizures relieving psychosis is the principle of convulsive therapy (Meduna, 1934).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "gerken-2022",
@@ -5030,7 +5845,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "durbin-2022",
@@ -5111,7 +5935,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "aminzade-2021",
@@ -5191,7 +6024,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "huhne-2021",
@@ -5270,7 +6112,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "vendrell-serres-2021",
@@ -5349,7 +6200,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "van-den-hoven-2021",
@@ -5429,7 +6289,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "collyer-2020",
@@ -5509,7 +6378,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "achamrah-2020",
@@ -5588,7 +6466,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "jarvinen-2019",
@@ -5668,7 +6555,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "shreedhara-2018",
@@ -5749,7 +6645,16 @@
     "note": "Follows Kanner 1993 and Guarnieri 2005.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "sair-2018",
@@ -5828,7 +6733,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "sumner-2017",
@@ -5908,7 +6822,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "ali-2015",
@@ -5988,7 +6911,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "coffey-2014",
@@ -6068,7 +7000,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "brieler-2014",
@@ -6146,7 +7087,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "nakama-2013",
@@ -6225,7 +7175,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "zakrzewski-2013",
@@ -6305,7 +7264,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "bagnati-2013",
@@ -6385,7 +7353,16 @@
     "note": "Replicates the lesion-induced addiction remission shown by Naqvi 2007 and pooled by Joutsa 2022.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "sandeep-2013",
@@ -6464,7 +7441,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "boudjani-2012",
@@ -6544,7 +7530,16 @@
     "note": "Fits the lesion-addiction literature after Naqvi 2007.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "hosseini-2012",
@@ -6624,7 +7619,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "kalenderoglu-2011",
@@ -6703,7 +7707,16 @@
     "note": "Opioid effects on OCD had been reported with tramadol and morphine.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "vartian-2004",
@@ -6782,7 +7795,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "stuve-2003",
@@ -6862,7 +7884,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "curran-1995",
@@ -6942,7 +7973,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "kanner-1993",
@@ -7023,7 +8063,16 @@
     "note": "Later replicated by Guarnieri 2005 and Shreedhara 2018.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "zhang-2024",
@@ -7097,7 +8146,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "liu-2026",
@@ -7170,7 +8228,16 @@
     "note": "Dialysis as a treatment for schizophrenia was tested and refuted around 1980 (see Wagemaker & Cade 1977).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "lipov-2024",
@@ -7248,7 +8315,16 @@
    "flags": [
     "preprint",
     "coi-trigger"
-   ]
+   ],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "gong-2024",
@@ -7322,7 +8398,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "tsang-2023",
@@ -7398,7 +8483,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "sun-2023",
@@ -7472,7 +8566,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "moccia-2022",
@@ -7546,7 +8649,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "bright-2018",
@@ -7622,7 +8734,16 @@
    },
    "flags": [
     "coi-trigger"
-   ]
+   ],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "funayama-2016",
@@ -7697,7 +8818,16 @@
     "note": "The subgenual cingulate is the target of DBS for depression (Mayberg 2005).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "jawaid-2016",
@@ -7771,7 +8901,16 @@
     "note": "Seizures relieving psychosis is the principle of convulsive therapy (Meduna, 1934).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "donoghue-2015",
@@ -7846,7 +8985,16 @@
     "note": "Ketamine's antidepressant effect in adults was known by 2015; the paediatric PTSD effect was not.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "lauritsen-2015",
@@ -7919,7 +9067,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "setsaas-2014",
@@ -7993,7 +9150,16 @@
     "note": "Echoes fever therapy (Wagner-Jauregg).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "rosenblat-2013",
@@ -8068,7 +9234,16 @@
     "note": "Seizure as antidepressant is the ECT principle; striking here because ECT had failed.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "harrison-2013",
@@ -8145,7 +9320,16 @@
    },
    "flags": [
     "coi-trigger"
-   ]
+   ],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "muskens-2012",
@@ -8220,7 +9404,16 @@
     "note": "Fits the lesion-addiction literature after Naqvi 2007, pooled by Joutsa 2022.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "mantione-2010",
@@ -8295,7 +9488,16 @@
     "note": "Accumbens DBS for addiction has since reached pilot studies.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "etches-2009",
@@ -8371,7 +9573,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "guarnieri-2005",
@@ -8446,7 +9657,16 @@
     "note": "Anterior cingulotomy is a psychosurgical target for OCD.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "thomas-2003",
@@ -8521,7 +9741,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "levine-2003",
@@ -8597,7 +9826,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "de-filippis-2026",
@@ -8674,7 +9912,16 @@
    },
    "flags": [
     "preprint"
-   ]
+   ],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "viglione-2025",
@@ -8749,7 +9996,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "mira-2024",
@@ -8824,7 +10080,16 @@
     "note": "",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "brasic-2018",
@@ -8898,7 +10163,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-09",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "pacheco-1965",
@@ -8973,6 +10247,15 @@
     "label": "emerging",
     "note": "",
     "basis": "judged"
+   },
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -9050,6 +10333,15 @@
     "label": "emerging",
     "note": "",
     "basis": "judged"
+   },
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -9126,6 +10418,15 @@
     "label": "emerging",
     "note": "",
     "basis": "judged"
+   },
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -9200,6 +10501,15 @@
     "label": "emerging",
     "note": "",
     "basis": "judged"
+   },
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -9277,6 +10587,15 @@
     "label": "emerging",
     "note": "",
     "basis": "judged"
+   },
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -9353,6 +10672,15 @@
     "label": "known",
     "note": "Established by pooled data by 2024.",
     "basis": "judged"
+   },
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -9430,6 +10758,15 @@
     "label": "known",
     "note": "Bidirectional psychiatric change after temporal lobectomy was well described by the 2010s.",
     "basis": "judged"
+   },
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -9506,6 +10843,15 @@
     "label": "emerging",
     "note": "",
     "basis": "judged"
+   },
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -9582,7 +10928,16 @@
     "note": "Fits later lesion work: Koenigs 2008 found vmPFC and amygdala damage protected Vietnam veterans from PTSD.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "dusoir-2005",
@@ -9658,7 +11013,16 @@
     "note": "One of a small set of eating-disorder remissions after brain lesions (see Uher & Treasure 2005).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "ho-2001",
@@ -9733,7 +11097,16 @@
     "note": "One of a small set of eating-disorder remissions after brain insults; the return with recovery is the informative part.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "calache-1991",
@@ -9807,7 +11180,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "rubin-1985",
@@ -9882,7 +11264,16 @@
     "note": "Seizures relieving depression is the principle of convulsive therapy; unexpected here as unplanned seizures.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "spiers-2016",
@@ -9957,7 +11348,16 @@
     "note": "Seizures relieving psychosis is the principle of convulsive therapy (Meduna, 1934).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "wilcox-2008",
@@ -10031,7 +11431,16 @@
     "note": "Joins other reports of mood disorders remitting after stroke; lesion-network analyses are recent.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "odeh-1989",
@@ -10105,7 +11514,16 @@
     "note": "Joins other reports of mood disorders remitting after stroke; lesion-network analyses are recent.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "martin-santos-1950",
@@ -10188,6 +11606,15 @@
     "original_terms": "Anxious depression",
     "modern_reading": "Probably melancholic or agitated depression",
     "why_read": "A pre-antidepressant observation that a small stroke could end a depression, decades before lesion-network mapping."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -10263,7 +11690,16 @@
     "note": "Joins older reports of psychosis remitting after fever, infection or coma.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "galati-2013",
@@ -10338,7 +11774,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "ferrao-2003",
@@ -10413,7 +11858,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "takano-2002",
@@ -10487,7 +11941,16 @@
     "note": "Stellate ganglion block later entered trials for PTSD, not for psychosis.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "wahed-1934",
@@ -10568,6 +12031,15 @@
     "original_terms": "Schizophrenia",
     "modern_reading": "Schizophrenia as diagnosed in 1930s India; course before the fever unclear",
     "why_read": "Natural malaria, not inoculated, at the height of fever-therapy enthusiasm; the atebrin cure muddies which one mattered."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -10647,7 +12119,16 @@
    "flags": [
     "venue",
     "overclaim"
-   ]
+   ],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "ohara-2004",
@@ -10727,7 +12208,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "ueki-2004",
@@ -10803,7 +12293,16 @@
     "note": "Joins older observations that delirium or unplanned seizures can lift depression (an ECT-like effect); never tested.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "tsolaki-2010",
@@ -10878,7 +12377,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "diamond-2006",
@@ -10954,7 +12462,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "bijanki-2020",
@@ -11031,7 +12548,16 @@
     "note": "Fits the right-amygdala account of PTSD and Koenigs 2008 (amygdala and vmPFC lesions protected veterans from PTSD). Xie 2026 replicated it.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "xie-2026",
@@ -11109,7 +12635,16 @@
     "note": "Replicates Bijanki 2020. Fits the right-amygdala account of PTSD and Koenigs 2008 (amygdala and vmPFC lesions protected veterans from PTSD).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "gillespie-2019",
@@ -11186,7 +12721,16 @@
     "note": "Joins older reports of psychosis remitting after brain infection, fever or antibiotics.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "malur-2000",
@@ -11261,7 +12805,16 @@
     "note": "Joins older observations that an incidental delirium, like ECT or insulin coma, can precede recovery (Malur 2000; Ueki 2004); never tested.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "baek-2022",
@@ -11336,7 +12889,16 @@
     "note": "Cholinesterase inhibitor trials in schizophrenia targeted cognition and were negative; no test in this setting.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "solmi-2013",
@@ -11412,7 +12974,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "choo-2024",
@@ -11488,7 +13059,16 @@
     "note": "Fits proposals linking insulin resistance to treatment-resistant bipolar disorder (Calkin and colleagues).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "romeo-2025",
@@ -11563,7 +13143,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "basheikh-2017",
@@ -11642,7 +13231,16 @@
     "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent: Reutens 1997 found chronic interictal psychosis unchanged, and seizure control is a confound (see Pintor 2022).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "shahani-2019",
@@ -11719,7 +13317,16 @@
     "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent: Reutens 1997 found chronic interictal psychosis unchanged, and seizure control is a confound (see Pintor 2022).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "hamdani-2013",
@@ -11796,7 +13403,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "makris-2021",
@@ -11876,7 +13492,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "zuschlag-2016",
@@ -11952,7 +13577,16 @@
     "note": "Fever-linked remission of psychosis has a long anecdotal history (Wagner-Jauregg, in library) but no modern controlled test.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "silva-2021",
@@ -12030,7 +13664,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "stevens-1990",
@@ -12107,7 +13750,16 @@
     "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent, and seizure control is a confound (see Pintor 2022).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "rizzo-2008",
@@ -12185,7 +13837,16 @@
     "note": "A small randomised trial of ondansetron added to haloperidol in Tourette syndrome (Toren 2005, recalled, not checked) was positive; not adopted.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "serratrice-2002",
@@ -12262,7 +13923,16 @@
     "note": "Gluten-linked psychosis remains contested; see De Santis 1997 and Jansson 1984 in library.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "juiz-fernandez-2022",
@@ -12340,7 +14010,16 @@
     "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent, and seizure control is a confound (see Pintor 2022).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "yousefzadeh-fard-2013",
@@ -12418,7 +14097,16 @@
     "note": "Extends the insula finding for smoking (Naqvi 2007, in library) to opium; not independently replicated for opioids.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "grootendorst-van-mil-2018",
@@ -12496,7 +14184,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "beraha-2017",
@@ -12572,7 +14269,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-10",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "mclaughlin-2013",
@@ -12647,7 +14353,16 @@
     "note": "Deep brain stimulation for anorexia itself was being trialled from 2013 (recalled, not checked).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-13",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "hanes-1996",
@@ -12722,7 +14437,16 @@
     "note": "Psilocybin for body dysmorphic disorder has since had a small open-label trial (recalled, not checked).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-13",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "echizen-2021",
@@ -12800,7 +14524,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-13",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "erbay-2022",
@@ -12876,7 +14609,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-13",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "coutinho-2016",
@@ -12953,7 +14695,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-13",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "hemming-1993",
@@ -13029,7 +14780,16 @@
     "note": "THC was later tested in small randomised trials in Tourette syndrome (Müller-Vahl, early 2000s; recalled, not checked).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-13",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "borchardt-1987",
@@ -13104,7 +14864,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-13",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "daumezon-1954",
@@ -13186,6 +14955,15 @@
     "original_terms": "Grave obsessional phenomena in a severely unbalanced individual",
     "modern_reading": "Severe OCD, possibly with a personality disorder",
     "why_read": "A self-inflicted frontal injury reproducing the leucotomy surgeons were then performing for the same illness."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-13",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -13263,7 +15041,16 @@
     "note": "Extends the insula finding (Naqvi 2007) to the dorsal striatum; compare Gaznick 2014.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-13",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "gaznick-2014",
@@ -13339,7 +15126,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-13",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "anon-1844-pleuropneumonia",
@@ -13421,6 +15217,15 @@
     "original_terms": "Acute mania",
     "modern_reading": "Acute manic episode, possibly delirium",
     "why_read": "An early instance of the intercurrent-illness cures that later underpinned fever therapy."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -13503,6 +15308,15 @@
     "original_terms": "Insanity",
     "modern_reading": "Unspecified psychosis",
     "why_read": "Recovery through a life-threatening septic illness, decades before anyone named inflammation."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -13590,6 +15404,15 @@
     "original_terms": "Insanity",
     "modern_reading": "Unclear; delirium from dental sepsis is possible",
     "why_read": "Fifty years before Henry Cotton pulled teeth to cure psychosis, a dental cure was already in print."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -13672,6 +15495,15 @@
     "original_terms": "Insanity",
     "modern_reading": "Unspecified psychosis",
     "why_read": "The same pandemic that produced influenzal psychoses also produced reported cures."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -13754,6 +15586,15 @@
     "original_terms": "Insanity (reflex insanity era)",
     "modern_reading": "Unclear; possibly an affective or psychotic episode",
     "why_read": "A window on reflex-insanity thinking, where pelvic organs were blamed for madness."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -13837,6 +15678,15 @@
     "original_terms": "Hysterical deafness",
     "modern_reading": "Functional hearing loss (functional neurological disorder)",
     "why_read": "A diagnostic test doubling as the cure, the same move made in modern functional neurology."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -13919,6 +15769,15 @@
     "original_terms": "Schizophrenic psychoses",
     "modern_reading": "Schizophrenia by 1950 American criteria, which were broad",
     "why_read": "Read through the period's theory of the schizophrenogenic mother, but the observation stands on its own."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -14001,6 +15860,15 @@
     "original_terms": "Mélancolie",
     "modern_reading": "Melancholic depression",
     "why_read": "Babinski died in 1932, so this 1950 item reprints or recounts an earlier report (original date not checked)."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -14083,6 +15951,15 @@
     "original_terms": "Psychosis",
     "modern_reading": "Uncertain mix of primary and alcohol-related psychosis",
     "why_read": "Nausea-based aversion conditioning, now abandoned, with an unexpected psychiatric side-effect."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -14166,6 +16043,15 @@
     "original_terms": "Psychose puerpérale",
     "modern_reading": "Postpartum psychosis",
     "why_read": "Caught in the same year the antituberculous drugs were showing mood effects in sanatoria."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -14247,6 +16133,15 @@
     "original_terms": "Psychosis",
     "modern_reading": "Unspecified psychosis",
     "why_read": "An accidental, diffuse brain insult acting like the shock treatments of its day."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -14330,6 +16225,15 @@
     "original_terms": "Narcotic addiction",
     "modern_reading": "Opioid use disorder",
     "why_read": "Sakel's original accident, replayed thirty years later and aimed at the addiction this time."
+   },
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
    }
   },
   {
@@ -14404,7 +16308,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "sharma-2008",
@@ -14479,7 +16392,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "ido-2017",
@@ -14555,7 +16477,16 @@
     "note": "Gut-microbiome interventions in schizophrenia are being trialled; results so far are mixed (recalled, not checked).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "gota-garces-2017",
@@ -14630,7 +16561,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "auffret-2020",
@@ -14706,7 +16646,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "vender-1996",
@@ -14781,7 +16730,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Title",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "ripsman-2025",
@@ -14857,7 +16815,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "marchetti-2001",
@@ -14933,7 +16900,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "fontenelle-2000",
@@ -15009,7 +16985,16 @@
     "note": "Exposure with response prevention was the standard behavioural treatment for OCD by 2000; the surprise is complete remission after a single unplanned, involuntary exposure.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "chimowitz-1990",
@@ -15086,7 +17071,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "silverstone-1991",
@@ -15162,7 +17156,16 @@
     "note": "Convulsive therapy rests on the antidepressant effect of seizures (1938); the surprise is spontaneous seizures working after repeated ECT had not.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "ohmura-2025",
@@ -15241,7 +17244,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "gordon-1948",
@@ -15325,7 +17337,16 @@
     "modern_reading": "Recurrent psychotic episodes of uncertain diagnosis (periodic psychosis, bipolar or schizoaffective illness)",
     "why_read": "Fourteen years of follow-up is rare in this literature, and Gordon sets the illness effect beside the new shock therapies."
    },
-   "observed_year": 1934
+   "observed_year": 1934,
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "maluquer-2002",
@@ -15401,7 +17422,16 @@
     "note": "Three separate reports (2002, 2013, 2018) of depression lifting on heparins given for clotting; no trial found so far.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "colli-2003",
@@ -15477,7 +17507,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "fujii-2005",
@@ -15553,7 +17592,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "ozawa-1999",
@@ -15629,7 +17677,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "arora-2006",
@@ -15705,7 +17762,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "delisle-1991",
@@ -15782,7 +17848,16 @@
     "note": "Benzodiazepine reversal of catatonia had been reported from the early 1980s (lorazepam; recalled, not checked) and the lorazepam challenge later became standard; in 1991 it was still news to many.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "feldinger-2013",
@@ -15859,7 +17934,16 @@
     "note": "Three separate reports (2002, 2013, 2018) of depression lifting on heparins given for clotting; no trial found so far.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "graham-2018",
@@ -15935,7 +18019,16 @@
     "note": "Three separate reports (2002, 2013, 2018) of depression lifting on heparins given for clotting; no trial found so far.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "liu-2016",
@@ -16012,7 +18105,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "nguyen-2021",
@@ -16089,7 +18191,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "vender-1990",
@@ -16163,7 +18274,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "fontana-2019",
@@ -16238,7 +18358,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "yovell-1994",
@@ -16314,7 +18443,16 @@
     "note": "Retrospective and small prospective studies later linked clozapine with less substance use in psychosis (2000s; recalled, not checked); no definitive trial.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "taylor-1978",
@@ -16389,7 +18527,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "dukarm-2005",
@@ -16465,7 +18612,16 @@
     "note": "Stimulants were later trialled in binge-eating disorder (lisdexamfetamine approved for it in the US in 2015; recalled, not checked); bulimia nervosa itself has no large trial.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "fujiwara-2025",
@@ -16540,7 +18696,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "deon-2012",
@@ -16616,7 +18781,16 @@
     "note": "Self-injury remitting after pallidal DBS in Lesch-Nyhan syndrome had been reported from the early 2000s (recalled, not checked).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "reimer-2009",
@@ -16693,7 +18867,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "cavenar-1977",
@@ -16768,7 +18951,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "macleod-1990",
@@ -16844,7 +19036,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "yates-1988",
@@ -16918,7 +19119,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "nagata-2013",
@@ -16993,7 +19203,16 @@
     "note": "Three separate reports (2007, 2013, 2014) of hallucinations stopping on mirtazapine given for depression or sleep; no trial found so far.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "yilmaz-2014",
@@ -17068,7 +19287,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "puente-1985",
@@ -17143,7 +19371,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "godschalx-dekker-2014",
@@ -17218,7 +19455,16 @@
     "note": "Three separate reports (2007, 2013, 2014) of hallucinations stopping on mirtazapine given for depression or sleep; no trial found so far.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "kastner-2016",
@@ -17293,7 +19539,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "morena-1994",
@@ -17370,7 +19625,16 @@
     "note": "Benzodiazepine reversal of catatonia had been reported from the early 1980s (lorazepam; recalled, not checked) and the lorazepam challenge later became standard; in 1994 it was not yet routine.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "terao-1999",
@@ -17445,7 +19709,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "berner-2008",
@@ -17522,7 +19795,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "maddigan-2004",
@@ -17574,7 +19856,7 @@
     "resolution": "Temporary",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "Natural off-on"
+    "reversal": "None reported"
    },
    "downstream": {
     "level": 1,
@@ -17582,7 +19864,7 @@
     "links": []
    },
    "summary": "A 14-year-old girl's mania, worsening through three weeks of medication changes, vanished the day she developed influenza with fever and came back two days later.",
-   "caveat": "All medicines were held that same day, so a break from drug effects competes with the fever.",
+   "caveat": "All medicines were held the day after the fever began, and the paper never says when the fever ended, so neither the improvement nor the return of mania can be pinned on the fever.",
    "tags": [
     "adolescent",
     "fever",
@@ -17593,13 +19875,167 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-16: full text read (PMC page, through Claude's web reader); identifiers from PubMed",
    "era": {
     "label": "known",
     "note": "Psychosis lifting during fever was long recognised (Wagner-Jauregg's malaria therapy, 1917); here the lull lasted two days.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Full text",
+    "date": "2026-11-16",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Paroxetine began three months before and visual hallucinations followed benztropine, so part of the picture may have been drug-induced."
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "A four-week episode in a 14-year-old can fluctuate; the window is two days."
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Mania returned on day 23, but the fever's end isn't reported, so the return can't be tied to the exposure stopping (outcome.reversal recoded from Natural off-on)."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U"
+     ]
+    },
+    "note": "Criterion 1 is doubtful: a first manic episode about four weeks old, with two short antipsychotic trials. Left Provisional for Brendan."
+   },
+   "timeline": [
+    {
+     "patient": "Ms B.",
+     "age": 14,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "cointervention",
+       "t": -109,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Venlafaxine switched to paroxetine; lorazepam as needed (3 months before admission)"
+      },
+      {
+       "kind": "onset",
+       "t": -25,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Insomnia, overactivity, psychotic symptoms (a week before admission)"
+      },
+      {
+       "kind": "assessment",
+       "t": -18,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Admitted with psychotic mania and suicidal thoughts"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -18,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Risperidone 0.75 mg twice daily with divalproex and temazepam"
+      },
+      {
+       "kind": "cointervention",
+       "t": -11,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Benztropine for stiffness; visual hallucinations followed; risperidone and benztropine stopped"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -11,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Chlorpromazine (150 mg a day by day 18) with divalproex 500 mg twice daily; still manic"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Fever 38.8 °C; influenza B on throat swab"
+      },
+      {
+       "kind": "cointervention",
+       "t": 1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "All medicines held: acute hepatitis with jaundice; IV fluids"
+      },
+      {
+       "kind": "best_response",
+       "t": 2,
+       "unit": "days",
+       "precision": "at most",
+       "label": "Mental state all but normal: no delusions or hallucinations, insight back; mild pressure of speech",
+       "state": "Partial"
+      },
+      {
+       "kind": "relapse",
+       "t": 4,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Manic symptoms back"
+      },
+      {
+       "kind": "cointervention",
+       "t": 4,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Lithium started, oxazepam added"
+      },
+      {
+       "kind": "follow_up",
+       "t": 58,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Discharged on lithium, mania well controlled (about 2½ months after admission; the date is garbled in the text)",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 2,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 0.07,
+    "follow_up_days": 58,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "C"
+   }
   },
   {
    "id": "ward-1975",
@@ -17675,7 +20111,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "koethe-2007",
@@ -17750,7 +20195,16 @@
     "note": "Three separate reports (2007, 2013, 2014) of hallucinations stopping on mirtazapine given for depression or sleep; no trial found so far.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "nahm-2009",
@@ -17826,7 +20280,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "vieweg-1985",
@@ -17903,7 +20366,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "matsui-2004",
@@ -17979,7 +20451,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "grunstein-2017",
@@ -18055,7 +20536,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "corte-2025",
@@ -18130,7 +20620,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "schweickert-1997",
@@ -18206,7 +20705,16 @@
     "note": "Methylphenidate and other stimulants given for ADHD were reported to curb binge eating from 1997 on (this record, Drimmer 2003, Dukarm 2005); lisdexamfetamine was later approved for binge-eating disorder in the US (recalled, not checked).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "taira-2003",
@@ -18282,7 +20790,16 @@
     "note": "Pallidal DBS in Lesch-Nyhan syndrome was repeated in later reports and series (Deon 2012; clinical outcome series 2021) and gathered in a 2023 systematic review; self-injury is now one of its aims.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "pozzi-2014",
@@ -18358,7 +20875,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "miyazaki-2023",
@@ -18434,7 +20960,16 @@
     "note": "Earlier letters (2011, Yilmaz 2014) had reported methylphenidate for ADHD reducing stealing.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-14",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "ray-2016",
@@ -18511,7 +21046,16 @@
     "note": "Ketamine's antidepressant effect was established by 2016; its effect on panic and agoraphobia was unreported at the time (the authors' search found nothing).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Full text",
+    "date": "2026-11-15",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "andreou-2008",
@@ -18587,7 +21131,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Full text",
+    "date": "2026-11-15",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "abe-2016",
@@ -18663,7 +21216,16 @@
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Abstract",
+    "date": "2026-11-15",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "benazzi-1993",
@@ -18740,7 +21302,16 @@
     "note": "Reviews of the time suggested benzodiazepines could have antipsychotic effects as add-ons; etizolam itself had not been reported (the authors found nothing).",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Full text",
+    "date": "2026-11-15",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "levine-1996",
@@ -18816,7 +21387,16 @@
     "note": "Minocycline was later tested as an antidepressant in small trials, pooled in a 2017 meta-analysis (Rosenblat and McIntyre); not standard treatment.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Unrecorded",
+    "date": null,
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   },
   {
    "id": "riestra-2026",
@@ -18892,7 +21472,16 @@
     "note": "Bupropion is not an OCD treatment; a few earlier reports were mixed, and Canan 2012 described body dysmorphic disorder remitting on it.",
     "basis": "judged"
    },
-   "flags": []
+   "flags": [],
+   "appraisal": {
+    "basis": "Full text",
+    "date": "2026-11-15",
+    "by": null,
+    "unexpectedness": null,
+    "attribution": null,
+    "jbi": null,
+    "note": ""
+   }
   }
  ]
 }

@@ -61,6 +61,9 @@ def add_records(R, cand, *, collection, found_via, today):
             "verified": f"{today}: {'abstract' if c.get('abs') else 'title'}-level appraisal; identifiers from Europe PMC",
             "era": {"label": era[0], "note": era[1], "basis": "judged" if k.get("era") else "from downstream level"},
             "flags": k.get("flags", []),
+            # schema 1.4: what the appraisal rests on; the scored parts wait for the full-text read
+            "appraisal": {"basis": "Abstract" if c.get("abs") else "Title", "date": today, "by": "Claude",
+                          "unexpectedness": None, "attribution": None, "jbi": None, "note": ""},
         })
         added.append(k["id"])
     d["updated"] = today

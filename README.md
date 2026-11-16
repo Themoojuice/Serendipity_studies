@@ -7,10 +7,13 @@ A case library of published reports where a serious psychiatric syndrome resolve
 | Path | What it is |
 |---|---|
 | `index.html` | The library viewer (served by GitHub Pages) |
-| `data/cases.json` | The library: one record per study, controlled vocabularies, schema 1.1 |
+| `data/cases.json` | The library: one record per study, controlled vocabularies, schema 1.4 |
+| `data/hypotheses.json` | Our reading of each case: boring explanations first, then ranked mechanisms. Ours, not the papers' |
 | `ledger/` | Every search hit and every search run, append-only |
 | `queries/` | Search strings, versioned per database |
 | `protocol/PROTOCOL.md` | Inclusion rules, appraisal, era labels, screening and stopping rules |
+| `protocol/SCHEMA.md` | Field guide: appraisal, timeline, lesion, derived values, hypotheses |
+| `scripts/derive.py` | Computes latency, durability, scores and the rule tier; run after any edit |
 | `scripts/validate_cases.py` | Run before every commit |
 
 Each card links to the free full text where one exists, otherwise to the abstract and DOI.

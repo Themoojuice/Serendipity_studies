@@ -133,12 +133,42 @@ code { font-family: var(--font-mono); font-size: 12.5px; }
 [hidden] { display: none !important; }
 details.filters > summary { cursor: pointer; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); padding: 6px 0; list-style-position: inside; }
 details.filters[open] > summary { margin-bottom: 4px; }
+/* Schema 1.4: per-case timeline strip and "Our reading" (the hypothesis layer, kept visibly separate from the paper's facts) */
+details.tl, details.reading { font-size: 13px; border-top: 1px solid var(--line); padding-top: 6px; }
+details.tl > summary, details.reading > summary { cursor: pointer; color: var(--accent); font-weight: 500; }
+.tl svg { width: 100%; height: auto; display: block; margin: 6px 0 2px; overflow: visible; }
+.tl .who { margin: 8px 0 0; color: var(--muted); font-size: 12px; }
+.tl-list { margin: 4px 0 0; padding: 0; list-style: none; display: grid; gap: 3px; }
+.tl-list li { display: grid; grid-template-columns: 104px 1fr; gap: 10px; align-items: baseline; }
+.tl-list time { font-family: var(--font-mono); font-size: 12px; color: var(--muted); text-align: right; white-space: nowrap; }
+.tl-list .k { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; background: var(--kc); }
+.tl-list .st { color: var(--muted); }
+details.reading { background-image: linear-gradient(90deg, var(--accent-soft), transparent 55%); border-radius: 0 0 6px 6px; padding-left: 8px; padding-right: 8px; padding-bottom: 6px; }
+.reading .ours { margin: 6px 0 0; color: var(--muted); font-size: 12px; font-style: italic; }
+.reading p { margin: 6px 0 0; max-width: 75ch; }
+.reading table { width: 100%; margin: 6px 0 0; background: var(--surface); }
+.reading td.rt { white-space: nowrap; }
+.reading .r-Likely { color: var(--warn); font-weight: 600; }
+.reading .r-Unlikely { color: var(--muted); }
+.reading ol { margin: 6px 0 0; padding-left: 20px; display: grid; gap: 8px; }
+.reading ol li > div { margin-top: 2px; }
+.reading .chain { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.reading .lbl { color: var(--muted); }
+.reading .verdict { font-weight: 600; }
+.reading .rel { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; align-items: center; }
 @media (max-width: 700px) {
   .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .grid2 { grid-template-columns: 1fr; }
   .facts { grid-template-columns: 1fr; }
   .facts dt { margin-top: 4px; }
   .bar { grid-template-columns: minmax(90px, 140px) 1fr 30px; }
+  .tl-list li { grid-template-columns: 80px 1fr; gap: 8px; }
+  .reading table, .reading tbody, .reading tr, .reading td { display: block; border: 0; }
+  .reading tr:first-child { display: none; }
+  .reading tr { border-top: 1px solid var(--line); padding: 5px 6px; }
+  .reading td { padding: 0; }
+  .reading td:first-child, .reading td.rt { display: inline; font-weight: 600; }
+  .reading td.rt::before { content: "\00a0\00b7\00a0"; color: var(--muted); font-weight: 400; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
@@ -272,7 +302,7 @@ details.filters[open] > summary { margin-bottom: 4px; }
     "Personality": "--s-personality"
   };
   if (window.matchMedia && window.matchMedia("(max-width: 700px)").matches) { var fb = document.getElementById("filtersBox"); if (fb) fb.removeAttribute("open"); }
-  var DATA = null, RECORDS = [];
+  var DATA = null, RECORDS = [], HDATA = null, HYP = {};
   var state = { q: "", syn: new Set(), trig: new Set(), tags: new Set(), tier: "", era: "", period: "", freeOnly: false, showCtx: false, sort: "impact" };
 
   function $(id) { return document.getElementById(id); }
@@ -297,7 +327,7 @@ details.filters[open] > summary { margin-bottom: 4px; }
   }
   function primaryLink(r) { return r.links.full_text || r.links.abstract || r.links.doi; }
   function haystack(r) {
-    return [r.citation.title, r.citation.authors, r.citation.journal, r.summary, r.syndrome.specific,
+    return [r.id, r.citation.title, r.citation.authors, r.citation.journal, r.summary, r.syndrome.specific,
       r.trigger.specific, r.trigger.category, r.caveat, r.ids.doi, r.ids.pmid, r.tags.join(" "),
       r.downstream.note, r.era.note].join(" ").toLowerCase();
   }
@@ -379,6 +409,155 @@ details.filters[open] > summary { margin-bottom: 4px; }
   var FLAG_TEXT = { "preprint": "Preprint", "coi-trigger": "Conflict of interest", "venue": "Questionable venue", "retracted": "Retracted", "concern": "Expression of concern", "mill": "Paper-mill signals", "media-first": "Press only", "overclaim": "Over-claims", "altmed": "Alternative-medicine framing", "no-followup": "No follow-up", "antique-bar": "Period evidence standard" };
   var ERA_SHORT = { novel: "Still unexplained", emerging: "Emerging", known: "Known now · unexpected then", refuted: "Refuted" };
 
+  // ---- schema 1.4 helpers: times, timeline strip, appraisal line, our reading ----
+  var SVGNS = "http://www.w3.org/2000/svg";
+  function sv(tag, attrs, kids) {
+    var n = document.createElementNS(SVGNS, tag);
+    Object.keys(attrs || {}).forEach(function (k) { n.setAttribute(k, attrs[k]); });
+    (kids || []).forEach(function (c) { if (c != null) n.appendChild(c); });
+    return n;
+  }
+  function svTitle(t) { var n = document.createElementNS(SVGNS, "title"); n.textContent = t; return n; }
+  var IMPROVE = { first_change: 1, best_response: 1 };
+  var KIND_VAR = { onset: "--muted", diagnosis: "--muted", treatment_failed: "--muted", cointervention: "--warn",
+    exposure_start: "--accent", exposure_stop: "--accent", exposure_restart: "--accent", first_change: "--free",
+    best_response: "--free", relapse: "--warn", assessment: "--muted", follow_up: "--ink" };
+  function evDays(e) { var f = DATA.vocabularies.time_unit[e.unit]; return (e.to == null ? e.t : (e.t + e.to) / 2) * f; }
+  function signed(x) { return (x > 0 ? "+" : x < 0 ? "−" : "") + String(Math.abs(x)); }
+  function fmtT(e) {
+    if (e.t === 0 && e.to == null) return "t = 0";
+    var pre = { approx: "≈", "at most": "≤", "at least": "≥" }[e.precision] || "";
+    var unit = (e.to == null && Math.abs(e.t) === 1) ? e.unit.replace(/s$/, "") : e.unit;
+    return pre + signed(e.t) + (e.to != null ? " to " + signed(e.to) : "") + " " + unit;
+  }
+  function fmtDays(d) {
+    if (d < 1) { var h = Math.round(d * 24); return h < 1 ? "the same hour" : h + (h === 1 ? " hour" : " hours"); }
+    if (d < 14) { var n = Math.round(d); return n + (n === 1 ? " day" : " days"); }
+    if (d < 91) return Math.round(d / 7) + " weeks";
+    if (d < 730) return Math.round(d / 30.4375) + " months";
+    return (Math.round(d / 365.25 * 10) / 10) + " years";
+  }
+  function latencyText(dv) {
+    if (dv.latency_days === 0) return "at once";
+    if (dv.latency_bound === "at most") return "within " + fmtDays(dv.latency_days);
+    if (dv.latency_bound === "at least") return "after at least " + fmtDays(dv.latency_days);
+    return "after " + fmtDays(dv.latency_days);
+  }
+
+  function tlStrip(track) {
+    var evs = track.events, ds = evs.map(evDays);
+    function tx(d) { return (d < 0 ? -1 : 1) * Math.log(1 + Math.abs(d)) / Math.LN10; }
+    var lo = Math.min(0, Math.min.apply(null, ds)), hi = Math.max(0, Math.max.apply(null, ds));
+    var a = tx(lo) - 0.12, b = tx(hi) + 0.12;
+    if (b - a < 1) { b = a + 1; }
+    var W = (window.matchMedia && window.matchMedia("(max-width: 700px)").matches) ? 360 : 600, L = 10, R = W - 10;
+    function X(d) { return L + (tx(d) - a) / (b - a) * (R - L); }
+    var s = sv("svg", { viewBox: "0 0 " + W + " 62", role: "img", "aria-label": "Timeline on a logarithmic scale, centred on the exposure" });
+    if (lo < 0) s.appendChild(sv("rect", { x: L, y: 12, width: Math.max(0, X(0) - L), height: 34, rx: 4, style: "fill:var(--bg)" }));
+    s.appendChild(sv("line", { x1: L, y1: 34, x2: R, y2: 34, style: "stroke:var(--line);stroke-width:2" }));
+    [[-3652.5, "−10y"], [-365.25, "−1y"], [-30.4375, "−1mo"], [-7, "−1wk"], [-1, "−1d"], [0, "0"],
+     [1, "+1d"], [7, "+1wk"], [30.4375, "+1mo"], [365.25, "+1y"], [3652.5, "+10y"]].forEach(function (tk) {
+      if (tx(tk[0]) < a || tx(tk[0]) > b) return;
+      var x = X(tk[0]);
+      s.appendChild(sv("line", { x1: x, y1: 31, x2: x, y2: 37, style: "stroke:var(--muted);stroke-width:1" }));
+      var lab = sv("text", { x: x, y: 58, "text-anchor": "middle", style: "fill:var(--muted);font-size:9px;font-family:var(--font-mono)" });
+      lab.textContent = tk[1]; s.appendChild(lab);
+    });
+    // improved spans: from a response to a return (or to the last event)
+    var order = evs.map(function (e, i) { return [ds[i], e]; }).sort(function (p, q) { return p[0] - q[0]; });
+    var start = null, last = order[order.length - 1][0];
+    order.forEach(function (p) {
+      if (IMPROVE[p[1].kind] && start === null) start = p[0];
+      else if (p[1].kind === "relapse" && start !== null) { s.appendChild(sv("rect", { x: X(start), y: 21, width: Math.max(2, X(p[0]) - X(start)), height: 6, rx: 3, style: "fill:var(--free);opacity:.35" })); start = null; }
+    });
+    if (start !== null) s.appendChild(sv("rect", { x: X(start), y: 21, width: Math.max(2, X(last) - X(start)), height: 6, rx: 3, style: "fill:var(--free);opacity:.35" }));
+    evs.forEach(function (e, i) {
+      var x = X(ds[i]), c = "var(" + (KIND_VAR[e.kind] || "--muted") + ")", t = svTitle(fmtT(e) + ": " + e.label), m;
+      if (e.to != null) s.appendChild(sv("line", { x1: X(e.t * DATA.vocabularies.time_unit[e.unit]), y1: 34, x2: X(e.to * DATA.vocabularies.time_unit[e.unit]), y2: 34, style: "stroke:" + c + ";stroke-width:4;stroke-linecap:round" }));
+      if (e.kind.indexOf("exposure") === 0) m = sv("rect", { x: x - 2, y: 14, width: 4, height: 40, rx: 1, style: e.kind === "exposure_stop" ? "fill:var(--surface);stroke:" + c + ";stroke-width:1.5" : "fill:" + c }, [t]);
+      else if (IMPROVE[e.kind] || e.kind === "relapse") m = sv("circle", { cx: x, cy: 34, r: 5.5, style: "fill:" + c + ";stroke:var(--surface);stroke-width:1.5" }, [t]);
+      else if (e.kind === "follow_up") m = sv("path", { d: "M" + x + " 27 l7 7 l-7 7 l-7 -7 z", style: "fill:" + (e.state === "Remitted" || e.state === "Partial" ? "var(--free)" : "var(--warn)") + ";stroke:var(--ink);stroke-width:1" }, [t]);
+      else if (e.kind === "treatment_failed") m = sv("path", { d: "M" + (x - 4) + " 30 l8 8 M" + (x + 4) + " 30 l-8 8", style: "stroke:" + c + ";stroke-width:2" }, [t]);
+      else if (e.kind === "onset" || e.kind === "diagnosis") m = sv("rect", { x: x - 4, y: 30, width: 8, height: 8, style: "fill:" + c }, [t]);
+      else m = sv("circle", { cx: x, cy: 34, r: 4, style: "fill:var(--surface);stroke:" + c + ";stroke-width:1.5" }, [t]);
+      s.appendChild(m);
+    });
+    return s;
+  }
+  function timelineBox(r) {
+    var tracks = r.timeline || [];
+    if (!tracks.length) return null;
+    var dv = r.derived || {};
+    var kids = [el("summary", { text: "Timeline" + (dv.latency_band ? " · first change " + latencyText(dv) : "") + (dv.durability && dv.durability !== "Unknown" ? " · " + dv.durability.toLowerCase() : "") })];
+    tracks.slice(0, 6).forEach(function (tr) {
+      var who = [tr.patient, tr.age != null ? tr.age + " y" : null, tr.sex && tr.sex !== "Not stated" ? tr.sex : null].filter(Boolean).join(", ");
+      if (tracks.length > 1 || who) kids.push(el("p", { class: "who", text: who }));
+      kids.push(tlStrip(tr));
+      var ol = el("ol", { class: "tl-list" });
+      tr.events.forEach(function (e) {
+        var extra = [];
+        if (e.state) extra.push(e.state.toLowerCase());
+        (e.scores || []).forEach(function (sc) { extra.push(sc.scale + " " + sc.value); });
+        ol.appendChild(el("li", {}, [el("time", { text: fmtT(e) }), el("span", {}, [
+          el("span", { class: "k", style: "--kc:var(" + (KIND_VAR[e.kind] || "--muted") + ")", title: DATA.vocabularies.timeline_event[e.kind] }),
+          e.label, extra.length ? el("span", { class: "st", text: " (" + extra.join("; ") + ")" }) : null])]));
+      });
+      kids.push(ol);
+    });
+    if (tracks.length > 6) kids.push(el("p", { class: "who", text: (tracks.length - 6) + " more patients in the data" }));
+    return el("details", { class: "tl" }, kids);
+  }
+  function appraisalText(r) {
+    var ap = r.appraisal, dv = r.derived || {};
+    if (!ap) return null;
+    var s = { "Full text": "Full text read", "Unrecorded": "Basis not recorded (early round)", "Secondary source": "From a secondary source" }[ap.basis] || (ap.basis + " only");
+    if (ap.basis !== "Unrecorded" && (ap.by || ap.date)) s += " (" + [ap.by, ap.date].filter(Boolean).join(", ") + ")";
+    if (dv.attribution_grade) s += " · attribution " + dv.attribution_grade + " (" + dv.attribution_score + "/6)";
+    if (dv.jbi_score != null) s += " · JBI " + dv.jbi_score + "/" + dv.jbi_of;
+    if (dv.rule_tier) s += " · rule tier " + dv.rule_tier;
+    if (ap.note) s += ". " + ap.note;
+    return s;
+  }
+  function jumpTo(id) {
+    state.q = id; var q = $("q"); if (q) q.value = id; renderAll();
+    var list = $("list"); if (list && list.scrollIntoView) list.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  function readingBox(r) {
+    var h = HYP[r.id];
+    if (!h || !HDATA) return null;
+    var HV = HDATA.vocabularies;
+    var tb = el("table", {}, [el("tr", {}, [el("th", { text: "Boring explanation" }), el("th", { text: "Rating" }), el("th", { text: "Why" })])]);
+    Object.keys(HV.null_explanation).forEach(function (k) {
+      var n = h.nulls[k] || {};
+      tb.appendChild(el("tr", {}, [el("td", { title: HV.null_explanation[k], text: HV.null_explanation[k].split(":")[0] }),
+        el("td", { class: "rt r-" + String(n.rating).replace(/[^A-Za-z]/g, ""), text: n.rating || "" }), el("td", { text: n.why || "" })]));
+    });
+    var ol = el("ol");
+    h.hypotheses.forEach(function (c) {
+      ol.appendChild(el("li", {}, [
+        el("b", { text: c.claim }),
+        el("div", { class: "chain", text: c.chain }),
+        el("div", {}, [el("span", { class: "lbl", text: "Confidence: " }), c.confidence + ". " + c.uncertainty_driver]),
+        el("div", {}, [el("span", { class: "lbl", text: "For: " }), c["for"]]),
+        el("div", {}, [el("span", { class: "lbl", text: "Against: " }), c.against]),
+        el("div", {}, [el("span", { class: "lbl", text: "Would tell it apart: " }), c.test]),
+        el("div", {}, [el("span", { class: "lbl", text: "Mechanisms: " }), c.mechanisms.map(function (m) { return m + " (" + HV.mechanism[m].toLowerCase() + ")"; }).join(", ") + " · timing " + c.latency_fit.toLowerCase()])
+      ]));
+    });
+    var rel = null;
+    if ((h.related || []).length) {
+      rel = el("div", { class: "rel" }, [el("span", { class: "lbl", text: "Related:" })]);
+      h.related.forEach(function (x) { rel.appendChild(el("button", { class: "tag", type: "button", title: x.why, onclick: function () { jumpTo(x.id); } }, [x.id])); });
+    }
+    return el("details", { class: "reading" }, [
+      el("summary", {}, ["Our reading: ", el("span", { class: "verdict", text: h.verdict }), " · " + h.status + ", " + h.written_by]),
+      el("p", { class: "ours", text: "Our hypotheses, not the paper's. The boring explanations come first; a case beats the null only when none of them is Likely." }),
+      el("p", { text: h.verdict_note }), tb,
+      el("p", { class: "ours", text: "Candidate mechanisms, most likely first" }), ol, rel,
+      h.questions ? el("p", {}, [el("span", { class: "lbl", text: "Open question: " }), h.questions]) : null
+    ]);
+  }
+
   function obsYear(r) { return r.observed_year || Number(r.citation.year); }
   function isAntique(r) { return obsYear(r) < 1970; }
   function card(r) {
@@ -394,9 +573,12 @@ details.filters[open] > summary { margin-bottom: 4px; }
     top.appendChild(el("span", { class: "pill era-" + r.era.label, title: DATA.vocabularies.era[r.era.label], text: ERA_SHORT[r.era.label] }));
     top.appendChild(el("span", { class: r.links.full_text ? "pill free" : "pill", text: r.access }));
 
+    var dv = r.derived || {};
     var outcome = [r.outcome.resolution];
-    if (r.outcome.time_to_resolution) outcome.push("within " + r.outcome.time_to_resolution.toLowerCase());
-    if (r.outcome.follow_up) outcome.push("follow-up " + r.outcome.follow_up);
+    if (dv.latency_days != null) outcome.push("first change " + latencyText(dv));
+    else if (r.outcome.time_to_resolution) outcome.push("within " + r.outcome.time_to_resolution.toLowerCase());
+    if (dv.follow_up_days != null) outcome.push("follow-up " + fmtDays(dv.follow_up_days) + (dv.durability && dv.durability !== "Unknown" ? " (" + dv.durability.toLowerCase() + ")" : ""));
+    else if (r.outcome.follow_up) outcome.push("follow-up " + r.outcome.follow_up);
     var facts = el("dl", { class: "facts" }, [
       el("dt", { text: "Syndrome" }), el("dd", { text: r.syndrome.specific }),
       el("dt", { text: "Trigger" }), el("dd", { text: r.trigger.specific + " (" + r.trigger.intent.toLowerCase() + ")" }),
@@ -413,6 +595,13 @@ details.filters[open] > summary { margin-bottom: 4px; }
     facts.appendChild(el("dt", { text: "Led to" })); facts.appendChild(dd);
     facts.appendChild(el("dt", { text: "Now" }));
     facts.appendChild(el("dd", { text: DATA.vocabularies.era[r.era.label] + (r.era.note ? ". " + r.era.note : "") + (r.era.basis !== "judged" ? " (provisional, set from the downstream level)" : "") }));
+    if (r.lesion) {
+      var le = r.lesion;
+      facts.appendChild(el("dt", { text: "Site" }));
+      facts.appendChild(el("dd", { text: le.side + " · " + le.regions.join(", ") + ": " + le.specific + " (" + le.imaging + "; " + ({ Coordinates: "coordinates given", Figure: "images in the paper", "Description only": "described, no images", No: "not localised" }[le.mappable] || le.mappable) + ")" }));
+    }
+    var apt = appraisalText(r);
+    if (apt) { facts.appendChild(el("dt", { text: "Appraised" })); facts.appendChild(el("dd", { text: apt })); }
 
     var actions = el("div", { class: "actions" });
     if (r.links.full_text) actions.appendChild(el("a", { class: "btn free", href: r.links.full_text, target: "_blank", rel: "noopener" }, ["Full text ↗"]));
@@ -432,6 +621,7 @@ details.filters[open] > summary { margin-bottom: 4px; }
       el("p", { class: "summary", text: r.summary }),
       facts,
       r.caveat ? el("p", { class: "caveat", text: "Caveat: " + r.caveat }) : null,
+      timelineBox(r), readingBox(r),
       actions, tags
     ]);
   }
@@ -534,7 +724,24 @@ details.filters[open] > summary { margin-bottom: 4px; }
     ["same_patient_as", "Id of a record describing the same patient (avoid double-counting)", function (r) { return r.same_patient_as || ""; }],
     ["found_via", "Search source", function (r) { return r.found_via; }],
     ["date_added", "Date added to the library", function (r) { return r.date_added; }],
-    ["caveat", "Main limitation", function (r) { return r.caveat; }]
+    ["caveat", "Main limitation", function (r) { return r.caveat; }],
+    ["appraisal_basis", "What the appraisal rests on: Title, Abstract, Full text, Secondary source, Unrecorded", function (r) { return r.appraisal ? r.appraisal.basis : ""; }],
+    ["attribution_score", "Protocol section 4, out of 6 (derived; blank until full-text appraisal)", function (r) { return (r.derived || {}).attribution_score == null ? "" : r.derived.attribution_score; }],
+    ["attribution_grade", "A 5-6, B 4, C 2-3, D 0-1 (derived)", function (r) { return (r.derived || {}).attribution_grade || ""; }],
+    ["jbi_score", "JBI checklist Yes count (derived)", function (r) { return (r.derived || {}).jbi_score == null ? "" : r.derived.jbi_score; }],
+    ["rule_tier", "The tier the section 6 rule gives (derived)", function (r) { return (r.derived || {}).rule_tier || ""; }],
+    ["latency_days", "Exposure to first improvement, days (derived from the timeline)", function (r) { return (r.derived || {}).latency_days == null ? "" : r.derived.latency_days; }],
+    ["latency_bound", "Blank, at most or at least (censoring)", function (r) { return (r.derived || {}).latency_bound || ""; }],
+    ["latency_band", "Under a day, 1-13 days, 2 weeks to 3 months, Over 3 months", function (r) { return (r.derived || {}).latency_band || ""; }],
+    ["baseline_years", "Syndrome onset to exposure, years (derived)", function (r) { return (r.derived || {}).baseline_years == null ? "" : r.derived.baseline_years; }],
+    ["follow_up_days", "Exposure to last follow-up, days (derived)", function (r) { return (r.derived || {}).follow_up_days == null ? "" : r.derived.follow_up_days; }],
+    ["durability", "Sustained, Lost, Lost then regained, Unknown (derived)", function (r) { return (r.derived || {}).durability || ""; }],
+    ["age", "Index patient's age at the exposure, years", function (r) { return r.timeline && r.timeline[0].age != null ? r.timeline[0].age : ""; }],
+    ["sex", "Index patient's sex", function (r) { return r.timeline && r.timeline[0].sex ? r.timeline[0].sex : ""; }],
+    ["lesion_side", "Brain triggers: Left, Right, Bilateral, Midline, Unstated", function (r) { return r.lesion ? r.lesion.side : ""; }],
+    ["lesion_regions", "Brain triggers: regions (controlled, ;-joined)", function (r) { return r.lesion ? r.lesion.regions.join(";") : ""; }],
+    ["lesion_mappable", "Coordinates, Figure, Description only, No", function (r) { return r.lesion ? r.lesion.mappable : ""; }],
+    ["hypothesis_verdict", "Our reading (data/hypotheses.json): Beats the null, Doesn't beat the null, Undecided", function (r) { return HYP[r.id] ? HYP[r.id].verdict : ""; }]
   ];
 
   function toCsv(rows) {
@@ -563,7 +770,7 @@ details.filters[open] > summary { margin-bottom: 4px; }
     v.appendChild(el("tr", {}, [el("th", { text: "Field" }), el("th", { text: "Allowed values" })]));
     Object.keys(DATA.vocabularies).forEach(function (k) {
       var val = DATA.vocabularies[k];
-      var txt = Array.isArray(val) ? val.join(" · ") : Object.keys(val).map(function (x) { return x + " = " + val[x]; }).join(" · ");
+      var txt = Array.isArray(val) ? val.join(" · ") : Object.keys(val).map(function (x) { return typeof val[x] === "number" ? x : x + " = " + val[x]; }).join(" · ");
       v.appendChild(el("tr", {}, [el("td", {}, [el("code", { text: k })]), el("td", { text: txt })]));
     });
   }
@@ -598,9 +805,16 @@ details.filters[open] > summary { margin-bottom: 4px; }
     window.addEventListener("hashchange", route);
   }
 
-  fetch("data/cases.json", { cache: "no-store" })
-    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-    .then(init)
+  Promise.all([
+    fetch("data/cases.json", { cache: "no-store" }).then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }),
+    // the hypothesis layer is optional: the library still loads without it
+    fetch("data/hypotheses.json", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
+  ])
+    .then(function (res) {
+      HDATA = res[1];
+      if (HDATA) HDATA.entries.forEach(function (h) { HYP[h.case_id] = h; });
+      init(res[0]);
+    })
     .catch(function (e) {
       $("list").appendChild(el("div", { class: "empty", text: "The case data could not be loaded (" + e.message + "). Reload the page; if it persists, ask Claude to republish data/cases.json." }));
     });

@@ -5,6 +5,7 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
 ## Read first
 
 - `protocol/PROTOCOL.md`: the rules. Follow them, and log any change in its changelog.
+- `protocol/SCHEMA.md`: schema 1.4 field guide: appraisal, timeline, lesion, derived, the hypothesis layer, and the full-text appraisal workflow. Read it before appraising or hypothesising.
 - Search dossier, the long-form reasoning (private Claude Doc): https://claude.ai/artifact/N5fSAMhVmsKzty2aSujAcY
 - Phase plan: free English sources (Phase 1, steps 1.0–1.9), then Spanish/Portuguese, then European, then Asian.
 
@@ -73,6 +74,8 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
   - 244 records (228 cases, 16 context); ledger 71,630 rows; 44 unsure rows.
 - 2026-11-15 (night): **antique full-text sweep v1 (protocol v1.7.7)** (`scripts/batches/b2026_11_15_antique_fulltext_v1.py`, `queries/strings_antique_fulltext_v1.json`). Europe PMC indexes the OCR text of scanned PMC back issues: recovery phrases × period syndrome terms, 1800–1950 → 308 hits (302 new), mostly container sections. **How to read them:** collect page-image URLs from the PMC article HTML (`img[src*="/blobs/"]`, fetched from a pmc.ncbi.nlm.nih.gov tab), fetch each image from a cdn.ncbi.nlm.nih.gov tab, re-encode grayscale JPEG q≈0.3 with OffscreenCanvas, return base64 (saved to a tool-result file), decode and `tesseract` locally. 4 read, 0 cases; 298 blank rows to read. PMC began challenging article fetches after ~10 pages: stop there and resume another day. Scholar.archive.org (ALTCHA) and HathiTrust (Cloudflare) are blocked by bot checks.
   - 244 records (228 cases, 16 context); ledger 71,938 rows; 44 unsure rows.
+- 2026-11-16: **schema 1.4 (protocol v1.8)**, the groundwork for next item 5, the case page and the hypothesis layer. Every record has `appraisal` (basis from `verified`: 138 abstract, 39 title, 4 full text, 63 unrecorded); optional `timeline` and `lesion` blocks; `derived` written only by `scripts/derive.py`; `data/hypotheses.json` for our reading of each case (seven boring explanations first, then ranked mechanisms, each with an uncertainty driver and a discriminating test). Viewer: a timeline strip on a log axis, an "Appraised" line on every card, an "Our reading" panel, new CSV columns. Worked examples, Claude's drafts for Brendan to check: `maddigan-2004` (reversal recoded to None reported; criterion 1 queried) and `oh-2011` (non-specific suppression Likely: amnesia and abulia). Grootendorst-van Mil 2018 couldn't be read (PMC captcha in the web reader).
+  - 244 records (228 cases, 16 context); 2 timelines; 2 hypothesis entries.
 - **Finding unscreened rows now:** current rows (no one `supersedes` them) with a **blank decision**. First pass = notes starting `rank `; batch 2 = `year-slice batch 2`; batch 3 = `year-slice batch 3`. Re-ranked rows' notes carry `rerank_v1 rank N`.
 - **Stopping-rule state (protocol §10), Europe PMC broad:** first pass screened 0–3,999 plus a 300 sample → not stopped (1 include in the sample). Batch 2 and batch 3 → both criteria met. Re-ranked order (v1.3): ranks 0–1,999 plus a 300 sample screened → **both criteria met; the Europe PMC broad set is done** (batch 3 met earlier).
 - **Next, in order:**
@@ -80,10 +83,10 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
   2. (done 2026-11-14: keto rerun, Embase title set.)
   3. (done 2026-11-14: PsycInfo title query; a broader title/abstract PsycInfo string is possible if the capture–recapture gap needs closing.)
   4. (done 2026-11-14: citation routes v2 (+4) and v3 (+0, converged). Rerun one hop from any later includes.)
-  5. Full-text appraisal of the ~110 provisional records and 32 unsure (PMC free first, then CKN), with attribution grade, JBI score and `lesion.side` / `lesion.region` for the laterality analysis; promote to Included.
+  5. Full-text appraisal of the provisional records and the unsure pile (PMC free first, then CKN), coded into schema 1.4 as `protocol/SCHEMA.md` §7 sets out: unexpectedness, timeline, attribution items, JBI answers, `lesion` for brain triggers (side and regions feed the laterality analysis). Brendan promotes to Included.
   6. Calibration: 100 blinded records for Brendan.
   7. Antique sources beyond Europe PMC: the reference list of Nahm & Greyson 2009 (terminal lucidity, 81 case references); Internet Archive / Medical Heritage Library full text (American Journal of Insanity, Journal of Mental Science, Alienist and Neurologist), HathiTrust full-text search, Gallica (Annales médico-psychologiques, Revue neurologique), IndexCat subject headings, and the reference lists of historical reviews (fever therapy, intercurrent illness, Sakel, focal infection).
-- Library restyle ("more Claude") is still due with the rebuild after step 5, alongside the new appraisal fields.
+- Library restyle ("more Claude") is still due with the rebuild after step 5. The 1.4 timeline and reading panels are deliberately minimal; once timelines are common, add latency-band and durability filters and statistics.
 
 ## How searches actually run (the network matters)
 
@@ -102,9 +105,10 @@ Brendan (psychiatry registrar, Cairns) and Claude are building an exhaustive, ap
 
 - **It's public, and GitHub Pages serves `main`.** Commit only metadata, our own summaries, and links. **Never commit abstracts, full texts or PDFs.**
 - Published case details only. Nothing from Brendan's clinical work, ever.
-- `data/cases.json` is the source of truth for the library. Edit it with a script, then run `python3 scripts/validate_cases.py`. It must print OK before any commit. `python3 scripts/audit_library.py` runs the deeper checks (exit 1 on a hard problem); run it before larger commits.
+- `data/cases.json` is the source of truth for the library. Edit it with a script, run `python3 scripts/derive.py`, then `python3 scripts/validate_cases.py` (which also checks `data/hypotheses.json`). It must print OK before any commit. Never hand-edit `derived`. `python3 scripts/audit_library.py` runs the deeper checks (exit 1 on a hard problem); run it before larger commits.
 - `ledger/records.csv` is append-only (see `ledger/README.md`).
 - Every library record must trace to at least one ledger row.
 - Every new record carries `era`. A `known` or `refuted` label needs a note saying when and how.
 - **Links:** `full_text` = the PMC page if there's a PMCID, else a verified free PDF. `abstract` = PubMed. Always a DOI where one exists.
 - Commit in small, labelled batches, e.g. `1.1: PubMed psychotic × lesion — 312 hits, 9 includes`.
+- `data/hypotheses.json` is our reading, not the papers'. It never changes a case fact; Claude's entries stay `draft` until Brendan has read them.

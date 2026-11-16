@@ -51,9 +51,11 @@ A case reported *after* an effect became known (e.g. an insula-stroke smoking ce
 
 A = 5–6 · B = 4 · C = 2–3 · D = 0–1
 
+Each item is recorded separately in `appraisal.attribution` (schema 1.4); the score, grade and rule tier are derived by `scripts/derive.py`. Reversal scores 2 only when the timeline documents it: a stop followed by a return, or a restart followed by improvement. A return with no documented end of the exposure scores 0.
+
 ## 5. Reporting quality
 
-JBI Critical Appraisal Checklist for Case Reports, 8 items, scored Yes = 1 (out of 8). Case series: the JBI case-series checklist (10 items). CARE (13 items) is the completeness reference and isn't scored.
+JBI Critical Appraisal Checklist for Case Reports, 8 items, scored Yes = 1 (out of 8). Case series: the JBI case-series checklist (10 items). CARE (13 items) is the completeness reference and isn't scored. For exposures that aren't treatments (lesions, infections, life events), item 5 is read as *the exposure is described clearly* and item 7 as *its other effects are described*, so lesion cases aren't marked down for not being treatments.
 
 ## 6. Tiers
 
@@ -90,6 +92,15 @@ E1 not psychiatric, or not serious · E2 not resolved · E3 expected or targeted
 - **Gold set:** the library cases as of 2026-11-09. Hold out 10 at random (the seed is recorded in `queries/`). Target ≥90% sensitivity for the union of strategies in each database, measured on the holdout.
 - **Capture–recapture** (database route vs citation route), Lincoln–Petersen. Reported as a floor, because the two routes are positively dependent.
 
+## 12. Hypothesis layer
+
+Our reading of each case lives in `data/hypotheses.json`, apart from the case facts (field guide: `protocol/SCHEMA.md` §6).
+
+- Every entry rates all seven boring explanations (natural history, regression to the mean, misdiagnosis or secondary syndrome, co-intervention, non-specific suppression, expectancy, reporting artefact) before proposing a mechanism. A case beats the null only when none is Likely.
+- Candidate mechanisms are ranked, each with a confidence, the specific variable driving the uncertainty, and an observation that would tell it apart from the next candidate.
+- Hypotheses never change case facts, tiers or eligibility. A factual error found while hypothesising is corrected in `cases.json`.
+- Claude's entries stay `draft` until Brendan has read them.
+
 ## Changelog
 
 - 2026-11-09 · v1.0 · Protocol locked from the dossier. Era labels added (schema 1.1). Storage: this repository.
@@ -111,3 +122,4 @@ E1 not psychiatric, or not serious · E2 not resolved · E3 expected or targeted
 - 2026-11-15 · v1.7.5 · Embase Emtree route: `'unexpected outcome of drug treatment'/exp` (an indexer-assigned concept, independent of the authors' wording) × psychiatric disorder as major focus × case design, narrowed to resolution wording (`EMB_unexpOutcome_v1`, 814 records, all 643 new or blank screened). Yield was low (1 case): indexers apply the term to deliberate treatments with a surprising size of effect and to adverse effects as often as to incidental cures. Full texts the browser cannot open because of publisher bot checks are read from PDFs Brendan downloads himself and attaches; their files are never committed.
 - 2026-11-15 · v1.7.6 · Embase broad Embase-only set handled as a capped pull: the top 2,000 of 30,456 by Embase's own relevance order, then classifier order with the §10 stopping rule (ranks 0–333 + seeded random 300 of the rest). No includes; 47 library cases already sat in the 2,000. The other 28,456 records are not pulled; this is recorded as a known gap, judged low-yield.
 - 2026-11-15 · v1.7.7 · Antique full-text route: Europe PMC searches the OCR text of scanned PMC back issues, so period recovery phrases can be searched in article bodies (`ANT_FT_v1`). Reading uses PMC's page images (served as plain images), OCR'd locally; images and OCR text are never committed. Hits that are container sections (reviews, society reports, news columns) stay blank until read page by page. When PMC starts challenging fetches, stop and resume another day; don't work around it.
+- 2026-11-16 · v1.8 · Schema 1.4 (`protocol/SCHEMA.md`, `scripts/migrate_1_4.py`). Every record gets `appraisal` (basis set from `verified`: 138 abstract, 39 title, 4 full text, 63 unrecorded); full-text appraisal fills T1–T4, the §4 items and the JBI answers there. New optional blocks: `timeline` (per-patient events timed from the exposure, with censoring-aware precision) and `lesion` (side, regions, aetiology, imaging, mappability for lesion network mapping). `derived` (latency, durability, scores, the §6 rule tier) is written only by `scripts/derive.py` and checked by the validator; for Included records `tier` must equal the rule tier. JBI items 5 and 7 read for non-treatment exposures (§5). Hypothesis layer (§12, `data/hypotheses.json`). Worked examples: Maddigan 2004 (outcome.reversal recoded to None reported: the fever's end isn't documented and all medicines were held the day before improvement; criterion 1 queried) and Oh 2011.
