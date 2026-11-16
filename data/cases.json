@@ -8981,7 +8981,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -8989,13 +8989,136 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "With no stomach, bingeing becomes physically limited, so the behaviour change partly follows from the surgery."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "SCOFF only after surgery; months of structured nutritional rehabilitation not separated."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "37-year-old woman",
+     "age": 37,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -15,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Bulimia from 1997: dieting, then vomiting during a stressful relationship; never diagnosed"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Admitted 24 hours after a binge: massive gastric distension, sepsis, renal failure; 6.5 litres aspirated"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Emergency total gastrectomy and jejunostomy for gastric necrosis (July 2012)"
+      },
+      {
+       "kind": "cointervention",
+       "t": 35,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Discharged at 40 kg to clinical nutrition: jejunostomy feeding, then oral supplements and structured meals"
+      },
+      {
+       "kind": "first_change",
+       "t": 35,
+       "unit": "days",
+       "precision": "approx",
+       "label": "At referral: bulimic symptoms much reduced; no fear of weight gain or shape concern; glad to gain weight",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Jejunostomy removed; back at work; SCOFF negative at every visit",
+       "state": "Remitted"
+      },
+      {
+       "kind": "cointervention",
+       "t": 5,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Adhesive bowel obstruction: laparoscopic adhesiolysis"
+      },
+      {
+       "kind": "follow_up",
+       "t": 8,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Still SCOFF-negative; no bingeing or compensatory behaviour; structured meals; BMI about 17.6; normal blood markers",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "SCOFF",
+         "value": 0
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 35,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 15.0,
+    "follow_up_days": 2922.0,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -15222,7 +15345,7 @@
    "id": "tsolaki-2010",
    "record_type": "case",
    "status": "Provisional",
-   "tier": "C",
+   "tier": "B",
    "collections": [
     "phase1c"
    ],
@@ -15285,7 +15408,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -15293,13 +15416,244 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "The parkinsonism and cognitive decline may have been drug-induced (perphenazine, risperidone, anticholinergics), which the authors raise."
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "Depression often lifts for a while after a suicide attempt (authors), though it usually returns within months."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "HAM-D, MMSE and UPDRS before and after; the medication overhaul in hospital wasn't separated from the attempt."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "64-year-old woman",
+     "age": 64,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -3.2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Depression with anxiety from summer 2004"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -3.15,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Citalopram, then mirtazapine 45 mg for 13 months, sulpiride, then clomipramine 75 mg with risperidone",
+       "to": -1.7
+      },
+      {
+       "kind": "assessment",
+       "t": -8,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Memory clinic: parkinsonism (Hoehn and Yahr 3), cognitive decline; on perphenazine/amitriptyline, risperidone 0.5 mg, prazepam; escitalopram added",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 19
+        },
+        {
+         "scale": "MMSE",
+         "value": 22,
+         "higher_is_better": true
+        },
+        {
+         "scale": "UPDRS-III",
+         "value": 59
+        }
+       ]
+      },
+      {
+       "kind": "assessment",
+       "t": -7,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Risperidone stopped, tiapride added",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 13
+        },
+        {
+         "scale": "MMSE",
+         "value": 25,
+         "higher_is_better": true
+        }
+       ]
+      },
+      {
+       "kind": "assessment",
+       "t": -5.3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Tiapride stopped",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 26
+        },
+        {
+         "scale": "MMSE",
+         "value": 21,
+         "higher_is_better": true
+        }
+       ]
+      },
+      {
+       "kind": "cointervention",
+       "t": -5,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Levodopa/carbidopa/entacapone added; escitalopram raised to 30 mg"
+      },
+      {
+       "kind": "assessment",
+       "t": -4,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Stopped speaking and eating; negativistic"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Suicide attempt by setting fire: second-degree burns, respiratory compromise, intensive care, then a burns unit"
+      },
+      {
+       "kind": "cointervention",
+       "t": 24,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Psychiatric unit: escitalopram 30 mg, mirtazapine 45 mg, quetiapine 200 mg, levodopa; perphenazine/amitriptyline no longer listed"
+      },
+      {
+       "kind": "best_response",
+       "t": 28,
+       "unit": "days",
+       "precision": "exact",
+       "label": "No depressive symptoms or suicidal thoughts; parkinsonism much less; cognition better",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "UPDRS-III",
+         "value": 23.5
+        }
+       ]
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Parkinson's criteria no longer met (Hoehn and Yahr 0)",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 4
+        },
+        {
+         "scale": "MMSE",
+         "value": 27,
+         "higher_is_better": true
+        },
+        {
+         "scale": "UPDRS-III",
+         "value": 3
+        }
+       ],
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 14,
+       "unit": "months",
+       "precision": "exact",
+       "label": "DaTSCAN normal (one in January 2008 had been borderline)"
+      },
+      {
+       "kind": "follow_up",
+       "t": 2,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Depression still in remission; cognition and function normal; no parkinsonism",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 28,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 3.2,
+    "follow_up_days": 730.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "HAM-D",
+      "before": 26,
+      "after": 4,
+      "change_pct": -84.6
+     },
+     {
+      "scale": "MMSE",
+      "before": 21,
+      "after": 27,
+      "change_pct": 28.6
+     },
+     {
+      "scale": "UPDRS-III",
+      "before": 59,
+      "after": 3,
+      "change_pct": -94.9
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -24806,7 +25160,7 @@
     "resolution": "Partial",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "Natural off-on"
+    "reversal": "None reported"
    },
    "downstream": {
     "level": 1,
@@ -24825,7 +25179,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC citations (CIT_EPMC_v2)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (Europe PMC record); identifiers from PubMed",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "Earlier letters (2011, Yilmaz 2014) had reported methylphenidate for ADHD reducing stealing.",
@@ -24833,13 +25187,146 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Stealing improving on methylphenidate had been reported before (cited by the authors)."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "At 16, impulsive stealing driven by ADHD is hard to tell apart from kleptomania."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "No measure; timing of the first response not stated; night-time stealing suggests wear-off, but no stop was documented."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "16-year-old boy",
+     "age": 16,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -9,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Stealing unneeded items and money from 7; about monthly for the last 6 months"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "DSM-5 kleptomania and ADHD (inattentive); normal WAIS-IV; reluctant at first, supportive alliance built"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "OROS methylphenidate 18 mg after breakfast, raised to 36 mg"
+      },
+      {
+       "kind": "best_response",
+       "t": 6,
+       "unit": "months",
+       "precision": "at most",
+       "label": "Stealing stopped completely; ADHD better; finished school and started work",
+       "state": "Remitted",
+       "note": "Timing not stated."
+      },
+      {
+       "kind": "relapse",
+       "t": 3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "At 19: broke into his workplace at night twice and stole money he didn't need; arrested and released; lost his job"
+      },
+      {
+       "kind": "cointervention",
+       "t": 3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Methylphenidate raised to 45 mg"
+      },
+      {
+       "kind": "best_response",
+       "t": 3.1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Stealing better on 45 mg",
+       "state": "Partial"
+      },
+      {
+       "kind": "relapse",
+       "t": 3.6,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Unneeded internet purchases on his parents' card, at night or before the morning dose"
+      },
+      {
+       "kind": "cointervention",
+       "t": 3.6,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Guanfacine extended-release after dinner, 1 → 4 mg"
+      },
+      {
+       "kind": "follow_up",
+       "t": 4.6,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Twelve months later: no stealing",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 182.625,
+    "latency_band": "Over 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 9.0,
+    "follow_up_days": 1680.15,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {

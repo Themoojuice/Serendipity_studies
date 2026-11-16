@@ -2221,6 +2221,223 @@
      "why": "Pallidal DBS for dystonia ended self-mutilation in Lesch-Nyhan syndrome"
     }
    ]
+  },
+  {
+   "case_id": "achamrah-2020",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Many people with bulimia have remitted by 15 years."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Not judged against a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Typical bulimia nervosa."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Months of structured nutritional rehabilitation and close follow-up."
+    },
+    "nonspecific": {
+     "rating": "Likely",
+     "why": "Without a stomach a binge is physically impossible, so the behaviour can't occur."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Not relevant."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "A self-report screen; BMI still low."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "The behaviour change is close to mechanical. The interesting residue is that weight and shape concern went too, which a missing stomach doesn't obviously explain.",
+   "hypotheses": [
+    {
+     "claim": "Losing the stomach removed both the capacity to binge and ghrelin-driven hunger and food reward.",
+     "chain": "Total gastrectomy → no gastric reservoir and no gastric ghrelin → less hunger and hedonic drive, bingeing impossible → bulimic cycle broken",
+     "mechanisms": [
+      "Interoceptive and visceral input",
+      "Neuropeptide (oxytocin, orexin, other)"
+     ],
+     "latency_fit": "Fits",
+     "for": "No stomach and no main ghrelin source; hedonic eating falls after bariatric surgery (authors).",
+     "against": "Weight and shape concern also went, which mechanics alone don't explain.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No eating-disorder cognition measure before surgery, so the cognitive change is inferred.",
+     "test": "Eating-disorder cognition scales and ghrelin levels in gastrectomy patients with earlier bulimia."
+    },
+    {
+     "claim": "A near-fatal illness and long nutritional rehabilitation reorganised her relationship with food and weight.",
+     "chain": "Septic shock, emergency surgery, 35 days in hospital → months of structured feeding and follow-up → new eating pattern and attitude",
+     "mechanisms": [
+      "Meaning and life reorganisation",
+      "Threat and arousal"
+     ],
+     "latency_fit": "Fits",
+     "for": "A life-threatening crisis followed by intensive, structured care.",
+     "against": "Many people with bulimia survive medical crises without remitting.",
+     "confidence": "Low",
+     "uncertainty_driver": "Same as above.",
+     "test": "Her own account of what changed."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "tsolaki-2010",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Late-life depression of three years can remit."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "At her worst (mute, not eating) just before the attempt."
+    },
+    "misdiagnosis": {
+     "rating": "Likely",
+     "why": "The parkinsonism and 'dementia' look drug-induced (perphenazine/amitriptyline, risperidone), and the second DaTSCAN was normal."
+    },
+    "cointervention": {
+     "rating": "Likely",
+     "why": "In hospital, perphenazine/amitriptyline went and mirtazapine 45 mg joined escitalopram 30 mg."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "She became more active and cognitively better."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Not relevant."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Serial scales over two years."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A well-measured recovery, but the medication overhaul in hospital explains the parkinsonism and cognition, and plausibly the depression. The suicide attempt is the dramatic event, not necessarily the causal one.",
+   "hypotheses": [
+    {
+     "claim": "The medication overhaul: stopping perphenazine and anticholinergics cleared drug-induced parkinsonism and cognitive impairment, and escitalopram with mirtazapine treated the depression.",
+     "chain": "Perphenazine/amitriptyline and earlier risperidone stopped → D2 blockade and anticholinergic load gone → parkinsonism and cognition recover; escitalopram + mirtazapine → depression remits",
+     "mechanisms": [
+      "Dopamine",
+      "Acetylcholine",
+      "Serotonin",
+      "Noradrenaline"
+     ],
+     "latency_fit": "Fits",
+     "for": "Parkinsonism and cognition recovered after the regimen changed; the second DaTSCAN was normal; the authors raise drug-induced parkinsonism.",
+     "against": "Risperidone was low-dose and sulpiride long stopped; mirtazapine alone had failed for 13 months.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "The date perphenazine/amitriptyline stopped isn't given.",
+     "test": "Dates of each drug change set against UPDRS and HAM-D."
+    },
+    {
+     "claim": "Surviving the attempt shifted her mood: relief after a brush with death.",
+     "chain": "Life-threatening act → acute threat, then relief and changed meaning → mood lifts",
+     "mechanisms": [
+      "Threat and arousal",
+      "Meaning and life reorganisation"
+     ],
+     "latency_fit": "Fits",
+     "for": "Depression often lifts after a suicide attempt (authors).",
+     "against": "It usually returns within three months; this held for two years.",
+     "confidence": "Low",
+     "uncertainty_driver": "The medication changes overlap the attempt completely.",
+     "test": "Depression trajectories after suicide attempts with no change in regimen."
+    },
+    {
+     "claim": "Burns and critical illness produced an inflammatory and stress-hormone surge that reset mood circuits.",
+     "chain": "Major burns → cytokine and cortisol surge, then recovery → mood circuits reset",
+     "mechanisms": [
+      "Inflammation and cytokines",
+      "HPA axis and cortisol"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Severe physiological stress came just before remission.",
+     "against": "No markers; nothing separates this from the drug changes.",
+     "confidence": "Low",
+     "uncertainty_driver": "No inflammatory or endocrine data.",
+     "test": "Mood outcomes after major burns in people with prior depression."
+    }
+   ],
+   "related": [
+    {
+     "id": "gota-garces-2017",
+     "why": "OCD remitting after a failed suicide attempt"
+    }
+   ]
+  },
+  {
+   "case_id": "miyazaki-2023",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Impulsive adolescent stealing often fades with maturity."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "A steady, long-standing pattern."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "ADHD-driven impulsive stealing rather than kleptomania."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "A therapeutic alliance was built before the drug started."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He worked and functioned better."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Parents' hopes and reports after treatment began."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Parents' reports; stealing never counted."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "The pattern of stealing when methylphenidate was lowest, fixed by an evening drug, is suggestive, but nothing is counted or timed, and the authors admit night may simply be when he had the chance.",
+   "hypotheses": [
+    {
+     "claim": "Methylphenidate strengthened prefrontal inhibitory control through dopamine and noradrenaline, and guanfacine covered the trough hours.",
+     "chain": "Methylphenidate → more dopamine and noradrenaline in prefrontal cortex → better impulse control → less stealing; wears off at night → guanfacine (α2A agonist) covers the trough",
+     "mechanisms": [
+      "Dopamine",
+      "Noradrenaline"
+     ],
+     "latency_fit": "Fits",
+     "for": "Stealing clustered at night and before the morning dose, when methylphenidate is lowest; evening guanfacine fixed it.",
+     "against": "Night may simply be when he had the opportunity (authors).",
+     "confidence": "Low",
+     "uncertainty_driver": "No diary relating thefts to dose times.",
+     "test": "A theft or urge diary against dosing times."
+    }
+   ],
+   "related": []
   }
  ]
 }
