@@ -7769,7 +7769,7 @@
    "id": "kim-2016",
    "record_type": "case",
    "status": "Provisional",
-   "tier": "B",
+   "tier": "A",
    "collections": [
     "phase1a"
    ],
@@ -7837,7 +7837,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "known",
     "note": "Seizures relieving depression is the principle of convulsive therapy (1930s); unexpected here as a single accidental seizure.",
@@ -7845,13 +7845,147 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "ECT makes an antidepressant effect of a seizure predictable in principle, though this was a brief focal or absence-type seizure."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "BDI, HAM-D and MADRS before and after (values in the paper's table); cumulative medicine and rTMS effects discussed and argued against."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "51-year-old woman",
+     "age": 51,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -13,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Recurrent major depression: five episodes, three admissions"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -4,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Mirtazapine and venlafaxine at full dose for 2 months, with olanzapine"
+      },
+      {
+       "kind": "assessment",
+       "t": -28,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Admitted after a suicide attempt",
+       "scores": [
+        {
+         "scale": "BDI",
+         "value": 37
+        },
+        {
+         "scale": "HAM-D",
+         "value": 30
+        }
+       ]
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -14,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Medicines adjusted and CBT for 2 weeks: under 25% better"
+      },
+      {
+       "kind": "cointervention",
+       "t": -15,
+       "unit": "days",
+       "precision": "approx",
+       "label": "rTMS (10 Hz, 120% motor threshold, 3,200 pulses a session): slight improvement after 11 sessions",
+       "to": -1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Seizure before the 12th session: lip quivering, drooling, unresponsive, amnesic afterwards; rTMS stopped; EEG frontal slowing"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Mood and thinking much better; enjoying television; remission on BDI, HAM-D and MADRS",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "EEG: frontal slowing, no epileptiform discharges"
+      },
+      {
+       "kind": "follow_up",
+       "t": 3.3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Three months after discharge: stable, no further seizures, medicines unchanged",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "baseline_years": 13.0,
+    "follow_up_days": 100.444,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -8627,7 +8761,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -8635,13 +8769,163 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "SPIN 46 before and 26, 19, 21 after; the first rating after the kidnapping came about two years later; medicines unchanged and no psychotherapy, stated."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Mr A.",
+     "age": 49,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -45,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Shy and reclusive from early childhood; tremor, sweating and palpitations in social situations from adolescence"
+      },
+      {
+       "kind": "assessment",
+       "t": -12,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Depressive episode at 37 remitted on nortriptyline 150 mg; social anxiety unchanged"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -22,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Clonazepam with many antidepressants, often stopped for side effects, for about two decades: never in remission; no psychotherapy available",
+       "to": -0.1
+      },
+      {
+       "kind": "assessment",
+       "t": -6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Still avoiding buses, eating in front of coworkers and social gatherings",
+       "scores": [
+        {
+         "scale": "SPIN",
+         "value": 46
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Armed kidnapping at 49: hit on the head with a gun, held hostage for hours, believed he would die"
+      },
+      {
+       "kind": "best_response",
+       "t": 2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Others' judgement now feels irrelevant; no PTSD symptoms; same medicines, no psychotherapy",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "SPIN",
+         "value": 26
+        }
+       ]
+      },
+      {
+       "kind": "assessment",
+       "t": 6,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Dating, gym, moved out of his mother's home; a halved salary didn't set him back",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "SPIN",
+         "value": 19
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 8,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Still unafraid of judgement; eats with coworkers, goes to gatherings",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "SPIN",
+         "value": 21
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 730.5,
+    "latency_band": "Over 3 months",
+    "baseline_years": 45.0,
+    "follow_up_days": 2922.0,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "SPIN",
+      "before": 46,
+      "after": 19,
+      "change_pct": -58.7
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -17897,7 +18181,7 @@
    "id": "grootendorst-van-mil-2018",
    "record_type": "case",
    "status": "Provisional",
-   "tier": "C",
+   "tier": "A",
    "collections": [
     "phase1c"
    ],
@@ -17951,7 +18235,7 @@
     "links": []
    },
    "summary": "Psychosis that had not responded to clozapine or ECT fell markedly and stayed down after pneumonia pushed clozapine levels above the usual range.",
-   "caveat": "The authors credit the higher clozapine level; infection and inflammation are the alternative (compare Zuschlag 2016).",
+   "caveat": "The second ECT course (21 sessions) ended days before the improvement, and the inflammation itself is an alternative to the clozapine level (compare Zuschlag 2016).",
    "tags": [
     "clozapine",
     "drug-levels",
@@ -17963,7 +18247,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -17971,13 +18255,197 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "BPRS 52 → 37 → 39; the authors state no other concurrent therapeutic change; the second ECT course ended at the infection."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "42-year-old woman",
+     "age": 42,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -16,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Somatic complaints, anhedonia, anxiety, poor appetite; convinced she had Lyme disease"
+      },
+      {
+       "kind": "diagnosis",
+       "t": -12,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Admitted: nihilistic and possession delusions, commenting voices, no emotional feeling; schizoaffective disorder (DSM-5); MRI and CSF normal",
+       "scores": [
+        {
+         "scale": "HAM-D17",
+         "value": 26
+        },
+        {
+         "scale": "BPRS",
+         "value": 52
+        }
+       ]
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -12,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Haloperidol 4 mg (6 weeks), risperidone 3 mg (14 weeks), citalopram, imipramine (level 251), lithium (0.73): no substantial effect",
+       "to": -7
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -7,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Bilateral ECT twice weekly: stopped after 16 sessions, no improvement"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -21,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Clozapine 500 mg (level 457 µg/L) with imipramine 200 mg: no response"
+      },
+      {
+       "kind": "cointervention",
+       "t": -10,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "ECT restarted alongside clozapine"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Pneumonia: fever, productive cough, CRP 193; piperacillin/tazobactam; stopped smoking for a while"
+      },
+      {
+       "kind": "assessment",
+       "t": 4,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Confused, disoriented, apraxic: clozapine 1,800 µg/L; clozapine and ECT (21 sessions) stopped; cognition back within 48 hours"
+      },
+      {
+       "kind": "cointervention",
+       "t": 6,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Clozapine restarted at 250 mg (level 266 µg/L 13 days later)"
+      },
+      {
+       "kind": "first_change",
+       "t": 8,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Interacting with family and nurses, more initiative and pleasure",
+       "state": "Partial"
+      },
+      {
+       "kind": "best_response",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Positive and especially negative symptoms better after about two weeks, then stable",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "BPRS",
+         "value": 37
+        }
+       ]
+      },
+      {
+       "kind": "cointervention",
+       "t": 2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Clozapine raised back to 500 mg (level 709 µg/L)"
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Three months after discharge: residual symptoms stable",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "BPRS",
+         "value": 39
+        }
+       ],
+       "note": "Discharge date not stated."
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 8,
+    "latency_band": "1-13 days",
+    "baseline_years": 1.33,
+    "follow_up_days": 182.625,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "BPRS",
+      "before": 52,
+      "after": 37,
+      "change_pct": -28.8
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {

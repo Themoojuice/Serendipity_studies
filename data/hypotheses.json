@@ -2438,6 +2438,270 @@
     }
    ],
    "related": []
+  },
+  {
+   "case_id": "grootendorst-van-mil-2018",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Unchanged for a year through every treatment."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Stable, severe symptoms."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Well-characterised schizoaffective psychosis with normal work-up."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "A second ECT course of 21 sessions ended days before; antibiotics; smoking stopped."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "More initiative and pleasure, not less."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Nothing new was offered."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Serial BPRS."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "A year of total resistance, then improvement within days of an infection that quadrupled the clozapine level. The puzzle is that she improved after clozapine was stopped and restarted lower, so whatever happened outlasted the spike.",
+   "hypotheses": [
+    {
+     "claim": "A brief supratherapeutic clozapine exposure did what ordinary levels hadn't, and the gain persisted (the authors' reading).",
+     "chain": "Inflammation (IL-6 down-regulating CYP1A2) plus stopping smoking → clozapine level about fourfold → days of very high receptor occupancy → lasting adaptation → response holds at ordinary levels",
+     "mechanisms": [
+      "Drug level change",
+      "Dopamine",
+      "Serotonin"
+     ],
+     "latency_fit": "Fits",
+     "for": "The level rose about fourfold; improvement followed within days; nothing else new was started.",
+     "against": "She improved after clozapine was stopped and restarted lower (266 µg/L), and the later rise to 709 µg/L added nothing, which a simple dose effect wouldn't predict.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No unbound clozapine level: inflammation raises protein binding, so the total level overstates the active exposure (authors).",
+     "test": "Whether other clozapine non-responders respond to a deliberately raised level."
+    },
+    {
+     "claim": "The inflammatory response itself (CRP 193) had an antipsychotic effect, as in the intercurrent-infection cases.",
+     "chain": "Severe pneumonia → cytokine surge and fever → transient immune effect on psychosis circuits → improvement as recovery begins",
+     "mechanisms": [
+      "Inflammation and cytokines",
+      "Fever and heat"
+     ],
+     "latency_fit": "Fits",
+     "for": "Severe infection just before; the library's intercurrent-fever cases (Zuschlag 2016, Wagner-Jauregg).",
+     "against": "Improvement came after the infection was treated, as inflammation subsided.",
+     "confidence": "Low",
+     "uncertainty_driver": "Inflammation and drug level rose together, so they can't be separated.",
+     "test": "CRP and clozapine level tracked separately across infection-associated improvements."
+    },
+    {
+     "claim": "A delayed response to the second ECT course in combination with clozapine.",
+     "chain": "Clozapine plus 21 ECT sessions → cumulative neuroplastic effect → response appearing just after the course ended",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)",
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Clozapine with ECT is the standard rescue for clozapine resistance, and 21 sessions had just been given.",
+     "against": "No change at all through ten weeks of combined treatment until the infection.",
+     "confidence": "Low",
+     "uncertainty_driver": "ECT ended at the same moment as the level spike.",
+     "test": "Similar cases where ECT continued through an infection."
+    }
+   ],
+   "related": [
+    {
+     "id": "zuschlag-2016",
+     "why": "Schizoaffective psychosis improving with bacteraemia and high fever"
+    },
+    {
+     "id": "wagner-jauregg-1883",
+     "why": "The founding intercurrent-fever observation"
+    }
+   ]
+  },
+  {
+   "case_id": "kim-2016",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Four weeks in hospital with under 25% change, then remission overnight."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Admitted after a suicide attempt, at a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-documented recurrent depression."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Eleven rTMS sessions and adjusted medicines; a cumulative effect could arrive late, though the authors argue against it."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "She brightened rather than flattened."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A dramatic adverse event, then the end of rTMS."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Three standard scales."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Remission the day after a seizure, after four weeks of non-response, on three scales. The catch is that rTMS responses often begin around session 11, so timing alone can't separate the two.",
+   "hypotheses": [
+    {
+     "claim": "The seizure acted like a single ECT treatment, setting off rapid neurotrophic and monoamine changes.",
+     "chain": "Seizure → widespread neuronal discharge → BDNF and monoamine receptor changes, as with ECT → mood lifts within a day",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)",
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Fits",
+     "for": "Next-day remission after weeks of non-response; ECT and magnetic seizure therapy work through seizures.",
+     "against": "A brief focal or absence-type seizure, not a generalised one; single ECT treatments rarely bring remission.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "The seizure type is uncertain (no ictal EEG), so how ECT-like it was is unknown.",
+     "test": "Mood change after single spontaneous or induced seizures in treatment-resistant depression."
+    },
+    {
+     "claim": "A delayed, cumulative rTMS response that happened to land the day after the seizure.",
+     "chain": "Eleven high-frequency rTMS sessions → cumulative cortical plasticity → response emerging around session 11–12",
+     "mechanisms": [
+      "Stimulation of a circuit"
+     ],
+     "latency_fit": "Fits",
+     "for": "About 11 sessions is when rTMS responses often begin.",
+     "against": "Only slight change up to session 11, then full remission overnight.",
+     "confidence": "Low",
+     "uncertainty_driver": "No daily ratings around the seizure.",
+     "test": "Daily mood ratings through rTMS courses."
+    }
+   ],
+   "related": [
+    {
+     "id": "sosa-gomez-2026",
+     "why": "Psychotic depression free of symptoms after a seizure in pregnancy"
+    },
+    {
+     "id": "silverstone-1991",
+     "why": "Depression improving after spontaneous seizures following failed ECT"
+    }
+   ]
+  },
+  {
+   "case_id": "huhne-2021",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Social anxiety can soften in middle age."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "A steady, lifelong pattern."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic lifelong social anxiety disorder."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Long-term clonazepam and antidepressants continued; life kept changing after 49."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He became more active and social."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Nothing was offered."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "About two years between the kidnapping and the next rating."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "A lifelong, drug-resistant social anxiety halved on the SPIN after a life-threatening kidnapping and stayed down for eight years on unchanged medicines. His own words locate the change in a belief, which is unusually specific.",
+   "hypotheses": [
+    {
+     "claim": "Surviving a threat to life overturned the core belief that others' judgement matters (posttraumatic growth, the authors' reading).",
+     "chain": "Kidnapping and expected death → core beliefs about judgement and control shattered → reappraisal: others' opinions are trivial beside survival → avoidance and fear fall",
+     "mechanisms": [
+      "Meaning and life reorganisation",
+      "Threat and arousal"
+     ],
+     "latency_fit": "Fits",
+     "for": "He ties the change to the kidnapping himself; SPIN fell from 46 to 19 on unchanged medicines; no PTSD.",
+     "against": "Two years passed before the next rating, so the time course is reconstructed.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No rating between the kidnapping and two years later.",
+     "test": "Repeated SPIN after comparable traumas in people with social anxiety."
+    },
+    {
+     "claim": "Extreme threat recalibrated threat appraisal: ordinary social threat now registers as trivial.",
+     "chain": "Overwhelming threat → recalibrated arousal and threat thresholds → social cues no longer trigger fear → avoidance extinguishes as he engages",
+     "mechanisms": [
+      "Extinction and exposure",
+      "Threat and arousal"
+     ],
+     "latency_fit": "Fits",
+     "for": "His physical symptoms in social situations went, not just his beliefs.",
+     "against": "Hard to separate from the belief change.",
+     "confidence": "Low",
+     "uncertainty_driver": "Same as above.",
+     "test": "Physiological arousal to social stimuli before and after a trauma, in a prospective sample."
+    },
+    {
+     "claim": "A mild head injury from the pistol blow altered frontal threat regulation.",
+     "chain": "Blow to the head → subtle frontal injury → less social threat processing",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "He was struck on the head.",
+     "against": "No reported injury, imaging or cognitive change; his account is psychological.",
+     "confidence": "Low",
+     "uncertainty_driver": "No neurological assessment.",
+     "test": "Imaging or cognitive testing after the assault."
+    }
+   ],
+   "related": [
+    {
+     "id": "gota-garces-2017",
+     "why": "OCD remitting after a failed suicide attempt"
+    },
+    {
+     "id": "tsolaki-2010",
+     "why": "Depression remitting after a suicide attempt with burns"
+    }
+   ]
   }
  ]
 }
