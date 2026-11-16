@@ -699,6 +699,326 @@
      "why": "Ketamine for neck pain, refractory panic and agoraphobia remitted"
     }
    ]
+  },
+  {
+   "case_id": "sosa-gomez-2026",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Episodic depression and self-injury with long quiet stretches would look like this."
+    },
+    "regression": {
+     "rating": "Likely",
+     "why": "Admitted at a crisis peak in a highly stressful setting; calm days later on a medical ward is what regression looks like."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Functional seizures (the authors considered them), dissociation (no memory of the behaviours) or trauma-related symptoms."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "A change of setting, intravenous levetiracetam and intensive care."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Postictal state and levetiracetam can flatten behaviour, though she was alert and engaged."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Nothing to expect from."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "No score before the seizure, five days of observation, and no history from her about past episodes."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Remission was judged a day after a seizure and a move out of custody, with nothing measured before and nothing after five days. She has had seizures for years, so if seizures lifted her mood it should have shown before.",
+   "hypotheses": [
+    {
+     "claim": "The crisis settled with the move from custody and a state hospital to a medical ward.",
+     "chain": "Acute stress and confinement → self-injury and voices → transfer to a medical ward, intensive care, attention → crisis eases within days",
+     "mechanisms": [
+      "Social and environmental change"
+     ],
+     "latency_fit": "Fits",
+     "for": "Self-injury happened in custody and on admission; calm within days of a medical admission.",
+     "against": "Voices and depression had reportedly persisted across settings for years.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No measure before the seizure, so we don't know how ill she was in the days before it.",
+     "test": "Her symptoms on return to the state hospital, still off psychotropics."
+    },
+    {
+     "claim": "The generalised seizure acted like a single ECT treatment.",
+     "chain": "Generalised tonic-clonic seizure → widespread network and neurotrophic changes, as in ECT → mood and psychosis lift",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)",
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Fits",
+     "for": "A generalised seizure came just before the remission.",
+     "against": "One ECT treatment rarely produces remission, and she has had many seizures without one.",
+     "confidence": "Low",
+     "uncertainty_driver": "Her seizure history: if earlier seizures never helped her mood, a seizure effect is unlikely.",
+     "test": "Mood records around her previous seizures."
+    }
+   ],
+   "related": [
+    {
+     "id": "kim-2016",
+     "why": "Treatment-resistant depression remitting after an accidental seizure during rTMS"
+    },
+    {
+     "id": "silverstone-1991",
+     "why": "Depression improving after spontaneous seizures following failed ECT"
+    }
+   ]
+  },
+  {
+   "case_id": "haque-2025",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Alcohol use disorder does remit without treatment, often after a crisis."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Not presenting at a drinking peak; seen for the head injury."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Clear chronic alcohol use disorder."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Supervised withdrawal in intensive care; a frightening injury; gabapentin continued."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Anosmia and loss of taste removed wine's taste and smell; mild memory problems."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Nothing was offered for drinking."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-reported abstinence, no biomarkers."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Craving itself vanished, not just drinking, after a small lesion in a known addiction node, and it held through a year with one stress-linked lapse. The anosmia is the dull rival the authors didn't discuss.",
+   "hypotheses": [
+    {
+     "claim": "Disrupting the orbitofrontal node of the addiction network abolished craving (the authors' lesion-network reading).",
+     "chain": "1 cm left orbitofrontal contusion → disconnection of a hub that potentiates urges via projections to the dorsal striatum → craving and compulsive drinking stop",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "The lesion's connectivity converges on the published smoking-remission network (inverse, r = −0.59, permutation p = 0.04).",
+     "against": "The contusion had resolved on CT by a month while abstinence continued; matching with the opposite sign needs the claim that any disruption works; one relapse.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "The connectivity match is opposite in sign to the reference map, so the result depends on accepting that disruption in either direction works.",
+     "test": "Other orbitofrontal lesions in the literature: do they end addictions, and with which connectivity sign?"
+    },
+    {
+     "claim": "Post-traumatic anosmia and loss of taste removed the sensory reward of wine.",
+     "chain": "Frontal head injury → olfactory damage → wine no longer smells or tastes of anything → cue-driven craving falls",
+     "mechanisms": [
+      "Sensory input change"
+     ],
+     "latency_fit": "Fits",
+     "for": "Persistent anosmia and ageusia at the clinic visit; much of wine's pull is smell and taste.",
+     "against": "Craving isn't only sensory, and she relapsed under stress (smell then unknown).",
+     "confidence": "Low",
+     "uncertainty_driver": "Whether smell and taste had recovered by the time of the relapse isn't reported.",
+     "test": "Serial smell testing against craving: craving returning as smell returns would favour this."
+    },
+    {
+     "claim": "A near-fatal drunken fall and intensive care stay reorganised her motivation to drink.",
+     "chain": "Frightening alcohol-related injury → a turning point → stops drinking",
+     "mechanisms": [
+      "Meaning and life reorganisation",
+      "Threat and arousal"
+     ],
+     "latency_fit": "Fits",
+     "for": "Drinkers often stop after a frightening alcohol-related injury.",
+     "against": "She described losing the urge, not resisting it; earlier crises hadn't stopped her.",
+     "confidence": "Low",
+     "uncertainty_driver": "No account of how she understood the injury.",
+     "test": "Craving measures that separate losing the urge from resisting it."
+    }
+   ],
+   "related": [
+    {
+     "id": "naqvi-2007",
+     "why": "Insula lesions ending smoking, the founding lesion-addiction series"
+    },
+    {
+     "id": "joutsa-2022",
+     "why": "Lesion network for addiction remission (context)"
+    },
+    {
+     "id": "yousefzadeh-fard-2013",
+     "why": "Insula strokes ending opium addiction"
+    }
+   ]
+  },
+  {
+   "case_id": "smith-2025",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Some schizophrenia settles over seven years, though rarely so completely."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Not judged against a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "A well-described paranoid psychosis with command hallucinations."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Seven years under his mother's care with unknown medication; levetiracetam for seizures."
+    },
+    "nonspecific": {
+     "rating": "Likely",
+     "why": "Severe frontal damage: apathy, aphasia with short answers, stimulus-boundedness. Less drive and less speech can mean less voiced psychosis."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Not relevant."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Mother's report and interviews at 7 years; no psychosis scale."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A modern leucotomy by gunshot: psychosis gone, but so is much of frontal function. With transcortical motor aphasia and apathy, whether the voices stopped or he stopped acting on and talking about them can't be told apart.",
+   "hypotheses": [
+    {
+     "claim": "Widespread frontal damage removed the drive and elaboration that kept the psychosis active, as leucotomy did.",
+     "chain": "Bifrontal destruction → apathy, reduced initiative and emotional tone → delusions and voices no longer elaborated or acted on",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Global suppression (sedation, apathy, cognitive loss)"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "FAB 4/18, apathy and stimulus-boundedness; the classic leucotomy picture.",
+     "against": "He denies voices outright and is described as good-natured and sociable with people he knows.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Aphasia limits how much inner experience he can report, so absent voices can't be confirmed.",
+     "test": "A structured psychosis interview adapted for aphasia, or observation for responding to voices."
+    },
+    {
+     "claim": "Specific disconnection of frontal-temporal circuits generating the hallucinations (left temporal damage too).",
+     "chain": "Left frontal and temporal destruction → loss of the speech-production and auditory-cortex coupling thought to generate voices → voices stop",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Voices were the core symptom; the left temporal lobe was damaged too.",
+     "against": "The damage is so extensive that any specific claim is untestable in this case.",
+     "confidence": "Low",
+     "uncertainty_driver": "No timing: we don't know if the voices stopped at once or over years.",
+     "test": "Lesion network mapping of the 7-year CT against the hallucination lesion network."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "downar-2012",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Twenty years of refractory illness and five months of twice-daily episodes, stopping after session 2."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Steady at the same severity for five months."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long, well-documented eating disorder."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Daily clinic contact for four weeks; antidepressants unchanged for three months."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "She became more active and functional."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Open-label daily treatment; nobody expected an eating effect, but the second course was explicitly to prevent relapse."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "A self-kept daily log; no eating-disorder scale."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "An abrupt stop after two sessions, a return two months after the course ended, and a second stop after one session of a second course. In both courses the bingeing improved before the mood did, which argues against eating simply following mood.",
+   "hypotheses": [
+    {
+     "claim": "High-frequency dorsomedial prefrontal stimulation strengthened top-down control over the binge urge.",
+     "chain": "10 Hz rTMS at dorsomedial prefrontal cortex → more activity in a control node underactive in bulimia → urge-to-act coupling weakened → binges and purges stop; mood follows",
+     "mechanisms": [
+      "Stimulation of a circuit"
+     ],
+     "latency_fit": "Fits",
+     "for": "Change after session 2 and after session 1 of the second course; she described less urgency and more choice; eating changed before mood.",
+     "against": "No impulsivity measure; one patient; open label.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No standardised eating-disorder or impulsivity measure, so the mechanism rests on her description.",
+     "test": "A sham-controlled course with stop-signal or delay-discounting tasks before and after."
+    },
+    {
+     "claim": "The antidepressant effect of rTMS lifted the mood that drove the bingeing.",
+     "chain": "rTMS → antidepressant effect → less dysphoria → less bingeing",
+     "mechanisms": [
+      "Stimulation of a circuit",
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Doesn't fit",
+     "for": "Depression and bingeing remitted in the same course and returned together.",
+     "against": "Bingeing stopped before mood improved, in both courses (BDI-II was rated daily).",
+     "confidence": "Low",
+     "uncertainty_driver": "Both measures are self-report, so the order rests on her ratings alone.",
+     "test": "Daily mood and urge ratings through a repeat course."
+    }
+   ],
+   "related": [
+    {
+     "id": "schweickert-1997",
+     "why": "Methylphenidate for ADHD curbing bulimic bingeing"
+    },
+    {
+     "id": "dukarm-2005",
+     "why": "Six bulimia patients abstinent on dextroamphetamine for ADHD"
+    }
+   ]
   }
  ]
 }

@@ -2408,7 +2408,7 @@
    "id": "haque-2025",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "B",
    "collections": [
     "round2"
    ],
@@ -2461,7 +2461,7 @@
     "links": []
    },
    "summary": "A 42-year-old's refractory alcohol use disorder remitted after a focal orbitofrontal bleed; the lesion was mapped onto the addiction circuit.",
-   "caveat": "",
+   "caveat": "Post-traumatic loss of smell and taste took away the sensory pull of wine, a duller route to the same result.",
    "tags": [
     "addiction",
     "alcohol",
@@ -2472,7 +2472,7 @@
    "same_patient_as": null,
    "found_via": "Consensus",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -2480,13 +2480,163 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "A near-fatal drunken fall and an intensive care stay is a classic turning point for drinkers."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "No new medicines; gabapentin stable, naltrexone stopped before; abstinence self-reported, no biomarkers."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Ms B.",
+     "age": 42,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -20,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Problem drinking from her early 20s after a depressive episode; worse in her 30s during an abusive relationship"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -2,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Group support, counselling, gabapentin and naltrexone had failed; naltrexone stopped two weeks before, gabapentin continued at a stable dose"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Drinking two bottles of wine a day"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Fell downstairs drunk: head injury, loss of consciousness, GCS 14"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Intensive care for neuromonitoring and an alcohol-withdrawal protocol"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "CT: new 1 cm haemorrhagic contusion in the left orbitofrontal cortex"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "TBI clinic: cravings and interest in alcohol gone; abstinent for the first time in years; anosmia and loss of taste, insomnia, mild memory problems",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "CT: contusion resolved; mild cerebellar atrophy"
+      },
+      {
+       "kind": "relapse",
+       "t": 4,
+       "unit": "months",
+       "precision": "approx",
+       "label": "One relapse with work stress (pandemic)"
+      },
+      {
+       "kind": "best_response",
+       "t": 8,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Abstinent again",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 12,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Abstinent for the four months before review (early remission); discharged",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Injury",
+    "side": "Left",
+    "regions": [
+     "Orbitofrontal"
+    ],
+    "specific": "1 cm haemorrhagic contusion in the left orbitofrontal cortex (day-2 CT), with trace subarachnoid blood over the left anterior temporal lobe; traced in MNI space and network-mapped",
+    "aetiology": "Trauma",
+    "imaging": "CT",
+    "mappable": "Coordinates"
+   },
+   "derived": {
+    "latency_days": 21,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 20.0,
+    "follow_up_days": 365.25,
+    "durability": "Lost, then regained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -2746,7 +2896,7 @@
    "id": "smith-2025",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "C",
    "collections": [
     "round2"
    ],
@@ -2790,7 +2940,7 @@
    "outcome": {
     "resolution": "Complete",
     "time_to_resolution": null,
-    "follow_up": "7 years",
+    "follow_up": null,
     "reversal": "None reported"
    },
    "downstream": {
@@ -2799,7 +2949,7 @@
     "links": []
    },
    "summary": "Psychosis resolved after a frontal gunshot wound and was still resolved at reassessment seven years later.",
-   "caveat": "",
+   "caveat": "He was first assessed 7 years later, with severe frontal damage and aphasia, so lost drive and speech could hide psychosis as much as end it.",
    "tags": [
     "frontal",
     "gunshot",
@@ -2809,7 +2959,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -2817,13 +2967,149 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Frontal leucotomy's effect on psychosis is well known, so the direction was predictable once the frontal damage was seen."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "First assessed 7 years after the injury, so the timing of the change is unknown; antipsychotic treatment after the injury isn't reported."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Whether he took antipsychotics in the 7 years after the injury isn't reported."
+   },
+   "timeline": [
+    {
+     "patient": "32-year-old man",
+     "age": 32,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -2,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Paranoid delusions (tracking chip in his ear) and five punishing command voices; two admissions"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Earlier treatment abandoned because of sedation; olanzapine prescribed but not yet started (awaiting mail-order)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Self-inflicted submental gunshot wound: large left frontal haemorrhage, fragments in the frontal lobe; GCS 3"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Emergency craniotomy: debridement, haematoma evacuation, reconstruction"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Following commands; to inpatient rehabilitation: poor insight, impulsive, needed 24-hour supervision"
+      },
+      {
+       "kind": "assessment",
+       "t": 7,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Admitted for breakthrough complex partial seizures: FAB 4/18, transcortical motor aphasia, distractibility, compulsive spending, memory loss; needs a full-time carer",
+       "scores": [
+        {
+         "scale": "FAB",
+         "value": 4,
+         "higher_is_better": true
+        }
+       ]
+      },
+      {
+       "kind": "best_response",
+       "t": 7,
+       "unit": "years",
+       "precision": "at most",
+       "label": "Patient and mother: no voices, paranoia, depression or suicidal thoughts since recovering from the injury",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 7,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Good-natured, no psychotic features on interview and later phone interviews",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Injury",
+    "side": "Bilateral",
+    "regions": [
+     "Frontal, other",
+     "Temporal, lateral"
+    ],
+    "specific": "Acute large left frontal haemorrhage; at 7 years, extensive bifrontal and moderate left temporal encephalomalacia on CT",
+    "aetiology": "Trauma",
+    "imaging": "CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 2556.75,
+    "latency_band": "Over 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 2.0,
+    "follow_up_days": 2556.75,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -2997,7 +3283,7 @@
    "id": "sosa-gomez-2026",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "C",
    "collections": [
     "round2"
    ],
@@ -3050,8 +3336,8 @@
     "note": "",
     "links": []
    },
-   "summary": "A 23-year-old's treatment-resistant psychotic depression resolved after spontaneous seizures in pregnancy.",
-   "caveat": "Pregnancy itself coincided with the seizures and the recovery.",
+   "summary": "A pregnant 23-year-old admitted for self-injury with depression and voices was calm, euthymic and free of psychosis on review a day after a generalised seizure, and stayed so for a five-day stay off psychotropics.",
+   "caveat": "She was reviewed after moving from custody and a state hospital to a medical ward, with no score from before the seizure, so a settling crisis explains it as well.",
    "tags": [
     "convulsive",
     "depression",
@@ -3062,21 +3348,143 @@
    "same_patient_as": null,
    "found_via": "Consensus",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
    },
-   "flags": [],
+   "flags": [
+    "no-followup"
+   ],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "ECT makes an antidepressant effect of a generalised seizure predictable in principle."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Self-injury in custody and a state hospital, poor adherence and a trauma history: the crisis may have been situational or dissociative, eased by the move to a medical ward."
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "No measure before the seizure, and she had had many seizures over the years."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Only post-seizure scores; setting change, levetiracetam and stopping psychotropics named by the authors, not separated."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Five days of observation is effectively no follow-up (flag no-followup)."
+   },
+   "timeline": [
+    {
+     "patient": "23-year-old woman, 32 weeks pregnant",
+     "age": 23,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -8,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Depression from adolescence, after childhood abuse (her account)"
+      },
+      {
+       "kind": "assessment",
+       "t": -7,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Serious suicide attempts in 2017 and 2019; repeated admissions; seizure disorder for years",
+       "to": -5
+      },
+      {
+       "kind": "assessment",
+       "t": -2,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Admitted to a state psychiatric centre: self-injury (choking herself, punching her abdomen), depression, voices; prescribed fluoxetine 40 mg, olanzapine 15 mg, levetiracetam, adherence poor in custody and in hospital"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Generalised tonic-clonic seizure; transferred; IV levetiracetam; brief intensive care for low blood pressure"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Moved from the state centre to a medical ward; no antidepressant or antipsychotic given; levetiracetam 1,500 mg IV twice daily"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Psychiatric review: euthymic, organised, no psychosis or suicidal thoughts; no memory of the behaviours that led to admission",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "PHQ-9",
+         "value": 0
+        },
+        {
+         "scale": "BPRS",
+         "value": 18
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 5,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Symptom-free for the five-day stay, off psychotropics; back to the state hospital",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "baseline_years": 8.0,
+    "follow_up_days": 5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -3838,16 +4246,16 @@
    },
    "outcome": {
     "resolution": "Complete",
-    "time_to_resolution": "After session 2",
-    "follow_up": "More than 2 months",
-    "reversal": "None reported"
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "On-off rechallenge"
    },
    "downstream": {
     "level": 1,
     "note": "",
     "links": []
    },
-   "summary": "Twice-daily five-hour binge-purge episodes stopped after the second session of rTMS given for depression.",
+   "summary": "A 43-year-old's twice-daily five-hour binge–purge episodes, refractory for two decades, stopped after the second session of rTMS given for depression; they returned two months after the course and stopped again after the first session of a second course.",
    "caveat": "The same course treated the depression, and bulimia may have followed mood.",
    "tags": [
     "bulimia",
@@ -3858,7 +4266,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC full text",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -3866,13 +4274,244 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 1,
+     "note": "Daily binge log, not a standardised eating-disorder scale (measure 0); antidepressants stable; expectancy and contact discussed."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "43-year-old woman",
+     "age": 43,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -28,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Anorexia nervosa at 15 (BMI 12.9); binge-eating soon after"
+      },
+      {
+       "kind": "assessment",
+       "t": -23,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Self-induced vomiting from 20; first depression"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -13,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Several SSRIs, trazodone, desipramine, risperidone, quetiapine, methylphenidate, modafinil; four inpatient and six day-hospital programmes; CBT, mindfulness, trauma therapy",
+       "to": -0.5
+      },
+      {
+       "kind": "assessment",
+       "t": -4,
+       "unit": "years",
+       "precision": "approx",
+       "label": "After her marriage ended: one or two binge–purge episodes a day, each at least 5 hours"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Six-week inpatient programme normalised eating; complete relapse 4 days after discharge"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Neuronavigated 10 Hz rTMS to dorsomedial prefrontal cortex, both sides, 20 weekday sessions, for depression; venlafaxine and desvenlafaxine stable for 3 months. Two 5-hour binge–purge episodes daily for 5 months",
+       "scores": [
+        {
+         "scale": "HAM-D17",
+         "value": 26
+        },
+        {
+         "scale": "BDI-II",
+         "value": 28
+        }
+       ]
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Binge-eating and purging stopped abruptly after the second session",
+       "state": "Remitted"
+      },
+      {
+       "kind": "relapse",
+       "t": 7,
+       "unit": "days",
+       "precision": "exact",
+       "label": "One binge–purge episode a day during sessions 6–10"
+      },
+      {
+       "kind": "best_response",
+       "t": 14,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Binges gone again from session 11; depression remitting",
+       "scores": [
+        {
+         "scale": "BDI-II",
+         "value": 7
+        }
+       ],
+       "state": "Remitted"
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 25,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Course ends after 20 sessions",
+       "scores": [
+        {
+         "scale": "HAM-D17",
+         "value": 0
+        }
+       ]
+      },
+      {
+       "kind": "cointervention",
+       "t": 89,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Contact with her former husband, a major stressor"
+      },
+      {
+       "kind": "relapse",
+       "t": 90,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Single binge–purge episodes on days 65, 70 and 71 after the course"
+      },
+      {
+       "kind": "assessment",
+       "t": 107,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Before the second course",
+       "scores": [
+        {
+         "scale": "BDI-II",
+         "value": 20
+        },
+        {
+         "scale": "HAM-D17",
+         "value": 11
+        }
+       ]
+      },
+      {
+       "kind": "exposure_restart",
+       "t": 107,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Second 20-session course"
+      },
+      {
+       "kind": "best_response",
+       "t": 108,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Binge-eating and purging stopped after the first session",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 132,
+       "unit": "days",
+       "precision": "approx",
+       "label": "In remission from both through the rest of the second course",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "BDI-II",
+         "value": 7
+        },
+        {
+         "scale": "HAM-D17",
+         "value": 7
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "baseline_years": 28.0,
+    "follow_up_days": 132,
+    "durability": "Lost, then regained",
+    "timeline_reversal": "On-off rechallenge",
+    "measures": [
+     {
+      "scale": "HAM-D17",
+      "before": 26,
+      "after": 0,
+      "change_pct": -100.0
+     },
+     {
+      "scale": "BDI-II",
+      "before": 28,
+      "after": 7,
+      "change_pct": -75.0
+     }
+    ],
+    "attribution_score": 5,
+    "attribution_grade": "A",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
