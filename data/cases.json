@@ -7354,8 +7354,8 @@
   {
    "id": "bedell-2025",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1a"
    ],
@@ -7418,7 +7418,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Conference abstract read on its PMC page (WebFetch); the abstract is the whole publication)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -7426,13 +7426,102 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Twenty years of daily pica before; gone at five months; iron was not repleted (she stopped it), which removes the obvious alternative; no dates for the change."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "50-year-old woman",
+     "age": 50,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -20,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Pica: about a pound of cornstarch a day; long-standing iron deficiency (Hb 7.4, saturation 5%); iron trials hadn't stopped the craving"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Semaglutide for weight, titrated to 2.4 mg weekly; on escitalopram; stopped prescribed iron for side effects"
+      },
+      {
+       "kind": "first_change",
+       "t": 4,
+       "unit": "months",
+       "precision": "at most",
+       "label": "No cornstarch since reaching the maximum dose",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 5,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Craving eliminated; 34 lb lost",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 121.75,
+    "latency_band": "Over 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 20.0,
+    "follow_up_days": 152.188,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -8006,7 +8095,7 @@
   {
    "id": "pardo-gonzalez-2023",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1a"
@@ -8065,7 +8154,7 @@
     "links": []
    },
    "summary": "Chronic mania improved after an episode of Stevens–Johnson syndrome.",
-   "caveat": "Medication changes forced by the reaction confound attribution; abstract only.",
+   "caveat": "Bipolar decompensations end on their own, and she was on lithium and valproate throughout.",
    "tags": [
     "conference-abstract",
     "mania",
@@ -8075,7 +8164,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Conference abstract read on its PMC page (WebFetch); the abstract is the whole publication)",
    "era": {
     "label": "novel",
     "note": "",
@@ -8083,20 +8172,106 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "No measure, no dates, no follow-up; remission coincided with stopping cariprazine and a systemic drug reaction."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "50-year-old woman",
+     "age": 50,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -30,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Bipolar disorder from age 20, moderate intellectual disability, generalised epilepsy; on valproate and lithium"
+      },
+      {
+       "kind": "assessment",
+       "t": -14,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Decompensation: irritability, talking to herself, verbosity, hostility, agitation; cariprazine added"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Necrotic papulovesicular rash compatible with DRESS; cariprazine stopped"
+      },
+      {
+       "kind": "best_response",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Affective symptoms in almost complete remission",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 14,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 30.0,
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 0,
+    "attribution_grade": "D",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
    "id": "felizardo-2023",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1a"
    ],
@@ -8164,7 +8339,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Conference abstract read on its PMC page (WebFetch); the abstract is the whole publication)",
    "era": {
     "label": "known",
     "note": "Seizures relieving psychosis is the principle of convulsive therapy (Meduna, 1934).",
@@ -8172,13 +8347,99 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Resistant to three antipsychotics; remission said to be almost immediate after the seizures; clozapine, itself the standard rescue drug, had just been started."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "N",
+      "Y",
+      "U",
+      "Y",
+      "U",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "78-year-old man",
+     "age": 78,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Persistent delusional disorder, no prior psychiatric history; resistant to three antipsychotics"
+      },
+      {
+       "kind": "cointervention",
+       "t": -14,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Clozapine 100 mg/day started"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Two epileptic seizures (attributed to clozapine in the methods, called spontaneous in the conclusions)"
+      },
+      {
+       "kind": "best_response",
+       "t": 3,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Almost immediate complete remission of the delusions",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 3,
+    "latency_band": "1-13 days",
+    "baseline_years": 1.0,
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 4,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -18145,8 +18406,8 @@
   {
    "id": "silva-2021",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1c"
    ],
@@ -18200,7 +18461,7 @@
     "links": []
    },
    "summary": "After intravenous immunoglobulin for myasthenia, a woman with borderline personality disorder had full remission of a depressive episode, stopped acting out and had less self-injury ideation.",
-   "caveat": "Conference abstract; follow-up one month; other medicines unchanged but the myasthenia flare itself may have been depressogenic.",
+   "caveat": "Three weeks of follow-up in a condition that fluctuates by the week; admission itself often settles self-harm.",
    "tags": [
     "borderline-personality",
     "depression",
@@ -18212,7 +18473,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Conference abstract read on its PMC page (WebFetch); the abstract is the whole publication)",
    "era": {
     "label": "novel",
     "note": "",
@@ -18220,13 +18481,108 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Scales at baseline, immediately after and at follow-up (values in figures only); no drug changes, but the infusion came days into an admission for a crisis."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "N",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "39-year-old woman",
+     "age": 39,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Borderline personality disorder with self-injury and acting out; myasthenia; on valproate, aripiprazole and gabapentin"
+      },
+      {
+       "kind": "assessment",
+       "t": -3,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Admitted with self-injury ideation, acting out and a depressive episode (ISAS, HAM-A, MADRS, ABUSI, BIS-11 79)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Intravenous immunoglobulin for a myasthenia flare; no other treatment change"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Self-injury ideation down, acting out stopped, depression fully remitted, mild anxiety",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Still in remission (one month in the conclusions)",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "baseline_years": 1.0,
+    "follow_up_days": 21,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {

@@ -3198,6 +3198,247 @@
      "why": "The original right amygdala ablation PTSD case"
     }
    ]
+  },
+  {
+   "case_id": "bedell-2025",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Twenty years, daily."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Pica secondary to iron deficiency, though iron wasn't corrected."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Iron stopped; escitalopram unchanged as far as stated."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Appetite suppression reduces all eating."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Nothing aimed at pica."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-report in a conference abstract."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Twenty years of daily cornstarch eating stopped on semaglutide while the iron deficiency that usually drives pica went uncorrected. That last detail is what makes it interesting.",
+   "hypotheses": [
+    {
+     "claim": "GLP-1 agonism suppressed the craving itself, not just appetite.",
+     "chain": "Semaglutide → GLP-1 receptors in hypothalamus and reward circuits → specific craving loses its pull",
+     "mechanisms": [
+      "Neuropeptide (oxytocin, orexin, other)",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Stopped at full dose; iron deficiency persisted.",
+     "against": "Could be general appetite suppression.",
+     "confidence": "Low",
+     "uncertainty_driver": "No dates, no iron studies after.",
+     "test": "Pica outcomes in GLP-1-treated patients with iron deficiency, with and without repletion."
+    }
+   ],
+   "related": [
+    {
+     "id": "jarvinen-2019",
+     "why": "Food obsessions easing on liraglutide"
+    }
+   ]
+  },
+  {
+   "case_id": "pardo-gonzalez-2023",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Likely",
+     "why": "An acute bipolar decompensation weeks old, on mood stabilisers."
+    },
+    "regression": {
+     "rating": "Likely",
+     "why": "Caught at a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-known bipolar disorder."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Hospital care for DRESS; cariprazine stopped."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Systemic illness can flatten agitation."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Conference abstract without detail."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "An acute bipolar episode ending during a severe drug reaction is unremarkable on its own. Kept for the intercurrent-illness pattern.",
+   "hypotheses": [
+    {
+     "claim": "The immune storm of DRESS damped the manic decompensation, as fevers and infections sometimes do.",
+     "chain": "DRESS → systemic cytokine surge and steroids → mood circuitry quietened",
+     "mechanisms": [
+      "Inflammation and cytokines",
+      "Sickness behaviour"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Remission coincided with the reaction.",
+     "against": "Episodes end anyway; no detail.",
+     "confidence": "Low",
+     "uncertainty_driver": "No timeline or measure.",
+     "test": "Mood ratings through drug reactions in bipolar patients."
+    }
+   ],
+   "related": [
+    {
+     "id": "arora-2006",
+     "why": "Remission during Stevens-Johnson syndrome"
+    }
+   ]
+  },
+  {
+   "case_id": "felizardo-2023",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Persistent and treatment-resistant."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Admitted at a decompensation."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "First psychosis at 78 needs an organic work-up the abstract doesn't describe."
+    },
+    "cointervention": {
+     "rating": "Likely",
+     "why": "Clozapine had just been started and is the expected treatment for resistance."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Post-ictal state."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No measure or dates."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Remission right after two seizures is an ECT-like story, but clozapine had just been started and late-onset psychosis at 78 has organic possibilities the abstract doesn't address.",
+   "hypotheses": [
+    {
+     "claim": "The seizures worked like ECT.",
+     "chain": "Generalised seizures → ECT-like network reset → delusions dissolve within days",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)"
+     ],
+     "latency_fit": "Fits",
+     "for": "'Almost immediate' resolution after seizures.",
+     "against": "Clozapine onset can't be excluded.",
+     "confidence": "Low",
+     "uncertainty_driver": "No dates.",
+     "test": "Similar cases with seizures before clozapine had time to act."
+    }
+   ],
+   "related": [
+    {
+     "id": "kim-2016",
+     "why": "Depression remitting after a seizure"
+    },
+    {
+     "id": "silverstone-1991",
+     "why": "Spontaneous seizures after failed ECT"
+    }
+   ]
+  },
+  {
+   "case_id": "silva-2021",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Crises in borderline personality disorder settle quickly, especially after admission."
+    },
+    "regression": {
+     "rating": "Likely",
+     "why": "Admitted at a crisis peak; three weeks of follow-up."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Known diagnosis."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Admission and attention."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Mood lifted."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A new infusion and medical attention."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Numbers only in figures; short follow-up."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Immunoglobulin for myasthenia and a borderline crisis lifted at once. Admission-peak regression explains most crisis improvements over three weeks.",
+   "hypotheses": [
+    {
+     "claim": "Immunoglobulin dampened an inflammatory contribution to mood and impulsivity.",
+     "chain": "IVIG → reduced cytokines and autoantibody effects → mood and impulse control improve",
+     "mechanisms": [
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Immediate change with no other modification.",
+     "against": "Crisis regression.",
+     "confidence": "Low",
+     "uncertainty_driver": "Very short follow-up.",
+     "test": "Repeat IVIG courses with mood ratings."
+    }
+   ],
+   "related": []
   }
  ]
 }
