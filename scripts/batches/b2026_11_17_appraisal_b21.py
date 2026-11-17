@@ -1,0 +1,116 @@
+"""Full-text appraisal, batch 21 (2026-11-17): PMC pages read in the laptop browser.
+kuhn-2007 (accumbens DBS for anxiety, alcohol dependence), moussawi-2016 (bilateral pallidal hypoxic injury,
+alcohol and opioid dependence), naqvi-2007 (insula lesions, smoking; coded at group level).
+"""
+import sys
+sys.path.insert(0, "scripts")
+from lib_code import Batch, ev, track, T, A, J, N, H  # noqa: E402
+
+b = Batch("2026-11-17", source="PMC article page, read in the laptop browser")
+
+b.code("kuhn-2007",
+       tracks=[track("54-year-old man", 54, "M", [
+           ev("onset", -40, "years", "Agoraphobia with panic from early adolescence; secondary depression; repeated admissions, two ECT courses 20 years earlier", "approx"),
+           ev("onset", -10, "years", "Alcohol dependence: more than 10 drinks a day from the morning; withdrawal delirium in hospital", "at least"),
+           ev("assessment", -1, "months", "Before surgery: CDT 5.2%, GGT 185", "approx",
+              scores=[{"scale": "AUDIT", "value": 28, "higher_is_better": False}, {"scale": "BDI", "value": 24, "higher_is_better": False}, {"scale": "STAI-State", "value": 54, "higher_is_better": False}]),
+           ev("exposure_start", 0, "days", "Bilateral nucleus accumbens DBS for refractory anxiety; 130 Hz, 90 µs, 3 V after a few weeks of adjustment; acute 'inner appeasement'"),
+           ev("first_change", 1, "months", "Alcohol-free days prevail; no binges; 1–2 drinks a day; craving almost gone", "at most", state="Partial"),
+           ev("follow_up", 12, "months", "Drinks only occasionally; GGT 43, CDT 1.5%; anxiety and depression barely changed", state="Remitted",
+              scores=[{"scale": "AUDIT", "value": 1, "higher_is_better": False}]),
+       ])],
+       unexpectedness=T(),
+       attribution=A(1, 1, 1, 0, 1, "AUDIT 28 → 1 with GGT and CDT normalising; within a month; anxiety and depression, the targets, didn't change, so relief isn't secondary to mood."),
+       jbi=J("YYYYYYYY"),
+       lesion={"kind": "Stimulation target", "side": "Bilateral", "regions": ["Ventral striatum (nucleus accumbens)", "Internal capsule"],
+               "specific": "Nucleus accumbens (1 mm rostral to the anterior commissure, 7 mm lateral, 4 mm ventral); upper contacts in the anterior limb of the internal capsule",
+               "aetiology": "Not applicable", "imaging": "MRI and CT", "mappable": "Coordinates"},
+       fix={"tier": "A"})
+b.reading("kuhn-2007",
+          nulls=N(natural_history=("Unlikely", "Over a decade of heavy daily drinking with failed treatments."),
+                  regression=("Unlikely", "Chronic."),
+                  misdiagnosis=("Unlikely", "Biochemically confirmed."),
+                  cointervention=("Possible", "Surgery and follow-up attention; nothing else stated."),
+                  nonspecific=("Unlikely", "He felt pleasant appeasement, not blunted; anxiety unchanged."),
+                  expectancy=("Possible", "A new brain device, though he wasn't seeking help for drinking."),
+                  reporting=("Unlikely", "AUDIT and two biomarkers.")),
+          verdict="Beats the null",
+          note="The case that launched accumbens DBS trials for addiction: a stimulation aimed at anxiety missed its target and hit the drinking, with biomarkers to prove it.",
+          hyps=[H("Accumbens stimulation disrupted the craving signal that drives compulsive drinking.",
+                  "High-frequency accumbens stimulation → functional inhibition of ventral striatal output → cue-driven craving falls → drinking drops without effort",
+                  ["Stimulation of a circuit", "Dopamine"], "Fits",
+                  "Craving went within a month; biomarkers normalised; later accumbens DBS series for alcohol reproduced it.",
+                  "No stimulation-off test reported.",
+                  "High", "No off-stimulation test in this report.",
+                  "Blinded stimulation on-off periods with drinking diaries and biomarkers.")],
+          related=[("moussawi-2016", "Pallidal lesions ending alcohol and opioid dependence"), ("naqvi-2007", "Insula damage disrupting smoking")])
+
+b.code("moussawi-2016",
+       tracks=[track("55-year-old woman", 55, "F", [
+           ev("onset", -10, "years", "Severe alcohol and opiate dependence; lost her job; failed several detoxifications and programmes; drinking mouthwash when blocked", "approx"),
+           ev("exposure_start", 0, "days", "Methadone overdose with resuscitation; MRI days later: bilateral infarcts of the internal globus pallidus (hypoxic-ischaemic); MRI normal 2 years earlier"),
+           ev("first_change", 1, "months", "Cognitively intact; cravings and compulsive drug seeking gone since the overdose; transient facial dyskinesia", "at most", state="Remitted"),
+           ev("follow_up", 10, "years", "Still abstinent; back at work; no mood, anxiety or personality change, confirmed by family and colleagues", state="Remitted"),
+       ])],
+       unexpectedness=T(),
+       attribution=A(1, 0, 1, 0, 0, "Severe, treatment-resistant dependence before; abstinence from the overdose onward for ten years; a near-fatal overdose is itself a powerful reason to stop."),
+       jbi=J("YYYYYYYY"),
+       lesion={"kind": "Lesion", "side": "Bilateral", "regions": ["Globus pallidus"],
+               "specific": "Bilateral internal globus pallidus infarcts (T2 and DWI), hypoxic-ischaemic after methadone overdose",
+               "aetiology": "Hypoxic-ischaemic", "imaging": "MRI", "mappable": "Figure"})
+b.reading("moussawi-2016",
+          nulls=N(natural_history=("Possible", "Some people stop after a near-fatal overdose, with or without a lesion."),
+                  regression=("Unlikely", "Long, escalating dependence."),
+                  misdiagnosis=("Unlikely", "Severe dependence."),
+                  cointervention=("Possible", "The overdose as a life event; hospital and family response."),
+                  nonspecific=("Unlikely", "No anhedonia, apathy or mood change; back at work."),
+                  expectancy=("Unlikely", "None."),
+                  reporting=("Possible", "Abstinence by report, not testing.")),
+          verdict="Beats the null",
+          note="Ten years of abstinence after bilateral pallidal infarcts, without the anhedonia that usually comes with them. The near-death experience is the boring alternative, but craving vanished rather than being resisted.",
+          hyps=[H("Damage to the limbic pallidum cut the final common path for compulsive drug seeking.",
+                  "Hypoxia → bilateral medial GPi infarcts → loss of limbic pallidal output to thalamus → relapse-driving circuit broken → no craving",
+                  ["Lesion disconnection"], "Fits",
+                  "Craving gone, not resisted; animal lesions of limbic pallidum block reinstatement; no anhedonia.",
+                  "Lesion and overdose coincide.", "Moderate", "One case; abstinence self-reported.",
+                  "Addiction outcomes in survivors of overdose with and without pallidal lesions."),
+                H("Nearly dying reorganised her priorities.",
+                  "Near-fatal overdose → existential shock → sustained commitment to abstinence",
+                  ["Meaning and life reorganisation"], "Fits",
+                  "Common clinical story.", "Craving itself vanished, which willpower rarely achieves.",
+                  "Low", "As above.", "As above.")],
+          related=[("kuhn-2007", "Accumbens DBS ending alcohol dependence"), ("baek-2022", "Carbon monoxide pallidal injury and psychosis")])
+
+b.code("naqvi-2007",
+       tracks=[track("Insula group (19 smokers)", 55, "Not stated", [
+           ev("onset", -2, "years", "Over 5 cigarettes a day for over 2 years at lesion onset; matched to 50 smokers with lesions sparing the insula", "at least"),
+           ev("exposure_start", 0, "days", "Acquired brain damage including the insula (6 right, 13 left), mostly stroke, from the Iowa lesion registry"),
+           ev("first_change", 1, "days", "Of 13 who quit, 12 quit within a day, easily, without relapse or urges (disruption)", "at most", state="Remitted"),
+           ev("follow_up", 5, "years", "Disruption far more likely after insula than non-insula lesions (odds ratio 22; right insula 10.9, left 3.6); quitting alone didn't differ", "approx", state="Remitted",
+              note="Follow-up interval varied across registry patients."),
+       ])],
+       unexpectedness=T(),
+       attribution=A(1, 0, 1, 0, 1, "Smoking history before; outcome by the four disruption criteria at interview; non-insula lesion group matched for smoking and aetiology, with lesion size as a covariate."),
+       jbi=J("YYYNUYYYYY"),
+       lesion={"kind": "Lesion", "side": "Unstated", "regions": ["Insula"],
+               "specific": "Insula with adjacent regions (6 right, 13 left); lesion maps in figure 1", "aetiology": "Other",
+               "imaging": "MRI and CT", "mappable": "Figure"})
+b.reading("naqvi-2007",
+          nulls=N(natural_history=("Unlikely", "Long-term smokers."),
+                  regression=("Unlikely", "Chronic."),
+                  misdiagnosis=("Unlikely", "Smoking history documented."),
+                  cointervention=("Possible", "Hospitalisation, though the comparison group shares it."),
+                  nonspecific=("Possible", "Insula lesions alter interoception broadly."),
+                  expectancy=("Unlikely", "None."),
+                  reporting=("Possible", "Retrospective recall of the quitting experience.")),
+          verdict="Beats the null",
+          note="The founding lesion study of addiction: the insula is where the urge lives. Quit rates didn't differ; what differed was quitting without effort or urge, which is the more specific claim.",
+          hyps=[H("The insula represents the interoceptive pleasure and urge of smoking; damage removes the urge.",
+                  "Insula lesion → loss of the bodily representation of smoking's effects → no conscious urge → effortless quitting",
+                  ["Lesion disconnection", "Interoceptive and visceral input"], "Fits",
+                  "Effortless, immediate, durable quitting; replicated in later cohorts and in opium users.",
+                  "Some later stroke cohorts found smaller effects.", "High", "Retrospective; registry follow-up varies.",
+                  "Prospective stroke cohorts with lesion mapping and biochemical verification.")],
+          related=[("yousefzadeh-fard-2013", "Insular infarcts and opium use"), ("jing-2021", "Dorsal striatal infarcts and smoking")])
+
+b.save()

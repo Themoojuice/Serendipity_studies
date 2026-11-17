@@ -334,7 +334,7 @@
    "id": "naqvi-2007",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "B",
    "collections": [
     "top12"
    ],
@@ -404,7 +404,7 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "known",
     "note": "Addiction remission after insula and related lesions has since been pooled into one circuit (Joutsa, Nat Med 2022).",
@@ -412,13 +412,116 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Smoking history before; outcome by the four disruption criteria at interview; non-insula lesion group matched for smoking and aetiology, with lesion size as a covariate."
+    },
+    "jbi": {
+     "checklist": "Case series",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Insula group (19 smokers)",
+     "age": 55,
+     "sex": "Not stated",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -2,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Over 5 cigarettes a day for over 2 years at lesion onset; matched to 50 smokers with lesions sparing the insula"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Acquired brain damage including the insula (6 right, 13 left), mostly stroke, from the Iowa lesion registry"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "at most",
+       "label": "Of 13 who quit, 12 quit within a day, easily, without relapse or urges (disruption)",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 5,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Disruption far more likely after insula than non-insula lesions (odds ratio 22; right insula 10.9, left 3.6); quitting alone didn't differ",
+       "state": "Remitted",
+       "note": "Follow-up interval varied across registry patients."
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Unstated",
+    "regions": [
+     "Insula"
+    ],
+    "specific": "Insula with adjacent regions (6 right, 13 left); lesion maps in figure 1",
+    "aetiology": "Other",
+    "imaging": "MRI and CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 2.0,
+    "follow_up_days": 1826.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 10,
+    "rule_tier": "B"
    }
   },
   {
@@ -679,7 +782,7 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -687,13 +790,160 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "AUDIT 28 → 1 with GGT and CDT normalising; within a month; anxiety and depression, the targets, didn't change, so relief isn't secondary to mood."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "54-year-old man",
+     "age": 54,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -40,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Agoraphobia with panic from early adolescence; secondary depression; repeated admissions, two ECT courses 20 years earlier"
+      },
+      {
+       "kind": "onset",
+       "t": -10,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Alcohol dependence: more than 10 drinks a day from the morning; withdrawal delirium in hospital"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Before surgery: CDT 5.2%, GGT 185",
+       "scores": [
+        {
+         "scale": "AUDIT",
+         "value": 28,
+         "higher_is_better": false
+        },
+        {
+         "scale": "BDI",
+         "value": 24,
+         "higher_is_better": false
+        },
+        {
+         "scale": "STAI-State",
+         "value": 54,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Bilateral nucleus accumbens DBS for refractory anxiety; 130 Hz, 90 µs, 3 V after a few weeks of adjustment; acute 'inner appeasement'"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "months",
+       "precision": "at most",
+       "label": "Alcohol-free days prevail; no binges; 1–2 drinks a day; craving almost gone",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 12,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Drinks only occasionally; GGT 43, CDT 1.5%; anxiety and depression barely changed",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "AUDIT",
+         "value": 1,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Stimulation target",
+    "side": "Bilateral",
+    "regions": [
+     "Ventral striatum (nucleus accumbens)",
+     "Internal capsule"
+    ],
+    "specific": "Nucleus accumbens (1 mm rostral to the anterior commissure, 7 mm lateral, 4 mm ventral); upper contacts in the anterior limb of the internal capsule",
+    "aetiology": "Not applicable",
+    "imaging": "MRI and CT",
+    "mappable": "Coordinates"
+   },
+   "derived": {
+    "latency_days": 30.438,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 40.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "AUDIT",
+      "before": 28,
+      "after": 1,
+      "change_pct": -96.4
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -2322,7 +2572,7 @@
    "id": "moussawi-2016",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "B",
    "collections": [
     "round2"
    ],
@@ -2387,7 +2637,7 @@
    "same_patient_as": null,
    "found_via": "Consensus",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -2395,13 +2645,113 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Severe, treatment-resistant dependence before; abstinence from the overdose onward for ten years; a near-fatal overdose is itself a powerful reason to stop."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "55-year-old woman",
+     "age": 55,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -10,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Severe alcohol and opiate dependence; lost her job; failed several detoxifications and programmes; drinking mouthwash when blocked"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Methadone overdose with resuscitation; MRI days later: bilateral infarcts of the internal globus pallidus (hypoxic-ischaemic); MRI normal 2 years earlier"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "months",
+       "precision": "at most",
+       "label": "Cognitively intact; cravings and compulsive drug seeking gone since the overdose; transient facial dyskinesia",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 10,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Still abstinent; back at work; no mood, anxiety or personality change, confirmed by family and colleagues",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Bilateral",
+    "regions": [
+     "Globus pallidus"
+    ],
+    "specific": "Bilateral internal globus pallidus infarcts (T2 and DWI), hypoxic-ischaemic after methadone overdose",
+    "aetiology": "Hypoxic-ischaemic",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 30.438,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 10.0,
+    "follow_up_days": 3652.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -4910,7 +5260,7 @@
     "links": []
    },
    "summary": "A 63-year-old smoker stopped after a stroke involving the caudate and nucleus accumbens.",
-   "caveat": "",
+   "caveat": "Follow-up was one week, in and just out of hospital with cessation counselling; acute stroke confusion (MoCA 13) can also remove wanting.",
    "tags": [
     "basal-ganglia",
     "lesion",
@@ -4920,7 +5270,7 @@
    "same_patient_as": null,
    "found_via": "Consensus",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -4928,13 +5278,113 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "Many smokers stop in hospital after a stroke; one week can't separate that from a lesion effect."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Heavy smoking and soda intake before; loss of desire noticed in hospital; follow-up one week, with in-hospital cessation counselling."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "63-year-old woman",
+     "age": 63,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -40,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Two packs a day (80 pack-years); three 20-ounce bottles of citrus soda a day; previous strokes"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Acute infarct of the left caudate and basal ganglia (old infarct on the right); MoCA 13; not thrombolysed"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Family notice she hasn't asked for a cigarette since the stroke; no interest in soda; cognition improving",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Still not smoking, no desire for sweet drinks; lost to follow-up at a year",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Caudate",
+     "Ventral striatum (nucleus accumbens)"
+    ],
+    "specific": "Acute left caudate and basal ganglia infarct (authors suggest nucleus accumbens involvement); old contralateral basal ganglia infarct",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "MRI and CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 3,
+    "latency_band": "1-13 days",
+    "baseline_years": 40.0,
+    "follow_up_days": 7,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -14600,7 +15050,7 @@
   {
    "id": "brasic-2018",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -14654,7 +15104,7 @@
     "links": []
    },
    "summary": "Tourette syndrome eased for two years (YGTSS 55 to 13) after hours in a very hot tub left him dehydrated.",
-   "caveat": "First reported as a 2011 conference abstract; later follow-up in Durbin 2022.",
+   "caveat": "His urine was positive for cannabis at both follow-ups although he denied using it, and cannabis had eased his tics before; tics also wax and wane.",
    "tags": [
     "dehydration",
     "heat",
@@ -14663,7 +15113,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "novel",
     "note": "",
@@ -14671,13 +15121,206 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "YGTSS 55 → 13, AIMS 9 → 0, with video; tics went during the exposure itself; but urine was positive for THC after the remission although he denied cannabis, and cannabis had relieved his tics before."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "24-year-old man",
+     "age": 24,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -17,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Motor and phonic tics from age 7, worse with cold, fatigue and anxiety; episodic regurgitation since 10"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Clonidine and topiramate: minimal effect; occasional cannabis relieved tics for 3–4 days",
+       "to": -1
+      },
+      {
+       "kind": "assessment",
+       "t": -7,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Research baseline",
+       "scores": [
+        {
+         "scale": "YGTSS",
+         "value": 55,
+         "higher_is_better": false
+        },
+        {
+         "scale": "AIMS",
+         "value": 9,
+         "higher_is_better": false
+        },
+        {
+         "scale": "CGI-S",
+         "value": 4,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Deliberately sat in a 39–40 °C hot tub for about 3.5 hours to dehydrate himself (reason not given); vomiting, cramps, pink-orange urine for 2 days"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "hours",
+       "precision": "exact",
+       "label": "Tics subsided during the last 1.5 hours in the tub",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Motor 13, phonic 0, impairment 0; urine THC positive",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "YGTSS",
+         "value": 13,
+         "higher_is_better": false
+        },
+        {
+         "scale": "AIMS",
+         "value": 0,
+         "higher_is_better": false
+        },
+        {
+         "scale": "CGI-S",
+         "value": 3,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "assessment",
+       "t": 11,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Very much improved; working full time; urine THC positive",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "AIMS",
+         "value": 1,
+         "higher_is_better": false
+        },
+        {
+         "scale": "CGI-S",
+         "value": 2,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "relapse",
+       "t": 3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Worst-ever exacerbation for two weeks after a tetanus vaccination, then settled to mild tics",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 5,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Mild tics on nightly THC vaping; carries eggs at work without trouble",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0.083,
+    "latency_band": "Under a day",
+    "baseline_years": 17.0,
+    "follow_up_days": 1826.25,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "YGTSS",
+      "before": 55,
+      "after": 13,
+      "change_pct": -76.4
+     },
+     {
+      "scale": "AIMS",
+      "before": 9,
+      "after": 0,
+      "change_pct": -100.0
+     },
+     {
+      "scale": "CGI-S",
+      "before": 4,
+      "after": 2,
+      "change_pct": -50.0
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {

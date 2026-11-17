@@ -4096,6 +4096,352 @@
     }
    ],
    "related": []
+  },
+  {
+   "case_id": "brasic-2018",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Tics wax and wane, though remission at 24 after 17 years is uncommon."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Baseline was seven months earlier."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic Tourette syndrome."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Cannabis in his urine at both follow-ups."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Worked full time; not sedated."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "He chose to do it, so he presumably expected something."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "YGTSS, AIMS and video."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Tics stopped in the tub and stayed largely gone for two years, with video and standard scales. Positive urine cannabis screens, denied by the patient, keep it from being clean.",
+   "hypotheses": [
+    {
+     "claim": "Severe heat stress reset hypothalamic-basal ganglia dopamine signalling (the authors' idea).",
+     "chain": "Prolonged hyperthermia and dehydration → anterior hypothalamic dopamine release and possible minor injury → lasting change in striatal dopamine tone → fewer tics",
+     "mechanisms": [
+      "Fever and heat",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Tics went during the heat exposure; Gilles de la Tourette noted fever relieved tics.",
+     "against": "Heat usually worsens tics in laboratory studies.",
+     "confidence": "Low",
+     "uncertainty_driver": "Cannabis confound; one exposure.",
+     "test": "Tic counts during controlled passive heating."
+    },
+    {
+     "claim": "Covert cannabis use maintained the remission.",
+     "chain": "THC → CB1 activation in basal ganglia → tic suppression",
+     "mechanisms": [
+      "Endocannabinoid"
+     ],
+     "latency_fit": "Doesn't fit",
+     "for": "Positive urine screens; cannabis had helped before.",
+     "against": "Tics stopped in the tub, before any cannabis; cannabis had only given 3–4 days of relief.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "None in this patient."
+    }
+   ],
+   "related": [
+    {
+     "id": "ripsman-2025",
+     "why": "Tics changing after surgery"
+    }
+   ]
+  },
+  {
+   "case_id": "valadez-cuen-2024",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Likely",
+     "why": "Hospital abstinence after a stroke is common, and a week is all that was seen."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Lifelong habit."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Heavy dependence."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Cessation counselling; hospital."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Confusion and slowed thinking after the stroke."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Family report; lost to follow-up."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Losing both cigarettes and soda after a caudate stroke fits the striatal story (Jing 2021), but a week of follow-up after a stroke with confusion can't show it.",
+   "hypotheses": [
+    {
+     "claim": "The caudate and ventral striatal infarct removed reward-driven wanting for both nicotine and sugar.",
+     "chain": "Infarct in caudate and accumbens → loss of incentive salience → no urge to smoke or drink soda",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Two unrelated rewards lost at once; striatal lesion cohorts show the same.",
+     "against": "One week of follow-up.",
+     "confidence": "Low",
+     "uncertainty_driver": "Lost to follow-up.",
+     "test": "Longer follow-up in striatal infarcts with verified abstinence."
+    }
+   ],
+   "related": [
+    {
+     "id": "jing-2021",
+     "why": "Dorsal striatal infarcts and smoking"
+    },
+    {
+     "id": "naqvi-2007",
+     "why": "Insula and smoking"
+    }
+   ]
+  },
+  {
+   "case_id": "kuhn-2007",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Over a decade of heavy daily drinking with failed treatments."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Biochemically confirmed."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Surgery and follow-up attention; nothing else stated."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He felt pleasant appeasement, not blunted; anxiety unchanged."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A new brain device, though he wasn't seeking help for drinking."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "AUDIT and two biomarkers."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "The case that launched accumbens DBS trials for addiction: a stimulation aimed at anxiety missed its target and hit the drinking, with biomarkers to prove it.",
+   "hypotheses": [
+    {
+     "claim": "Accumbens stimulation disrupted the craving signal that drives compulsive drinking.",
+     "chain": "High-frequency accumbens stimulation → functional inhibition of ventral striatal output → cue-driven craving falls → drinking drops without effort",
+     "mechanisms": [
+      "Stimulation of a circuit",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Craving went within a month; biomarkers normalised; later accumbens DBS series for alcohol reproduced it.",
+     "against": "No stimulation-off test reported.",
+     "confidence": "High",
+     "uncertainty_driver": "No off-stimulation test in this report.",
+     "test": "Blinded stimulation on-off periods with drinking diaries and biomarkers."
+    }
+   ],
+   "related": [
+    {
+     "id": "moussawi-2016",
+     "why": "Pallidal lesions ending alcohol and opioid dependence"
+    },
+    {
+     "id": "naqvi-2007",
+     "why": "Insula damage disrupting smoking"
+    }
+   ]
+  },
+  {
+   "case_id": "moussawi-2016",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Some people stop after a near-fatal overdose, with or without a lesion."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Long, escalating dependence."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Severe dependence."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "The overdose as a life event; hospital and family response."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "No anhedonia, apathy or mood change; back at work."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Abstinence by report, not testing."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Ten years of abstinence after bilateral pallidal infarcts, without the anhedonia that usually comes with them. The near-death experience is the boring alternative, but craving vanished rather than being resisted.",
+   "hypotheses": [
+    {
+     "claim": "Damage to the limbic pallidum cut the final common path for compulsive drug seeking.",
+     "chain": "Hypoxia → bilateral medial GPi infarcts → loss of limbic pallidal output to thalamus → relapse-driving circuit broken → no craving",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Craving gone, not resisted; animal lesions of limbic pallidum block reinstatement; no anhedonia.",
+     "against": "Lesion and overdose coincide.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "One case; abstinence self-reported.",
+     "test": "Addiction outcomes in survivors of overdose with and without pallidal lesions."
+    },
+    {
+     "claim": "Nearly dying reorganised her priorities.",
+     "chain": "Near-fatal overdose → existential shock → sustained commitment to abstinence",
+     "mechanisms": [
+      "Meaning and life reorganisation"
+     ],
+     "latency_fit": "Fits",
+     "for": "Common clinical story.",
+     "against": "Craving itself vanished, which willpower rarely achieves.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "As above."
+    }
+   ],
+   "related": [
+    {
+     "id": "kuhn-2007",
+     "why": "Accumbens DBS ending alcohol dependence"
+    },
+    {
+     "id": "baek-2022",
+     "why": "Carbon monoxide pallidal injury and psychosis"
+    }
+   ]
+  },
+  {
+   "case_id": "naqvi-2007",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Long-term smokers."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Smoking history documented."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Hospitalisation, though the comparison group shares it."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Insula lesions alter interoception broadly."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Retrospective recall of the quitting experience."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "The founding lesion study of addiction: the insula is where the urge lives. Quit rates didn't differ; what differed was quitting without effort or urge, which is the more specific claim.",
+   "hypotheses": [
+    {
+     "claim": "The insula represents the interoceptive pleasure and urge of smoking; damage removes the urge.",
+     "chain": "Insula lesion → loss of the bodily representation of smoking's effects → no conscious urge → effortless quitting",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Interoceptive and visceral input"
+     ],
+     "latency_fit": "Fits",
+     "for": "Effortless, immediate, durable quitting; replicated in later cohorts and in opium users.",
+     "against": "Some later stroke cohorts found smaller effects.",
+     "confidence": "High",
+     "uncertainty_driver": "Retrospective; registry follow-up varies.",
+     "test": "Prospective stroke cohorts with lesion mapping and biochemical verification."
+    }
+   ],
+   "related": [
+    {
+     "id": "yousefzadeh-fard-2013",
+     "why": "Insular infarcts and opium use"
+    },
+    {
+     "id": "jing-2021",
+     "why": "Dorsal striatal infarcts and smoking"
+    }
+   ]
   }
  ]
 }
