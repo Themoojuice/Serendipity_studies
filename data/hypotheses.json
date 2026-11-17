@@ -2726,6 +2726,274 @@
      "why": "Psychiatric improvement after abdominal surgery"
     }
    ]
+  },
+  {
+   "case_id": "baek-2022",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Delayed carbon monoxide sequelae recover spontaneously in many patients within a year."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Rated at the worst point after poisoning."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Two years of schizophrenia before the poisoning."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Antipsychotics tapered; admission."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Cognition improved rather than declined."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Self-reported disappearance of voices."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Psychosis reported partly retrospectively through a carer."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Voices that survived two years of amisulpride were gone on donepezil after carbon monoxide damage. The poisoning itself is the wild card: pallidal injury can change psychosis, and its sequelae recover on their own.",
+   "hypotheses": [
+    {
+     "claim": "Carbon monoxide damage to the globus pallidus and white matter altered the circuit producing the voices; donepezil timing was coincidental.",
+     "chain": "Carbon monoxide → pallidal and white-matter injury → basal ganglia output changed → voices fade as delayed sequelae resolve",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Pallidal lesions have eased psychosis in other reports (Galati 2013); sequelae resolve over weeks to months.",
+     "against": "MRI unchanged; voices went as cognition came back, not as damage occurred.",
+     "confidence": "Low",
+     "uncertainty_driver": "No lesion description in the extract.",
+     "test": "Psychosis ratings across the delayed-sequelae course without donepezil."
+    },
+    {
+     "claim": "Raising acetylcholine restored attentional gating that let inner speech be heard as voices.",
+     "chain": "Donepezil → more cortical acetylcholine → better sensory gating and source monitoring → fewer hallucinations",
+     "mechanisms": [
+      "Acetylcholine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Change within days of donepezil, and more at 10 mg.",
+     "against": "Cholinesterase inhibitor trials in schizophrenia have been mostly negative.",
+     "confidence": "Low",
+     "uncertainty_driver": "Cognitive recovery and voices moved together.",
+     "test": "Donepezil stopped and restarted."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "bright-2018",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Course of mood over three years unknown."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Long-standing disability."
+    },
+    "misdiagnosis": {
+     "rating": "Likely",
+     "why": "Depression secondary to pain and immobility, which were the things treated."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Three years of other care."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "More activity."
+    },
+    "expectancy": {
+     "rating": "Likely",
+     "why": "A costly, hoped-for treatment with self-reported outcomes."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "No mood measure; commercial authors."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A commercial cell-therapy report in which mood is an aside. Even if the joints truly improved, a depressed young woman getting out of a wheelchair needs no further explanation.",
+   "hypotheses": [
+    {
+     "claim": "Mood followed pain and mobility.",
+     "chain": "Less pain and more independence → behavioural activation and hope → less depression and anxiety",
+     "mechanisms": [
+      "Social and environmental change",
+      "Interoceptive and visceral input"
+     ],
+     "latency_fit": "Fits",
+     "for": "Mood improved along with function over three years.",
+     "against": "Nothing measured.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No mood data at all.",
+     "test": "Mood scales in cell-therapy trials with sham control."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "vendrell-serres-2021",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "A year of fixed paralysis; functional paralysis at a year has a poor prognosis."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Steady for a year."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Positive signs and normal investigations."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "CBT and medicines unchanged for months before."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Movement improved, not reduced."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Functional disorder plus a novel, dramatic treatment; suggestion may be part of the mechanism."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No motor measure before treatment."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "A year-long functional paralysis moved within two hours of the first esketamine dose and improved after each dose. Whether that is ketamine or the theatre of a new treatment is exactly what can't be told from one case.",
+   "hypotheses": [
+    {
+     "claim": "Esketamine's dissociation loosened the fixed predictive model of a paralysed limb.",
+     "chain": "NMDA blockade → dissociation and weakened top-down priors → the brain's prediction of 'no movement' loosens → voluntary movement returns",
+     "mechanisms": [
+      "Glutamate",
+      "Suggestion and belief update"
+     ],
+     "latency_fit": "Fits",
+     "for": "Recovery within hours, at the time of dissociation, repeated each dose.",
+     "against": "No measure of dissociation or of belief.",
+     "confidence": "Low",
+     "uncertainty_driver": "Expectancy can't be separated from drug effect.",
+     "test": "Blinded esketamine versus active placebo (midazolam) in functional paralysis."
+    },
+    {
+     "claim": "Lifting depression released the functional symptom.",
+     "chain": "Rapid antidepressant effect → less low mood and helplessness → functional symptom loses its hold",
+     "mechanisms": [
+      "Glutamate",
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Fits",
+     "for": "Mood and arm improved together from the first dose.",
+     "against": "Mood had partly improved before without the arm changing.",
+     "confidence": "Low",
+     "uncertainty_driver": "Mood and motor change concurrent.",
+     "test": "Separate time courses of mood and motor function on esketamine."
+    }
+   ],
+   "related": [
+    {
+     "id": "corte-2025",
+     "why": "Functional seizures gone after ECT given for depression"
+    }
+   ]
+  },
+  {
+   "case_id": "hosseini-2026",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Relapse was recent and OCD fluctuates; perimenopause adds hormonal flux."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Error came at the point of seeking a change."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-documented OCD."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "A late response to 12 weeks of high-dose sertraline; dose then lowered."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "More active."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "She believed she was back on the drug that had worked for 15 years."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Y-BOCS after was a recalled estimate."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "The striking detail is expectancy: she thought she was restarting clomipramine, the drug that had kept her well for 15 years. That makes this as much a placebo case as a clomiphene case.",
+   "hypotheses": [
+    {
+     "claim": "Expectation of the trusted drug produced the response.",
+     "chain": "Believed she was back on clomipramine → strong positive expectation → OCD eased",
+     "mechanisms": [
+      "Suggestion and belief update"
+     ],
+     "latency_fit": "Fits",
+     "for": "Fifteen years of good response to clomipramine; remission in the weeks she thought she was taking it.",
+     "against": "The real clomipramine afterwards worked less well, which expectancy doesn't explain.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No blind and no dated ratings.",
+     "test": "None possible in this patient; placebo-response rates in OCD trials are low, which counts against."
+    },
+    {
+     "claim": "Clomiphene's oestrogen-receptor modulation steadied a hormonally sensitive OCD in perimenopause (the authors' speculation).",
+     "chain": "Clomiphene → hypothalamic oestrogen-receptor blockade → gonadotrophins and oestradiol rise → serotonergic tone changes → OCD eases",
+     "mechanisms": [
+      "Sex steroids and reproduction",
+      "Serotonin"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "OCD began postpartum and worsened around perimenopause.",
+     "against": "No hormone measurements.",
+     "confidence": "Low",
+     "uncertainty_driver": "No hormonal data.",
+     "test": "Hormone levels across OCD fluctuations in women with reproductive-linked onset."
+    }
+   ],
+   "related": []
   }
  ]
 }

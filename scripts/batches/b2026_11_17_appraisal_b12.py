@@ -1,0 +1,90 @@
+"""Full-text appraisal, batch 12 (2026-11-17): baek-2022 (donepezil for carbon monoxide sequelae, residual voices),
+bright-2018 (stromal vascular fraction for osteoarthritis; depression and anxiety).
+"""
+import sys
+sys.path.insert(0, "scripts")
+from lib_code import Batch, ev, track, T, A, J, N, H  # noqa: E402
+
+b = Batch("2026-11-17", source="PMC open-access full text, via Europe PMC")
+
+b.code("baek-2022",
+       tracks=[track("38-year-old man", 38, "M", [
+           ev("onset", -25, "months", "Schizophrenia: voices and persecutory delusions; amisulpride 800 mg improved all but the reproaching voices", "approx"),
+           ev("treatment_failed", -24, "months", "Residual voices unchanged on amisulpride; stopped work, declined admission", "approx", to=-2),
+           ev("assessment", -45, "days", "Suicide attempt by charcoal fumes: carbon monoxide poisoning, symptomatic care only", "approx"),
+           ev("assessment", -17, "days", "Admitted with delayed neurological sequelae: amnesia, ataxia, lost sense of direction; psychotropics tapered", "approx",
+              scores=[{"scale": "MMSE", "value": 18}, {"scale": "PANSS", "value": 78}, {"scale": "CGI-S", "value": 6}]),
+           ev("treatment_failed", -16, "days", "Ten hyperbaric oxygen sessions: no change in cognition, imaging or psychosis", "approx", to=-4,
+              scores=[{"scale": "PANSS", "value": 70}]),
+           ev("exposure_start", 0, "days", "Donepezil 5 mg for cognitive sequelae"),
+           ev("first_change", 4, "days", "MMSE 19 → 22; feels cognition about 70% better", scores=[{"scale": "MMSE", "value": 22}]),
+           ev("best_response", 4, "weeks", "Donepezil raised to 10 mg: MMSE 30; says the voices have gone", "approx", state="Remitted",
+              scores=[{"scale": "MMSE", "value": 30}, {"scale": "CGI-S", "value": 1}]),
+           ev("follow_up", 3.7, "months", "Three months after discharge on donepezil: stable, back at work", "approx", state="Remitted",
+              scores=[{"scale": "PANSS", "value": 51}, {"scale": "CGI-S", "value": 1}],
+              note="Column alignment of PANSS in the extracted table is uncertain; positive subscale 27 before, 8 after."),
+       ])],
+       unexpectedness=T(target=("borderline", "Cholinesterase inhibitors have been tried for psychosis, but not as a cure for residual voices.")),
+       attribution=A(1, 1, 1, 0, 0, "PANSS, CGI-S and MMSE serially; delayed sequelae of carbon monoxide often recover by themselves, and the antipsychotic was being tapered."),
+       jbi=J("YYYYYYUY"),
+       lesion=None)
+b.reading("baek-2022",
+          nulls=N(natural_history=("Possible", "Delayed carbon monoxide sequelae recover spontaneously in many patients within a year."),
+                  regression=("Possible", "Rated at the worst point after poisoning."),
+                  misdiagnosis=("Unlikely", "Two years of schizophrenia before the poisoning."),
+                  cointervention=("Possible", "Antipsychotics tapered; admission."),
+                  nonspecific=("Unlikely", "Cognition improved rather than declined."),
+                  expectancy=("Possible", "Self-reported disappearance of voices."),
+                  reporting=("Possible", "Psychosis reported partly retrospectively through a carer.")),
+          verdict="Undecided",
+          note="Voices that survived two years of amisulpride were gone on donepezil after carbon monoxide damage. The poisoning itself is the wild card: pallidal injury can change psychosis, and its sequelae recover on their own.",
+          hyps=[H("Carbon monoxide damage to the globus pallidus and white matter altered the circuit producing the voices; donepezil timing was coincidental.",
+                  "Carbon monoxide → pallidal and white-matter injury → basal ganglia output changed → voices fade as delayed sequelae resolve",
+                  ["Lesion disconnection"], "Can't judge",
+                  "Pallidal lesions have eased psychosis in other reports (Galati 2013); sequelae resolve over weeks to months.",
+                  "MRI unchanged; voices went as cognition came back, not as damage occurred.",
+                  "Low", "No lesion description in the extract.",
+                  "Psychosis ratings across the delayed-sequelae course without donepezil."),
+                H("Raising acetylcholine restored attentional gating that let inner speech be heard as voices.",
+                  "Donepezil → more cortical acetylcholine → better sensory gating and source monitoring → fewer hallucinations",
+                  ["Acetylcholine"], "Fits",
+                  "Change within days of donepezil, and more at 10 mg.",
+                  "Cholinesterase inhibitor trials in schizophrenia have been mostly negative.",
+                  "Low", "Cognitive recovery and voices moved together.",
+                  "Donepezil stopped and restarted.")],
+          related=[])
+
+b.code("bright-2018",
+       tracks=[track("27-year-old woman", 27, "F", [
+           ev("onset", -5, "years", "Grade IV osteoarthritis of hips and knee, ankylosing spondylitis, chronic pain syndrome, PTSD; wheelchair or stick; on antidepressants and analgesics", "at least"),
+           ev("assessment", -1, "days", "Baseline joint and spondylitis scores", scores=[{"scale": "ASQoL", "value": 18, "higher_is_better": False}]),
+           ev("exposure_start", 0, "days", "Autologous adipose stromal vascular fraction: 100 million cells into each hip and the right knee, 438 million intravenously; further infusions at 3, 12 and 36 months"),
+           ev("first_change", 3, "months", "More mobile, less pain, more energetic", state="Partial"),
+           ev("assessment", 2, "years", "Less dependent on wheelchair and stick; fewer analgesics and antidepressants", "approx"),
+           ev("follow_up", 3, "years", "Off anti-inflammatories; anxiety almost gone, some depression remains", state="Partial",
+              scores=[{"scale": "ASQoL", "value": 3, "higher_is_better": False}]),
+       ])],
+       unexpectedness=T(),
+       attribution=A(0, 0, 0, 0, 0, "Depression and anxiety never measured; described only as improved at 3 years, alongside pain and mobility."),
+       jbi=J("YYYYYYYY"),
+       fix={"caveat": "Pain, mobility and independence improved hugely, which is reason enough for mood to lift; the authors run a commercial cell-therapy clinic."})
+b.reading("bright-2018",
+          nulls=N(natural_history=("Possible", "Course of mood over three years unknown."),
+                  regression=("Unlikely", "Long-standing disability."),
+                  misdiagnosis=("Likely", "Depression secondary to pain and immobility, which were the things treated."),
+                  cointervention=("Possible", "Three years of other care."),
+                  nonspecific=("Unlikely", "More activity."),
+                  expectancy=("Likely", "A costly, hoped-for treatment with self-reported outcomes."),
+                  reporting=("Likely", "No mood measure; commercial authors.")),
+          verdict="Doesn't beat the null",
+          note="A commercial cell-therapy report in which mood is an aside. Even if the joints truly improved, a depressed young woman getting out of a wheelchair needs no further explanation.",
+          hyps=[H("Mood followed pain and mobility.",
+                  "Less pain and more independence → behavioural activation and hope → less depression and anxiety",
+                  ["Social and environmental change", "Interoceptive and visceral input"], "Fits",
+                  "Mood improved along with function over three years.",
+                  "Nothing measured.",
+                  "Moderate", "No mood data at all.",
+                  "Mood scales in cell-therapy trials with sham control.")],
+          related=[])
+
+b.save()

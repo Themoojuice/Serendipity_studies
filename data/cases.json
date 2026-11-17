@@ -7132,8 +7132,8 @@
   {
    "id": "hosseini-2026",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
+   "status": "Included",
+   "tier": "C",
    "collections": [
     "phase1a"
    ],
@@ -7191,7 +7191,7 @@
     "links": []
    },
    "summary": "Relapsed OCD improved after a pharmacy error supplied clomiphene, a fertility drug, in place of clomipramine.",
-   "caveat": "Improvement rather than remission, in a patient with a history of good treatment response.",
+   "caveat": "OCD can respond late to an SSRI, and sertraline at 200 mg had only just completed 12 weeks; the improvement was rated by recall.",
    "tags": [
     "hormonal",
     "medication-error",
@@ -7201,7 +7201,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -7209,13 +7209,146 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Y-BOCS 23 before; afterwards only her recalled estimate (about 7); onset of improvement within the 12 weeks not dated; sertraline was cut from 200 to 100 mg at the same time."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "50-year-old woman",
+     "age": 50,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -18,
+       "unit": "years",
+       "precision": "approx",
+       "label": "OCD after second childbirth (contamination, cleaning, harm fears); Y-BOCS 30; good response to sertraline, clonazepam and clomipramine 75 mg (Y-BOCS 12)"
+      },
+      {
+       "kind": "assessment",
+       "t": -10,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Clomipramine tapered over 4 months for tremor and dry mouth: OCD and anxiety relapse"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -3,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Sertraline raised to 200 mg for 12 weeks: no meaningful change",
+       "to": -0.1,
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 23,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Prescribing error: clomiphene 25 mg/day dispensed instead of clomipramine; taken with sertraline 100 mg and clonazepam 2 mg"
+      },
+      {
+       "kind": "best_response",
+       "t": 12,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "Dramatic remission; back to social and work activity; Y-BOCS about 7 by her own retrospective estimate",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 7,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 12,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Error discovered; clomiphene tapered, clomipramine restarted at 75 mg"
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Controlled again on clomipramine, but not as well as during the clomiphene weeks",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 84,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 18.0,
+    "follow_up_days": 182.625,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "Y-BOCS",
+      "before": 23,
+      "after": 7,
+      "change_pct": -69.6
+     }
+    ],
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -8730,8 +8863,8 @@
   {
    "id": "vendrell-serres-2021",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1a"
    ],
@@ -8789,7 +8922,7 @@
     "links": []
    },
    "summary": "Functional neurological symptoms improved when esketamine was given for comorbid treatment-resistant depression.",
-   "caveat": "Mood improved at the same time, so the effect may run through depression.",
+   "caveat": "Functional symptoms respond to expectation and to dramatic new treatments; a dissociative drug given with ceremony is exactly that.",
    "tags": [
     "comorbid",
     "esketamine",
@@ -8798,7 +8931,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -8806,13 +8939,123 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "A year of fixed paralysis, then near-recovery 2 hours after the first dose; MRC power only after; other treatments unchanged for months. Movement improved after each dose and eased a little between doses, which is suggestive but not a documented stop and return."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "49-year-old man",
+     "age": 49,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -12,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Sudden functional paralysis and numbness of the left arm with a major depressive episode; CT, MRI and EMG normal; needs help with daily tasks"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -12,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Paroxetine to 60 mg with clonazepam; then mirtazapine and aripiprazole; CBT every 2 weeks from month 4 (ongoing); then venlafaxine 300 mg: partial help for mood, none for the arm",
+       "to": -1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Esketamine nasal spray 56 mg, then 84 mg twice weekly for 4 weeks, for treatment-resistant depression"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "hours",
+       "precision": "exact",
+       "label": "Almost complete recovery of arm movement 2 hours after the first dose, easing back a little over following days",
+       "state": "Partial"
+      },
+      {
+       "kind": "best_response",
+       "t": 4,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Full movement, MRC power 5/5, numbness gone; depression in remission (MADRS)",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "MRC power",
+         "value": 5
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 5,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Esketamine every 2 weeks: depression and arm both still well",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0.083,
+    "latency_band": "Under a day",
+    "baseline_years": 1.0,
+    "follow_up_days": 152.188,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -11872,7 +12115,7 @@
   {
    "id": "bright-2018",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1a"
@@ -11926,7 +12169,7 @@
     "links": []
    },
    "summary": "Depression lifted alongside ankylosing spondylitis and fatigue after stem-cell-fraction injections for osteoarthritis.",
-   "caveat": "Authors are associated with a commercial cell-therapy provider; self-report outcomes.",
+   "caveat": "Pain, mobility and independence improved hugely, which is reason enough for mood to lift; the authors run a commercial cell-therapy clinic.",
    "tags": [
     "depression",
     "inflammation",
@@ -11935,7 +12178,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -11945,13 +12188,137 @@
     "coi-trigger"
    ],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Depression and anxiety never measured; described only as improved at 3 years, alongside pain and mobility."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "27-year-old woman",
+     "age": 27,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -5,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Grade IV osteoarthritis of hips and knee, ankylosing spondylitis, chronic pain syndrome, PTSD; wheelchair or stick; on antidepressants and analgesics"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Baseline joint and spondylitis scores",
+       "scores": [
+        {
+         "scale": "ASQoL",
+         "value": 18,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Autologous adipose stromal vascular fraction: 100 million cells into each hip and the right knee, 438 million intravenously; further infusions at 3, 12 and 36 months"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "months",
+       "precision": "exact",
+       "label": "More mobile, less pain, more energetic",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Less dependent on wheelchair and stick; fewer analgesics and antidepressants"
+      },
+      {
+       "kind": "follow_up",
+       "t": 3,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Off anti-inflammatories; anxiety almost gone, some depression remains",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "ASQoL",
+         "value": 3,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 91.312,
+    "latency_band": "Over 3 months",
+    "baseline_years": 5.0,
+    "follow_up_days": 1095.75,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "ASQoL",
+      "before": 18,
+      "after": 3,
+      "change_pct": -83.3
+     }
+    ],
+    "attribution_score": 0,
+    "attribution_grade": "D",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -16372,8 +16739,8 @@
   {
    "id": "baek-2022",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1c"
    ],
@@ -16436,7 +16803,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, first pass)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "Cholinesterase inhibitor trials in schizophrenia targeted cognition and were negative; no test in this setting.",
@@ -16444,13 +16811,205 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "borderline",
+      "note": "Cholinesterase inhibitors have been tried for psychosis, but not as a cure for residual voices."
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "PANSS, CGI-S and MMSE serially; delayed sequelae of carbon monoxide often recover by themselves, and the antipsychotic was being tapered."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "38-year-old man",
+     "age": 38,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -25,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Schizophrenia: voices and persecutory delusions; amisulpride 800 mg improved all but the reproaching voices"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -24,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Residual voices unchanged on amisulpride; stopped work, declined admission",
+       "to": -2
+      },
+      {
+       "kind": "assessment",
+       "t": -45,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Suicide attempt by charcoal fumes: carbon monoxide poisoning, symptomatic care only"
+      },
+      {
+       "kind": "assessment",
+       "t": -17,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Admitted with delayed neurological sequelae: amnesia, ataxia, lost sense of direction; psychotropics tapered",
+       "scores": [
+        {
+         "scale": "MMSE",
+         "value": 18
+        },
+        {
+         "scale": "PANSS",
+         "value": 78
+        },
+        {
+         "scale": "CGI-S",
+         "value": 6
+        }
+       ]
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -16,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Ten hyperbaric oxygen sessions: no change in cognition, imaging or psychosis",
+       "to": -4,
+       "scores": [
+        {
+         "scale": "PANSS",
+         "value": 70
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Donepezil 5 mg for cognitive sequelae"
+      },
+      {
+       "kind": "first_change",
+       "t": 4,
+       "unit": "days",
+       "precision": "exact",
+       "label": "MMSE 19 → 22; feels cognition about 70% better",
+       "scores": [
+        {
+         "scale": "MMSE",
+         "value": 22
+        }
+       ]
+      },
+      {
+       "kind": "best_response",
+       "t": 4,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Donepezil raised to 10 mg: MMSE 30; says the voices have gone",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "MMSE",
+         "value": 30
+        },
+        {
+         "scale": "CGI-S",
+         "value": 1
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 3.7,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Three months after discharge on donepezil: stable, back at work",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "PANSS",
+         "value": 51
+        },
+        {
+         "scale": "CGI-S",
+         "value": 1
+        }
+       ],
+       "note": "Column alignment of PANSS in the extracted table is uncertain; positive subscale 27 before, 8 after."
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 4,
+    "latency_band": "1-13 days",
+    "baseline_years": 2.08,
+    "follow_up_days": 112.619,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "MMSE",
+      "before": 18,
+      "after": 22,
+      "change_pct": 22.2
+     },
+     {
+      "scale": "PANSS",
+      "before": 70,
+      "after": 51,
+      "change_pct": -27.1
+     },
+     {
+      "scale": "CGI-S",
+      "before": 6,
+      "after": 1,
+      "change_pct": -83.3
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -16615,90 +17174,6 @@
    "flags": [],
    "appraisal": {
     "basis": "Title",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
-   }
-  },
-  {
-   "id": "romeo-2025",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "phase1c"
-   ],
-   "citation": {
-    "authors": "Romeo VM",
-    "title": "Use of semaglutide in a 54-year-old patient with cocaine abuse and weight loss: a case report.",
-    "journal": "J Med Case Rep",
-    "year": 2025,
-    "volume": "19",
-    "issue": "1",
-    "pages": "57"
-   },
-   "ids": {
-    "doi": "10.1186/s13256-025-05049-w",
-    "pmid": "39962582",
-    "pmcid": "PMC11834608"
-   },
-   "links": {
-    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11834608/",
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/39962582/",
-    "doi": "https://doi.org/10.1186/s13256-025-05049-w",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1186%2Fs13256-025-05049-w"
-   },
-   "access": "Free full text",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Substance & addictive"
-    ],
-    "specific": "Cocaine use disorder with obesity in a 54-year-old",
-    "chronic": null,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Medication for another condition",
-    "specific": "Semaglutide for obesity, titrated over 12 weeks",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Partial",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "Cocaine craving fell markedly over 12 weeks of semaglutide given for obesity.",
-   "caveat": "Craving rather than verified abstinence; short follow-up and a single author.",
-   "tags": [
-    "cocaine",
-    "craving",
-    "glp-1",
-    "semaglutide"
-   ],
-   "same_patient_as": null,
-   "found_via": "Europe PMC (v1.2 broad query, first pass)",
-   "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
-   "era": {
-    "label": "emerging",
-    "note": "",
-    "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Abstract",
     "date": "2026-11-10",
     "by": null,
     "unexpectedness": null,
