@@ -950,7 +950,7 @@
    "id": "israel-2010",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "B",
    "collections": [
     "top12"
    ],
@@ -994,7 +994,7 @@
    "outcome": {
     "resolution": "Complete",
     "time_to_resolution": null,
-    "follow_up": "3 years",
+    "follow_up": null,
     "reversal": "None reported"
    },
    "downstream": {
@@ -1003,7 +1003,7 @@
     "links": []
    },
    "summary": "Stimulation aimed at refractory depression put the patient's comorbid chronic eating disorder into lasting remission, with weight normalised.",
-   "caveat": "The depression improved too, so the eating disorder may have followed mood.",
+   "caveat": "She had normalised before after treatment and relapsed; maintenance eating-disorder treatment followed DBS, so the durable part is what stands out.",
    "tags": [
     "anorexia",
     "dbs",
@@ -1014,7 +1014,7 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (Full text in ClinicalKey through CKN)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -1022,13 +1022,160 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "EAT-26 34.3 before, 1 at 2 and 3 years; but she had reached normal EAT-26 scores after earlier admissions too, and a course of maintenance eating-disorder treatment came 8 months after DBS."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Ms A., 56-year-old woman",
+     "age": 52,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -35,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Restrictive anorexia from 17 (lowest BMI 14.4 at 22), relapsing with each depression; chronic recurrent depression from adolescence, refractory to drugs and ECT"
+      },
+      {
+       "kind": "assessment",
+       "t": -20,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Readmitted to the eating disorder programme: discharged 7 months later at BMI 20.9",
+       "scores": [
+        {
+         "scale": "EAT-26",
+         "value": 34.3,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Bilateral subgenual cingulate DBS for refractory depression (November 2005); antidepressants continued"
+      },
+      {
+       "kind": "relapse",
+       "t": 8,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Weight loss after a friend's suicide (BMI 18.2); maintenance eating disorder treatment offered",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "EAT-26",
+         "value": 12.5,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "assessment",
+       "t": 2,
+       "unit": "years",
+       "precision": "exact",
+       "label": "No further eating disorder treatment needed; average BMI 19.1; depressive relapses at 18 and 30 months",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "EAT-26",
+         "value": 1.0,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 3,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Restraint and weight and shape concerns at population levels (EDE)",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "EAT-26",
+         "value": 1,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Stimulation target",
+    "side": "Bilateral",
+    "regions": [
+     "Anterior cingulate"
+    ],
+    "specific": "Subgenual cingulate (BA25), bilateral electrodes; now right-sided intermittent stimulation",
+    "aetiology": "Not applicable",
+    "imaging": "MRI",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "baseline_years": 35.0,
+    "follow_up_days": 1095.75,
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "EAT-26",
+      "before": 34.3,
+      "after": 1.0,
+      "change_pct": -97.1
+     }
+    ],
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -2051,7 +2198,7 @@
    "id": "palmer-2017",
    "record_type": "case",
    "status": "Included",
-   "tier": "B",
+   "tier": "A",
    "collections": [
     "round1"
    ],
@@ -2096,7 +2243,7 @@
     "resolution": "Partial",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "On-off rechallenge"
+    "reversal": "Natural off-on"
    },
    "downstream": {
     "level": 3,
@@ -2131,7 +2278,7 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (Full text in ClinicalKey through CKN)",
    "era": {
     "label": "emerging",
     "basis": "judged",
@@ -2139,20 +2286,233 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "A mouse study had just suggested ketogenic benefit, and both patients chose the diet for weight; the author was alert to the possibility."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "PANSS 98 → 49 and 107 → 70; symptoms returned within days of breaking ketosis and went again on re-entry, repeatedly; weight loss and an aripiprazole increase run alongside."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Case 1, 33-year-old man",
+     "age": 33,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -13,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Schizoaffective disorder since 2003; persistent symptoms despite many drugs including clozapine"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "January 2016, 322 lb",
+       "scores": [
+        {
+         "scale": "PANSS",
+         "value": 98,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Ketogenic diet chosen by him to lose weight"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Dramatic fall in hallucinations and delusions; better mood and concentration",
+       "state": "Partial"
+      },
+      {
+       "kind": "relapse",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Broke the diet at least 5 times: symptoms worse within 1–2 days each time, better once ketotic again",
+       "state": "Worse"
+      },
+      {
+       "kind": "follow_up",
+       "t": 1,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Lost 104 lb; college course, friends, own apartment",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "PANSS",
+         "value": 49,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "patient": "Case 2, 31-year-old woman",
+     "age": 31,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -7,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Schizoaffective disorder since 2009; many drugs including clozapine; 23 ECT"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "March 2016",
+       "scores": [
+        {
+         "scale": "PANSS",
+         "value": 107,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Ketogenic diet for weight loss"
+      },
+      {
+       "kind": "first_change",
+       "t": 4,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Delusions gone; mood and energy better",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 4,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Lost 30 lb",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "PANSS",
+         "value": 70,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 5,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Off the diet (August 2016)"
+      },
+      {
+       "kind": "relapse",
+       "t": 5.5,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Severe paranoia and persecutory delusions; aripiprazole raised to 30 mg without effect",
+       "state": "Worse"
+      },
+      {
+       "kind": "exposure_restart",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Three-day fast re-induces ketosis"
+      },
+      {
+       "kind": "follow_up",
+       "t": 6.1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Delusions resolved by the third day",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 21,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 13.0,
+    "follow_up_days": 365.25,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "PANSS",
+      "before": 98,
+      "after": 49,
+      "change_pct": -50.0
+     }
+    ],
+    "attribution_score": 5,
+    "attribution_grade": "A",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
    "id": "palmer-2019",
    "record_type": "case",
    "status": "Included",
-   "tier": "B",
+   "tier": "C",
    "collections": [
     "round1"
    ],
@@ -2196,7 +2556,7 @@
    "outcome": {
     "resolution": "Complete",
     "time_to_resolution": null,
-    "follow_up": "Up to 12 years",
+    "follow_up": null,
     "reversal": "None reported"
    },
    "downstream": {
@@ -2232,7 +2592,7 @@
    "same_patient_as": "kraft-westman-2009",
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (Full text in ClinicalKey through CKN)",
    "era": {
     "label": "emerging",
     "basis": "judged",
@@ -2240,13 +2600,116 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "By 2013 the ketogenic-psychosis idea had a published case (Kraft & Westman 2009); the diet was started for gut symptoms."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Twenty years of psychosis before; remission came on haloperidol decanoate plus the diet, then held for 5 years off antipsychotics; PANSS mentioned but not reported in the text."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
+    "note": "Patient A is the Kraft & Westman 2009 patient (12-year follow-up), coded under kraft-westman-2009; this coding covers patient B."
+   },
+   "timeline": [
+    {
+     "patient": "Patient B, 39-year-old woman",
+     "age": 34,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -20,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Hallucinations and paranoia from 1993 (schizophrenia diagnosed 2003), depression, anorexia; many antipsychotics including clozapine and haloperidol decanoate"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Ketogenic diet started by a functional medicine practitioner for GI symptoms (2013)"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Abruptly stopped 14 medicines; severely psychotic and admitted; haloperidol decanoate restarted; diet continued",
+       "state": "Worse"
+      },
+      {
+       "kind": "best_response",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Complete resolution of psychosis for the first time since 1993",
+       "state": "Remitted"
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Haloperidol decanoate tapered off"
+      },
+      {
+       "kind": "follow_up",
+       "t": 5,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Psychosis-free off antipsychotics; finished graduate school, works full time",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 42,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 20.0,
+    "follow_up_days": 1826.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -5598,7 +6061,7 @@
    "id": "kosel-2007",
    "record_type": "case",
    "status": "Included",
-   "tier": "B",
+   "tier": "A",
    "collections": [
     "round2"
    ],
@@ -5642,7 +6105,7 @@
    "outcome": {
     "resolution": "Partial",
     "time_to_resolution": null,
-    "follow_up": "18 months",
+    "follow_up": null,
     "reversal": "None reported"
    },
    "downstream": {
@@ -5660,7 +6123,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (Full text in ClinicalKey through CKN)",
    "era": {
     "label": "novel",
     "note": "",
@@ -5668,13 +6131,187 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "HAM-D 26 → 13 and BDI 22 → 16; drugs fixed for 2 months before and only reduced in the first 15 months; dyskinesia improved only 35%."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Ms A., 62-year-old woman",
+     "age": 62,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -15,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Recurrent melancholic depression; 10 admissions, about 60 drugs; current episode 8 years; severe tardive dyskinesia over 10 years"
+      },
+      {
+       "kind": "assessment",
+       "t": -7,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Medicines unchanged for 2 months (mirtazapine, trimipramine 175 mg, lorazepam, zolpidem, trihexyphenidyl)",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 26,
+         "higher_is_better": false
+        },
+        {
+         "scale": "BDI",
+         "value": 22,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Bilateral ventral GPi DBS for tardive dyskinesia (parameters set over 6 weeks)"
+      },
+      {
+       "kind": "cointervention",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Trimipramine reduced to 150 mg"
+      },
+      {
+       "kind": "first_change",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Reading magazines again",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 4,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Doing housework, then driving and a holiday abroad, first time in 6 years",
+       "state": "Partial"
+      },
+      {
+       "kind": "best_response",
+       "t": 15,
+       "unit": "months",
+       "precision": "exact",
+       "label": "HAM-D 50% lower; antidepressants then switched to reboxetine",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 13,
+         "higher_is_better": false
+        },
+        {
+         "scale": "BDI",
+         "value": 16,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 18,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Longest sustained improvement in years; dyskinesia 35% better",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "BDI",
+         "value": 17,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Stimulation target",
+    "side": "Bilateral",
+    "regions": [
+     "Globus pallidus"
+    ],
+    "specific": "Ventral posterolateral GPi, 1.5 mm rostral and 2 mm medial to the usual dystonia target (facial area)",
+    "aetiology": "Not applicable",
+    "imaging": "MRI and CT",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 42,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 15.0,
+    "follow_up_days": 547.875,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "HAM-D",
+      "before": 26,
+      "after": 13,
+      "change_pct": -50.0
+     },
+     {
+      "scale": "BDI",
+      "before": 22,
+      "after": 16,
+      "change_pct": -27.3
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -8183,7 +8820,7 @@
   {
    "id": "fernandes-2020",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1a"
@@ -8252,7 +8889,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "verified": "2026-11-17: full text read (Full text in ClinicalKey through CKN)",
    "era": {
     "label": "novel",
     "note": "",
@@ -8260,13 +8897,146 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "BMI 11.4 → 18.1 → 20.3 after the emboli; psychiatric treatment continued; prolonged medical admission with feeding is the obvious alternative."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "34-year-old woman",
+     "age": 34,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -19,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Restrictive anorexia from 15, poor response, many admissions"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Latest admission: BMI 11.4",
+       "scores": [
+        {
+         "scale": "BMI",
+         "value": 11.4
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Infective endocarditis with cerebral emboli: right orbitofrontal, right insula, left anterior cingulate, striatocapsular lesions; non-convulsive status"
+      },
+      {
+       "kind": "assessment",
+       "t": 3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "After ICU and medical recovery: unprecedented weight gain; discharged at BMI 18.1, a level never reached before",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "BMI",
+         "value": 18.1
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 7,
+       "unit": "months",
+       "precision": "exact",
+       "label": "BMI 20.3; body-image distortion improved; left temporo-parieto-occipital epileptiform activity persists",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "BMI",
+         "value": 20.3
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Bilateral",
+    "regions": [
+     "Orbitofrontal",
+     "Insula",
+     "Anterior cingulate",
+     "Caudate",
+     "Globus pallidus"
+    ],
+    "specific": "Septic emboli: right orbitofrontal, right insula, left anterior cingulate, striatocapsular; microbleeds in left pallidum and right caudate",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "MRI",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "baseline_years": 19.0,
+    "follow_up_days": 213.062,
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "BMI",
+      "before": 11.4,
+      "after": 18.1,
+      "change_pct": 58.8
+     }
+    ],
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -9017,8 +9787,8 @@
   {
    "id": "gerken-2022",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1a"
    ],
@@ -9086,7 +9856,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "verified": "2026-11-17: full text read (Full text in ClinicalKey through CKN)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -9094,13 +9864,120 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Y-BOCS 38 before; remission at first psychiatric review after the stroke, observed on the ward; untreated, so no drug change; follow-up length not stated."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "29-year-old woman",
+     "age": 29,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -10,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Contamination OCD from 19; partial response to fluoxetine 80 mg; off treatment for a year, housebound, hours of washing, eating less",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 38,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Left carotid dissection: infarct of left lenticular nucleus, caudate body, insula and superior parietal cortex (NIHSS 19); thrombectomy and stent"
+      },
+      {
+       "kind": "assessment",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Liaison review: intrusive thoughts have stopped, no fear of surfaces, no washing; behaviour consistent",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Stable without SSRI, no return",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Putamen",
+     "Globus pallidus",
+     "Caudate",
+     "Insula",
+     "Parietal"
+    ],
+    "specific": "Left lenticular nucleus, caudate body, insula and superior parietal infarct (M1 occlusion)",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "CT",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "baseline_years": 10.0,
+    "follow_up_days": 91.312,
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -12646,8 +13523,8 @@
   {
    "id": "liu-2026",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1a"
    ],
@@ -12700,7 +13577,7 @@
     "links": []
    },
    "summary": "Treatment-refractory psychosis eased markedly once haemodialysis began.",
-   "caveat": "Letter without an abstract; why dialysis was started is unverified.",
+   "caveat": "Lithium was stopped after the toxicity, and his confusion and perplexity may have been chronic lithium neurotoxicity rather than illness.",
    "tags": [
     "dialysis",
     "schizoaffective"
@@ -12708,7 +13585,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Full text in ClinicalKey through CKN)",
    "era": {
     "label": "novel",
     "note": "Dialysis as a treatment for schizophrenia was tested and refuted around 1980 (see Wagemaker & Cade 1977).",
@@ -12716,13 +13593,131 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Dialysis was tried for schizophrenia in the 1970s and abandoned after negative trials."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "CGI-S 5–6 for years, 3 after; but lithium toxicity, its withdrawal (he is now off lithium), pneumonia and ICU care all coincide."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "25-year-old man",
+     "age": 24,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -14,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Paranoia from 10, psychosis from 14, mania from 16; schizoaffective disorder, bipolar type, with mild intellectual disability"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -5,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Over 10 admissions; maximal mood stabilisers and antipsychotics including clozapine; ECT only transient; IQ 70 → 52",
+       "to": -0.1,
+       "scores": [
+        {
+         "scale": "CGI-S",
+         "value": 6,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Pneumonia with hyponatraemia, dehydration, acute kidney injury and lithium toxicity (3.5 mEq/L): ICU and emergency haemodialysis"
+      },
+      {
+       "kind": "best_response",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Rapid, profound change: mood stable, long-standing psychosis much improved",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "CGI-S",
+         "value": 3,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Still improved on clozapine, paliperidone, valproate and carbamazepine; no confusion or perplexity",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 14,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 14.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "CGI-S",
+      "before": 6,
+      "after": 3,
+      "change_pct": -50.0
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -14613,7 +15608,7 @@
   {
    "id": "muskens-2012",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -14677,7 +15672,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Full text in ClinicalKey through CKN)",
    "era": {
     "label": "known",
     "note": "Fits the lesion-addiction literature after Naqvi 2007, pooled by Joutsa 2022.",
@@ -14685,13 +15680,114 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Long, heavy use before; immediate loss of interest; abstinence confirmed by his wife at 3 months; no comparison for stroke-prompted quitting."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "75-year-old man",
+     "age": 75,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -20,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Heavy drinking for 20 years, never tried to stop; lately 10–12 beers and 10–20 cigarettes a day; strong family history"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Ischaemic stroke of the left caudate-putamen; mild aphasia; MMSE 26, FAB 16"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "at most",
+       "label": "Immediate loss of interest in alcohol and cigarettes; denies the stroke was a reason to quit; no withdrawal",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 3,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Abstinent from both without urges, confirmed by his wife; more initiative",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Caudate",
+     "Putamen"
+    ],
+    "specific": "Left caudate-putamen infarct (DWI, ADC, FLAIR in figure)",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 20.0,
+    "follow_up_days": 91.312,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -17668,7 +18764,7 @@
   {
    "id": "hoirisch-clapauch-2013",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1b"
@@ -17733,7 +18829,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Full text in ClinicalKey through CKN)",
    "era": {
     "label": "novel",
     "note": "",
@@ -17744,13 +18840,103 @@
     "overclaim"
    ],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Psychiatric baselines thin and unmeasured; remission months to years after warfarin; diet, folate and exercise advice alongside; bipolar episodes remit anyway."
+    },
+    "jbi": {
+     "checklist": "Case series",
+     "answers": [
+      "Y",
+      "N",
+      "Y",
+      "N",
+      "N",
+      "Y",
+      "Y",
+      "U",
+      "N",
+      "N"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Five patients on warfarin (18–50 years)",
+     "age": 35,
+     "sex": "Not stated",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Psychotic symptoms: chronic voices (1), bipolar mixed episodes with psychosis (2, 3, 5), refractory puerperal psychosis with catatonia (4); all with thrombophilia or antiphospholipid syndrome"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Long-term warfarin after venous thrombosis (INR ≥ 2 over 85% of the time), with diet and folate advice"
+      },
+      {
+       "kind": "best_response",
+       "t": 8,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Remission months to years later (patient 1 within 6 months, patient 2 at 13 months, patient 4 at 8 months)",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 4,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Free of psychotropics for 2 to 11 years",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 243.5,
+    "latency_band": "Over 3 months",
+    "baseline_years": 3.0,
+    "follow_up_days": 1461.0,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 0,
+    "attribution_grade": "D",
+    "jbi_score": 4,
+    "jbi_of": 10,
+    "rule_tier": "C"
    }
   },
   {
@@ -25939,8 +27125,8 @@
   {
    "id": "ohmura-2025",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1e"
    ],
@@ -26007,7 +27193,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-17: full text read (Full text in ClinicalKey through CKN)",
    "era": {
     "label": "novel",
     "note": "",
@@ -26015,13 +27201,122 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Depression and anxiety described as persistently high before, without a scale; HAM-D 0 after; dense amnesia and cognitive impairment (MoCA 18) at the same time."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "44-year-old woman",
+     "age": 44,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -79,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Chronic low back and limb pain 7–9/10 with persistent high depression and anxiety despite bupropion, duloxetine, benzodiazepines, opioids, fusion surgery and a spinal stimulator"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Acute brain injury: bilateral hippocampal, occipital and cerebellar lesions with haemorrhage, hydrocephalus; somnolent"
+      },
+      {
+       "kind": "assessment",
+       "t": 3,
+       "unit": "days",
+       "precision": "approx",
+       "label": "No memory of the past 4 years; pain 0/10 off all analgesics; MoCA 18",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 0,
+         "higher_is_better": false
+        },
+        {
+         "scale": "HAM-A",
+         "value": 4,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 2,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Off all analgesic and psychiatric drugs; depression and anxiety still absent; memory modestly better",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Bilateral",
+    "regions": [
+     "Temporal, medial (amygdala, hippocampus)",
+     "Occipital",
+     "Cerebellum"
+    ],
+    "specific": "Bilateral hippocampal, occipital and cerebellar lesions with restricted diffusion and haemorrhage",
+    "aetiology": "Other",
+    "imaging": "MRI and CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "baseline_years": 6.58,
+    "follow_up_days": 60.875,
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -27686,8 +28981,8 @@
   {
    "id": "reimer-2009",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1e"
    ],
@@ -27741,7 +29036,7 @@
     "links": []
    },
    "summary": "A 23-year-old woman with Crohn's disease, admitted catatonic and psychotic, recovered as infliximab brought her Crohn's into remission.",
-   "caveat": "Tapering the steroids as the Crohn's settled is the obvious competing explanation; the authors judge the timing atypical for steroid psychosis.",
+   "caveat": "Psychosis began after a steroid increase in active Crohn's, so it may have been steroid- or inflammation-driven, which infliximab would treat.",
    "tags": [
     "catatonia",
     "crohns-disease",
@@ -27752,7 +29047,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-17: full text read (Full text in ClinicalKey through CKN)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -27760,13 +29055,117 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Catatonic psychosis resistant for 3 months; remission within 3 weeks of infliximab; quetiapine continued, steroid switched, and the psychosis may itself have been steroid- or inflammation-driven."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "23-year-old woman",
+     "age": 23,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -16,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Fistulising Crohn's: prednisolone raised 5 → 50 mg and azathioprine started (week 0); psychosis with catatonia from week 7"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -12,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Amisulpride, quetiapine to 700 mg, haloperidol 20 mg (catatonia controlled, thought disorder not; stopped for EPS); prednisolone switched to budesonide",
+       "to": -1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Infliximab 300 mg IV twice in a fortnight for Crohn's"
+      },
+      {
+       "kind": "best_response",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "Fistula healed; positive symptoms gone, slight negative symptoms",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Discharged stable on quetiapine 250 mg, budesonide, azathioprine"
+      },
+      {
+       "kind": "follow_up",
+       "t": 40,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Week 52: no psychotic symptoms, Crohn's controlled",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 21,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 0.31,
+    "follow_up_days": 280,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {

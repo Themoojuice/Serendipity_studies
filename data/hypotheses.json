@@ -5491,6 +5491,708 @@
      "why": "Functional paralysis and esketamine"
     }
    ]
+  },
+  {
+   "case_id": "israel-2010",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "A relapsing-remitting course; she had recovered before."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Thirty-five years of illness."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-documented anorexia."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Maintenance eating-disorder treatment 8 months after DBS; antidepressants continued."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Function improved."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Major surgery for her depression."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "EAT-26 and EDE."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Her eating disorder had always relapsed with her depressions; after subgenual DBS it stayed away through two depressive relapses. Durability, not onset, is the signal, and later subgenual-DBS series in anorexia make it more than a coincidence.",
+   "hypotheses": [
+    {
+     "claim": "Subgenual cingulate stimulation damped the circuit linking negative affect to restriction.",
+     "chain": "DBS at BA25 → reduced limbic hyperactivity → depressive episodes no longer trigger restriction → eating disorder stays in remission",
+     "mechanisms": [
+      "Stimulation of a circuit"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Lasting remission despite depressive relapses that used to trigger anorexia; later subcallosal DBS trials in anorexia.",
+     "against": "No clear onset; maintenance treatment.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No timing for the change.",
+     "test": "Eating disorder ratings with stimulation switched off."
+    }
+   ],
+   "related": [
+    {
+     "id": "funayama-2016",
+     "why": "Subgenual cingulate lesion ending depression"
+    }
+   ]
+  },
+  {
+   "case_id": "kosel-2007",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "An eight-year episode."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Steady."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Part of the depression may have been reactive to disabling dyskinesia."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Antidepressants reduced, not added, until month 15."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "More active."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Surgery and close follow-up."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Serial HAM-D and BDI."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "An eight-year melancholic episode halved on the HAM-D after pallidal DBS for dyskinesia, with antidepressants cut rather than added. Partial, slow and sustained.",
+   "hypotheses": [
+    {
+     "claim": "Stimulation reached limbic pallidal output, modulating mood circuits.",
+     "chain": "Ventral GPi stimulation → current spread to limbic pallidum and its thalamocortical loop → reduced depressive drive",
+     "mechanisms": [
+      "Stimulation of a circuit"
+     ],
+     "latency_fit": "Fits",
+     "for": "Gradual improvement over months, as in DBS for depression.",
+     "against": "Dyskinesia relief could lift mood too.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Motor and mood benefits coincide.",
+     "test": "Mood ratings with stimulation blinded off and on."
+    },
+    {
+     "claim": "Relief of disabling dyskinesia lifted a partly reactive depression.",
+     "chain": "Less dyskinesia → less disability and shame → mood improves",
+     "mechanisms": [
+      "Social and environmental change"
+     ],
+     "latency_fit": "Fits",
+     "for": "She resumed activities as movements eased.",
+     "against": "Dyskinesia improved only 35%; mood improved more.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "As above."
+    }
+   ],
+   "related": [
+    {
+     "id": "ali-2015",
+     "why": "Depression remitting after pallidal DBS for Parkinson's"
+    }
+   ]
+  },
+  {
+   "case_id": "muskens-2012",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Many people stop after a stroke."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Twenty years of use."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Clear dependence."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Hospital and diazepam cover."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "More initiative, not less."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "He says the stroke wasn't his reason."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Three months only."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "The single-case precursor of Jing 2021: a dorsal striatal stroke and two addictions gone at once, without urges and without effort, in a man who had never tried to stop.",
+   "hypotheses": [
+    {
+     "claim": "The dorsal striatum stores the habit; the infarct erased it.",
+     "chain": "Left caudate-putamen infarct → loss of cue-driven habit circuitry → no urge to drink or smoke",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate, effortless loss of both habits.",
+     "against": "Three months.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "One case.",
+     "test": "Cohort data (Jing 2021)."
+    }
+   ],
+   "related": [
+    {
+     "id": "jing-2021",
+     "why": "Dorsal striatal infarcts and smoking"
+    },
+    {
+     "id": "valadez-cuen-2024",
+     "why": "Caudate infarct and smoking"
+    }
+   ]
+  },
+  {
+   "case_id": "palmer-2017",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Years of refractory illness."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Steady."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-documented."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Weight loss and its effect on self-esteem; aripiprazole raised in case 2."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Function improved."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Both chose the diet and knew of its hoped-for effects."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Unblinded ratings by the treating psychiatrist."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Two refractory schizoaffective patients, each worsening within days of breaking ketosis and recovering on re-entry. The repeated off-on is what launched the metabolic psychiatry trials.",
+   "hypotheses": [
+    {
+     "claim": "Ketosis supplied an alternative brain fuel that corrected a bioenergetic deficit in psychosis.",
+     "chain": "Ketone bodies → bypass impaired glucose metabolism, improve mitochondrial function, raise GABA/glutamate ratio → psychosis eases within weeks; reverses within days of losing ketosis",
+     "mechanisms": [
+      "Metabolic state (ketosis, insulin, glucose)",
+      "Bioenergetics and mitochondria"
+     ],
+     "latency_fit": "Fits",
+     "for": "Fast on-off tracking ketosis, measured by urine strips.",
+     "against": "Weight loss confounds the slower gains.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Unblinded, two cases.",
+     "test": "Randomised ketogenic diet trials in schizophrenia (now under way)."
+    }
+   ],
+   "related": [
+    {
+     "id": "palmer-2019",
+     "why": "Two more ketogenic remissions, one followed 12 years"
+    },
+    {
+     "id": "kraft-westman-2009",
+     "why": "The first ketogenic schizophrenia case"
+    }
+   ]
+  },
+  {
+   "case_id": "palmer-2019",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Some chronic psychoses remit late."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Twenty years."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-documented."
+    },
+    "cointervention": {
+     "rating": "Likely",
+     "why": "Remission came with haloperidol decanoate restarted in hospital."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Function restored."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Diet-minded practitioner and authors with keto interests (one with commercial ties)."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Retrospective records."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Remission arrived on a depot antipsychotic in hospital, so the onset proves nothing; what's striking is five years well off antipsychotics on the diet.",
+   "hypotheses": [
+    {
+     "claim": "Ketosis maintained a remission that the depot started.",
+     "chain": "Ketogenic metabolic shift → corrected brain energy metabolism → remission holds off antipsychotics",
+     "mechanisms": [
+      "Metabolic state (ketosis, insulin, glucose)"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Five years well off drugs.",
+     "against": "Onset on depot.",
+     "confidence": "Low",
+     "uncertainty_driver": "Remission began with an antipsychotic.",
+     "test": "Diet withdrawal with ratings."
+    }
+   ],
+   "related": [
+    {
+     "id": "palmer-2017",
+     "why": "Ketogenic off-on in schizoaffective disorder"
+    },
+    {
+     "id": "kraft-westman-2009",
+     "why": "Patient A, first reported 2009"
+    }
+   ]
+  },
+  {
+   "case_id": "reimer-2009",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "A first psychotic episode of four months can remit."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Worsening on treatment."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Steroid-induced or inflammatory psychosis rather than schizophrenia."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Quetiapine 700 mg; steroid change."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No scale."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "A catatonic psychosis that resisted three antipsychotics cleared within three weeks of infliximab, as the Crohn's did. Whether this was schizophrenia helped by TNF blockade or an inflammatory psychosis treated at its source is the question.",
+   "hypotheses": [
+    {
+     "claim": "TNF blockade reduced the inflammation driving the psychosis.",
+     "chain": "Active Crohn's → systemic TNF and cytokines → microglial activation and psychosis → infliximab → both settle",
+     "mechanisms": [
+      "Inflammation and cytokines",
+      "Microglia and glia"
+     ],
+     "latency_fit": "Fits",
+     "for": "Psychosis and Crohn's remitted together within 3 weeks.",
+     "against": "Antipsychotics and steroid change concurrent.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Can't separate inflammatory from primary psychosis.",
+     "test": "Psychosis ratings in schizophrenia trials of TNF antagonists."
+    }
+   ],
+   "related": [
+    {
+     "id": "silva-2021",
+     "why": "Immunoglobulin and mood"
+    }
+   ]
+  },
+  {
+   "case_id": "gerken-2022",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Ten years, worsening."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "At her worst before."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Typical OCD."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "No psychiatric treatment."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "A major stroke with aphasia and paresis could mute rituals."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Conference abstract; no scale after."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Ten years of contamination OCD at Y-BOCS 38 gone after a left striatal and insular stroke, untreated. The lesion sits across the cortico-striatal loop that capsulotomy targets.",
+   "hypotheses": [
+    {
+     "claim": "The infarct cut the cortico-striato-thalamic loop that sustains OCD, like a capsulotomy.",
+     "chain": "Left caudate and lenticular infarct → OCD loop disconnected → obsessions and compulsions stop",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Abrupt remission after the stroke; untreated.",
+     "against": "No measure after; short follow-up.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Lesion extent from CT.",
+     "test": "Lesion-network mapping of OCD-remitting strokes."
+    }
+   ],
+   "related": [
+    {
+     "id": "sair-2018",
+     "why": "OCD remission after a haemorrhage"
+    },
+    {
+     "id": "yaryura-tobias-2003",
+     "why": "OCD gone after a putaminal bleed"
+    }
+   ]
+  },
+  {
+   "case_id": "ohmura-2025",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Six years unchanged."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Depression and anxiety driven by chronic pain, which also vanished."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "All drugs stopped."
+    },
+    "nonspecific": {
+     "rating": "Likely",
+     "why": "Four years of retrograde amnesia and global cognitive impairment; she can't remember the pain or the illness."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No scale before."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Pain, depression and anxiety all gone with four years of memory, as in Oh 2011. The authors' point, that remembered suffering sustains these conditions, is interesting, but amnesia is the boring explanation and it is Likely.",
+   "hypotheses": [
+    {
+     "claim": "Losing the autobiographical memory of chronic pain removed what sustained the pain and the mood disorder.",
+     "chain": "Bilateral hippocampal damage → loss of 4 years of memories including the pain history → no anticipatory pain, catastrophising or rumination → pain and depression gone",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Global suppression (sedation, apathy, cognitive loss)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Everything went together with the memories.",
+     "against": "Can't distinguish from global impairment.",
+     "confidence": "Low",
+     "uncertainty_driver": "Cognitive impairment confounds.",
+     "test": "Mood and pain after amnesia without other cognitive loss."
+    }
+   ],
+   "related": [
+    {
+     "id": "oh-2011",
+     "why": "Amnesia and loss of a psychiatric syndrome"
+    }
+   ]
+  },
+  {
+   "case_id": "liu-2026",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Five years of refractory illness."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Admitted acutely."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Chronic confusion and IQ decline could reflect lithium neurotoxicity, relieved by stopping lithium."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Lithium stopped; ICU care."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Function restored."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "CGI only."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Five years of refractory schizoaffective illness transformed after dialysis for lithium toxicity. The most boring reading is that he had been partly lithium-poisoned all along; the authors favour cytokine clearance.",
+   "hypotheses": [
+    {
+     "claim": "Removing chronic lithium neurotoxicity cleared a superimposed encephalopathy.",
+     "chain": "Long-term lithium at high-normal levels → subtle neurotoxicity (confusion, perplexity, cognitive decline) → toxicity crisis, dialysis and lithium stopped → encephalopathy lifts",
+     "mechanisms": [
+      "Drug level change"
+     ],
+     "latency_fit": "Fits",
+     "for": "Confusion and perplexity vanished; lithium not restarted.",
+     "against": "His levels before weren't reported.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No prior lithium levels.",
+     "test": "Prior lithium levels and EEG."
+    },
+    {
+     "claim": "Dialysis removed circulating inflammatory factors (the authors' reading).",
+     "chain": "Haemodialysis → clears cytokines and middle molecules → less neuroinflammation → psychosis improves",
+     "mechanisms": [
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Rapid change after dialysis.",
+     "against": "Controlled dialysis trials for schizophrenia were negative.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "None."
+    }
+   ],
+   "related": [
+    {
+     "id": "grootendorst-van-mil-2018",
+     "why": "Psychosis improving after pneumonia raised drug levels"
+    }
+   ]
+  },
+  {
+   "case_id": "fernandes-2020",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Nineteen years of poor response."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "BMI 11.4 is a nadir."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Typical anorexia."
+    },
+    "cointervention": {
+     "rating": "Likely",
+     "why": "Months of ICU and medical care with nutrition, and continued psychiatric treatment."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Brain injury and seizures."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Conference abstract."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Weight restoration after a long medical admission isn't surprising; holding a BMI of 20 seven months later, with less body-image distortion, is, and the lesions hit insula, orbitofrontal and cingulate cortex.",
+   "hypotheses": [
+    {
+     "claim": "Embolic lesions in insula, orbitofrontal and cingulate cortex disrupted the interoceptive and reward circuits sustaining restriction.",
+     "chain": "Lesions in insula/OFC/ACC → altered body representation and food reward → less drive to restrict → weight maintained",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Interoceptive and visceral input"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Unprecedented durable weight; regions implicated in anorexia.",
+     "against": "Feeding during admission.",
+     "confidence": "Low",
+     "uncertainty_driver": "Conference abstract.",
+     "test": "Lesion location in other anorexia remissions after brain injury."
+    }
+   ],
+   "related": [
+    {
+     "id": "israel-2010",
+     "why": "Anorexia remitting after subgenual DBS"
+    }
+   ]
+  },
+  {
+   "case_id": "hoirisch-clapauch-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Likely",
+     "why": "Episodic bipolar and puerperal psychoses remitting over months to years."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Presented at thrombotic crises."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Antiphospholipid syndrome can cause neuropsychiatric symptoms directly."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Folate, diet and exercise; psychiatric care."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "Hypothesis journal; selected cases from one clinic; no measures."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Five anticoagulation-clinic patients whose psychoses remitted months to years after warfarin, offered in support of a plasminogen-activator theory. Natural course explains most; antiphospholipid syndrome is the more interesting confound.",
+   "hypotheses": [
+    {
+     "claim": "Anticoagulation treated an antiphospholipid or microthrombotic contribution to psychosis.",
+     "chain": "Antiphospholipid syndrome or thrombophilia → cerebral microvascular injury or autoimmune effects → psychosis → warfarin → fewer microthrombi",
+     "mechanisms": [
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Four of five had antiphospholipid syndrome or thrombophilia.",
+     "against": "Long, variable latencies.",
+     "confidence": "Low",
+     "uncertainty_driver": "Selected cases, no measures.",
+     "test": "Psychiatric outcomes in anticoagulated antiphospholipid syndrome cohorts."
+    }
+   ],
+   "related": []
   }
  ]
 }
