@@ -2448,6 +2448,284 @@
      "why": "Depression remitting after a suicide attempt with burns"
     }
    ]
+  },
+  {
+   "case_id": "funayama-2016",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Fourteen years, worsening, very severe two weeks before."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Two ratings a year apart, both very severe."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-followed melancholic depression."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Antidepressants were stopped; two months in hospital."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Orbitofrontal lesions can produce indifference; normal executive and daily-living scores argue against it."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Nothing was offered for mood."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Two standard scales by the treating team, before and twice after."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "A natural lesion in the exact territory of subgenual cingulate DBS ended 14 years of resistant melancholia, off all drugs, with normal cognition afterwards. Among the cleanest lesion cases in the library.",
+   "hypotheses": [
+    {
+     "claim": "The haemorrhage destroyed the hyperactive subgenual cingulate node, doing what subgenual DBS tries to do.",
+     "chain": "Bleed into subgenual cingulate (BA25) → loss of the overactive node → depressive network released",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Lesion and SPECT hypoperfusion in BA25; remission by two months; held off drugs.",
+     "against": "Only one patient, and the exact lesion boundary on CT is coarse.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Lesion extent from CT and SPECT only; no MRI to map it.",
+     "test": "Lesion-network mapping of this and other remitting lesions against the subgenual DBS connectome."
+    },
+    {
+     "claim": "Orbitofrontal damage removed the capacity for excessive regret, the core of her melancholia (the authors' reading).",
+     "chain": "Orbitofrontal lesion → regret signal blunted → ruminative guilt goes → mood recovers",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Meaning and life reorganisation"
+     ],
+     "latency_fit": "Fits",
+     "for": "Orbitofrontal patients don't feel regret in decision tasks; her regret specifically went.",
+     "against": "Regret wasn't measured, before or after.",
+     "confidence": "Low",
+     "uncertainty_driver": "Regret described, not measured.",
+     "test": "Counterfactual-regret tasks after remitting orbitofrontal lesions."
+    }
+   ],
+   "related": [
+    {
+     "id": "kim-2016",
+     "why": "Remission straight after a brain event in resistant depression"
+    }
+   ]
+  },
+  {
+   "case_id": "zhang-2024",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Unknown course."
+    },
+    "regression": {
+     "rating": "Can't judge",
+     "why": "No baseline."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "A mass present for 20 years and chronic gut symptoms could have driven a secondary depression."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Hospital stay, recovery, weight regained."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Improvement, not suppression."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Relief after surgery."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "The patient's own remark at follow-up; no measure, no date, no detail."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A surgical case report with a single sentence about mood. The omentum and microbiome story is the authors' speculation; the boring reading is relief after recovering from a long abdominal illness.",
+   "hypotheses": [
+    {
+     "claim": "Removing a chronic visceral illness ended a secondary depression.",
+     "chain": "Long-standing encasing membrane and partial obstruction → chronic discomfort and inflammation → depression → surgery ends both",
+     "mechanisms": [
+      "Interoceptive and visceral input",
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "A palpable mass for 20 years; CRP raised at presentation.",
+     "against": "No record of how long or how bad the depression was.",
+     "confidence": "Low",
+     "uncertainty_driver": "Nothing is known about the depression.",
+     "test": "Mood scales before and after surgery for chronic abdominal conditions."
+    },
+    {
+     "claim": "Bowel resection and decompression changed the gut microbiota and gut-brain signalling (the authors' suggestion).",
+     "chain": "Resection and release of trapped bowel → altered microbiota → less gut inflammation → mood lifts",
+     "mechanisms": [
+      "Gut-brain axis"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Plausible in principle.",
+     "against": "No microbial or inflammatory data.",
+     "confidence": "Low",
+     "uncertainty_driver": "Entirely speculative.",
+     "test": "Microbiome sampling before and after."
+    }
+   ],
+   "related": [
+    {
+     "id": "fujiwara-2025",
+     "why": "Psychiatric improvement after abdominal surgery"
+    }
+   ]
+  },
+  {
+   "case_id": "jarvinen-2019",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Years of escalating food obsession."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Long, steady problem."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Well-characterised autism."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Other medicines and support not stated."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Less hunger removes the trigger for food-related aggression and stealing."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Parent report of a hoped-for treatment."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No rating scale after treatment."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "The food part is the drug doing its job; the claim that non-food obsessions and aggression also fell rests on report from home, with no repeat scale.",
+   "hypotheses": [
+    {
+     "claim": "GLP-1 receptor activation damped reward-driven repetitive behaviour in general, not only for food.",
+     "chain": "Liraglutide → GLP-1 receptors in VTA and nucleus accumbens → less dopaminergic reward salience → fewer compulsions",
+     "mechanisms": [
+      "Neuropeptide (oxytocin, orexin, other)",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Change within a week; GLP-1 agonists reduce alcohol and drug seeking in animals and some trials.",
+     "against": "Non-food change unmeasured.",
+     "confidence": "Low",
+     "uncertainty_driver": "No measure of non-food behaviour after treatment.",
+     "test": "Y-BOCS or a repetitive-behaviour scale in GLP-1-treated autistic patients."
+    },
+    {
+     "claim": "Satiety removed the drive behind most of the problem behaviour.",
+     "chain": "Satiety → less food seeking → less frustration and conflict → less aggression and checking",
+     "mechanisms": [
+      "Metabolic state (ketosis, insulin, glucose)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Food craving was the main driver of stealing and conflict.",
+     "against": "Doesn't explain the non-food rituals, if they truly fell.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Same as above.",
+     "test": "Whether hunger ratings and non-food rituals fall together or apart."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "fujiwara-2025",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Thirty years and worsening."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Incontinence was feeding the contamination fear, so part of the syndrome was secondary to it."
+    },
+    "cointervention": {
+     "rating": "Likely",
+     "why": "Psychiatric treatment began in the same admission; the scale change came with CBT."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "More engagement, not less."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Trust in the surgeon carried over."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Behaviour counts by the team; no scale before surgery."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "The authors' point is that surgery opened the door to psychiatric care, and the measured gains came through that door. The surgical drop in ritual time is real but has an obvious explanation.",
+   "hypotheses": [
+    {
+     "claim": "Curing incontinence removed the ongoing contamination that fed the rituals.",
+     "chain": "Incontinence → constant soiling → contamination fear and cleaning → surgery ends soiling → fewer rituals",
+     "mechanisms": [
+      "Interoceptive and visceral input",
+      "Extinction and exposure"
+     ],
+     "latency_fit": "Fits",
+     "for": "Ritual time fell as soon as incontinence resolved; she felt 'less dirty'.",
+     "against": "Psychiatric treatment started at the same time.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Psychiatric and surgical treatment can't be separated.",
+     "test": "Ritual counts in contamination OCD before and after incontinence surgery without psychiatric input."
+    }
+   ],
+   "related": [
+    {
+     "id": "zhang-2024",
+     "why": "Psychiatric improvement after abdominal surgery"
+    }
+   ]
   }
  ]
 }

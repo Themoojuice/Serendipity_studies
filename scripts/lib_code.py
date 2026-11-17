@@ -12,11 +12,13 @@ python3 scripts/derive.py && python3 scripts/validate_cases.py.
               hyps=[H(...)], related=[("other-id", "why")], questions="")
     b.save()
 """
+import csv
 import json
 from pathlib import Path
 
 CASES = Path("data/cases.json")
 HYP = Path("data/hypotheses.json")
+LEDGER = Path("ledger/records.csv")
 
 
 def ev(kind, t, unit, label, precision="exact", **kw):
@@ -66,6 +68,7 @@ class Batch:
         self.h = json.loads(HYP.read_text())
         self.by_id = {r["id"]: r for r in self.d["records"]}
         self.done = []
+        self.excluded = {}
 
     def code(self, cid, tracks, unexpectedness, attribution, jbi, lesion=None, note="", fix=None, basis="Full text"):
         r = self.by_id[cid]
@@ -96,9 +99,46 @@ class Batch:
             e["questions"] = questions
         self.h["entries"].append(e)
 
+    def exclude(self, cid, code, note):
+        """Exclude a library record after full text: dropped from cases.json and hypotheses.json; ledger rows appended on save."""
+        self.excluded[cid] = (code, f"full-text appraisal {self.today}: {note}")
+
+    def _write_exclusions(self):
+        if not self.excluded:
+            return
+        rows = list(csv.DictReader(LEDGER.open()))
+        fields = list(rows[0].keys())
+        sup = {r["supersedes"] for r in rows if r["supersedes"]}
+        nid = max(int(r["record_id"][1:]) for r in rows) + 1
+        with LEDGER.open("a", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=fields)
+            for cid, (code, note) in self.excluded.items():
+                cur = [r for r in rows if cid in r["library_ids"].split(";") and r["record_id"] not in sup]
+                assert cur, cid
+                for r in cur:
+                    c = dict(r)
+                    c.update({"record_id": f"R{nid:06d}", "retrieved_date": self.today, "screen_stage": "ft", "decision": "excluded",
+                              "reason_code": code, "library_ids": "", "flags": "", "supersedes": r["record_id"], "notes": note})
+                    nid += 1
+                    w.writerow(c)
+        self.d["records"] = [r for r in self.d["records"] if r["id"] not in self.excluded]
+        self.h["entries"] = [e for e in self.h["entries"] if e["case_id"] not in self.excluded]
+
     def save(self):
+        self._write_exclusions()
+        for cid in self.done:
+            r = self.by_id[cid]
+            if r["status"] == "Provisional" and cid not in self.excluded:
+                r["status"] = "Included"
+            if cid not in self.excluded:  # tier always follows the section 6 rule once coded
+                from derive import derive_record, rule_tier
+                dv = derive_record(r, self.d["vocabularies"])
+                rt = rule_tier(dv.get("attribution_grade"), dv.get("jbi_score"), r.get("flags"))
+                if rt and rt != r.get("tier"):
+                    print(f"  {cid}: tier {r.get('tier')} -> {rt} (rule)")
+                    r["tier"] = rt
         self.d["updated"] = self.today
         self.h["updated"] = self.today
         CASES.write_text(json.dumps(self.d, ensure_ascii=False, indent=1) + "\n")
         HYP.write_text(json.dumps(self.h, ensure_ascii=False, indent=1) + "\n")
-        print(f"coded {len(self.done)}: {', '.join(self.done)}")
+        print(f"coded {len(self.done)}: {', '.join(self.done)}" + (f"; excluded {', '.join(self.excluded)}" if self.excluded else ""))

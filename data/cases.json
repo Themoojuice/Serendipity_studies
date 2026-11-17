@@ -9207,8 +9207,8 @@
   {
    "id": "jarvinen-2019",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1a"
    ],
@@ -9276,7 +9276,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -9284,13 +9284,129 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "borderline",
+      "note": "Less food craving is what a GLP-1 agonist is expected to do; the fall in non-food obsessions and aggression is the unexpected part."
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "OCI-R before only; afterwards the behaviour change is described from home, with weight the only number; other drugs not stated as unchanged."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "20-year-old man",
+     "age": 20,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -8,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Infantile autism with moderate intellectual disability; food obsessions and weight gain after risperidone at 12, persisting on aripiprazole"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -5,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Citalopram up to 20 mg for repetitive behaviours: no improvement; food craving and stealing worsened"
+      },
+      {
+       "kind": "assessment",
+       "t": -9,
+       "unit": "months",
+       "precision": "approx",
+       "label": "OCD symptoms significant; maladaptive behaviour clinically significant",
+       "scores": [
+        {
+         "scale": "OCI-R",
+         "value": 29
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Liraglutide 0.6 mg/day for weight, titrated to 2.4 mg over 8 weeks"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Food thoughts, craving and compulsive eating drastically less; weight falling",
+       "state": "Partial"
+      },
+      {
+       "kind": "best_response",
+       "t": 8,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Non-food obsessions, compulsions and aggression also much less at home; weight down 6%",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 36,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Still on 2.4 mg; weight down 12–13% from week 25; no adverse effects",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 7,
+    "latency_band": "1-13 days",
+    "baseline_years": 8.0,
+    "follow_up_days": 252,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -11086,8 +11202,8 @@
   {
    "id": "zhang-2024",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
+   "status": "Included",
+   "tier": "C",
    "collections": [
     "phase1a"
    ],
@@ -11140,7 +11256,7 @@
     "links": []
    },
    "summary": "Depression improved and antidepressants were stopped after surgery for an abdominal cocoon.",
-   "caveat": "Improvement was self-reported at 3 months.",
+   "caveat": "Recovering from a painful, chronic abdominal illness and regaining 10 kg would lift mood in anyone.",
    "tags": [
     "abdominal-surgery",
     "depression",
@@ -11149,7 +11265,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -11157,13 +11273,97 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Depression is a single line in a surgical report: no description before, no measure, no date for the change."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "N",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Kept as a weak case: the paper is about the surgery, and the depression is a one-line observation."
+   },
+   "timeline": [
+    {
+     "patient": "62-year-old man",
+     "age": 62,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "History of depression on antidepressants (duration and severity not given)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Laparotomy for small-bowel obstruction from an idiopathic abdominal cocoon: 50 cm necrotic bowel resected, no greater omentum found"
+      },
+      {
+       "kind": "assessment",
+       "t": 20,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Discharged on a normal diet"
+      },
+      {
+       "kind": "follow_up",
+       "t": 3,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Asymptomatic, gained 10 kg, says his depression has improved; antidepressants stopped",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "baseline_years": 1.0,
+    "follow_up_days": 91.312,
+    "timeline_reversal": "None reported",
+    "attribution_score": 0,
+    "attribution_grade": "D",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -11757,8 +11957,8 @@
   {
    "id": "funayama-2016",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1a"
    ],
@@ -11811,7 +12011,7 @@
     "links": []
    },
    "summary": "Fourteen years of treatment-resistant depression disappeared after a haemorrhage damaged the orbitofrontal and subgenual cingulate cortex.",
-   "caveat": "Mild personality change accompanied the recovery.",
+   "caveat": "Orbitofrontal damage can blunt affect and concern generally; her normal cognitive and functional scores argue against simple apathy, but nobody rated it.",
    "tags": [
     "depression",
     "haemorrhage",
@@ -11821,7 +12021,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "The subgenual cingulate is the target of DBS for depression (Mayberg 2005).",
@@ -11829,13 +12029,210 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "HAM-D 29 → 6 → 4 and MADRS 38 → 5 → 5; antidepressants were stopped, not changed, so drug co-intervention can't explain it."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "69-year-old woman",
+     "age": 69,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -14,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Melancholic depression at 55 after her father-in-law's death, with excessive regret"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -12,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Trimipramine 150 mg: partial remission, then relapse at 57; amoxapine 150 mg: no improvement",
+       "to": -2
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Worse after losing three siblings; very severe",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 28
+        },
+        {
+         "scale": "MADRS",
+         "value": 36
+        }
+       ]
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Milnacipran 100 mg added to amoxapine: no change"
+      },
+      {
+       "kind": "assessment",
+       "t": -14,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Last visit before the stroke: housebound",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 29
+        },
+        {
+         "scale": "MADRS",
+         "value": 38
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Subarachnoid haemorrhage from an anterior communicating artery aneurysm (Hunt and Hess 3), clipped; intraparenchymal bleed into orbitofrontal and subgenual cingulate cortex"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "All antidepressants stopped on admission, never restarted"
+      },
+      {
+       "kind": "best_response",
+       "t": 2,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Discharged; no longer dwelling on regret; forgetful with mild confabulation for some months",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 6
+        },
+        {
+         "scale": "MADRS",
+         "value": 5
+        }
+       ]
+      },
+      {
+       "kind": "assessment",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Living independently; MMSE 30, normal IQ and executive scores, episodic memory slightly low"
+      },
+      {
+       "kind": "follow_up",
+       "t": 1,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Still well off all antidepressants",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "HAM-D",
+         "value": 4
+        },
+        {
+         "scale": "MADRS",
+         "value": 5
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Unstated",
+    "regions": [
+     "Orbitofrontal",
+     "Anterior cingulate"
+    ],
+    "specific": "Orbitofrontal cortex and subgenual cingulate (low density on CT); SPECT hypoperfusion also in basal forebrain",
+    "aetiology": "Haemorrhage",
+    "imaging": "CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 60.875,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 14.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "HAM-D",
+      "before": 29,
+      "after": 4,
+      "change_pct": -86.2
+     },
+     {
+      "scale": "MADRS",
+      "before": 38,
+      "after": 5,
+      "change_pct": -86.8
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -22669,8 +23066,8 @@
   {
    "id": "fujiwara-2025",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1e"
    ],
@@ -22723,7 +23120,7 @@
     "links": []
    },
    "summary": "A woman in her 50s whose defecation rituals had caused rectal prolapse and incontinence cut her cleaning compulsions sharply once rectopexy cured the incontinence, and then took up regular psychiatric care.",
-   "caveat": "Curing the incontinence removed the soiling that triggered the cleaning, so the rituals may have lost their trigger rather than the OCD easing.",
+   "caveat": "Psychiatric treatment started during the surgical admission, and the measured gains came during 18 months of CBT.",
    "tags": [
     "contamination",
     "ocd",
@@ -22733,7 +23130,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
     "note": "",
@@ -22741,13 +23138,135 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "borderline",
+      "note": "Removing incontinence removes an obvious contamination trigger, so some reduction was foreseeable."
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Toilet hours and paper rolls before and after surgery; Y-BOCS only from the start of CBT (38 to 34); psychiatric treatment began in the same admission."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Woman in her 50s",
+     "age": 55,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -30,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Contamination OCD with defecation rituals: over 5 hours on the toilet and up to 12 rolls of paper a day; housebound"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -20,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Medication collected by her mother, never adjusted; refused all psychiatric contact"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -6,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Rectal prolapse and faecal incontinence from straining; perineal repair failed, prolapse recurred"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Laparoscopic mesh rectopexy"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Agreed to psychiatric treatment during the surgical admission"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Incontinence gone; feels 'less dirty'; toilet time 5 to 2 hours, paper 12 rolls to 2",
+       "state": "Partial"
+      },
+      {
+       "kind": "cointervention",
+       "t": 2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Psychoeducation and CBT with medication; attends regularly"
+      },
+      {
+       "kind": "follow_up",
+       "t": 18,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Insight and motivation; GAF 30 to 45",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 34
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 14,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 30.0,
+    "follow_up_days": 547.875,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
