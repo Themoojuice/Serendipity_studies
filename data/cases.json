@@ -1824,7 +1824,7 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-17: full text read (Open-access publisher copy read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -1832,13 +1832,135 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "OCD absent after the bleed and back as the haematoma resolved on serial MRI, a natural off-on; but the absence was never rated, and aphasia and hemiparesis could suppress expression."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "33-year-old man",
+     "age": 33,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -7,
+       "unit": "years",
+       "precision": "approx",
+       "label": "OCD from 26: contamination fears, harm obsessions about his family; sertraline 200 mg for three years; untreated hypertension"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Left basal ganglia haemorrhage into corona radiata and centrum semiovale; hemiparesis and aphasia"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Obsessive-compulsive symptoms absent after the haemorrhage (no rating)",
+       "state": "Remitted"
+      },
+      {
+       "kind": "relapse",
+       "t": 1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Symptoms returned gradually as serial MRIs showed the clot retracting",
+       "state": "Unchanged"
+      },
+      {
+       "kind": "assessment",
+       "t": 2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "First rating: contamination fear, spitting over 100 times a day; neurological deficits much improved",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 27,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 26,
+       "unit": "months",
+       "precision": "approx",
+       "label": "CBT and sertraline 200 mg for two months, then he stopped treatment",
+       "state": "Unchanged"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Putamen",
+     "White matter, other"
+    ],
+    "specific": "Left basal ganglia (putamen) haemorrhage extending into corona radiata and centrum semiovale",
+    "aetiology": "Haemorrhage",
+    "imaging": "MRI",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 7,
+    "latency_band": "1-13 days",
+    "baseline_years": 7.0,
+    "follow_up_days": 791.375,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -12606,7 +12728,7 @@
   {
    "id": "lipov-2024",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1a"
@@ -12670,7 +12792,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "verified": "2026-11-17: full text read (Open-access publisher copy read in the laptop browser)",
    "era": {
     "label": "novel",
     "note": "",
@@ -12681,13 +12803,130 @@
     "coi-trigger"
    ],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Bulimia mentioned but not described or measured; gone the day after the second block by his report; 45-day follow-up; the blocks were given by a clinic that offers them commercially."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "N",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "30-year-old man",
+     "age": 30,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -18,
+       "unit": "years",
+       "precision": "approx",
+       "label": "PTSD after years of bullying from 2nd to 6th grade; bulimia (duration not stated); on dexamphetamine"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Before the blocks",
+       "scores": [
+        {
+         "scale": "PCL-5",
+         "value": 39,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Right cervical sympathetic block at C6 and C4 (bupivacaine), left side 24 hours later; Horner's syndrome both times"
+      },
+      {
+       "kind": "best_response",
+       "t": 2,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Bulimia completely gone one day after the left block",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 45,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Bulimia still absent; PTSD much better",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "PCL-5",
+         "value": 6,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 2,
+    "latency_band": "1-13 days",
+    "baseline_years": 18.0,
+    "follow_up_days": 45,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "PCL-5",
+      "before": 39,
+      "after": 6,
+      "change_pct": -84.6
+     }
+    ],
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -24019,7 +24258,7 @@
   {
    "id": "gota-garces-2017",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1d"
@@ -24083,7 +24322,7 @@
    "same_patient_as": null,
    "found_via": "Embase via CKN (EMB_title_v1_2, re-ranked v1.3)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Open-access publisher copy read in the laptop browser)",
    "era": {
     "label": "novel",
     "note": "",
@@ -24091,13 +24330,99 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Ten years of refractory OCD before; remission noted after recovery, undated and unmeasured; no follow-up given; hanging can cause hypoxic brain injury, not assessed."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "N",
+      "U",
+      "Y",
+      "U",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "73-year-old woman",
+     "age": 73,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -10,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Late-onset severe contamination OCD with hand washing and avoidance; recurrent depression; CBT and many drugs with limited effect"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Fluoxetine 200 mg and pregabalin 300 mg twice daily"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Failed suicide attempt by hanging"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "After physical recovery all OCD symptoms had gone",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 30.438,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 10.0,
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 4,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -24272,8 +24597,8 @@
   {
    "id": "ripsman-2025",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1e"
    ],
@@ -24337,7 +24662,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-17: full text read (Open-access publisher copy read in the laptop browser)",
    "era": {
     "label": "novel",
     "note": "",
@@ -24345,19 +24670,125 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Lifelong severe tics before; complete resolution after surgery with no medication change; no tic scale; return at 6 weeks."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "23-year-old man",
+     "age": 23,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -16,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Tourette syndrome from 7: severe head, neck, face and arm tics, throat clearing; avoids people; developmental delay"
+      },
+      {
+       "kind": "onset",
+       "t": -7,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Drug-resistant left temporal epilepsy with bilateral cortical malformations"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Left anterior temporal lobectomy including mesial structures"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "All tics gone, with no medication change; seizure-free for 4 weeks",
+       "state": "Remitted"
+      },
+      {
+       "kind": "relapse",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Motor and vocal tics re-emerge and build back to their old intensity; monthly seizures return",
+       "state": "Unchanged"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Resection or ablation",
+    "side": "Left",
+    "regions": [
+     "Temporal, medial (amygdala, hippocampus)",
+     "Temporal, lateral"
+    ],
+    "specific": "Left (dominant) anterior temporal lobectomy, 4.5 cm, including middle and inferior temporal gyri and mesial structures",
+    "aetiology": "Surgery",
+    "imaging": "MRI",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 7,
+    "latency_band": "1-13 days",
+    "baseline_years": 16.0,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
    "id": "marchetti-2001",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1e"
@@ -24422,7 +24853,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-17: full text read (Open-access publisher copy read in the laptop browser)",
    "era": {
     "label": "novel",
     "note": "",
@@ -24430,13 +24861,124 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "Epileptic psychoses linked to seizure clusters are expected to improve when surgery stops the seizures."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Chronic psychosis before; remission at one year, still on risperidone; time of remission not given; seizure control is the expected route."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "45-year-old woman",
+     "age": 45,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -33,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Complex partial seizures from 12 (right mesial temporal sclerosis); hyper-religiosity from adolescence"
+      },
+      {
+       "kind": "onset",
+       "t": -10,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Postictal religious-ecstatic psychoses from 35, becoming a chronic interictal psychosis that worsened after seizure clusters"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Haloperidol to 17.5 mg, trifluoperazine, risperidone: delusions persisted; many antiepileptic drugs",
+       "to": -0.1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Right temporal lobectomy (August 1999)"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Three seizures in the first weeks, then seizure-free"
+      },
+      {
+       "kind": "follow_up",
+       "t": 1,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Euthymic, complete remission of psychosis; personality traits softened; on carbamazepine, clobazam and risperidone 3 mg",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Resection or ablation",
+    "side": "Right",
+    "regions": [
+     "Temporal, medial (amygdala, hippocampus)",
+     "Temporal, lateral"
+    ],
+    "specific": "Standard right temporal lobectomy for right mesial temporal sclerosis",
+    "aetiology": "Surgery",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "baseline_years": 33.0,
+    "follow_up_days": 365.25,
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -24613,8 +25155,8 @@
   {
    "id": "silverstone-1991",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1e"
    ],
@@ -24656,7 +25198,7 @@
     "intent": "Injury or illness"
    },
    "outcome": {
-    "resolution": "Partial",
+    "resolution": "Temporary",
     "time_to_resolution": null,
     "follow_up": null,
     "reversal": "None reported"
@@ -24678,7 +25220,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-17: full text read (Open-access publisher copy read in the laptop browser)",
    "era": {
     "label": "known",
     "note": "Convulsive therapy rests on the antidepressant effect of seizures (1938); the surprise is spontaneous seizures working after repeated ECT had not.",
@@ -24686,13 +25228,130 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Seizures relieving depression is the premise of ECT; the surprise is that spontaneous seizures worked where ECT didn't."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Severe psychotic depression before; transformed 36 hours after the seizures, relapsed in 10 days; no scale; the seizures came from stopping carbamazepine, which had itself just preceded the deterioration."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "67-year-old man",
+     "age": 67,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -35,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Manic-depressive psychosis; a resistant psychotic depression two years before that failed 10 bilateral ECT and responded to amitriptyline, phenelzine and lithium"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Carbamazepine started; three weeks later psychotic depression with retardation and nihilistic delusions; stopped eating and taking medication"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -3,
+       "unit": "days",
+       "precision": "exact",
+       "label": "First ECT: no improvement"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Five spontaneous grand mal seizures in one night (attributed to sudden carbamazepine withdrawal); IV diazepam"
+      },
+      {
+       "kind": "best_response",
+       "t": 36,
+       "unit": "hours",
+       "precision": "exact",
+       "label": "No longer depressed: laughing, talking appropriately, eating and drinking",
+       "state": "Remitted"
+      },
+      {
+       "kind": "relapse",
+       "t": 10,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Deteriorated again",
+       "state": "Unchanged"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": 7,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Eleven more ECTs with bilateral seizures over 25 seconds: no improvement"
+      },
+      {
+       "kind": "follow_up",
+       "t": 8,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Improved only about eight months later",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1.5,
+    "latency_band": "1-13 days",
+    "baseline_years": 35.0,
+    "follow_up_days": 243.5,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -27969,8 +28628,8 @@
   {
    "id": "corte-2025",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1f"
    ],
@@ -28023,7 +28682,7 @@
     "links": []
    },
    "summary": "A 38-year-old woman given ECT because her treatment-resistant depression was worsening, with fresh suicide attempts, had no further non-epileptic seizures by the end of twelve sessions, which surprised her team.",
-   "caveat": "Functional seizures rise and fall with distress, so the steep drop in her depression scores may explain it. Published in Portuguese.",
+   "caveat": "Functional seizures respond to suggestion and a dramatic treatment; there is no follow-up after the course.",
    "tags": [
     "ect",
     "functional-neurological-disorder",
@@ -28033,7 +28692,7 @@
    "same_patient_as": null,
    "found_via": "Embase via CKN (EMB_unexp_v1, EMB_nonEng_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (Embase record)",
+   "verified": "2026-11-17: full text read (Open-access publisher copy read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -28041,13 +28700,108 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "ECT for functional seizures had earlier reports (Blumer, Leong), and the team tracked seizures from the start."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Seizure counts and depression scales throughout ECT (values in tables); inpatient care and medication changes ran alongside; no follow-up after the course."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "38-year-old woman",
+     "age": 38,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Functional (psychogenic non-epileptic) seizures confirmed on video-EEG, up to 5 hours long; treatment-resistant depression after bereavements"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Inpatient psychotherapy, milieu therapy and several drug changes: depression and suicide attempts worse; about 21 seizures a day",
+       "to": -0.1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "ECT, 12 sessions over about 5 weeks, for treatment-resistant depression; seizure frequency and intensity tracked"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Seizure duration and intensity falling from the first sessions",
+       "state": "Partial"
+      },
+      {
+       "kind": "best_response",
+       "t": 5,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "After the 12th session: no further functional seizures; depression scales much improved",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 3,
+    "latency_band": "1-13 days",
+    "baseline_years": 1.0,
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {

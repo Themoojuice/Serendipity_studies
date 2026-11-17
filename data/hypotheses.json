@@ -4442,6 +4442,485 @@
      "why": "Dorsal striatal infarcts and smoking"
     }
    ]
+  },
+  {
+   "case_id": "yaryura-tobias-2003",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Seven years, unremitting on sertraline."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Typical OCD."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Medication stayed as before."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Aphasia, hemiparesis and dependency could hide or blunt rituals."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Absence reconstructed retrospectively; no rating until relapse."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "OCD vanished with a left putaminal bleed and returned as the clot shrank, tracked on serial MRI: an on-off pattern supplied by the lesion itself. The weak point is that nobody measured the OCD while it was gone.",
+   "hypotheses": [
+    {
+     "claim": "The haematoma's mass effect transiently silenced the cortico-striatal loop driving the OCD; as it resolved the loop recovered.",
+     "chain": "Left putaminal haemorrhage → compression and dysfunction of striatal OCD circuit → symptoms stop → clot resorbs → circuit recovers → symptoms return",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Symptoms tracked the haematoma's size across serial MRIs.",
+     "against": "No ratings during remission; neurological recovery happened in parallel.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Retrospective account of the remission.",
+     "test": "Serial Y-BOCS in OCD patients with striatal haemorrhages."
+    }
+   ],
+   "related": [
+    {
+     "id": "ripsman-2025",
+     "why": "Tics gone for 6 weeks after temporal resection, then back"
+    }
+   ]
+  },
+  {
+   "case_id": "marchetti-2001",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Ten years of psychosis."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Likely",
+     "why": "Psychosis driven by seizures, and the operation treated the seizures."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Risperidone continued."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None aimed at the psychosis."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No measure."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "The expected end of the epilepsy-surgery spectrum: psychosis tied to seizure clusters ended with the seizures. Useful as the background against which non-seizure cases stand out.",
+   "hypotheses": [
+    {
+     "claim": "Removing the right temporal focus ended the seizure-driven psychosis.",
+     "chain": "Right mesial temporal focus → recurrent limbic seizures → postictal and interictal psychosis → resection → both stop",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Network reset (seizure, coma, anaesthesia)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Psychosis worsened with clusters and remitted with seizure freedom.",
+     "against": "Antipsychotic continued.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No ratings or dates.",
+     "test": "Prospective psychosis ratings after lobectomy."
+    }
+   ],
+   "related": [
+    {
+     "id": "shahani-2019",
+     "why": "Psychosis gone after left temporal lobectomy"
+    }
+   ]
+  },
+  {
+   "case_id": "corte-2025",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "A year of daily seizures, worsening in hospital."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "At the worst point."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Video-EEG confirmed."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Ongoing inpatient care and drug changes."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Post-ECT confusion and anaesthesia."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Functional disorder; suggestion may be the mechanism."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No follow-up after ECT."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Twenty-one functional seizures a day stopped over an ECT course for depression. Expectancy and lifting depression are both live explanations, and nothing after the course is reported.",
+   "hypotheses": [
+    {
+     "claim": "ECT lifted the depression that sustained the functional seizures.",
+     "chain": "ECT → antidepressant effect → less distress and dissociation → functional seizures fade",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)",
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Fits",
+     "for": "Seizures and depression improved together.",
+     "against": "Seizures fell from the first sessions, before mood typically shifts.",
+     "confidence": "Low",
+     "uncertainty_driver": "No follow-up.",
+     "test": "Seizure and mood curves session by session."
+    },
+    {
+     "claim": "A powerful, ritualised medical treatment overrode the functional seizure pattern.",
+     "chain": "Anaesthesia and induced seizures under medical authority → strong expectation of change → functional seizures stop",
+     "mechanisms": [
+      "Suggestion and belief update"
+     ],
+     "latency_fit": "Fits",
+     "for": "Early drop in seizures.",
+     "against": "Earlier treatments in hospital had failed.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "Sham-anaesthesia comparison is impossible; follow-up would help."
+    }
+   ],
+   "related": [
+    {
+     "id": "vendrell-serres-2021",
+     "why": "Functional paralysis improving on esketamine"
+    }
+   ]
+  },
+  {
+   "case_id": "lipov-2024",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Can't judge",
+     "why": "Course of the bulimia not given."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Sought treatment at a bad point."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "None suggested."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "None stated."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "expectancy": {
+     "rating": "Likely",
+     "why": "A heavily promoted procedure, self-reported outcome, commercial provider."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "Preprint; bulimia never measured; 45 days."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A preprint from a stellate-block clinic: bulimia gone by self-report the day after the second block. Nothing is measured, and the follow-up is six weeks.",
+   "hypotheses": [
+    {
+     "claim": "Damping sympathetic output reduced the arousal that bingeing and purging relieve.",
+     "chain": "Cervical sympathetic block → less noradrenergic drive to the brain → less hyperarousal → no need to binge and purge",
+     "mechanisms": [
+      "Noradrenaline",
+      "Threat and arousal"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "PCL-5 fell 39 → 6 at the same time.",
+     "against": "Expectancy fits as well; nothing measured.",
+     "confidence": "Low",
+     "uncertainty_driver": "No bulimia data.",
+     "test": "Sham-controlled blocks with bulimia diaries."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "ripsman-2025",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Tics wax and wane, though complete absence for weeks after 16 years is unusual."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Persistent and severe."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Typical Tourette syndrome."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Post-operative rest, analgesia and hospital."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Post-operative fatigue and pain reduce movement."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No tic scale."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Tics gone for six weeks after a left temporal lobectomy, returning as seizures did. Two earlier reports had tics worsening after right-sided resections, which makes the side interesting.",
+   "hypotheses": [
+    {
+     "claim": "Surgery transiently disrupted a limbic input to the striatal tic circuit; plasticity restored it.",
+     "chain": "Left mesial temporal resection → acute loss of amygdala-hippocampal drive to ventral striatum → tic generator quiet → network re-routes over weeks",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Fits",
+     "for": "Complete resolution, return over weeks, as acute diaschisis would.",
+     "against": "Post-operative state confounds.",
+     "confidence": "Low",
+     "uncertainty_driver": "No ratings; one patient.",
+     "test": "Tic ratings after temporal resections by side."
+    },
+    {
+     "claim": "Seizure control and tic suppression shared a cause; both returned together.",
+     "chain": "Fewer seizures → less limbic excitability → fewer tics → seizures return → tics return",
+     "mechanisms": [
+      "Ion channels and excitability"
+     ],
+     "latency_fit": "Fits",
+     "for": "Seizure freedom 4 weeks, tic freedom 6 weeks.",
+     "against": "Earlier reports had tics worsen with better seizure control.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "As above."
+    }
+   ],
+   "related": [
+    {
+     "id": "yaryura-tobias-2003",
+     "why": "OCD gone after a lesion, then back as it resolved"
+    }
+   ]
+  },
+  {
+   "case_id": "gota-garces-2017",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Ten years, refractory."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-standing OCD."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Hospital care and likely medication changes after the attempt."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Possible hypoxic injury from hanging, never assessed."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "A congress abstract with no measure, timing or follow-up."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Remission of late-onset OCD after a hanging attempt. The authors read it psychologically (closeness to death), but hypoxic basal ganglia injury is the obvious untested alternative.",
+   "hypotheses": [
+    {
+     "claim": "Hypoxia from hanging injured the basal ganglia circuit of the OCD.",
+     "chain": "Hanging → cerebral hypoxia → pallidal or striatal injury → OCD circuit disrupted",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Pallidal hypoxic lesions change compulsive behaviour (Moussawi 2016).",
+     "against": "No imaging reported.",
+     "confidence": "Low",
+     "uncertainty_driver": "No imaging, no measures.",
+     "test": "MRI after such cases."
+    },
+    {
+     "claim": "Facing death reorganised what mattered and dissolved the obsessional concern (the authors' reading).",
+     "chain": "Near-death → existential reappraisal → contamination fears lose significance",
+     "mechanisms": [
+      "Meaning and life reorganisation"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Compare Huhne 2021.",
+     "against": "No detail.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "As above."
+    }
+   ],
+   "related": [
+    {
+     "id": "huhne-2021",
+     "why": "Social anxiety ending after a kidnapping"
+    },
+    {
+     "id": "tsolaki-2010",
+     "why": "Depression remitting after a suicide attempt"
+    }
+   ]
+  },
+  {
+   "case_id": "silverstone-1991",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Depressions fluctuate, though the change was abrupt."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Weeks of severe illness."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Carbamazepine preceded the deterioration; stopping it may have helped by itself."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Carbamazepine withdrawal and IV diazepam."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He brightened rather than flattened."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No ratings."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Five spontaneous seizures lifted a psychotic depression for ten days where 12 ECTs failed. Why natural seizures beat induced ones is the puzzle; carbamazepine withdrawal is a confound.",
+   "hypotheses": [
+    {
+     "claim": "Prolonged, repeated spontaneous seizures produced a stronger anticonvulsant-rebound or neurotrophic effect than ECT.",
+     "chain": "Cluster of five generalised seizures → larger cumulative ictal discharge and post-ictal inhibition than single ECT seizures → brief antidepressant effect",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Change at 36 hours, like an ECT response.",
+     "against": "Lasted 10 days; later ECTs failed.",
+     "confidence": "Low",
+     "uncertainty_driver": "One episode; no ratings.",
+     "test": "Mood after spontaneous seizure clusters in depressed patients."
+    },
+    {
+     "claim": "Stopping carbamazepine, which had preceded the deterioration, let him recover.",
+     "chain": "Carbamazepine (possibly depressogenic for him) stopped → mood recovers",
+     "mechanisms": [
+      "Drug level change"
+     ],
+     "latency_fit": "Doesn't fit",
+     "for": "Deterioration began on carbamazepine.",
+     "against": "He relapsed within 10 days off it.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "None."
+    }
+   ],
+   "related": [
+    {
+     "id": "kim-2016",
+     "why": "Depression remitting after a seizure during rTMS"
+    },
+    {
+     "id": "jawaid-2016",
+     "why": "Psychosis remitting after a seizure"
+    }
+   ]
   }
  ]
 }
