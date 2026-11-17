@@ -4921,6 +4921,576 @@
      "why": "Psychosis remitting after a seizure"
     }
    ]
+  },
+  {
+   "case_id": "takano-2002",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Duration of the voices before the blocks isn't clear."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Presented when pain was worst."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Psychiatrist-confirmed schizophrenia."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "No antipsychotics throughout."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Pain relief and relaxation."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Weekly procedures and attention."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "One rating; anaesthetists' letter."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "An anaesthetists' letter: voices softened with each stellate block and worsened when the blocks stopped, without any antipsychotic. Thin, but the off-on pattern is the kind of detail worth chasing.",
+   "hypotheses": [
+    {
+     "claim": "Blocking the cervical sympathetic chain reduced arousal and changed cerebral blood flow, damping the voices.",
+     "chain": "Stellate block → less sympathetic drive and raised ipsilateral cerebral blood flow → lower arousal → hallucinations less intrusive",
+     "mechanisms": [
+      "Noradrenaline",
+      "Threat and arousal"
+     ],
+     "latency_fit": "Fits",
+     "for": "Change after the first block; worse when stopped.",
+     "against": "No dates, one rating, pain relief in parallel.",
+     "confidence": "Low",
+     "uncertainty_driver": "Letter-level detail.",
+     "test": "Hallucination ratings across sham and real stellate blocks."
+    }
+   ],
+   "related": [
+    {
+     "id": "lipov-2024",
+     "why": "Stellate block and bulimia"
+    }
+   ]
+  },
+  {
+   "case_id": "ray-2016",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Years of agoraphobia unchanged by intensive treatment."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Steady."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Well characterised."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Two years of ECT, CBT and drugs might have built a late effect."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "She did more, not less."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A dramatic emergency-department experience."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Standard scales plus concrete behaviour."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "One analgesic ketamine infusion did what two years of ECT, exposure therapy and drugs hadn't: a housebound woman was using public transport within weeks. The scales were already low, so it is the behaviour that convinces.",
+   "hypotheses": [
+    {
+     "claim": "Ketamine's plasticity window let years of exposure work finally consolidate.",
+     "chain": "Ketamine → NMDA block, glutamate surge, BDNF and synaptogenesis → fear memories more updatable → prior exposure learning takes hold → avoidance collapses",
+     "mechanisms": [
+      "Glutamate",
+      "Neuroplasticity",
+      "Extinction and exposure"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate relief, then sustained behavioural change; ketamine enhances extinction in animals.",
+     "against": "One case; ten weeks of follow-up.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Ten weeks only.",
+     "test": "Ketamine given just before exposure sessions in refractory agoraphobia."
+    }
+   ],
+   "related": [
+    {
+     "id": "donoghue-2015",
+     "why": "Anaesthetic ketamine easing trauma-driven dysregulation"
+    }
+   ]
+  },
+  {
+   "case_id": "riestra-2026",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "OCD in young adults can soften."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Presented at a bad point."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Clear OCD predating the depression."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "N-acetylcysteine continued; depression treated."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "More engaged."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Bupropion chosen because it had helped her mother."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No OCD scale."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Bupropion isn't an OCD drug, yet three years later she handles fruit at work. Lifting depression explains part; the authors point to dopamine and habit.",
+   "hypotheses": [
+    {
+     "claim": "Better mood and motivation reduced the anxiety that powered the rituals.",
+     "chain": "Bupropion → antidepressant effect → less distress and more energy → rituals lose urgency",
+     "mechanisms": [
+      "Dopamine",
+      "Noradrenaline"
+     ],
+     "latency_fit": "Fits",
+     "for": "Mood and OCD improved together.",
+     "against": "Her OCD predated the depression and improved in a specific way (fruit exposure).",
+     "confidence": "Low",
+     "uncertainty_driver": "No OCD scale.",
+     "test": "Y-BOCS in bupropion-treated depressed patients with OCD."
+    }
+   ],
+   "related": [
+    {
+     "id": "canan-2013",
+     "why": "OCD easing on bupropion"
+    }
+   ]
+  },
+  {
+   "case_id": "anon-1844-pleuropneumonia",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Manias end; his had lasted months."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Continuous for months."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Possibly alcohol- or malaria-related; the record suspected intoxication at first."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Period treatment for pneumonia (bleeding, purging, likely)."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Severe illness quietens anyone."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Third-hand journal note."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "The 19th-century 'revulsion' observation: severe illness ended a mania overnight. Fabrège adds that he had often seen the insane regain reason before death, an early note of terminal lucidity.",
+   "hypotheses": [
+    {
+     "claim": "The fever and inflammatory response of pneumonia interrupted the manic state.",
+     "chain": "Severe pneumonia → fever and cytokine surge → mania circuits disrupted → abrupt return of reason",
+     "mechanisms": [
+      "Fever and heat",
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate change with the illness; the fever-therapy tradition followed.",
+     "against": "Single second-hand report.",
+     "confidence": "Low",
+     "uncertainty_driver": "Period reporting.",
+     "test": "None now; compare modern intercurrent-illness cases."
+    }
+   ],
+   "related": [
+    {
+     "id": "anon-1890-influenza",
+     "why": "Insanity cured by influenza"
+    },
+    {
+     "id": "nahm-2009",
+     "why": "Terminal lucidity"
+    }
+   ]
+  },
+  {
+   "case_id": "anon-1890-influenza",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Some psychoses remit; this one had lasted 18 months."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Long and steady."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Organic or general paresis not excluded in the note."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Asylum routine."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He became lucid, not torpid."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "A short second-hand note; no follow-up."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "An 18-month persecutory psychosis lifted within four days of pandemic influenza, documented by the patient's own coherent letter. One of the cleaner antique intercurrent-illness notes, though nothing is known of what came next.",
+   "hypotheses": [
+    {
+     "claim": "Influenza's fever and immune response briefly reset the psychosis.",
+     "chain": "Influenza → high fever and cytokines → psychotic state interrupted → lucidity",
+     "mechanisms": [
+      "Fever and heat",
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Fits",
+     "for": "Four-day latency; same pandemic produced other such reports.",
+     "against": "Second-hand; durability unknown.",
+     "confidence": "Low",
+     "uncertainty_driver": "No follow-up.",
+     "test": "None now."
+    }
+   ],
+   "related": [
+    {
+     "id": "anon-1844-pleuropneumonia",
+     "why": "Mania cured by pleuro-pneumonia"
+    }
+   ]
+  },
+  {
+   "case_id": "wahed-1934",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Ten months of stupor."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Steady."
+    },
+    "misdiagnosis": {
+     "rating": "Likely",
+     "why": "A malarial or post-infectious stupor rather than primary schizophrenia; curing the malaria cured its effect."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Hookworm treatment, feeding, hospital."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He became more active."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "One physician's account."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A ten-month stupor lifting two days into atebrin. The most likely reading is that the malaria was part of the illness, and treating it removed an organic contribution; he stayed slow and brooding.",
+   "hypotheses": [
+    {
+     "claim": "Chronic low-grade malaria produced or deepened a catatonic-depressive stupor; atebrin cleared the parasites and the stupor.",
+     "chain": "Persistent benign tertian malaria → systemic inflammation and anaemia → stupor → atebrin → recovery",
+     "mechanisms": [
+      "Inflammation and cytokines",
+      "Sickness behaviour"
+     ],
+     "latency_fit": "Fits",
+     "for": "Stupor began after a fever ten months earlier; recovery with antimalarial treatment.",
+     "against": "He had a depressive illness before the fever.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Unknown when infection began.",
+     "test": "None now."
+    },
+    {
+     "claim": "Mepacrine had a direct psychoactive effect.",
+     "chain": "Atebrin crosses into the brain and can cause excitement or psychosis → arousal from stupor",
+     "mechanisms": [
+      "Drug level change"
+     ],
+     "latency_fit": "Fits",
+     "for": "Mepacrine psychosis and excitement are recognised.",
+     "against": "Speculative.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "None now."
+    }
+   ],
+   "related": [
+    {
+     "id": "wagner-jauregg-1883",
+     "why": "Malaria and fever therapy"
+    }
+   ]
+  },
+  {
+   "case_id": "starr-1845",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Likely",
+     "why": "A manic episode after depression, of about four to five months: an untreated bipolar episode running its course."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Caught at a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Systemic illness (gangrene source unknown) may have driven delirium."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Opium, quinine, amputation."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Severe illness and opiates."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "One physician's letter."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Recovery came three months after the gangrene, which is about when an untreated mania would end anyway. Starr's own interest was in the gangrene, which he blamed on the insanity.",
+   "hypotheses": [
+    {
+     "claim": "The mania ran its natural course; the gangrene was coincidental or a consequence.",
+     "chain": "Bipolar depression → mania → natural resolution over months",
+     "mechanisms": [
+      "Sickness behaviour"
+     ],
+     "latency_fit": "Fits",
+     "for": "Typical episode length.",
+     "against": "None.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Period reporting.",
+     "test": "None now."
+    }
+   ],
+   "related": [
+    {
+     "id": "anon-1844-pleuropneumonia",
+     "why": "Mania cured by severe illness"
+    }
+   ]
+  },
+  {
+   "case_id": "perry-1869",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Some three-year psychoses remit."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Long and steady."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Chronic dental pain and infection may have fed an organic or affective state."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Nothing else special, by the author."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Recovered function."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Hoped-for effect, repeated contact."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Vouched for by a colleague; no detail on timing."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "An 1869 forerunner of focal-infection psychiatry: a three-year mania recovering after dental clearance. Read now, chronic pain and infection are the plausible links.",
+   "hypotheses": [
+    {
+     "claim": "Removing a chronic dental infection and pain source reduced inflammation and distress that sustained the illness.",
+     "chain": "Carious teeth → chronic pain and low-grade inflammation → sustained mood disturbance → extraction → recovery",
+     "mechanisms": [
+      "Inflammation and cytokines",
+      "Interoceptive and visceral input"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Recovery followed the extractions.",
+     "against": "Natural remission can't be excluded.",
+     "confidence": "Low",
+     "uncertainty_driver": "No dates.",
+     "test": "None now."
+    }
+   ],
+   "related": [
+    {
+     "id": "zhang-2024",
+     "why": "Mood improving after removal of a chronic abdominal lesion"
+    }
+   ]
+  },
+  {
+   "case_id": "mckenzie-1912",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Recovery within minutes."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Two months steady."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "The test itself showed an intact labyrinth."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Nothing else."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "expectancy": {
+     "rating": "Likely",
+     "why": "The author himself credits the memory of previous 'battery' cures plus the shock of the test; for a functional disorder that is the mechanism."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Hearing measured before and after."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Functional deafness cured by the test used to diagnose it. McKenzie's own explanation, expectation plus shock, is the natural one; it belongs here as a clean example of a suggestion mechanism.",
+   "hypotheses": [
+    {
+     "claim": "A vivid physical shock plus a history of 'battery' cures overrode the functional deafness.",
+     "chain": "Violent vertigo and emotional discharge → expectation of cure → functional block on hearing released",
+     "mechanisms": [
+      "Suggestion and belief update",
+      "Threat and arousal"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate recovery with tears; past cures by electricity.",
+     "against": "None.",
+     "confidence": "High",
+     "uncertainty_driver": "No follow-up.",
+     "test": "None now."
+    }
+   ],
+   "related": [
+    {
+     "id": "corte-2025",
+     "why": "Functional seizures gone during ECT"
+    },
+    {
+     "id": "vendrell-serres-2021",
+     "why": "Functional paralysis and esketamine"
+    }
+   ]
   }
  ]
 }

@@ -17260,8 +17260,8 @@
   {
    "id": "takano-2002",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1b"
    ],
@@ -17306,7 +17306,7 @@
     "resolution": "Partial",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "None reported"
+    "reversal": "Natural off-on"
    },
    "downstream": {
     "level": 0,
@@ -17314,7 +17314,7 @@
     "links": []
    },
    "summary": "A stellate ganglion block given by anaesthetists had an unexpected beneficial effect on schizophrenia.",
-   "caveat": "Letter without an abstract; the indication for the block and the size of the effect need the full text.",
+   "caveat": "Weekly procedures meant weekly attention and pain relief; the letter gives no dates and only one rating.",
    "tags": [
     "schizophrenia",
     "stellate-ganglion-block",
@@ -17323,7 +17323,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Free publisher copy or PMC page scan, read in the laptop browser)",
    "era": {
     "label": "novel",
     "note": "Stellate ganglion block later entered trials for PTSD, not for psychosis.",
@@ -17331,20 +17331,145 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 1,
+     "note": "Voices better from the first block and worse when blocks stopped, with no antipsychotic; BPRS only once, near normal, after the last block; a short letter without dates."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "N",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "37-year-old man",
+     "age": 37,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "A critical third person watching and commenting on his work (third-person voices); schizophrenia confirmed by a psychiatrist (DSM-IV 295.3); no antipsychotics"
+      },
+      {
+       "kind": "assessment",
+       "t": -6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Fall from a horse: intractable neck and left shoulder pain"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Weekly left stellate ganglion blocks for pain"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "approx",
+       "label": "After the first block the critical third person became puzzled and less confident",
+       "state": "Partial"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Less noise; voices change from commanding to merely suggesting",
+       "state": "Partial"
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Blocks stopped (date not given)"
+      },
+      {
+       "kind": "relapse",
+       "t": 3.5,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Hallucinations worse off the blocks",
+       "state": "Worse"
+      },
+      {
+       "kind": "follow_up",
+       "t": 4,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Ten days after the last block: mental state close to normal",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "BPRS",
+         "value": 19,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "baseline_years": 1.0,
+    "follow_up_days": 121.75,
+    "durability": "Lost",
+    "timeline_reversal": "Natural off-on",
+    "attribution_score": 5,
+    "attribution_grade": "A",
+    "jbi_score": 5,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
    "id": "wahed-1934",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1b"
    ],
@@ -17386,7 +17511,7 @@
     "intent": "Injury or illness"
    },
    "outcome": {
-    "resolution": "Complete",
+    "resolution": "Partial",
     "time_to_resolution": null,
     "follow_up": null,
     "reversal": "None reported"
@@ -17397,7 +17522,7 @@
     "links": []
    },
    "summary": "Schizophrenia was reported cured after the patient caught malaria and was treated with atebrin (1934, India).",
-   "caveat": "Diagnostic standards of 1934; fever, the antimalarial and natural remission cannot be separated.",
+   "caveat": "Malaria may itself have caused the stupor, in which case curing it removed an organic cause; he remained slow and brooding.",
    "tags": [
     "fever",
     "historical",
@@ -17407,7 +17532,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Free publisher copy or PMC page scan, read in the laptop browser)",
    "era": {
     "label": "novel",
     "note": "Malarial fever therapy, established for general paresis (Wagner-Jauregg, 1917), was tried in schizophrenia and abandoned.",
@@ -17421,13 +17546,123 @@
     "why_read": "Natural malaria, not inoculated, at the height of fever-therapy enthusiasm; the atebrin cure muddies which one mattered."
    },
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Ten months of stupor before; change within two days of atebrin; malaria itself may have caused or deepened the stupor; also treated for hookworm."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "33-year-old man",
+     "age": 33,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Withdrawn after suspicions about his wife; recovered with a move to Calcutta; relapsed into severe depression after gossip"
+      },
+      {
+       "kind": "onset",
+       "t": -10,
+       "unit": "months",
+       "precision": "approx",
+       "label": "After a low fever ('influenza') and joint pains: silent, immobile, somnolent, refusing food for up to a fortnight, mute (read now as catatonic stupor)"
+      },
+      {
+       "kind": "assessment",
+       "t": -3,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Admitted 9 March 1934 as possible encephalitis lethargica; expressionless, unresponsive to pain; benign tertian malaria on smear"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Five-day course of atebrin (mepacrine) for malaria"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Facial expression changes for the first time; eyes open, slightly cheerful",
+       "state": "Partial"
+      },
+      {
+       "kind": "best_response",
+       "t": 7,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Afebrile; walks, eats, talks of his worries; absconds at night to ask for his old job back",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 3.5,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Three months after discharge: slow, hesitant, brooding, 'no worse'",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 2,
+    "latency_band": "1-13 days",
+    "baseline_years": 2.0,
+    "follow_up_days": 106.531,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -22811,7 +23046,7 @@
   {
    "id": "anon-1844-pleuropneumonia",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "antique"
@@ -22875,7 +23110,7 @@
    "same_patient_as": null,
    "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Free publisher copy or PMC page scan, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "Intercurrent fever ending insanity was a recurring 19th-century observation and led to Wagner-Jauregg's fever therapy (1917); fever in modern psychosis is anecdotal.",
@@ -22890,19 +23125,107 @@
     "why_read": "An early instance of the intercurrent-illness cures that later underpinned fever therapy."
    },
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Months of continuous mania before; rational at once with the pneumonia; reported second-hand (Fabrège, via the Lancet); no follow-up after discharge."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "U",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "30-year-old soldier",
+     "age": 30,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Insanity after returning from Africa with intermittent fever; acute intermitting mania, becoming continuous; ran naked into the yard in the winter of 1837 (Montpellier asylum)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Severe double pleuro-pneumonia (April)"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "days",
+       "precision": "approx",
+       "label": "'Immediately became perfectly reasonable'",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Pneumonia treated; went home on the 22nd, perfectly rational",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "baseline_years": 0.5,
+    "follow_up_days": 21,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 5,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
    "id": "starr-1845",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "antique"
@@ -22966,7 +23289,7 @@
    "same_patient_as": null,
    "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Free publisher copy or PMC page scan, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "Intercurrent fever ending insanity was a recurring 19th-century observation and led to Wagner-Jauregg's fever therapy (1917); fever in modern psychosis is anecdotal.",
@@ -22981,19 +23304,122 @@
     "why_read": "Recovery through a life-threatening septic illness, decades before anyone named inflammation."
    },
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Months of mania after a depressive phase; recovery came about three months after the gangrene, with opium, quinine and amputation in between."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "35-year-old woman",
+     "age": 35,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -15,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Year of depression ('hypochondriasis') after miscarriages; then elation, spending, then 'confirmed mania' with erotic delirium (bled from the temporal artery)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Spontaneous gangrene of the right hand and forearm spreading above the elbow, with gangrenous sores; treated with opium, quinine, stimulants and wine"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Slept and was calmer, though 'fearfully deranged'; brief lucid intervals over the next weeks",
+       "state": "Partial"
+      },
+      {
+       "kind": "cointervention",
+       "t": 2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Arm amputated once the soft parts had separated"
+      },
+      {
+       "kind": "best_response",
+       "t": 3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "End of February: gradual change; within a week or two 'reason resumed her sway'",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 5,
+       "unit": "months",
+       "precision": "approx",
+       "label": "April: perfectly convalescent in mind and body",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "baseline_years": 1.25,
+    "follow_up_days": 152.188,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
    "id": "perry-1869",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "antique"
@@ -23062,7 +23488,7 @@
    "same_patient_as": null,
    "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Free publisher copy or PMC page scan, read in the laptop browser)",
    "era": {
     "label": "refuted",
     "note": "The focal-infection theory behind later mass tooth extraction for insanity (Cotton, 1920s) was discredited.",
@@ -23077,19 +23503,107 @@
     "why_read": "Fifty years before Henry Cotton pulled teeth to cure psychosis, a dental cure was already in print."
    },
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "borderline",
+      "note": "The physician extracted the teeth partly in the hope of easing the insanity, decades before focal-infection theory."
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Three years of continuous insanity, two in an asylum; recovery after serial extractions; 'no other remedy of a special character was used'."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "35-year-old woman",
+     "age": 35,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Insanity beginning with lavish giving away of property, then raving mania needing seclusion; nearly two years in an asylum without improvement; toothache and neuralgia"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Carious teeth and retained roots extracted, a few at a time at weekly or longer intervals, for pain and 'possibly mitigating her mental disease'"
+      },
+      {
+       "kind": "best_response",
+       "t": 3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Decided improvement soon after, then 'perfect and complete recovery'",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 9,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Running her household; free from insanity for six months",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 91.312,
+    "latency_band": "Over 3 months",
+    "baseline_years": 3.0,
+    "follow_up_days": 273.938,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
    "id": "anon-1890-influenza",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "antique"
@@ -23153,7 +23667,7 @@
    "same_patient_as": null,
    "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Free publisher copy or PMC page scan, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "Intercurrent fever ending insanity was a recurring 19th-century observation and led to Wagner-Jauregg's fever therapy (1917); fever in modern psychosis is anecdotal.",
@@ -23168,110 +23682,98 @@
     "why_read": "The same pandemic that produced influenzal psychoses also produced reported cures."
    },
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Eighteen months of illness, eleven of violent persecutory delusions; lucid within four days of influenza; second-hand note (Motz, via The Hospital); no follow-up."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "U",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
-   }
-  },
-  {
-   "id": "lanphear-1895",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "antique"
+   },
+   "timeline": [
+    {
+     "patient": "30-year-old man",
+     "age": 30,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -18,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Mental disease from summer 1888; persecutory delirium from February 1889, so violent he was confined in an asylum"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Influenza in the asylum outbreak, 13 January 1890"
+      },
+      {
+       "kind": "best_response",
+       "t": 4,
+       "unit": "days",
+       "precision": "exact",
+       "label": "17 January: writes his wife a rational, coherent account of everything since he became insane; dates his recovery from the influenza",
+       "state": "Remitted"
+      }
+     ]
+    }
    ],
-   "citation": {
-    "authors": "Lanphear E",
-    "title": "A Case of Insanity Cured by Removal of a Fibroid Tumor of the Ovary.",
-    "journal": "South Med Rec",
-    "year": 1895,
-    "volume": "",
-    "issue": "",
-    "pages": ""
-   },
-   "ids": {
-    "doi": "",
-    "pmid": "36025593",
-    "pmcid": "PMC9155773"
-   },
-   "links": {
-    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9155773/",
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/36025593/",
-    "doi": null,
-    "alternates": [],
-    "ckn": null
-   },
-   "access": "Free full text",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Psychotic"
-    ],
-    "specific": "Insanity",
-    "chronic": null,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Surgery or procedure (outside the brain)",
-    "specific": "Removal of an ovarian fibroid",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "A woman's insanity was cured after removal of a fibroid tumour of the ovary.",
-   "caveat": "Gynaecological surgery was then sometimes done to cure insanity, so the intent needs checking.",
-   "tags": [
-    "gynaecological-surgery",
-    "insanity",
-    "ovary",
-    "reflex-insanity"
-   ],
-   "same_patient_as": null,
-   "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
-   "date_added": "2026-11-14",
-   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
-   "era": {
-    "label": "refuted",
-    "note": "Reflex-insanity theory and gynaecological surgery for insanity (Battey's operation) were abandoned.",
-    "basis": "judged"
-   },
-   "flags": [
-    "antique-bar"
-   ],
-   "historical": {
-    "original_terms": "Insanity (reflex insanity era)",
-    "modern_reading": "Unclear; possibly an affective or psychotic episode",
-    "why_read": "A window on reflex-insanity thinking, where pelvic organs were blamed for madness."
-   },
-   "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+   "derived": {
+    "latency_days": 4,
+    "latency_band": "1-13 days",
+    "baseline_years": 1.5,
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 5,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
    "id": "mckenzie-1912",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "antique"
@@ -23336,7 +23838,7 @@
    "same_patient_as": null,
    "found_via": "Antique sweep v1 (Europe PMC titles 1800-1969)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (Free publisher copy or PMC page scan, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "Vestibular stimulation is being re-examined in functional and mood disorders (recalled, not checked).",
@@ -23351,13 +23853,92 @@
     "why_read": "A diagnostic test doubling as the cure, the same move made in modern functional neurology."
    },
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Hearing tests before and after the same sitting; immediate recovery; nothing else changed; no follow-up."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "NA",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Middle-aged woman",
+     "age": 45,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Deafness in her only good (left) ear, coming on gradually; right ear deaf since childhood; earlier episodes of voice loss cured 'by the battery'"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "minutes",
+       "precision": "exact",
+       "label": "Cold caloric vestibular test of the left ear: marked nystagmus at 25 seconds, vertigo, sudden tears and sobs"
+      },
+      {
+       "kind": "best_response",
+       "t": 5,
+       "unit": "minutes",
+       "precision": "approx",
+       "label": "Declares she can hear: whisper at 24 feet in the left ear",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0.003,
+    "latency_band": "Under a day",
+    "baseline_years": 0.17,
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -29534,8 +30115,8 @@
   {
    "id": "ray-2016",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1f"
    ],
@@ -29578,8 +30159,8 @@
    },
    "outcome": {
     "resolution": "Complete",
-    "time_to_resolution": "days",
-    "follow_up": "at least 10 weeks, still in remission after a car accident 2 months later",
+    "time_to_resolution": null,
+    "follow_up": null,
     "reversal": "None reported"
    },
    "downstream": {
@@ -29588,7 +30169,7 @@
     "links": []
    },
    "summary": "A 34-year-old woman, housebound for years by panic disorder and agoraphobia that escitalopram, lamotrigine and ECT had barely touched, was given one ketamine infusion in the emergency department for neck pain; her panic attacks stopped, she began going out alone and started a business, and the remission was still holding months later.",
-   "caveat": "Her questionnaire scores were already low before the infusion, so the change was mostly behavioural, and months of ECT and lamotrigine may have been building towards it.",
+   "caveat": "Her GAD-7 was only 6 before the infusion, so the measured change is small; the behavioural change carries the case.",
    "tags": [
     "agoraphobia",
     "analgesia",
@@ -29600,7 +30181,7 @@
    "same_patient_as": null,
    "found_via": "unsure pile, full-text appraisal",
    "date_added": "2026-11-15",
-   "verified": "2026-11-15: full text read (psychiatrist.com, free); identifiers from PubMed",
+   "verified": "2026-11-17: full text read (Free publisher copy or PMC page scan, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "Ketamine's antidepressant effect was established by 2016; its effect on panic and agoraphobia was unreported at the time (the authors' search found nothing).",
@@ -29609,12 +30190,161 @@
    "flags": [],
    "appraisal": {
     "basis": "Full text",
-    "date": "2026-11-15",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Ketamine's antidepressant effect was established by 2016; its effect on panic and agoraphobia wasn't."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "PHQ-9 and GAD-7 four days before and a week after; behaviour change described; other treatments unchanged around the infusion (ECT stopped afterwards)."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "34-year-old woman",
+     "age": 34,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -10,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Panic disorder, agoraphobia and GAD with depression: couldn't leave home alone, use public transport or work; weekly panic attacks"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -25,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Escitalopram to 30 mg, lamotrigine to 400 mg, lorazepam, over 30 CBT sessions with prolonged exposure, ECT (6 acute, 16 maintenance): mood better, anxiety barely",
+       "to": -0.1
+      },
+      {
+       "kind": "assessment",
+       "t": -4,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Before the infusion",
+       "scores": [
+        {
+         "scale": "PHQ-9",
+         "value": 8,
+         "higher_is_better": false
+        },
+        {
+         "scale": "GAD-7",
+         "value": 6,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Single ketamine infusion, 34 mg (0.5 mg/kg), in the emergency department for neck pain from two herniated discs"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "hours",
+       "precision": "approx",
+       "label": "Dramatic fall in anxiety immediately afterwards",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "No panic attacks",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "PHQ-9",
+         "value": 3,
+         "higher_is_better": false
+        },
+        {
+         "scale": "GAD-7",
+         "value": 1,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 10,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Shopping alone, using public transport, started a business, volunteering; maintenance ECT stopped in August; still well after a car accident",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0.042,
+    "latency_band": "Under a day",
+    "baseline_years": 10.0,
+    "follow_up_days": 70,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "PHQ-9",
+      "before": 8,
+      "after": 3,
+      "change_pct": -62.5
+     },
+     {
+      "scale": "GAD-7",
+      "before": 6,
+      "after": 1,
+      "change_pct": -83.3
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -29961,8 +30691,8 @@
   {
    "id": "riestra-2026",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1f"
    ],
@@ -30005,8 +30735,8 @@
    },
    "outcome": {
     "resolution": "Complete",
-    "time_to_resolution": "about 1 month",
-    "follow_up": "3 years",
+    "time_to_resolution": null,
+    "follow_up": null,
     "reversal": "None reported"
    },
    "downstream": {
@@ -30026,7 +30756,7 @@
    "same_patient_as": null,
    "found_via": "Embase via CKN (EMB_unexpOutcome_v1)",
    "date_added": "2026-11-15",
-   "verified": "2026-11-15: full text read (psychiatrist.com, free); no PMID yet",
+   "verified": "2026-11-17: full text read (Free publisher copy or PMC page scan, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "Bupropion is not an OCD treatment; a few earlier reports were mixed, and Canan 2012 described body dysmorphic disorder remitting on it.",
@@ -30035,12 +30765,108 @@
    "flags": [],
    "appraisal": {
     "basis": "Full text",
-    "date": "2026-11-15",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Symptoms and avoidance described before; no scale; depression lifted at the same time; NAC continued."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "23-year-old woman",
+     "age": 23,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -5,
+       "unit": "years",
+       "precision": "at least",
+       "label": "OCD: aversion to fruit smells and textures, song-lyric fixations, wiping, bedtime rituals; avoided jobs with fruit; MDD with amotivation"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Sertraline and fluoxetine stopped for side effects; N-acetylcysteine 600 mg without remission",
+       "to": -0.1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Bupropion for depression (XL 150 mg, then SR 150 mg for insomnia)"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Depression much better; obsessions and compulsions no longer distressing; handles fruit at work",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 3,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Minimal or no OCD symptoms; stable on bupropion",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 30.438,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 5.0,
+    "follow_up_days": 1095.75,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   }
  ]
