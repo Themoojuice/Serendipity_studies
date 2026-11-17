@@ -16482,8 +16482,8 @@
   {
    "id": "xie-2026",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1c"
    ],
@@ -16549,7 +16549,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, first pass)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "Replicates Bijanki 2020. Fits the right-amygdala account of PTSD and Koenigs 2008 (amygdala and vmPFC lesions protected veterans from PTSD).",
@@ -16557,13 +16557,143 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Prospective replication of Bijanki 2020: the team expected and measured the PTSD effect."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "PCL-5 before and two months after; face-task bias before and after; seizure frequency unchanged, so relief isn't simply better seizure control."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "41-year-old man",
+     "age": 41,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -25,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Severe PTSD after civilian trauma in adolescence; refractory temporal lobe epilepsy"
+      },
+      {
+       "kind": "assessment",
+       "t": -2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Before admission: severe PTSD; fearful reading of ambiguous faces exceeds 16 epilepsy controls; right lateral amygdala late ERPs separate fearful from happy faces",
+       "scores": [
+        {
+         "scale": "PCL-5",
+         "value": 50,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "SEEG-guided radiofrequency ablation of the right amygdala, for seizures"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "at most",
+       "label": "Fear bias on the face task reduced; amygdala and network late ERPs fall in step",
+       "state": "Partial"
+      },
+      {
+       "kind": "best_response",
+       "t": 2,
+       "unit": "months",
+       "precision": "exact",
+       "label": "PTSD much improved, especially hyperarousal and reactivity; less awareness of tachycardia and auras; seizure frequency unchanged",
+       "state": "Partial",
+       "note": "Post-ablation PCL-5, BAI and BDI-II shown in a figure."
+      },
+      {
+       "kind": "cointervention",
+       "t": 2,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Laser ablation of right hippocampus and entorhinal cortex for the seizures"
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Authors describe the PTSD improvement as persistent",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Resection or ablation",
+    "side": "Right",
+    "regions": [
+     "Temporal, medial (amygdala, hippocampus)"
+    ],
+    "specific": "Right amygdala (lateral nucleus sampled), radiofrequency ablation through SEEG contacts; hippocampus and entorhinal cortex ablated two months later",
+    "aetiology": "Surgery",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 25.0,
+    "follow_up_days": 182.625,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -18569,7 +18699,7 @@
   {
    "id": "yousefzadeh-fard-2013",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1c"
@@ -18623,7 +18753,7 @@
     "links": []
    },
    "summary": "Among opium-addicted stroke patients in Tehran, 75% of those with insular ischaemia changed how much or how they used, and 37.5% stopped, significantly more than with strokes elsewhere.",
-   "caveat": "Questionnaire recall at 1, 3 and 6 months; group sizes and relapse need the full text (free on PMC); younger patients changed more, which may confound site.",
+   "caveat": "The insula group used less opium before the stroke, and younger patients changed more, so lighter, younger users may simply have found it easier to stop.",
    "tags": [
     "addiction",
     "insula",
@@ -18636,7 +18766,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "Extends the insula finding for smoking (Naqvi 2007, in library) to opium; not independently replicated for opioids.",
@@ -18644,13 +18774,111 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Amount and route by questionnaire before and at 1, 3 and 6 months; non-insula stroke group as comparison; financial change checked; insula patients used less before the stroke and were younger, both linked to change."
+    },
+    "jbi": {
+     "checklist": "Case series",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Insula group (8 opium users)",
+     "age": 62,
+     "sex": "Not stated",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Opium use for at least a year before the stroke (amount in grams a day by questionnaire)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Ischaemic stroke involving the insula (6 right, 2 left; one also basal ganglia), Tehran 2009–2011"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Six of 8 changed amount or route; neuroimaging read blind to opium use",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Three of 8 abstinent since the stroke (37.5%), against fewer in the non-insula group (odds about 31, p = 0.03)",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Unstated",
+    "regions": [
+     "Insula"
+    ],
+    "specific": "Insula (6 right, 2 left; one with basal ganglia); right-insula analysis alone also significant",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "MRI and CT",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "baseline_years": 1.0,
+    "follow_up_days": 182.625,
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 10,
+    "rule_tier": "B"
    }
   },
   {
@@ -19884,7 +20112,7 @@
   {
    "id": "jing-2021",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1c"
@@ -19950,7 +20178,7 @@
    "same_patient_as": null,
    "found_via": "Citation route v1 (Europe PMC citations and references)",
    "date_added": "2026-11-13",
-   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
     "note": "Extends the insula finding (Naqvi 2007) to the dorsal striatum; compare Gaznick 2014.",
@@ -19958,13 +20186,124 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-13",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "Strokes often prompt quitting; the comparison group exists to deal with that."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Fagerström dependence before; outcome is the Naqvi disruption criteria by phone interview; stroke controls (other sites) give a comparison for the general effect of stroke."
+    },
+    "jbi": {
+     "checklist": "Case series",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "N",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Dorsal striatum group (11 smokers)",
+     "age": 65,
+     "sex": "Not stated",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -30,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Over 10 cigarettes a day for over 10 years; all highly dependent (Fagerström 7–10)",
+       "scores": [
+        {
+         "scale": "FTND",
+         "value": 8,
+         "higher_is_better": false
+        }
+       ],
+       "note": "Group range 7–10; value shown is mid-range."
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Acute ischaemic infarct confined to the dorsal striatum (5 right, 6 left), 2017–2019"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "at most",
+       "label": "Quit within a day of the stroke, rated easy, no urge since",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Phone interview June 2020: 10 of 11 met all four disruption criteria (no smoking for 6 months, quit within a day, easy, no urge), against 2 of 20 stroke controls",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Unstated",
+    "regions": [
+     "Caudate",
+     "Putamen"
+    ],
+    "specific": "Dorsal striatum only (5 right, 6 left); controls had thalamus, capsule, cortical and brainstem infarcts",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 30.0,
+    "follow_up_days": 730.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 10,
+    "rule_tier": "B"
    }
   },
   {

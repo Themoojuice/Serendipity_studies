@@ -2994,6 +2994,210 @@
     }
    ],
    "related": []
+  },
+  {
+   "case_id": "jing-2021",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Decades of heavy smoking."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Heavy dependence documented."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Hospital abstinence and stop-smoking advice, though controls had the same."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Two of 20 controls also had disruption; a general effect of brain injury is possible."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "No treatment."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Phone recall years later; 78 of 608 unreachable, some dead."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Ten of 11 dorsal striatal infarcts against 2 of 20 controls is a big split, and it extends Naqvi's insula finding to the habit circuit. Small, retrospective and phone-based, so it needs replication.",
+   "hypotheses": [
+    {
+     "claim": "The dorsal striatum stores smoking as a habit; destroying it removes the automatic urge and act.",
+     "chain": "Infarct in caudate or putamen → loss of stimulus-response habit circuitry → cues no longer trigger smoking → effortless quitting",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate, effortless, durable quitting, as in the insula cases; similar with either side.",
+     "against": "Phone recall; tiny groups.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Eleven cases, retrospective classification.",
+     "test": "Prospective stroke cohorts with lesion mapping and verified abstinence."
+    },
+    {
+     "claim": "Disruption follows damage to a common network that the striatum, insula and other lesions share.",
+     "chain": "Lesion anywhere in an addiction network connected to the insula and striatum → disruption",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Two controls with other lesions also had disruption; Joutsa 2022 lesion-network mapping.",
+     "against": "Not tested here.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No network analysis.",
+     "test": "Lesion-network mapping of this cohort."
+    }
+   ],
+   "related": [
+    {
+     "id": "naqvi-2007",
+     "why": "Insula damage disrupting smoking addiction"
+    },
+    {
+     "id": "yousefzadeh-fard-2013",
+     "why": "Insular infarcts and opium use"
+    }
+   ]
+  },
+  {
+   "case_id": "yousefzadeh-fard-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Long-standing use."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Documented use."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Hospitalisation and medical advice; all groups cut down."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "All three groups reduced use after stroke."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "No treatment."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-reported use; 8 patients in the key group."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "The opioid echo of Naqvi: right insular strokes freed most opium users from the habit. Eight patients, self-report and a baseline imbalance keep confidence down.",
+   "hypotheses": [
+    {
+     "claim": "The insula carries the interoceptive urge that drives use; damage removes it.",
+     "chain": "Insular infarct → loss of interoceptive representation of drug effects and craving → use stops or falls without effort",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Interoceptive and visceral input"
+     ],
+     "latency_fit": "Fits",
+     "for": "Same pattern and same right-sided lean as Naqvi's smokers.",
+     "against": "Tiny group, baseline imbalance.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Eight insula patients; lighter users at baseline.",
+     "test": "Larger prospective cohorts with verified abstinence and lesion mapping."
+    }
+   ],
+   "related": [
+    {
+     "id": "naqvi-2007",
+     "why": "Insula damage disrupting smoking addiction"
+    },
+    {
+     "id": "jing-2021",
+     "why": "Dorsal striatal infarcts and smoking"
+    }
+   ]
+  },
+  {
+   "case_id": "xie-2026",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "PTSD for about 25 years."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "PCL-5 severe; behavioural bias measured."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Hospital admission, medication withdrawal for monitoring; hippocampal ablation only after the 2-month rating."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "The bias change was specific to fearful faces."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A research team expecting PTSD relief, and a patient aware of the hypothesis."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Standard scales, a behavioural task and neural recordings."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "The best-instrumented case in the library: behaviour, scalp and intracranial signals before and after, with seizures unchanged. The cost is that the team expected the result, which is why it is a replication rather than a serendipity.",
+   "hypotheses": [
+    {
+     "claim": "The right amygdala drove threat interpretation; ablating it removed the bias and the hyperarousal that rests on it.",
+     "chain": "Right lateral amygdala hyper-responsive to fear → negative interpretation bias and arousal → ablation → bias and arousal fall, late ERPs fall in step",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Threat and arousal"
+     ],
+     "latency_fit": "Fits",
+     "for": "Bias and neural signal dropped together immediately; hyperarousal cluster improved most; left amygdala didn't show the signal.",
+     "against": "Two months of follow-up before a second ablation muddles the long term.",
+     "confidence": "High",
+     "uncertainty_driver": "One patient, team expecting the result.",
+     "test": "Prospective PCL-5 in all patients with PTSD having amygdala ablation for epilepsy."
+    }
+   ],
+   "related": [
+    {
+     "id": "bijanki-2020",
+     "why": "The original right amygdala ablation PTSD case"
+    }
+   ]
   }
  ]
 }
