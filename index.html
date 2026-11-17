@@ -105,6 +105,12 @@ select { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-
 .card h3 a:hover { color: var(--accent); text-decoration: underline; }
 .cite { margin: 0; color: var(--muted); font-size: 13px; }
 .summary { margin: 0; max-width: 75ch; }
+.take { margin: 0; max-width: 75ch; font-size: 14px; line-height: 1.5; color: var(--ink); border-left: 3px solid var(--accent); padding: 2px 0 2px 10px; }
+.take-v { font-size: 11px; font-weight: 600; letter-spacing: .02em; text-transform: uppercase; border-radius: 4px; padding: 1px 6px; margin-right: 4px; color: var(--muted); background: var(--surface-2, rgba(127,127,127,.12)); }
+.take-v.v-Beatsthenull { color: #0b6b3a; background: #dff3e7; }
+.take-v.v-Doesntbeatthenull { color: #8a4b08; background: #fbead7; }
+details.more > summary { cursor: pointer; font-size: 13px; color: var(--muted); }
+details.more[open] > summary { margin-bottom: 4px; }
 .facts { display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; margin: 2px 0 0; font-size: 13px; }
 .facts dt { color: var(--muted); }
 .facts dd { margin: 0; }
@@ -299,6 +305,7 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
     <div class="box">
       <h2>Adding cases</h2>
       <p>The data lives in <code>data/cases.json</code> in the <a href="https://github.com/Themoojuice/Serendipity_studies" target="_blank" rel="noopener">Serendipity_studies repository</a>. Claude adds cases there: it checks the identifiers, fills every field, runs the validator and pushes, and this page updates within a minute or two. The screening ledger behind it is in <code>ledger/</code>.</p>
+      <p>Cases not yet fully coded are waiting on a full text that couldn't be reached from a Claude session. The <a href="https://github.com/Themoojuice/Serendipity_studies/blob/main/docs/fulltext_queue.md" target="_blank" rel="noopener">full-text queue</a> lists them by route (CKN, publisher download, library), easy wins first.</p>
     </div>
   </section>
 </div>
@@ -396,9 +403,10 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
     }
     s += { Complete: 6, Partial: 1, Temporary: -2 }[r.outcome.resolution] || 0;
     s += { novel: 8, emerging: 4, known: 0, refuted: -12 }[r.era.label] || 0;
-    if (r.era.label === "novel") why.push("Still unexplained");
     if ((r.flags || []).length) s -= 15;
     if (r.status === "Included") s += 4;
+    if ((r.tags || []).indexOf("scope-one-off") >= 0) s -= 25; // kept as a one-off outside the target syndromes
+    if (isCoded(r)) s += 10; // read in full and appraised: trust it more than an abstract
     if (r.downstream && r.downstream.level >= 2) s += r.downstream.level;
     if (isAntique(r)) s -= 4;
     return { s: s, why: why };
@@ -642,10 +650,12 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
     else if (r.outcome.time_to_resolution) outcome.push("within " + r.outcome.time_to_resolution.toLowerCase());
     if (dv.follow_up_days != null) outcome.push("follow-up " + fmtDays(dv.follow_up_days) + (dv.durability && dv.durability !== "Unknown" ? " (" + dv.durability.toLowerCase() + ")" : ""));
     else if (r.outcome.follow_up) outcome.push("follow-up " + r.outcome.follow_up);
-    var facts = el("dl", { class: "facts" }, [
+    var core = el("dl", { class: "facts" }, [
       el("dt", { text: "Syndrome" }), el("dd", { text: r.syndrome.specific }),
       el("dt", { text: "Trigger" }), el("dd", { text: r.trigger.specific + " (" + r.trigger.intent.toLowerCase() + ")" }),
-      el("dt", { text: "Outcome" }), el("dd", { text: outcome.join(", ") + (r.outcome.reversal !== "None reported" ? "; reversal: " + r.outcome.reversal.toLowerCase() : "") }),
+      el("dt", { text: "Outcome" }), el("dd", { text: outcome.join(", ") + (r.outcome.reversal !== "None reported" ? "; reversal: " + r.outcome.reversal.toLowerCase() : "") })
+    ]);
+    var facts = el("dl", { class: "facts" }, [
       el("dt", { text: "Patients" }), el("dd", { text: (r.n_patients == null ? "Not stated" : String(r.n_patients)) + " · " + r.design + (r.same_patient_as ? " · overlaps " + r.same_patient_as : "") })
     ]);
     if (r.historical) {
@@ -677,14 +687,17 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
     var tags = el("div", { class: "tags" });
     r.tags.forEach(function (t) { tags.appendChild(el("button", { class: "tag", type: "button", "aria-pressed": state.tags.has(t) ? "true" : "false", onclick: function () { toggleTag(t); } }, ["#" + t])); });
 
+    var h = HYP[r.id];
+    var take = h && h.verdict_note ? el("p", { class: "take" }, [el("span", { class: "take-v v-" + String(h.verdict).replace(/[^A-Za-z]/g, ""), text: h.verdict }), " " + h.verdict_note]) : null;
+    var more = el("details", { class: "more" }, [el("summary", { text: "Study details" + (apt ? " · appraisal" : "") }), facts]);
     return el("article", { class: "card" + (r.record_type !== "case" ? " context" : "") + (isAntique(r) ? " antique" : ""), style: "--stripe:" + synColor(c0) }, [
-      top, why,
+      why,
       el("h3", {}, [el("a", { href: primaryLink(r), target: "_blank", rel: "noopener", text: r.citation.title })]),
       el("p", { class: "cite", text: citeLine(r) }),
       el("p", { class: "summary", text: r.summary }),
-      facts,
+      take, top, core,
       r.caveat ? el("p", { class: "caveat", text: "Caveat: " + r.caveat }) : null,
-      timelineBox(r), readingBox(r),
+      timelineBox(r), readingBox(r), more,
       actions, tags
     ]);
   }
