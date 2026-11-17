@@ -3488,207 +3488,6 @@
    }
   },
   {
-   "id": "gupta-2026",
-   "record_type": "case",
-   "status": "Included",
-   "tier": "C",
-   "collections": [
-    "round2"
-   ],
-   "citation": {
-    "authors": "Gupta RR, Ramdurg S.",
-    "title": "Remission of Psychotic Symptoms Following Seizures in a Patient With an Episodic Psychotic Disorder.",
-    "journal": "Cureus",
-    "year": 2026,
-    "volume": "18",
-    "issue": "3",
-    "pages": "e104667"
-   },
-   "ids": {
-    "doi": "10.7759/cureus.104667",
-    "pmid": "41939690",
-    "pmcid": "PMC13048452"
-   },
-   "links": {
-    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13048452/",
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/41939690/",
-    "doi": "https://doi.org/10.7759/cureus.104667",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.7759%2Fcureus.104667"
-   },
-   "access": "Free full text",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Psychotic"
-    ],
-    "specific": "Relapse of an episodic psychotic disorder",
-    "chronic": null,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Seizures",
-    "specific": "Two febrile generalised seizures needing intensive care",
-    "intent": "Injury or illness"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 0,
-    "note": "",
-    "links": []
-   },
-   "summary": "A days-old relapse of episodic psychosis, already easing on newly started olanzapine and valproate, had fully remitted after two seizures and a febrile illness needing intensive care, and stayed remitted at follow-up.",
-   "caveat": "Olanzapine and valproate began three days before the seizures and the relapse was days old, so an ordinary treatment response explains the remission.",
-   "tags": [
-    "convulsive",
-    "fever",
-    "psychosis",
-    "seizure"
-   ],
-   "same_patient_as": null,
-   "found_via": "PubMed",
-   "date_added": "2026-11-09",
-   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
-   "era": {
-    "label": "novel",
-    "note": "",
-    "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Full text",
-    "date": "2026-11-17",
-    "by": "Claude",
-    "unexpectedness": {
-     "target": {
-      "result": "pass",
-      "note": ""
-     },
-     "era": {
-      "result": "pass",
-      "note": ""
-     },
-     "secondary": {
-      "result": "pass",
-      "note": ""
-     },
-     "base_rate": {
-      "result": "borderline",
-      "note": "A relapse only days old, already easing two days into olanzapine and valproate; the authors themselves favour treatment response plus natural course."
-     }
-    },
-    "attribution": {
-     "baseline": 0,
-     "measure": 0,
-     "timing": 1,
-     "reversal": 0,
-     "confounders": 0,
-     "note": "Antipsychotic and mood stabiliser started three days before the seizures; no ratings."
-    },
-    "jbi": {
-     "checklist": "Case report",
-     "answers": [
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "N",
-      "Y",
-      "Y",
-      "Y"
-     ]
-    },
-    "note": "Criterion 1 is doubtful (a days-old relapse of an illness that responded to treatment before) and T4 is close to failing. Brendan: consider excluding."
-   },
-   "timeline": [
-    {
-     "patient": "36-year-old woman",
-     "age": 36,
-     "sex": "F",
-     "events": [
-      {
-       "kind": "diagnosis",
-       "t": -1,
-       "unit": "years",
-       "precision": "approx",
-       "label": "First psychotic episode (voices, persecutory beliefs) remitted on medication; stopped two months after remission"
-      },
-      {
-       "kind": "onset",
-       "t": -5,
-       "unit": "days",
-       "precision": "approx",
-       "label": "Relapse: suspicion and persecutory delusions over several days"
-      },
-      {
-       "kind": "cointervention",
-       "t": -3,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Admitted; olanzapine and valproate started (doses not given)"
-      },
-      {
-       "kind": "assessment",
-       "t": -1,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Psychotic symptoms lessening but drowsy and less interactive",
-       "state": "Partial"
-      },
-      {
-       "kind": "exposure_start",
-       "t": 0,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Two generalised tonic-clonic seizures, then fever and falling consciousness; intubated, intensive care; CRP 90, CK-MB 616; MRI and EEG normal"
-      },
-      {
-       "kind": "cointervention",
-       "t": 0,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Antiepileptic treatment; psychiatric medicines adjusted during intensive care"
-      },
-      {
-       "kind": "best_response",
-       "t": 1,
-       "unit": "weeks",
-       "precision": "approx",
-       "label": "After extubation: alert, no delusions or other psychotic symptoms",
-       "state": "Remitted"
-      },
-      {
-       "kind": "follow_up",
-       "t": 5,
-       "unit": "weeks",
-       "precision": "approx",
-       "label": "Several weeks after discharge: still well, back to daily routine",
-       "state": "Remitted"
-      }
-     ]
-    }
-   ],
-   "derived": {
-    "latency_days": 7,
-    "latency_band": "1-13 days",
-    "baseline_years": 0.01,
-    "follow_up_days": 35,
-    "durability": "Sustained",
-    "timeline_reversal": "None reported",
-    "attribution_score": 1,
-    "attribution_grade": "D",
-    "jbi_score": 7,
-    "jbi_of": 8,
-    "rule_tier": "C"
-   }
-  },
-  {
    "id": "faruqui-2022",
    "record_type": "case",
    "status": "Included",
@@ -7768,7 +7567,7 @@
   {
    "id": "kim-2016",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "A",
    "collections": [
     "phase1a"
@@ -8431,7 +8230,7 @@
   {
    "id": "aminzade-2021",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -8693,7 +8492,7 @@
   {
    "id": "huhne-2021",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -9197,7 +8996,7 @@
   {
    "id": "achamrah-2020",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -9497,7 +9296,7 @@
   {
    "id": "shreedhara-2018",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -10627,7 +10426,7 @@
   {
    "id": "hosseini-2012",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -13134,201 +12933,6 @@
    }
   },
   {
-   "id": "viglione-2025",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
-   "collections": [
-    "phase1a"
-   ],
-   "citation": {
-    "authors": "Viglione LL, Ilchef R",
-    "title": "Resolution of catatonia after propofol anaesthesia.",
-    "journal": "Australas Psychiatry",
-    "year": 2025,
-    "volume": "33",
-    "issue": "5",
-    "pages": "857"
-   },
-   "ids": {
-    "doi": "10.1177/10398562251330046",
-    "pmid": "40238682",
-    "pmcid": "PMC12528783"
-   },
-   "links": {
-    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12528783/",
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/40238682/",
-    "doi": "https://doi.org/10.1177/10398562251330046",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F10398562251330046"
-   },
-   "access": "Free full text",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Catatonia"
-    ],
-    "specific": "Catatonia",
-    "chronic": null,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Coma / anaesthesia",
-    "specific": "Propofol anaesthesia",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "Catatonia resolved after propofol anaesthesia (Australian report).",
-   "caveat": "Duration and prior treatment need the full text.",
-   "tags": [
-    "anaesthesia",
-    "australia",
-    "catatonia",
-    "propofol"
-   ],
-   "same_patient_as": null,
-   "found_via": "Europe PMC",
-   "date_added": "2026-11-09",
-   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
-   "era": {
-    "label": "emerging",
-    "note": "",
-    "basis": "judged"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Full text",
-    "date": "2026-11-17",
-    "by": "Claude",
-    "unexpectedness": {
-     "target": {
-      "result": "pass",
-      "note": ""
-     },
-     "era": {
-      "result": "borderline",
-      "note": "GABAergic drugs relieving catatonia is standard (the lorazepam challenge), and three propofol reports preceded this."
-     },
-     "secondary": {
-      "result": "pass",
-      "note": ""
-     },
-     "base_rate": {
-      "result": "borderline",
-      "note": "Catatonia a day old and untreated can lift on its own."
-     }
-    },
-    "attribution": {
-     "baseline": 0,
-     "measure": 0,
-     "timing": 1,
-     "reversal": 0,
-     "confounders": 1,
-     "note": "Catatonia of about a day, untreated; nothing else given before the anaesthetic; no catatonia rating."
-    },
-    "jbi": {
-     "checklist": "Case report",
-     "answers": [
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "N",
-      "Y"
-     ]
-    },
-    "note": "Criterion 1 not met on a strict reading (acute, untreated catatonia). Kept as a pharmacological-challenge observation; Brendan to decide."
-   },
-   "timeline": [
-    {
-     "patient": "66-year-old man",
-     "age": 66,
-     "sex": "M",
-     "events": [
-      {
-       "kind": "onset",
-       "t": -8,
-       "unit": "days",
-       "precision": "approx",
-       "label": "A week of 'stress', insomnia and poor food and fluid intake; one earlier admission for psychotic depression"
-      },
-      {
-       "kind": "assessment",
-       "t": -1,
-       "unit": "days",
-       "precision": "approx",
-       "label": "Found standing motionless and unresponsive for four hours: stupor, mutism, waxy flexibility"
-      },
-      {
-       "kind": "assessment",
-       "t": -2,
-       "unit": "hours",
-       "precision": "approx",
-       "label": "Next morning on the neurology ward: unchanged"
-      },
-      {
-       "kind": "exposure_start",
-       "t": 0,
-       "unit": "hours",
-       "precision": "exact",
-       "label": "General anaesthesia for MRI and lumbar puncture: propofol 120 mg IV, then sevoflurane"
-      },
-      {
-       "kind": "best_response",
-       "t": 1,
-       "unit": "hours",
-       "precision": "at most",
-       "label": "In recovery: no longer mute or stuporous; still slowed, blocked and perplexed, with somatic delusions and derogatory voices",
-       "state": "Partial"
-      },
-      {
-       "kind": "cointervention",
-       "t": 1,
-       "unit": "days",
-       "precision": "approx",
-       "label": "Mental health unit: lorazepam, venlafaxine, olanzapine; MRI and CSF normal"
-      },
-      {
-       "kind": "follow_up",
-       "t": 4,
-       "unit": "weeks",
-       "precision": "approx",
-       "label": "Psychotic depression with catatonia remitted on treatment, without ECT",
-       "state": "Remitted",
-       "note": "Timing not stated."
-      }
-     ]
-    }
-   ],
-   "derived": {
-    "latency_days": 0.042,
-    "latency_band": "Under a day",
-    "latency_bound": "at most",
-    "baseline_years": 0.02,
-    "follow_up_days": 28,
-    "durability": "Sustained",
-    "timeline_reversal": "None reported",
-    "attribution_score": 2,
-    "attribution_grade": "C",
-    "jbi_score": 7,
-    "jbi_of": 8,
-    "rule_tier": "B"
-   }
-  },
-  {
    "id": "mira-2024",
    "record_type": "case",
    "status": "Provisional",
@@ -15628,7 +15232,7 @@
   {
    "id": "tsolaki-2010",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1c"
@@ -16709,7 +16313,7 @@
   {
    "id": "basheikh-2017",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1c"
@@ -17020,7 +16624,7 @@
   {
    "id": "hamdani-2013",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "A",
    "collections": [
     "phase1c"
@@ -17243,7 +16847,7 @@
   {
    "id": "makris-2021",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1c"
@@ -17885,7 +17489,7 @@
   {
    "id": "juiz-fernandez-2022",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1c"
@@ -18180,7 +17784,7 @@
   {
    "id": "grootendorst-van-mil-2018",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "A",
    "collections": [
     "phase1c"
@@ -18704,7 +18308,7 @@
   {
    "id": "echizen-2021",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "A",
    "collections": [
     "phase1c"
@@ -24246,237 +23850,6 @@
    }
   },
   {
-   "id": "maddigan-2004",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "phase1e"
-   ],
-   "citation": {
-    "authors": "Maddigan B, Young N, Ledrew K",
-    "title": "Letter to the editor [Mania curing fever?].",
-    "journal": "Can Child Adolesc Psychiatr Rev",
-    "year": 2004,
-    "volume": "13",
-    "issue": "4",
-    "pages": "119"
-   },
-   "ids": {
-    "doi": "",
-    "pmid": "19030491",
-    "pmcid": "PMC2538709"
-   },
-   "links": {
-    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2538709/",
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/19030491/",
-    "doi": null,
-    "alternates": [],
-    "ckn": null
-   },
-   "access": "Free full text",
-   "design": "Letter",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Mood",
-     "Psychotic"
-    ],
-    "specific": "Psychotic mania in a 14-year-old girl (earlier depression on paroxetine), worsening on risperidone, divalproex and temazepam",
-    "chronic": false,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Fever / infection",
-    "specific": "Febrile influenza on day 21 of admission",
-    "intent": "Injury or illness"
-   },
-   "outcome": {
-    "resolution": "Temporary",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "A 14-year-old girl's mania, worsening through three weeks of medication changes, vanished the day she developed influenza with fever and came back two days later.",
-   "caveat": "All medicines were held the day after the fever began, and the paper never says when the fever ended, so neither the improvement nor the return of mania can be pinned on the fever.",
-   "tags": [
-    "adolescent",
-    "fever",
-    "influenza",
-    "intercurrent-illness",
-    "mania"
-   ],
-   "same_patient_as": null,
-   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
-   "date_added": "2026-11-14",
-   "verified": "2026-11-16: full text read (PMC page, through Claude's web reader); identifiers from PubMed",
-   "era": {
-    "label": "known",
-    "note": "Psychosis lifting during fever was long recognised (Wagner-Jauregg's malaria therapy, 1917); here the lull lasted two days.",
-    "basis": "judged"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Full text",
-    "date": "2026-11-16",
-    "by": "Claude",
-    "unexpectedness": {
-     "target": {
-      "result": "pass",
-      "note": ""
-     },
-     "era": {
-      "result": "pass",
-      "note": ""
-     },
-     "secondary": {
-      "result": "borderline",
-      "note": "Paroxetine began three months before and visual hallucinations followed benztropine, so part of the picture may have been drug-induced."
-     },
-     "base_rate": {
-      "result": "borderline",
-      "note": "A four-week episode in a 14-year-old can fluctuate; the window is two days."
-     }
-    },
-    "attribution": {
-     "baseline": 0,
-     "measure": 0,
-     "timing": 1,
-     "reversal": 0,
-     "confounders": 0,
-     "note": "Mania returned on day 23, but the fever's end isn't reported, so the return can't be tied to the exposure stopping (outcome.reversal recoded from Natural off-on)."
-    },
-    "jbi": {
-     "checklist": "Case report",
-     "answers": [
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "U"
-     ]
-    },
-    "note": "Criterion 1 is doubtful: a first manic episode about four weeks old, with two short antipsychotic trials. Left Provisional for Brendan."
-   },
-   "timeline": [
-    {
-     "patient": "Ms B.",
-     "age": 14,
-     "sex": "F",
-     "events": [
-      {
-       "kind": "cointervention",
-       "t": -109,
-       "unit": "days",
-       "precision": "approx",
-       "label": "Venlafaxine switched to paroxetine; lorazepam as needed (3 months before admission)"
-      },
-      {
-       "kind": "onset",
-       "t": -25,
-       "unit": "days",
-       "precision": "approx",
-       "label": "Insomnia, overactivity, psychotic symptoms (a week before admission)"
-      },
-      {
-       "kind": "assessment",
-       "t": -18,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Admitted with psychotic mania and suicidal thoughts"
-      },
-      {
-       "kind": "treatment_failed",
-       "t": -18,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Risperidone 0.75 mg twice daily with divalproex and temazepam"
-      },
-      {
-       "kind": "cointervention",
-       "t": -11,
-       "unit": "days",
-       "precision": "approx",
-       "label": "Benztropine for stiffness; visual hallucinations followed; risperidone and benztropine stopped"
-      },
-      {
-       "kind": "treatment_failed",
-       "t": -11,
-       "unit": "days",
-       "precision": "approx",
-       "label": "Chlorpromazine (150 mg a day by day 18) with divalproex 500 mg twice daily; still manic"
-      },
-      {
-       "kind": "exposure_start",
-       "t": 0,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Fever 38.8 °C; influenza B on throat swab"
-      },
-      {
-       "kind": "cointervention",
-       "t": 1,
-       "unit": "days",
-       "precision": "exact",
-       "label": "All medicines held: acute hepatitis with jaundice; IV fluids"
-      },
-      {
-       "kind": "best_response",
-       "t": 2,
-       "unit": "days",
-       "precision": "at most",
-       "label": "Mental state all but normal: no delusions or hallucinations, insight back; mild pressure of speech",
-       "state": "Partial"
-      },
-      {
-       "kind": "relapse",
-       "t": 4,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Manic symptoms back"
-      },
-      {
-       "kind": "cointervention",
-       "t": 4,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Lithium started, oxazepam added"
-      },
-      {
-       "kind": "follow_up",
-       "t": 58,
-       "unit": "days",
-       "precision": "approx",
-       "label": "Discharged on lithium, mania well controlled (about 2½ months after admission; the date is garbled in the text)",
-       "state": "Remitted"
-      }
-     ]
-    }
-   ],
-   "derived": {
-    "latency_days": 2,
-    "latency_band": "1-13 days",
-    "latency_bound": "at most",
-    "baseline_years": 0.07,
-    "follow_up_days": 58,
-    "durability": "Lost",
-    "timeline_reversal": "None reported",
-    "attribution_score": 1,
-    "attribution_grade": "D",
-    "jbi_score": 7,
-    "jbi_of": 8,
-    "rule_tier": "C"
-   }
-  },
-  {
    "id": "ward-1975",
    "record_type": "case",
    "status": "Provisional",
@@ -25243,7 +24616,7 @@
   {
    "id": "pozzi-2014",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1f"
@@ -25582,7 +24955,7 @@
   {
    "id": "miyazaki-2023",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1f"

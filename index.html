@@ -83,6 +83,9 @@ select { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-
 .card { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--stripe, var(--line)); border-radius: var(--radius); padding: 12px 14px; display: grid; gap: 6px; }
 .card.context { border-style: dashed; border-left-style: solid; }
 .meta-top { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12px; }
+.why { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 0; }
+.why span { font-size: 12px; font-weight: 500; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 9px; }
+.why .rank { color: var(--surface); background: var(--accent); font-family: var(--font-mono); }
 .pill { padding: 1px 8px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); color: var(--muted); }
 .pill.syn { color: var(--ink); }
 .pill.syn::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--c); margin-right: 5px; vertical-align: 1px; }
@@ -200,6 +203,7 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
       <div class="row">
         <label class="grp" for="sort">Sort</label>
         <select id="sort">
+          <option value="compelling">Most compelling first</option>
           <option value="impact">Downstream impact</option>
           <option value="new">Newest first</option>
           <option value="old">Oldest first</option>
@@ -311,7 +315,7 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
   };
   if (window.matchMedia && window.matchMedia("(max-width: 700px)").matches) { var fb = document.getElementById("filtersBox"); if (fb) fb.removeAttribute("open"); }
   var DATA = null, RECORDS = [], HDATA = null, HYP = {};
-  var state = { q: "", syn: new Set(), trig: new Set(), tags: new Set(), tier: "", era: "", period: "", coded: "", freeOnly: false, showCtx: false, sort: "impact" };
+  var state = { q: "", syn: new Set(), trig: new Set(), tags: new Set(), tier: "", era: "", period: "", coded: "", freeOnly: false, showCtx: false, sort: "compelling" };
 
   function $(id) { return document.getElementById(id); }
   function el(tag, attrs, kids) {
@@ -361,12 +365,43 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
       if (state.sort === "new") return obsYear(b) - obsYear(a);
       if (state.sort === "old") return obsYear(a) - obsYear(b);
       if (state.sort === "title") return a.citation.title.localeCompare(b.citation.title);
+      if (state.sort === "compelling") return (b._int.s - a._int.s) || (a.tier || "Z").localeCompare(b.tier || "Z") || a.citation.year - b.citation.year;
       var t = (a.record_type === "case" ? 0 : 1) - (b.record_type === "case" ? 0 : 1);
       if (t) return t;
       var d = b.downstream.level - a.downstream.level; if (d) return d;
       var ti = (a.tier || "Z").localeCompare(b.tier || "Z"); if (ti) return ti;
       return a.citation.year - b.citation.year;
     });
+  }
+
+  // "Most compelling first": a transparent score so a casual scroller meets the strongest evidence first.
+  // Reversal (rechallenge, then natural off-on) and tier dominate; our reading's verdict, chronicity, speed,
+  // durability, a standardised measure, completeness and novelty add; flags, refuted and antique-bar subtract.
+  function interest(r) {
+    if (r.record_type !== "case") return { s: -1000, why: [] };
+    var s = 0, why = [], dv = r.derived || {}, ap = r.appraisal || {}, h = HYP[r.id];
+    s += { A: 30, B: 18, C: 6 }[r.tier] || 0;
+    if (r.outcome.reversal === "On-off rechallenge") { s += 28; why.push("Rechallenge: back off it, gone again on it"); }
+    else if (r.outcome.reversal === "Natural off-on") { s += 16; why.push("Returned when the exposure stopped"); }
+    if (h && h.verdict === "Beats the null") { s += 14; why.push("Survives the boring explanations"); }
+    else if (h && h.verdict === "Doesn't beat the null") s -= 12;
+    if (dv.baseline_years != null && dv.baseline_years >= 2) { s += dv.baseline_years >= 10 ? 10 : 6; var by = Math.round(dv.baseline_years); why.push(by + (by === 1 ? " year" : " years") + " ill beforehand"); }
+    if (dv.latency_days != null && dv.latency_days < 1) { s += 5; why.push("Changed within a day"); }
+    else if (dv.latency_days != null && dv.latency_days < 14) s += 3;
+    if (dv.durability === "Sustained" && dv.follow_up_days >= 365) { s += 8; var fy = Math.round(dv.follow_up_days / 365.25 * 10) / 10; why.push("Held " + fy + (fy === 1 ? " year" : " years")); }
+    if (ap.attribution && ap.attribution.measure === 1) {
+      s += 5;
+      var m = (dv.measures || [])[0];
+      why.push(m ? m.scale + " " + m.before + " → " + m.after : "Measured with a standard scale");
+    }
+    s += { Complete: 6, Partial: 1, Temporary: -2 }[r.outcome.resolution] || 0;
+    s += { novel: 8, emerging: 4, known: 0, refuted: -12 }[r.era.label] || 0;
+    if (r.era.label === "novel") why.push("Still unexplained");
+    if ((r.flags || []).length) s -= 15;
+    if (r.status === "Included") s += 4;
+    if (r.downstream && r.downstream.level >= 2) s += r.downstream.level;
+    if (isAntique(r)) s -= 4;
+    return { s: s, why: why };
   }
 
   // A case is fully coded once its full-text appraisal is scored and our reading exists (a timeline too, wherever the paper gives individual data)
@@ -594,6 +629,12 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
     (r.flags || []).forEach(function (f) { top.appendChild(el("span", { class: "pill flag", title: FLAG_TEXT[f] || f, text: "⚑ " + (FLAG_TEXT[f] || f) })); });
     top.appendChild(el("span", { class: "pill era-" + r.era.label, title: DATA.vocabularies.era[r.era.label], text: ERA_SHORT[r.era.label] }));
     top.appendChild(el("span", { class: r.links.full_text ? "pill free" : "pill", text: r.access }));
+    var why = null;
+    if (r._int && r._int.why.length) {
+      why = el("div", { class: "why", title: "Why this case ranks where it does" });
+      if (state.sort === "compelling" && r._rank) why.appendChild(el("span", { class: "rank", text: "#" + r._rank }));
+      r._int.why.slice(0, 4).forEach(function (w) { why.appendChild(el("span", { text: w })); });
+    }
 
     var dv = r.derived || {};
     var outcome = [r.outcome.resolution];
@@ -637,7 +678,7 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
     r.tags.forEach(function (t) { tags.appendChild(el("button", { class: "tag", type: "button", "aria-pressed": state.tags.has(t) ? "true" : "false", onclick: function () { toggleTag(t); } }, ["#" + t])); });
 
     return el("article", { class: "card" + (r.record_type !== "case" ? " context" : "") + (isAntique(r) ? " antique" : ""), style: "--stripe:" + synColor(c0) }, [
-      top,
+      top, why,
       el("h3", {}, [el("a", { href: primaryLink(r), target: "_blank", rel: "noopener", text: r.citation.title })]),
       el("p", { class: "cite", text: citeLine(r) }),
       el("p", { class: "summary", text: r.summary }),
@@ -651,10 +692,10 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
   function renderList() {
     var rows = filtered();
     var totalCases = RECORDS.filter(function (r) { return r.record_type === "case"; }).length;
-    $("count").textContent = "Showing " + rows.length + " of " + totalCases + " studies" + (state.showCtx ? " plus context records" : "");
+    $("count").textContent = "Showing " + rows.length + " of " + totalCases + " studies" + (state.showCtx ? " plus context records" : "") + (state.sort === "compelling" ? " · most compelling evidence first (rechallenge and strong appraisal at the top)" : "");
     var list = $("list"); list.innerHTML = "";
     if (!rows.length) { list.appendChild(el("div", { class: "empty", text: "No studies match these filters. Clear a filter or a tag to widen the list." })); return; }
-    rows.forEach(function (r) { list.appendChild(card(r)); });
+    rows.forEach(function (r, i) { r._rank = i + 1; list.appendChild(card(r)); });
   }
 
   function bars(id, pairs) {
@@ -810,7 +851,7 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
 
   function init(data) {
     DATA = data;
-    RECORDS = data.records.map(function (r) { r._hay = haystack(r); return r; });
+    RECORDS = data.records.map(function (r) { r._hay = haystack(r); r._int = interest(r); return r; });
     renderTiles(); renderFacetChips(); renderData(); renderAll(); route();
     $("q").addEventListener("input", function (e) { state.q = e.target.value; renderAll(); });
     $("sort").addEventListener("change", function (e) { state.sort = e.target.value; renderAll(); });
