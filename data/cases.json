@@ -16657,7 +16657,7 @@
   {
    "id": "bijanki-2020",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1c"
@@ -16723,7 +16723,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, first pass)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "Fits the right-amygdala account of PTSD and Koenigs 2008 (amygdala and vmPFC lesions protected veterans from PTSD). Xie 2026 replicated it.",
@@ -16731,13 +16731,276 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "PCL-M (reconstructed) and CAPS-5 before and after; both became largely seizure-free, so relief from seizure control is a competing route."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Patient 1, 62-year-old man",
+     "age": 62,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -42,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Combat PTSD after a 1972 blast that killed fellow soldiers; refractory to medication, couldn't tolerate CBT"
+      },
+      {
+       "kind": "onset",
+       "t": -14,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Late-onset refractory right mesial temporal epilepsy; right medial temporal hypometabolism on PET"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Before surgery",
+       "scores": [
+        {
+         "scale": "PCL-M",
+         "value": 66,
+         "higher_is_better": false
+        },
+        {
+         "scale": "BDI-II",
+         "value": 26,
+         "higher_is_better": false
+        },
+        {
+         "scale": "BAI",
+         "value": 21,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Right laser amygdalohippocampotomy for epilepsy"
+      },
+      {
+       "kind": "first_change",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "He and his wife report profound easing of PTSD",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Much less hypervigilance, anger and irritability; rejoined group CBT he couldn't tolerate before; seizure-free",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "PCL-M",
+         "value": 34,
+         "higher_is_better": false
+        },
+        {
+         "scale": "BDI-II",
+         "value": 12,
+         "higher_is_better": false
+        },
+        {
+         "scale": "BAI",
+         "value": 2,
+         "higher_is_better": false
+        }
+       ],
+       "note": "Post-surgery PCL-M reconstructed by the neuropsychologist from interviews; time point not stated."
+      },
+      {
+       "kind": "follow_up",
+       "t": 12,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Still improved; seizure-free; some visual memory decline",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "BDI-II",
+         "value": 16,
+         "higher_is_better": false
+        },
+        {
+         "scale": "BAI",
+         "value": 12,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "patient": "Patient 2, 42-year-old woman",
+     "age": 42,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -19,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Civilian PTSD; refractory to psychotherapy, antidepressants, anxiolytics and CBT"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Before surgery",
+       "scores": [
+        {
+         "scale": "CAPS-5",
+         "value": 33,
+         "higher_is_better": false
+        },
+        {
+         "scale": "BDI-II",
+         "value": 31,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Right laser amygdalohippocampotomy for epilepsy"
+      },
+      {
+       "kind": "assessment",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "CAPS-5 down 31%; trazodone use falling",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "BDI-II",
+         "value": 15,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 12,
+       "unit": "months",
+       "precision": "exact",
+       "label": "CAPS-5 down 68% (about 11); no longer meets PTSD criteria; seizures only when lamotrigine missed",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "CAPS-5",
+         "value": 11,
+         "higher_is_better": false
+        },
+        {
+         "scale": "BDI-II",
+         "value": 19,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Resection or ablation",
+    "side": "Right",
+    "regions": [
+     "Temporal, medial (amygdala, hippocampus)"
+    ],
+    "specific": "Right amygdala and anterior hippocampus, laser interstitial thermal therapy (both patients)",
+    "aetiology": "Surgery",
+    "imaging": "MRI",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 42,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 42.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "PCL-M",
+      "before": 66,
+      "after": 34,
+      "change_pct": -48.5
+     },
+     {
+      "scale": "BDI-II",
+      "before": 26,
+      "after": 12,
+      "change_pct": -53.8
+     },
+     {
+      "scale": "BAI",
+      "before": 21,
+      "after": 2,
+      "change_pct": -90.5
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -16960,7 +17223,7 @@
   {
    "id": "gillespie-2019",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1c"
@@ -16998,7 +17261,7 @@
     "treatment_resistant": null
    },
    "trigger": {
-    "category": "Fever / infection",
+    "category": "Acquired brain lesion",
     "specific": "Iatrogenic cerebral abscess after an intracranial pressure monitor, treated with 6 weeks of IV meropenem",
     "intent": "Injury or illness"
    },
@@ -17014,7 +17277,7 @@
     "links": []
    },
    "summary": "A woman with long-standing delusional disorder developed a brain abscess from a pressure monitor; after six weeks of meropenem her delusions and hallucinations went and she now lives independently.",
-   "caveat": "The abscess, the neurosurgery and the antibiotic cannot be separated; follow-up length needs the full text (free on PMC).",
+   "caveat": "She is on a zuclopenthixol depot at follow-up and the paper doesn't say when it began; six weeks of high-dose meropenem is itself a candidate.",
    "tags": [
     "antibiotic",
     "cerebral-abscess",
@@ -17026,7 +17289,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, first pass)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "Joins older reports of psychosis remitting after brain infection, fever or antibiotics.",
@@ -17034,13 +17297,134 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Ten months of severe psychosis before; remission within a month of the abscess; at follow-up she is on a zuclopenthixol depot, start date not given."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "32-year-old woman",
+     "age": 32,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -13,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Organic delusional disorder at 19 (visual hallucinations, delusions) on a background of congenital hydrocephalus, callosal agenesis, cerebral palsy"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -10,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Detained in hospital: third-person voices, violence, 2:1 nursing; haloperidol and benzodiazepines, aripiprazole 5 mg, valproate",
+       "to": -0.3
+      },
+      {
+       "kind": "cointervention",
+       "t": -9,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Left frontal intracranial pressure monitor inserted to check her shunt (pressure normal)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Readmitted with headache: cerebritis then a 12 mm left frontal abscess at the probe tip; probe removed; 6 weeks of IV meropenem (vancomycin 2 weeks)"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "No visible psychiatric disturbance; euthymic, new insight confirmed by her psychiatrist",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Abscess resolved on MRI; discharged home"
+      },
+      {
+       "kind": "follow_up",
+       "t": 2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "No delusions or hallucinations; living independently; on zuclopenthixol, valproate and aripiprazole",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Frontal, other"
+    ],
+    "specific": "12 mm left frontal abscess cavity with oedema at the tip of an intracranial pressure probe",
+    "aetiology": "Infection",
+    "imaging": "MRI and CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 30.438,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 13.0,
+    "follow_up_days": 730.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -17801,8 +18185,8 @@
   {
    "id": "shahani-2019",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1c"
    ],
@@ -17867,7 +18251,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, first pass)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent: Reutens 1997 found chronic interictal psychosis unchanged, and seizure control is a confound (see Pintor 2022).",
@@ -17875,13 +18259,135 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "Interictal psychosis and depression often improve when temporal lobe surgery stops the seizures."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Symptoms described before; no scale; already much better on aripiprazole; seizure freedom is the expected route."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "32-year-old woman",
+     "age": 32,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -18,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Left mesial temporal lobe epilepsy from 14; depression, irritability and paranoid delusions began with the seizures and worsened with them"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -4,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Phenytoin, levetiracetam, oxcarbazepine, lacosamide: 4–5 seizures a month",
+       "to": -0.2
+      },
+      {
+       "kind": "cointervention",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Aripiprazole 15 mg: psychiatric symptoms significantly improved"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Left anterior temporal lobectomy with amygdalohippocampectomy (hippocampal sclerosis)"
+      },
+      {
+       "kind": "best_response",
+       "t": 2,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Denies any psychiatric symptoms; seizure-free",
+       "state": "Remitted"
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Off aripiprazole with no return of psychosis"
+      },
+      {
+       "kind": "follow_up",
+       "t": 12,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Off antiepileptic drugs, seizure-free, no psychiatric symptoms",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Resection or ablation",
+    "side": "Left",
+    "regions": [
+     "Temporal, medial (amygdala, hippocampus)",
+     "Temporal, lateral"
+    ],
+    "specific": "Left anterior temporal lobectomy with amygdalohippocampectomy",
+    "aetiology": "Surgery",
+    "imaging": "MRI",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 60.875,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 18.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -19511,8 +20017,8 @@
   {
    "id": "beraha-2017",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1c"
    ],
@@ -19565,7 +20071,7 @@
     "links": []
    },
    "summary": "A man's stuttering stopped on baclofen given for alcohol dependence, came back when it was stopped, and stopped again when it was restarted.",
-   "caveat": "Onset and duration of the stuttering need the full text; reduced drinking and anxiety are confounders. Included as a one-off for its rechallenge evidence; stuttering is not a target syndrome.",
+   "caveat": "Drinking stopped and restarted in step with baclofen, so alcohol (or abstinence) may be what changed the stuttering.",
    "tags": [
     "alcohol-dependence",
     "baclofen",
@@ -19576,7 +20082,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "novel",
     "note": "",
@@ -19584,13 +20090,130 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "Off-on-off-on: stuttering went at 90 mg, returned off baclofen, went again on restart; but drinking stopped and restarted in step, so alcohol is a co-varying explanation."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "61-year-old man",
+     "age": 61,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -55,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Stuttering (he called it a problem of finding words in a foreign language); 20 years of alcohol dependence, 2–3 L of wine a day"
+      },
+      {
+       "kind": "cointervention",
+       "t": -14,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Detoxification with diazepam and thiamine, then entered a high-dose baclofen trial"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Baclofen for alcohol dependence, titrated by 30 mg a week to 120 mg/day"
+      },
+      {
+       "kind": "first_change",
+       "t": 30,
+       "unit": "days",
+       "precision": "approx",
+       "label": "At 90 mg/day the physician notices he has stopped stuttering; abstinent from week 2",
+       "state": "Remitted"
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 16,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Baclofen tapered to stop for sleepiness and stiff legs"
+      },
+      {
+       "kind": "relapse",
+       "t": 18,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Stuttering back, and drinking 2 L of wine a day again",
+       "state": "Unchanged"
+      },
+      {
+       "kind": "exposure_restart",
+       "t": 20,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Baclofen restarted, titrated to 90 mg/day"
+      },
+      {
+       "kind": "follow_up",
+       "t": 28,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Stuttering gone again; prolonged abstinence",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 30,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 55.0,
+    "follow_up_days": 196,
+    "durability": "Lost",
+    "timeline_reversal": "Natural off-on",
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -21932,8 +22555,8 @@
   {
    "id": "sharma-2008",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1d"
    ],
@@ -21978,7 +22601,7 @@
     "resolution": "Partial",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "None reported"
+    "reversal": "Natural off-on"
    },
    "downstream": {
     "level": 0,
@@ -21986,7 +22609,7 @@
     "links": []
    },
    "summary": "Depressive symptoms improved on felbamate, an antiepileptic.",
-   "caveat": "Better seizure control can lift mood on its own.",
+   "caveat": "The off-on pattern is her own retrospective account, without dates or ratings.",
    "tags": [
     "antiepileptic",
     "depression",
@@ -21996,7 +22619,7 @@
    "same_patient_as": null,
    "found_via": "Embase via CKN (EMB_title_v1_2, re-ranked v1.3)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC; 2026-11-14: PMID and PMCID found via Europe PMC (citation route v2)",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "novel",
     "note": "",
@@ -22004,13 +22627,109 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "Patient-reported pattern over three courses (better each time on felbamate, by implication worse off it), undated and unmeasured; seizures not improved, so not via seizure control."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "N",
+      "Y",
+      "U",
+      "Y",
+      "U",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "29-year-old woman",
+     "age": 29,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -13,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Intractable grand mal and absence seizures after Epstein-Barr encephalitis with coma at 16; bilateral mesial temporal sclerosis; depression (family history)"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -12,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Fourteen antiepileptic drugs tried with little benefit",
+       "to": -0.5
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Felbamate, on three separate occasions over the illness (dates not given)"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Each time on felbamate: good mood, more energy, less tearful, sense of well-being",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "2007: on felbamate 600 mg three times a day; neurologists plan to stop it; she fears relapse; sertraline offered",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 30.438,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 13.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 4,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {

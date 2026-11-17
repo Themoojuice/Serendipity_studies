@@ -3439,6 +3439,341 @@
     }
    ],
    "related": []
+  },
+  {
+   "case_id": "bijanki-2020",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Decades of refractory PTSD in both."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Well-established PTSD."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Seizure control, and patient 1 rejoined CBT once improved."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "More engaged, not blunted; face emotion recognition unchanged."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Major surgery with hopes of change."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Patient 1's post-surgery PCL-M reconstructed retrospectively."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Two patients, both with decades of refractory PTSD, both much better after right amygdala ablation done for seizures; hyperarousal fell most, which is what the amygdala story predicts. Xie 2026 later repeated it with seizures unchanged.",
+   "hypotheses": [
+    {
+     "claim": "Ablating the right amygdala removed the hub of conditioned threat responding.",
+     "chain": "Right amygdala lesion → loss of fear-memory expression and arousal output → hyperarousal and re-experiencing fall",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Threat and arousal"
+     ],
+     "latency_fit": "Fits",
+     "for": "Hyperarousal cluster 21 → 9 in patient 1; patient 2 lost the diagnosis; Xie 2026 replicated it without seizure change.",
+     "against": "Seizure freedom in both.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Seizure control and lesion effect coincide in both patients.",
+     "test": "PTSD outcomes after amygdala versus hippocampus-sparing or extratemporal epilepsy surgery."
+    },
+    {
+     "claim": "Stopping seizures that kept the limbic system in a state of threat relieved PTSD.",
+     "chain": "Right mesial temporal seizures → recurrent limbic arousal → seizure freedom → arousal settles",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)",
+      "Threat and arousal"
+     ],
+     "latency_fit": "Fits",
+     "for": "Both became largely seizure-free.",
+     "against": "Xie's patient improved with seizures unchanged.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "Same as above."
+    }
+   ],
+   "related": [
+    {
+     "id": "xie-2026",
+     "why": "Prospective replication with seizures unchanged"
+    }
+   ]
+  },
+  {
+   "case_id": "gillespie-2019",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Thirteen years, ten months of severe inpatient illness."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Admitted at a peak of violence."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "An organic psychosis in a structurally abnormal brain; shunt problems suspected."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "A depot antipsychotic of unknown start date; six weeks in a neurosurgical ward."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Insight and euthymia, not blunting."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Nothing aimed at the psychosis."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No measures; depot timing not given."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "A frontal abscess, six weeks of meropenem, then remission with new insight that held two years. The unanswered question is when the zuclopenthixol depot began.",
+   "hypotheses": [
+    {
+     "claim": "The left frontal lesion disconnected a circuit sustaining the delusions.",
+     "chain": "Abscess and oedema in left frontal white matter → frontostriatal disconnection → delusions and hallucinations fade",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Remission within a month of a focal frontal lesion, as in leucotomy-era reports.",
+     "against": "The lesion resolved but the remission stayed.",
+     "confidence": "Low",
+     "uncertainty_driver": "Depot start date unknown.",
+     "test": "Lesion location mapped against other remitting lesions."
+    },
+    {
+     "claim": "Prolonged meropenem had an anti-inflammatory or microglial effect.",
+     "chain": "Six weeks of IV beta-lactam → glutamate transporter up-regulation and less neuroinflammation → psychosis eases",
+     "mechanisms": [
+      "Glutamate",
+      "Microglia and glia"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Beta-lactams up-regulate GLT-1; minocycline-type stories.",
+     "against": "No direct evidence.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "Psychosis ratings in patients on long beta-lactam courses."
+    }
+   ],
+   "related": [
+    {
+     "id": "hemming-1993",
+     "why": "Abscess and psychosis"
+    }
+   ]
+  },
+  {
+   "case_id": "shahani-2019",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Eighteen years."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Likely",
+     "why": "Psychosis tracking seizure frequency is an epilepsy-driven syndrome, and the surgery treated the epilepsy."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Aripiprazole had already improved her."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None aimed at mood."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No measures."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Psychosis that rose and fell with seizures went when the seizures went. It belongs here as the expected end of the epilepsy-surgery spectrum, against which cases like Xie 2026 stand out.",
+   "hypotheses": [
+    {
+     "claim": "Psychosis was driven by the epileptic focus; removing it removed both.",
+     "chain": "Left hippocampal sclerosis → seizures and interictal limbic dysfunction → psychosis → resection → both stop",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Network reset (seizure, coma, anaesthesia)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Psychosis tracked seizures; seizure freedom and remission together; off antipsychotic at 6 months.",
+     "against": "One case; aripiprazole effect before surgery.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No ratings.",
+     "test": "Prospective psychosis ratings after temporal lobectomy in interictal psychosis."
+    }
+   ],
+   "related": [
+    {
+     "id": "ripsman-2025",
+     "why": "Change after left temporal lobectomy"
+    }
+   ]
+  },
+  {
+   "case_id": "beraha-2017",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Lifelong stuttering doesn't stop at 61."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Stuttering that worsened with drinking or withdrawal would track alcohol."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Alcohol use changed in step with baclofen."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Sedation and muscle relaxation at 90 mg."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Nobody was treating the stutter."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Observed by the physician; no fluency measure."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Included as a one-off (stuttering isn't a target syndrome; see protocol v1.3.2). The off-on-off-on is clean, but alcohol moved in step with baclofen each time.",
+   "hypotheses": [
+    {
+     "claim": "GABA-B agonism damped the basal ganglia dopamine excess linked to stuttering.",
+     "chain": "Baclofen → GABA-B inhibition of dopamine neurons → less striatal dopamine → fluency improves (as dopamine antagonists help stuttering)",
+     "mechanisms": [
+      "GABA",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Dose threshold (90 mg) and on-off-on pattern; D2 blockers reduce stuttering.",
+     "against": "Alcohol co-varied.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Alcohol confound.",
+     "test": "Baclofen in abstinent people who stutter, with blinded fluency counts."
+    },
+    {
+     "claim": "Muscle relaxation and less anxiety eased speech.",
+     "chain": "Baclofen → less muscle tone and anxiety → fewer blocks",
+     "mechanisms": [
+      "GABA",
+      "Threat and arousal"
+     ],
+     "latency_fit": "Fits",
+     "for": "He had stiff muscles at 90 mg.",
+     "against": "Benzodiazepines don't reliably help stuttering.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "As above."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "sharma-2008",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Undated courses; mood fluctuates."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Not a single peak."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Depression in epilepsy can track seizures and drugs, though seizures didn't improve."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Other antiepileptics changed across courses."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Activation, not sedation."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "She formed the belief herself and expected it each time."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "Retrospective self-report, no dates or measures."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A plausible pharmacology (felbamate is an NMDA antagonist and activating) and a repeated pattern, but every element is her own recollection.",
+   "hypotheses": [
+    {
+     "claim": "Felbamate's NMDA antagonism had a ketamine-like antidepressant effect.",
+     "chain": "Felbamate → NMDA (NR2B) antagonism and GABA-A potentiation → antidepressant and activating effect",
+     "mechanisms": [
+      "Glutamate"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Better on each course; activating profile; seizures unchanged so not via seizure control.",
+     "against": "Undated recall.",
+     "confidence": "Low",
+     "uncertainty_driver": "No dates or measures.",
+     "test": "Mood ratings when felbamate is stopped and restarted."
+    }
+   ],
+   "related": []
   }
  ]
 }
