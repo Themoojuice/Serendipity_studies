@@ -1,0 +1,116 @@
+"""Full-text appraisal, batch 18 (2026-11-17): PMC pages read in the laptop browser.
+setsaas-2014 (fever on clozapine, refractory mania), ali-2015 (pallidal DBS for Parkinson's, depression),
+brieler-2014 (severe head injury, untreated schizophrenia).
+"""
+import sys
+sys.path.insert(0, "scripts")
+from lib_code import Batch, ev, track, T, A, J, N, H  # noqa: E402
+
+b = Batch("2026-11-17", source="PMC article page, read in the laptop browser")
+
+b.code("setsaas-2014",
+       tracks=[track("38-year-old woman", 38, "F", [
+           ev("onset", -15, "years", "Bipolar disorder; previous manias resistant to lithium, valproate and many antipsychotics, usually needing ECT", "approx"),
+           ev("assessment", -24, "days", "Involuntary admission with psychotic mania after sleep loss, on valproate and lamotrigine; declined ECT", "approx", scores=[{"scale": "YMRS", "value": 37, "higher_is_better": False}]),
+           ev("treatment_failed", -24, "days", "Valproate raised to 2,400 mg: no effect", "approx", to=-10),
+           ev("treatment_failed", -10, "days", "Clozapine 50 → 250 mg over a week: slight sedation, mania unchanged", to=-1),
+           ev("exposure_start", 0, "days", "Sudden spiking fever to 40.2 °C with delirium; clozapine and valproate stopped; cultures negative (probably clozapine fever)"),
+           ev("best_response", 4, "days", "Back on the psychiatric ward without any manic symptoms; valproate and lamotrigine restarted", state="Remitted"),
+           ev("relapse", 3, "weeks", "Readmitted with a mixed episode after about 2 weeks of stability", "approx", state="Unchanged"),
+           ev("follow_up", 6, "months", "Mixed episode ended only with 10 ECT treatments 5 months later", "approx", state="Remitted"),
+       ])],
+       unexpectedness=T(),
+       attribution=A(1, 0, 1, 0, 0, "YMRS 37 before; mania gone after four days of fever, no repeat rating; clozapine had just been given for 10 days; relapse within weeks."),
+       jbi=J("YYYYYYYY"),
+       fix={"outcome.resolution": "Temporary", "caveat": "The mania was three weeks old, she was delirious during the fever, and she relapsed within three weeks."})
+b.reading("setsaas-2014",
+          nulls=N(natural_history=("Possible", "A three-week-old mania can end, though hers were usually ECT-resistant."),
+                  regression=("Possible", "Admitted at a peak."),
+                  misdiagnosis=("Unlikely", "Long-known bipolar disorder."),
+                  cointervention=("Possible", "Ten days of clozapine, then both drugs stopped."),
+                  nonspecific=("Possible", "Delirium and exhaustion during the fevers."),
+                  expectancy=("Unlikely", "None."),
+                  reporting=("Possible", "No rating after the fever.")),
+          verdict="Undecided",
+          note="Fever ended a refractory mania in four days, as Wagner-Jauregg would have predicted, but the remission lasted about two weeks and came with delirium. A Temporary result, which is still informative.",
+          hyps=[H("High fever and the cytokine response reset the manic state, as malaria therapy was thought to.",
+                  "Fever to 40 °C → cytokine surge and thermoregulatory stress → transient suppression of mania circuitry",
+                  ["Fever and heat", "Inflammation and cytokines"], "Fits",
+                  "Mania gone within days of repeated high spikes; historical fever-therapy reports.",
+                  "Short-lived; delirium muddies it.",
+                  "Low", "Fever, delirium and stopping clozapine coincide.", "Mania ratings across clozapine fevers in other patients."),
+                H("Clozapine had begun to work just as the fever came.",
+                  "Ten days of clozapine reaching 250 mg → antimanic effect emerging",
+                  ["Dopamine", "Serotonin"], "Fits",
+                  "Clozapine is antimanic and was at a working dose.",
+                  "It was stopped at the fever, yet she was well four days later.",
+                  "Low", "As above.", "None in this patient.")],
+          related=[("zuschlag-2016", "Psychosis easing with high fever"), ("wagner-jauregg-1883", "Fever therapy's founding observation")])
+
+b.code("ali-2015",
+       tracks=[track("65-year-old woman", 65, "F", [
+           ev("onset", -50, "years", "Major depression since childhood, worse after Parkinson's began 20 years ago; repeated admissions for depression and suicidal ideation (last 2012); several SSRIs and antipsychotics", "approx"),
+           ev("exposure_start", 0, "days", "Bilateral globus pallidus internus DBS for dyskinesia"),
+           ev("follow_up", 6, "months", "Neurology follow-up: mood much better, appetite and sleep back; dyskinesia little better, with stimulation complications", "approx", state="Remitted"),
+       ])],
+       unexpectedness=T(),
+       attribution=A(1, 0, 0, 0, 0, "Long, severe depression before; afterwards a single clinic observation with no date, scale or medication detail."),
+       jbi=J("YYNUYUYY"))
+b.reading("ali-2015",
+          nulls=N(natural_history=("Possible", "Recurrent depression has remissions."),
+                  regression=("Possible", "Undated."),
+                  misdiagnosis=("Possible", "Depression worsened with Parkinson's; part may be Parkinson's-related."),
+                  cointervention=("Possible", "Medications not described."),
+                  nonspecific=("Unlikely", "None."),
+                  expectancy=("Possible", "Major surgery with high hopes."),
+                  reporting=("Likely", "A letter with one undated observation.")),
+          verdict="Doesn't beat the null",
+          note="A short letter. Pallidal stimulation and mood is plausible, and her motor symptoms didn't improve, which argues against relief by mobility, but nothing is measured or dated.",
+          hyps=[H("Stimulation spread to limbic pallidum improved mood.",
+                  "GPi DBS → current into ventral (limbic) pallidum or connected circuits → mood circuitry modulated",
+                  ["Stimulation of a circuit"], "Can't judge",
+                  "Mood improved while dyskinesia didn't, so not via motor relief.",
+                  "No detail.", "Low", "No measures, dates or contact settings.", "Mood with stimulation switched off and on.")],
+          related=[])
+
+b.code("brieler-2014",
+       tracks=[track("51-year-old man", 51, "M", [
+           ev("onset", -23, "years", "Schizophrenia in records since 1989: persecutory and referential delusions, disorganised speech, command hallucinations in exacerbations", "at least"),
+           ev("treatment_failed", -4, "years", "Seen in primary care 2008–2012: floridly psychotic at every visit, refused antipsychotics", "approx", to=-0.1),
+           ev("exposure_start", 0, "days", "Struck by a car: diffuse axonal injury, subarachnoid blood, bilateral subdurals; right decompressive craniectomy"),
+           ev("assessment", 9, "months", "Cranioplasty; MRI encephalomalacia mainly right temporal and left frontal"),
+           ev("first_change", 10, "months", "First clinic visit after: delusions and paranoia gone, speech more coherent; flat affect, wheelchair-bound; only levetiracetam", "at most", state="Partial",
+              scores=[{"scale": "SAPS persecutory delusions (mother)", "value": 0, "higher_is_better": False}]),
+           ev("follow_up", 12, "months", "No hallucinations or referential delusions since the accident by family report", "approx", state="Partial"),
+       ])],
+       unexpectedness=T(),
+       attribution=A(1, 0, 0, 0, 1, "Florid psychosis at every visit for four years; afterwards SAPS items by interview, with the mother's retrospective rating of before (persecution 5 → 0, derailment 5 → 2); no antipsychotic, only levetiracetam."),
+       jbi=J("YYYYYYYY"),
+       lesion={"kind": "Injury", "side": "Bilateral", "regions": ["Temporal, lateral", "Frontal, other", "Diffuse or multifocal"],
+               "specific": "Diffuse axonal injury; encephalomalacia mainly right temporal and left frontal after right decompressive craniectomy",
+               "aetiology": "Trauma", "imaging": "MRI and CT", "mappable": "Description only"},
+       fix={"caveat": "His affect flattened and speech slowed, so diffuse frontal damage may have quietened everything, delusions included."})
+b.reading("brieler-2014",
+          nulls=N(natural_history=("Unlikely", "Twenty-three years of consistent psychosis."),
+                  regression=("Unlikely", "Chronic and stable."),
+                  misdiagnosis=("Unlikely", "Consistent records since 1989."),
+                  cointervention=("Possible", "Months of hospital and rehabilitation; family care at home."),
+                  nonspecific=("Possible", "Flat affect and slowed speech after a devastating injury."),
+                  expectancy=("Unlikely", "None."),
+                  reporting=("Possible", "Before-ratings are the mother's recall.")),
+          verdict="Beats the null",
+          note="Decades of untreated florid psychosis largely gone after a devastating head injury, with no antipsychotic. Whether the injury cured the psychosis or flattened the man is the question; coherent speech argues for something more than blunting.",
+          hyps=[H("Diffuse and frontal-temporal damage disconnected the networks generating delusions.",
+                  "Diffuse axonal injury plus right temporal and left frontal damage → disconnection of salience and belief networks → delusions stop",
+                  ["Lesion disconnection"], "Can't judge",
+                  "Delusions went while speech became more coherent; leucotomy-era parallels.",
+                  "Too diffuse to localise.", "Low", "No lesion mapping.", "Lesion-network mapping of psychosis-remitting injuries."),
+                H("Global frontal injury blunted all output, delusional speech included.",
+                  "Severe TBI → apathy and flattened affect → less spontaneous delusional talk",
+                  ["Global suppression (sedation, apathy, cognitive loss)"], "Fits",
+                  "Flat affect and speech delays.",
+                  "Speech became more coherent, not just sparser; he denied all symptoms.",
+                  "Moderate", "No negative-symptom or cognitive rating.", "Negative-symptom and cognitive scales alongside SAPS.")],
+          related=[])
+
+b.save()

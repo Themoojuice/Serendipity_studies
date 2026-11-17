@@ -3774,6 +3774,328 @@
     }
    ],
    "related": []
+  },
+  {
+   "case_id": "setsaas-2014",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "A three-week-old mania can end, though hers were usually ECT-resistant."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Admitted at a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-known bipolar disorder."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Ten days of clozapine, then both drugs stopped."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Delirium and exhaustion during the fevers."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No rating after the fever."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Fever ended a refractory mania in four days, as Wagner-Jauregg would have predicted, but the remission lasted about two weeks and came with delirium. A Temporary result, which is still informative.",
+   "hypotheses": [
+    {
+     "claim": "High fever and the cytokine response reset the manic state, as malaria therapy was thought to.",
+     "chain": "Fever to 40 °C → cytokine surge and thermoregulatory stress → transient suppression of mania circuitry",
+     "mechanisms": [
+      "Fever and heat",
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Fits",
+     "for": "Mania gone within days of repeated high spikes; historical fever-therapy reports.",
+     "against": "Short-lived; delirium muddies it.",
+     "confidence": "Low",
+     "uncertainty_driver": "Fever, delirium and stopping clozapine coincide.",
+     "test": "Mania ratings across clozapine fevers in other patients."
+    },
+    {
+     "claim": "Clozapine had begun to work just as the fever came.",
+     "chain": "Ten days of clozapine reaching 250 mg → antimanic effect emerging",
+     "mechanisms": [
+      "Dopamine",
+      "Serotonin"
+     ],
+     "latency_fit": "Fits",
+     "for": "Clozapine is antimanic and was at a working dose.",
+     "against": "It was stopped at the fever, yet she was well four days later.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "None in this patient."
+    }
+   ],
+   "related": [
+    {
+     "id": "zuschlag-2016",
+     "why": "Psychosis easing with high fever"
+    },
+    {
+     "id": "wagner-jauregg-1883",
+     "why": "Fever therapy's founding observation"
+    }
+   ]
+  },
+  {
+   "case_id": "ali-2015",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Recurrent depression has remissions."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Undated."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Depression worsened with Parkinson's; part may be Parkinson's-related."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Medications not described."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Major surgery with high hopes."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "A letter with one undated observation."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A short letter. Pallidal stimulation and mood is plausible, and her motor symptoms didn't improve, which argues against relief by mobility, but nothing is measured or dated.",
+   "hypotheses": [
+    {
+     "claim": "Stimulation spread to limbic pallidum improved mood.",
+     "chain": "GPi DBS → current into ventral (limbic) pallidum or connected circuits → mood circuitry modulated",
+     "mechanisms": [
+      "Stimulation of a circuit"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Mood improved while dyskinesia didn't, so not via motor relief.",
+     "against": "No detail.",
+     "confidence": "Low",
+     "uncertainty_driver": "No measures, dates or contact settings.",
+     "test": "Mood with stimulation switched off and on."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "brieler-2014",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Twenty-three years of consistent psychosis."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic and stable."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Consistent records since 1989."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Months of hospital and rehabilitation; family care at home."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Flat affect and slowed speech after a devastating injury."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Before-ratings are the mother's recall."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Decades of untreated florid psychosis largely gone after a devastating head injury, with no antipsychotic. Whether the injury cured the psychosis or flattened the man is the question; coherent speech argues for something more than blunting.",
+   "hypotheses": [
+    {
+     "claim": "Diffuse and frontal-temporal damage disconnected the networks generating delusions.",
+     "chain": "Diffuse axonal injury plus right temporal and left frontal damage → disconnection of salience and belief networks → delusions stop",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Delusions went while speech became more coherent; leucotomy-era parallels.",
+     "against": "Too diffuse to localise.",
+     "confidence": "Low",
+     "uncertainty_driver": "No lesion mapping.",
+     "test": "Lesion-network mapping of psychosis-remitting injuries."
+    },
+    {
+     "claim": "Global frontal injury blunted all output, delusional speech included.",
+     "chain": "Severe TBI → apathy and flattened affect → less spontaneous delusional talk",
+     "mechanisms": [
+      "Global suppression (sedation, apathy, cognitive loss)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Flat affect and speech delays.",
+     "against": "Speech became more coherent, not just sparser; he denied all symptoms.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No negative-symptom or cognitive rating.",
+     "test": "Negative-symptom and cognitive scales alongside SAPS."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "jawaid-2016",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Eighteen months, worsening."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Admitted at worst."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Typical schizophrenia."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Clozapine for two weeks, valproate and a benzodiazepine started the same day."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Post-ictal state and sedation."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No ratings; very short follow-up."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Overnight remission after a clozapine seizure, like ECT given by accident. Too short a follow-up, and too much happening on the same day, to call.",
+   "hypotheses": [
+    {
+     "claim": "The seizure acted as an ECT treatment on a brain primed by clozapine.",
+     "chain": "Generalised seizure → ECT-like network reset → rapid loss of psychotic preoccupation",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Change overnight; clozapine plus ECT is the standard rescue.",
+     "against": "Single seizures rarely do what an ECT course does.",
+     "confidence": "Low",
+     "uncertainty_driver": "Follow-up under two weeks.",
+     "test": "Psychosis ratings after single seizures in clozapine-treated patients."
+    }
+   ],
+   "related": [
+    {
+     "id": "felizardo-2023",
+     "why": "Delusional disorder remitting after clozapine seizures"
+    },
+    {
+     "id": "kim-2016",
+     "why": "Depression remitting after a seizure"
+    }
+   ]
+  },
+  {
+   "case_id": "donoghue-2015",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-17",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Daily outbursts for two years."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Steady baseline."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Well-documented trauma-related dysregulation."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Dexamethasone, propofol and surgery the first time; the second exposure was ketamine with sedation only."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Calmer but more affectionate and more open in therapy."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Staff knew he'd had a procedure; children get extra attention after surgery."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Staff and therapist reports, no scale."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Two separate 10 mg ketamine exposures, two windows of calm (13 and 8 days) in a boy with daily violent outbursts, and the first time he spoke about his abuse. Short-lived, but the repetition is what makes it.",
+   "hypotheses": [
+    {
+     "claim": "Ketamine opened a short plasticity window that eased fear-driven reactivity and let therapy reach the trauma.",
+     "chain": "Sub-anaesthetic NMDA blockade → glutamate surge, BDNF and synaptogenesis in prefrontal cortex → better top-down control of threat responses for days",
+     "mechanisms": [
+      "Glutamate",
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Fits",
+     "for": "Improvement starting within days, waning over one to two weeks, as in ketamine depression trials; repeated with ketamine alone.",
+     "against": "Ten milligrams is a small dose, even for a child.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No rating scale; two exposures only.",
+     "test": "Scheduled, rated ketamine doses with a sedation-only comparison."
+    }
+   ],
+   "related": []
   }
  ]
 }

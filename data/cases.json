@@ -10338,7 +10338,7 @@
   {
    "id": "ali-2015",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1a"
@@ -10407,7 +10407,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -10415,13 +10415,90 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Long, severe depression before; afterwards a single clinic observation with no date, scale or medication detail."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "N",
+      "U",
+      "Y",
+      "U",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "65-year-old woman",
+     "age": 65,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -50,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Major depression since childhood, worse after Parkinson's began 20 years ago; repeated admissions for depression and suicidal ideation (last 2012); several SSRIs and antipsychotics"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Bilateral globus pallidus internus DBS for dyskinesia"
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Neurology follow-up: mood much better, appetite and sleep back; dyskinesia little better, with stimulation complications",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "baseline_years": 50.0,
+    "follow_up_days": 182.625,
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 5,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -10516,7 +10593,7 @@
   {
    "id": "brieler-2014",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -10575,7 +10652,7 @@
     "links": []
    },
    "summary": "Positive symptoms of schizophrenia resolved after a traumatic brain injury.",
-   "caveat": "Letter; injury site and follow-up need the full text.",
+   "caveat": "His affect flattened and speech slowed, so diffuse frontal damage may have quietened everything, delusions included.",
    "tags": [
     "schizophrenia",
     "tbi"
@@ -10583,7 +10660,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "novel",
     "note": "",
@@ -10591,13 +10668,137 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Florid psychosis at every visit for four years; afterwards SAPS items by interview, with the mother's retrospective rating of before (persecution 5 → 0, derailment 5 → 2); no antipsychotic, only levetiracetam."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "51-year-old man",
+     "age": 51,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -23,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Schizophrenia in records since 1989: persecutory and referential delusions, disorganised speech, command hallucinations in exacerbations"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -4,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Seen in primary care 2008–2012: floridly psychotic at every visit, refused antipsychotics",
+       "to": -0.1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Struck by a car: diffuse axonal injury, subarachnoid blood, bilateral subdurals; right decompressive craniectomy"
+      },
+      {
+       "kind": "assessment",
+       "t": 9,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Cranioplasty; MRI encephalomalacia mainly right temporal and left frontal"
+      },
+      {
+       "kind": "first_change",
+       "t": 10,
+       "unit": "months",
+       "precision": "at most",
+       "label": "First clinic visit after: delusions and paranoia gone, speech more coherent; flat affect, wheelchair-bound; only levetiracetam",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "SAPS persecutory delusions (mother)",
+         "value": 0,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 12,
+       "unit": "months",
+       "precision": "approx",
+       "label": "No hallucinations or referential delusions since the accident by family report",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Injury",
+    "side": "Bilateral",
+    "regions": [
+     "Temporal, lateral",
+     "Frontal, other",
+     "Diffuse or multifocal"
+    ],
+    "specific": "Diffuse axonal injury; encephalomalacia mainly right temporal and left frontal after right decompressive craniectomy",
+    "aetiology": "Trauma",
+    "imaging": "MRI and CT",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 304.375,
+    "latency_band": "Over 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 23.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -12866,7 +13067,7 @@
   {
    "id": "jawaid-2016",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -12920,7 +13121,7 @@
     "links": []
    },
    "summary": "Treatment-resistant schizophrenia remitted only after clozapine caused a seizure.",
-   "caveat": "Clozapine response can be delayed.",
+   "caveat": "Clozapine had been building for two weeks, and follow-up was under two weeks, on clozapine and valproate.",
    "tags": [
     "clozapine",
     "schizophrenia",
@@ -12929,7 +13130,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "known",
     "note": "Seizures relieving psychosis is the principle of convulsive therapy (Meduna, 1934).",
@@ -12937,20 +13138,130 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "That seizures help schizophrenia is the premise of ECT."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Overnight remission after the seizure; no scale; two weeks of clozapine, a head injury, IV valproate and midazolam all in the same 24 hours; follow-up under two weeks."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "22-year-old woman",
+     "age": 22,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -18,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Schizophrenia: voices, mutism, aggression, persecutory delusions, thought block"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -4,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Risperidone 6 mg for 6 weeks, then olanzapine to 20 mg for 6 weeks: worsening",
+       "to": -1
+      },
+      {
+       "kind": "cointervention",
+       "t": -14,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Admitted; clozapine titrated to 175 mg; sedation and drooling"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Fall with head injury, myoclonus, then a generalised seizure during IV divalproex (2 g); midazolam; CT normal; clozapine stopped for a day"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "No preoccupation, thought block or delusions; denies psychotic symptoms; back to her old way of relating, says her mother",
+       "state": "Remitted"
+      },
+      {
+       "kind": "cointervention",
+       "t": 2,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Clozapine restarted at 25 mg with divalproex 500 mg"
+      },
+      {
+       "kind": "follow_up",
+       "t": 12,
+       "unit": "days",
+       "precision": "exact",
+       "label": "One week after discharge: no positive or negative symptoms; sedated",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "baseline_years": 1.5,
+    "follow_up_days": 12,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
    "id": "donoghue-2015",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1a"
    ],
@@ -12995,7 +13306,7 @@
     "resolution": "Temporary",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "None reported"
+    "reversal": "Natural off-on"
    },
    "downstream": {
     "level": 1,
@@ -13013,7 +13324,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "Ketamine's antidepressant effect in adults was known by 2015; the paediatric PTSD effect was not.",
@@ -13021,13 +13332,132 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "Outbursts and restraints documented by residential staff before and after; improvement after each of two ketamine exposures, ending after 13 and 8 days; other anaesthetic drugs and dexamethasone came with the first."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "7-year-old boy",
+     "age": 7,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "PTSD after severe abuse at 5, reactive attachment and disruptive behaviour; outbursts several times a day often needing restraint; residential care"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Antidepressants, stimulants, alpha-2 agonists, antihistamines, mood stabilisers: no substantial improvement",
+       "to": -0.1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Tonsillectomy under anaesthesia with IV ketamine 10 mg (also propofol, nitrous oxide, dexamethasone 12 mg)"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Aggression much less; no restraints that week; more affectionate; first time talking about the abuse in therapy",
+       "state": "Partial"
+      },
+      {
+       "kind": "relapse",
+       "t": 13,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Back to baseline outbursts",
+       "state": "Unchanged"
+      },
+      {
+       "kind": "exposure_restart",
+       "t": 3,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Sedated MRI with IV ketamine 10 mg"
+      },
+      {
+       "kind": "first_change",
+       "t": 92,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Again less aggression, better regulation, progress in therapy",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 98,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Improvement lasted 8 days, then baseline returned",
+       "state": "Unchanged"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 2,
+    "latency_band": "1-13 days",
+    "baseline_years": 2.0,
+    "follow_up_days": 98,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -13115,7 +13545,7 @@
   {
    "id": "setsaas-2014",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -13158,7 +13588,7 @@
     "intent": "Injury or illness"
    },
    "outcome": {
-    "resolution": "Complete",
+    "resolution": "Temporary",
     "time_to_resolution": null,
     "follow_up": null,
     "reversal": "None reported"
@@ -13169,7 +13599,7 @@
     "links": []
    },
    "summary": "Treatment-resistant mania appeared to resolve as a result of recurrent fevers.",
-   "caveat": "Mania is episodic, so spontaneous resolution is a real alternative.",
+   "caveat": "The mania was three weeks old, she was delirious during the fever, and she relapsed within three weeks.",
    "tags": [
     "fever",
     "immune",
@@ -13178,7 +13608,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
    "era": {
     "label": "emerging",
     "note": "Echoes fever therapy (Wagner-Jauregg).",
@@ -13186,13 +13616,139 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-17",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "YMRS 37 before; mania gone after four days of fever, no repeat rating; clozapine had just been given for 10 days; relapse within weeks."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "38-year-old woman",
+     "age": 38,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -15,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Bipolar disorder; previous manias resistant to lithium, valproate and many antipsychotics, usually needing ECT"
+      },
+      {
+       "kind": "assessment",
+       "t": -24,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Involuntary admission with psychotic mania after sleep loss, on valproate and lamotrigine; declined ECT",
+       "scores": [
+        {
+         "scale": "YMRS",
+         "value": 37,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -24,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Valproate raised to 2,400 mg: no effect",
+       "to": -10
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -10,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Clozapine 50 → 250 mg over a week: slight sedation, mania unchanged",
+       "to": -1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Sudden spiking fever to 40.2 °C with delirium; clozapine and valproate stopped; cultures negative (probably clozapine fever)"
+      },
+      {
+       "kind": "best_response",
+       "t": 4,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Back on the psychiatric ward without any manic symptoms; valproate and lamotrigine restarted",
+       "state": "Remitted"
+      },
+      {
+       "kind": "relapse",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Readmitted with a mixed episode after about 2 weeks of stability",
+       "state": "Unchanged"
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Mixed episode ended only with 10 ECT treatments 5 months later",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 4,
+    "latency_band": "1-13 days",
+    "baseline_years": 15.0,
+    "follow_up_days": 182.625,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
