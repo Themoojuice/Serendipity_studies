@@ -1,7 +1,7 @@
 {
  "library": "Serendipity Case Library",
  "schema_version": "1.4",
- "updated": "2026-11-17",
+ "updated": "2026-11-20",
  "unit_of_record": "One published study (a paper). n_patients counts patients within it; same_patient_as links papers describing the same patient.",
  "inclusion_criteria": [
   "A serious psychiatric syndrome resolved or substantially improved.",
@@ -1227,7 +1227,7 @@
     "resolution": "Partial",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "None reported"
+    "reversal": "Natural off-on"
    },
    "downstream": {
     "level": 2,
@@ -1251,7 +1251,7 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-20: full text read (Psychiatry Online full text through CKN)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -1259,13 +1259,116 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "Lifelong OCD before; relief within hours of each dose, wearing off over 4–5 days and returning with the next, repeatedly; self-reported, with cannabis and alcohol use alongside."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Mr A, 34-year-old man",
+     "age": 20,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -14,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Disabling OCD from age 6: contamination, washing (17 latherings), counting, ordering; alcohol and cannabis eased anxiety but not OCD; cocaine worsened it"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "First psilocybin mushrooms, recreationally, at 20; 2 g twice weekly by 21"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "hours",
+       "precision": "exact",
+       "label": "During intoxication contamination fears gone and rituals stopped",
+       "state": "Remitted"
+      },
+      {
+       "kind": "relapse",
+       "t": 5,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Relief lasted 4–5 days, then symptoms returned gradually",
+       "state": "Unchanged"
+      },
+      {
+       "kind": "exposure_restart",
+       "t": 7,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Each further dose brought immediate remission again (peyote did the same on five occasions)"
+      },
+      {
+       "kind": "follow_up",
+       "t": 14,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Daily psilocybin for 4 years with continued benefit despite tolerance to the psychedelic effects; later stopped (outcome after on the next page of the letter, not in our copy)",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0.042,
+    "latency_band": "Under a day",
+    "baseline_years": 14.0,
+    "follow_up_days": 5113.5,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -11698,7 +11801,7 @@
   {
    "id": "sumner-2017",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1a"
@@ -11767,7 +11870,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "verified": "2026-11-20: full text read (Psychiatry Online full text through CKN)",
    "era": {
     "label": "novel",
     "note": "",
@@ -11775,13 +11878,101 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Psychosis before and after not described or measured; the evidence is a lower antipsychotic requirement in a profoundly amnesic, disoriented man."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "N",
+      "Y",
+      "Y",
+      "NA",
+      "U",
+      "NA",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "40-year-old man",
+     "age": 40,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -10,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Chronic schizophrenia on a regular antipsychotic dose (premorbid)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Bilateral thalamic infarcts (artery of Percheron) and right superior cerebellar infarct from vertebral dissection"
+      },
+      {
+       "kind": "assessment",
+       "t": 3,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Profound anterograde and retrograde amnesia, disoriented; antipsychotic needed is a quarter of the premorbid dose",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Bilateral",
+    "regions": [
+     "Thalamus",
+     "Cerebellum"
+    ],
+    "specific": "Bilateral paramedian thalamic infarcts (artery of Percheron) and right superior cerebellar infarct",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "MRI",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "baseline_years": 10.0,
+    "timeline_reversal": "None reported",
+    "attribution_score": 0,
+    "attribution_grade": "D",
+    "jbi_score": 4,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -17341,8 +17532,8 @@
   {
    "id": "freeman-2001",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
+   "status": "Included",
+   "tier": "C",
    "collections": [
     "phase1b"
    ],
@@ -17406,7 +17597,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-20: full text read (Psychiatry Online full text through CKN)",
    "era": {
     "label": "emerging",
     "note": "Fits later lesion work: Koenigs 2008 found vmPFC and amygdala damage protected Vietnam veterans from PTSD.",
@@ -17414,13 +17605,113 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Pre-stroke symptoms described by the family in retrospect; first assessed 3 years after the infarct; re-experiencing gone but arousal persists; autobiographical memory impaired."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "NA",
+      "Y",
+      "NA",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Vietnam veteran, 48 at assessment",
+     "age": 45,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -26,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Combat PTSD since the war: nightmares, intrusive recollections, avoidance, irritability, insomnia (family history)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Right frontal infarct at 45: headache, transient left weakness"
+      },
+      {
+       "kind": "assessment",
+       "t": 3,
+       "unit": "years",
+       "precision": "exact",
+       "label": "No nightmares, intrusions or avoidance; arousal and numbing persist; poor remote autobiographical memory; right frontal hypoperfusion on SPECT",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "DTS intrusion",
+         "value": 0,
+         "higher_is_better": false
+        },
+        {
+         "scale": "DTS hyperarousal",
+         "value": 29,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Right",
+    "regions": [
+     "Frontal, other",
+     "Prefrontal, dorsolateral"
+    ],
+    "specific": "Right frontal infarct on CT; 43% lower right frontal blood flow on SPECT",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "baseline_years": 26.0,
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -18104,8 +18395,8 @@
   {
    "id": "behar-1999",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1b"
    ],
@@ -18168,7 +18459,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-20: full text read (Psychiatry Online full text through CKN)",
    "era": {
     "label": "emerging",
     "note": "Joins older reports of psychosis remitting after fever, infection or coma.",
@@ -18176,20 +18467,116 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Eleven years of treatment-resistant psychosis; gone as the post-coma delirium cleared; off antipsychotics for 18 months; no scale."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "24-year-old woman",
+     "age": 24,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -11,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Severe hallucinations (auditory, visual, somatic), command voices to kill, lycanthropic experiences from age 13 after a minor head injury; 3–4 admissions a year"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -8,
+       "unit": "years",
+       "precision": "approx",
+       "label": "High-dose neuroleptics, clozapine (seizures, no response), valproate, five ECT courses: little benefit",
+       "to": -0.1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Found unconscious after a likely seizure with aspiration: septic shock, acidosis, hypoglycaemia, hypothermia; days of coma"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Mild delirium cleared; psychosis gone, off psychotropics (carbamazepine for seizures, occasional lorazepam)",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 18,
+       "unit": "months",
+       "precision": "exact",
+       "label": "No recurrence; working, studying, engaged",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 30.438,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 11.0,
+    "follow_up_days": 547.875,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
    "id": "galati-2013",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1b"
    ],
@@ -18252,7 +18639,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-20: full text read (Psychiatry Online full text through CKN)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -18260,13 +18647,120 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Residual symptoms on a depot before; remission in hospital after the poisoning, held 2 years with no antipsychotic; no scale."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Mrs R, 50-year-old woman",
+     "age": 50,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -20,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Paranoid schizophrenia with repeated admissions for paranoia, complex voices and religious delusions"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Haloperidol decanoate 200 mg every 4 weeks: residual minor delusions and occasional voices",
+       "to": -0.1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Carbon monoxide poisoning (December 2008): anoxic lesions of both globi pallidi on MRI"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "During the admission relating better, no paranoia or delusions; no antipsychotic prescribed",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 2,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Completely stable, full sustained remission off antipsychotics",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Bilateral",
+    "regions": [
+     "Globus pallidus"
+    ],
+    "specific": "Bilateral pallidal anoxic lesions after carbon monoxide poisoning (MRI before and after in figure)",
+    "aetiology": "Hypoxic-ischaemic",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 14,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 20.0,
+    "follow_up_days": 730.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {

@@ -1,7 +1,7 @@
 {
  "layer": "Hypotheses: our reading of what happened in each case",
  "schema_version": "1.0",
- "updated": "2026-11-17",
+ "updated": "2026-11-20",
  "rules": [
   "This file is ours, not the papers'. Facts about a case live in data/cases.json; if hypothesising turns up a factual error, fix the case record there.",
   "Every entry rates all seven boring explanations before proposing a mechanism. A case beats the null only when none is Likely.",
@@ -6193,6 +6193,334 @@
     }
    ],
    "related": []
+  },
+  {
+   "case_id": "galati-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Residual-phase schizophrenia can quieten, though rarely enough to stop antipsychotics."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Stable residual symptoms."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-standing schizophrenia."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Antipsychotics stopped."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Pallidal lesions can cause apathy; not assessed."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "A letter without measures."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Bilateral pallidal lesions from carbon monoxide, then two years well off antipsychotics. Pairs with Moussawi 2016 (pallidal lesions ending addiction) and the pallidum's place in the hippocampus-pallidum-dopamine model of psychosis.",
+   "hypotheses": [
+    {
+     "claim": "Destroying the ventral pallidum removed its drive on dopamine neurons, which the hippocampal model of psychosis puts in overdrive.",
+     "chain": "Hippocampal overactivity → pallidal inhibition of VTA released → excess tonic dopamine neuron population → aberrant salience; pallidal lesion breaks the loop",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Remission without antipsychotics; Grace's model puts the pallidum at the centre.",
+     "against": "Apathy unmeasured; one case.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No ratings or apathy measure.",
+     "test": "Psychosis outcomes in schizophrenia patients with pallidal lesions of any cause."
+    }
+   ],
+   "related": [
+    {
+     "id": "moussawi-2016",
+     "why": "Pallidal hypoxic lesions ending addiction"
+    },
+    {
+     "id": "baek-2022",
+     "why": "Carbon monoxide and voices gone"
+    }
+   ]
+  },
+  {
+   "case_id": "behar-1999",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Eleven years, unrelenting."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "A post-traumatic or epileptic psychosis rather than schizophrenia."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Antipsychotics stopped; carbamazepine continued."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "She went back to demanding work and study."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Letter-level detail."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Eleven years of violent, treatment-resistant psychosis gone after septic coma, with the patient working and studying 18 months later off antipsychotics. The author's reading, a second brain insult cancelling the first, is speculative but the outcome is not.",
+   "hypotheses": [
+    {
+     "claim": "Coma with hypoglycaemia, hypoxia and septic shock reset the networks sustaining the psychosis, like insulin coma therapy.",
+     "chain": "Prolonged coma with metabolic insult → widespread network disruption → pathological post-traumatic network fails to re-form",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)",
+      "Metabolic state (ketosis, insulin, glucose)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Sakel-like constellation: hypoglycaemia and coma; immediate and durable.",
+     "against": "Can't separate the components.",
+     "confidence": "Low",
+     "uncertainty_driver": "Single letter.",
+     "test": "None now."
+    },
+    {
+     "claim": "The psychosis was seizure-related, and better seizure control after the event removed it.",
+     "chain": "Post-traumatic epilepsy → interictal psychosis → carbamazepine and fewer seizures → remission",
+     "mechanisms": [
+      "Ion channels and excitability"
+     ],
+     "latency_fit": "Fits",
+     "for": "She had seizures; carbamazepine continued.",
+     "against": "Valproate before hadn't helped.",
+     "confidence": "Low",
+     "uncertainty_driver": "As above.",
+     "test": "EEG before and after."
+    }
+   ],
+   "related": [
+    {
+     "id": "taylor-1978",
+     "why": "Overdose-induced coma clearing schizophrenia"
+    },
+    {
+     "id": "vieweg-1985",
+     "why": "Accidental coma easing psychosis"
+    }
+   ]
+  },
+  {
+   "case_id": "freeman-2001",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Re-experiencing can fade over decades."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic combat PTSD."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "None described."
+    },
+    "nonspecific": {
+     "rating": "Likely",
+     "why": "Remote autobiographical memory was impaired; losing the memories removes what is re-experienced."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Before-state from family recall."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Re-experiencing vanished after a right frontal stroke while arousal stayed. The selective pattern fits a memory-retrieval account, which is also the boring explanation: he can't retrieve the war well enough to relive it.",
+   "hypotheses": [
+    {
+     "claim": "Right frontal damage impaired retrieval of autobiographical trauma memories, so nothing came back to be re-experienced.",
+     "chain": "Right prefrontal infarct → impaired remote autobiographical retrieval → no intrusions or nightmares; arousal circuits untouched → hyperarousal persists",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Selective loss of re-experiencing with poor remote autobiographical memory.",
+     "against": "Before-state retrospective.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No measures before the stroke.",
+     "test": "PTSD symptom clusters after frontal lesions in prospective veteran cohorts."
+    }
+   ],
+   "related": [
+    {
+     "id": "bijanki-2020",
+     "why": "Right amygdala ablation easing PTSD"
+    },
+    {
+     "id": "ohmura-2025",
+     "why": "Amnesia and loss of a psychiatric syndrome"
+    }
+   ]
+  },
+  {
+   "case_id": "sumner-2017",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Can't judge",
+     "why": "Nothing on the course."
+    },
+    "regression": {
+     "rating": "Can't judge",
+     "why": "No baseline."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Known schizophrenia."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Long inpatient stay."
+    },
+    "nonspecific": {
+     "rating": "Likely",
+     "why": "Profound amnesia and disorientation could reduce psychotic expression and the dose needed for behaviour."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "A meeting abstract; dose, not symptoms, is the outcome."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A meeting abstract: a quarter of the antipsychotic dose after bithalamic strokes. With dense amnesia and disorientation, global suppression is the likely reading, though the mediodorsal thalamus is part of the circuit psychosis models implicate.",
+   "hypotheses": [
+    {
+     "claim": "Thalamic damage cut the thalamocortical relay implicated in psychosis.",
+     "chain": "Bilateral mediodorsal thalamic infarcts → reduced thalamocortical drive → fewer positive symptoms",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Lower dose needed.",
+     "against": "Amnesia and confusion confound.",
+     "confidence": "Low",
+     "uncertainty_driver": "No symptom data.",
+     "test": "Symptom ratings in schizophrenia after thalamic strokes."
+    }
+   ],
+   "related": [
+    {
+     "id": "ohmura-2025",
+     "why": "Amnesia and loss of a psychiatric syndrome"
+    }
+   ]
+  },
+  {
+   "case_id": "moreno-delgado-1997",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Lifelong, unchanged by other drugs."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic OCD."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Alcohol and cannabis, though these didn't help OCD before."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Intoxication distracts from rituals, though relief outlasted it by days."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "He came to expect it."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Retrospective self-report."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "The case that preceded the psilocybin-for-OCD trials: relief within hours of each dose, wearing off over days, back with the next, over years. The repeated within-person pattern is the evidence.",
+   "hypotheses": [
+    {
+     "claim": "Serotonin 5-HT2A agonism directly and acutely damped obsessional circuitry.",
+     "chain": "Psilocin → 5-HT2A activation in orbitofrontal-striatal circuits → loosening of fixed threat predictions → rituals unnecessary for days",
+     "mechanisms": [
+      "Serotonin",
+      "Suggestion and belief update"
+     ],
+     "latency_fit": "Fits",
+     "for": "Effect tracks dosing, outlasts intoxication by days, persists despite tolerance to perceptual effects.",
+     "against": "Self-report.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No ratings.",
+     "test": "Moreno 2006 open trial and later controlled psilocybin trials in OCD."
+    }
+   ],
+   "related": [
+    {
+     "id": "leonard-rapoport-1987",
+     "why": "LSD and psilocin relieving OCD"
+    }
+   ]
   }
  ]
 }

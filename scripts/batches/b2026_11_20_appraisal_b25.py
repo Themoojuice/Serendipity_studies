@@ -1,0 +1,160 @@
+"""Full-text appraisal, batch 25 (2026-11-20, Brendan signed in to Psychiatry Online through CKN).
+galati-2013, behar-1999, freeman-2001, sumner-2017 (meeting abstract) and moreno-delgado-1997 (AJP letter PDF).
+No access through CKN: delisle-1991, leonard-rapoport-1987, levine-1996 (older AJP letters).
+"""
+import sys
+sys.path.insert(0, "scripts")
+from lib_code import Batch, ev, track, T, A, J, N, H  # noqa: E402
+
+b = Batch("2026-11-20", source="Psychiatry Online full text through CKN")
+
+b.code("galati-2013",
+       tracks=[track("Mrs R, 50-year-old woman", 50, "F", [
+           ev("onset", -20, "years", "Paranoid schizophrenia with repeated admissions for paranoia, complex voices and religious delusions", "at least"),
+           ev("treatment_failed", -2, "years", "Haloperidol decanoate 200 mg every 4 weeks: residual minor delusions and occasional voices", "approx", to=-0.1),
+           ev("exposure_start", 0, "days", "Carbon monoxide poisoning (December 2008): anoxic lesions of both globi pallidi on MRI"),
+           ev("first_change", 2, "weeks", "During the admission relating better, no paranoia or delusions; no antipsychotic prescribed", "approx", state="Remitted"),
+           ev("follow_up", 2, "years", "Completely stable, full sustained remission off antipsychotics", state="Remitted"),
+       ])],
+       unexpectedness=T(),
+       attribution=A(1, 0, 1, 0, 1, "Residual symptoms on a depot before; remission in hospital after the poisoning, held 2 years with no antipsychotic; no scale."),
+       jbi=J("YYYYYYUY"),
+       lesion={"kind": "Lesion", "side": "Bilateral", "regions": ["Globus pallidus"], "specific": "Bilateral pallidal anoxic lesions after carbon monoxide poisoning (MRI before and after in figure)",
+               "aetiology": "Hypoxic-ischaemic", "imaging": "MRI", "mappable": "Figure"})
+b.reading("galati-2013",
+          nulls=N(natural_history=("Possible", "Residual-phase schizophrenia can quieten, though rarely enough to stop antipsychotics."),
+                  regression=("Unlikely", "Stable residual symptoms."),
+                  misdiagnosis=("Unlikely", "Long-standing schizophrenia."),
+                  cointervention=("Unlikely", "Antipsychotics stopped."),
+                  nonspecific=("Possible", "Pallidal lesions can cause apathy; not assessed."),
+                  expectancy=("Unlikely", "None."),
+                  reporting=("Possible", "A letter without measures.")),
+          verdict="Beats the null",
+          note="Bilateral pallidal lesions from carbon monoxide, then two years well off antipsychotics. Pairs with Moussawi 2016 (pallidal lesions ending addiction) and the pallidum's place in the hippocampus-pallidum-dopamine model of psychosis.",
+          hyps=[H("Destroying the ventral pallidum removed its drive on dopamine neurons, which the hippocampal model of psychosis puts in overdrive.",
+                  "Hippocampal overactivity → pallidal inhibition of VTA released → excess tonic dopamine neuron population → aberrant salience; pallidal lesion breaks the loop",
+                  ["Lesion disconnection", "Dopamine"], "Fits",
+                  "Remission without antipsychotics; Grace's model puts the pallidum at the centre.",
+                  "Apathy unmeasured; one case.", "Moderate", "No ratings or apathy measure.",
+                  "Psychosis outcomes in schizophrenia patients with pallidal lesions of any cause.")],
+          related=[("moussawi-2016", "Pallidal hypoxic lesions ending addiction"), ("baek-2022", "Carbon monoxide and voices gone")])
+
+b.code("behar-1999",
+       tracks=[track("24-year-old woman", 24, "F", [
+           ev("onset", -11, "years", "Severe hallucinations (auditory, visual, somatic), command voices to kill, lycanthropic experiences from age 13 after a minor head injury; 3–4 admissions a year", "approx"),
+           ev("treatment_failed", -8, "years", "High-dose neuroleptics, clozapine (seizures, no response), valproate, five ECT courses: little benefit", "approx", to=-0.1),
+           ev("exposure_start", 0, "days", "Found unconscious after a likely seizure with aspiration: septic shock, acidosis, hypoglycaemia, hypothermia; days of coma"),
+           ev("best_response", 1, "months", "Mild delirium cleared; psychosis gone, off psychotropics (carbamazepine for seizures, occasional lorazepam)", "approx", state="Remitted"),
+           ev("follow_up", 18, "months", "No recurrence; working, studying, engaged", state="Remitted"),
+       ])],
+       unexpectedness=T(),
+       attribution=A(1, 0, 1, 0, 1, "Eleven years of treatment-resistant psychosis; gone as the post-coma delirium cleared; off antipsychotics for 18 months; no scale."),
+       jbi=J("YYYYYYUY"))
+b.reading("behar-1999",
+          nulls=N(natural_history=("Unlikely", "Eleven years, unrelenting."),
+                  regression=("Unlikely", "Chronic."),
+                  misdiagnosis=("Possible", "A post-traumatic or epileptic psychosis rather than schizophrenia."),
+                  cointervention=("Unlikely", "Antipsychotics stopped; carbamazepine continued."),
+                  nonspecific=("Unlikely", "She went back to demanding work and study."),
+                  expectancy=("Unlikely", "None."),
+                  reporting=("Possible", "Letter-level detail.")),
+          verdict="Beats the null",
+          note="Eleven years of violent, treatment-resistant psychosis gone after septic coma, with the patient working and studying 18 months later off antipsychotics. The author's reading, a second brain insult cancelling the first, is speculative but the outcome is not.",
+          hyps=[H("Coma with hypoglycaemia, hypoxia and septic shock reset the networks sustaining the psychosis, like insulin coma therapy.",
+                  "Prolonged coma with metabolic insult → widespread network disruption → pathological post-traumatic network fails to re-form",
+                  ["Network reset (seizure, coma, anaesthesia)", "Metabolic state (ketosis, insulin, glucose)"], "Fits",
+                  "Sakel-like constellation: hypoglycaemia and coma; immediate and durable.",
+                  "Can't separate the components.", "Low", "Single letter.", "None now."),
+                H("The psychosis was seizure-related, and better seizure control after the event removed it.",
+                  "Post-traumatic epilepsy → interictal psychosis → carbamazepine and fewer seizures → remission",
+                  ["Ion channels and excitability"], "Fits", "She had seizures; carbamazepine continued.", "Valproate before hadn't helped.",
+                  "Low", "As above.", "EEG before and after.")],
+          related=[("taylor-1978", "Overdose-induced coma clearing schizophrenia"), ("vieweg-1985", "Accidental coma easing psychosis")])
+
+b.code("freeman-2001",
+       tracks=[track("Vietnam veteran, 48 at assessment", 45, "M", [
+           ev("onset", -26, "years", "Combat PTSD since the war: nightmares, intrusive recollections, avoidance, irritability, insomnia (family history)", "approx"),
+           ev("exposure_start", 0, "days", "Right frontal infarct at 45: headache, transient left weakness"),
+           ev("assessment", 3, "years", "No nightmares, intrusions or avoidance; arousal and numbing persist; poor remote autobiographical memory; right frontal hypoperfusion on SPECT", state="Partial",
+              scores=[{"scale": "DTS intrusion", "value": 0, "higher_is_better": False}, {"scale": "DTS hyperarousal", "value": 29, "higher_is_better": False}]),
+       ])],
+       unexpectedness=T(),
+       attribution=A(1, 0, 0, 0, 0, "Pre-stroke symptoms described by the family in retrospect; first assessed 3 years after the infarct; re-experiencing gone but arousal persists; autobiographical memory impaired."),
+       jbi=J("YYYYAYAY"),
+       lesion={"kind": "Lesion", "side": "Right", "regions": ["Frontal, other", "Prefrontal, dorsolateral"], "specific": "Right frontal infarct on CT; 43% lower right frontal blood flow on SPECT",
+               "aetiology": "Ischaemic stroke", "imaging": "CT", "mappable": "Figure"})
+b.reading("freeman-2001",
+          nulls=N(natural_history=("Possible", "Re-experiencing can fade over decades."),
+                  regression=("Unlikely", "Chronic."),
+                  misdiagnosis=("Unlikely", "Classic combat PTSD."),
+                  cointervention=("Unlikely", "None described."),
+                  nonspecific=("Likely", "Remote autobiographical memory was impaired; losing the memories removes what is re-experienced."),
+                  expectancy=("Unlikely", "None."),
+                  reporting=("Possible", "Before-state from family recall.")),
+          verdict="Doesn't beat the null",
+          note="Re-experiencing vanished after a right frontal stroke while arousal stayed. The selective pattern fits a memory-retrieval account, which is also the boring explanation: he can't retrieve the war well enough to relive it.",
+          hyps=[H("Right frontal damage impaired retrieval of autobiographical trauma memories, so nothing came back to be re-experienced.",
+                  "Right prefrontal infarct → impaired remote autobiographical retrieval → no intrusions or nightmares; arousal circuits untouched → hyperarousal persists",
+                  ["Lesion disconnection"], "Fits",
+                  "Selective loss of re-experiencing with poor remote autobiographical memory.",
+                  "Before-state retrospective.", "Moderate", "No measures before the stroke.", "PTSD symptom clusters after frontal lesions in prospective veteran cohorts.")],
+          related=[("bijanki-2020", "Right amygdala ablation easing PTSD"), ("ohmura-2025", "Amnesia and loss of a psychiatric syndrome")])
+
+b.code("sumner-2017",
+       tracks=[track("40-year-old man", 40, "M", [
+           ev("onset", -10, "years", "Chronic schizophrenia on a regular antipsychotic dose (premorbid)", "at least"),
+           ev("exposure_start", 0, "days", "Bilateral thalamic infarcts (artery of Percheron) and right superior cerebellar infarct from vertebral dissection"),
+           ev("assessment", 3, "months", "Profound anterograde and retrograde amnesia, disoriented; antipsychotic needed is a quarter of the premorbid dose", state="Partial"),
+       ])],
+       unexpectedness=T(),
+       attribution=A(0, 0, 0, 0, 0, "Psychosis before and after not described or measured; the evidence is a lower antipsychotic requirement in a profoundly amnesic, disoriented man."),
+       jbi=J("YNYYAUAY"),
+       lesion={"kind": "Lesion", "side": "Bilateral", "regions": ["Thalamus", "Cerebellum"], "specific": "Bilateral paramedian thalamic infarcts (artery of Percheron) and right superior cerebellar infarct",
+               "aetiology": "Ischaemic stroke", "imaging": "MRI", "mappable": "Description only"})
+b.reading("sumner-2017",
+          nulls=N(natural_history=("Can't judge", "Nothing on the course."),
+                  regression=("Can't judge", "No baseline."),
+                  misdiagnosis=("Unlikely", "Known schizophrenia."),
+                  cointervention=("Possible", "Long inpatient stay."),
+                  nonspecific=("Likely", "Profound amnesia and disorientation could reduce psychotic expression and the dose needed for behaviour."),
+                  expectancy=("Unlikely", "None."),
+                  reporting=("Likely", "A meeting abstract; dose, not symptoms, is the outcome.")),
+          verdict="Doesn't beat the null",
+          note="A meeting abstract: a quarter of the antipsychotic dose after bithalamic strokes. With dense amnesia and disorientation, global suppression is the likely reading, though the mediodorsal thalamus is part of the circuit psychosis models implicate.",
+          hyps=[H("Thalamic damage cut the thalamocortical relay implicated in psychosis.",
+                  "Bilateral mediodorsal thalamic infarcts → reduced thalamocortical drive → fewer positive symptoms",
+                  ["Lesion disconnection"], "Can't judge", "Lower dose needed.", "Amnesia and confusion confound.",
+                  "Low", "No symptom data.", "Symptom ratings in schizophrenia after thalamic strokes.")],
+          related=[("ohmura-2025", "Amnesia and loss of a psychiatric syndrome")])
+
+b.code("moreno-delgado-1997",
+       tracks=[track("Mr A, 34-year-old man", 20, "M", [
+           ev("onset", -14, "years", "Disabling OCD from age 6: contamination, washing (17 latherings), counting, ordering; alcohol and cannabis eased anxiety but not OCD; cocaine worsened it", "approx"),
+           ev("exposure_start", 0, "days", "First psilocybin mushrooms, recreationally, at 20; 2 g twice weekly by 21"),
+           ev("first_change", 1, "hours", "During intoxication contamination fears gone and rituals stopped", state="Remitted"),
+           ev("relapse", 5, "days", "Relief lasted 4–5 days, then symptoms returned gradually", "approx", state="Unchanged"),
+           ev("exposure_restart", 7, "days", "Each further dose brought immediate remission again (peyote did the same on five occasions)", "approx"),
+           ev("follow_up", 14, "years", "Daily psilocybin for 4 years with continued benefit despite tolerance to the psychedelic effects; later stopped (outcome after on the next page of the letter, not in our copy)", "approx", state="Remitted"),
+       ])],
+       unexpectedness=T(),
+       attribution=A(1, 0, 1, 2, 0, "Lifelong OCD before; relief within hours of each dose, wearing off over 4–5 days and returning with the next, repeatedly; self-reported, with cannabis and alcohol use alongside."),
+       jbi=J("YYYUYYYY"),
+       fix={"outcome.reversal": "Natural off-on"})
+b.reading("moreno-delgado-1997",
+          nulls=N(natural_history=("Unlikely", "Lifelong, unchanged by other drugs."),
+                  regression=("Unlikely", "Chronic."),
+                  misdiagnosis=("Unlikely", "Classic OCD."),
+                  cointervention=("Possible", "Alcohol and cannabis, though these didn't help OCD before."),
+                  nonspecific=("Possible", "Intoxication distracts from rituals, though relief outlasted it by days."),
+                  expectancy=("Possible", "He came to expect it."),
+                  reporting=("Possible", "Retrospective self-report.")),
+          verdict="Beats the null",
+          note="The case that preceded the psilocybin-for-OCD trials: relief within hours of each dose, wearing off over days, back with the next, over years. The repeated within-person pattern is the evidence.",
+          hyps=[H("Serotonin 5-HT2A agonism directly and acutely damped obsessional circuitry.",
+                  "Psilocin → 5-HT2A activation in orbitofrontal-striatal circuits → loosening of fixed threat predictions → rituals unnecessary for days",
+                  ["Serotonin", "Suggestion and belief update"], "Fits",
+                  "Effect tracks dosing, outlasts intoxication by days, persists despite tolerance to perceptual effects.",
+                  "Self-report.", "Moderate", "No ratings.", "Moreno 2006 open trial and later controlled psilocybin trials in OCD.")],
+          related=[("leonard-rapoport-1987", "LSD and psilocin relieving OCD")])
+
+b.save()

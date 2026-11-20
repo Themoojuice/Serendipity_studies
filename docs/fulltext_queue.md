@@ -1,6 +1,6 @@
 # Full texts still needed
 
-136 of 223 cases aren't fully coded yet because their full text couldn't be reached from this session (written by `scripts/make_fulltext_queue.py`). Each needs a read and a coding batch (`protocol/SCHEMA.md` §7). Easy wins first: free copies that only a bot check stood in front of.
+131 of 223 cases aren't fully coded yet because their full text couldn't be reached from this session (written by `scripts/make_fulltext_queue.py`). Each needs a read and a coding batch (`protocol/SCHEMA.md` §7). Easy wins first: free copies that only a bot check stood in front of.
 
 ## Easy wins: free, one click in a normal browser (13)
 
@@ -18,16 +18,11 @@
 - **nagata-2013** · tier C · A case in which mirtazapine reduced auditory hallucinations in a patient with Parkinson disease. (Int Psychogeriatr 2013) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1017%2Fs1041610212002037) · [DOI](https://doi.org/10.1017/s1041610212002037) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/23195073/) · *Cambridge abstract only; letter*
 - **berner-2008** · tier C · A case of sodium oxybate treatment of tardive dyskinesia and bipolar disorder. (J Clin Psychiatry 2008) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4088%2Fjcp.v69n0522a) · [DOI](https://doi.org/10.4088/jcp.v69n0522a) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/18681764/) · *Free PDF at psychiatrist.com after a free account*
 
-## Psychiatry Online (tick the terms box) (8)
+## Psychiatry Online (tick the terms box) (3)
 
-- **moreno-delgado-1997** · tier A · Hallucinogen-induced relief of obsessions and compulsions. (Am J Psychiatry 1997) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fajp.154.7.1037b) · [DOI](https://doi.org/10.1176/ajp.154.7.1037b) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/9210762/)
 - **delisle-1991** · tier B · Catatonia unexpectedly reversed by midazolam. (Am J Psychiatry 1991) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fajp.148.6.809a) · [DOI](https://doi.org/10.1176/ajp.148.6.809a) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/1801768/)
-- **freeman-2001** · tier B · A "cure" for chronic combat-related posttraumatic stress disorder secondary to a right frontal lobe infarct: a case report. (J Neuropsychiatry Clin Neurosci 2001) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fjnp.13.1.106) · [DOI](https://doi.org/10.1176/jnp.13.1.106) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/11207337/)
 - **leonard-rapoport-1987** · tier B · Relief of obsessive-compulsive symptoms by LSD and psilocin. (Am J Psychiatry 1987) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fajp.144.9.1239b) · [DOI](https://doi.org/10.1176/ajp.144.9.1239b) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/3631327/)
-- **behar-1999** · tier C · "Miraculous" recovery from severe chronic psychosis after coma from septicemia. (J Neuropsychiatry Clin Neurosci 1999) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fjnp.11.3.412-a) · [DOI](https://doi.org/10.1176/jnp.11.3.412-a) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/10440023/)
-- **galati-2013** · tier C · Schizophrenia symptoms relieved by CO-induced pallidal lesion: a case report. (J Neuropsychiatry Clin Neurosci 2013) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fappi.neuropsych.12060139) · [DOI](https://doi.org/10.1176/appi.neuropsych.12060139) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/23686065/)
 - **levine-1996** · tier C · Possible antidepressant effect of minocycline. (Am J Psychiatry 1996) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fajp.153.4.582b) · [DOI](https://doi.org/10.1176/ajp.153.4.582b) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/8599421/)
-- **sumner-2017** · tier C · Decreased antipsychotic dose requirements after bithalamic infarcts in a patient with chronic schizophrenia (Journal of Neuropsychiatry and Clinical Neurosciences 2017) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fappi.neuropsych.16110299) · [DOI](https://doi.org/10.1176/appi.neuropsych.16110299)
 
 ## CKN, Ovid / Lippincott (works once signed in) (19)
 
