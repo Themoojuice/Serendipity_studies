@@ -12550,6 +12550,13 @@
        ]
       },
       {
+       "kind": "exposure_stop",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Haematoma and oedema resolving, compression of the striatum easing (MRI)"
+      },
+      {
        "kind": "relapse",
        "t": 2,
        "unit": "months",
@@ -12578,7 +12585,7 @@
     "latency_band": "1-13 days",
     "baseline_years": 17.0,
     "durability": "Lost",
-    "timeline_reversal": "None reported",
+    "timeline_reversal": "Natural off-on",
     "measures": [
      {
       "scale": "Y-BOCS",
@@ -13328,7 +13335,7 @@
   {
    "id": "zakrzewski-2013",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1a"
@@ -13397,7 +13404,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, Embase) or a free copy)",
    "era": {
     "label": "novel",
     "note": "",
@@ -13405,20 +13412,101 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "The authors fold compulsive shopping into a post-traumatic impulsivity syndrome of which pseudobulbar affect is part, so the drug may have treated what it was given for."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "A meeting abstract: retrospective records of 12 patients; no baseline frequency, measure, timing or follow-up."
+    },
+    "jbi": {
+     "checklist": "Case series",
+     "answers": [
+      "U",
+      "N",
+      "U",
+      "U",
+      "U",
+      "N",
+      "N",
+      "N",
+      "N",
+      "NA"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "12 patients with traumatic brain injury",
+     "age": null,
+     "sex": "Not stated",
+     "events": [
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "months",
+       "precision": "at least",
+       "label": "Stable pseudobulbar affect and frequent impulsive behaviour, including compulsive shopping, after traumatic brain injury"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Dextromethorphan/quinidine for pseudobulbar affect"
+      },
+      {
+       "kind": "best_response",
+       "t": 0,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Compulsive shopping less frequent in all 12 (timing and size not given); pseudobulbar outbursts suppressed",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0,
+    "latency_band": "Under a day",
+    "latency_bound": "at least",
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 0,
+    "attribution_grade": "D",
+    "jbi_score": 0,
+    "jbi_of": 10,
+    "rule_tier": "C"
    }
   },
   {
    "id": "bagnati-2013",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1a"
    ],
@@ -13437,19 +13525,19 @@
     "pmcid": ""
    },
    "links": {
-    "full_text": null,
+    "full_text": "https://revistascientificas.cuc.edu.co/JACN/article/view/4008",
     "abstract": null,
     "doi": null,
     "alternates": [
      {
-      "label": "Embase record (CKN login)",
-      "url": "https://www.embase.com/records?subaction=viewrecord&id=L71130741"
+      "label": "Full report: Bagnati 2021, J Appl Cogn Neurosci 2(2):e00204008, doi 10.17981/JACN.2.2.2021.02",
+      "url": "https://doi.org/10.17981/jacn.2.2.2021.02"
      }
     ],
     "ckn": "http://resolver.ebscohost.com/openurl?sid=EMBASE&sid=EMBASE&issn=&id=doi:&atitle=Abrupt+disruption+of+nicotine+addiction+and+apathy+after+a+strategic+acute+brain+ichemia&stitle=Neurology&title=Neurology&volume=80&issue=1&spage=&epage=&aulast=Bagnati&aufirst=Pablo&auinit=P.&aufull=Bagnati+P.&coden=&isbn=&pages=-&date=2013&auinit1=P&auinitm="
    },
-   "access": "Paywalled",
-   "design": "Conference abstract",
+   "access": "Free full text",
+   "design": "Case report",
    "n_patients": 1,
    "syndrome": {
     "categories": [
@@ -13475,7 +13563,7 @@
     "note": "",
     "links": []
    },
-   "summary": "Nicotine addiction stopped abruptly after a small stroke in reward-circuit pathways, along with new apathy.",
+   "summary": "A 62-year-old 30-pack-year smoker stopped smoking and drinking coffee at once, without withdrawal, after strokes in the left caudate and pallidum, but became markedly apathetic at the same moment.",
    "caveat": "Abstract only; apathy may explain the loss of drive to smoke.",
    "tags": [
     "conference-abstract",
@@ -13486,7 +13574,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, Embase) or a free copy)",
    "era": {
     "label": "known",
     "note": "Replicates the lesion-induced addiction remission shown by Naqvi 2007 and pooled by Joutsa 2022.",
@@ -13494,19 +13582,133 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Thirty pack-years and Fagerström 6 before; abrupt cessation with the stroke; but severe apathy began at the same moment and coffee stopped too."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "N",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "62-year-old patient",
+     "age": 62,
+     "sex": "Not stated",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -30,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Smoker, 30 pack-years, Fagerström 6; coffee drinker",
+       "scores": [
+        {
+         "scale": "Fagerström",
+         "value": 6,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Acute ischaemic strokes in the left caudate head and pallidum (old traumatic lesion of the orbitofrontal cortex and frontal pole already present)"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "at most",
+       "label": "Stopped smoking and coffee completely, without withdrawal; at the same time marked apathy (Starkstein 38), social withdrawal and low empathy",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Starkstein apathy",
+         "value": 38,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "MRI at 6 months; smoking status at follow-up not stated"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Caudate",
+     "Globus pallidus"
+    ],
+    "specific": "Acute infarcts of the left caudate head and pallidum, on top of an old lesion of the medial and lateral orbitofrontal cortex and frontal pole; tractography showed reduced right cingulum, uncinate and medial forebrain bundle fibres",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 30.0,
+    "follow_up_days": 182.625,
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 5,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
    "id": "sandeep-2013",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1a"
@@ -13574,7 +13776,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, Embase) or a free copy)",
    "era": {
     "label": "novel",
     "note": "",
@@ -13582,13 +13784,93 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "A meeting abstract: four years of illness before; remission after a spiritual experience; no timing, measures or follow-up."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "N",
+      "U",
+      "N",
+      "N",
+      "U",
+      "NA",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "17-year-old girl",
+     "age": 17,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -4,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Diet restriction, weight loss and menstrual irregularity for four years"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "A spiritual experience (not described in the abstract)"
+      },
+      {
+       "kind": "best_response",
+       "t": 0,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Spontaneous remission of the anorexia (timing and measures not given)",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0,
+    "latency_band": "Under a day",
+    "latency_bound": "at least",
+    "baseline_years": 4.0,
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 2,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -14060,95 +14342,6 @@
     "label": "novel",
     "note": "",
     "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
-   }
-  },
-  {
-   "id": "stuve-2003",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
-   "collections": [
-    "phase1a"
-   ],
-   "citation": {
-    "authors": "Stuve W et al.",
-    "title": "Remission of schizophrenia following discontinuation of lamotrigine",
-    "journal": "Tijdschrift voor Psychiatrie",
-    "year": 2003,
-    "volume": "",
-    "issue": "",
-    "pages": ""
-   },
-   "ids": {
-    "doi": "",
-    "pmid": "",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": null,
-    "doi": null,
-    "alternates": [
-     {
-      "label": "Embase record (CKN login)",
-      "url": "https://www.embase.com/records?subaction=viewrecord&id=L37069948"
-     }
-    ],
-    "ckn": "http://resolver.ebscohost.com/openurl?sid=EMBASE&sid=EMBASE&issn=&id=doi:&atitle=Remission+of+schizophrenia+following+discontinuation+of+lamotrigine&stitle=Tijdschr.+Psychiatr.&title=Tijdschrift+voor+Psychiatrie&volume=45&issue=8&spage=525&epage=528&aulast=Stuve&aufirst=W.&auinit=W.&aufull=Stuve+W.&coden=TPSYB&isbn=&pages=525-528&date=2003&auinit1=W&auinitm="
-   },
-   "access": "Paywalled",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Psychotic"
-    ],
-    "specific": "Difficult-to-treat paranoid schizophrenia with epilepsy",
-    "chronic": true,
-    "treatment_resistant": true
-   },
-   "trigger": {
-    "category": "Medication for another condition",
-    "specific": "Lamotrigine for epilepsy: remission on it, relapse when stopped",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "Natural off-on"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "Paranoid schizophrenia remitted while the patient took lamotrigine for epilepsy and relapsed when it was stopped.",
-   "caveat": "Dutch-language paper with an English abstract; timing evidence only.",
-   "tags": [
-    "glutamate",
-    "lamotrigine",
-    "reversal",
-    "schizophrenia"
-   ],
-   "same_patient_as": null,
-   "found_via": "Embase (CKN)",
-   "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
-   "era": {
-    "label": "emerging",
-    "note": "",
-    "basis": "judged"
    },
    "flags": [],
    "appraisal": {
@@ -14997,7 +15190,7 @@
   {
    "id": "tsang-2023",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -15017,13 +15210,13 @@
     "pmcid": ""
    },
    "links": {
-    "full_text": null,
+    "full_text": "https://www.easap.asia/index.php/find-issues/past-issue/item/946-2023-v33n4-p126",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/38955785/",
     "doi": "https://doi.org/10.12809/eaap2340",
     "alternates": [],
     "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.12809%2Feaap2340"
    },
-   "access": "Paywalled",
+   "access": "Free full text",
    "design": "Case report",
    "n_patients": 1,
    "syndrome": {
@@ -15040,7 +15233,7 @@
     "intent": "Injury or illness"
    },
    "outcome": {
-    "resolution": "Partial",
+    "resolution": "Complete",
     "time_to_resolution": null,
     "follow_up": null,
     "reversal": "None reported"
@@ -15050,8 +15243,8 @@
     "note": "",
     "links": []
    },
-   "summary": "Auditory hallucinations that resisted clozapine and maintenance ECT stopped after a right temporal haemorrhage.",
-   "caveat": "Symptom-level change; other features of the illness not reported.",
+   "summary": "A woman whose voices had persisted for years through clozapine and maintenance ECT stopped hearing them within weeks of a right superior temporal haemorrhage; she stayed free of them for nine months on less medication and no ECT.",
+   "caveat": "The stroke left severe attention and processing-speed deficits, which could blunt the reporting of voices.",
    "tags": [
     "hallucinations",
     "right-temporal",
@@ -15062,7 +15255,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, Embase) or a free copy)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -15070,13 +15263,136 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Years of daily voices through clozapine and maintenance ECT; minimal voices within three weeks while off all drugs, then remission on the old regimen, held nine months with less amisulpride and no ECT; no rating scale."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Young woman, a waitress",
+     "age": null,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -9,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Schizoaffective disorder (2012): referential delusions, depressed mood, voices, repeated suicide attempts"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -7,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Risperidone, olanzapine, 40 ECT sessions, clozapine 600 mg with valproate; maintenance ECT 2015–2021 with clozapine, amisulpride 700 mg and fluoxetine: daily voices persisted",
+       "to": 0
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Ruptured arteriovenous malformation at the right superior temporal gyrus: large temporal haematoma, excised at emergency craniotomy (March 2021)"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "Minimal voices while all psychotropics were held",
+       "state": "Partial"
+      },
+      {
+       "kind": "cointervention",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Clozapine and amisulpride restarted at the same doses; fluoxetine not restarted; no further ECT"
+      },
+      {
+       "kind": "best_response",
+       "t": 7,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Complete remission of psychotic symptoms",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 9,
+       "unit": "months",
+       "precision": "exact",
+       "label": "No voices; amisulpride reduced from 700 to 300 mg; left hemiparesis and neglect, severe attention and speed deficits",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Right",
+    "regions": [
+     "Temporal, lateral"
+    ],
+    "specific": "Right temporal haematoma from an arteriovenous malformation near the superior temporal gyrus, excised; Wallerian degeneration and encephalomalacia of the right temporal region at 1 month (CT and MRI figures)",
+    "aetiology": "Haemorrhage",
+    "imaging": "MRI and CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 21,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 9.0,
+    "follow_up_days": 273.938,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -17628,8 +17944,8 @@
   {
    "id": "mira-2024",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1a"
    ],
@@ -17648,13 +17964,13 @@
     "pmcid": ""
    },
    "links": {
-    "full_text": null,
+    "full_text": "https://hal.science/hal-04741916",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/39350435/",
     "doi": "https://doi.org/10.1111/pcn.13738",
     "alternates": [],
     "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fpcn.13738"
    },
-   "access": "Paywalled",
+   "access": "Free full text",
    "design": "Letter",
    "n_patients": 1,
    "syndrome": {
@@ -17681,8 +17997,8 @@
     "note": "",
     "links": []
    },
-   "summary": "Cocaine and dopamine-medication misuse improved after subthalamic DBS for Parkinson's disease.",
-   "caveat": "Dopaminergic medication was likely reduced after DBS, which explains part of it.",
+   "summary": "A man with Parkinson's disease who had used cocaine for 20 years never used it again after subthalamic DBS for dyskinesia; his dopamine-medication misuse also settled as the dose came down.",
+   "caveat": "Apathy followed within months; the dopamine-misuse part resolving with dose reduction is the expected (secondary) part.",
    "tags": [
     "cocaine",
     "dbs",
@@ -17692,7 +18008,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, Embase) or a free copy)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -17700,13 +18016,127 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "STN inhibition reduces cocaine seeking in rats (Baunez, a co-author) and one human case had been reported."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Twenty years of regular cocaine use; none from the operation on, held at least a year; levodopa cut and apathy emerged in the following months; no measures of use."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "58-year-old man, electrician",
+     "age": 58,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -20,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Cocaine addiction, 2–3 g a month for 20 years (began before Parkinson's disease); smoker"
+      },
+      {
+       "kind": "assessment",
+       "t": -2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Pramipexole-induced impulse control disorder (hypersexuality, buying, gambling) resolved when pramipexole was stopped; dopamine dysregulation syndrome on >2,500 mg levodopa a day"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Bilateral subthalamic DBS for severe dyskinesia"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "at most",
+       "label": "Never used cocaine again; a few cravings, resisted for the first time; still smoking",
+       "state": "Remitted"
+      },
+      {
+       "kind": "cointervention",
+       "t": 3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Levodopa reduced to 1,000 mg; dopamine dysregulation much improved; apathy emerged"
+      },
+      {
+       "kind": "follow_up",
+       "t": 1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Still abstinent from cocaine; apathy (Starkstein 23); quality of life better",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Stimulation target",
+    "side": "Bilateral",
+    "regions": [
+     "Subthalamic nucleus"
+    ],
+    "specific": "Bilateral subthalamic nucleus DBS (standard motor target)",
+    "aetiology": "Not applicable",
+    "imaging": "MRI",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 20.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -20047,8 +20477,8 @@
   {
    "id": "ferrao-2003",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1b"
    ],
@@ -20067,13 +20497,13 @@
     "pmcid": ""
    },
    "links": {
-    "full_text": null,
+    "full_text": "https://www.scielo.br/j/rbp/a/3btnWSYBNjqTG7jWXMKJTpC/?lang=pt",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/15330004/",
     "doi": null,
     "alternates": [],
     "ckn": null
    },
-   "access": "Paywalled",
+   "access": "Free full text",
    "design": "Letter",
    "n_patients": 1,
    "syndrome": {
@@ -20100,8 +20530,8 @@
     "note": "",
     "links": []
    },
-   "summary": "Hair-pulling stopped for a while after a basal ganglia haemorrhage.",
-   "caveat": "Letter; the suppression was temporary and its length needs the full text.",
+   "summary": "A man with years of hair-pulling and skin-picking, only partly helped by antidepressants, was free of both for six months after a right frontoparietal subcortical stroke, though all his medication had been stopped; then they returned.",
+   "caveat": "A letter without measures; the hospital stay itself removed his usual routines.",
    "tags": [
     "basal-ganglia",
     "haemorrhage",
@@ -20111,7 +20541,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, Embase) or a free copy)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -20119,13 +20549,131 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Years of partial response before; symptom-free from the stroke admission for six months although all medication was stopped; no scale; a letter."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "N",
+      "Y",
+      "N",
+      "Y",
+      "N",
+      "NA",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "64-year-old man",
+     "age": 64,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -6,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Trichotillomania and skin picking driven by itching and burning of face, eyelids, brows and scalp"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -5,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Clomipramine 150 mg (helped, side effects); fluoxetine 70 mg with clomipramine 125 mg: partial response",
+       "to": 0
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Stroke in the right frontal and parietal subcortical regions (CT), June 2000; all psychiatric medication withdrawn in hospital"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "Free of hair-pulling and picking for the first time in years",
+       "state": "Remitted"
+      },
+      {
+       "kind": "relapse",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Symptoms gradually returned",
+       "state": "Worse"
+      },
+      {
+       "kind": "follow_up",
+       "t": 3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Marked improvement on clomipramine 200 mg and carbamazepine 600 mg",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Right",
+    "regions": [
+     "Frontal, other",
+     "Parietal",
+     "White matter, other"
+    ],
+    "specific": "Right frontal and parietal subcortical stroke on CT (type not stated; the title calls it a basal ganglia ablation)",
+    "aetiology": "Other",
+    "imaging": "CT",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 7,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 6.0,
+    "follow_up_days": 1095.75,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 4,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -25295,8 +25843,8 @@
   {
    "id": "erbay-2022",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1c"
    ],
@@ -25310,18 +25858,18 @@
     "pages": "399-401"
    },
    "ids": {
-    "doi": "",
+    "doi": "10.4103/0028-3886.338703",
     "pmid": "35263927",
     "pmcid": ""
    },
    "links": {
-    "full_text": null,
+    "full_text": "https://www.ovid.com/jnls/neur/fulltext/10.4103/0028-3886.338703",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/35263927/",
-    "doi": null,
+    "doi": "https://doi.org/10.4103/0028-3886.338703",
     "alternates": [],
-    "ckn": null
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4103%2F0028-3886.338703"
    },
-   "access": "Paywalled",
+   "access": "Free full text",
    "design": "Case report",
    "n_patients": 1,
    "syndrome": {
@@ -25348,7 +25896,7 @@
     "note": "",
     "links": []
    },
-   "summary": "Treatment-refractory OCD regressed after a thalamic infarct.",
+   "summary": "A 91-year-old who had washed, bathed and counted for four to five hours a day for 60 years, through every treatment, almost stopped after a small left anteromedial thalamic infarct (Y-BOCS 40 to 29).",
    "caveat": "",
    "tags": [
     "cstc-loop",
@@ -25360,7 +25908,7 @@
    "same_patient_as": null,
    "found_via": "Citation route v1 (Europe PMC citations and references)",
    "date_added": "2026-11-13",
-   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, Embase) or a free copy)",
    "era": {
     "label": "novel",
     "note": "",
@@ -25368,13 +25916,138 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-13",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Sixty years of unremitting OCD, Y-BOCS 40 before; 29 a month after the infarct, off all medication; only one month of follow-up."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "NA",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "91-year-old man",
+     "age": 91,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -60,
+       "unit": "years",
+       "precision": "approx",
+       "label": "OCD for 60 years: bathing 9–10 times a day, hand-washing, counting during ablution, 4–5 hours a day"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -20,
+       "unit": "years",
+       "precision": "approx",
+       "label": "CBT, clomipramine 225 mg, sertraline 200 mg, risperidone, olanzapine: never any benefit",
+       "to": -1
+      },
+      {
+       "kind": "assessment",
+       "t": -11,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Y-BOCS 40, MMSE 27; sertraline to 200 mg and risperidone to 2 mg without change; he later stopped them",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 40,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Left anteromedial thalamic infarct (fall, dysarthria, imbalance)"
+      },
+      {
+       "kind": "follow_up",
+       "t": 1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Washing and counting scarcely any, bathing once a day; Y-BOCS 29; off medication; dysarthria largely recovered",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 29,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Thalamus"
+    ],
+    "specific": "Acute infarct in the anteromedial left thalamus on diffusion MRI (figure)",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "baseline_years": 60.0,
+    "follow_up_days": 30.438,
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "Y-BOCS",
+      "before": 40,
+      "after": 29,
+      "change_pct": -27.5
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -29360,8 +30033,8 @@
   {
    "id": "fujii-2005",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1e"
    ],
@@ -29413,8 +30086,8 @@
     "note": "",
     "links": []
    },
-   "summary": "A 58-year-old man who had had OCD since 43 improved after a left putaminal haemorrhage.",
-   "caveat": "",
+   "summary": "A man who had spent 6–8 hours a day washing for 15 years cut it to 2 hours after a left putaminal haemorrhage, with no treatment for his OCD; obsessions persisted but he went back to work.",
+   "caveat": "Y-BOCS was only measured after the stroke, and still read severe.",
    "tags": [
     "basal-ganglia",
     "haemorrhage",
@@ -29425,7 +30098,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, Embase) or a free copy)",
    "era": {
     "label": "novel",
     "note": "",
@@ -29433,13 +30106,134 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Fifteen years of untreated contamination OCD; time spent washing cut by two-thirds after the bleed, without any OCD treatment; Y-BOCS only after the stroke."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "NA",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "58-year-old man",
+     "age": 58,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -15,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Contamination fears and hand-washing from 43: 6–8 hours a day washing, 2 hours tidying, home at 2–3 am, 4 hours' sleep"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Two years of antidepressants, antipsychotics and anxiolytics without effect; stopped by his psychiatrist",
+       "to": -1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Left putaminal haemorrhage (untreated hypertension), during a washing ritual: right hemiparesis and aphasia"
+      },
+      {
+       "kind": "relapse",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Washing came back, to a lesser degree",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Y-BOCS 29 (no pre-stroke score); not depressed or apathetic; IQ normal",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 29,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 74,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Back at work: washing 2 hours a day (from 6–8), tidying none (from 2), home by 9 pm and sleeping 8 hours; no OCD treatment",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Putamen",
+     "Globus pallidus",
+     "Internal capsule"
+    ],
+    "specific": "Haemorrhage centred on the left putamen, involving external capsule and claustrum, probably lateral pallidum, retrolenticular capsule and caudate tail; caudate head, thalamus and anterior capsule spared (MRI figure)",
+    "aetiology": "Haemorrhage",
+    "imaging": "MRI and CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "baseline_years": 15.0,
+    "follow_up_days": 74,
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -30380,8 +31174,8 @@
   {
    "id": "dukarm-2005",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1e"
    ],
@@ -30426,7 +31220,7 @@
     "resolution": "Complete",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "None reported"
+    "reversal": "Natural off-on"
    },
    "downstream": {
     "level": 2,
@@ -30445,7 +31239,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, Embase) or a free copy)",
    "era": {
     "label": "emerging",
     "note": "Stimulants were later trialled in binge-eating disorder (lisdexamfetamine approved for it in the US in 2015; recalled, not checked); bulimia nervosa itself has no large trial.",
@@ -30453,13 +31247,120 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "borderline",
+      "note": "A bulimia clinic treating ADHD in its patients, after earlier reports of stimulants helping bulimia."
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Schweickert 1997 and Sokol 1999 had reported stimulants curbing bulimia."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "Years of bulimia before; binges stopped within two weeks in all six; two binged only on missed doses; self-report only, and psychotherapy and meal plans ran alongside."
+    },
+    "jbi": {
+     "checklist": "Case series",
+     "answers": [
+      "N",
+      "Y",
+      "U",
+      "N",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "NA"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Six patients aged 15–24 (five women, one man)",
+     "age": 19,
+     "sex": "Not stated",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Bulimia nervosa for 1–9 years: daily or frequent binge eating with purging, restriction or over-exercise; ADHD (inattentive) in all"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Psychotherapy, family therapy, meal plans, SSRIs and antiepileptics in various combinations: partial or no benefit",
+       "to": 0
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Dextroamphetamine 5–10 mg three times a day for ADHD"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "Binge eating and purging stopped (within 1 week in one, 2 weeks in another; 'rapid' in the rest)",
+       "state": "Remitted"
+      },
+      {
+       "kind": "relapse",
+       "t": 2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Two patients binged and purged only on days they missed doses",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 15,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Abstinent at 4 months to 2 years (median about 15 months); weights stable in the healthy range",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 14,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 3.0,
+    "follow_up_days": 456.562,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 4,
+    "jbi_of": 10,
+    "rule_tier": "B"
    }
   },
   {

@@ -7296,6 +7296,579 @@
      "why": "OCD improving after a putaminal haemorrhage"
     }
    ]
+  },
+  {
+   "case_id": "fujii-2005",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Fifteen years, untreated and unchanged."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic and steady."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Typical contamination OCD."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Only antihypertensives and rehabilitation."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Not apathetic or depressed; hemiparesis too mild to stop washing."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "The authors allow a psychological reaction to the stroke."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Before-state from history, no baseline scale."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Compulsions fell by two-thirds after a left putaminal bleed in a man with 15 years of untreated OCD, sparing caudate head and thalamus. The authors' indirect-pathway account makes the putamen, not the caudate, the lever.",
+   "hypotheses": [
+    {
+     "claim": "Putaminal and lateral pallidal damage shifted basal ganglia output so that medial pallidum inhibited the thalamus and prefrontal cortex more.",
+     "chain": "Left putamen (± lateral pallidum) lesion → less striatal inhibition of medial pallidum → more pallidal inhibition of thalamus → lower orbitofrontal activity → fewer compulsions",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Compulsions, the motor side, fell most; obsessions persisted.",
+     "against": "No baseline score.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "One case, no pre-stroke measure.",
+     "test": "Lesion mapping of compulsion change after striatal strokes in OCD."
+    }
+   ],
+   "related": [
+    {
+     "id": "yaryura-tobias-2003",
+     "why": "OCD gone with a putaminal bleed, back as it resolved"
+    },
+    {
+     "id": "sair-2018",
+     "why": "OCD gone after a haemorrhage compressing the striatum"
+    }
+   ]
+  },
+  {
+   "case_id": "dukarm-2005",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Six of six abstinent within weeks after years of illness."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Patients present when worst."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Typical bulimia nervosa."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Psychotherapy and meal plans continued."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Appetite suppression could remove the urge to binge without changing the disorder."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Open treatment by an eating-disorder physician."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-reported abstinence; no diaries or scales."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Six patients with bulimia and ADHD stopped bingeing within two weeks of dextroamphetamine, two of them only relapsing on missed doses. The effect looks real; whether through impulse control or plain appetite suppression the series can't say.",
+   "hypotheses": [
+    {
+     "claim": "Stimulant-strengthened prefrontal control reduced the impulsivity that drives binges.",
+     "chain": "Dextroamphetamine → more prefrontal dopamine and noradrenaline → better inhibitory control → urge to binge resisted",
+     "mechanisms": [
+      "Dopamine",
+      "Noradrenaline"
+     ],
+     "latency_fit": "Fits",
+     "for": "Fast; ADHD improved in parallel; missed doses brought binges back.",
+     "against": "Appetite suppression confounds.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No measures; consecutive inclusion unclear.",
+     "test": "Lisdexamfetamine trials in binge eating disorder (since done) and in bulimia."
+    },
+    {
+     "claim": "The anorectic effect removed hunger-driven binges.",
+     "chain": "Amphetamine → reduced appetite → less physiological drive to binge after restriction",
+     "mechanisms": [
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Author notes appetite fell.",
+     "against": "Weights stayed stable.",
+     "confidence": "Low",
+     "uncertainty_driver": "Not separable.",
+     "test": "Binge frequency against appetite ratings."
+    }
+   ],
+   "related": [
+    {
+     "id": "schweickert-1997",
+     "why": "Methylphenidate for ADHD curbing bulimic bingeing"
+    }
+   ]
+  },
+  {
+   "case_id": "tsang-2023",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Nine years, daily voices through every treatment."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Stable chronic symptoms."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-documented schizoaffective disorder."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Same antipsychotics restarted; fluoxetine and ECT stopped, which should have made things worse."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Severe attention and processing-speed deficits and neglect could mute or hide voices."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No symptom scale."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Clozapine- and ECT-resistant voices stopped after a bleed destroyed the right superior temporal gyrus, home of auditory cortex, and stayed gone for nine months. The site is the point; the heavy cognitive damage is the caveat.",
+   "hypotheses": [
+    {
+     "claim": "Destroying right auditory association cortex removed a generator of the hallucinated voices.",
+     "chain": "Right superior temporal gyrus lesion → loss of hyperactive auditory cortex that misattributes inner speech → voices stop",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Voices stopped while off drugs and stayed gone; the gyrus is where hallucination-related activity is seen.",
+     "against": "Most evidence implicates the left gyrus.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No ratings; heavy cognitive deficits.",
+     "test": "Hallucination outcomes after temporal strokes, mapped by side and gyrus."
+    }
+   ],
+   "related": [
+    {
+     "id": "chimowitz-1990",
+     "why": "Psychotic depression gone after a right temporoparietal stroke"
+    },
+    {
+     "id": "ripsman-2025",
+     "why": "Temporal resection and a lifted syndrome"
+    }
+   ]
+  },
+  {
+   "case_id": "erbay-2022",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Sixty years without a break."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Lifelong washing and counting rituals."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "He had stopped his medication."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "A stroke at 91 could reduce activity; cognition not retested."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Son's report; one month of follow-up."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Sixty years of OCD eased a month after a small anteromedial thalamic infarct, measured on the Y-BOCS. The thalamus is a standard surgical target for OCD; the follow-up is the weakness.",
+   "hypotheses": [
+    {
+     "claim": "The infarct cut the mediodorsal-anterior thalamic relay in the cortico-striato-thalamo-cortical loop.",
+     "chain": "Anteromedial thalamic infarct → reduced thalamo-orbitofrontal drive → loop activity falls → fewer rituals",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Thalamotomy targets this region; measured fall.",
+     "against": "One month only.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Short follow-up.",
+     "test": "Longer follow-up; lesion network mapping with other OCD-relieving lesions."
+    }
+   ],
+   "related": [
+    {
+     "id": "fujii-2005",
+     "why": "OCD easing after a putaminal haemorrhage"
+    },
+    {
+     "id": "diamond-2011",
+     "why": "OCD gone after a small frontoparietal stroke"
+    }
+   ]
+  },
+  {
+   "case_id": "mira-2024",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Twenty years of steady use."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Cocaine use predated Parkinson's disease."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Levodopa cut by more than half after surgery."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Apathy emerged in the following months, though abstinence began at once."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Treated in the centre whose rat work proposed STN DBS for cocaine."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-report; no urine tests."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Twenty years of cocaine use stopped from the day of subthalamic DBS for dyskinesia, matching the rat work of one of the authors. Abstinence came before the apathy; whether the STN effect is on reward or on drive is the open question.",
+   "hypotheses": [
+    {
+     "claim": "Subthalamic stimulation reduced the motivational value of cocaine, as in rats.",
+     "chain": "STN DBS → altered STN output to ventral pallidum and VTA → lower incentive value of cocaine while natural reward is spared → abstinence",
+     "mechanisms": [
+      "Stimulation of a circuit",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate; mirrors Rouaud 2010 rat data; smoking unaffected.",
+     "against": "Apathy later; levodopa cut.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Single case; expectancy at the centre.",
+     "test": "Cocaine outcomes in STN-DBS cohorts with prior stimulant use."
+    }
+   ],
+   "related": [
+    {
+     "id": "kuhn-2007",
+     "why": "Accumbens DBS and alcohol"
+    },
+    {
+     "id": "moussawi-2016",
+     "why": "Pallidal lesions ending addiction"
+    }
+   ]
+  },
+  {
+   "case_id": "ferrao-2003",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Hair-pulling waxes and wanes."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Picking driven by itching and burning may have been dermatological or sensory."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Medication stopped, which should have worsened it."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Admission and neurological illness change routines and opportunities."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "A short reply letter, no measures or dates beyond month and year."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Six months free of pulling and picking after a right frontoparietal subcortical stroke, off all medication, written up as a reply to Yaryura-Tobias. Striking, but a letter with no measures, and a sensory-driven picking that may not be the same disorder.",
+   "hypotheses": [
+    {
+     "claim": "Subcortical frontoparietal damage interrupted the sensory-motor loop driving the urge to pull and pick.",
+     "chain": "Right frontoparietal subcortical lesion → disrupted somatosensory-striatal urge signalling → pulling and picking stop → recovery of the network → return",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Sensory input change"
+     ],
+     "latency_fit": "Fits",
+     "for": "Itch-driven behaviour; return as the brain recovered.",
+     "against": "Lesion vaguely described.",
+     "confidence": "Low",
+     "uncertainty_driver": "No imaging detail or measures.",
+     "test": "None now."
+    }
+   ],
+   "related": [
+    {
+     "id": "yaryura-tobias-2003",
+     "why": "The case this letter answered: OCD gone with a basal ganglia bleed"
+    }
+   ]
+  },
+  {
+   "case_id": "bagnati-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Thirty years of smoking."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Clear nicotine dependence."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Hospital admission is itself a smoke-free setting."
+    },
+    "nonspecific": {
+     "rating": "Likely",
+     "why": "Severe apathy started with the stroke; coffee went too."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Follow-up smoking status not given."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Smoking and coffee stopped together with the onset of severe apathy after left caudate-pallidal strokes. The author argues apathetic stroke patients usually keep smoking, but a global loss of drive is the obvious reading here.",
+   "hypotheses": [
+    {
+     "claim": "The caudate-pallidal lesion, on top of an old orbitofrontal injury, knocked out the reward circuit carrying both drive and craving.",
+     "chain": "Left caudate and pallidum infarcts + old orbitofrontal lesion → functional bilateral fronto-striatal reward failure → apathy and loss of nicotine and caffeine seeking",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Global suppression (sedation, apathy, cognitive loss)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Apathy and cessation began together.",
+     "against": "Can't separate addiction from drive.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "One case, apathy dominant.",
+     "test": "Craving measures in apathetic versus non-apathetic striatal stroke smokers."
+    }
+   ],
+   "related": [
+    {
+     "id": "muskens-2012",
+     "why": "Dorsal striatal damage easing addictions"
+    },
+    {
+     "id": "naqvi-2007",
+     "why": "Insula damage ending smoking"
+    }
+   ]
+  },
+  {
+   "case_id": "zakrzewski-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Post-injury impulsivity can settle with time."
+    },
+    "regression": {
+     "rating": "Can't judge",
+     "why": "No baseline."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Shopping as part of disinhibition rather than a compulsive disorder."
+    },
+    "cointervention": {
+     "rating": "Can't judge",
+     "why": "Not reported."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Dextromethorphan/quinidine is not sedating at these doses."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Retrospective review after one clinician's observation."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "A meeting abstract with no numbers."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A meeting abstract: compulsive shopping fell in 12 brain-injured patients given dextromethorphan/quinidine for pseudobulbar affect. Interesting given the drug's NMDA and sigma actions, but there are no numbers to weigh.",
+   "hypotheses": [
+    {
+     "claim": "NMDA antagonism and sigma-1 agonism damped the impulsive reward-seeking behind compulsive buying.",
+     "chain": "Dextromethorphan (quinidine-boosted) → NMDA antagonism and sigma-1 agonism → less glutamatergic drive in orbitofrontal-striatal circuits → fewer impulsive purchases",
+     "mechanisms": [
+      "Glutamate"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Same drug quells pseudobulbar outbursts.",
+     "against": "No data.",
+     "confidence": "Low",
+     "uncertainty_driver": "Abstract only.",
+     "test": "Buying-disorder outcomes in dextromethorphan/quinidine-treated brain injury."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "sandeep-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Adolescent anorexia often remits within a few years."
+    },
+    "regression": {
+     "rating": "Can't judge",
+     "why": "No baseline detail."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Restriction without stated fear of fatness or body-image disturbance."
+    },
+    "cointervention": {
+     "rating": "Can't judge",
+     "why": "Treatment not described."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "None suggested."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A conversion-type experience is itself a belief change."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "A meeting abstract with no follow-up."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A meeting abstract: four years of adolescent anorexia remitting after a spiritual experience. Nothing on timing, weight or follow-up, so natural remission can't be excluded; it belongs beside Colli 2003 and the other meaning-change cases.",
+   "hypotheses": [
+    {
+     "claim": "A sudden shift in meaning and identity removed the role restriction played.",
+     "chain": "Spiritual experience → new frame for self-worth and the body → restriction loses its function → eating resumes",
+     "mechanisms": [
+      "Meaning and life reorganisation",
+      "Suggestion and belief update"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Authors' framing.",
+     "against": "No details.",
+     "confidence": "Low",
+     "uncertainty_driver": "Abstract only.",
+     "test": "The full report, if one was ever written."
+    }
+   ],
+   "related": [
+    {
+     "id": "colli-2003",
+     "why": "Bulimia ending after a near-death experience"
+    }
+   ]
   }
  ]
 }
