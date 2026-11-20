@@ -51,8 +51,10 @@ def timeline_part(track, V):
     out = {}
     ev = sorted(track["events"], key=lambda e: days(e, V))
     imp = [e for e in ev if e["kind"] in IMPROVE and days(e, V) >= 0]
-    if imp:
-        first = next((e for e in imp if e["kind"] == "first_change"), imp[0])
+    # "at least 0" (improvement after the exposure, time not given) carries no latency information
+    imp_known = [e for e in imp if not (e.get("precision") == "at least" and days(e, V) == 0)]
+    if imp_known:
+        first = next((e for e in imp_known if e["kind"] == "first_change"), imp_known[0])
         lat = days(first, V)
         out["latency_days"] = round(lat, 3)
         out["latency_band"] = next(label for lim, label in BANDS if lat < lim)

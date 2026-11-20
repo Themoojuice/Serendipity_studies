@@ -687,9 +687,6 @@
     }
    ],
    "derived": {
-    "latency_days": 0,
-    "latency_band": "Under a day",
-    "latency_bound": "at least",
     "durability": "Unknown",
     "timeline_reversal": "None reported",
     "attribution_score": 0,
@@ -13700,9 +13697,6 @@
     }
    ],
    "derived": {
-    "latency_days": 0,
-    "latency_band": "Under a day",
-    "latency_bound": "at least",
     "durability": "Unknown",
     "timeline_reversal": "None reported",
     "attribution_score": 0,
@@ -14070,9 +14064,6 @@
     }
    ],
    "derived": {
-    "latency_days": 0,
-    "latency_band": "Under a day",
-    "latency_bound": "at least",
     "baseline_years": 4.0,
     "durability": "Unknown",
     "timeline_reversal": "None reported",
@@ -36011,9 +36002,6 @@
     }
    ],
    "derived": {
-    "latency_days": 0,
-    "latency_band": "Under a day",
-    "latency_bound": "at least",
     "baseline_years": 3.0,
     "durability": "Unknown",
     "timeline_reversal": "None reported",
