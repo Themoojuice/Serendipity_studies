@@ -528,7 +528,7 @@
    "id": "wagner-jauregg-1883",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "C",
    "collections": [
     "top12"
    ],
@@ -586,7 +586,7 @@
     "links": []
    },
    "summary": "A woman's severe psychosis cleared after erysipelas; decades later Wagner-Jauregg induced fever deliberately and won the Nobel Prize.",
-   "caveat": "Secondary source; the 1887 German original is not online.",
+   "caveat": "All we have is one sentence in a 1990 history; Wagner-Jauregg's 1887 paper has the details but is not online.",
    "tags": [
     "fever",
     "historical",
@@ -597,7 +597,7 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, PMC) or the journal's open-access copy)",
    "era": {
     "label": "known",
     "note": "Fever therapy for general paresis won the 1927 Nobel Prize; the observation is now psychiatric history.",
@@ -611,13 +611,92 @@
     "why_read": "The intercurrent-fever observation that led, over 34 years, to malaria therapy and psychiatry's only Nobel Prize."
    },
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Fever cures of insanity had been reported since antiquity and through the nineteenth century; Wagner-Jauregg's contribution was to act on them."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "One sentence in a secondary source: a woman 'contracted an attack of erysipelas and subsequently recovered from a severe mental illness'. Nothing on the illness, its length, the timing or follow-up."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "N",
+      "N",
+      "U",
+      "N",
+      "Y",
+      "U",
+      "NA",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Woman in the Lower Austria asylum, Vienna",
+     "age": null,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Severe mental illness (no duration or description given)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Erysipelas, soon after Wagner-Jauregg started work on 28 January 1883"
+      },
+      {
+       "kind": "best_response",
+       "t": 0,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Recovered from the severe mental illness (timing not given)",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0,
+    "latency_band": "Under a day",
+    "latency_bound": "at least",
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 0,
+    "attribution_grade": "D",
+    "jbi_score": 2,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -7123,7 +7202,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, PMC) or the journal's open-access copy)",
    "era": {
     "label": "novel",
     "note": "",
@@ -7131,13 +7210,148 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "rTMS for smoking cessation had trials and deep TMS was cleared for it in the US in 2020."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "He stopped as his depression lifted (BDI 26 to 6)."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 0,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "No smoking history or quantity before; craving and cigarettes fell in the second week and he stopped within a month, held at a year; medication unchanged."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "29-year-old man",
+     "age": 29,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -10,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Depression and OCD for ten years; persistent depression with psychotic features and sexual obsessions for the last six; smoker (amount not given)"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "High-dose fluvoxamine, clomipramine, sertraline, escitalopram, fluoxetine, risperidone, aripiprazole",
+       "to": 0
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Before rTMS: BDI-II 26, Y-BOCS 36 on sertraline 300 mg, clomipramine 150 mg, risperidone 6 mg",
+       "scores": [
+        {
+         "scale": "BDI-II",
+         "value": 26,
+         "higher_is_better": false
+        },
+        {
+         "scale": "Y-BOCS",
+         "value": 36,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Low-frequency (1 Hz) rTMS over the left dorsolateral prefrontal cortex, 20 sessions over two weeks, for depression"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "Much less craving and fewer cigarettes in the second week; BDI 6, Y-BOCS 32 after 20 sessions",
+       "state": "Partial"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Stopped smoking, without medication or support for it",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Still abstinent a year after the last session",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Stimulation target",
+    "side": "Left",
+    "regions": [
+     "Prefrontal, dorsolateral"
+    ],
+    "specific": "Left dorsolateral prefrontal cortex, 1 Hz, 100% motor threshold, 20 sessions",
+    "aetiology": "Not applicable",
+    "imaging": "MRI",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 14,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 10.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -8232,7 +8446,7 @@
    "id": "lugo-radillo-2021",
    "record_type": "case",
    "status": "Included",
-   "tier": "B",
+   "tier": "A",
    "collections": [
     "round2"
    ],
@@ -8295,7 +8509,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, PMC) or the journal's open-access copy)",
    "era": {
     "label": "novel",
     "note": "",
@@ -8303,13 +8517,161 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "borderline",
+      "note": "Why he took the mushrooms isn't stated; he may have hoped they would help."
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Psilocybin for OCD had a case history (Moreno-Delgado 1997) and an open trial (Moreno 2006)."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Y-BOCS 3 days before, then at 1 and 6 months; relief within the hour; psychotropics unchanged for nine months before and throughout; repeated dosing every two weeks."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Mr J.C., 30-year-old man",
+     "age": 30,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -10,
+       "unit": "years",
+       "precision": "approx",
+       "label": "OCD disabling for ten years: obsessions, checking, rumination, worry"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -9,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Sertraline, escitalopram (+ celecoxib), mirtazapine, fluoxetine, venlafaxine, paroxetine, duloxetine, milnacipran; intranasal ketamine: partial or no response",
+       "to": -1
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -9,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Fluoxetine 60 mg, fluvoxamine 300 mg, risperidone 1 mg: partially effective, unchanged through what followed",
+       "to": 0
+      },
+      {
+       "kind": "assessment",
+       "t": -3,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Y-BOCS 35",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 35,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "About 2 g dried Psilocybe caerulescens at home with a friend (reason not given); no hallucinations, an hour of dissociation"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "hours",
+       "precision": "exact",
+       "label": "OCD gone during the hour of dissociation, much reduced for two weeks",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Y-BOCS 18; taking about 2 g every two weeks, each dose followed by a similar spell of relief",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 18,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Y-BOCS 13; working without interruption; no adverse effects",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 13,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0.042,
+    "latency_band": "Under a day",
+    "baseline_years": 10.0,
+    "follow_up_days": 182.625,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "Y-BOCS",
+      "before": 35,
+      "after": 13,
+      "change_pct": -62.9
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -12010,8 +12372,8 @@
   {
    "id": "sair-2018",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1a"
    ],
@@ -12030,7 +12392,7 @@
     "pmcid": ""
    },
    "links": {
-    "full_text": null,
+    "full_text": "https://psychiatry-psychopharmacology.com/index.php/pub/article/view/1422",
     "abstract": null,
     "doi": "https://doi.org/10.1080/24750573.2017.1410336",
     "alternates": [
@@ -12041,7 +12403,7 @@
     ],
     "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F24750573.2017.1410336"
    },
-   "access": "Paywalled",
+   "access": "Free full text",
    "design": "Case report",
    "n_patients": 1,
    "syndrome": {
@@ -12058,17 +12420,17 @@
     "intent": "Injury or illness"
    },
    "outcome": {
-    "resolution": "Complete",
+    "resolution": "Partial",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "None reported"
+    "reversal": "Natural off-on"
    },
    "downstream": {
     "level": 1,
     "note": "",
     "links": []
    },
-   "summary": "Obsessive-compulsive symptoms remitted after a temporoparietal haemorrhage.",
+   "summary": "A woman with 17 years of contamination OCD lost it within four days of a left temporoparietal haemorrhage (Y-BOCS 32 to 6); it came back about two months later as the swelling resolved.",
    "caveat": "Chronicity and measures need the full text.",
    "tags": [
     "haemorrhage",
@@ -12078,7 +12440,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, PMC) or the journal's open-access copy)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -12086,13 +12448,150 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "Y-BOCS 32 before (retrospective) and 6 on day 4; remission lasted about two months and ended as the mass effect resolved; medication not described."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "51-year-old woman",
+     "age": 51,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -17,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Contamination obsessions and washing rituals (40–45 minutes each) after the birth of her second child"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -15,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Antidepressants, antipsychotics and CBT: partial benefit; chronic course",
+       "to": 0
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Y-BOCS 32 before the stroke (rated retrospectively)",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 32,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Left parieto-temporo-occipital intraparenchymal haemorrhage, 46 × 32 mm, with oedema compressing the left striatum and shifting the midline"
+      },
+      {
+       "kind": "first_change",
+       "t": 4,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Relatives noticed her OCD had suddenly gone (3–4 days); Y-BOCS 6 on day 4",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 6,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "relapse",
+       "t": 2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Symptoms re-emerged as the haematoma and oedema resolved",
+       "state": "Worse"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Temporal, lateral",
+     "Parietal",
+     "Occipital"
+    ],
+    "specific": "Left temporo-parieto-occipital haemorrhage (46 × 32 mm) with vasogenic oedema compressing the left striatum (MRI figures)",
+    "aetiology": "Haemorrhage",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 4,
+    "latency_band": "1-13 days",
+    "baseline_years": 17.0,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "Y-BOCS",
+      "before": 32,
+      "after": 6,
+      "change_pct": -81.2
+     }
+    ],
+    "attribution_score": 5,
+    "attribution_grade": "A",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -14583,8 +15082,8 @@
   {
    "id": "sun-2023",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1a"
    ],
@@ -14636,7 +15135,7 @@
     "note": "",
     "links": []
    },
-   "summary": "Tourette syndrome improved after surgery for intractable temporal lobe epilepsy.",
+   "summary": "A teacher with Tourette syndrome since 16, whose tics had worsened with temporal lobe seizures, had a left temporal and orbitofrontal resection; tics fell within a week and were almost gone at nine months (tic score 52 to 8).",
    "caveat": "Antiepileptic changes after surgery could contribute. Depression and anxiety fall after epilepsy surgery on average (Hernandez Poblete 2024), so seizure control is a live alternative.",
    "tags": [
     "epilepsy-surgery",
@@ -14646,7 +15145,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, PMC) or the journal's open-access copy)",
    "era": {
     "label": "novel",
     "note": "",
@@ -14654,13 +15153,197 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Tics had tracked seizure frequency, so ending the seizures may have removed a seizure-driven exacerbation rather than touched the Tourette syndrome itself."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Standard scales before and at 1, 4 and 9 months; tics fell within a week and kept falling; medication unchanged throughout."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "24-year-old woman, mathematics teacher",
+     "age": 24,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -8,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Tourette syndrome from 16: vocal and complex motor tics, coprolalia, echophenomena, checking, anxiety and depression"
+      },
+      {
+       "kind": "cointervention",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Temporal lobe seizures began at 21; tics, controlled for years on aripiprazole and sertraline, relapsed and tracked seizure frequency"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Before surgery: Yale Global Tic Severity Scale 52, Y-BOCS 14, BDI 10; seizures daily",
+       "scores": [
+        {
+         "scale": "YGTSS total",
+         "value": 52,
+         "higher_is_better": false
+        },
+        {
+         "scale": "Y-BOCS",
+         "value": 14,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Left anterior temporal lobectomy (temporal pole, amygdala, hippocampus) with resection of mesial orbitofrontal cortex, after stereo-EEG"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "Tic frequency and intensity much lower; seizure-free",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "YGTSS 22",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "YGTSS total",
+         "value": 22,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "assessment",
+       "t": 4,
+       "unit": "months",
+       "precision": "exact",
+       "label": "YGTSS 10",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "YGTSS total",
+         "value": 10,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 9,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Sporadic tics once or twice a week; YGTSS 8, Y-BOCS 6; seizure-free on unchanged medication",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "YGTSS total",
+         "value": 8,
+         "higher_is_better": false
+        },
+        {
+         "scale": "Y-BOCS",
+         "value": 6,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Resection or ablation",
+    "side": "Left",
+    "regions": [
+     "Temporal, medial (amygdala, hippocampus)",
+     "Temporal, lateral",
+     "Orbitofrontal"
+    ],
+    "specific": "Left anterior temporal lobectomy (temporal pole, amygdala, hippocampus, parahippocampal cortex) and mesial orbitofrontal resection (MRI surface figure)",
+    "aetiology": "Surgery",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 7,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 8.0,
+    "follow_up_days": 273.938,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "YGTSS total",
+      "before": 52,
+      "after": 8,
+      "change_pct": -84.6
+     },
+     {
+      "scale": "Y-BOCS",
+      "before": 14,
+      "after": 6,
+      "change_pct": -57.1
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -16010,7 +16693,7 @@
   {
    "id": "harrison-2013",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1a"
@@ -16074,7 +16757,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, PMC) or the journal's open-access copy)",
    "era": {
     "label": "novel",
     "note": "",
@@ -16084,13 +16767,169 @@
     "coi-trigger"
    ],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Amino-acid supplements had been tried for addictions, and the group had seen other trial participants cut down."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Use fell weeks after mood lifted and rose as it fell; it may have been self-medication of the depression."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 1,
+     "note": "Stable four-week baseline; use fell after weeks on the micronutrients, rose within two weeks of stopping, fell again on restarting and rose after a second stop; use rated retrospectively on an ad hoc scale; no other treatment."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Brian, 20-year-old man",
+     "age": 20,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Daily cannabis and cigarettes for several years despite attempts to cut down; ADHD, depression, panic disorder; many medications failed"
+      },
+      {
+       "kind": "assessment",
+       "t": -4,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Four-week baseline, no psychotropics: daily cannabis and tobacco (urine positive); MADRS 28–31",
+       "to": 0,
+       "scores": [
+        {
+         "scale": "Use rating (0–4)",
+         "value": 3,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Broad-spectrum micronutrients (15 capsules a day) in a trial for ADHD and mood; substance use not targeted"
+      },
+      {
+       "kind": "first_change",
+       "t": 7,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Quit cigarettes and no longer used cannabis daily (mood had lifted from week 1)",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 10,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Stopped cigarettes and cannabis; MADRS 0",
+       "state": "Remitted"
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 10,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Micronutrients stopped per protocol"
+      },
+      {
+       "kind": "relapse",
+       "t": 12,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "A pack of cigarettes in a week, heavier cannabis; by 4 weeks off daily cannabis and two packs a week; MADRS 22–23",
+       "state": "Worse"
+      },
+      {
+       "kind": "exposure_restart",
+       "t": 20,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Micronutrients restarted"
+      },
+      {
+       "kind": "first_change",
+       "t": 25,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Stopped cannabis; mood back in remission",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 36,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Quit smoking again; no cannabis for six weeks; MADRS 1",
+       "state": "Remitted"
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 37,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Stopped when he left the city suddenly"
+      },
+      {
+       "kind": "follow_up",
+       "t": 57,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Four months off: smoking daily again, cannabis about monthly; mood still stable (MADRS 8), ADHD back",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 49,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 3.0,
+    "follow_up_days": 399,
+    "durability": "Lost, then regained",
+    "timeline_reversal": "On-off rechallenge",
+    "attribution_score": 5,
+    "attribution_grade": "A",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -18014,7 +18853,7 @@
   {
    "id": "dusoir-2005",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1b"
@@ -18067,8 +18906,8 @@
     "note": "",
     "links": []
    },
-   "summary": "Anorexia nervosa remitted after a left thalamic stroke.",
-   "caveat": "Short report; illness duration, measures and follow-up need the full text (free on PMC).",
+   "summary": "A 22-year-old who had had anorexia nervosa for seven years realised, days after a left thalamic stroke, that it had gone; she regained weight and periods and was still well at 13 months.",
+   "caveat": "The stroke was frightening (she was told it might be a tumour); the authors weigh shock against the lesion.",
    "tags": [
     "anorexia",
     "left-hemisphere",
@@ -18079,7 +18918,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-20: full text read (Full text through CKN (EBSCO, PMC) or the journal's open-access copy)",
    "era": {
     "label": "emerging",
     "note": "One of a small set of eating-disorder remissions after brain lesions (see Uher & Treasure 2005).",
@@ -18087,13 +18926,158 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Seven years of anorexia with admissions; abrupt change days after the stroke, with weight and menses following; Eating Disorder Inventory before (retrospective) and at 13 months; antidepressant continued, and the stroke itself was a frightening event (she was told it might be a tumour)."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "NA",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "22-year-old woman",
+     "age": 22,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -8,
+       "unit": "years",
+       "precision": "approx",
+       "label": "'Healthy eating' began six months after a young cousin died of a brain haemorrhage; anorexia nervosa"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -7,
+       "unit": "years",
+       "precision": "approx",
+       "label": "First admission at 15; antidepressants and psychiatric and psychological treatment without lasting benefit; weight 41–43 kg, BMI about 17",
+       "to": 0
+      },
+      {
+       "kind": "assessment",
+       "t": -2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Amenorrhoea from here until after the stroke; drive for thinness and body dissatisfaction high on the Eating Disorder Inventory (pre-stroke ratings completed retrospectively)",
+       "scores": [
+        {
+         "scale": "BMI",
+         "value": 17,
+         "higher_is_better": true
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Left posterolateral thalamic and posteromedial temporal infarct (thalamogeniculate territory): right-sided weakness, sensory loss and ataxia"
+      },
+      {
+       "kind": "first_change",
+       "t": 4,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Realised suddenly that she no longer had an eating disorder; chose cauliflower cheese and asked for a chocolate biscuit",
+       "state": "Remitted"
+      },
+      {
+       "kind": "best_response",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Gained 4 kg (BMI 18.7); no longer counting calories, relaxed about food; periods returned",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "BMI",
+         "value": 18.7,
+         "higher_is_better": true
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 13,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Sustained; drive for thinness and body dissatisfaction close to the mean for non-patient college women",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Thalamus",
+     "Temporal, medial (amygdala, hippocampus)"
+    ],
+    "specific": "Left posterolateral thalamic and posteromedial temporal infarct, inferolateral (thalamogeniculate) artery territory (MRI figure)",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "MRI and CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 4,
+    "latency_band": "1-13 days",
+    "baseline_years": 8.0,
+    "follow_up_days": 395.688,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "BMI",
+      "before": 17,
+      "after": 18.7,
+      "change_pct": 10.0
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {

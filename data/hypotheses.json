@@ -6797,6 +6797,505 @@
     }
    ],
    "related": []
+  },
+  {
+   "case_id": "dusoir-2005",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Some anorexia remits in the twenties, though rarely overnight."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Seven years, chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Typical restrictive anorexia with amenorrhoea."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Antidepressant unchanged."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "No apathy or cognitive loss; she ate more, not less."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A brush with death and a tumour scare could reorder priorities."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Pre-stroke ratings completed retrospectively."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Seven years of anorexia ended within days of a left thalamic stroke, with weight and periods back and the change held at 13 months. Abruptness favours the lesion; the authors leave the psychological shock as the live alternative.",
+   "hypotheses": [
+    {
+     "claim": "The thalamic lesion cut a thalamo-limbic relay that sustains the fear of eating and the distorted body image.",
+     "chain": "Left posterolateral thalamic infarct → disrupted thalamic relay to limbic and somatosensory cortex → body-image and food-fear signals lose drive",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Abrupt; thalamotomy has been used for anorexia; thalamic perfusion abnormalities reverse with recovery.",
+     "against": "Lateral rather than the dorsomedial nuclei targeted surgically.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "One case; retrospective baseline ratings.",
+     "test": "Eating-disorder outcomes after thalamic strokes, by nucleus."
+    },
+    {
+     "claim": "Being told she might have a brain tumour shocked her out of the illness.",
+     "chain": "Threat to life → re-evaluation of priorities → restrictive rules abandoned",
+     "mechanisms": [
+      "Meaning and life reorganisation"
+     ],
+     "latency_fit": "Fits",
+     "for": "Authors raise it.",
+     "against": "Earlier crises and admissions did not do this.",
+     "confidence": "Low",
+     "uncertainty_driver": "Can't separate from the lesion.",
+     "test": "Anorexia after non-cerebral medical emergencies."
+    }
+   ],
+   "related": [
+    {
+     "id": "fernandes-2020",
+     "why": "Anorexia nervosa ending after cerebral emboli"
+    },
+    {
+     "id": "ho-2001",
+     "why": "Anorexia nervosa ending after encephalitis with hypoxic injury"
+    }
+   ]
+  },
+  {
+   "case_id": "wagner-jauregg-1883",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Likely",
+     "why": "Acute asylum psychoses often remitted; nothing on how long she had been ill."
+    },
+    "regression": {
+     "rating": "Can't judge",
+     "why": "No baseline."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Could have been a delirium or an acute episode."
+    },
+    "cointervention": {
+     "rating": "Can't judge",
+     "why": "Nothing said."
+    },
+    "nonspecific": {
+     "rating": "Can't judge",
+     "why": "Nothing said."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "A one-line anecdote retold a century later."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Its weight is historical, not evidential: one line in a 1990 history, the observation that sent Wagner-Jauregg to the literature (including his own typhoid case who became normal briefly, then relapsed) and, 34 years later, to malaria therapy and the Nobel Prize.",
+   "hypotheses": [
+    {
+     "claim": "High fever and the inflammatory response interrupted the psychosis.",
+     "chain": "Streptococcal skin infection → high fever and cytokine surge → altered neural excitability and immune signalling → episode terminated",
+     "mechanisms": [
+      "Fever and heat",
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Wagner-Jauregg's tables found erysipelas the most effective fever.",
+     "against": "Nothing about this patient.",
+     "confidence": "Low",
+     "uncertainty_driver": "One sentence.",
+     "test": "His 1887 paper (Jb Psychiat Neurol 7:94–131) for the case details."
+    }
+   ],
+   "related": [
+    {
+     "id": "wahed-1934",
+     "why": "Malaria and schizophrenia"
+    },
+    {
+     "id": "zuschlag-2016",
+     "why": "Bacteraemia with high fever and remission"
+    },
+    {
+     "id": "anon-1890-influenza",
+     "why": "Influenza and insanity, 1890"
+    }
+   ]
+  },
+  {
+   "case_id": "sun-2023",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Tics wax and wane, and many fade by the mid-twenties."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Operated at the worst of the seizures and tics."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic Tourette syndrome years before seizures."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Medication unchanged."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Function and quality of life improved."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A long-hoped-for operation."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Scales at four time points."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Tics fell 85% within months of a left temporal and orbitofrontal resection. But tics had been controlled before the seizures began and worsened with them, so the likeliest reading is that the surgery removed a seizure-driven aggravation; whether removing amygdala and orbitofrontal cortex did more can't be told from one case.",
+   "hypotheses": [
+    {
+     "claim": "Seizure freedom removed a driver of tic exacerbation.",
+     "chain": "Limbic seizures and interictal discharges → heightened cortico-striatal excitability → tics worse; resection stops seizures → tics fall back",
+     "mechanisms": [
+      "Ion channels and excitability"
+     ],
+     "latency_fit": "Fits",
+     "for": "Tics tracked seizure frequency before surgery.",
+     "against": "Final tic level may be lower than before seizures.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Pre-seizure tic severity unscored.",
+     "test": "Tic outcomes after epilepsy surgery in people with tics and seizures."
+    },
+    {
+     "claim": "Removing orbitofrontal cortex and amygdala cut limbic input to the cortico-striatal loop generating tics.",
+     "chain": "Mesial orbitofrontal and amygdala resection → less limbic drive to striatum → fewer tics and obsessions",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Resection included classic limbic loop nodes.",
+     "against": "Confounded by seizure freedom.",
+     "confidence": "Low",
+     "uncertainty_driver": "One case.",
+     "test": "Compare tic outcomes after temporal resections with and without orbitofrontal extension."
+    }
+   ],
+   "related": [
+    {
+     "id": "ripsman-2025",
+     "why": "Tics gone after left temporal lobectomy, then back"
+    }
+   ]
+  },
+  {
+   "case_id": "harrison-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Use tracked the supplement through two stops and a restart."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Stable four-week baseline."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Daily use for years."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "No other treatment; therapist contact tapered."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He functioned better."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Open label; he knew when he was on the pills."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Use rated retrospectively on a home-made scale."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "An off-on-off-on-off single-case design in which cannabis and tobacco use followed the micronutrients, with a lag behind mood. The effect looks real; whether it is on addiction or on the depression he smoked to relieve is the open question.",
+   "hypotheses": [
+    {
+     "claim": "Mood and anxiety improved, removing the reason to self-medicate.",
+     "chain": "Micronutrients → better mood and less anxiety (MADRS 31 to 0) → less need for cannabis and nicotine → use falls weeks later",
+     "mechanisms": [
+      "Meaning and life reorganisation"
+     ],
+     "latency_fit": "Fits",
+     "for": "Use lagged mood by weeks in both on phases; low use when mood was low at follow-up.",
+     "against": "Follow-up: mood stable but smoking back.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Single case, open label.",
+     "test": "Mediation analysis of mood and use in micronutrient trials."
+    },
+    {
+     "claim": "Cofactors and amino-acid precursors normalised dopamine synthesis in reward circuits.",
+     "chain": "Micronutrients (B vitamins, minerals, amino acids) → more efficient catecholamine synthesis → less reward deficiency → less craving",
+     "mechanisms": [
+      "Dopamine",
+      "Bioenergetics and mitochondria"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Authors' hypothesis.",
+     "against": "No mechanistic data.",
+     "confidence": "Low",
+     "uncertainty_driver": "Speculative.",
+     "test": "Substance-use outcomes in randomised micronutrient trials."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "lugo-radillo-2021",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Ten years, through eight antidepressants and ketamine."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Y-BOCS 35 is near the ceiling."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Typical OCD."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Medication unchanged for nine months before."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Working better."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Psychedelic lore, an unblinded patient and repeated self-dosing: the main rival."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-report between visits."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Y-BOCS 35 to 13 on repeated psilocybin mushrooms after ten years of resistant OCD and nine months of unchanged medication. Expectancy is the main rival, as in every psilocybin case; the quick relief at a dose too low to cause hallucinations is the interesting detail.",
+   "hypotheses": [
+    {
+     "claim": "Psilocin's 5-HT2A agonism loosened rigid threat predictions in orbitofrontal-striatal circuits.",
+     "chain": "Psilocin → 5-HT2A activation → reduced orbitofrontal-striatal hyperactivity and more flexible priors → fewer obsessions and checking; repeated every two weeks",
+     "mechanisms": [
+      "Serotonin",
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Fits",
+     "for": "Relief within the hour, lasting about two weeks per dose; matches open-trial findings.",
+     "against": "Expectancy unaddressed.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No blinding or off phase.",
+     "test": "Controlled psilocybin trials in OCD."
+    }
+   ],
+   "related": [
+    {
+     "id": "moreno-delgado-1997",
+     "why": "Psilocybin relieving OCD, dose after dose"
+    },
+    {
+     "id": "leonard-rapoport-1987",
+     "why": "LSD and psilocin relieving OCD"
+    },
+    {
+     "id": "hanes-1996",
+     "why": "Psilocybin and body dysmorphic disorder"
+    }
+   ]
+  },
+  {
+   "case_id": "rammouz-2024",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Smokers do quit unaided, especially when life improves."
+    },
+    "regression": {
+     "rating": "Can't judge",
+     "why": "No smoking baseline."
+    },
+    "misdiagnosis": {
+     "rating": "Can't judge",
+     "why": "Dependence not characterised."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Medication unchanged."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Mood better, not blunted."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Daily clinic contact for two weeks."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "Nothing on how much he smoked, or for how long."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "A year off cigarettes after a two-week course of 1 Hz left prefrontal rTMS for depression. With no smoking history and a lifted mood alongside, the case can't separate a stimulation effect from a man quitting because he felt better.",
+   "hypotheses": [
+    {
+     "claim": "Prefrontal stimulation changed cue reactivity and craving in the fronto-striatal reward circuit.",
+     "chain": "rTMS to left dorsolateral prefrontal cortex → altered prefrontal control over striatal cue responses → less craving → abstinence",
+     "mechanisms": [
+      "Stimulation of a circuit",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Craving fell during the course; prefrontal rTMS reduces smoking in trials.",
+     "against": "Trials mostly used high frequency; this was 1 Hz.",
+     "confidence": "Low",
+     "uncertainty_driver": "No smoking data.",
+     "test": "Smoking outcomes in depression rTMS trials, by frequency."
+    },
+    {
+     "claim": "Recovery from depression removed the reason to smoke.",
+     "chain": "Mood lifts (BDI 26 to 6) → less self-medication → quits",
+     "mechanisms": [
+      "Meaning and life reorganisation"
+     ],
+     "latency_fit": "Fits",
+     "for": "Mood and smoking changed together.",
+     "against": "Many depressed patients recover without quitting.",
+     "confidence": "Low",
+     "uncertainty_driver": "Single case.",
+     "test": "As above."
+    }
+   ],
+   "related": [
+    {
+     "id": "naqvi-2007",
+     "why": "Insula damage ending smoking"
+    },
+    {
+     "id": "downar-2012",
+     "why": "rTMS for depression ending bingeing"
+    }
+   ]
+  },
+  {
+   "case_id": "sair-2018",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Seventeen years, chronic."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic and stable."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic contamination OCD."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Medication changes in hospital not described."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Confusion and disorientation early after the bleed could mute rituals."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Pre-stroke Y-BOCS rated in retrospect."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Seventeen years of OCD gone in four days and back in about two months as the oedema settled: a natural on-off pattern that ties the remission to the mass effect on the striatum rather than to the bleed's site in cortex.",
+   "hypotheses": [
+    {
+     "claim": "Oedema from the haemorrhage compressed the left striatum and transiently silenced the cortico-striatal loop driving the OCD.",
+     "chain": "Haematoma and vasogenic oedema → compression of left striatum → reduced cortico-striatal-thalamic activity → OCD quiet → oedema resolves → loop recovers → OCD returns",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Remission and relapse tracked the mass effect.",
+     "against": "Early confusion overlaps.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Relapse timing not scored.",
+     "test": "Serial Y-BOCS against imaging in OCD patients with striatal mass effect."
+    }
+   ],
+   "related": [
+    {
+     "id": "yaryura-tobias-2003",
+     "why": "OCD gone with a putaminal bleed, back as it resolved"
+    },
+    {
+     "id": "fujii-2005",
+     "why": "OCD improving after a putaminal haemorrhage"
+    }
+   ]
   }
  ]
 }
