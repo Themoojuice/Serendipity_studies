@@ -12,17 +12,13 @@ todo = [r for r in cases if r["id"] not in H]
 # Free copies that exist but sit behind a bot check or sign-up in the app's browser (2026-11-17); one click in a normal browser
 EASY = {
     "klok-2025": "Edinburgh repository PDF (Cloudflare check in the app's browser)",
-    "mira-2024": "HAL copy: hal.science/hal-04741916 (bot check in the app's browser)",
     "kalenderoglu-2011": "Türkiye Klinikleri PDF (Cloudflare check)",
-    "de-filippis-2026": "Preprints.org (bot check)",
-    "sair-2018": "Open access at Psychiatry and Clinical Psychopharmacology (site refused the app's browser)",
-    "tsang-2023": "Open access at East Asian Archives of Psychiatry (site refused the app's browser)",
+    "de-filippis-2026": "Preprints.org (refused the app's browser: Access Denied)",
     "berner-2008": "Free PDF at psychiatrist.com after a free account",
     "richards-2024": "Free PDF at psychiatrist.com after a free account",
-    "dusoir-2005": "PMC scanned PDF (proof-of-work check in the app's browser)",
-    "wagner-jauregg-1883": "PMC page scans, 17 pages (long; left for a dedicated read)",
-    "nagata-2013": "Cambridge abstract only; letter",
-    "boudjani-2012": "Free conference abstract in Stroke (ahajournals.org; Cloudflare check in the app's browser)",
+    "colli-2003": "Free in the Journal of Near-Death Studies archive at UNT Digital Library (doi.org/10.17514/jnds-2003-22-1-p33-55); it shows an 'I'm not a robot' box, which Claude leaves to you",
+    "van-den-hoven-2021": "Free in the Netherlands Journal of Critical Care 2021;29(5):222-5 (njcc.nl; its security certificate failed in the app's browser)",
+    "nagata-2013": "International Psychogeriatrics has moved to ScienceDirect (Cloudflare check); not in ClinicalKey",
     "taira-2003": "thejns.org refused the app's browser",
 }
 NOTES = {
