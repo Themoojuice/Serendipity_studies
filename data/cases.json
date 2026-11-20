@@ -1926,7 +1926,7 @@
    "id": "solyom-1987",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "B",
    "collections": [
     "top12"
    ],
@@ -1990,7 +1990,7 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-20: full text read (Full text through CKN (Cambridge, Springer, EBSCO))",
    "era": {
     "label": "emerging",
     "note": "",
@@ -1998,13 +1998,195 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Leyton Obsessional Inventory before (1980), after and at two years; rituals cut by seven-eighths within three weeks of the injury, before the ward treatment; but exposure therapy, phenelzine, carbamazepine and leaving a hostile home all followed."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Tom, 19-year-old man",
+     "age": 19,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -9,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Contamination fears, checking and hand-washing from age 10"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Admission at 15 for exposure and response prevention; clomipramine 200 mg at 16: no change in OCD or depression",
+       "to": -2
+      },
+      {
+       "kind": "assessment",
+       "t": -2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Worse: perfection rituals, 50 chants to recall; two suicide attempts; Leyton symptom 32, interference 51 (1980 testing)",
+       "scores": [
+        {
+         "scale": "Leyton symptom",
+         "value": 32,
+         "higher_is_better": false
+        },
+        {
+         "scale": "Leyton interference",
+         "value": 51,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Shot himself through the mouth with a .22 rifle: bullet through the cribriform plate into the base of the left frontal lobe, lodged in premotor cortex, fragments along the head of the caudate"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Same obsessions but much less frequent and intense; bathroom rituals down from 4 hours to half an hour",
+       "state": "Partial"
+      },
+      {
+       "kind": "cointervention",
+       "t": 1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Two months on the psychiatric ward: exposure and response prevention, phenelzine to 75 mg; carbamazepine for persistent depression; away from home",
+       "to": 3
+      },
+      {
+       "kind": "assessment",
+       "t": 3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Rituals down to 15 minutes a day; Leyton symptom 21, interference 24 (February 1984)",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "Leyton symptom",
+         "value": 21,
+         "higher_is_better": false
+        },
+        {
+         "scale": "Leyton interference",
+         "value": 24,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 2,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Obsessions minimal, mood calm, finished school, IQ 133; no frontal-lobe syndrome; Leyton symptom 12, interference 11",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Leyton symptom",
+         "value": 12,
+         "higher_is_better": false
+        },
+        {
+         "scale": "Leyton interference",
+         "value": 11,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Injury",
+    "side": "Left",
+    "regions": [
+     "Orbitofrontal",
+     "Frontal, other",
+     "Caudate"
+    ],
+    "specific": "Gunshot track through the cribriform plate into the base of the left frontal lobe, bullet in premotor cortex, fragments along the head of the caudate; part of the left frontal lobe infarcted on later CT",
+    "aetiology": "Trauma",
+    "imaging": "CT",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 21,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 9.0,
+    "follow_up_days": 730.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "Leyton symptom",
+      "before": 32,
+      "after": 12,
+      "change_pct": -62.5
+     },
+     {
+      "scale": "Leyton interference",
+      "before": 51,
+      "after": 11,
+      "change_pct": -78.4
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -4238,7 +4420,7 @@
    "id": "diamond-2011",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "B",
    "collections": [
     "round2"
    ],
@@ -4281,7 +4463,7 @@
    },
    "outcome": {
     "resolution": "Complete",
-    "time_to_resolution": "Immediate",
+    "time_to_resolution": null,
     "follow_up": null,
     "reversal": "None reported"
    },
@@ -4290,7 +4472,7 @@
     "note": "",
     "links": []
    },
-   "summary": "Severe OCD disappeared immediately after a small right frontoparietal infarct.",
+   "summary": "Lifelong, familial OCD that she had hidden from doctors was gone within weeks of a small right frontoparietal stroke, and still gone two years later.",
    "caveat": "",
    "tags": [
     "frontoparietal",
@@ -4300,7 +4482,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-20: full text read (Full text through CKN (Cambridge, Springer, EBSCO))",
    "era": {
     "label": "novel",
     "note": "",
@@ -4308,13 +4490,128 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Decades of OCD (by her account, never treated) gone within weeks of the infarct and still gone at two years; no rating scale, and the history was taken after the stroke."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "NA",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "43-year-old woman",
+     "age": 43,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -25,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Constant intrusive fears of harm to family, violent images of knives, checking locks up to 15 times a day; childhood tics; strong family history of OCD"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "No OCD treatment ever: hid symptoms to keep her teaching job; bupropion 300 mg for attention deficit only"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Small right posterior frontoparietal cortical-subcortical infarct (patent foramen ovale): left arm and face weakness"
+      },
+      {
+       "kind": "cointervention",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Patent foramen ovale closed; aspirin"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "Obsessions, fears, rituals and impulsive behaviour completely gone; temper better; attention unchanged",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 24,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Still free of OCD; she regards the stroke as beneficial",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Right",
+    "regions": [
+     "Frontal, other",
+     "Parietal"
+    ],
+    "specific": "Small right posterior frontal and anterior parietal cortical-subcortical infarct on diffusion MRI (figure)",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 21,
+    "latency_band": "2 weeks to 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 25.0,
+    "follow_up_days": 730.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -30001,8 +30298,8 @@
   {
    "id": "yilmaz-2014",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1e"
    ],
@@ -30065,7 +30362,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-20: full text read (Full text through CKN (Cambridge, Springer, EBSCO))",
    "era": {
     "label": "novel",
     "note": "",
@@ -30073,13 +30370,132 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Two earlier case reports had linked methylphenidate to less stealing in ADHD; the authors cite them."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "At 7, stealing may be ADHD impulsivity, which methylphenidate treats directly."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Near-daily stealing for months, CGI before and at two weeks; stopped within 10 days of methylphenidate; no behavioural treatment. Parents' report only."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "7-year-old girl",
+     "age": 7,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Stealing classmates' things (sharpeners, erasers, Lego pieces) since kindergarten, kept but not used; punishment didn't help"
+      },
+      {
+       "kind": "assessment",
+       "t": -6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Stealing nearly every day; CGI kleptomania markedly ill; inattentive ADHD (Conners attention 12)",
+       "to": 0,
+       "scores": [
+        {
+         "scale": "CGI-S kleptomania",
+         "value": 5,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Osmotic-release methylphenidate 18 mg daily for ADHD"
+      },
+      {
+       "kind": "first_change",
+       "t": 10,
+       "unit": "days",
+       "precision": "at most",
+       "label": "Stealing completely stopped; ADHD only moderately better",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "CGI-I kleptomania very much improved; Conners attention 6",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "CGI-I kleptomania",
+         "value": 1,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 4,
+       "unit": "months",
+       "precision": "exact",
+       "label": "No stealing",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 10,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 3.0,
+    "follow_up_days": 121.75,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -32244,8 +32660,8 @@
   {
    "id": "andreou-2008",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1f"
    ],
@@ -32309,7 +32725,7 @@
    "same_patient_as": null,
    "found_via": "unsure pile, full-text appraisal",
    "date_added": "2026-11-15",
-   "verified": "2026-11-15: full text read through CKN (Springer); identifiers from PubMed",
+   "verified": "2026-11-20: full text read (Full text through CKN (Cambridge, Springer, EBSCO))",
    "era": {
     "label": "novel",
     "note": "",
@@ -32318,12 +32734,115 @@
    "flags": [],
    "appraisal": {
     "basis": "Full text",
-    "date": "2026-11-15",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Years of cycle-locked episodes unchanged by psychotropics; better as metformin restored ovulation; no scale and no hormone levels (she refused blood tests); psychotropics continued alongside."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
     "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "A.B., 21-year-old woman",
+     "age": 21,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -7,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Manic symptoms a few days before every period since menarche at 14, clearing 2–3 days into bleeding"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -24,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Several adequate trials of antipsychotics and mood stabilisers: episodes unchanged",
+       "to": -8
+      },
+      {
+       "kind": "assessment",
+       "t": -8,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Admitted with premenstrual delusions of reference, persecution and misidentification, now only partly clearing after bleeding; polycystic ovary syndrome (BMI 44)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Metformin 850 mg/day for polycystic ovary syndrome, because the menstrual dysfunction persisted"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Spontaneous period, then regular 28–30-day cycles; psychotic symptoms much better",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 1,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Free of psychosis premenstrually, or only mild persecutory ideas for hours to 2 days",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 30.438,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 7.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {

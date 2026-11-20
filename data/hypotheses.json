@@ -6521,6 +6521,282 @@
      "why": "LSD and psilocin relieving OCD"
     }
    ]
+  },
+  {
+   "case_id": "solyom-1987",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Nine years, worsening, through exposure therapy and clomipramine."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "He shot himself at his lowest point."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic contamination and checking OCD."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Exposure therapy, phenelzine and carbamazepine followed, though the first fall came before them."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "IQ rose to 133; no apathy or disinhibition."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Scales at three time points."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "The founding case of the lesion-OCD line: a self-inflicted leucotomy with Leyton scores before, after and two years on, and an IQ that went up. The fall in rituals came within three weeks, ahead of the ward treatment; the authors themselves flag hitting bottom and leaving home as rivals.",
+   "hypotheses": [
+    {
+     "claim": "The bullet did roughly what a leucotomy does: it cut orbitofrontal and caudate links in the loop that sustains obsessions.",
+     "chain": "Left orbitofrontal and caudate head damage → disconnection of the orbitofrontal-striatal-thalamic loop → obsessions and rituals lose their drive",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Rituals fell within three weeks; track crosses orbitofrontal cortex and caudate head, the classic psychosurgical targets; cognition spared.",
+     "against": "Unilateral; behavioural treatment followed.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "One case, and a burst of treatment after the injury.",
+     "test": "OCD outcomes after penetrating orbitofrontal injuries in war-injury cohorts."
+    },
+    {
+     "claim": "Surviving the attempt and leaving a hostile home changed the meaning and setting of his illness.",
+     "chain": "Near-death and admission → removal from a home where his mother told him to shoot himself → less threat and fewer cues → fewer rituals",
+     "mechanisms": [
+      "Social and environmental change",
+      "Meaning and life reorganisation"
+     ],
+     "latency_fit": "Fits",
+     "for": "Authors raise it.",
+     "against": "Earlier admissions and suicide attempts had not helped.",
+     "confidence": "Low",
+     "uncertainty_driver": "Can't separate from the lesion in one case.",
+     "test": "Compare OCD after non-brain suicide attempts."
+    }
+   ],
+   "related": [
+    {
+     "id": "diamond-2011",
+     "why": "Severe OCD gone after a small right frontoparietal stroke"
+    },
+    {
+     "id": "yaryura-tobias-2003",
+     "why": "OCD gone with a putaminal bleed, back as it resolved"
+    },
+    {
+     "id": "gota-garces-2017",
+     "why": "OCD remitting after a failed suicide attempt"
+    }
+   ]
+  },
+  {
+   "case_id": "diamond-2011",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Lifelong, familial, untreated OCD rarely vanishes in weeks."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic and steady."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic harm obsessions and checking with a family history."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Aspirin and a foramen closure."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Small lesion, no apathy; attention unchanged."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A stroke survivor's re-evaluation of what matters."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "The whole before-picture was recalled after the stroke, by a patient who had hidden it from doctors."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Decades of familial OCD gone within weeks of a small right frontoparietal stroke and still gone at two years, without apathy. An odd site for OCD relief, which is the interest: it sits outside the orbitofrontal-striatal loop the surgeons target.",
+   "hypotheses": [
+    {
+     "claim": "The infarct changed input to the dorsolateral prefrontal cortex and, through it, the cortico-striatal loop.",
+     "chain": "Right posterior frontoparietal infarct → altered frontoparietal control network input → loop driving obsessions and checking destabilised",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate, durable, selective; lesion connected to frontoparietal control networks implicated in OCD.",
+     "against": "Site atypical; no imaging of connectivity.",
+     "confidence": "Low",
+     "uncertainty_driver": "One case, no measures.",
+     "test": "Lesion network mapping of OCD-relieving lesions (this, Solyom, Yaryura-Tobias)."
+    },
+    {
+     "claim": "A frightening stroke reorganised her priorities and loosened the harm obsessions.",
+     "chain": "Near miss → re-evaluation and reassurance → fewer threat predictions about family",
+     "mechanisms": [
+      "Meaning and life reorganisation"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "She sees the stroke as a gift.",
+     "against": "Usually stroke worsens anxiety.",
+     "confidence": "Low",
+     "uncertainty_driver": "Psychological reaction not explored.",
+     "test": "Compare OCD after non-cerebral health scares."
+    }
+   ],
+   "related": [
+    {
+     "id": "solyom-1987",
+     "why": "Left frontal gunshot cutting OCD"
+    },
+    {
+     "id": "yaryura-tobias-2003",
+     "why": "OCD gone with a putaminal bleed"
+    }
+   ]
+  },
+  {
+   "case_id": "yilmaz-2014",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Escalating over three years."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Referred when stealing peaked."
+    },
+    "misdiagnosis": {
+     "rating": "Likely",
+     "why": "Kleptomania at 7 is rare; impulsive ADHD stealing is the commoner reading."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "No behavioural treatment."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Function improved."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Parents' reports after a hoped-for drug."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Parent report; thefts not counted."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "Stealing stopped within ten days of methylphenidate in a 7-year-old with ADHD. The authors argue it outran the ADHD response, but in a child this young the simplest reading is that an ADHD drug treated ADHD-driven stealing.",
+   "hypotheses": [
+    {
+     "claim": "Methylphenidate strengthened prefrontal inhibitory control over reward-driven urges.",
+     "chain": "Methylphenidate → more prefrontal and striatal dopamine and noradrenaline → better response inhibition → urges to take things resisted",
+     "mechanisms": [
+      "Dopamine",
+      "Noradrenaline"
+     ],
+     "latency_fit": "Fits",
+     "for": "Fast and complete.",
+     "against": "Impulsivity, not a separate disorder, may be what was treated.",
+     "confidence": "Low",
+     "uncertainty_driver": "Kleptomania at this age is diagnostically shaky.",
+     "test": "Stealing outcomes in methylphenidate trials in ADHD."
+    }
+   ],
+   "related": [
+    {
+     "id": "miyazaki-2023",
+     "why": "Methylphenidate and kleptomania in a 16-year-old"
+    }
+   ]
+  },
+  {
+   "case_id": "andreou-2008",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Menstrual psychoses can fade with time, though hers had worsened."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Admitted at her worst."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Episodes locked to the cycle since menarche."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Antipsychotics and mood stabilisers continued; regimens not specified."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Specific to the premenstrual window."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No ratings or counts."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Psychosis that had arrived with every period since menarche faded once metformin restored regular ovulation, held for a year. Supports the old idea that anovulatory oestrogen swings drive menstrual psychosis, though no hormone was measured.",
+   "hypotheses": [
+    {
+     "claim": "Restoring ovulation ended the sustained-oestrogen-then-withdrawal pattern of anovulatory cycles that triggered the episodes.",
+     "chain": "Metformin → lower insulin and androgens → ovulation restored → progesterone-opposed, gentler oestrogen fall premenstrually → no dopamine-sensitising oestrogen withdrawal → no episodes",
+     "mechanisms": [
+      "Sex steroids and reproduction",
+      "Metabolic state (ketosis, insulin, glucose)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Timing tracked the return of cycles; Brockington's anovulation model.",
+     "against": "No hormone measurements.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Hormones unmeasured; psychotropics continued.",
+     "test": "Cycle-phase hormone profiles and episodes in menstrual psychosis with and without ovulation."
+    }
+   ],
+   "related": []
   }
  ]
 }

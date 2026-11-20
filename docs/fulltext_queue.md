@@ -1,6 +1,6 @@
 # Full texts still needed
 
-131 of 223 cases aren't fully coded yet because their full text couldn't be reached from this session (written by `scripts/make_fulltext_queue.py`). Each needs a read and a coding batch (`protocol/SCHEMA.md` §7). Easy wins first: free copies that only a bot check stood in front of.
+127 of 223 cases aren't fully coded yet because their full text couldn't be reached from this session (written by `scripts/make_fulltext_queue.py`). Each needs a read and a coding batch (`protocol/SCHEMA.md` §7). Easy wins first: free copies that only a bot check stood in front of.
 
 ## Easy wins: free, one click in a normal browser (13)
 
@@ -46,12 +46,10 @@
 - **ward-1975** · tier C · Successful lithium treatment of transvestism associated with manic-depression. (J Nerv Ment Dis 1975) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2F00005053-197509000-00009) · [DOI](https://doi.org/10.1097/00005053-197509000-00009) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/1176977/)
 - **yovell-1994** · tier C · Clozapine reverses cocaine craving in a treatment-resistant mentally ill chemical abuser: a case report and a hypothesis. (J Nerv Ment Dis 1994) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2F00005053-199410000-00017) · [DOI](https://doi.org/10.1097/00005053-199410000-00017) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/7931211/)
 
-## CKN, Springer (works once signed in) (4)
+## CKN, Springer (works once signed in) (2)
 
 - **abdollahifard-2026** · tier A · Incidental resolution of pedophilia in a patient undergoing deep brain stimulation (DBS) for obsessive-compulsive disorder (OCD): a case report and long-term follow-up. (Neurol Sci 2026) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1007%2Fs10072-026-08808-9) · [DOI](https://doi.org/10.1007/s10072-026-08808-9) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/41629421/)
-- **andreou-2008** · tier C · Metformine for psychosis associated with the menstrual cycle in a patient with polycystic ovary syndrome. (Arch Womens Ment Health 2008) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1007%2Fs00737-008-0032-7) · [DOI](https://doi.org/10.1007/s00737-008-0032-7) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/18827957/)
 - **cohen-lipton-1950** · tier C · Spontaneous remission of schizophrenic psychoses following maternal death; report of 3 cases. (Psychiatr Q 1950) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1007%2Fbf02229830) · [DOI](https://doi.org/10.1007/bf02229830) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/14797874/)
-- **yilmaz-2014** · tier C · The possible effect of methylphenidate on kleptomania in a school-age girl with attention-deficit/hyperactivity disorder. (Eur Child Adolesc Psychiatry 2014) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1007%2Fs00787-013-0484-9) · [DOI](https://doi.org/10.1007/s00787-013-0484-9) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/24122344/)
 
 ## Download the PDF yourself (Elsevier: Cloudflare in the app's browser) (8)
 
@@ -94,9 +92,8 @@
 - **liu-2016** · tier C · Refractory depression with catatonic features was remitted with administration of intravenous dopamine and consequent bupropion as maintenance treatment. (Aust N Z J Psychiatry 2016) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F0004867415616697) · [DOI](https://doi.org/10.1177/0004867415616697) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26560841/)
 - **spiers-2016** · tier C · Organic psychosis improving after a seizure. (Aust N Z J Psychiatry 2016) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F0004867416656261) · [DOI](https://doi.org/10.1177/0004867416656261) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/27357715/)
 
-## Download the PDF yourself (Taylor & Francis / Informa) (9)
+## Download the PDF yourself (Taylor & Francis / Informa) (8)
 
-- **diamond-2011** · tier A · Resolution of severe obsessive--compulsive disorder after a small unilateral nondominant frontoparietal infarct. (Int J Neurosci 2011) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3109%2F00207454.2011.561941) · [DOI](https://doi.org/10.3109/00207454.2011.561941) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/21426244/)
 - **mackillop-2026** · tier A · The man who forgot his addiction: Sustained remission of cocaine use disorder following overdose-induced bilateral hippocampus stroke. (Clin Neuropsychol 2026) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F13854046.2026.2651223) · [DOI](https://doi.org/10.1080/13854046.2026.2651223) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/42011056/)
 - **yeung-2020** · tier A · Paradoxical complete and spontaneous resolution of depression, psychosis, and suicidal ideation following a traumatic brain injury. (Brain Inj 2020) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F02699052.2020.1805125) · [DOI](https://doi.org/10.1080/02699052.2020.1805125) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33331803/)
 - **lugo-radillo-2021** · tier B · Long-term Amelioration of OCD Symptoms in a Patient with Chronic Consumption of Psilocybin-containing Mushrooms. (J Psychoactive Drugs 2021) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F02791072.2020.1849879) · [DOI](https://doi.org/10.1080/02791072.2020.1849879) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/33225874/)
@@ -106,11 +103,10 @@
 - **terao-1999** · tier C · Schizophrenia and bladder stones. (Aust N Z J Psychiatry 1999) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F0004867990475) · [DOI](https://doi.org/10.1080/0004867990475) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/10545010/)
 - **wilcox-2008** · tier C · Depression cured by stroke. (Ann Clin Psychiatry 2008) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F10401230802177730) · [DOI](https://doi.org/10.1080/10401230802177730) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/18633743/)
 
-## Thieme / Karger / AMA / AAN / BMJ / JNS / other (14)
+## Thieme / Karger / AMA / AAN / BMJ / JNS / other (13)
 
 - **erol-durgun-2026** · tier A · Improvement in psychiatric symptoms after subdural haematoma and decompressive craniotomy. (BMJ Case Rep 2026) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fbcr-2025-266529) · [DOI](https://doi.org/10.1136/bcr-2025-266529) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/41946537/)
 - **jarraya-2010** · tier A · Disruption of cigarette smoking addiction after posterior cingulate damage. (J Neurosurg 2010) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3171%2F2010.6.jns10346) · [DOI](https://doi.org/10.3171/2010.6.jns10346) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/20597598/)
-- **solyom-1987** · tier A · A case of self-inflicted leucotomy. (Br J Psychiatry 1987) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1192%2Fbjp.151.6.855) · [DOI](https://doi.org/10.1192/bjp.151.6.855) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/3502814/)
 - **fontaine-2004** · tier B · Effect of subthalamic nucleus stimulation on obsessive-compulsive disorder in a patient with Parkinson disease. Case report. (J Neurosurg 2004) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3171%2Fjns.2004.100.6.1084) · [DOI](https://doi.org/10.3171/jns.2004.100.6.1084) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/15200126/)
 - **mantione-2010** · tier B · Smoking cessation and weight loss after chronic deep brain stimulation of the nucleus accumbens: therapeutic and research implications: case report. (Neurosurgery 2010) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1227%2F01.neu.0000360570.40339.64) · [DOI](https://doi.org/10.1227/01.neu.0000360570.40339.64) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/20023526/)
 - **pantoni-1997** · tier B · Disappearance of motor tics after Wernicke's encephalopathy in a patient with Tourette's syndrome. (Neurology 1997) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1212%2Fwnl.48.2.381) · [DOI](https://doi.org/10.1212/wnl.48.2.381) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/9040726/)
