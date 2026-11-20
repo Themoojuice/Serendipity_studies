@@ -8170,6 +8170,252 @@
      "why": "Schizophrenia clearing after an unrelated physiological insult"
     }
    ]
+  },
+  {
+   "case_id": "d-andrea-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Three years of worsening PTSD through every treatment."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Given at a crisis, with suicide risk and a birth approaching."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic combat PTSD, repeatedly measured."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "A 24-hour washout and nothing else new."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He was warmer and more engaged, not blunted."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A dramatic, much-anticipated infusion."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "PCL-M before and after, and his wife's account."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "One ketamine infusion given for depression wiped out three years of refractory combat PTSD for two weeks, by a standard checklist, and it came back within a day. A clean demonstration of an effect, if a short one; esketamine later went into PTSD trials.",
+   "hypotheses": [
+    {
+     "claim": "NMDA blockade triggered a burst of synaptic plasticity that loosened entrenched fear and threat circuits.",
+     "chain": "Ketamine → NMDA antagonism → glutamate surge, BDNF and mTOR signalling → prefrontal synaptogenesis → stronger top-down control of amygdala threat responses → PTSD symptoms lift until the new synapses fade",
+     "mechanisms": [
+      "Glutamate",
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Fits",
+     "for": "Effect within hours, gone in about two weeks: the time course of ketamine's antidepressant action.",
+     "against": "Depression lifted too, so PTSD-specific action is unproven.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "One case; mood confound.",
+     "test": "Ketamine trials in PTSD without depression."
+    }
+   ],
+   "related": [
+    {
+     "id": "ray-2016",
+     "why": "Ketamine for pain lifting refractory panic and agoraphobia"
+    }
+   ]
+  },
+  {
+   "case_id": "macleod-1897",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Seven years of continuous use."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Iatrogenic morphine dependence."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "She was withdrawn from morphine in hospital while narcotised: an accidental rapid detoxification."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Two weeks of delirium and amnesia."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "She had said she did not want to be cured."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "One physician's account, about a year of follow-up."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "A seven-year morphine habit ended after accidental bromide poisoning: she woke from two weeks of delirium with no craving, in a woman who had no wish to stop. Her doctor then reproduced it on purpose in a pilot. Withdrawal under narcosis is the boring explanation; the lost craving is what made him try it again.",
+   "hypotheses": [
+    {
+     "claim": "Prolonged bromide narcosis and delirium let withdrawal pass unfelt and broke the conditioned craving.",
+     "chain": "Bromide intoxication → days of stupor and amnesia → morphine withdrawn without the experience of withdrawal or cue-driven craving → habit loses its reinforcement",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)",
+      "Extinction and exposure"
+     ],
+     "latency_fit": "Fits",
+     "for": "No craving from admission; the same happened in the deliberate second case.",
+     "against": "Anaesthesia-assisted detoxification today has poor long-term results.",
+     "confidence": "Low",
+     "uncertainty_driver": "Two cases, one deliberate.",
+     "test": "None now; rapid opioid detoxification under anaesthesia trials are the modern analogue."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "anon-1888-typhoid",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Asylum melancholias did remit, though chronic ones less often."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Period diagnosis, no description."
+    },
+    "cointervention": {
+     "rating": "Can't judge",
+     "why": "Nothing said."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Discharged well."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "A short reprinted news item."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "An asylum typhoid outbreak 'cured' a woman with several years of melancholia and a young man with mania. Too thin to weigh, but one of the fever cures that accumulated until Wagner-Jauregg acted on them.",
+   "hypotheses": [
+    {
+     "claim": "High fever and the systemic inflammatory response interrupted a chronic depressive state.",
+     "chain": "Typhoid → prolonged high fever and cytokine surge → reset of neuroimmune and HPA signalling → melancholia lifts",
+     "mechanisms": [
+      "Fever and heat",
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Echoes many period reports.",
+     "against": "No detail.",
+     "confidence": "Low",
+     "uncertainty_driver": "News item.",
+     "test": "The Medical and Surgical Reporter original (1888)."
+    }
+   ],
+   "related": [
+    {
+     "id": "wagner-jauregg-1883",
+     "why": "Erysipelas and insanity, 1883"
+    },
+    {
+     "id": "anon-1890-influenza",
+     "why": "Influenza and insanity, 1890"
+    }
+   ]
+  },
+  {
+   "case_id": "granato-1994",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Fifteen months, worsening."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Catatonic stupor rather than depression; benzodiazepines are expected to lift catatonia."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Amineptine at four weeks is within antidepressant onset time."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He brightened, not sedated."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Given for a scan."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No scale; ten days."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "A mute, stuporous depressed man brightened the day after midazolam given for an MRI. It sits with DeLisle and Morena's midazolam catatonia cases; benzodiazepine-responsive catatonia and an antidepressant started four weeks earlier are the two boring explanations.",
+   "hypotheses": [
+    {
+     "claim": "GABA-A potentiation released a catatonic stupor layered on the depression.",
+     "chain": "Midazolam → GABA-A potentiation → relief of catatonic motor and affective inhibition (lorazepam-challenge mechanism) → speech and affect return",
+     "mechanisms": [
+      "GABA"
+     ],
+     "latency_fit": "Fits",
+     "for": "Overnight; stupor features prominent.",
+     "against": "Midazolam is gone within hours, yet the change held ten days.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No ratings or rechallenge.",
+     "test": "Lorazepam challenge in stuporous depression in the elderly."
+    }
+   ],
+   "related": [
+    {
+     "id": "delisle-1991",
+     "why": "Midazolam reversing catatonia, on and off"
+    },
+    {
+     "id": "morena-1994",
+     "why": "Midazolam for MRI lifting catatonia"
+    }
+   ]
   }
  ]
 }

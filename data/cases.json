@@ -35434,6 +35434,785 @@
     "jbi_of": 8,
     "rule_tier": "B"
    }
+  },
+  {
+   "id": "d-andrea-2013",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "A",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "D'Andrea D, Sewell RA",
+    "title": "Transient resolution of treatment-resistant posttraumatic stress disorder following ketamine infusion.",
+    "journal": "Biol Psychiatry",
+    "year": 2013,
+    "volume": "74",
+    "issue": "9",
+    "pages": "e13-4"
+   },
+   "ids": {
+    "doi": "10.1016/j.biopsych.2013.04.019",
+    "pmid": "23706680",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": null,
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/23706680/",
+    "doi": "https://doi.org/10.1016/j.biopsych.2013.04.019",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.biopsych.2013.04.019"
+   },
+   "access": "Paywalled",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Trauma & stressor-related"
+    ],
+    "specific": "Severe chronic combat PTSD in a 23-year-old veteran, unchanged by three admissions, exposure therapy, EMDR and ten drugs",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "A single ketamine infusion (35 mg with propofol) given for treatment-resistant depression",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Temporary",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 2,
+    "note": "",
+    "links": []
+   },
+   "summary": "A veteran with years of severe, treatment-resistant combat PTSD was given one ketamine infusion for depression; within hours he was affectionate and calm, nightmares and hyperarousal gone (PTSD checklist 66 to 29), and two weeks later it all came back within a day.",
+   "caveat": "Depression and PTSD lifted together, so the PTSD change may ride on the antidepressant effect.",
+   "tags": [
+    "NMDA",
+    "PTSD",
+    "depression",
+    "ketamine",
+    "transient",
+    "veteran"
+   ],
+   "same_patient_as": null,
+   "found_via": "unsure pile, full-text appraisal",
+   "date_added": "2026-11-20",
+   "verified": "2026-11-20: full text read (Full text read tonight (ClinicalKey, PMC scans, Cambridge))",
+   "era": {
+    "label": "emerging",
+    "note": "Perioperative ketamine and later PTSD had mixed reports; the first ketamine trial in PTSD was under way (Feder 2014) and esketamine later entered PTSD trials.",
+    "basis": "judged"
+   },
+   "flags": [],
+   "appraisal": {
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Perioperative ketamine and PTSD had mixed reports and a ketamine PTSD trial was under way."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Depression and PTSD lifted together; the PTSD change may ride on the antidepressant effect."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Years of measured, refractory PTSD; PCL-M 66 to 29 within a week of one infusion, after a washout and with nothing else new; relapse at 15 days as a single dose wore off."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "23-year-old army veteran",
+     "age": 23,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Combat PTSD after a 15-month deployment with daily bombardment and 300 firefights: nightmares, 3 hours' sleep, hypervigilant 'guard duty' on the balcony, daily panic, rage"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -2,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Trauma recovery programme (PCL-M 63 to 44, short-lived), exposure therapy, an 8-week residential programme (49 to 56), EMDR, ten antidepressants and antipsychotics, six hypnotics; three admissions",
+       "to": 0
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Despondent and suicidal; PTSD checklist (PCL-M) 66",
+       "scores": [
+        {
+         "scale": "PCL-M",
+         "value": 66,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Single ketamine infusion (35 mg, with propofol 30 mg) for treatment-resistant depression, after a 24-hour medication washout"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "hours",
+       "precision": "exact",
+       "label": "Affectionate with his wife, warm toward his team, grieving his old therapist",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Euthymic, anxiety and hyperarousal gone, sleeping normally without hypnotics, no nightmares; PCL-M 29",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "PCL-M",
+         "value": 29,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "relapse",
+       "t": 15,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Withdrew from his wife and within 24 hours was back to his previous state; venlafaxine restarted",
+       "state": "Worse"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0.083,
+    "latency_band": "Under a day",
+    "baseline_years": 3.0,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "PCL-M",
+      "before": 66,
+      "after": 29,
+      "change_pct": -56.1
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
+   }
+  },
+  {
+   "id": "macleod-1897",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "Macleod N",
+    "title": "Morphine Habit of Long Standing Cured by Bromide Poisoning.",
+    "journal": "Br Med J",
+    "year": 1897,
+    "volume": "2",
+    "issue": "1906",
+    "pages": "76-77"
+   },
+   "ids": {
+    "doi": "10.1136/bmj.2.1906.76",
+    "pmid": "20757136",
+    "pmcid": "PMC2407258"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2407258/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/20757136/",
+    "doi": "https://doi.org/10.1136/bmj.2.1906.76",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fbmj.2.1906.76"
+   },
+   "access": "Free full text",
+   "design": "Case series",
+   "n_patients": 2,
+   "syndrome": {
+    "categories": [
+     "Substance & addictive"
+    ],
+    "specific": "Morphine habit of seven years in a woman of 32, after injections for neuralgia, despite repeated slow withdrawals",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Sodium bromide for migraine and nervous irritability, taken to the point of bromide poisoning by mistake",
+    "intent": "Medication error"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "In Shanghai in 1896 a woman with a seven-year morphine habit was given sodium bromide for migraine and slid into bromide poisoning; after two weeks of delirium she woke with no desire for morphine, to her own and the nurses' astonishment. Her doctor then tried it on purpose in a pilot, who also lost the craving.",
+   "caveat": "The second, deliberate case shows the doctor's interest; the first rests on a single follow-up of about a year.",
+   "tags": [
+    "accidental",
+    "antique",
+    "bromide",
+    "delirium",
+    "morphine",
+    "opioid"
+   ],
+   "same_patient_as": null,
+   "found_via": "unsure pile, full-text appraisal",
+   "date_added": "2026-11-20",
+   "verified": "2026-11-20: full text read (Full text read tonight (ClinicalKey, PMC scans, Cambridge))",
+   "era": {
+    "label": "emerging",
+    "note": "Bromide 'sleep' and deep-narcosis treatments of morphinism were tried around 1900 and abandoned; nothing like it is used now.",
+    "basis": "judged"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "appraisal": {
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Seven years of morphine use despite withdrawals; craving gone from the poisoning and hospital admission, held for about a year; but morphine was withdrawn in hospital under the bromide narcosis."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": ""
+   },
+   "historical": {
+    "original_terms": "Morphine habit",
+    "modern_reading": "Opioid use disorder (iatrogenic, injected)",
+    "why_read": "An accidental poisoning that a doctor then tried to reproduce: the shape of many deliberate therapies that followed."
+   },
+   "observed_year": 1896,
+   "timeline": [
+    {
+     "patient": "Married woman of 32, Shanghai",
+     "age": 32,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -7,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Hypodermic morphine for neuralgia from 1889, continued without a break; several slow withdrawals failed; she did not want to be cured"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Sodium bromide for migraine and nervous irritability (May 1896); a bottle and a half taken in two days: unrousable with bromide poisoning"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "approx",
+       "label": "No desire for morphine from the day she entered hospital",
+       "state": "Remitted"
+      },
+      {
+       "kind": "cointervention",
+       "t": 1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Admitted to hospital: morphine injected for 4 days then stopped; more bromide and chloralamide; then no drugs",
+       "to": 11
+      },
+      {
+       "kind": "assessment",
+       "t": 3,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Two weeks of stupor, confusion, delusions and visual illusions, clearing by early June; amnesic for the period"
+      },
+      {
+       "kind": "follow_up",
+       "t": 13,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Left hospital well (June 1896); desire for morphine had not returned when he wrote (July 1897)",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "baseline_years": 7.0,
+    "follow_up_days": 395.688,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "C"
+   }
+  },
+  {
+   "id": "anon-1888-typhoid",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "C",
+   "collections": [
+    "antique"
+   ],
+   "citation": {
+    "authors": "Anonymous",
+    "title": "The Influence of Typhoid Fever upon Insanity.",
+    "journal": "Buffalo Med Surg J",
+    "year": 1888,
+    "volume": "27",
+    "issue": "6",
+    "pages": "275-276"
+   },
+   "ids": {
+    "doi": "",
+    "pmid": "36668278",
+    "pmcid": "PMC9474001"
+   },
+   "links": {
+    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9474001/",
+    "abstract": "https://pubmed.ncbi.nlm.nih.gov/36668278/",
+    "doi": null,
+    "alternates": [],
+    "ckn": null
+   },
+   "access": "Free full text",
+   "design": "Case series",
+   "n_patients": 3,
+   "syndrome": {
+    "categories": [
+     "Mood"
+    ],
+    "specific": "Chronic melancholia of several years in a woman of about 50, an asylum inpatient (and two younger patients with mania)",
+    "chronic": true,
+    "treatment_resistant": null
+   },
+   "trigger": {
+    "category": "Fever / infection",
+    "specific": "Typhoid fever during an outbreak at the State Hospital for the Insane, Norristown, Pennsylvania",
+    "intent": "Injury or illness"
+   },
+   "outcome": {
+    "resolution": "Complete",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "During a typhoid outbreak at the Norristown asylum in 1888, a woman with several years of chronic melancholia caught the fever and was discharged perfectly well; a young man in his second attack of mania also went home well.",
+   "caveat": "A reprinted news item from the Medical and Surgical Reporter; the manic patients were already improving.",
+   "tags": [
+    "antique",
+    "asylum",
+    "fever",
+    "infection",
+    "melancholia",
+    "typhoid"
+   ],
+   "same_patient_as": null,
+   "found_via": "unsure pile, full-text appraisal",
+   "date_added": "2026-11-20",
+   "verified": "2026-11-20: full text read (Full text read tonight (ClinicalKey, PMC scans, Cambridge))",
+   "era": {
+    "label": "emerging",
+    "note": "Intercurrent fever ending insanity was a recurring 19th-century observation and led to Wagner-Jauregg's fever therapy (1917); fever in modern psychiatric illness is anecdotal.",
+    "basis": "judged"
+   },
+   "flags": [
+    "antique-bar"
+   ],
+   "appraisal": {
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Several years of melancholia before; discharged well after typhoid; no timing, measures or follow-up; a reprinted news item."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "N",
+      "N",
+      "N",
+      "Y",
+      "U",
+      "NA",
+      "Y"
+     ]
+    },
+    "note": ""
+   },
+   "historical": {
+    "original_terms": "Chronic melancholia; acute mania",
+    "modern_reading": "Chronic depression; manic episodes",
+    "why_read": "One of the asylum fever cures that led, 30 years on, to malaria therapy."
+   },
+   "observed_year": 1888,
+   "timeline": [
+    {
+     "patient": "Woman of about 50, Norristown asylum",
+     "age": 50,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -3,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Chronic melancholia for several years"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Typhoid fever in an outbreak at the State Hospital for the Insane, Norristown (1888)"
+      },
+      {
+       "kind": "best_response",
+       "t": 0,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Discharged perfectly well (time not given)",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0,
+    "latency_band": "Under a day",
+    "latency_bound": "at least",
+    "baseline_years": 3.0,
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 3,
+    "jbi_of": 8,
+    "rule_tier": "C"
+   }
+  },
+  {
+   "id": "granato-1994",
+   "record_type": "case",
+   "status": "Included",
+   "tier": "B",
+   "collections": [
+    "phase1f"
+   ],
+   "citation": {
+    "authors": "Granato P, Parquet JP, Goudemand M",
+    "title": "Midazolam improvement of severe mood disorder",
+    "journal": "Eur Psychiatry",
+    "year": 1994,
+    "volume": "9",
+    "issue": "6",
+    "pages": "318"
+   },
+   "ids": {
+    "doi": "10.1017/s0924933800002376",
+    "pmid": "",
+    "pmcid": ""
+   },
+   "links": {
+    "full_text": "https://www.cambridge.org/core/journals/european-psychiatry/article/midazolam-improvement-of-severe-mood-disorder/4EA4330E18D33559D914DE09469D9D91",
+    "abstract": null,
+    "doi": "https://doi.org/10.1017/s0924933800002376",
+    "alternates": [],
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1017%2Fs0924933800002376"
+   },
+   "access": "Free full text",
+   "design": "Letter",
+   "n_patients": 1,
+   "syndrome": {
+    "categories": [
+     "Mood",
+     "Catatonia"
+    ],
+    "specific": "Severe depression of 15 months in a 70-year-old man, stuporous and mute for the last 8, resistant to antidepressants; too cachectic for ECT",
+    "chronic": true,
+    "treatment_resistant": true
+   },
+   "trigger": {
+    "category": "Medication for another condition",
+    "specific": "Intravenous midazolam 5 mg to sedate him for an MRI",
+    "intent": "Treatment for another condition"
+   },
+   "outcome": {
+    "resolution": "Partial",
+    "time_to_resolution": null,
+    "follow_up": null,
+    "reversal": "None reported"
+   },
+   "downstream": {
+    "level": 1,
+    "note": "",
+    "links": []
+   },
+   "summary": "A 70-year-old with 15 months of antidepressant-resistant depression, mute and stuporous for months, was given midazolam to sedate him for an MRI; the next day his mood, speech and behaviour had improved spectacularly, and he was still better ten days later.",
+   "caveat": "Benzodiazepines lift catatonic stupor, so the depressive core may not have changed; amineptine had been started four weeks earlier.",
+   "tags": [
+    "MRI",
+    "benzodiazepine",
+    "catatonia",
+    "depression",
+    "midazolam",
+    "stupor"
+   ],
+   "same_patient_as": null,
+   "found_via": "unsure pile, full-text appraisal",
+   "date_added": "2026-11-20",
+   "verified": "2026-11-20: full text read (Full text read tonight (ClinicalKey, PMC scans, Cambridge))",
+   "era": {
+    "label": "emerging",
+    "note": "Benzodiazepines were known to lift catatonic stupor by 1994 (lorazepam challenge), but not to relieve depression itself.",
+    "basis": "judged"
+   },
+   "flags": [],
+   "appraisal": {
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Benzodiazepines were already known to lift catatonic stupor (the lorazepam challenge)."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Fifteen months of resistant depression, eight of stupor; dramatic change the day after one sedating dose; no scale, ten days' follow-up, and amineptine had been started four weeks earlier."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
+    "note": ""
+   },
+   "timeline": [
+    {
+     "patient": "Mr G, 70-year-old man",
+     "age": 70,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -15,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Severe depression, resistant to several antidepressants at therapeutic doses; too cachectic for ECT"
+      },
+      {
+       "kind": "assessment",
+       "t": -8,
+       "unit": "months",
+       "precision": "approx",
+       "label": "From the seventh month: anorexia, self-neglect, mutism, global slowing: a stuporous depression; MMSE 26/30"
+      },
+      {
+       "kind": "cointervention",
+       "t": -4,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Amineptine 200 mg a day",
+       "to": 0
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Intravenous midazolam 5 mg to sedate him for an MRI (diffuse vascular white matter disease)"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Emotional behaviour, mutism, opposition and depressed mood spectacularly better; smiling returned",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 10,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Still improved",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "baseline_years": 1.25,
+    "follow_up_days": 10,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
+   }
   }
  ]
 }

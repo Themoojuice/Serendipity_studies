@@ -1,6 +1,6 @@
 # Full texts still needed
 
-103 of 220 cases aren't fully coded yet because their full text couldn't be reached from this session (written by `scripts/make_fulltext_queue.py`). Each needs a read and a coding batch (`protocol/SCHEMA.md` §7). Easy wins first: free copies that only a bot check stood in front of.
+103 of 224 cases aren't fully coded yet because their full text couldn't be reached from this session (written by `scripts/make_fulltext_queue.py`). Each needs a read and a coding batch (`protocol/SCHEMA.md` §7). Easy wins first: free copies that only a bot check stood in front of.
 
 ## Easy wins: free, one click in a normal browser (9)
 
