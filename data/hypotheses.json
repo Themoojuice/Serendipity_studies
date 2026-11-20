@@ -4098,80 +4098,6 @@
    "related": []
   },
   {
-   "case_id": "brasic-2018",
-   "status": "draft",
-   "written_by": "Claude",
-   "date": "2026-11-17",
-   "based_on": "Full text",
-   "nulls": {
-    "natural_history": {
-     "rating": "Possible",
-     "why": "Tics wax and wane, though remission at 24 after 17 years is uncommon."
-    },
-    "regression": {
-     "rating": "Possible",
-     "why": "Baseline was seven months earlier."
-    },
-    "misdiagnosis": {
-     "rating": "Unlikely",
-     "why": "Classic Tourette syndrome."
-    },
-    "cointervention": {
-     "rating": "Possible",
-     "why": "Cannabis in his urine at both follow-ups."
-    },
-    "nonspecific": {
-     "rating": "Unlikely",
-     "why": "Worked full time; not sedated."
-    },
-    "expectancy": {
-     "rating": "Possible",
-     "why": "He chose to do it, so he presumably expected something."
-    },
-    "reporting": {
-     "rating": "Unlikely",
-     "why": "YGTSS, AIMS and video."
-    }
-   },
-   "verdict": "Undecided",
-   "verdict_note": "Tics stopped in the tub and stayed largely gone for two years, with video and standard scales. Positive urine cannabis screens, denied by the patient, keep it from being clean.",
-   "hypotheses": [
-    {
-     "claim": "Severe heat stress reset hypothalamic-basal ganglia dopamine signalling (the authors' idea).",
-     "chain": "Prolonged hyperthermia and dehydration → anterior hypothalamic dopamine release and possible minor injury → lasting change in striatal dopamine tone → fewer tics",
-     "mechanisms": [
-      "Fever and heat",
-      "Dopamine"
-     ],
-     "latency_fit": "Fits",
-     "for": "Tics went during the heat exposure; Gilles de la Tourette noted fever relieved tics.",
-     "against": "Heat usually worsens tics in laboratory studies.",
-     "confidence": "Low",
-     "uncertainty_driver": "Cannabis confound; one exposure.",
-     "test": "Tic counts during controlled passive heating."
-    },
-    {
-     "claim": "Covert cannabis use maintained the remission.",
-     "chain": "THC → CB1 activation in basal ganglia → tic suppression",
-     "mechanisms": [
-      "Endocannabinoid"
-     ],
-     "latency_fit": "Doesn't fit",
-     "for": "Positive urine screens; cannabis had helped before.",
-     "against": "Tics stopped in the tub, before any cannabis; cannabis had only given 3–4 days of relief.",
-     "confidence": "Low",
-     "uncertainty_driver": "As above.",
-     "test": "None in this patient."
-    }
-   ],
-   "related": [
-    {
-     "id": "ripsman-2025",
-     "why": "Tics changing after surgery"
-    }
-   ]
-  },
-  {
    "case_id": "valadez-cuen-2024",
    "status": "draft",
    "written_by": "Claude",
@@ -7867,6 +7793,381 @@
     {
      "id": "colli-2003",
      "why": "Bulimia ending after a near-death experience"
+    }
+   ]
+  },
+  {
+   "case_id": "richards-2022",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "All five remitting within months."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Treated when they presented."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Validated scale."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "A multidisciplinary obesity programme."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Appetite suppression rather than a change in loss of control."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Open treatment in an obesity clinic."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Five charts chosen for review; a meeting abstract."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Five obesity-clinic patients with moderate-to-severe binge eating disorder all remitted on semaglutide, by a validated scale. An early marker of the GLP-1 story; appetite versus loss of control is the open question.",
+   "hypotheses": [
+    {
+     "claim": "GLP-1 agonism damped food reward and craving in mesolimbic circuits, beyond satiety.",
+     "chain": "Semaglutide → GLP-1 receptors in hypothalamus, VTA and accumbens → lower food-cue reward and craving → binges stop",
+     "mechanisms": [
+      "Neuropeptide (oxytocin, orexin, other)",
+      "Dopamine"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "All five remitted; GLP-1 receptors sit in reward areas.",
+     "against": "Timing unknown; weight loss confounds.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Abstract only; selected charts.",
+     "test": "Randomised semaglutide trials in binge eating disorder."
+    }
+   ],
+   "related": [
+    {
+     "id": "richards-2024",
+     "why": "The same clinic's fuller report"
+    },
+    {
+     "id": "gong-2024",
+     "why": "Semaglutide and binge eating"
+    },
+    {
+     "id": "jarvinen-2019",
+     "why": "Liraglutide and binge eating"
+    }
+   ]
+  },
+  {
+   "case_id": "mathew-2019",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Thirty years of heavy smoking."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Clear dependence."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "No cessation treatment."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Nausea was specific to smoking."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-report; a meeting abstract."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Erenumab made smoking nauseating, and the disgust outlasted the drug: an accidental aversion therapy that stuck. Unusual for an aversion to last once the pairing stops, which is the interesting part.",
+   "hypotheses": [
+    {
+     "claim": "Drug-induced nausea paired with smoking conditioned a lasting disgust, as in aversion therapy.",
+     "chain": "Erenumab nausea → smoking provokes vomiting → conditioned aversion to smoke → disgust persists after the drug",
+     "mechanisms": [
+      "Extinction and exposure",
+      "Interoceptive and visceral input"
+     ],
+     "latency_fit": "Fits",
+     "for": "Disgust at even second-hand smoke after the drug stopped.",
+     "against": "Aversions usually extinguish.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "One case, self-report.",
+     "test": "Smoking status in erenumab-treated smokers who had nausea."
+    },
+    {
+     "claim": "CGRP blockade altered nicotine's interoceptive effects directly.",
+     "chain": "CGRP receptor antibody → altered vagal and brainstem signalling → smoking provokes nausea",
+     "mechanisms": [
+      "Neuropeptide (oxytocin, orexin, other)"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Authors unsure whether nicotine or other smoke constituents were the trigger.",
+     "against": "No mechanism data.",
+     "confidence": "Low",
+     "uncertainty_driver": "Speculative.",
+     "test": "Nicotine challenge on and off CGRP antagonists."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "coffey-2014",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "ADHD often fades below threshold in late adolescence."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Lifelong condition."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Some 'ADHD' may have been mood-driven inattention."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Recovery from depression and maintenance ECT."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He went on to college."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No scales; a meeting abstract."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Childhood ADHD did not return after ECT for adolescent depression, with criteria unmet 18 months on. ECT's broad network effects make it plausible, but maturation and the lifting of depression are just as plausible at 16.",
+   "hypotheses": [
+    {
+     "claim": "ECT-driven plasticity reorganised fronto-striatal attention networks.",
+     "chain": "Repeated seizures → BDNF and synaptic remodelling → altered prefrontal-striatal network → attention normalises",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)",
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate and lasting off stimulants.",
+     "against": "Maturation confounds.",
+     "confidence": "Low",
+     "uncertainty_driver": "No ratings.",
+     "test": "Attention measures before and after ECT in adolescents with ADHD."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "boudjani-2012",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Two decades of heavy use, intense craving the month before."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "In treatment at the peak of craving."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Severe cocaine dependence."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "An abstinence programme began a month earlier."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Antisocial behaviour unchanged; he still went out with friends."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A frightening stroke."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Unannounced urine screens."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Craving vanished after a left dorsolateral striatal infarct in a man using up to 7 g of cocaine a day, confirmed by unannounced urine screens over 14 months; when he used socially he felt no craving. The dorsolateral striatum is the habit node in addiction models.",
+   "hypotheses": [
+    {
+     "claim": "The lesion cut the dorsolateral striatal habit circuit that carries compulsive drug seeking.",
+     "chain": "Left dorsolateral striatum infarct → loss of habitual, cue-driven cocaine seeking → craving gone; goal-directed use (social) still possible without craving",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate; social use without craving fits a habit-system lesion.",
+     "against": "Abstinence programme overlapped.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Abstract only.",
+     "test": "Craving outcomes after dorsal striatal strokes (Muskens 2012 series)."
+    }
+   ],
+   "related": [
+    {
+     "id": "muskens-2012",
+     "why": "Dorsal striatal damage easing addictions"
+    },
+    {
+     "id": "valadez-cuen-2024",
+     "why": "Caudate infarct ending smoking and soda craving"
+    }
+   ]
+  },
+  {
+   "case_id": "auffret-2020",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Motivated quit attempts sometimes succeed."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Heavy dependence."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "A cessation app and a financial motive."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "None."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "She wanted to stop."
+    },
+    "reporting": {
+     "rating": "Likely",
+     "why": "Thirty days' follow-up in a meeting abstract."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "An effortless quit, with new disgust for smoke, in a heavily dependent woman on an apomorphine pump. Interesting beside the dopamine-agonist literature, but it was a deliberate attempt with 30 days of follow-up.",
+   "hypotheses": [
+    {
+     "claim": "Continuous dopamine-receptor stimulation replaced the dopamine signal nicotine supplied, so withdrawal and craving never arrived.",
+     "chain": "Apomorphine (D1/D2 agonist) → tonic dopaminergic tone in reward circuits → no withdrawal dip → cigarettes unrewarding",
+     "mechanisms": [
+      "Dopamine"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "No withdrawal; disgust at smoke.",
+     "against": "Latency from pump start unknown.",
+     "confidence": "Low",
+     "uncertainty_driver": "Thirty days.",
+     "test": "Smoking outcomes in apomorphine-pump cohorts."
+    }
+   ],
+   "related": []
+  },
+  {
+   "case_id": "grunstein-2017",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-20",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Late-onset psychoses can remit, though rarely after two years untreated."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic course."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "A hypoxic or organic psychosis at 65 rather than schizophrenia."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "No psychiatric treatment."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Back at work."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "He denied being ill."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No scales; a meeting abstract."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Nearly two years of never-treated psychosis cleared within months of CPAP for severe sleep apnoea, with no drug to confound it. The likeliest reading is a psychosis driven by intermittent hypoxia, which makes it a secondary syndrome treated at its cause rather than schizophrenia cured.",
+   "hypotheses": [
+    {
+     "claim": "Repetitive nocturnal hypoxia disturbed striatal dopamine and glutamate signalling; CPAP removed it.",
+     "chain": "Severe OSA → repetitive intermittent hypoxaemia and sleep fragmentation → dopamine/glutamate dysregulation → psychosis; CPAP → normal oxygenation and sleep → remission",
+     "mechanisms": [
+      "Respiratory and blood gases",
+      "Sleep and circadian rhythm"
+     ],
+     "latency_fit": "Fits",
+     "for": "Remission over months on CPAP with no other treatment.",
+     "against": "Late onset suggests an organic cause.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "One case, no scales.",
+     "test": "Screen first-episode psychosis for OSA and test CPAP."
+    }
+   ],
+   "related": [
+    {
+     "id": "taylor-1978",
+     "why": "Schizophrenia clearing after an unrelated physiological insult"
     }
    ]
   }

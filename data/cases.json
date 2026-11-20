@@ -9498,8 +9498,8 @@
   {
    "id": "richards-2022",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1a"
    ],
@@ -9562,7 +9562,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "verified": "2026-11-20: full text read (Conference abstract read in Embase through CKN)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -9570,13 +9570,113 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "GLP-1 agonists had already been tried for binge eating (liraglutide, dulaglutide)."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Appetite suppression may stop binges without touching the disorder."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Validated Binge Eating Scale before and after; no timing of the change; charts chosen in retrospect; weight loss alongside."
+    },
+    "jbi": {
+     "checklist": "Case series",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "U",
+      "Y",
+      "N",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
+    "note": "Conference abstract; the abstract is the full publication."
+   },
+   "timeline": [
+    {
+     "patient": "Five patients, mean age 41, four women",
+     "age": 41,
+     "sex": "Not stated",
+     "events": [
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Moderate or severe binge eating disorder on the Binge Eating Scale (mean 25); obesity (210–606 lb)",
+       "scores": [
+        {
+         "scale": "Binge Eating Scale (mean)",
+         "value": 25,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Semaglutide (mean 1.7 mg) per the clinic's obesity protocol"
+      },
+      {
+       "kind": "follow_up",
+       "t": 7,
+       "unit": "months",
+       "precision": "approx",
+       "label": "All five in remission from binge eating disorder (Binge Eating Scale down by a mean of 21); 19% weight loss; no stops for side effects",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Binge Eating Scale (mean)",
+         "value": 4,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "follow_up_days": 213.062,
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "Binge Eating Scale (mean)",
+      "before": 25,
+      "after": 4,
+      "change_pct": -84.0
+     }
+    ],
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 6,
+    "jbi_of": 10,
+    "rule_tier": "B"
    }
   },
   {
@@ -9804,8 +9904,8 @@
   {
    "id": "mathew-2019",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1a"
    ],
@@ -9873,7 +9973,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-20: full text read (Conference abstract read in Embase through CKN)",
    "era": {
     "label": "novel",
     "note": "",
@@ -9881,13 +9981,109 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Thirty years of heavy smoking; stopped with the first dose because smoking made the nausea unbearable; stayed abstinent after the drug was stopped; no other cessation aid; a meeting abstract."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "NA",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Conference abstract; the abstract is the full publication."
+   },
+   "timeline": [
+    {
+     "patient": "44-year-old man",
+     "age": 44,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -31,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Smoking from 13, 1–2 packs a day for most of his life"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Erenumab 70 mg for refractory migraine (October 2018); marked nausea, which smoking turned into vomiting"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "at most",
+       "label": "Stopped smoking (last cigarette before the first dose)",
+       "state": "Remitted"
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 2,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Erenumab stopped after two doses"
+      },
+      {
+       "kind": "follow_up",
+       "t": 7,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Still not smoking; even second-hand smoke disgusts him",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 31.0,
+    "follow_up_days": 213.062,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -10740,96 +10936,6 @@
     "jbi_score": 7,
     "jbi_of": 8,
     "rule_tier": "B"
-   }
-  },
-  {
-   "id": "durbin-2022",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "phase1a"
-   ],
-   "citation": {
-    "authors": "Durbin A et al.",
-    "title": "Remission of Gilles de la Tourette Syndrome Following Dehydration",
-    "journal": "Mov Disord",
-    "year": 2022,
-    "volume": "",
-    "issue": "",
-    "pages": "S1-S666"
-   },
-   "ids": {
-    "doi": "10.1002/mds.29223",
-    "pmid": "36104979",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/36104979/",
-    "doi": "https://doi.org/10.1002/mds.29223",
-    "alternates": [
-     {
-      "label": "Embase record (CKN login)",
-      "url": "https://www.embase.com/records?subaction=viewrecord&id=L639305180"
-     }
-    ],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2Fmds.29223"
-   },
-   "access": "Paywalled",
-   "design": "Conference abstract",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Obsessive-compulsive & tic"
-    ],
-    "specific": "Gilles de la Tourette syndrome since age 7",
-    "chronic": true,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Physiological stress",
-    "specific": "Heat-induced dehydration (follow-up of the Brasic patient)",
-    "intent": "Self-administered"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 0,
-    "note": "",
-    "links": []
-   },
-   "summary": "Follow-up of the man whose Tourette syndrome remitted after hot-tub dehydration: still doing well years later.",
-   "caveat": "Same patient as Brasic 2018; abstract only.",
-   "tags": [
-    "conference-abstract",
-    "dehydration",
-    "follow-up",
-    "heat",
-    "tourette"
-   ],
-   "same_patient_as": "brasic-2018",
-   "found_via": "Embase (CKN)",
-   "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
-   "era": {
-    "label": "novel",
-    "note": "",
-    "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
    }
   },
   {
@@ -12947,8 +13053,8 @@
   {
    "id": "coffey-2014",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1a"
    ],
@@ -13016,7 +13122,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "verified": "2026-11-20: full text read (Conference abstract read in Embase through CKN)",
    "era": {
     "label": "novel",
     "note": "",
@@ -13024,13 +13130,117 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "ADHD symptoms fall below threshold by late adolescence in a sizeable minority."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Childhood ADHD documented and stimulant-treated; no symptoms after the ECT course off stimulants, and criteria unmet at 18 months; no rating scale; maintenance ECT and recovery from depression alongside."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Conference abstract; the abstract is the full publication."
+   },
+   "timeline": [
+    {
+     "patient": "16-year-old boy",
+     "age": 16,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -9,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Combined-type ADHD diagnosed in second grade, supported by school neuropsychology; stimulant-responsive into adolescence"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Major depression unresponsive to fluoxetine, venlafaxine and CBT; left school, drug misuse, suicide attempt",
+       "to": 0
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Index course of bifrontal brief-pulse ECT for depression, all medication stopped beforehand; then maintenance ECT"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Depression remitted; no ADHD symptoms recurred off stimulants",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 18,
+       "unit": "months",
+       "precision": "exact",
+       "label": "His psychiatrist judged he no longer met ADHD criteria; back at school, graduated, entered college",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 2,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Remission sustained on maintenance ECT",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 30.438,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 9.0,
+    "follow_up_days": 730.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -13876,8 +14086,8 @@
   {
    "id": "boudjani-2012",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1a"
    ],
@@ -13945,7 +14155,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "verified": "2026-11-20: full text read (Conference abstract read in Embase through CKN)",
    "era": {
     "label": "known",
     "note": "Fits the lesion-addiction literature after Naqvi 2007.",
@@ -13953,13 +14163,150 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Heavy use for two decades and intense craving the month before; craving gone from the stroke; DAST-10 9 to 0 and negative unannounced screens over 14 months; but he had just started an abstinence programme."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Conference abstract; the abstract is the full publication."
+   },
+   "timeline": [
+    {
+     "patient": "45-year-old man",
+     "age": 45,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -21,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Cocaine up to 7 g a day, intravenous or smoked, from 24 (drugs and smoking from 9); antisocial traits"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Behavioural abstinence programme: continuous intense daily urges and headaches",
+       "to": 0
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "DAST-10 9 for the preceding year",
+       "scores": [
+        {
+         "scale": "DAST-10",
+         "value": 9,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Acute infarct of the left dorsolateral striatum (carotid dissection, mitral vegetations): hemiparesis, gone within days"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "at most",
+       "label": "No further cocaine craving from the stroke on",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 14,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Abstinent apart from 5 days of social use without craving; unannounced urine screens negative; DAST-10 0; antisocial traits unchanged",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "DAST-10",
+         "value": 0,
+         "higher_is_better": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Left",
+    "regions": [
+     "Putamen"
+    ],
+    "specific": "Acute infarct of the left dorsolateral striatum on MRI",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "MRI",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 21.0,
+    "follow_up_days": 426.125,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "DAST-10",
+      "before": 9,
+      "after": 0,
+      "change_pct": -100.0
+     }
+    ],
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -18135,282 +18482,6 @@
     "attribution_score": 2,
     "attribution_grade": "C",
     "jbi_score": 7,
-    "jbi_of": 8,
-    "rule_tier": "B"
-   }
-  },
-  {
-   "id": "brasic-2018",
-   "record_type": "case",
-   "status": "Included",
-   "tier": "B",
-   "collections": [
-    "phase1a"
-   ],
-   "citation": {
-    "authors": "Robert Brašić J, Mari Z, Lerner A, Raymont V, Zaidi E, Wong DF",
-    "title": "Remission of Gilles de la Tourette Syndrome after Heat-Induced Dehydration.",
-    "journal": "Int J Phys Med Rehabil",
-    "year": 2018,
-    "volume": "6",
-    "issue": "3",
-    "pages": "472"
-   },
-   "ids": {
-    "doi": "10.4172/2329-9096.1000472",
-    "pmid": "30090843",
-    "pmcid": "PMC6078428"
-   },
-   "links": {
-    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6078428/",
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/30090843/",
-    "doi": "https://doi.org/10.4172/2329-9096.1000472",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4172%2F2329-9096.1000472"
-   },
-   "access": "Free full text",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Obsessive-compulsive & tic"
-    ],
-    "specific": "Gilles de la Tourette syndrome since age 7 (YGTSS 55)",
-    "chronic": true,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Physiological stress",
-    "specific": "Heat-induced dehydration: 3–4 hours in a 39–40°C hot tub",
-    "intent": "Self-administered"
-   },
-   "outcome": {
-    "resolution": "Partial",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 0,
-    "note": "",
-    "links": []
-   },
-   "summary": "Tourette syndrome eased for two years (YGTSS 55 to 13) after hours in a very hot tub left him dehydrated.",
-   "caveat": "His urine was positive for cannabis at both follow-ups although he denied using it, and cannabis had eased his tics before; tics also wax and wane.",
-   "tags": [
-    "dehydration",
-    "heat",
-    "tourette"
-   ],
-   "same_patient_as": null,
-   "found_via": "Europe PMC",
-   "date_added": "2026-11-09",
-   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
-   "era": {
-    "label": "novel",
-    "note": "",
-    "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Full text",
-    "date": "2026-11-17",
-    "by": "Claude",
-    "unexpectedness": {
-     "target": {
-      "result": "pass",
-      "note": ""
-     },
-     "era": {
-      "result": "pass",
-      "note": ""
-     },
-     "secondary": {
-      "result": "pass",
-      "note": ""
-     },
-     "base_rate": {
-      "result": "pass",
-      "note": ""
-     }
-    },
-    "attribution": {
-     "baseline": 1,
-     "measure": 1,
-     "timing": 1,
-     "reversal": 0,
-     "confounders": 0,
-     "note": "YGTSS 55 → 13, AIMS 9 → 0, with video; tics went during the exposure itself; but urine was positive for THC after the remission although he denied cannabis, and cannabis had relieved his tics before."
-    },
-    "jbi": {
-     "checklist": "Case report",
-     "answers": [
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y"
-     ]
-    },
-    "note": ""
-   },
-   "timeline": [
-    {
-     "patient": "24-year-old man",
-     "age": 24,
-     "sex": "M",
-     "events": [
-      {
-       "kind": "onset",
-       "t": -17,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Motor and phonic tics from age 7, worse with cold, fatigue and anxiety; episodic regurgitation since 10"
-      },
-      {
-       "kind": "treatment_failed",
-       "t": -2,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Clonidine and topiramate: minimal effect; occasional cannabis relieved tics for 3–4 days",
-       "to": -1
-      },
-      {
-       "kind": "assessment",
-       "t": -7,
-       "unit": "months",
-       "precision": "exact",
-       "label": "Research baseline",
-       "scores": [
-        {
-         "scale": "YGTSS",
-         "value": 55,
-         "higher_is_better": false
-        },
-        {
-         "scale": "AIMS",
-         "value": 9,
-         "higher_is_better": false
-        },
-        {
-         "scale": "CGI-S",
-         "value": 4,
-         "higher_is_better": false
-        }
-       ]
-      },
-      {
-       "kind": "exposure_start",
-       "t": 0,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Deliberately sat in a 39–40 °C hot tub for about 3.5 hours to dehydrate himself (reason not given); vomiting, cramps, pink-orange urine for 2 days"
-      },
-      {
-       "kind": "first_change",
-       "t": 2,
-       "unit": "hours",
-       "precision": "exact",
-       "label": "Tics subsided during the last 1.5 hours in the tub",
-       "state": "Remitted"
-      },
-      {
-       "kind": "assessment",
-       "t": 1,
-       "unit": "months",
-       "precision": "exact",
-       "label": "Motor 13, phonic 0, impairment 0; urine THC positive",
-       "state": "Partial",
-       "scores": [
-        {
-         "scale": "YGTSS",
-         "value": 13,
-         "higher_is_better": false
-        },
-        {
-         "scale": "AIMS",
-         "value": 0,
-         "higher_is_better": false
-        },
-        {
-         "scale": "CGI-S",
-         "value": 3,
-         "higher_is_better": false
-        }
-       ]
-      },
-      {
-       "kind": "assessment",
-       "t": 11,
-       "unit": "months",
-       "precision": "exact",
-       "label": "Very much improved; working full time; urine THC positive",
-       "state": "Remitted",
-       "scores": [
-        {
-         "scale": "AIMS",
-         "value": 1,
-         "higher_is_better": false
-        },
-        {
-         "scale": "CGI-S",
-         "value": 2,
-         "higher_is_better": false
-        }
-       ]
-      },
-      {
-       "kind": "relapse",
-       "t": 3,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Worst-ever exacerbation for two weeks after a tetanus vaccination, then settled to mild tics",
-       "state": "Partial"
-      },
-      {
-       "kind": "follow_up",
-       "t": 5,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Mild tics on nightly THC vaping; carries eggs at work without trouble",
-       "state": "Partial"
-      }
-     ]
-    }
-   ],
-   "derived": {
-    "latency_days": 0.083,
-    "latency_band": "Under a day",
-    "baseline_years": 17.0,
-    "follow_up_days": 1826.25,
-    "durability": "Lost",
-    "timeline_reversal": "None reported",
-    "measures": [
-     {
-      "scale": "YGTSS",
-      "before": 55,
-      "after": 13,
-      "change_pct": -76.4
-     },
-     {
-      "scale": "AIMS",
-      "before": 9,
-      "after": 0,
-      "change_pct": -100.0
-     },
-     {
-      "scale": "CGI-S",
-      "before": 4,
-      "after": 2,
-      "change_pct": -50.0
-     }
-    ],
-    "attribution_score": 3,
-    "attribution_grade": "C",
-    "jbi_score": 8,
     "jbi_of": 8,
     "rule_tier": "B"
    }
@@ -28644,7 +28715,7 @@
   {
    "id": "auffret-2020",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1d"
@@ -28709,7 +28780,7 @@
    "same_patient_as": null,
    "found_via": "Embase via CKN (EMB_title_v1_2, re-ranked v1.3)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-20: full text read (Conference abstract read in Embase through CKN)",
    "era": {
     "label": "novel",
     "note": "",
@@ -28717,13 +28788,115 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "borderline",
+      "note": "She was trying to stop; the surprise was how easy it was."
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Apomorphine and smoking cessation had earlier reports, including from this group."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "borderline",
+      "note": "Some quit attempts succeed; 30 days is short."
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Fagerström 8 and failed attempts before; time from starting apomorphine to quitting not given; a motivated quit attempt with an app; 30-day follow-up."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "NA",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
+    "note": "Conference abstract; the abstract is the full publication."
+   },
+   "timeline": [
+    {
+     "patient": "52-year-old woman with Parkinson's disease",
+     "age": 52,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -33,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Smoking from 19, about 20 a day; nicotine replacement attempts at 30 and 38 failed; smoked more after her Parkinson's diagnosis"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Fagerström 8",
+       "scores": [
+        {
+         "scale": "Fagerström",
+         "value": 8,
+         "higher_is_better": false
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "A quit attempt with an app, for money reasons, while on continuous subcutaneous apomorphine (3–3.5 mg/h, started in 2015)"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Stopped overnight without withdrawal; the smell of cigarettes became disgusting",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 30,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Abstinent apart from one cigarette, smoked without pleasure or craving",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "baseline_years": 33.0,
+    "follow_up_days": 30,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -33319,8 +33492,8 @@
   {
    "id": "grunstein-2017",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1f"
    ],
@@ -33363,8 +33536,8 @@
    },
    "outcome": {
     "resolution": "Complete",
-    "time_to_resolution": "3 months",
-    "follow_up": "about 7 months on CPAP",
+    "time_to_resolution": null,
+    "follow_up": null,
     "reversal": "None reported"
    },
    "downstream": {
@@ -33384,7 +33557,7 @@
    "same_patient_as": null,
    "found_via": "Embase via CKN (EMB_unexp_v1, EMB_nonEng_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (Embase record); Embase DOI field looks like a session code, not used",
+   "verified": "2026-11-20: full text read (Conference abstract read in Embase through CKN)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -33392,13 +33565,108 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-20",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "If intermittent hypoxia caused the psychosis, CPAP treated its cause (protocol v1.7.2: tier C with a secondary caveat)."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "Nearly two years of untreated psychosis before; back at work three months into CPAP and free of symptoms at seven; no antipsychotics ever; no scales."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "NA",
+      "Y"
+     ]
+    },
+    "note": "Conference abstract; the abstract is the full publication."
+   },
+   "timeline": [
+    {
+     "patient": "65-year-old man, electrician",
+     "age": 65,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -22,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Schizophrenia-like illness from about November 2013: believes he is Michael Jackson, hallucinations, disorganised thought, flat affect, stopped working; never took antipsychotics"
+      },
+      {
+       "kind": "assessment",
+       "t": -14,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Referred for snoring and sleepiness (July 2014): 54 obstructive apnoeas an hour, lowest SpO2 75%, BMI 40"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "CPAP (September 2015), 100% adherence, about 6 hours a night"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Back at work",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 7,
+       "unit": "months",
+       "precision": "exact",
+       "label": "No features of schizophrenia (April 2016), still never medicated",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 91.312,
+    "latency_band": "Over 3 months",
+    "baseline_years": 1.83,
+    "follow_up_days": 213.062,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
