@@ -1,7 +1,7 @@
 {
  "library": "Serendipity Case Library",
  "schema_version": "1.4",
- "updated": "2026-11-20",
+ "updated": "2026-11-22",
  "unit_of_record": "One published study (a paper). n_patients counts patients within it; same_patient_as links papers describing the same patient.",
  "inclusion_criteria": [
   "A serious psychiatric syndrome resolved or substantially improved.",
@@ -297,6 +297,10 @@
      {
       "label": "Mallet et al., NEJM 2008",
       "doi": "10.1056/NEJMoa0708514"
+     },
+     {
+      "label": "Fontaine et al. 2004: subthalamic stimulation, Yale-Brown 32 to 1 (context record)",
+      "doi": "10.3171/jns.2004.100.6.1084"
      }
     ]
    },
@@ -754,6 +758,10 @@
      {
       "label": "Hendershot et al., JAMA Psychiatry 2025",
       "doi": "10.1001/jamapsychiatry.2024.4789"
+     },
+     {
+      "label": "Hill et al. 2025: dulaglutide, drinking off-on (context record)",
+      "doi": "10.3389/fpsyt.2025.1420316"
      }
     ]
    },
@@ -772,8 +780,8 @@
    "verified": "2026-11-09: Europe PMC record matched",
    "era": {
     "label": "emerging",
-    "note": "",
-    "basis": "from downstream level"
+    "basis": "judged",
+    "note": "Among the first human reports. After the 2025 randomised trial, later reports of GLP-1 drugs cutting drinking count as expected (protocol v1.8.6); hill-2025 is kept as a context record for its off-on pattern."
    },
    "flags": [],
    "appraisal": {
@@ -3075,9 +3083,9 @@
   },
   {
    "id": "fontaine-2004",
-   "record_type": "case",
+   "record_type": "context",
    "status": "Included",
-   "tier": "B",
+   "tier": null,
    "collections": [
     "round1"
    ],
@@ -3130,7 +3138,7 @@
     "links": []
    },
    "summary": "Subthalamic stimulation for Parkinson's took a 16-year OCD from Yale-Brown 32 to 1 at one year.",
-   "caveat": "Surgeons hoped stimulation would also help the OCD, so the benefit was not wholly unexpected.",
+   "caveat": "Context, not a case (calibration v1, protocol v1.8.6): the abstract says stimulation was used to treat both the Parkinson's disease and the OCD (T1), and Mallet 2002 had already reported the effect (T2). Surgeons hoped stimulation would also help the OCD, so the benefit was not wholly unexpected.",
    "tags": [
     "dbs",
     "ocd",
@@ -5463,7 +5471,12 @@
    "downstream": {
     "level": 1,
     "note": "",
-    "links": []
+    "links": [
+     {
+      "label": "Sciortino et al. 2021: theta-burst for bipolar depression, binge eating remitted (context record)",
+      "doi": "10.3389/fpsyt.2021.732066"
+     }
+    ]
    },
    "summary": "A 43-year-old's twice-daily five-hour binge–purge episodes, refractory for two decades, stopped after the second session of rTMS given for depression; they returned two months after the course and stopped again after the first session of a second course.",
    "caveat": "The same course treated the depression, and bulimia may have followed mood.",
@@ -5479,8 +5492,8 @@
    "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "emerging",
-    "note": "",
-    "basis": "from downstream level"
+    "basis": "judged",
+    "note": "The founding observation: the same group's dorsomedial rTMS series in binge-purge disorders followed. Later reports of prefrontal stimulation easing binge eating count as expected (protocol v1.8.6); sciortino-2021 is a context record."
    },
    "flags": [],
    "appraisal": {
@@ -6792,9 +6805,9 @@
   },
   {
    "id": "sciortino-2021",
-   "record_type": "case",
+   "record_type": "context",
    "status": "Included",
-   "tier": "B",
+   "tier": null,
    "collections": [
     "round2"
    ],
@@ -6847,11 +6860,12 @@
     "links": []
    },
    "summary": "Binge eating improved in two women given accelerated theta-burst stimulation for bipolar depression.",
-   "caveat": "The same course treated the depression, and binge eating may have followed mood.",
+   "caveat": "Context, not a case (calibration v1, protocol v1.8.6): after Downar 2012 and the same group's later series, prefrontal stimulation easing binge eating was expected, and the paper's own introduction calls neuromodulation a promising treatment for binge eating (T2). The same course treated the depression, and binge eating may have followed mood.",
    "tags": [
     "binge-eating",
     "eating",
     "itbs",
+    "replication",
     "rtms"
    ],
    "same_patient_as": null,
@@ -7130,8 +7144,7 @@
     "attribution_score": 3,
     "attribution_grade": "C",
     "jbi_score": 6,
-    "jbi_of": 10,
-    "rule_tier": "B"
+    "jbi_of": 10
    }
   },
   {
@@ -7436,210 +7449,10 @@
    }
   },
   {
-   "id": "meilinger-2026",
-   "record_type": "case",
-   "status": "Included",
-   "tier": "B",
-   "collections": [
-    "round2"
-   ],
-   "citation": {
-    "authors": "Meilinger A, Campbell MA, Reynolds HM, Chavez AS.",
-    "title": "The Role of Glucagon-Like Peptide-1 Receptor Agonists in Prompting a Meaningful Improvement in Alcohol Use Disorder.",
-    "journal": "J Prim Care Community Health",
-    "year": 2026,
-    "volume": "17",
-    "issue": "",
-    "pages": "21501319261437615"
-   },
-   "ids": {
-    "doi": "10.1177/21501319261437615",
-    "pmid": "41914511",
-    "pmcid": "PMC13039557"
-   },
-   "links": {
-    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13039557/",
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/41914511/",
-    "doi": "https://doi.org/10.1177/21501319261437615",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F21501319261437615"
-   },
-   "access": "Free full text",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Substance & addictive"
-    ],
-    "specific": "High-risk alcohol use",
-    "chronic": null,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Medication for another condition",
-    "specific": "Semaglutide for obesity",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Partial",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "A man prescribed semaglutide for obesity cut his drinking substantially over 10 months.",
-   "caveat": "Testosterone replacement began the same week, and improved mood or energy could have cut his drinking too.",
-   "tags": [
-    "alcohol",
-    "glp1",
-    "replication",
-    "semaglutide"
-   ],
-   "same_patient_as": null,
-   "found_via": "PubMed",
-   "date_added": "2026-11-09",
-   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
-   "era": {
-    "label": "emerging",
-    "note": "",
-    "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Full text",
-    "date": "2026-11-17",
-    "by": "Claude",
-    "unexpectedness": {
-     "target": {
-      "result": "pass",
-      "note": ""
-     },
-     "era": {
-      "result": "borderline",
-      "note": "By the mid-2020s GLP-1 agonists were known to reduce alcohol and nicotine craving (trials and a meta-analysis), so a reward effect was conceivable."
-     },
-     "secondary": {
-      "result": "pass",
-      "note": ""
-     },
-     "base_rate": {
-      "result": "pass",
-      "note": ""
-     }
-    },
-    "attribution": {
-     "baseline": 1,
-     "measure": 1,
-     "timing": 0,
-     "reversal": 0,
-     "confounders": 0,
-     "note": "AUDIT before and after; when the drinking fell isn't reported; testosterone started the same week and wasn't discussed."
-    },
-    "jbi": {
-     "checklist": "Case report",
-     "answers": [
-      "Y",
-      "U",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "N",
-      "Y"
-     ]
-    },
-    "note": ""
-   },
-   "timeline": [
-    {
-     "patient": "34-year-old man",
-     "age": 34,
-     "sex": "M",
-     "events": [
-      {
-       "kind": "onset",
-       "t": -4,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Heavy drinking and weight gain for four years: couldn't stop once started; a drink-driving conviction"
-      },
-      {
-       "kind": "exposure_start",
-       "t": 0,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Semaglutide 0.25 mg weekly for obesity (BMI 37), titrated to 2.4 mg; about 15 drinks a week with weekly binges; 9 of 11 DSM-5 criteria",
-       "scores": [
-        {
-         "scale": "AUDIT",
-         "value": 27
-        }
-       ]
-      },
-      {
-       "kind": "cointervention",
-       "t": 0,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Testosterone 100 mg intramuscularly weekly for hypogonadism, started the same week"
-      },
-      {
-       "kind": "best_response",
-       "t": 10,
-       "unit": "months",
-       "precision": "at most",
-       "label": "Desire to drink gone: about half a beer a month; BMI 28.6",
-       "state": "Remitted",
-       "scores": [
-        {
-         "scale": "AUDIT",
-         "value": 7
-        }
-       ]
-      },
-      {
-       "kind": "follow_up",
-       "t": 10,
-       "unit": "months",
-       "precision": "approx",
-       "label": "Better mood, relationships and bipolar control",
-       "state": "Remitted"
-      }
-     ]
-    }
-   ],
-   "derived": {
-    "latency_days": 304.375,
-    "latency_band": "Over 3 months",
-    "latency_bound": "at most",
-    "baseline_years": 4.0,
-    "follow_up_days": 304.375,
-    "durability": "Sustained",
-    "timeline_reversal": "None reported",
-    "measures": [
-     {
-      "scale": "AUDIT",
-      "before": 27,
-      "after": 7,
-      "change_pct": -74.1
-     }
-    ],
-    "attribution_score": 2,
-    "attribution_grade": "C",
-    "jbi_score": 6,
-    "jbi_of": 8,
-    "rule_tier": "B"
-   }
-  },
-  {
    "id": "hill-2025",
-   "record_type": "case",
+   "record_type": "context",
    "status": "Included",
-   "tier": "A",
+   "tier": null,
    "collections": [
     "round2"
    ],
@@ -7692,7 +7505,7 @@
     "links": []
    },
    "summary": "A 44-year-old drinking about 90 beers a month cut down to a few a month within 12 weeks of dulaglutide for weight loss, binged mainly in the days before each injection, and was back to 90 a month within four months of losing the drug with his insurance.",
-   "caveat": "Diet and exercise counselling started with the drug, and he never wanted to cut down, so expectation and contact are an incomplete explanation.",
+   "caveat": "Context, not a case (calibration v1, protocol v1.8.6): by 2025 a GLP-1 drug cutting drinking was expected (T2). Kept for its natural off-on pattern, which the founding case series lacks. Diet and exercise counselling started with the drug, and he never wanted to cut down, so expectation and contact are an incomplete explanation.",
    "tags": [
     "alcohol",
     "dulaglutide",
@@ -7860,374 +7673,7 @@
     "attribution_score": 4,
     "attribution_grade": "B",
     "jbi_score": 8,
-    "jbi_of": 8,
-    "rule_tier": "A"
-   }
-  },
-  {
-   "id": "takizawa-2026",
-   "record_type": "case",
-   "status": "Included",
-   "tier": "B",
-   "collections": [
-    "round2"
-   ],
-   "citation": {
-    "authors": "Takizawa H, Tsuda A, Suriki H, Amagane H.",
-    "title": "Tirzepatide reduced alcohol use in three patients with alcohol-associated liver disease, type 2 diabetes, and obesity.",
-    "journal": "Endocrinol Diabetes Metab Case Rep",
-    "year": 2026,
-    "volume": "",
-    "issue": "2",
-    "pages": "EDM260002"
-   },
-   "ids": {
-    "doi": "10.1530/edm-26-0002",
-    "pmid": "41925328",
-    "pmcid": "PMC13052794"
-   },
-   "links": {
-    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13052794/",
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/41925328/",
-    "doi": "https://doi.org/10.1530/edm-26-0002",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1530%2Fedm-26-0002"
-   },
-   "access": "Free full text",
-   "design": "Case series",
-   "n_patients": 3,
-   "syndrome": {
-    "categories": [
-     "Substance & addictive"
-    ],
-    "specific": "Alcohol use (one with alcohol use disorder)",
-    "chronic": null,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Medication for another condition",
-    "specific": "Tirzepatide for type 2 diabetes and obesity",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Partial",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "Three patients with alcohol-related liver disease drank less after starting tirzepatide.",
-   "caveat": "Only one of the three had alcohol use disorder; liver-disease advice to stop drinking came with the drug.",
-   "tags": [
-    "alcohol",
-    "glp1",
-    "replication",
-    "tirzepatide"
-   ],
-   "same_patient_as": null,
-   "found_via": "PubMed",
-   "date_added": "2026-11-09",
-   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
-   "era": {
-    "label": "emerging",
-    "note": "",
-    "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Full text",
-    "date": "2026-11-17",
-    "by": "Claude",
-    "unexpectedness": {
-     "target": {
-      "result": "pass",
-      "note": ""
-     },
-     "era": {
-      "result": "borderline",
-      "note": "By the mid-2020s GLP-1 agonists were known to reduce alcohol and nicotine craving (trials and a meta-analysis), so a reward effect was conceivable."
-     },
-     "secondary": {
-      "result": "borderline",
-      "note": "New diabetes and liver-disease diagnoses are themselves reasons to drink less."
-     },
-     "base_rate": {
-      "result": "borderline",
-      "note": "Two of the three had no alcohol use disorder, and case 3 had already cut down after the first visit."
-     }
-    },
-    "attribution": {
-     "baseline": 1,
-     "measure": 0,
-     "timing": 1,
-     "reversal": 0,
-     "confounders": 1,
-     "note": "Scored on case 1 (the one with alcohol use disorder). Intake self-reported; the authors state no extra counselling or effort."
-    },
-    "jbi": {
-     "checklist": "Case series",
-     "answers": [
-      "N",
-      "U",
-      "Y",
-      "U",
-      "U",
-      "Y",
-      "Y",
-      "Y",
-      "N",
-      "NA"
-     ]
-    },
-    "note": "Only case 1 meets criterion 1; cases 2 and 3 are heavy drinking without a diagnosis."
-   },
-   "timeline": [
-    {
-     "patient": "Case 1",
-     "age": 49,
-     "sex": "M",
-     "events": [
-      {
-       "kind": "onset",
-       "t": -27,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Heavy drinking since his twenties (107–284 g ethanol a day)"
-      },
-      {
-       "kind": "diagnosis",
-       "t": -6,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Alcohol use disorder and alcohol-related liver disease (biopsy A2F2) at 43"
-      },
-      {
-       "kind": "treatment_failed",
-       "t": -1,
-       "unit": "years",
-       "precision": "at least",
-       "label": "Nalmefene cut intake to 40 g a day; later back to 55 g a day despite drunken falls and an admission"
-      },
-      {
-       "kind": "exposure_start",
-       "t": 0,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Tirzepatide 2.5 mg weekly for new type 2 diabetes and obesity; 55 g a day; GGT 904, HbA1c 8.8%"
-      },
-      {
-       "kind": "first_change",
-       "t": 1,
-       "unit": "months",
-       "precision": "exact",
-       "label": "28 g a day; cravings down; transient lethargy after meals",
-       "state": "Partial"
-      },
-      {
-       "kind": "follow_up",
-       "t": 5,
-       "unit": "months",
-       "precision": "exact",
-       "label": "FIB-4 2.57, HbA1c 5.7%, 85 kg",
-       "state": "Partial"
-      }
-     ]
-    },
-    {
-     "patient": "Case 2",
-     "age": 66,
-     "sex": "M",
-     "events": [
-      {
-       "kind": "onset",
-       "t": -46,
-       "unit": "years",
-       "precision": "approx",
-       "label": "413–553 g ethanol a week since 20; no alcohol use disorder diagnosis"
-      },
-      {
-       "kind": "exposure_start",
-       "t": 0,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Tirzepatide 2.5 mg weekly"
-      },
-      {
-       "kind": "cointervention",
-       "t": 4,
-       "unit": "weeks",
-       "precision": "exact",
-       "label": "Increased to 5 mg"
-      },
-      {
-       "kind": "best_response",
-       "t": 8,
-       "unit": "months",
-       "precision": "at most",
-       "label": "56–78 g a week; 'became gradually bored while drinking'; GGT 220 → 59",
-       "state": "Partial"
-      },
-      {
-       "kind": "follow_up",
-       "t": 8,
-       "unit": "months",
-       "precision": "exact",
-       "label": "Liver and metabolic indices improved",
-       "state": "Partial"
-      }
-     ]
-    },
-    {
-     "patient": "Case 3",
-     "age": 52,
-     "sex": "F",
-     "events": [
-      {
-       "kind": "onset",
-       "t": -32,
-       "unit": "years",
-       "precision": "approx",
-       "label": "276–620 g ethanol a week since 20; no alcohol use disorder diagnosis"
-      },
-      {
-       "kind": "assessment",
-       "t": -1,
-       "unit": "months",
-       "precision": "approx",
-       "label": "Intake already down to 42–84 g a week after the first clinic visit"
-      },
-      {
-       "kind": "exposure_start",
-       "t": 0,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Tirzepatide 2.5 mg weekly; nausea for 3 days after each dose"
-      },
-      {
-       "kind": "cointervention",
-       "t": 11,
-       "unit": "weeks",
-       "precision": "exact",
-       "label": "Increased to 5 mg"
-      },
-      {
-       "kind": "best_response",
-       "t": 6,
-       "unit": "months",
-       "precision": "at most",
-       "label": "14 g a month; 65 kg",
-       "state": "Remitted"
-      },
-      {
-       "kind": "follow_up",
-       "t": 6,
-       "unit": "months",
-       "precision": "exact",
-       "label": "Liver and metabolic indices normal",
-       "state": "Remitted"
-      }
-     ]
-    }
-   ],
-   "derived": {
-    "latency_days": 30.438,
-    "latency_band": "2 weeks to 3 months",
-    "baseline_years": 27.0,
-    "follow_up_days": 152.188,
-    "durability": "Sustained",
-    "timeline_reversal": "None reported",
-    "attribution_score": 3,
-    "attribution_grade": "C",
-    "jbi_score": 4,
-    "jbi_of": 10,
-    "rule_tier": "B"
-   }
-  },
-  {
-   "id": "guerdjikova-2026",
-   "record_type": "case",
-   "status": "Included",
-   "tier": "B",
-   "collections": [
-    "round2"
-   ],
-   "citation": {
-    "authors": "Guerdjikova AI, Walter LL, McElroy SL.",
-    "title": "Improvement of Compulsive Shopping on Tirzepatide: A Case Report.",
-    "journal": "J Clin Psychopharmacol",
-    "year": 2026,
-    "volume": "46",
-    "issue": "3",
-    "pages": "338-339"
-   },
-   "ids": {
-    "doi": "10.1097/jcp.0000000000002135",
-    "pmid": "41632102",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/41632102/",
-    "doi": "https://doi.org/10.1097/jcp.0000000000002135",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fjcp.0000000000002135"
-   },
-   "access": "Paywalled",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Impulse-control"
-    ],
-    "specific": "Compulsive buying",
-    "chronic": null,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Medication for another condition",
-    "specific": "Tirzepatide",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Partial",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 0,
-    "note": "",
-    "links": []
-   },
-   "summary": "Compulsive shopping improved on tirzepatide.",
-   "caveat": "No abstract; indication for tirzepatide not confirmed.",
-   "tags": [
-    "compulsive-buying",
-    "glp1",
-    "tirzepatide"
-   ],
-   "same_patient_as": null,
-   "found_via": "PubMed",
-   "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
-   "era": {
-    "label": "novel",
-    "note": "",
-    "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "jbi_of": 8
    }
   },
   {
@@ -8299,8 +7745,8 @@
    "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
    "era": {
     "label": "novel",
-    "note": "",
-    "basis": "from downstream level"
+    "basis": "judged",
+    "note": "By 2026 GLP-1 drugs were expected to cut drinking, but abolishing a dopamine-agonist impulse control disorder had not been predicted; the off-on pattern with each weekly dose is the strongest evidence in the GLP-1 group."
    },
    "flags": [],
    "appraisal": {
@@ -13452,94 +12898,6 @@
    }
   },
   {
-   "id": "nakama-2013",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "phase1a"
-   ],
-   "citation": {
-    "authors": "Nakama H et al.",
-    "title": "Case report of a 24-year-old man with resolution of treatment-resistant major depressive disorder and comorbid PTSD using rTMS",
-    "journal": "Journal of ECT",
-    "year": 2013,
-    "volume": "",
-    "issue": "",
-    "pages": ""
-   },
-   "ids": {
-    "doi": "10.1097/yct.0b013e3182a2705d",
-    "pmid": "",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": null,
-    "doi": "https://doi.org/10.1097/yct.0b013e3182a2705d",
-    "alternates": [
-     {
-      "label": "Embase record (CKN login)",
-      "url": "https://www.embase.com/records?subaction=viewrecord&id=L52798916"
-     }
-    ],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2Fyct.0b013e3182a2705d"
-   },
-   "access": "Paywalled",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Trauma & stressor-related"
-    ],
-    "specific": "PTSD with treatment-resistant depression",
-    "chronic": true,
-    "treatment_resistant": true
-   },
-   "trigger": {
-    "category": "Brain stimulation",
-    "specific": "Left dorsolateral prefrontal rTMS for treatment-resistant depression",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "Comorbid PTSD remitted alongside depression during rTMS given for the depression.",
-   "caveat": "Comorbid improvement; PTSD may have tracked mood.",
-   "tags": [
-    "comorbid",
-    "ptsd",
-    "rtms"
-   ],
-   "same_patient_as": null,
-   "found_via": "Embase (CKN)",
-   "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
-   "era": {
-    "label": "emerging",
-    "note": "",
-    "basis": "judged"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
-   }
-  },
-  {
    "id": "zakrzewski-2013",
    "record_type": "case",
    "status": "Included",
@@ -18183,92 +17541,6 @@
     "basis": "judged"
    },
    "flags": [],
-   "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
-   }
-  },
-  {
-   "id": "de-filippis-2026",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "phase1a"
-   ],
-   "citation": {
-    "authors": "de Filippis LG, Bruno A",
-    "title": "Reduction of Cocaine Craving and Sustained Abstinence During Tirzepatide Treatment in Two Patients with Obesity: A Case Report",
-    "journal": "Preprints.org (preprint)",
-    "year": 2026,
-    "volume": "",
-    "issue": "",
-    "pages": ""
-   },
-   "ids": {
-    "doi": "10.20944/preprints202610.2170.v1",
-    "pmid": "",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": null,
-    "doi": "https://doi.org/10.20944/preprints202610.2170.v1",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.20944%2Fpreprints202610.2170.v1"
-   },
-   "access": "Paywalled",
-   "design": "Preprint",
-   "n_patients": 2,
-   "syndrome": {
-    "categories": [
-     "Substance & addictive"
-    ],
-    "specific": "Long-standing weekly intranasal cocaine use",
-    "chronic": true,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Medication for another condition",
-    "specific": "Tirzepatide for obesity",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "Two people with obesity reported less cocaine craving and sustained abstinence on tirzepatide.",
-   "caveat": "Preprint; not yet peer reviewed.",
-   "tags": [
-    "cocaine",
-    "glp-1",
-    "preprint",
-    "tirzepatide"
-   ],
-   "same_patient_as": null,
-   "found_via": "Europe PMC",
-   "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
-   "era": {
-    "label": "emerging",
-    "note": "",
-    "basis": "judged"
-   },
-   "flags": [
-    "preprint"
-   ],
    "appraisal": {
     "basis": "Abstract",
     "date": "2026-11-09",
@@ -23427,214 +22699,6 @@
    }
   },
   {
-   "id": "shahani-2019",
-   "record_type": "case",
-   "status": "Included",
-   "tier": "B",
-   "collections": [
-    "phase1c"
-   ],
-   "citation": {
-    "authors": "Shahani L, Cervenka G",
-    "title": "Impact of surgical intervention on seizure and psychiatric symptoms in patients with temporal lobe epilepsy.",
-    "journal": "BMJ Case Rep",
-    "year": 2019,
-    "volume": "12",
-    "issue": "7",
-    "pages": "e229242"
-   },
-   "ids": {
-    "doi": "10.1136/bcr-2019-229242",
-    "pmid": "31352381",
-    "pmcid": "PMC6663174"
-   },
-   "links": {
-    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6663174/",
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/31352381/",
-    "doi": "https://doi.org/10.1136/bcr-2019-229242",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1136%2Fbcr-2019-229242"
-   },
-   "access": "Free full text",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Psychotic",
-     "Mood"
-    ],
-    "specific": "Psychosis, depression and irritability needing antipsychotics, with refractory temporal lobe epilepsy",
-    "chronic": true,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Neurosurgery",
-    "specific": "Anterior temporal lobectomy and amygdalohippocampectomy for epilepsy",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Partial",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "A woman's psychosis, depression and irritability improved along with her seizures after anterior temporal lobectomy and amygdalohippocampectomy.",
-   "caveat": "Psychosis of epilepsy may simply follow seizure control; side of surgery and measures need the full text (free on PMC).",
-   "tags": [
-    "amygdala",
-    "depression",
-    "epilepsy-surgery",
-    "psychosis",
-    "temporal"
-   ],
-   "same_patient_as": null,
-   "found_via": "Europe PMC (v1.2 broad query, first pass)",
-   "date_added": "2026-11-10",
-   "verified": "2026-11-17: full text read (PMC article page, read in the laptop browser)",
-   "era": {
-    "label": "emerging",
-    "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent: Reutens 1997 found chronic interictal psychosis unchanged, and seizure control is a confound (see Pintor 2022).",
-    "basis": "judged"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Full text",
-    "date": "2026-11-17",
-    "by": "Claude",
-    "unexpectedness": {
-     "target": {
-      "result": "pass",
-      "note": ""
-     },
-     "era": {
-      "result": "pass",
-      "note": ""
-     },
-     "secondary": {
-      "result": "pass",
-      "note": ""
-     },
-     "base_rate": {
-      "result": "borderline",
-      "note": "Interictal psychosis and depression often improve when temporal lobe surgery stops the seizures."
-     }
-    },
-    "attribution": {
-     "baseline": 1,
-     "measure": 0,
-     "timing": 1,
-     "reversal": 0,
-     "confounders": 0,
-     "note": "Symptoms described before; no scale; already much better on aripiprazole; seizure freedom is the expected route."
-    },
-    "jbi": {
-     "checklist": "Case report",
-     "answers": [
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y"
-     ]
-    },
-    "note": ""
-   },
-   "timeline": [
-    {
-     "patient": "32-year-old woman",
-     "age": 32,
-     "sex": "F",
-     "events": [
-      {
-       "kind": "onset",
-       "t": -18,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Left mesial temporal lobe epilepsy from 14; depression, irritability and paranoid delusions began with the seizures and worsened with them"
-      },
-      {
-       "kind": "treatment_failed",
-       "t": -4,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Phenytoin, levetiracetam, oxcarbazepine, lacosamide: 4–5 seizures a month",
-       "to": -0.2
-      },
-      {
-       "kind": "cointervention",
-       "t": -1,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Aripiprazole 15 mg: psychiatric symptoms significantly improved"
-      },
-      {
-       "kind": "exposure_start",
-       "t": 0,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Left anterior temporal lobectomy with amygdalohippocampectomy (hippocampal sclerosis)"
-      },
-      {
-       "kind": "best_response",
-       "t": 2,
-       "unit": "months",
-       "precision": "exact",
-       "label": "Denies any psychiatric symptoms; seizure-free",
-       "state": "Remitted"
-      },
-      {
-       "kind": "exposure_stop",
-       "t": 6,
-       "unit": "months",
-       "precision": "approx",
-       "label": "Off aripiprazole with no return of psychosis"
-      },
-      {
-       "kind": "follow_up",
-       "t": 12,
-       "unit": "months",
-       "precision": "exact",
-       "label": "Off antiepileptic drugs, seizure-free, no psychiatric symptoms",
-       "state": "Remitted"
-      }
-     ]
-    }
-   ],
-   "lesion": {
-    "kind": "Resection or ablation",
-    "side": "Left",
-    "regions": [
-     "Temporal, medial (amygdala, hippocampus)",
-     "Temporal, lateral"
-    ],
-    "specific": "Left anterior temporal lobectomy with amygdalohippocampectomy",
-    "aetiology": "Surgery",
-    "imaging": "MRI",
-    "mappable": "Description only"
-   },
-   "derived": {
-    "latency_days": 60.875,
-    "latency_band": "2 weeks to 3 months",
-    "baseline_years": 18.0,
-    "follow_up_days": 365.25,
-    "durability": "Sustained",
-    "timeline_reversal": "None reported",
-    "attribution_score": 2,
-    "attribution_grade": "C",
-    "jbi_score": 8,
-    "jbi_of": 8,
-    "rule_tier": "B"
-   }
-  },
-  {
    "id": "hamdani-2013",
    "record_type": "case",
    "status": "Included",
@@ -24506,300 +23570,6 @@
     "attribution": null,
     "jbi": null,
     "note": ""
-   }
-  },
-  {
-   "id": "serratrice-2002",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "phase1c"
-   ],
-   "citation": {
-    "authors": "Serratrice J, Disdier P, Kaladjian A, Granel B, Azorin JM, Laugier R et al.",
-    "title": "[Psychosis revealing a silent celiac disease in a young women with trisomy 21].",
-    "journal": "Presse Med",
-    "year": 2002,
-    "volume": "31",
-    "issue": "33",
-    "pages": "1551-1553"
-   },
-   "ids": {
-    "doi": "",
-    "pmid": "12422480",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/12422480/",
-    "doi": null,
-    "alternates": [],
-    "ckn": null
-   },
-   "access": "Paywalled",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Psychotic",
-     "Mood"
-    ],
-    "specific": "Psychosis with hallucinations, depression, anorexia and withdrawal in a 41-year-old woman with Down syndrome",
-    "chronic": null,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Diet",
-    "specific": "Gluten-free diet for silent coeliac disease (anti-gliadin antibodies, no villous atrophy)",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "A woman with Down syndrome and new psychosis and depression improved strikingly and lastingly after 12 months on a gluten-free diet for silent coeliac disease.",
-   "caveat": "Arguably a secondary psychosis, as with De Santis 1997; duration before the diet unclear; slow response over a year. Published in French.",
-   "tags": [
-    "coeliac",
-    "depression",
-    "down-syndrome",
-    "gluten-free-diet",
-    "psychosis"
-   ],
-   "same_patient_as": null,
-   "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
-   "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
-   "era": {
-    "label": "emerging",
-    "note": "Gluten-linked psychosis remains contested; see De Santis 1997 and Jansson 1984 in library.",
-    "basis": "judged"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
-   }
-  },
-  {
-   "id": "juiz-fernandez-2022",
-   "record_type": "case",
-   "status": "Included",
-   "tier": "C",
-   "collections": [
-    "phase1c"
-   ],
-   "citation": {
-    "authors": "Juiz-Fernández A, Chavarría-Miranda A, Prieto-González A, Rodríguez-Osorio X",
-    "title": "[No fear of anything: epilepsy, psychiatric comorbidity and surgery. A clinical case report].",
-    "journal": "Rev Neurol",
-    "year": 2022,
-    "volume": "75",
-    "issue": "10",
-    "pages": "319-321"
-   },
-   "ids": {
-    "doi": "10.33588/rn.7510.2022145",
-    "pmid": "36354301",
-    "pmcid": "PMC10280768"
-   },
-   "links": {
-    "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10280768/",
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/36354301/",
-    "doi": "https://doi.org/10.33588/rn.7510.2022145",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.33588%2Frn.7510.2022145"
-   },
-   "access": "Free full text",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Anxiety",
-     "Mood"
-    ],
-    "specific": "Anxiety-depressive syndrome and phobias with drug-resistant right mesial temporal epilepsy",
-    "chronic": true,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Neurosurgery",
-    "specific": "Right anteromedial temporal lobectomy for epilepsy",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Partial",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "A woman's phobias and anxious depression improved along with her seizures after a right anteromedial temporal lobectomy.",
-   "caveat": "Interictal versus seizure-bound symptoms not separable from the abstract; extent of improvement unstated. Published in Spanish.",
-   "tags": [
-    "amygdala",
-    "anxiety",
-    "epilepsy-surgery",
-    "phobia",
-    "right-temporal",
-    "temporal-lobectomy"
-   ],
-   "same_patient_as": null,
-   "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
-   "date_added": "2026-11-10",
-   "verified": "2026-11-17: full text read (PMC open-access full text, via Europe PMC)",
-   "era": {
-    "label": "emerging",
-    "note": "Psychiatric gains after epilepsy surgery are reported but inconsistent, and seizure control is a confound (see Pintor 2022).",
-    "basis": "judged"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Full text",
-    "date": "2026-11-17",
-    "by": "Claude",
-    "unexpectedness": {
-     "target": {
-      "result": "pass",
-      "note": ""
-     },
-     "era": {
-      "result": "borderline",
-      "note": "Amygdala removal reducing fear was expected in principle (the authors' own reasoning)."
-     },
-     "secondary": {
-      "result": "borderline",
-      "note": "Depression in drug-resistant temporal lobe epilepsy is often driven by the seizures."
-     },
-     "base_rate": {
-      "result": "pass",
-      "note": ""
-     }
-    },
-    "attribution": {
-     "baseline": 1,
-     "measure": 0,
-     "timing": 0,
-     "reversal": 0,
-     "confounders": 0,
-     "note": "No measure, no timing of the improvement; seizure freedom and antiepileptic withdrawal not separated."
-    },
-    "jbi": {
-     "checklist": "Case report",
-     "answers": [
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "U",
-      "N",
-      "Y"
-     ]
-    },
-    "note": ""
-   },
-   "timeline": [
-    {
-     "patient": "51-year-old woman",
-     "age": 51,
-     "sex": "F",
-     "events": [
-      {
-       "kind": "assessment",
-       "t": -8,
-       "unit": "years",
-       "precision": "exact",
-       "label": "Epilepsy began (2008): two nocturnal tonic seizures; lamotrigine helped"
-      },
-      {
-       "kind": "onset",
-       "t": -4,
-       "unit": "years",
-       "precision": "at least",
-       "label": "Under psychiatric care for depression, body-image distortion and a marked phobia of rats and mice (start not stated)"
-      },
-      {
-       "kind": "treatment_failed",
-       "t": -4,
-       "unit": "years",
-       "precision": "exact",
-       "label": "Seizures back in 2012 (focal impaired awareness); eslicarbazepine and levetiracetam failed; depression persisted"
-      },
-      {
-       "kind": "exposure_start",
-       "t": 0,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Right anteromedial temporal resection for right mesial temporal sclerosis: amygdala, hippocampus, parahippocampal structures, temporal pole (2016)"
-      },
-      {
-       "kind": "best_response",
-       "t": 1,
-       "unit": "years",
-       "precision": "at most",
-       "label": "Mood much better and the rat phobia gone",
-       "state": "Remitted"
-      },
-      {
-       "kind": "cointervention",
-       "t": 1,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Seizure-free; antiepileptics later withdrawn"
-      },
-      {
-       "kind": "follow_up",
-       "t": 2,
-       "unit": "years",
-       "precision": "at least",
-       "label": "Seizure-free and off antiepileptics for a year; mood and phobia still better",
-       "state": "Remitted"
-      }
-     ]
-    }
-   ],
-   "lesion": {
-    "kind": "Resection or ablation",
-    "side": "Right",
-    "regions": [
-     "Temporal, medial (amygdala, hippocampus)"
-    ],
-    "specific": "Right anteromedial temporal resection: amygdala, hippocampus, parahippocampal structures and temporal pole",
-    "aetiology": "Surgery",
-    "imaging": "MRI",
-    "mappable": "Figure"
-   },
-   "derived": {
-    "latency_days": 365.25,
-    "latency_band": "Over 3 months",
-    "latency_bound": "at most",
-    "baseline_years": 4.0,
-    "follow_up_days": 730.5,
-    "durability": "Sustained",
-    "timeline_reversal": "None reported",
-    "attribution_score": 1,
-    "attribution_grade": "D",
-    "jbi_score": 6,
-    "jbi_of": 8,
-    "rule_tier": "C"
    }
   },
   {
@@ -29163,202 +27933,6 @@
     "jbi_score": 8,
     "jbi_of": 8,
     "rule_tier": "B"
-   }
-  },
-  {
-   "id": "marchetti-2001",
-   "record_type": "case",
-   "status": "Included",
-   "tier": "C",
-   "collections": [
-    "phase1e"
-   ],
-   "citation": {
-    "authors": "Marchetti RL, Tavares AG, Gronich G, Fiore LA, Ferraz RB",
-    "title": "Complete remission of epileptic psychosis after temporal lobectomy: case report.",
-    "journal": "Arq Neuropsiquiatr",
-    "year": 2001,
-    "volume": "59",
-    "issue": "3-B",
-    "pages": "802-5"
-   },
-   "ids": {
-    "doi": "10.1590/s0004-282x2001000500028",
-    "pmid": "11593287",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/11593287/",
-    "doi": "https://doi.org/10.1590/s0004-282x2001000500028",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1590%2Fs0004-282x2001000500028"
-   },
-   "access": "Paywalled",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Psychotic"
-    ],
-    "specific": "Chronic, treatment-refractory interictal psychosis of temporal lobe epilepsy (right mesial temporal sclerosis)",
-    "chronic": true,
-    "treatment_resistant": true
-   },
-   "trigger": {
-    "category": "Neurosurgery",
-    "specific": "Right temporal lobectomy for refractory complex partial seizures",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 0,
-    "note": "",
-    "links": []
-   },
-   "summary": "A 47-year-old woman whose postictal psychoses had become a chronic, refractory interictal psychosis was seizure-free and psychosis-free after a right temporal lobectomy; long-standing personality traits stayed.",
-   "caveat": "The psychosis grew out of the epilepsy, so removing the seizure focus may simply have removed its cause.",
-   "tags": [
-    "epilepsy-surgery",
-    "interictal-psychosis",
-    "mesial-temporal-sclerosis",
-    "right-temporal",
-    "temporal-lobectomy"
-   ],
-   "same_patient_as": null,
-   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
-   "date_added": "2026-11-14",
-   "verified": "2026-11-17: full text read (Open-access publisher copy read in the laptop browser)",
-   "era": {
-    "label": "novel",
-    "note": "",
-    "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Full text",
-    "date": "2026-11-17",
-    "by": "Claude",
-    "unexpectedness": {
-     "target": {
-      "result": "pass",
-      "note": ""
-     },
-     "era": {
-      "result": "pass",
-      "note": ""
-     },
-     "secondary": {
-      "result": "pass",
-      "note": ""
-     },
-     "base_rate": {
-      "result": "borderline",
-      "note": "Epileptic psychoses linked to seizure clusters are expected to improve when surgery stops the seizures."
-     }
-    },
-    "attribution": {
-     "baseline": 1,
-     "measure": 0,
-     "timing": 0,
-     "reversal": 0,
-     "confounders": 0,
-     "note": "Chronic psychosis before; remission at one year, still on risperidone; time of remission not given; seizure control is the expected route."
-    },
-    "jbi": {
-     "checklist": "Case report",
-     "answers": [
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y",
-      "Y"
-     ]
-    },
-    "note": ""
-   },
-   "timeline": [
-    {
-     "patient": "45-year-old woman",
-     "age": 45,
-     "sex": "F",
-     "events": [
-      {
-       "kind": "onset",
-       "t": -33,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Complex partial seizures from 12 (right mesial temporal sclerosis); hyper-religiosity from adolescence"
-      },
-      {
-       "kind": "onset",
-       "t": -10,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Postictal religious-ecstatic psychoses from 35, becoming a chronic interictal psychosis that worsened after seizure clusters"
-      },
-      {
-       "kind": "treatment_failed",
-       "t": -3,
-       "unit": "years",
-       "precision": "approx",
-       "label": "Haloperidol to 17.5 mg, trifluoperazine, risperidone: delusions persisted; many antiepileptic drugs",
-       "to": -0.1
-      },
-      {
-       "kind": "exposure_start",
-       "t": 0,
-       "unit": "days",
-       "precision": "exact",
-       "label": "Right temporal lobectomy (August 1999)"
-      },
-      {
-       "kind": "assessment",
-       "t": 1,
-       "unit": "months",
-       "precision": "approx",
-       "label": "Three seizures in the first weeks, then seizure-free"
-      },
-      {
-       "kind": "follow_up",
-       "t": 1,
-       "unit": "years",
-       "precision": "exact",
-       "label": "Euthymic, complete remission of psychosis; personality traits softened; on carbamazepine, clobazam and risperidone 3 mg",
-       "state": "Remitted"
-      }
-     ]
-    }
-   ],
-   "lesion": {
-    "kind": "Resection or ablation",
-    "side": "Right",
-    "regions": [
-     "Temporal, medial (amygdala, hippocampus)",
-     "Temporal, lateral"
-    ],
-    "specific": "Standard right temporal lobectomy for right mesial temporal sclerosis",
-    "aetiology": "Surgery",
-    "imaging": "MRI",
-    "mappable": "Figure"
-   },
-   "derived": {
-    "baseline_years": 33.0,
-    "follow_up_days": 365.25,
-    "timeline_reversal": "None reported",
-    "attribution_score": 1,
-    "attribution_grade": "D",
-    "jbi_score": 8,
-    "jbi_of": 8,
-    "rule_tier": "C"
    }
   },
   {
