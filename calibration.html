@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Calibration: 100 blind records · Serendipity library</title>
+<style>
+:root { --bg:#faf9f5; --card:#ffffff; --ink:#1f1e1d; --muted:#6b6862; --line:#e6e2d8; --accent:#c96442;
+        --inc:#2f7d4f; --uns:#b7791f; --exc:#9b3b3b; }
+@media (prefers-color-scheme: dark) { :root { --bg:#1f1e1d; --card:#292826; --ink:#f0eee6; --muted:#a8a49b; --line:#3a3835;
+        --accent:#e08a6a; --inc:#5fbf86; --uns:#e0a84a; --exc:#e07b7b; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:14px 16px 150px; }
+a { color:var(--accent); }
+h1 { font-size:22px; margin:6px 0 4px; } h2 { font-size:17px; margin:22px 0 6px; }
+.muted { color:var(--muted); } .small { font-size:13px; }
+.top { position:sticky; top:0; z-index:5; background:var(--bg); padding:10px 0 8px; border-bottom:1px solid var(--line); }
+.row { display:flex; align-items:center; gap:10px; }
+.bar { flex:1; height:6px; background:var(--line); border-radius:3px; overflow:hidden; }
+.bar i { display:block; height:100%; background:var(--accent); width:0; transition:width .2s; }
+.count { font-variant-numeric:tabular-nums; font-size:14px; color:var(--muted); min-width:64px; text-align:right; }
+.linkbtn { background:none; border:0; color:var(--accent); font:inherit; font-size:14px; padding:4px 0; cursor:pointer; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-top:14px; }
+.title { font-weight:650; font-size:18px; line-height:1.35; margin:0 0 6px; }
+.cite { font-size:13px; color:var(--muted); margin-bottom:12px; }
+.abs p { margin:0 0 10px; } .abs .lab { font-weight:650; }
+.status { font-size:14px; color:var(--muted); font-style:italic; }
+.mine { margin-top:12px; font-size:14px; }
+.mine b.I { color:var(--inc); } .mine b.U { color:var(--uns); } .mine b.E { color:var(--exc); }
+.dock { position:fixed; left:0; right:0; bottom:0; z-index:6; background:var(--bg); border-top:1px solid var(--line);
+        padding:10px 12px calc(10px + env(safe-area-inset-bottom)); }
+.dock .inner { max-width:720px; margin:0 auto; }
+.btns { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; }
+.btns button { font:inherit; font-weight:650; font-size:16px; padding:14px 6px; border-radius:10px; border:2px solid; background:var(--card); cursor:pointer; }
+.btns .I { color:var(--inc); border-color:var(--inc); } .btns .U { color:var(--uns); border-color:var(--uns); } .btns .E { color:var(--exc); border-color:var(--exc); }
+.btns button.on.I { background:var(--inc); color:#fff; } .btns button.on.U { background:var(--uns); color:#fff; } .btns button.on.E { background:var(--exc); color:#fff; }
+.nav { display:flex; justify-content:space-between; align-items:center; margin-top:8px; font-size:14px; }
+.nav button { font:inherit; font-size:14px; background:none; border:0; color:var(--accent); padding:6px 2px; cursor:pointer; }
+.nav button:disabled { color:var(--muted); opacity:.5; }
+.chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+.chips button { font:inherit; font-size:13px; padding:6px 10px; border-radius:16px; border:1px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer; }
+.chips button.on { border-color:var(--exc); color:var(--exc); font-weight:650; }
+textarea { width:100%; margin-top:8px; font:inherit; font-size:15px; padding:8px; border-radius:8px; border:1px solid var(--line); background:var(--card); color:var(--ink); }
+.big { display:block; width:100%; font:inherit; font-weight:650; font-size:17px; padding:14px; border-radius:10px; border:0; background:var(--accent); color:#fff; cursor:pointer; margin-top:14px; }
+.big.alt { background:none; border:2px solid var(--accent); color:var(--accent); }
+ul.crit { padding-left:20px; } ul.crit li { margin:0 0 6px; }
+table { border-collapse:collapse; width:100%; font-size:14px; margin-top:8px; }
+th, td { border:1px solid var(--line); padding:6px 8px; text-align:center; }
+th:first-child, td:first-child { text-align:left; }
+.kpi { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px; }
+.kpi div { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px; }
+.kpi b { display:block; font-size:24px; } .kpi span { font-size:13px; color:var(--muted); }
+.dis { margin:0 0 14px; padding-bottom:12px; border-bottom:1px solid var(--line); }
+.hidden { display:none !important; }
+</style></head><body><main id="app">
+<p class="small"><a href="./">← Back to the library</a></p>
+<div id="view"></div>
+</main>
+<div class="dock hidden" id="dock"><div class="inner">
+  <div class="btns">
+    <button class="I" data-d="I">Include</button>
+    <button class="U" data-d="U">Unsure</button>
+    <button class="E" data-d="E">Exclude</button>
+  </div>
+  <div class="nav"><button id="back">← Back</button><button id="crit">Criteria</button><button id="next">Next →</button></div>
+</div></div>
+<script>
+(function () {
+  "use strict";
+  var LS = "cal1_state_v1", LSA = "cal1_abs_v1";
+  var EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search";
+  var REASONS = [["E1", "not psychiatric / not serious"], ["E2", "not resolved"], ["E3", "expected or targeted"],
+                 ["E4", "secondary, resolved with its cause"], ["E5", "trial, not a case"], ["E7", "no primary data"],
+                 ["E8", "too little detail"], ["OT", "off-topic"]];
+  var S = load(LS) || { ans: {}, pos: 0, started: null };
+  var ABS = load(LSA) || {};
+  var REC = [], KEY = null, view = document.getElementById("view"), dock = document.getElementById("dock");
+
+  function load(k) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : null; } catch (e) { return null; } }
+  function save() { try { localStorage.setItem(LS, JSON.stringify(S)); } catch (e) {} }
+  function saveAbs() { try { localStorage.setItem(LSA, JSON.stringify(ABS)); } catch (e) {} }
+  function el(t, a, kids) {
+    var n = document.createElement(t); a = a || {};
+    Object.keys(a).forEach(function (k) { if (k === "text") n.textContent = a[k]; else if (k === "class") n.className = a[k]; else n.setAttribute(k, a[k]); });
+    (kids || []).forEach(function (c) { if (c != null) n.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+    return n;
+  }
+  function done(i) { return !!(S.ans[i] && S.ans[i].d); }
+  function answered() { var n = 0; for (var i = 0; i < REC.length; i++) if (done(i)) n++; return n; }
+
+  // ---------- abstracts, fetched live from Europe PMC (never stored in the repo) ----------
+  var inflight = {};
+  function fetchBatch(start) {
+    var ids = REC.slice(start, start + 20).filter(function (r) { return !ABS[r.i]; });
+    if (!ids.length || inflight[start]) return Promise.resolve();
+    inflight[start] = true;
+    var q = ids.map(function (r) { return "(EXT_ID:" + r.id + " AND SRC:" + r.src + ")"; }).join(" OR ");
+    var url = EPMC + "?format=json&resultType=core&pageSize=25&query=" + encodeURIComponent(q);
+    return fetch(url).then(function (r) { return r.json(); }).then(function (j) {
+      var got = {};
+      ((j.resultList || {}).result || []).forEach(function (x) { got[x.source + ":" + x.id] = x; });
+      ids.forEach(function (r) {
+        var x = got[r.src + ":" + r.id];
+        ABS[r.i] = x ? { a: x.abstractText || "", au: x.authorString || "", pt: ((x.pubTypeList || {}).pubType || []).join(", "),
+                          lang: x.language || "" } : { a: "", missing: true };
+      });
+      saveAbs();
+    }).catch(function () {}).then(function () { delete inflight[start]; });
+  }
+  function absParas(html) {
+    var t = String(html || "").replace(/<h4[^>]*>([\s\S]*?)<\/h4>/gi, "\n\u0001$1\u0002 ").replace(/<br\s*\/?>/gi, "\n")
+      .replace(/<\/p>/gi, "\n").replace(/<[^>]+>/g, "");
+    var d = document.createElement("textarea"); d.innerHTML = t; t = d.value;
+    return t.split(/\n+/).map(function (s) { return s.trim(); }).filter(Boolean).map(function (s) {
+      var m = s.match(/^\u0001([\s\S]*?)\u0002\s*([\s\S]*)$/);
+      return m ? el("p", {}, [el("span", { class: "lab", text: m[1].replace(/:$/, "") + ": " }), m[2]]) : el("p", { text: s });
+    });
+  }
+
+  // ---------- screens ----------
+  function intro() {
+    dock.classList.add("hidden");
+    view.innerHTML = "";
+    var n = answered();
+    view.appendChild(el("h1", { text: "Calibration: 100 records, blind" }));
+    view.appendChild(el("p", { class: "muted", text: "These are real records from the main Europe PMC search (step 1.1). Claude has already screened each one; its calls stay hidden until you finish. Screen them as you would at title and abstract stage: liberally. Include anything that might qualify, because the full text decides later. Unsure means you can't tell from what's here." }));
+    view.appendChild(el("p", { class: "muted", text: "Your answers save on this phone as you go, so you can stop and come back. At the end you'll see the agreement statistics and every disagreement, and a button that copies your answers for Claude." }));
+    view.appendChild(critBox());
+    var b = el("button", { class: "big", text: n ? "Carry on (" + n + " of 100 done)" : "Start" });
+    b.onclick = function () { if (!S.started) { S.started = new Date().toISOString(); save(); } S.pos = firstOpen(); show(); };
+    view.appendChild(b);
+    if (n === REC.length) { var r = el("button", { class: "big alt", text: "See the results" }); r.onclick = results; view.appendChild(r); }
+    var reset = el("button", { class: "linkbtn small", text: "Start again from scratch" });
+    reset.onclick = function () { if (confirm("Clear all your answers on this phone?")) { S = { ans: {}, pos: 0, started: null }; save(); intro(); } };
+    view.appendChild(el("p", { style: "margin-top:24px" }, [reset]));
+  }
+  function critBox() {
+    var box = el("div", { class: "card" });
+    box.appendChild(el("b", { text: "What counts (protocol §1–2)" }));
+    var ul = el("ul", { class: "crit small" });
+    ["A serious psychiatric syndrome: diagnostic level, chronic (6 months or more) or treatment-resistant (2+ adequate trials).",
+     "It resolved: completely, by 50% or more on a scale, or a clearly described remission.",
+     "The exposure wasn't aimed at that syndrome (or was, with no plausible expectation of benefit at the time): a stroke, surgery, a drug for something else, an infection, an accident.",
+     "Unexpected: a clinician of the period wouldn't have predicted it; it isn't a secondary syndrome clearing with its cause (delirium, substance-induced, treated encephalitis); spontaneous remission at that chronicity isn't common.",
+     "Out: deliberate treatment of the syndrome, trials and cohorts (E5), placebo responders, reviews without a new case (E7), animal work."
+    ].forEach(function (t) { ul.appendChild(el("li", { text: t })); });
+    box.appendChild(ul);
+    box.appendChild(el("p", { class: "small muted", text: "Exclusion reasons are optional. The calls that count are Include, Unsure or Exclude." }));
+    return box;
+  }
+  function firstOpen() { for (var i = 0; i < REC.length; i++) if (!done(i)) return i; return REC.length - 1; }
+
+  function show() {
+    var i = S.pos, r = REC[i], a = S.ans[i] || {};
+    dock.classList.remove("hidden");
+    view.innerHTML = "";
+    var top = el("div", { class: "top" }, [el("div", { class: "row" }, [
+      el("div", { class: "bar" }, [el("i", { style: "width:" + (answered() / REC.length * 100) + "%" })]),
+      el("span", { class: "count", text: (i + 1) + " / " + REC.length })])]);
+    view.appendChild(top);
+    var card = el("div", { class: "card" });
+    card.appendChild(el("p", { class: "title", text: r.title }));
+    var info = ABS[i] || {};
+    var cite = [info.au || r.au, r.jn, r.yr].filter(Boolean).join(" · ");
+    card.appendChild(el("div", { class: "cite" }, [cite + (info.pt ? " · " + info.pt : "") + (info.lang && info.lang !== "eng" ? " · " + info.lang : "") + " · ",
+      el("a", { href: "https://europepmc.org/article/" + r.src + "/" + r.id, target: "_blank", rel: "noopener", text: "Europe PMC" })]));
+    var abs = el("div", { class: "abs" });
+    if (ABS[i] && ABS[i].a) absParas(ABS[i].a).forEach(function (p) { abs.appendChild(p); });
+    else if (ABS[i]) abs.appendChild(el("p", { class: "status", text: "No abstract in Europe PMC: judge from the title, as at title stage." }));
+    else abs.appendChild(el("p", { class: "status", text: "Loading the abstract…" }));
+    card.appendChild(abs);
+    card.appendChild(el("div", { class: "small muted", style: "margin-top:12px", text: "Exclude with a reason (optional; tapping one excludes):" }));
+    var ch = el("div", { class: "chips" });
+    REASONS.forEach(function (x) {
+      var b = el("button", { class: a.d === "E" && a.r === x[0] ? "on" : "", text: x[0] + " · " + x[1] });
+      b.onclick = function () { decide("E", x[0]); };
+      ch.appendChild(b);
+    });
+    card.appendChild(ch);
+    var note = el("textarea", { rows: "2", placeholder: "Note for Claude (optional)" });
+    note.value = a.n || "";
+    note.addEventListener("input", function () { var cur = S.ans[i] || {}; cur.n = note.value || undefined; if (cur.d || cur.n) { S.ans[i] = cur; save(); } });
+    card.appendChild(note);
+    view.appendChild(card);
+    document.querySelectorAll(".btns button").forEach(function (b) { b.classList.toggle("on", b.getAttribute("data-d") === a.d); });
+    document.getElementById("back").disabled = i === 0;
+    document.getElementById("next").textContent = i === REC.length - 1 && answered() === REC.length ? "Results →" : "Next →";
+    document.getElementById("crit").textContent = S.finished ? "Results" : "Criteria";
+    if (!ABS[i]) fetchBatch(i - (i % 20)).then(function () { if (S.pos === i && !document.querySelector("textarea:focus")) show(); });
+    fetchBatch(i - (i % 20) + 20);
+    window.scrollTo(0, 0);
+  }
+  function decide(d, reason) {
+    var i = S.pos, a = S.ans[i] || {};
+    a.d = d; if (reason) a.r = reason; else delete a.r;
+    S.ans[i] = a; save();
+    document.querySelectorAll(".btns button").forEach(function (b) { b.classList.toggle("on", b.getAttribute("data-d") === d); });
+    setTimeout(advance, 180);
+  }
+  function advance() {
+    if (answered() === REC.length && !S.finished) return results();
+    if (!S.finished) for (var k = 1; k <= REC.length; k++) { var j = (S.pos + k) % REC.length; if (!done(j)) { S.pos = j; save(); return show(); } }
+    if (S.pos < REC.length - 1) { S.pos++; save(); show(); } else results();
+  }
+  document.querySelectorAll(".btns button").forEach(function (b) { b.onclick = function () { decide(b.getAttribute("data-d")); }; });
+  document.getElementById("back").onclick = function () { if (S.pos > 0) { S.pos--; save(); show(); } };
+  document.getElementById("next").onclick = function () {
+    if (S.pos < REC.length - 1) { S.pos++; save(); show(); } else if (answered() === REC.length) results();
+  };
+  document.getElementById("crit").onclick = function () { save(); if (S.finished) results(); else intro(); };
+
+  // ---------- results (the key is fetched only now) ----------
+  function claudeCall(k) { return k.decision === "included" ? "I" : k.decision === "unsure" ? "U" : "E"; }
+  function kappa(pairs, cats, wfn) {
+    var N = 0, agree = 0, row = {}, col = {};
+    cats.forEach(function (c) { row[c] = 0; col[c] = 0; });
+    pairs.forEach(function (p) { var w = wfn ? wfn(p) : 1; N += w; if (p.b === p.c) agree += w; row[p.b] += w; col[p.c] += w; });
+    var po = agree / N, pe = 0;
+    cats.forEach(function (c) { pe += (row[c] / N) * (col[c] / N); });
+    return { po: po, k: pe === 1 ? 1 : (po - pe) / (1 - pe) };
+  }
+  function results() {
+    if (answered() < REC.length) { S.pos = firstOpen(); return show(); }
+    S.finished = true; save();
+    dock.classList.add("hidden");
+    view.innerHTML = "";
+    view.appendChild(el("h1", { text: "Results" }));
+    view.appendChild(el("p", { class: "status", text: "Loading Claude's calls…" }));
+    fetch("queries/calibration_v1_key.json?v=" + Date.now()).then(function (r) { return r.json(); }).then(function (K) {
+      KEY = K; render();
+    }).catch(function () { view.appendChild(el("p", { text: "Couldn't load Claude's calls. Check your connection and try again." })); });
+  }
+  function render() {
+    var meta = KEY.meta, key = KEY.key;
+    var bin = function (x) { return x === "E" ? "E" : "P"; };
+    var pairs3 = key.map(function (k) { return { i: k.i, s: k.stratum, b: S.ans[k.i].d, c: claudeCall(k) }; });
+    var pairs2 = pairs3.map(function (p) { return { i: p.i, s: p.s, b: bin(p.b), c: bin(p.c) }; });
+    var w = function (p) { return meta.frame_sizes[p.s] / meta.sample_sizes[p.s]; };
+    var frameN = Object.keys(meta.frame_sizes).reduce(function (t, s) { return t + meta.frame_sizes[s]; }, 0);
+    var k2 = kappa(pairs2, ["P", "E"]), k3 = kappa(pairs3, ["I", "U", "E"]), k2w = kappa(pairs2, ["P", "E"], w);
+    view.innerHTML = "";
+    view.appendChild(el("h1", { text: "Results" }));
+    var pass = k2.k >= 0.7;
+    view.appendChild(el("p", { text: pass ? "Target met: kappa is at least 0.7 on the call that matters (to full text, or out)." :
+      "Below the 0.7 target on the call that matters (to full text, or out). The disagreements below show where our rules differ." }));
+    var kp = el("div", { class: "kpi" });
+    [[k2.k.toFixed(2), "kappa: to full text vs out (as sampled)"], [k2w.k.toFixed(2), "same, weighted back to all " + frameN.toLocaleString() + " screened records"],
+     [k3.k.toFixed(2), "kappa: include / unsure / exclude"], [Math.round(k2.po * 100) + "%", "raw agreement, to full text vs out"]
+    ].forEach(function (x) { kp.appendChild(el("div", {}, [el("b", { text: x[0] }), el("span", { text: x[1] })])); });
+    view.appendChild(kp);
+    view.appendChild(el("p", { class: "small muted", text: "The sample was enriched with Claude's includes, unsure calls and near-misses, because a random 100 would hold about one include. The weighted figure counts each record by how many it stands for." }));
+
+    view.appendChild(el("h2", { text: "Who said what" }));
+    var cats = ["I", "U", "E"], lab = { I: "Include", U: "Unsure", E: "Exclude" };
+    var t = el("table");
+    t.appendChild(el("tr", {}, [el("th", { text: "You ↓ · Claude →" })].concat(cats.map(function (c) { return el("th", { text: lab[c] }); }))));
+    cats.forEach(function (b) {
+      t.appendChild(el("tr", {}, [el("td", { text: lab[b] })].concat(cats.map(function (c) {
+        return el("td", { text: String(pairs3.filter(function (p) { return p.b === b && p.c === c; }).length) });
+      }))));
+    });
+    view.appendChild(t);
+
+    var dis = pairs3.filter(function (p) { return bin(p.b) !== bin(p.c); });
+    var soft = pairs3.filter(function (p) { return bin(p.b) === bin(p.c) && p.b !== p.c; });
+    view.appendChild(el("h2", { text: "Disagreements that matter (" + dis.length + ")" }));
+    if (!dis.length) view.appendChild(el("p", { class: "muted", text: "None." }));
+    dis.concat(soft).forEach(function (p, n) {
+      if (n === dis.length) view.appendChild(el("h2", { text: "Include vs unsure (" + soft.length + ")" }));
+      var k = key[p.i], r = REC[p.i], a = S.ans[p.i];
+      var mine = "Claude: " + lab[p.c] + (k.reason ? " (" + k.reason + ")" : "") + (k.library_ids ? " · in the library as " + k.library_ids : "");
+      var yours = "You: " + lab[p.b] + (a.r ? " (" + a.r + ")" : "") + (a.n ? " · “" + a.n + "”" : "");
+      var go = el("a", { href: "#", text: "open" });
+      go.onclick = function (e) { e.preventDefault(); S.pos = p.i; dock.classList.remove("hidden"); show(); };
+      view.appendChild(el("div", { class: "dis" }, [el("div", { style: "font-weight:600", text: r.title }),
+        el("div", { class: "small muted", text: [r.au, r.jn, r.yr].join(" · ") }),
+        el("div", { class: "mine small" }, [el("b", { class: p.b, text: yours })]),
+        el("div", { class: "mine small" }, [el("b", { class: p.c, text: mine }), " · ", go])]));
+    });
+
+    view.appendChild(el("h2", { text: "Send your answers to Claude" }));
+    view.appendChild(el("p", { class: "small muted", text: "Tap the button, then paste into the chat. It's your 100 calls and any notes; Claude scores them, records them in the repo and re-screens every record where you said in and it said out." }));
+    var code = JSON.stringify({ set: meta.set, d: REC.map(function (r) { return S.ans[r.i].d; }).join(""),
+      r: Object.keys(S.ans).reduce(function (o, i) { if (S.ans[i].d === "E" && S.ans[i].r) o[i] = S.ans[i].r; return o; }, {}),
+      n: Object.keys(S.ans).reduce(function (o, i) { if (S.ans[i].n) o[i] = S.ans[i].n; return o; }, {}),
+      started: S.started, done: new Date().toISOString() });
+    var ta = el("textarea", { rows: "4" }); ta.value = code; ta.readOnly = true;
+    var cp = el("button", { class: "big", text: "Copy my answers" });
+    cp.onclick = function () {
+      var ok = function () { cp.textContent = "Copied: now paste it into the chat"; };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(code).then(ok, function () { ta.select(); document.execCommand("copy"); ok(); });
+      else { ta.select(); document.execCommand("copy"); ok(); }
+    };
+    view.appendChild(cp);
+    view.appendChild(ta);
+    var back = el("button", { class: "big alt", text: "Review my answers" });
+    back.onclick = function () { S.pos = 0; show(); };
+    view.appendChild(back);
+    window.scrollTo(0, 0);
+  }
+
+  fetch("queries/calibration_v1_sample.json?v=1").then(function (r) { return r.json(); }).then(function (j) {
+    REC = j.records;
+    if (S.pos >= REC.length) S.pos = 0;
+    intro();
+    fetchBatch(firstOpen() - (firstOpen() % 20));
+  }).catch(function () { view.appendChild(el("p", { text: "Couldn't load the record list. Check your connection and reload." })); });
+})();
+</script>
+</body></html>

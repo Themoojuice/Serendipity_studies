@@ -427,7 +427,8 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
       [(patients - dupes) + "+", "patients"],
       [coded + " of " + cases.length, "fully coded: tap to read them", "coded"],
       [cases.length - coded, "still need a full text: tap for the list", "queue"],
-      [DATA.updated, "last updated"]
+      [DATA.updated, "last updated"],
+      ["100", "records to screen blind: calibration", "calibration.html"]
     ];
     var box = $("tiles"); box.innerHTML = "";
     tiles.forEach(function (t) {
@@ -436,8 +437,8 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
         tile.style.cursor = "pointer"; tile.setAttribute("role", "button"); tile.tabIndex = 0;
         tile.addEventListener("click", function () { state.coded = "yes"; var c = $("coded"); if (c) c.value = "yes"; renderAll(); var l = $("list"); if (l && l.scrollIntoView) l.scrollIntoView({ behavior: "smooth", block: "start" }); });
       }
-      if (t[2] === "queue") {
-        tile = el("a", { class: "tile", href: "queue.html" }, [el("b", { text: String(t[0]) }), el("span", { text: t[1] })]);
+      if (t[2] === "queue" || /\.html$/.test(t[2] || "")) {
+        tile = el("a", { class: "tile", href: t[2] === "queue" ? "queue.html" : t[2] }, [el("b", { text: String(t[0]) }), el("span", { text: t[1] })]);
         tile.style.textDecoration = "none"; tile.style.color = "inherit";
       }
       box.appendChild(tile);

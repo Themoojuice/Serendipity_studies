@@ -1,0 +1,1024 @@
+{
+ "meta": {
+  "set": "calibration_v1",
+  "made": "2026-11-21",
+  "seed": 20261121,
+  "frame_query": "EPMC_broad_v1_2",
+  "frame_sizes": {
+   "INC": 117,
+   "UNS": 23,
+   "ABX": 133,
+   "TOPX": 1766,
+   "RNDX": 7332
+  },
+  "sample_sizes": {
+   "INC": 25,
+   "UNS": 10,
+   "ABX": 25,
+   "TOPX": 25,
+   "RNDX": 15
+  }
+ },
+ "key": [
+  {
+   "i": 0,
+   "record_id": "R023977",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 3, rank 10, score 12"
+  },
+  {
+   "i": 1,
+   "record_id": "R000614",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "abdollahifard-2026",
+   "note": "rank 0, score 17"
+  },
+  {
+   "i": 2,
+   "record_id": "R048412",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "gillespie-2019",
+   "note": "first pass, rank 827; screened 2026-11-10"
+  },
+  {
+   "i": 3,
+   "record_id": "R049683",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 2098; screened 2026-11-10"
+  },
+  {
+   "i": 4,
+   "record_id": "R050251",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 2666; screened 2026-11-10"
+  },
+  {
+   "i": 5,
+   "record_id": "R051106",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 3521; screened 2026-11-10"
+  },
+  {
+   "i": 6,
+   "record_id": "R003274",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "fontaine-2004",
+   "note": "rank 2660, score 5"
+  },
+  {
+   "i": 7,
+   "record_id": "R048431",
+   "stratum": "UNS",
+   "decision": "unsure",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 846; screened 2026-11-10; Letter, no abstract: was intravenous dopamine given for hypotension (off-target) or for the depression?"
+  },
+  {
+   "i": 8,
+   "record_id": "R000724",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "aminzade-2021",
+   "note": "rank 110, score 13"
+  },
+  {
+   "i": 9,
+   "record_id": "R000786",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "moussawi-2016",
+   "note": "rank 172, score 13"
+  },
+  {
+   "i": 10,
+   "record_id": "R049245",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "first pass, rank 1660; screened 2026-11-10; Psychiatric treatment aimed at weight gain"
+  },
+  {
+   "i": 11,
+   "record_id": "R047276",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 491; screened 2026-11-10"
+  },
+  {
+   "i": 12,
+   "record_id": "R047758",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E5",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 973; screened 2026-11-10; Open pilot of faecal transplant for Tourette syndrome"
+  },
+  {
+   "i": 13,
+   "record_id": "R023570",
+   "stratum": "UNS",
+   "decision": "unsure",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 3, score 14; Dopamine agonist in a CNV carrier: was it given for the psychosis? Needs full text"
+  },
+  {
+   "i": 14,
+   "record_id": "R048209",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 1424; screened 2026-11-10; Post-traumatic OCD improved on treatment"
+  },
+  {
+   "i": 15,
+   "record_id": "R000841",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "sani-2007",
+   "note": "rank 227, score 13"
+  },
+  {
+   "i": 16,
+   "record_id": "R051920",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 4384; stopping-rule random sample (seed 20261110); screened 2026-11-10"
+  },
+  {
+   "i": 17,
+   "record_id": "R000637",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "gupta-2026",
+   "note": "rank 23, score 13"
+  },
+  {
+   "i": 18,
+   "record_id": "R051555",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E2",
+   "library_ids": "",
+   "note": "first pass, rank 3970; screened 2026-11-10; Pregabalin augmented response in an acute early-onset episode; not resolution of a chronic syndrome"
+  },
+  {
+   "i": 19,
+   "record_id": "R053471",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 7054; rerank_v1 rank 386, score -1.388; screened 2026-11-10"
+  },
+  {
+   "i": 20,
+   "record_id": "R049294",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "romeo-2025",
+   "note": "first pass, rank 1709; screened 2026-11-10"
+  },
+  {
+   "i": 21,
+   "record_id": "R053647",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "first pass, rank 4072; rerank_v1 rank 562, score -1.608; screened 2026-11-10; focused ultrasound aimed at the depression"
+  },
+  {
+   "i": 22,
+   "record_id": "R054053",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 3757; rerank_v1 rank 968, score -1.922; screened 2026-11-10; phenelzine given for the depression"
+  },
+  {
+   "i": 23,
+   "record_id": "R000682",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "rank 68, score 13"
+  },
+  {
+   "i": 24,
+   "record_id": "R054055",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E4",
+   "library_ids": "",
+   "note": "first pass, rank 8511; rerank_v1 rank 970, score -1.923; screened 2026-11-10; upper airway resistance syndrome treated as the presumed cause; depression had already remitted with ECT"
+  },
+  {
+   "i": 25,
+   "record_id": "R053969",
+   "stratum": "UNS",
+   "decision": "unsure",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 2824; rerank_v1 rank 884, score -1.868; screened 2026-11-10; chronic pain with opioid dependence lifted after sudden amnesia (seizures in one): physiological dependence or use disorder?"
+  },
+  {
+   "i": 26,
+   "record_id": "R023588",
+   "stratum": "UNS",
+   "decision": "unsure",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 21, score 13; Ketamine indication not stated; may be deliberate"
+  },
+  {
+   "i": 27,
+   "record_id": "R047892",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 1107; screened 2026-11-10"
+  },
+  {
+   "i": 28,
+   "record_id": "R050112",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E2",
+   "library_ids": "",
+   "note": "first pass, rank 2527; screened 2026-11-10; Negative case: schizophrenia persisted after 8 months of gluten-free diet with coeliac remission"
+  },
+  {
+   "i": 29,
+   "record_id": "R000924",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "rank 310, score 12"
+  },
+  {
+   "i": 30,
+   "record_id": "R000669",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "gong-2024",
+   "note": "rank 55, score 13"
+  },
+  {
+   "i": 31,
+   "record_id": "R000713",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "sciortino-2021",
+   "note": "rank 99, score 13"
+  },
+  {
+   "i": 32,
+   "record_id": "R050415",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 2830; screened 2026-11-10"
+  },
+  {
+   "i": 33,
+   "record_id": "R000869",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "guerdjikova-2026",
+   "note": "rank 255, score 12"
+  },
+  {
+   "i": 34,
+   "record_id": "R048877",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "first pass, rank 1292; screened 2026-11-10; Psychological therapy aimed at the psychotic symptoms"
+  },
+  {
+   "i": 35,
+   "record_id": "R023869",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 302, score 10"
+  },
+  {
+   "i": 36,
+   "record_id": "R050241",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E4",
+   "library_ids": "",
+   "note": "first pass, rank 2656; screened 2026-11-10; Dopamine dysregulation syndrome abolished with DBS and dopaminergic reduction"
+  },
+  {
+   "i": 37,
+   "record_id": "R049330",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 1745; screened 2026-11-10"
+  },
+  {
+   "i": 38,
+   "record_id": "R000736",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "jewett-2020",
+   "note": "rank 122, score 13"
+  },
+  {
+   "i": 39,
+   "record_id": "R053589",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "first pass, rank 6137; rerank_v1 rank 504, score -1.536; screened 2026-11-10; olanzapine started alongside the gluten-free diet"
+  },
+  {
+   "i": 40,
+   "record_id": "R052199",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 3, rank 74; stopping-rule consecutive run (seed 20261110); screened 2026-11-10"
+  },
+  {
+   "i": 41,
+   "record_id": "R000964",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "viglione-2025",
+   "note": "rank 350, score 12"
+  },
+  {
+   "i": 42,
+   "record_id": "R053898",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 3125; rerank_v1 rank 813, score -1.822; screened 2026-11-10; elimination diet trialled for the treatment-resistant depression"
+  },
+  {
+   "i": 43,
+   "record_id": "R048251",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E4",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 1466; screened 2026-11-10; Infection-triggered anorexia nervosa eased with antibiotics"
+  },
+  {
+   "i": 44,
+   "record_id": "R053763",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E2",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 11987; rerank_v1 rank 678, score -1.722; screened 2026-11-10; psychosis worsened on amantadine for neuroleptic malignant syndrome"
+  },
+  {
+   "i": 45,
+   "record_id": "R053483",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "serratrice-2002",
+   "note": "first pass, rank 6219; rerank_v1 rank 398, score -1.396; screened 2026-11-10"
+  },
+  {
+   "i": 46,
+   "record_id": "R023590",
+   "stratum": "UNS",
+   "decision": "unsure",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 23, score 13; Phenytoin may have been aimed at suspected seizures driving the self-injury"
+  },
+  {
+   "i": 47,
+   "record_id": "R052190",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 3, rank 65; stopping-rule consecutive run (seed 20261110); screened 2026-11-10"
+  },
+  {
+   "i": 48,
+   "record_id": "R054754",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E2",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 2561; rerank_v1 rank 1666, score -2.261; re-ranked order; screened 2026-11-10; chronic interictal psychosis after epilepsy surgery: mixed course, no remission reported"
+  },
+  {
+   "i": 49,
+   "record_id": "R053227",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 9354; rerank_v1 rank 141, score -0.832; screened 2026-11-10"
+  },
+  {
+   "i": 50,
+   "record_id": "R053870",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "first pass, rank 17741; rerank_v1 rank 785, score -1.807; screened 2026-11-10; vortioxetine given for the depression"
+  },
+  {
+   "i": 51,
+   "record_id": "R000826",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "rank 212, score 13"
+  },
+  {
+   "i": 52,
+   "record_id": "R049688",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 2103; screened 2026-11-10"
+  },
+  {
+   "i": 53,
+   "record_id": "R000676",
+   "stratum": "UNS",
+   "decision": "unsure",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "",
+   "note": "rank 62, score 13"
+  },
+  {
+   "i": 54,
+   "record_id": "R001176",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "rank 562, score 12"
+  },
+  {
+   "i": 55,
+   "record_id": "R049641",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "pintor-2022",
+   "note": "first pass, rank 2056; screened 2026-11-10"
+  },
+  {
+   "i": 56,
+   "record_id": "R000803",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "setsaas-2014",
+   "note": "rank 189, score 13"
+  },
+  {
+   "i": 57,
+   "record_id": "R023910",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 343, score 10"
+  },
+  {
+   "i": 58,
+   "record_id": "R049057",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "malur-2000",
+   "note": "first pass, rank 1472; screened 2026-11-10"
+  },
+  {
+   "i": 59,
+   "record_id": "R052435",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 3, rank 310; stopping-rule consecutive run (seed 20261110); screened 2026-11-10"
+  },
+  {
+   "i": 60,
+   "record_id": "R048622",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 1037; screened 2026-11-10"
+  },
+  {
+   "i": 61,
+   "record_id": "R001107",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "rank 493, score 12"
+  },
+  {
+   "i": 62,
+   "record_id": "R053577",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 19787; rerank_v1 rank 492, score -1.522; screened 2026-11-10"
+  },
+  {
+   "i": 63,
+   "record_id": "R053326",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 10624; rerank_v1 rank 240, score -1.119; screened 2026-11-10"
+  },
+  {
+   "i": 64,
+   "record_id": "R048259",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E2",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 1474; screened 2026-11-10; Negative case series: psychosis unchanged after temporal lobectomy and seizure freedom in all 5"
+  },
+  {
+   "i": 65,
+   "record_id": "R023654",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 87, score 13"
+  },
+  {
+   "i": 66,
+   "record_id": "R052456",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 3, rank 331; stopping-rule consecutive run (seed 20261110); screened 2026-11-10"
+  },
+  {
+   "i": 67,
+   "record_id": "R000714",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "vendrell-serres-2021",
+   "note": "rank 100, score 13"
+  },
+  {
+   "i": 68,
+   "record_id": "R000645",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "rank 31, score 13"
+  },
+  {
+   "i": 69,
+   "record_id": "R053380",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "stevens-1990",
+   "note": "year-slice batch 2, rank 7744; rerank_v1 rank 294, score -1.226; screened 2026-11-10"
+  },
+  {
+   "i": 70,
+   "record_id": "R053636",
+   "stratum": "UNS",
+   "decision": "unsure",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 2751; rerank_v1 rank 551, score -1.598; screened 2026-11-10; letter: was metformin started for the polycystic ovary syndrome or for the menstrual psychosis?"
+  },
+  {
+   "i": 71,
+   "record_id": "R023651",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "freeman-2001",
+   "note": "year-slice batch 2, rank 84, score 13"
+  },
+  {
+   "i": 72,
+   "record_id": "R054061",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 15729; rerank_v1 rank 976, score -1.926; screened 2026-11-10"
+  },
+  {
+   "i": 73,
+   "record_id": "R023639",
+   "stratum": "UNS",
+   "decision": "unsure",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 72, score 13; Hormones may have been given for the psychosis or for hypoestrogenaemia (possible E4)"
+  },
+  {
+   "i": 74,
+   "record_id": "R052255",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 3, rank 130; stopping-rule consecutive run (seed 20261110); screened 2026-11-10"
+  },
+  {
+   "i": 75,
+   "record_id": "R023675",
+   "stratum": "UNS",
+   "decision": "unsure",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 108, score 13; Danish; abstract is about ECT and case details need the full text"
+  },
+  {
+   "i": 76,
+   "record_id": "R048441",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E4",
+   "library_ids": "",
+   "note": "first pass, rank 856; screened 2026-11-10; Contraceptive-induced depression remitted when stopped"
+  },
+  {
+   "i": 77,
+   "record_id": "R053690",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 2895; rerank_v1 rank 605, score -1.649; screened 2026-11-10; mirtazapine given for compulsive masturbation in autism"
+  },
+  {
+   "i": 78,
+   "record_id": "R000636",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "takizawa-2026",
+   "note": "rank 22, score 13"
+  },
+  {
+   "i": 79,
+   "record_id": "R051757",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 1672; stopping-rule consecutive run (seed 20261110); screened 2026-11-10; Peritoneal dialysis given to treat schizophrenia"
+  },
+  {
+   "i": 80,
+   "record_id": "R000849",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "thomas-2003",
+   "note": "rank 235, score 13"
+  },
+  {
+   "i": 81,
+   "record_id": "R053220",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 10260; rerank_v1 rank 134, score -0.81; screened 2026-11-10"
+  },
+  {
+   "i": 82,
+   "record_id": "R047390",
+   "stratum": "UNS",
+   "decision": "unsure",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 605; screened 2026-11-10; Bulimia cured in 6 patients after biliopancreatic diversion; 4 of 6 had BMI under 35, so the surgery may have been aimed at the bulimia (T1). Needs full text"
+  },
+  {
+   "i": 83,
+   "record_id": "R054686",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 2671; rerank_v1 rank 1598, score -2.234; re-ranked order; screened 2026-11-10"
+  },
+  {
+   "i": 84,
+   "record_id": "R053261",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 19694; rerank_v1 rank 175, score -0.98; screened 2026-11-10"
+  },
+  {
+   "i": 85,
+   "record_id": "R023984",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 3, rank 17, score 9"
+  },
+  {
+   "i": 86,
+   "record_id": "R049710",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 2125; screened 2026-11-10"
+  },
+  {
+   "i": 87,
+   "record_id": "R052311",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 3, rank 186; stopping-rule consecutive run (seed 20261110); screened 2026-11-10"
+  },
+  {
+   "i": 88,
+   "record_id": "R023645",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "ferrao-2003",
+   "note": "year-slice batch 2, rank 78, score 13"
+  },
+  {
+   "i": 89,
+   "record_id": "R000921",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "rank 307, score 12"
+  },
+  {
+   "i": 90,
+   "record_id": "R048712",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 1127; screened 2026-11-10"
+  },
+  {
+   "i": 91,
+   "record_id": "R053156",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 3282; rerank_v1 rank 70, score -0.393; screened 2026-11-10"
+  },
+  {
+   "i": 92,
+   "record_id": "R053379",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 6112; rerank_v1 rank 293, score -1.225; screened 2026-11-10"
+  },
+  {
+   "i": 93,
+   "record_id": "R049966",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E3",
+   "library_ids": "",
+   "note": "first pass, rank 2381; screened 2026-11-10; Levetiracetam given for epileptiform discharges presumed to drive the psychosis"
+  },
+  {
+   "i": 94,
+   "record_id": "R049873",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "shahani-2019",
+   "note": "first pass, rank 2288; screened 2026-11-10"
+  },
+  {
+   "i": 95,
+   "record_id": "R052219",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 3, rank 94; stopping-rule consecutive run (seed 20261110); screened 2026-11-10"
+  },
+  {
+   "i": 96,
+   "record_id": "R055025",
+   "stratum": "RNDX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "first pass, rank 4160; rerank_v1 rank 1937, score -2.359; re-ranked order; screened 2026-11-10"
+  },
+  {
+   "i": 97,
+   "record_id": "R023596",
+   "stratum": "TOPX",
+   "decision": "excluded",
+   "stage": "ta",
+   "reason": "",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 29, score 13"
+  },
+  {
+   "i": 98,
+   "record_id": "R000846",
+   "stratum": "INC",
+   "decision": "included",
+   "stage": "ab",
+   "reason": "",
+   "library_ids": "guarnieri-2005",
+   "note": "rank 232, score 13"
+  },
+  {
+   "i": 99,
+   "record_id": "R048061",
+   "stratum": "ABX",
+   "decision": "excluded",
+   "stage": "ab",
+   "reason": "E2",
+   "library_ids": "",
+   "note": "year-slice batch 2, rank 1276; screened 2026-11-10; Psychosis emerged with VNS (forced normalisation)"
+  }
+ ]
+}
