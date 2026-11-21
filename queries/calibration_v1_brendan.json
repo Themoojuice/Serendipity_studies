@@ -1,0 +1,1062 @@
+{
+ "meta": {
+  "set": "calibration_v1",
+  "started": "2026-11-21T13:02:44.293Z",
+  "done": "2026-11-21T14:20:18.573Z"
+ },
+ "stats": {
+  "binary_kappa": 0.516,
+  "binary_kappa_boot95": [
+   0.349,
+   0.677
+  ],
+  "binary_agreement": 0.78,
+  "binary_kappa_frame_weighted": 0.523,
+  "binary_agreement_frame_weighted": 0.982,
+  "three_way_kappa": 0.408,
+  "three_way_agreement": 0.71,
+  "confusion_brendan_by_claude": {
+   "I": {
+    "I": 17,
+    "U": 7,
+    "E": 11
+   },
+   "U": {
+    "I": 0,
+    "U": 0,
+    "E": 0
+   },
+   "E": {
+    "I": 8,
+    "U": 3,
+    "E": 54
+   }
+  },
+  "per_stratum": {
+   "TOPX": {
+    "n": 25,
+    "agree": 24
+   },
+   "INC": {
+    "n": 25,
+    "agree": 17
+   },
+   "RNDX": {
+    "n": 15,
+    "agree": 15
+   },
+   "UNS": {
+    "n": 10,
+    "agree": 7
+   },
+   "ABX": {
+    "n": 25,
+    "agree": 15
+   }
+  },
+  "target": 0.7,
+  "met": false
+ },
+ "records": [
+  {
+   "i": 0,
+   "record_id": "R023977",
+   "src": "MED",
+   "id": "37279563",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 1,
+   "record_id": "R000614",
+   "src": "MED",
+   "id": "41629421",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 2,
+   "record_id": "R048412",
+   "src": "MED",
+   "id": "31796437",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 3,
+   "record_id": "R049683",
+   "src": "MED",
+   "id": "33181561",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 4,
+   "record_id": "R050251",
+   "src": "MED",
+   "id": "15602100",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 5,
+   "record_id": "R051106",
+   "src": "MED",
+   "id": "40551594",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 6,
+   "record_id": "R003274",
+   "src": "MED",
+   "id": "15200126",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 7,
+   "record_id": "R048431",
+   "src": "MED",
+   "id": "26560841",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "U"
+  },
+  {
+   "i": 8,
+   "record_id": "R000724",
+   "src": "MED",
+   "id": "34938561",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 9,
+   "record_id": "R000786",
+   "src": "MED",
+   "id": "27311800",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 10,
+   "record_id": "R049245",
+   "src": "MED",
+   "id": "39748517",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 11,
+   "record_id": "R047276",
+   "src": "MED",
+   "id": "21486105",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 12,
+   "record_id": "R047758",
+   "src": "MED",
+   "id": "33424650",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 13,
+   "record_id": "R023570",
+   "src": "MED",
+   "id": "26602590",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "U"
+  },
+  {
+   "i": 14,
+   "record_id": "R048209",
+   "src": "MED",
+   "id": "10523043",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 15,
+   "record_id": "R000841",
+   "src": "MED",
+   "id": "17545955",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 16,
+   "record_id": "R051920",
+   "src": "MED",
+   "id": "28910390",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 17,
+   "record_id": "R000637",
+   "src": "MED",
+   "id": "41939690",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 18,
+   "record_id": "R051555",
+   "src": "MED",
+   "id": "38449476",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 19,
+   "record_id": "R053471",
+   "src": "MED",
+   "id": "38251693",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 20,
+   "record_id": "R049294",
+   "src": "MED",
+   "id": "39962582",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 21,
+   "record_id": "R053647",
+   "src": "MED",
+   "id": "37891643",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 22,
+   "record_id": "R054053",
+   "src": "MED",
+   "id": "7085581",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 23,
+   "record_id": "R000682",
+   "src": "MED",
+   "id": "38025476",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 24,
+   "record_id": "R054055",
+   "src": "MED",
+   "id": "23210848",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 25,
+   "record_id": "R053969",
+   "src": "MED",
+   "id": "17764843",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "U"
+  },
+  {
+   "i": 26,
+   "record_id": "R023588",
+   "src": "MED",
+   "id": "23706680",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "U"
+  },
+  {
+   "i": 27,
+   "record_id": "R047892",
+   "src": "MED",
+   "id": "20974592",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 28,
+   "record_id": "R050112",
+   "src": "MED",
+   "id": "23653940",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 29,
+   "record_id": "R000924",
+   "src": "PPR",
+   "id": "PPR1070877",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 30,
+   "record_id": "R000669",
+   "src": "MED",
+   "id": "39239945",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 31,
+   "record_id": "R000713",
+   "src": "MED",
+   "id": "34955908",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 32,
+   "record_id": "R050415",
+   "src": "MED",
+   "id": "42663881",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 33,
+   "record_id": "R000869",
+   "src": "MED",
+   "id": "41632102",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 34,
+   "record_id": "R048877",
+   "src": "MED",
+   "id": "24215787",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 35,
+   "record_id": "R023869",
+   "src": "MED",
+   "id": "25391361",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 36,
+   "record_id": "R050241",
+   "src": "MED",
+   "id": "15858803",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 37,
+   "record_id": "R049330",
+   "src": "MED",
+   "id": "41386951",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 38,
+   "record_id": "R000736",
+   "src": "MED",
+   "id": "32295563",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 39,
+   "record_id": "R053589",
+   "src": "MED",
+   "id": "22611513",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 40,
+   "record_id": "R052199",
+   "src": "MED",
+   "id": "35130537",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 41,
+   "record_id": "R000964",
+   "src": "MED",
+   "id": "40238682",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 42,
+   "record_id": "R053898",
+   "src": "MED",
+   "id": "11982551",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 43,
+   "record_id": "R048251",
+   "src": "MED",
+   "id": "9256593",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 44,
+   "record_id": "R053763",
+   "src": "MED",
+   "id": "8101093",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 45,
+   "record_id": "R053483",
+   "src": "MED",
+   "id": "12422480",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 46,
+   "record_id": "R023590",
+   "src": "MED",
+   "id": "23422527",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "U"
+  },
+  {
+   "i": 47,
+   "record_id": "R052190",
+   "src": "MED",
+   "id": "35645910",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 48,
+   "record_id": "R054754",
+   "src": "MED",
+   "id": "21783427",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 49,
+   "record_id": "R053227",
+   "src": "MED",
+   "id": "38020613",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 50,
+   "record_id": "R053870",
+   "src": "PMC",
+   "id": "PMC9566894",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 51,
+   "record_id": "R000826",
+   "src": "MED",
+   "id": "20945022",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 52,
+   "record_id": "R049688",
+   "src": "MED",
+   "id": "33661659",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 53,
+   "record_id": "R000676",
+   "src": "MED",
+   "id": "38090708",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "U"
+  },
+  {
+   "i": 54,
+   "record_id": "R001176",
+   "src": "MED",
+   "id": "33482628",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 55,
+   "record_id": "R049641",
+   "src": "MED",
+   "id": "33959938",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 56,
+   "record_id": "R000803",
+   "src": "MED",
+   "id": "24728894",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 57,
+   "record_id": "R023910",
+   "src": "MED",
+   "id": "11430294",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 58,
+   "record_id": "R049057",
+   "src": "MED",
+   "id": "11086151",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 59,
+   "record_id": "R052435",
+   "src": "MED",
+   "id": "40774180",
+   "brendan": "E",
+   "reason": "E7",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 60,
+   "record_id": "R048622",
+   "src": "MED",
+   "id": "36437500",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 61,
+   "record_id": "R001107",
+   "src": "MED",
+   "id": "35620847",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 62,
+   "record_id": "R053577",
+   "src": "MED",
+   "id": "24045612",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 63,
+   "record_id": "R053326",
+   "src": "MED",
+   "id": "42144326",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 64,
+   "record_id": "R048259",
+   "src": "MED",
+   "id": "9397012",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 65,
+   "record_id": "R023654",
+   "src": "MED",
+   "id": "11190982",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 66,
+   "record_id": "R052456",
+   "src": "MED",
+   "id": "36288382",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 67,
+   "record_id": "R000714",
+   "src": "MED",
+   "id": "34188796",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 68,
+   "record_id": "R000645",
+   "src": "MED",
+   "id": "40626225",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 69,
+   "record_id": "R053380",
+   "src": "MED",
+   "id": "2236362",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 70,
+   "record_id": "R053636",
+   "src": "MED",
+   "id": "18827957",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "U"
+  },
+  {
+   "i": 71,
+   "record_id": "R023651",
+   "src": "MED",
+   "id": "11207337",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 72,
+   "record_id": "R054061",
+   "src": "MED",
+   "id": "19032717",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 73,
+   "record_id": "R023639",
+   "src": "MED",
+   "id": "15003086",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "U"
+  },
+  {
+   "i": 74,
+   "record_id": "R052255",
+   "src": "MED",
+   "id": "38197209",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 75,
+   "record_id": "R023675",
+   "src": "MED",
+   "id": "1957363",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "U"
+  },
+  {
+   "i": 76,
+   "record_id": "R048441",
+   "src": "MED",
+   "id": "25988030",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 77,
+   "record_id": "R053690",
+   "src": "MED",
+   "id": "16648008",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 78,
+   "record_id": "R000636",
+   "src": "MED",
+   "id": "41925328",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 79,
+   "record_id": "R051757",
+   "src": "MED",
+   "id": "7227291",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 80,
+   "record_id": "R000849",
+   "src": "MED",
+   "id": "12621279",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 81,
+   "record_id": "R053220",
+   "src": "MED",
+   "id": "28079769",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 82,
+   "record_id": "R047390",
+   "src": "MED",
+   "id": "17132407",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "U"
+  },
+  {
+   "i": 83,
+   "record_id": "R054686",
+   "src": "MED",
+   "id": "19943100",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 84,
+   "record_id": "R053261",
+   "src": "MED",
+   "id": "29692969",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 85,
+   "record_id": "R023984",
+   "src": "MED",
+   "id": "35917638",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 86,
+   "record_id": "R049710",
+   "src": "MED",
+   "id": "33815967",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 87,
+   "record_id": "R052311",
+   "src": "MED",
+   "id": "35093100",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 88,
+   "record_id": "R023645",
+   "src": "MED",
+   "id": "15330004",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 89,
+   "record_id": "R000921",
+   "src": "MED",
+   "id": "41479844",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 90,
+   "record_id": "R048712",
+   "src": "PPR",
+   "id": "PPR359261",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 91,
+   "record_id": "R053156",
+   "src": "MED",
+   "id": "10463263",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 92,
+   "record_id": "R053379",
+   "src": "MED",
+   "id": "23935298",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 93,
+   "record_id": "R049966",
+   "src": "MED",
+   "id": "28228737",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 94,
+   "record_id": "R049873",
+   "src": "MED",
+   "id": "31352381",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 95,
+   "record_id": "R052219",
+   "src": "MED",
+   "id": "37101343",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 96,
+   "record_id": "R055025",
+   "src": "MED",
+   "id": "37007328",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 97,
+   "record_id": "R023596",
+   "src": "MED",
+   "id": "22382566",
+   "brendan": "E",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  },
+  {
+   "i": 98,
+   "record_id": "R000846",
+   "src": "MED",
+   "id": "16043417",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "I"
+  },
+  {
+   "i": 99,
+   "record_id": "R048061",
+   "src": "MED",
+   "id": "15768321",
+   "brendan": "I",
+   "reason": "",
+   "note": "",
+   "claude": "E"
+  }
+ ]
+}
