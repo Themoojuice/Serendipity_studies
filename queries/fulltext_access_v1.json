@@ -1,31 +1,32 @@
 {
  "meta": {
   "date": "2026-11-22",
-  "method": "EBSCO Full Text Finder (CKN's link resolver) per DOI in the laptop browser, while Brendan was signed in; LibKey and the Springer link checked for two"
+  "method": "EBSCO Full Text Finder (CKN's link resolver) per DOI in the laptop browser, while Brendan was signed in; LibKey and the Springer link checked for two",
+  "note": "Keys are library ids, or doi:<doi> for unsure screening records. 'done' = read and settled; 'phone' = CKN holds it only on a platform that blocks Claude's browser; 'none' = CKN doesn't hold it."
  },
  "results": {
   "kalenderoglu-2011": [
-   "ebsco",
-   "EBSCO full text"
+   "done",
+   "read 22 Nov (EBSCO), coded"
   ],
   "mallet-2002": [
-   "ebsco",
-   "EBSCO full text (Lancet 1991-2006)"
+   "done",
+   "read 22 Nov (EBSCO), coded"
   ],
   "graham-2018": [
-   "ebsco",
-   "EBSCO full text, also SAGE"
+   "done",
+   "read 22 Nov (EBSCO), excluded"
   ],
   "nagata-2013": [
-   "clinicalkey",
-   "ClinicalKey and ScienceDirect"
+   "phone",
+   "ScienceDirect via CKN only (not found in ClinicalKey)"
   ],
   "klok-2025": [
-   "publisher",
-   "BMJ Journals via CKN"
+   "phone",
+   "BMJ Journals via CKN (bot check in Claude's browser)"
   ],
   "taira-2003": [
-   "publisher",
+   "phone",
    "Journal of Neurosurgery via CKN (thejns.org blocks Claude's browser)"
   ],
   "de-santis-1997": [
@@ -111,6 +112,94 @@
   "najeeb-2016": [
    "none",
    "not held by CKN"
+  ],
+  "terao-1999": [
+   "done",
+   "read 22 Nov (EBSCO), excluded"
+  ],
+  "malur-2000": [
+   "phone",
+   "ScienceDirect via CKN only (not found in ClinicalKey)"
+  ],
+  "erol-durgun-2026": [
+   "phone",
+   "BMJ Journals via CKN (bot check in Claude's browser)"
+  ],
+  "jarraya-2010": [
+   "phone",
+   "Journal of Neurosurgery via CKN (thejns.org blocks Claude's browser)"
+  ],
+  "liu-2016": [
+   "phone",
+   "SAGE via CKN only"
+  ],
+  "spiers-2016": [
+   "phone",
+   "SAGE via CKN only"
+  ],
+  "mantione-2010": [
+   "none",
+   "not held by CKN"
+  ],
+  "pantoni-1997": [
+   "none",
+   "not held by CKN"
+  ],
+  "sani-2007": [
+   "none",
+   "not held by CKN"
+  ],
+  "wilcox-2008": [
+   "none",
+   "not held by CKN"
+  ],
+  "macleod-1990": [
+   "none",
+   "not held by CKN"
+  ],
+  "koethe-2007": [
+   "none",
+   "not held by CKN"
+  ],
+  "godschalx-dekker-2014": [
+   "none",
+   "not held by CKN"
+  ],
+  "curran-1995": [
+   "none",
+   "not held by CKN"
+  ],
+  "gordon-1948": [
+   "none",
+   "not held by CKN"
+  ],
+  "kastner-2016": [
+   "none",
+   "not held by CKN"
+  ],
+  "puente-1985": [
+   "none",
+   "not held by CKN"
+  ],
+  "doi:10.1016/j.pediatrneurol.2005.10.023": [
+   "phone",
+   "ScienceDirect via CKN only (not found in ClinicalKey)"
+  ],
+  "doi:10.1177/070674378903400817": [
+   "none",
+   "not held by CKN"
+  ],
+  "doi:10.1089/cap.2010.0155": [
+   "none",
+   "not held by CKN"
+  ],
+  "doi:10.1001/archpsyc.1962.01710220057007": [
+   "none",
+   "not held by CKN"
+  ],
+  "doi:10.4103/indianjpsychiatry.indianjpsychiatry_59_26": [
+   "done",
+   "read 22 Nov (open at Ovid), excluded"
   ]
  }
 }

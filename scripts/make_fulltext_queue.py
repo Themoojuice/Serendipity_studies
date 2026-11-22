@@ -105,7 +105,7 @@ def uline(x):
         links += [f"[CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url={_q('https://doi.org/' + x['doi'], safe='')})", f"[DOI](https://doi.org/{x['doi']})"]
     if x["pmid"]:
         links.append(f"[PubMed](https://pubmed.ncbi.nlm.nih.gov/{x['pmid']}/)")
-    note = UNSURE_NOTES.get(x["doi"], "")
+    note = " · ".join(n for n in (UNSURE_NOTES.get(x["doi"], ""), (lambda a: f"CKN check 22 Nov: {a[1]}" if a else "")(ACCESS.get("doi:" + x["doi"]))) if n)
     return f"- **{x['record_id']}** · {x['title']} ({x['journal']} {x['year']}) · " + " · ".join(links) + (f" · *{note}*" if note else "")
 if unsure:
     out += [f"## Unsure screening records: full text decides whether they're cases ({len(unsure)})", ""] + [uline(x) for x in unsure] + [""]
@@ -142,7 +142,7 @@ def uhl(x):
         links += [f'<a href="https://go.openathens.net/redirector/ckn.qldhealth.com?url={_q("https://doi.org/" + x["doi"], safe="")}">CKN</a>', f'<a href="https://doi.org/{_h.escape(x["doi"])}">DOI</a>']
     if x["pmid"]:
         links.append(f'<a href="https://pubmed.ncbi.nlm.nih.gov/{x["pmid"]}/">PubMed</a>')
-    note = UNSURE_NOTES.get(x["doi"], "")
+    note = " · ".join(n for n in (UNSURE_NOTES.get(x["doi"], ""), (lambda a: f"CKN check 22 Nov: {a[1]}" if a else "")(ACCESS.get("doi:" + x["doi"]))) if n)
     ex = f'<div class="ex">{_h.escape(note)}</div>' if note else ""
     return (f'<li><div class="t">{_h.escape(x["title"])}</div><div class="m">{_h.escape(x["journal"])} {x["year"]} · <code>{x["record_id"]}</code></div>'
             f'{ex}<div class="l">{" · ".join(links) or "no link: library or interlibrary loan"}</div></li>')

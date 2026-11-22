@@ -7991,6 +7991,169 @@
      "why": "Depression cured by a right frontal stroke"
     }
    ]
+  },
+  {
+   "case_id": "mallet-2002",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Stable for decades before surgery; change within two weeks."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Lifelong, not a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic contamination and checking OCD that began decades before Parkinson's disease, so not parkinsonian obsessionality."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Large cuts in levodopa and dopamine agonists after surgery; the paper argues against them but cannot separate them."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Mood, anxiety and frontal scores stayed normal or improved; no apathy reported."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Open, unblinded ratings by the treating team after a major operation."
+    },
+    "reporting": {
+     "rating": "Unlikely",
+     "why": "Structured scales before and after, numbers in a table."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "The founding case for subthalamic stimulation in OCD: decades-stable illness, two-week onset, Yale-Brown totals down by four fifths in both patients, and the 2008 randomised crossover trial (Mallet, NEJM) later showed the effect in OCD without Parkinson's disease. The dopaminergic dose cuts are the competitor this letter can't exclude on its own; the trial could.",
+   "hypotheses": [
+    {
+     "claim": "Stimulation of the limbic (anteromedial) subthalamic nucleus damped the cortico-striato-thalamic loop that sustains compulsions.",
+     "chain": "High-frequency stimulation at the anteromedial STN and zona incerta → inhibition or decoupling of the associative-limbic STN → reduced pallidal–thalamic drive to orbitofrontal and anterior cingulate cortex → compulsions stop, obsessions fade",
+     "mechanisms": [
+      "Stimulation of a circuit"
+     ],
+     "latency_fit": "Fits",
+     "for": "Abrupt, within two weeks, in both patients; contacts sat medial to the motor target; the effect was reproduced in a randomised crossover trial.",
+     "against": "Only two patients and no stimulation-off test here; contacts extended into the zona incerta, so the active structure is uncertain.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Which structure carried the effect (STN versus zona incerta fibres) is not resolved by two electrode plots.",
+     "test": "Blinded stimulation on/off crossover at the same contacts (done later in the 2008 trial)."
+    },
+    {
+     "claim": "Withdrawing dopaminergic drugs removed a dopamine-driven layer of compulsive behaviour.",
+     "chain": "Levodopa and agonists cut heavily after surgery → less mesolimbic dopamine stimulation → less compulsive checking and arranging",
+     "mechanisms": [
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Doses fell steeply in both patients; patient 2's checking had worsened with Parkinson's disease and its treatment.",
+     "against": "Both had OCD for decades before any dopaminergic drug; patient 1's OCD was constant through four years of optimum treatment.",
+     "confidence": "Low",
+     "uncertainty_driver": "The timing of the dose cuts relative to the two-week change is not reported.",
+     "test": "Ratings across stimulation on/off at a fixed dopaminergic dose."
+    },
+    {
+     "claim": "Zona incerta fibres, including ascending serotonergic axons, were activated, mimicking an SSRI.",
+     "chain": "Current spread to zona incerta fibre bundles → more forebrain serotonin release → OCD improves",
+     "mechanisms": [
+      "Serotonin"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "The authors raise it; both electrodes sat partly in the zona incerta.",
+     "against": "SSRI benefit in OCD is slow and partial; this was abrupt and near-complete.",
+     "confidence": "Low",
+     "uncertainty_driver": "Contact-level current spread is unknown.",
+     "test": "Compare contacts confined to the STN with zona incerta contacts in a blinded crossover."
+    }
+   ],
+   "related": [
+    {
+     "id": "fontaine-2004",
+     "why": "Subthalamic stimulation for Parkinson's, a 16-year OCD from Yale-Brown 32 to 1 (context)"
+    },
+    {
+     "id": "mira-2024",
+     "why": "Subthalamic stimulation for dyskinesia ending 20 years of cocaine use"
+    }
+   ]
+  },
+  {
+   "case_id": "kalenderoglu-2011",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Twenty-six years, ten drugs; the OCD came back within eight weeks of stopping heroin."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic; and the stop-return-restart sequence is not what regression looks like."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-standing contamination, checking and symmetry OCD with DSM-IV diagnosis and Y-BOCS."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "He was off antidepressants during the heroin year, and stopped clomipramine and quetiapine two days before the restart; neither stop would be expected to help OCD."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Scores of 0 and 11 were self-reported while opioid-positive; sedation and indifference were not separated from fewer obsessions."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "He took heroin for his blood sugar, not his OCD."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Short report, single clinic; the first improvement was never dated."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Heroin started for a mistaken reason, Yale-Brown 0 a year in, back to 25–30 off heroin despite clomipramine 300 mg, down to 11 on resuming: an unplanned off-on-off sequence that sits with the morphine and tramadol reports in OCD. What it can't separate is relief of obsessions from opioid indifference, since every good score was taken while he was using.",
+   "hypotheses": [
+    {
+     "claim": "Mu-opioid agonism damped the obsessional loop directly.",
+     "chain": "Heroin → morphine at mu receptors in orbitofrontal–striatal and limbic circuits → reduced anxiety-driven salience of intrusive thoughts and of the urge to neutralise → fewer obsessions and compulsions; withdrawal removes it, and naloxone is reported to worsen OCD",
+     "mechanisms": [
+      "Opioid"
+     ],
+     "latency_fit": "Fits",
+     "for": "Return within eight weeks of stopping and improvement on restarting; consistent with the placebo-controlled single-dose morphine effect in refractory OCD.",
+     "against": "Self-report under intoxication; the restart effect was measured once.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "One patient, scores taken while using, so a specific anti-obsessional effect is not separated from sedation.",
+     "test": "Blinded morphine or tramadol versus active placebo in refractory OCD, with ratings away from peak sedation."
+    },
+    {
+     "claim": "Opioid sedation and emotional blunting lowered the reported distress without changing the obsessions.",
+     "chain": "Heroin → global sedation and indifference → less distress and less time spent resisting → lower Y-BOCS self-report",
+     "mechanisms": [
+      "Global suppression (sedation, apathy, cognitive loss)"
+     ],
+     "latency_fit": "Fits",
+     "for": "All low scores were opioid-positive; the restart score came on the first day back.",
+     "against": "He functioned well enough to seek treatment and attend; Y-BOCS 0 implies no time on obsessions at all.",
+     "confidence": "Low",
+     "uncertainty_driver": "No observer rating or measure of sedation.",
+     "test": "Y-BOCS and a sedation scale rated by an observer at trough and peak heroin levels."
+    }
+   ],
+   "related": [
+    {
+     "id": "moussawi-2016",
+     "why": "Pallidal lesion ending opioid and alcohol dependence (an opioid case seen from the other side)"
+    }
+   ]
   }
  ]
 }

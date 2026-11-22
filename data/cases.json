@@ -275,7 +275,7 @@
     "categories": [
      "Obsessive-compulsive & tic"
     ],
-    "specific": "Severe obsessive-compulsive disorder (comorbid Parkinson's disease)",
+    "specific": "Severe lifelong obsessive-compulsive disorder (33 and 40 years) that preceded Parkinson's disease by decades",
     "chronic": true,
     "treatment_resistant": null
    },
@@ -285,8 +285,8 @@
     "intent": "Treatment for another condition"
    },
    "outcome": {
-    "resolution": "Partial",
-    "time_to_resolution": "2 weeks",
+    "resolution": "Complete",
+    "time_to_resolution": null,
     "follow_up": null,
     "reversal": "None reported"
    },
@@ -304,8 +304,8 @@
      }
     ]
    },
-   "summary": "Compulsions disappeared two weeks after subthalamic stimulation for Parkinson's disease; Yale-Brown scores fell 58% and 64%.",
-   "caveat": "Dopaminergic doses usually fall after subthalamic surgery, and levodopa can drive compulsive behaviour.",
+   "summary": "Two patients with 33 and 40 years of OCD had subthalamic stimulators implanted for Parkinson's disease; two weeks later their compulsions were gone, and Yale-Brown totals fell from 26 to 5 and from 23 to 4, still holding 9 and 15 months on.",
+   "caveat": "Dopaminergic doses were cut from 800 mg levodopa equivalent to none and from 2,200 mg to 200 mg after surgery, and dopaminergic drugs can drive compulsive behaviour.",
    "tags": [
     "dbs",
     "ocd",
@@ -317,7 +317,7 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-22: full text read (Full text through CKN (EBSCO))",
    "era": {
     "label": "known",
     "note": "Subthalamic stimulation for OCD went on to a randomised trial (Mallet, NEJM 2008).",
@@ -325,13 +325,225 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "OCD stable for 33 and 40 years, Y-BOCS a month before and six months after, change at two weeks. No stimulation-off test. Confounders addressed in the paper: dopaminergic doses were cut heavily, but the OCD predated Parkinson's disease by decades and had held steady on long-term levodopa; anxiety relief and motor relief are argued against (patient 1 improved little in motor terms)."
+    },
+    "jbi": {
+     "checklist": "Case series",
+     "answers": [
+      "U",
+      "Y",
+      "Y",
+      "U",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "NA"
+     ]
+    },
+    "note": "Research letter, three pages with a table and an electrode-location figure. The abstract's 58% and 64% are the obsession subscores."
+   },
+   "timeline": [
+    {
+     "patient": "51-year-old woman",
+     "age": 51,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -33,
+       "unit": "years",
+       "precision": "approx",
+       "label": "OCD: repetitive house cleaning, arranging bottles on the bathroom shelf, fear of being found dead in a dirty house; constant over the years, including the five years of Parkinson's disease"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Structured psychiatric assessment before surgery: Y-BOCS 26 (obsessions 12, compulsions 14), MADRS 8, Brief Anxiety Scale 14; UPDRS-III 30; levodopa equivalent 800 mg a day (ropinirole and levodopa 600 mg) for severe levodopa-induced motor complications",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 26
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "December 2000: bilateral subthalamic stimulation for Parkinson's disease; one electrode between the anteromedial subthalamic nucleus and the zona incerta, the other in the anterior zona incerta; 3.1 V, 185 Hz, 60 µs"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Dopaminergic treatment withdrawn after surgery (levodopa equivalent 800 mg a day to none by six months); timing of the cuts not given"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "OCD symptoms gone; she was more pleased about that than about the moderate motor improvement"
+      },
+      {
+       "kind": "best_response",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Y-BOCS 5 (obsessions 5, compulsions 0), MADRS 2, Brief Anxiety Scale 4; UPDRS-III 22 (27% better); frontal score and Mattis unchanged",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 5
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 15,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Last seen March 2002: no recurrence of the compulsions",
+       "state": "Remitted"
+      }
+     ]
+    },
+    {
+     "patient": "50-year-old man",
+     "age": 50,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -40,
+       "unit": "years",
+       "precision": "approx",
+       "label": "OCD, mostly repeated checking of locks; milder in adulthood, then worse with the onset of Parkinson's disease 16 years before surgery, checking up to 3 hours a day"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Structured psychiatric assessment before surgery: Y-BOCS 23 (obsessions 11, compulsions 12), MADRS 2, Brief Anxiety Scale 2; UPDRS-III 36; levodopa equivalent 2,200 mg a day (pergolide 2.75 mg, levodopa 1,900 mg) for severe dyskinesia and fluctuations",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 23
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "June 2001: bilateral subthalamic stimulation; one electrode in the anteromedial subthalamic nucleus, the other between it and the zona incerta; 3.2 V, 130 Hz, 90 µs"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Levodopa stopped and pergolide cut to 2 mg (levodopa equivalent 2,200 to 200 mg a day by six months); timing of the cuts not given"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Compulsions gone; obsessions about orderliness and checking greatly diminished"
+      },
+      {
+       "kind": "best_response",
+       "t": 6,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Y-BOCS 4 (obsessions 4, compulsions 0), MADRS 0, Brief Anxiety Scale 0; UPDRS-III 6 (84% better)",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 4
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 9,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Last seen March 2002: no recurrence of the compulsions",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Stimulation target",
+    "side": "Bilateral",
+    "regions": [
+     "Subthalamic nucleus"
+    ],
+    "specific": "Anteromedial subthalamic nucleus and zona incerta, medial to the usual motor target (patient 1: STN–zona incerta border and anterior zona incerta; patient 2: anteromedial STN and the STN–zona incerta border); contacts localised on postoperative T1 MRI against the Schaltenbrand–Wahren atlas",
+    "aetiology": "Not applicable",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 14,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 33.0,
+    "follow_up_days": 456.562,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "measures": [
+     {
+      "scale": "Y-BOCS",
+      "before": 26,
+      "after": 5,
+      "change_pct": -80.8
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 6,
+    "jbi_of": 10,
+    "rule_tier": "A"
    }
   },
   {
@@ -13877,19 +14089,19 @@
   {
    "id": "kalenderoglu-2011",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1a"
    ],
    "citation": {
-    "authors": "Kalenderoglu A et al.",
+    "authors": "Kalenderoglu A, Selek S, Yumru M, Savas HA",
     "title": "Treatment refractory OCD which entered remission after heroin use: Case report",
     "journal": "Turkiye Klinikleri Journal of Medical Sciences",
     "year": 2011,
-    "volume": "",
-    "issue": "",
-    "pages": ""
+    "volume": "31",
+    "issue": "2",
+    "pages": "475-478"
    },
    "ids": {
     "doi": "10.5336/medsci.2009-13928",
@@ -13915,28 +14127,28 @@
     "categories": [
      "Obsessive-compulsive & tic"
     ],
-    "specific": "Treatment-refractory OCD",
+    "specific": "Treatment-refractory OCD for 26 years (ten drugs, including clomipramine 300 mg and quetiapine 900 mg)",
     "chronic": true,
     "treatment_resistant": true
    },
    "trigger": {
     "category": "Recreational substance",
-    "specific": "Heroin use",
+    "specific": "Street heroin, snorted twice a day, started to lower his blood sugar on a mistaken belief",
     "intent": "Self-administered"
    },
    "outcome": {
     "resolution": "Complete",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "None reported"
+    "reversal": "On-off rechallenge"
    },
    "downstream": {
     "level": 1,
     "note": "",
     "links": []
    },
-   "summary": "Treatment-refractory OCD went into remission when the patient began using heroin.",
-   "caveat": "Ongoing opioid use; follow-up and measures need the full text.",
+   "summary": "A 43-year-old man with OCD since 16, unmoved by ten drugs, started snorting street heroin in the belief it would lower his blood sugar; a year later his Yale-Brown score was 0. Eight weeks after detoxification the OCD was back (25, then 30 on clomipramine 300 mg and quetiapine), and when he went back to heroin it fell to 11.",
+   "caveat": "Every low score was taken while he was using heroin, so opioid sedation and indifference could pass for fewer obsessions.",
    "tags": [
     "heroin",
     "ocd",
@@ -13945,7 +14157,7 @@
    "same_patient_as": null,
    "found_via": "Embase (CKN)",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Embase",
+   "verified": "2026-11-22: full text read (Full text through CKN (EBSCO))",
    "era": {
     "label": "emerging",
     "note": "Opioid effects on OCD had been reported with tramadol and morphine.",
@@ -13953,13 +14165,175 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Tramadol and morphine had been reported to ease OCD (open reports and a placebo-controlled single-dose morphine study), which the authors cite; heroin itself had not been reported."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "Twenty-six years of OCD through ten drugs; Y-BOCS 0 on heroin, 25–30 eight to twenty weeks after detoxification despite clomipramine 300 mg and quetiapine, 11 on resuming heroin: a stop-return-restart sequence. Timing is scored on the return and the restart; the first improvement was never dated (he arrived a year into heroin already at zero). Confounders 0: he had also stopped antidepressants that year, and the low scores were taken while he was using, neither addressed by the authors."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Full text read in Turkish (four pages). Presented as a poster at the 42nd National Psychiatry Congress, Istanbul, 2006."
+   },
+   "timeline": [
+    {
+     "patient": "43-year-old man",
+     "age": 43,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -26,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Contamination obsessions and cleaning compulsions, checking and symmetry, from age 16"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -26,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Continuous drug treatment, each trial at least eight weeks: fluoxetine 80 mg, sertraline 200 mg, citalopram 60 mg, mirtazapine 90 mg, buspirone 30 mg, diazepam 30 mg, clomipramine 300 mg, haloperidol 10 mg, quetiapine 900 mg, risperidone 2 mg; combinations including sertraline + buspirone for two years and clomipramine + quetiapine for four years. Never fully better",
+       "to": -1
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Street heroin snorted twice a day, about 0.2–0.3 g a dose, 'like a medicine', started on the mistaken belief that it would lower his blood sugar (type 2 diabetes for four years, glucose around 300)"
+      },
+      {
+       "kind": "best_response",
+       "t": 12,
+       "unit": "months",
+       "precision": "at most",
+       "label": "About a year later: admitted asking to stop heroin, in withdrawal (last use two days before; urine opioid-positive). No antidepressant for the past year. DSM-IV opioid dependence and OCD in remission; Y-BOCS 0. When the OCD first eased during that year is not reported",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 0
+        }
+       ]
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 12,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Detoxification with diazepam 40 mg a day (60–80 mg at worst); withdrawal scale 0 by day 5, craving gone by day 8; diazepam tapered off; discharged on day 20"
+      },
+      {
+       "kind": "relapse",
+       "t": 14,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Eight weeks after stopping heroin he came back with returning OCD; no other drug use, non-adherence or organic cause found; Y-BOCS 25; clomipramine 75 mg started",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 25
+        }
+       ]
+      },
+      {
+       "kind": "assessment",
+       "t": 15,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Worse, especially symmetry and checking; Y-BOCS 30; clomipramine raised slowly to 300 mg (irregular attendance), quetiapine 300 mg added",
+       "state": "Worse",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 30
+        }
+       ]
+      },
+      {
+       "kind": "treatment_failed",
+       "t": 19,
+       "unit": "months",
+       "precision": "approx",
+       "label": "End of week 20 of treatment: obsessions continuing, Y-BOCS 30; agitated, quetiapine raised to 600 mg",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 30
+        }
+       ]
+      },
+      {
+       "kind": "exposure_restart",
+       "t": 20,
+       "unit": "months",
+       "precision": "approx",
+       "label": "A month later: had stopped his medication two days earlier and gone back to heroin (toxicology opioid-positive)"
+      },
+      {
+       "kind": "best_response",
+       "t": 20,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Reports fewer obsessions; Y-BOCS 11. Blood glucose still 430 despite oral drugs and insulin. Referred to the addiction unit; never attended",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "Y-BOCS",
+         "value": 11
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 365.25,
+    "latency_band": "Over 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 26.0,
+    "durability": "Lost, then regained",
+    "timeline_reversal": "On-off rechallenge",
+    "attribution_score": 5,
+    "attribution_grade": "A",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -29451,91 +29825,6 @@
    }
   },
   {
-   "id": "graham-2018",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "phase1e"
-   ],
-   "citation": {
-    "authors": "Graham D, Wu QX, Gilligan I, Ismail R, Walker M",
-    "title": "Improvement of late life depression after therapeutic enoxaparin: two case reports.",
-    "journal": "Australas Psychiatry",
-    "year": 2018,
-    "volume": "26",
-    "issue": "5",
-    "pages": "534-536"
-   },
-   "ids": {
-    "doi": "10.1177/1039856218797441",
-    "pmid": "30198320",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/30198320/",
-    "doi": "https://doi.org/10.1177/1039856218797441",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1177%2F1039856218797441"
-   },
-   "access": "Paywalled",
-   "design": "Case series",
-   "n_patients": 2,
-   "syndrome": {
-    "categories": [
-     "Mood"
-    ],
-    "specific": "Late-life depression in inpatients",
-    "chronic": null,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Medication for another condition",
-    "specific": "Therapeutic enoxaparin for pulmonary embolism",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Partial",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "Two older inpatients being treated for depression developed pulmonary emboli; both improved markedly once on therapeutic enoxaparin, with nothing else in their depression treatment changed.",
-   "caveat": "Treating a pulmonary embolism relieves breathlessness, hypoxia and fear, any of which weighs on mood.",
-   "tags": [
-    "enoxaparin",
-    "heparin",
-    "late-life-depression",
-    "pulmonary-embolism",
-    "vascular-depression"
-   ],
-   "same_patient_as": null,
-   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
-   "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
-   "era": {
-    "label": "emerging",
-    "note": "Three separate reports (2002, 2013, 2018) of depression lifting on heparins given for clotting; no trial found so far.",
-    "basis": "judged"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
-   }
-  },
-  {
    "id": "liu-2016",
    "record_type": "case",
    "status": "Provisional",
@@ -31581,90 +31870,6 @@
     "label": "known",
     "note": "Benzodiazepine reversal of catatonia had been reported from the early 1980s (lorazepam; recalled, not checked) and the lorazepam challenge later became standard; in 1994 it was not yet routine.",
     "basis": "judged"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
-   }
-  },
-  {
-   "id": "terao-1999",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "phase1e"
-   ],
-   "citation": {
-    "authors": "Terao T, Nakamura J, Inatomi H, Eto A",
-    "title": "Schizophrenia and bladder stones.",
-    "journal": "Aust N Z J Psychiatry",
-    "year": 1999,
-    "volume": "33",
-    "issue": "5",
-    "pages": "769-70"
-   },
-   "ids": {
-    "doi": "10.1080/0004867990475",
-    "pmid": "10545010",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/10545010/",
-    "doi": "https://doi.org/10.1080/0004867990475",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F0004867990475"
-   },
-   "access": "Paywalled",
-   "design": "Letter",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Psychotic"
-    ],
-    "specific": "Treatment-refractory schizophrenia in a 62-year-old man",
-    "chronic": true,
-    "treatment_resistant": true
-   },
-   "trigger": {
-    "category": "Surgery or procedure (outside the brain)",
-    "specific": "Surgical removal of a large bladder stone",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Partial",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 0,
-    "note": "",
-    "links": []
-   },
-   "summary": "A 62-year-old man with refractory schizophrenia, investigated for dysuria, had a large bladder stone removed; afterwards his mental state was much improved along with the dysuria.",
-   "caveat": "Pain and urinary symptoms are stressors that can inflame psychosis, so relief may have removed an aggravating factor rather than touched the illness.",
-   "tags": [
-    "bladder-stone",
-    "pain",
-    "schizophrenia",
-    "surgery"
-   ],
-   "same_patient_as": null,
-   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
-   "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
-   "era": {
-    "label": "novel",
-    "note": "",
-    "basis": "from downstream level"
    },
    "flags": [],
    "appraisal": {

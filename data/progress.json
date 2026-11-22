@@ -1,19 +1,19 @@
 {
  "updated": "2026-11-22",
- "cases": 212,
- "coded": 115,
+ "cases": 210,
+ "coded": 117,
  "coded_basis": {
-  "Full text": 115
+  "Full text": 117
  },
  "tiers": {
-  "A": 34,
-  "B": 91,
-  "C": 87
+  "A": 35,
+  "B": 90,
+  "C": 85
  },
  "queue": [
   {
    "route": "Easy wins: free, one click in a normal browser",
-   "n": 11
+   "n": 10
   },
   {
    "route": "Psychiatry Online (tick the terms box)",
@@ -29,7 +29,7 @@
   },
   {
    "route": "Download the PDF yourself (Elsevier: Cloudflare in the app's browser)",
-   "n": 6
+   "n": 5
   },
   {
    "route": "Download the PDF yourself (Wiley)",
@@ -37,11 +37,11 @@
   },
   {
    "route": "Download the PDF yourself (SAGE / Mary Ann Liebert)",
-   "n": 6
+   "n": 5
   },
   {
    "route": "Download the PDF yourself (Taylor & Francis / Informa)",
-   "n": 4
+   "n": 3
   },
   {
    "route": "Thieme / Karger / AMA / AAN / BMJ / JNS / other",
@@ -56,11 +56,11 @@
    "n": 21
   }
  ],
- "queue_total": 97,
- "unsure_rows": 31,
+ "queue_total": 93,
+ "unsure_rows": 30,
  "readings": {
-  "total": 115,
-  "draft": 115,
+  "total": 117,
+  "draft": 117,
   "reviewed": 0
  },
  "calibration": [

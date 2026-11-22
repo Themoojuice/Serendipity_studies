@@ -6,19 +6,19 @@
  "distinct": 58470,
  "screened": 22779,
  "not_screened": 35691,
- "excluded": 22416,
+ "excluded": 22420,
  "excluded_by_reason": {
-  "E1": 41,
+  "E1": 43,
   "E2": 67,
-  "E3": 237,
-  "E4": 76,
+  "E3": 238,
+  "E4": 77,
   "E5": 79,
   "E6": 1,
   "E7": 12,
   "E8": 7
  },
  "excluded_without_code": 21896,
- "unsure": 28,
+ "unsure": 27,
  "by_source": {
   "Europe PMC (MEDLINE and more)": 43194,
   "PsycInfo": 5478,
@@ -29,27 +29,27 @@
   "Other": 15
  },
  "library": {
-  "cases": 212,
+  "cases": 210,
   "context": 19,
-  "coded": 115,
+  "coded": 117,
   "tiers": {
-   "A": 34,
-   "B": 91,
-   "C": 87
+   "A": 35,
+   "B": 90,
+   "C": 85
   },
   "antique": 13,
   "coded_basis": {
-   "Full text": 115
+   "Full text": 117
   }
  },
  "capture_recapture": {
-  "psycinfo": 86,
-  "other": 186,
-  "both": 60,
-  "estimate": 266,
+  "psycinfo": 84,
+  "other": 185,
+  "both": 59,
+  "estimate": 262,
   "ci95": [
-   236,
-   295
+   233,
+   292
   ]
  },
  "calibration": [
