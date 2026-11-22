@@ -73,6 +73,8 @@ select { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-
 .chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c, var(--muted)); }
 .chip[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--ink); font-weight: 600; }
 .chip .n { color: var(--muted); font-variant-numeric: tabular-nums; font-weight: 400; }
+.groupbar { display: flex; flex-wrap: wrap; gap: 8px; }
+.groupbar .chip { font-size: 15px; padding: 7px 14px; }
 .toggle { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; }
 .active-tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .btn { font: inherit; font-size: 13px; padding: 5px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
@@ -210,6 +212,7 @@ body.single #tiles, body.single .controls, body.single nav.tabs { display:none; 
         <label class="grp" for="q">Search</label>
         <input type="search" id="q" placeholder="Title, author, journal, mechanism, notes">
       </div>
+      <div class="row groupbar" id="f-group" role="group" aria-label="Kind of trigger"></div>
       <details class="filters" id="filtersBox" open>
         <summary>Filters</summary>
       <div class="row" id="f-syn"><label class="grp">Syndrome</label></div>
@@ -217,7 +220,7 @@ body.single #tiles, body.single .controls, body.single nav.tabs { display:none; 
       <div class="row">
         <label class="grp" for="sort">Sort</label>
         <select id="sort">
-          <option value="compelling">Most compelling first</option>
+          <option value="compelling">Most interesting first</option>
           <option value="impact">Downstream impact</option>
           <option value="new">Newest first</option>
           <option value="old">Oldest first</option>
@@ -227,8 +230,8 @@ body.single #tiles, body.single .controls, body.single nav.tabs { display:none; 
       <div class="row">
         <label class="grp" for="coded">Coding</label>
         <select id="coded">
-          <option value="">All cases</option>
-          <option value="yes">Fully coded (timeline, appraisal, our reading)</option>
+          <option value="">All cases, coded or not</option>
+          <option value="yes" selected>Fully coded (timeline, appraisal, our reading)</option>
           <option value="no">Not yet coded</option>
         </select>
       </div>
@@ -346,7 +349,7 @@ body.single #tiles, body.single .controls, body.single nav.tabs { display:none; 
   };
   if (window.matchMedia && window.matchMedia("(max-width: 700px)").matches) { var fb = document.getElementById("filtersBox"); if (fb) fb.removeAttribute("open"); }
   var DATA = null, RECORDS = [], HDATA = null, HYP = {};
-  var state = { single: null, q: "", syn: new Set(), trig: new Set(), tags: new Set(), tier: "", era: "", period: "", coded: "", freeOnly: false, showCtx: false, sort: "compelling" };
+  var state = { single: null, q: "", syn: new Set(), trig: new Set(), tags: new Set(), tier: "", era: "", period: "", coded: "yes", group: "", freeOnly: false, showCtx: false, sort: "compelling" };
 
   function $(id) { return document.getElementById(id); }
   function el(tag, attrs, kids) {
@@ -375,10 +378,42 @@ body.single #tiles, body.single .controls, body.single nav.tabs { display:none; 
       r.downstream.note, r.era.note].join(" ").toLowerCase();
   }
 
-  function filtered() {
+  // Four broad kinds of trigger for the quick filter above the list. Implanted stimulators count as surgery;
+  // ECT, rTMS and the bedside vestibular tests fall under Other. Sedation drugs count as medication.
+  var GROUPS = [
+    ["surgery", "Surgery & implants", "Brain surgery, other operations and procedures, implanted stimulators (deep brain, vagus nerve)"],
+    ["medication", "Medication & drugs", "Medicines given for another condition, recreational drugs, sedation and anaesthetic drugs"],
+    ["injury", "Brain injury & stroke", "Strokes, haemorrhages, tumours and other acquired lesions, traumatic brain injury"],
+    ["other", "Other", "Infections and fever, seizures, ECT and magnetic stimulation, comas, life events, diet, illness, transplant"]
+  ];
+  function groupOf(r) {
+    var c = r.trigger.category, s = (r.trigger.specific || "").toLowerCase();
+    if (c === "Neurosurgery" || c === "Surgery or procedure (outside the brain)") return "surgery";
+    if (c === "Brain stimulation") return /deep brain|\bdbs\b|stimulator implanted|vagus nerve stim|chronic stimulation/.test(s) ? "surgery" : "other";
+    if (c === "Medication for another condition" || c === "Recreational substance") return "medication";
+    if (c === "Coma / anaesthesia" && /propofol|ketamine|sedation|anaesthe|anesthe/.test(s)) return "medication";
+    if (c === "Acquired brain lesion" || c === "Traumatic brain injury") return "injury";
+    return "other";
+  }
+  function renderGroups() {
+    var box = $("f-group"); box.innerHTML = "";
+    var base = filtered(true), n = {};
+    base.forEach(function (r) { var g = groupOf(r); n[g] = (n[g] || 0) + 1; });
+    var opts = [["", "All", "Every kind of trigger"]].concat(GROUPS);
+    box.appendChild(el("label", { class: "grp", text: "Trigger type" }));
+    opts.forEach(function (g) {
+      var k = g[0], cnt = k ? (n[k] || 0) : base.length;
+      var b = el("button", { class: "chip", type: "button", title: g[2], "aria-pressed": state.group === k ? "true" : "false" }, [g[1], el("span", { class: "n", text: String(cnt) })]);
+      b.addEventListener("click", function () { state.group = (state.group === k ? "" : k); renderAll(); });
+      box.appendChild(b);
+    });
+  }
+
+  function filtered(skipGroup) {
     var q = state.q.trim().toLowerCase();
     return RECORDS.filter(function (r) {
       if (!state.showCtx && r.record_type !== "case") return false;
+      if (!skipGroup && state.group && groupOf(r) !== state.group) return false;
       if (state.coded === "yes" && !isCoded(r)) return false;
       if (state.coded === "no" && isCoded(r)) return false;
       if (state.tier && r.tier !== state.tier) return false;
@@ -759,7 +794,12 @@ body.single #tiles, body.single .controls, body.single nav.tabs { display:none; 
     if (state.single) return renderSingle();
     var rows = filtered();
     var totalCases = RECORDS.filter(function (r) { return r.record_type === "case"; }).length;
-    $("count").textContent = "Showing " + rows.length + " of " + totalCases + " studies" + (state.showCtx ? " plus context records" : "") + (state.sort === "compelling" ? " · most compelling evidence first (rechallenge and strong appraisal at the top)" : "");
+    var gname = ""; GROUPS.forEach(function (g) { if (g[0] === state.group) gname = " · " + g[1]; });
+    var codedAll = RECORDS.filter(isCoded).length;
+    var what = state.coded === "yes" ? "fully coded cases" : state.coded === "no" ? "cases not yet coded" : "cases";
+    $("count").textContent = rows.length + " " + what + gname + (state.showCtx ? " (plus context records)" : "") +
+      (state.sort === "compelling" ? ", most interesting first: strong evidence, a reversal, long illness and still-unexplained findings rise to the top." : ".") +
+      (state.coded === "yes" ? " " + (totalCases - codedAll) + " more await coding (Filters › Coding shows them)." : "");
     var list = $("list"); list.innerHTML = "";
     if (!rows.length) { list.appendChild(el("div", { class: "empty", text: "No studies match these filters. Clear a filter or a tag to widen the list." })); return; }
     rows.forEach(function (r, i) { r._rank = i + 1; list.appendChild(card(r)); });
@@ -941,7 +981,7 @@ body.single #tiles, body.single .controls, body.single nav.tabs { display:none; 
     });
   }
 
-  function renderAll() { renderActiveTags(); renderList(); renderStats(); }
+  function renderAll() { renderActiveTags(); renderGroups(); renderList(); renderStats(); }
 
   function route() {
     var v = (location.hash || "#library").slice(1);
