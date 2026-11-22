@@ -85,8 +85,8 @@
   "2b": false,
   "2c": false,
   "3a": true,
-  "3b": false,
-  "3c": false,
+  "3b": true,
+  "3c": true,
   "3d": false,
   "4": false
  }

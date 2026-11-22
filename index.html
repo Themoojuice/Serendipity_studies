@@ -133,7 +133,12 @@ table.xtab th.col { writing-mode: vertical-rl; transform: rotate(180deg); white-
 .bars { display: grid; gap: 6px; }
 .bar { display: grid; grid-template-columns: minmax(120px, 220px) 1fr 36px; gap: 8px; align-items: center; font-size: 13px; }
 .bar .track { background: var(--bg); border-radius: 4px; height: 14px; overflow: hidden; border: 1px solid var(--line); }
-.bar .fill { background: var(--accent); height: 100%; }
+.bar .fill { background: var(--accent); height: 100%; border-radius: 0 3px 3px 0; }
+h2.sect { font-size: 18px; margin: 26px 0 2px; }
+table.mini { border-collapse: collapse; font-size: 13px; width: 100%; }
+table.mini th, table.mini td { border-bottom: 1px solid var(--line); padding: 5px 6px; text-align: right; font-variant-numeric: tabular-nums; }
+table.mini th:first-child, table.mini td:first-child { text-align: left; }
+table.mini td.hot { font-weight: 650; }
 .bar .v { text-align: right; font-variant-numeric: tabular-nums; }
 .grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 textarea { width: 100%; min-height: 140px; font-family: var(--font-mono); font-size: 12px; background: var(--bg); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 8px; }
@@ -194,8 +199,9 @@ body.single #tiles, body.single .controls, body.single nav.tabs { display:none; 
 
   <nav class="tabs" aria-label="Views">
     <a href="#library" data-view="library">Library</a>
-    <a href="#stats" data-view="stats">Statistics</a>
+    <a href="#stats" data-view="stats">Patterns</a>
     <a href="#data" data-view="data">Data &amp; fields</a>
+    <a href="methods.html">Methods</a>
   </nav>
 
   <section class="panel" id="view-library">
@@ -277,6 +283,22 @@ body.single #tiles, body.single .controls, body.single nav.tabs { display:none; 
       <div class="box"><h2>Studies by decade</h2><div class="bars" id="b-dec"></div></div>
       <div class="box"><h2>Intent of the trigger</h2><div class="bars" id="b-intent"></div></div>
       <div class="box"><h2>Where each finding stands now</h2><div class="bars" id="b-era"></div></div>
+    </div>
+    <h2 class="sect">From the coded timelines</h2>
+    <p class="count" id="tlNote"></p>
+    <div class="grid2">
+      <div class="box"><h2>How soon it changed</h2><p>Time from the exposure to the first change in the syndrome.</p><div class="bars" id="b-lat"></div></div>
+      <div class="box"><h2>How long it held</h2><p>What the last follow-up showed.</p><div class="bars" id="b-dur"></div></div>
+      <div class="box"><h2>Did it come back on and off?</h2><p>A reversal (symptoms returning when the exposure wore off or stopped, and going again when it came back) is the strongest evidence a single case can give.</p><div class="bars" id="b-rev"></div></div>
+      <div class="box"><h2>Evidence strength by trigger</h2><p>Tiers come from a six-point attribution score (documented chronic baseline, a before-and-after measure, plausible timing, confounders addressed, and two points for a reversal) plus reporting quality. A is strong; C is logged but weak, or flagged.</p><div class="scroll" id="t-tier"></div></div>
+    </div>
+    <h2 class="sect">From our readings</h2>
+    <p class="count" id="rdNote"></p>
+    <div class="grid2">
+      <div class="box"><h2>Does it beat the boring explanations?</h2><p>Our verdict on each case after rating seven boring explanations first.</p><div class="bars" id="b-verdict"></div></div>
+      <div class="box"><h2>Which boring explanation bites</h2><p>How often each was rated Likely or Possible.</p><div class="scroll" id="t-nulls"></div></div>
+      <div class="box"><h2>Leading proposed mechanism</h2><p>The mechanism in our top-ranked explanation for each case, grouped by level. Our reading, not the papers'.</p><div class="bars" id="b-mech"></div></div>
+      <div class="box"><h2>Brain lesions and stimulation sites</h2><p>Region named in each case with a brain trigger; a case can name several.</p><div class="bars" id="b-region"></div><div class="bars" id="b-side"></div></div>
     </div>
   </section>
 
@@ -746,8 +768,9 @@ body.single #tiles, body.single .controls, body.single nav.tabs { display:none; 
   function bars(id, pairs) {
     var box = $(id); box.innerHTML = "";
     var max = Math.max.apply(null, pairs.map(function (p) { return p[1]; }).concat([1]));
+    var tot = pairs.reduce(function (t, p) { return t + p[1]; }, 0) || 1;
     pairs.forEach(function (p) {
-      box.appendChild(el("div", { class: "bar" }, [el("span", { text: p[0] }),
+      box.appendChild(el("div", { class: "bar", title: p[0] + ": " + p[1] + " (" + Math.round(100 * p[1] / tot) + "%)" }, [el("span", { text: p[0] }),
         el("div", { class: "track" }, [el("div", { class: "fill", style: "width:" + (100 * p[1] / max) + "%" })]),
         el("span", { class: "v", text: String(p[1]) })]));
     });
@@ -786,6 +809,41 @@ body.single #tiles, body.single .controls, body.single nav.tabs { display:none; 
     bars("b-dec", allD.map(function (d) { return [d + "s", dec[d] || 0]; }));
     bars("b-intent", V.trigger_intent.map(function (k) { return [k, rows.filter(function (r) { return r.trigger.intent === k; }).length]; }));
     bars("b-era", Object.keys(V.era).map(function (k) { return [ERA_SHORT[k], rows.filter(function (r) { return r.era.label === k; }).length]; }));
+
+    // from the coded timelines
+    var tl = rows.filter(function (r) { return r.derived && r.timeline; });
+    $("tlNote").textContent = tl.length + " of these studies have a coded timeline; the figures below use those.";
+    var withLat = tl.filter(function (r) { return r.derived.latency_band; });
+    bars("b-lat", Object.keys(V.latency_band).map(function (k) { return [k, withLat.filter(function (r) { return r.derived.latency_band === k; }).length]; }));
+    bars("b-dur", Object.keys(V.durability).map(function (k) { return [k, tl.filter(function (r) { return r.derived.durability === k; }).length]; }));
+    bars("b-rev", V.reversal.map(function (k) { return [k, tl.filter(function (r) { return (r.derived.timeline_reversal || r.outcome.reversal) === k; }).length]; }));
+    var tt = el("table", { class: "mini" }, [el("tr", {}, [el("th", { text: "Trigger" }), el("th", { text: "A" }), el("th", { text: "B" }), el("th", { text: "C" })])]);
+    V.trigger_category.forEach(function (g) {
+      var rs = rows.filter(function (r) { return r.trigger.category === g; }); if (!rs.length) return;
+      tt.appendChild(el("tr", {}, [el("td", { text: g })].concat(["A", "B", "C"].map(function (t) { var n = rs.filter(function (r) { return r.tier === t; }).length; return el("td", { class: t === "A" && n ? "hot" : "", text: n ? String(n) : "" }); }))));
+    });
+    var tb = $("t-tier"); tb.innerHTML = ""; tb.appendChild(tt);
+
+    // from our readings
+    var rd = rows.filter(function (r) { return HYP[r.id]; }).map(function (r) { return HYP[r.id]; });
+    $("rdNote").textContent = rd.length + " of these studies have a reading (Claude's drafts until Brendan has reviewed them).";
+    var HV = (HDATA && HDATA.vocabularies) || {};
+    bars("b-verdict", Object.keys(HV.verdict || {}).map(function (k) { return [k, rd.filter(function (h) { return h.verdict === k; }).length]; }));
+    var nt = el("table", { class: "mini" }, [el("tr", {}, [el("th", { text: "Boring explanation" }), el("th", { text: "Likely" }), el("th", { text: "Possible" })])]);
+    Object.keys(HV.null_explanation || {}).forEach(function (k) {
+      var lik = rd.filter(function (h) { return h.nulls && h.nulls[k] && h.nulls[k].rating === "Likely"; }).length;
+      var pos = rd.filter(function (h) { return h.nulls && h.nulls[k] && h.nulls[k].rating === "Possible"; }).length;
+      nt.appendChild(el("tr", { title: HV.null_explanation[k] }, [el("td", { text: HV.null_explanation[k].split(":")[0] }), el("td", { class: lik ? "hot" : "", text: String(lik) }), el("td", { text: String(pos) })]));
+    });
+    var nb = $("t-nulls"); nb.innerHTML = ""; nb.appendChild(nt);
+    var mc = {};
+    rd.forEach(function (h) { var top = (h.hypotheses || [])[0]; if (top && top.mechanisms && top.mechanisms[0]) { var m = top.mechanisms[0]; mc[m] = (mc[m] || 0) + 1; } });
+    var lvl = HV.mechanism || {};
+    bars("b-mech", Object.keys(mc).sort(function (a, b) { return mc[b] - mc[a]; }).slice(0, 14).map(function (m) { return [m + (lvl[m] ? " · " + lvl[m].toLowerCase() : ""), mc[m]]; }));
+    var les = rows.filter(function (r) { return r.lesion; }), rg = {};
+    les.forEach(function (r) { r.lesion.regions.forEach(function (x) { rg[x] = (rg[x] || 0) + 1; }); });
+    bars("b-region", Object.keys(rg).sort(function (a, b) { return rg[b] - rg[a]; }).slice(0, 12).map(function (x) { return [x, rg[x]]; }));
+    bars("b-side", V.lesion_side.map(function (x) { return ["Side: " + x.toLowerCase(), les.filter(function (r) { return r.lesion.side === x; }).length]; }));
   }
 
   var COLS = [
@@ -891,6 +949,7 @@ body.single #tiles, body.single .controls, body.single nav.tabs { display:none; 
     state.single = v.indexOf("case/") === 0 ? decodeURIComponent(v.slice(5)) : null;
     document.body.classList.toggle("single", !!state.single);
     if (state.single || was) { if (!state.single) document.title = TITLE0; renderList(); window.scrollTo(0, 0); }
+    if (v === "patterns") v = "stats";
     if (["library", "stats", "data"].indexOf(v) < 0) v = "library";
     ["library", "stats", "data"].forEach(function (k) { $("view-" + k).hidden = k !== v; });
     Array.prototype.forEach.call(document.querySelectorAll("nav.tabs a"), function (a) {

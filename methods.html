@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methods · Serendipity library</title>
+<style>
+:root { --bg:#faf9f5; --card:#fff; --ink:#1f1e1d; --muted:#6b6862; --line:#e6e2d8; --accent:#c96442; }
+@media (prefers-color-scheme: dark) { :root { --bg:#1f1e1d; --card:#292826; --ink:#f0eee6; --muted:#a8a49b; --line:#3a3835; --accent:#e08a6a; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width:740px; margin:0 auto; padding:16px 16px 70px; }
+a { color:var(--accent); }
+h1 { font-size:26px; margin:8px 0 4px; line-height:1.25; }
+h2 { font-size:19px; margin:34px 0 6px; border-top:1px solid var(--line); padding-top:18px; }
+p, li { max-width:68ch; } .muted { color:var(--muted); } .small { font-size:14px; }
+.n { font-variant-numeric:tabular-nums; font-weight:650; }
+ol, ul { padding-left:22px; } li { margin:0 0 8px; }
+.flow { display:grid; gap:0; margin:14px 0; }
+.step { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 12px; }
+.step b { font-size:20px; font-variant-numeric:tabular-nums; margin-right:6px; }
+.side { margin:0 0 0 22px; border-left:2px solid var(--line); padding:6px 0 6px 14px; font-size:14px; color:var(--muted); }
+.arrow { text-align:center; color:var(--muted); line-height:1.2; font-size:18px; }
+table { border-collapse:collapse; width:100%; font-size:14px; margin:8px 0; }
+th, td { border-bottom:1px solid var(--line); padding:6px 8px; text-align:left; vertical-align:top; }
+td.r, th.r { text-align:right; font-variant-numeric:tabular-nums; }
+.kpi { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:10px; margin:12px 0; }
+.kpi div { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 12px; }
+.kpi b { display:block; font-size:24px; font-variant-numeric:tabular-nums; } .kpi span { font-size:13px; color:var(--muted); }
+</style></head><body><main>
+<p class="small"><a href="./">← Back to the library</a></p>
+<h1>How the library was built</h1>
+<p class="muted small" id="upd">Loading the live counts…</p>
+
+<p>This is an attempt to find every published case in which a serious psychiatric syndrome ended unexpectedly: the stroke that ended a craving, the infection that cleared a psychosis, the drug for something else that lifted a depression. Each case is appraised the same way and read with the boring explanations first. The aim is a library a clinician or researcher can trust enough to mine for mechanisms.</p>
+<div class="kpi" id="kpi"></div>
+
+<h2>What counts as a case</h2>
+<ol>
+<li><b>A serious psychiatric syndrome</b> at diagnostic level, chronic (six months or more) or resistant to treatment (two or more adequate trials).</li>
+<li><b>It ended:</b> complete remission, a fall of half or more on a rating scale, or a clearly described remission.</li>
+<li><b>The exposure wasn't aimed at it</b>, or was aimed at it with no plausible expectation of benefit at the time: a stroke, surgery, a drug for something else, an infection, an accident, a life event.</li>
+<li><b>It was unexpected</b>, judged by four tests: the exposure wasn't targeted at the syndrome; a typical clinician of the period wouldn't have predicted it; it wasn't a secondary syndrome clearing with its cause (delirium, a substance-induced state, treated encephalitis); and spontaneous remission isn't common at that chronicity.</li>
+</ol>
+<p class="small muted">Out: deliberate treatment, trials and cohorts (kept as context where useful), placebo responders, reviews without a new case, animal work. Cases first observed before 1970 are judged by the standards of their own period and shown as an antique section.</p>
+
+<h2>Where we looked</h2>
+<p>Search strings were tuned against 50 known cases before any screening began (42 of 50 found). Then:</p>
+<ul>
+<li><b>Europe PMC</b>, which covers MEDLINE and more: one broad query of about 43,000 records, loaded in year slices.</li>
+<li><b>Embase</b> and <b>PsycInfo</b> through Queensland Health's Clinical Knowledge Network: title, abstract, non-English, and "unexpected outcome" queries.</li>
+<li><b>Citation chasing:</b> the references and citing papers of every case, repeated from each new batch of cases until it stopped finding any.</li>
+<li><b>Antique material:</b> period vocabulary (melancholia, dementia praecox, morphinism) and the scanned back issues of old journals.</li>
+<li><b>Free-copy sweeps</b> (OpenAlex) for every case still waiting on its full text.</li>
+</ul>
+<table id="src"></table>
+<p class="small muted">Where a list was too long to screen in full, it was ranked (first by keywords, later by a classifier trained on the cases already found) and screened from the top until a <b>stopping rule</b> was met: 300 consecutive irrelevant records, plus none found in a random sample of 300 from the unscreened tail.</p>
+
+<h2>From records to cases</h2>
+<div class="flow" id="flow"></div>
+
+<h2>How each case is appraised</h2>
+<ul>
+<li><b>Attribution score, out of 6:</b> a documented chronic baseline (1), a standardised measure before and after (1), a change in a plausible window after the exposure (1), a reversal, that is symptoms returning when the exposure stopped and going again when it came back (2), and confounders addressed (1).</li>
+<li><b>Reporting quality:</b> the Joanna Briggs Institute checklist for case reports or case series.</li>
+<li><b>Tier:</b> A is strong evidence for that single case, B supporting, C logged but weak or carrying an integrity flag (a retraction, a predatory venue, an overclaim). Flagged cases are shown, never promoted.</li>
+<li><b>A timeline</b> for each patient, from onset through failed treatments, the exposure, the first change, any relapse and the last follow-up, so latency and durability can be compared across cases.</li>
+<li><b>Our reading:</b> seven boring explanations rated first (natural history, regression to the mean, misdiagnosis or a secondary syndrome, a co-intervention, non-specific suppression, expectancy, a reporting artefact), then a verdict, then ranked mechanisms, each with what drives the uncertainty and the test that would decide it. Readings are ours, not the papers', and stay drafts until reviewed.</li>
+<li><b>Where it stands now:</b> whether the finding was later tested (similar cases, pooled data, a randomised trial), became known, or was refuted.</li>
+</ul>
+<p class="small muted" id="basis"></p>
+
+<h2>Checking ourselves</h2>
+<div id="checks"></div>
+
+<h2>How complete is it?</h2>
+<div id="crc"></div>
+
+<h2>Limitations</h2>
+<ul>
+<li><b>Publication bias is the point and the problem.</b> Striking remissions get written up; failures of the same exposure mostly don't. The library shows what has happened, not how often.</li>
+<li><b>A single case can't prove cause.</b> Reversals and tight timing help; most cases have neither.</li>
+<li><b>Some full texts were out of reach.</b> Those cases are appraised from what could be read, and labelled.</li>
+<li><b>One main screener.</b> Claude screened and appraised; Brendan calibrated a blind sample and adjudicated disagreements.</li>
+<li><b>Language.</b> English sources first; non-English papers were included where an abstract or text could be read, but systematic non-English searching is still to come.</li>
+</ul>
+
+<h2>The rules in full</h2>
+<p>The full protocol, with every change logged, and the schema are on GitHub: <a href="https://github.com/Themoojuice/Serendipity_studies/blob/main/protocol/PROTOCOL.md">protocol</a> · <a href="https://github.com/Themoojuice/Serendipity_studies/blob/main/protocol/SCHEMA.md">schema</a>. The screening ledger, one row per record per search, is in the same repository.</p>
+
+<script>
+(function () {
+  function esc(s) { var d = document.createElement("div"); d.textContent = String(s); return d.innerHTML; }
+  function f(n) { return Number(n).toLocaleString("en-AU"); }
+  var REASON = { E1: "Not psychiatric, or not serious", E2: "Didn't resolve", E3: "Expected or targeted effect", E4: "Secondary syndrome resolved with its cause", E5: "A trial or cohort, not a case", E6: "Duplicate", E7: "No primary data", E8: "Too little detail to judge", E9: "Retracted" };
+  fetch("data/methods.json?v=" + Date.now()).then(function (r) { return r.json(); }).then(function (m) {
+    var L = m.library;
+    document.getElementById("upd").textContent = "Counts update with every batch; last " + m.updated + ", protocol version " + m.protocol_version + ".";
+    document.getElementById("kpi").innerHTML = [[f(m.distinct), "distinct records found"], [f(m.screened), "screened"], [L.cases, "cases in the library"], [L.coded, "fully appraised"]]
+      .map(function (k) { return "<div><b>" + k[0] + "</b><span>" + esc(k[1]) + "</span></div>"; }).join("");
+    var src = "<tr><th>Source</th><th class='r'>Distinct records</th></tr>";
+    Object.keys(m.by_source).forEach(function (k) { src += "<tr><td>" + esc(k) + "</td><td class='r'>" + f(m.by_source[k]) + "</td></tr>"; });
+    document.getElementById("src").innerHTML = src + "<tr><td class='small muted' colspan='2'>A record found by several routes counts under each. " + m.searches + " searches in all.</td></tr>";
+    var reasons = Object.keys(m.excluded_by_reason).map(function (k) { return esc(REASON[k] || k) + " <span class='n'>" + f(m.excluded_by_reason[k]) + "</span>"; }).join(" · ");
+    document.getElementById("flow").innerHTML =
+      "<div class='step'><b>" + f(m.retrievals) + "</b>records retrieved across " + m.searches + " searches</div><div class='arrow'>↓ duplicates merged</div>" +
+      "<div class='step'><b>" + f(m.distinct) + "</b>distinct records</div>" +
+      "<div class='side'>" + f(m.not_screened) + " left unscreened below a stopping rule (ranked lists screened from the top)</div><div class='arrow'>↓</div>" +
+      "<div class='step'><b>" + f(m.screened) + "</b>screened by title, abstract or full text</div>" +
+      "<div class='side'>" + f(m.excluded) + " excluded: " + f(m.excluded_without_code) + " plainly off-topic at title stage, and with a recorded reason: " + reasons + "</div>" +
+      "<div class='side'>" + f(m.unsure) + " unsure, waiting on a full text</div><div class='arrow'>↓</div>" +
+      "<div class='step'><b>" + L.cases + "</b>cases (" + L.tiers.A + " tier A, " + L.tiers.B + " B, " + L.tiers.C + " C; " + L.antique + " antique), plus " + L.context + " context records</div>";
+    document.getElementById("basis").textContent = L.coded + " of " + L.cases + " cases are fully appraised from their full text so far; the rest await theirs and are shown with what has been read.";
+    var chk = "";
+    m.calibration.forEach(function (c) {
+      chk += "<p><b>Blind calibration, round " + c.round + ".</b> Brendan screened 100 records blind to Claude's calls, weighted toward the hard boundary cases. Agreement on whether a record goes to full text: kappa <span class='n'>" + c.kappa.toFixed(2) + "</span> (95% interval " + c.ci[0].toFixed(2) + " to " + c.ci[1].toFixed(2) + "), raw agreement " + Math.round(c.agreement * 100) + "%, against a target of " + c.target + ". " +
+        (c.met ? "Target met." : c.round > 1 ? "Target not met." : "Target not met: agreement was near-total on clear exclusions, and every disagreement sat at the boundary. Adjudicating them showed Claude too generous on three tests (the exposure stated to be aimed at both conditions; an effect already known for that drug class or stimulation site; a syndrome that was part of the treated illness). The rules were tightened, nine cases excluded and three made context records. A second round follows.") + "</p>";
+    });
+    if (m.rescreen) chk += "<p><b>Second look at exclusions.</b> Calibration found one case excluded for its headline syndrome while a second syndrome had improved unexpectedly. All " + m.rescreen.total + " records excluded at abstract stage with a reason were re-checked for that pattern: " + m.rescreen.done + " from their abstracts, the rest by title so far. " + m.rescreen.flagged + " went back for full-text review.</p>";
+    chk += "<p><b>Automatic checks</b> run before every change: every case traces to the ledger, no duplicates, links agree with identifiers, and no summary copies its source's wording.</p>";
+    document.getElementById("checks").innerHTML = chk;
+    var c = m.capture_recapture;
+    document.getElementById("crc").innerHTML = "<p>A capture-recapture estimate compares two routes that found cases independently: PsycInfo found " + c.psycinfo + ", every other route " + c.other + ", and " + c.both + " were found by both. That suggests roughly <span class='n'>" + c.estimate + "</span> findable cases in all (95% interval " + c.ci95[0] + " to " + c.ci95[1] + "), so perhaps " + Math.max(0, c.estimate - L.cases) + " not yet found.</p><p class='small muted'>Treat that as a floor. Both routes lean on the same vocabulary, and some cases are easy to find everywhere, which pushes the estimate down. Cases never indexed with recognisable terms, and those in languages not yet searched, are invisible to it.</p>";
+  }).catch(function () { document.getElementById("upd").textContent = "Couldn't load the live counts."; });
+})();
+</script>
+</main></body></html>

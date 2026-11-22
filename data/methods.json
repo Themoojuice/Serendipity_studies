@@ -1,0 +1,80 @@
+{
+ "updated": "2026-11-22",
+ "protocol_version": "1.8.7",
+ "searches": 43,
+ "retrievals": 62585,
+ "distinct": 58470,
+ "screened": 22779,
+ "not_screened": 35691,
+ "excluded": 22416,
+ "excluded_by_reason": {
+  "E1": 41,
+  "E2": 67,
+  "E3": 237,
+  "E4": 76,
+  "E5": 79,
+  "E6": 1,
+  "E7": 12,
+  "E8": 7
+ },
+ "excluded_without_code": 21896,
+ "unsure": 28,
+ "by_source": {
+  "Europe PMC (MEDLINE and more)": 43194,
+  "PsycInfo": 5478,
+  "Embase": 5251,
+  "Citation chasing (Europe PMC)": 4610,
+  "PubMed": 423,
+  "Consensus": 157,
+  "Other": 15
+ },
+ "library": {
+  "cases": 212,
+  "context": 19,
+  "coded": 115,
+  "tiers": {
+   "A": 34,
+   "B": 91,
+   "C": 87
+  },
+  "antique": 13,
+  "coded_basis": {
+   "Full text": 115
+  }
+ },
+ "capture_recapture": {
+  "psycinfo": 86,
+  "other": 186,
+  "both": 60,
+  "estimate": 266,
+  "ci95": [
+   236,
+   295
+  ]
+ },
+ "calibration": [
+  {
+   "round": 1,
+   "kappa": 0.516,
+   "ci": [
+    0.349,
+    0.677
+   ],
+   "agreement": 0.78,
+   "three_way": 0.408,
+   "target": 0.7,
+   "met": false
+  }
+ ],
+ "rescreen": {
+  "set": "rescreen_second_syndrome_v1",
+  "date": "2026-11-22",
+  "rule": "protocol v1.8.6 rule 1: screen every syndrome that changed, not only the headline one",
+  "frame": "current ledger rows excluded at title/abstract stage with a reason code, deduplicated by PMID, DOI or title",
+  "total": 480,
+  "done": 270,
+  "title_only": 210,
+  "flagged": 1,
+  "method": "Abstracts fetched from Europe PMC in the laptop browser (never stored in the repo); scored for two or more syndrome families plus improvement and unexpectedness wording; every record scoring 3 or more read by Claude; records without an abstract in Europe PMC screened by title, pending their PsycInfo or Embase abstracts in a CKN session."
+ }
+}

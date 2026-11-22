@@ -18,8 +18,8 @@ MILESTONES = {  # id: done?
     "2b": False,  # calibration round 2
     "2c": False,  # readings review page
     "3a": True,   # case pages (v1 2026-11-22: #case/<id> on the library page)
-    "3b": False,  # patterns page
-    "3c": False,  # methods page
+    "3b": True,   # patterns (v1 2026-11-22: the library's Patterns tab, #patterns)
+    "3c": True,   # methods page (v1 2026-11-22: methods.html, counts from data/methods.json)
     "3d": False,  # front page restyle, downloads, how to cite
     "4": False,   # launch: tagged version, README, archive
 }
