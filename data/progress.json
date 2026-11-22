@@ -1,9 +1,9 @@
 {
  "updated": "2026-11-22",
  "cases": 212,
- "coded": 114,
+ "coded": 115,
  "coded_basis": {
-  "Full text": 114
+  "Full text": 115
  },
  "tiers": {
   "A": 34,
@@ -13,7 +13,7 @@
  "queue": [
   {
    "route": "Easy wins: free, one click in a normal browser",
-   "n": 8
+   "n": 11
   },
   {
    "route": "Psychiatry Online (tick the terms box)",
@@ -21,7 +21,7 @@
   },
   {
    "route": "CKN, Ovid / Lippincott (works once signed in)",
-   "n": 16
+   "n": 17
   },
   {
    "route": "CKN, Springer (works once signed in)",
@@ -29,7 +29,7 @@
   },
   {
    "route": "Download the PDF yourself (Elsevier: Cloudflare in the app's browser)",
-   "n": 8
+   "n": 6
   },
   {
    "route": "Download the PDF yourself (Wiley)",
@@ -45,18 +45,22 @@
   },
   {
    "route": "Thieme / Karger / AMA / AAN / BMJ / JNS / other",
-   "n": 11
+   "n": 12
+  },
+  {
+   "route": "Other publishers",
+   "n": 2
   },
   {
    "route": "No DOI: older or non-indexed papers, library or interlibrary loan",
-   "n": 27
+   "n": 21
   }
  ],
- "queue_total": 98,
+ "queue_total": 97,
  "unsure_rows": 30,
  "readings": {
-  "total": 114,
-  "draft": 114,
+  "total": 115,
+  "draft": 115,
   "reviewed": 0
  },
  "calibration": [
@@ -77,7 +81,7 @@
   "flagged": 0
  },
  "milestones": {
-  "1a": false,
+  "1a": true,
   "2b": false,
   "2c": false,
   "3a": false,

@@ -47,7 +47,7 @@ h2 { font-size:18px; margin:30px 0 4px; border-top:1px solid var(--line); paddin
   var TASKS = [
     { phase: "1 · Code every case", items: [
       ["1a", "Sweep for free copies", "Claude", "OpenAlex and Crossref for every missing full text and every unsure row: open-access copies, DOIs for the papers listed without one.", function (p) { return p.milestones["1a"] ? "done" : "now"; }],
-      ["1b", "CKN sessions on the laptop", "Claude, while you're signed in", "EBSCO through LibKey, ClinicalKey, Springer, Embase record pages, Psychiatry Online.", function (p) { return "you"; }, function (p) { return routes(p, ["Psychiatry Online", "CKN", "Thieme"]); }],
+      ["1b", "CKN sessions on the laptop", "Claude, while you're signed in", "EBSCO through LibKey, ClinicalKey, Springer, Embase record pages, Psychiatry Online.", function (p) { return "you"; }, function (p) { return routes(p, ["Psychiatry Online", "CKN", "Thieme", "Other"]); }],
       ["1c", "PDFs from your phone", "You download, Claude codes", "Wiley, SAGE, Elsevier and Taylor & Francis papers, through CKN in your own browser.", function (p) { return "you"; }, function (p) { return routes(p, ["Download the PDF yourself"]); }],
       ["1d", "Settle the unsure pile", "Claude", "Same routes as the cases; each row ends as a case or an exclusion with its reason.", function (p) { return p.unsure_rows ? "todo" : "done"; }, function (p) { return p.unsure_rows + " rows left"; }],
       ["1e", "Cut-off for the unreachable", "Claude", "Anything still unreachable at the end is coded from its abstract, labelled abstract only, and listed for an upgrade. Nothing stays uncoded.", function (p) { return "todo"; }, function (p) { return routes(p, ["No DOI", "Easy wins"]); }]

@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 MILESTONES = {  # id: done?
-    "1a": False,  # free-copy sweep (OpenAlex / Crossref) of the queue and unsure rows
+    "1a": True,   # free-copy sweep (done 2026-11-22) (OpenAlex / Crossref) of the queue and unsure rows
     "2b": False,  # calibration round 2
     "2c": False,  # readings review page
     "3a": False,  # case pages
@@ -43,7 +43,8 @@ def main():
     q = ROOT / "docs/fulltext_queue.md"
     if q.exists():
         for m in re.finditer(r"^## (.+?) \((\d+)\)\s*$", q.read_text(), re.M):
-            queue.append({"route": m.group(1), "n": int(m.group(2))})
+            if not m.group(1).startswith("Unsure"):
+                queue.append({"route": m.group(1), "n": int(m.group(2))})
 
     rows = list(csv.DictReader((ROOT / "ledger/records.csv").open()))
     sup = {r["supersedes"] for r in rows if r["supersedes"]}

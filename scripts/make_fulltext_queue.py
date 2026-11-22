@@ -18,7 +18,10 @@ EASY = {
     "richards-2024": "Free PDF at psychiatrist.com after a free account",
     "colli-2003": "Free in the Journal of Near-Death Studies archive at UNT Digital Library (doi.org/10.17514/jnds-2003-22-1-p33-55); it shows an 'I'm not a robot' box, which Claude leaves to you",
     "van-den-hoven-2021": "Free in the Netherlands Journal of Critical Care 2021;29(5):222-5 (njcc.nl; its security certificate failed in the app's browser)",
-    "nagata-2013": "International Psychogeriatrics has moved to ScienceDirect (Cloudflare check); not in ClinicalKey",
+    "nagata-2013": "Open access (OpenAlex, 22 Nov), but International Psychogeriatrics has moved to ScienceDirect, which puts a Cloudflare check in front of Claude's browser",
+    "de-santis-1997": "Free to read at Wiley (OpenAlex, 22 Nov); Wiley's bot check stops Claude's browser",
+    "collyer-2020": "Open access at ScienceDirect (OpenAlex, 22 Nov); Cloudflare check in Claude's browser",
+    "morena-1994": "Free to read at ScienceDirect (OpenAlex, 22 Nov); Cloudflare check in Claude's browser",
     "taira-2003": "thejns.org refused the app's browser",
 }
 NOTES = {
@@ -70,6 +73,34 @@ if other:
     out += [f"## Other publishers ({len(other)})", ""] + [line(r) for r in sorted(other, key=lambda r: (r["tier"], r["id"]))] + [""]
 if nodoi:
     out += [f"## No DOI: older or non-indexed papers, library or interlibrary loan ({len(nodoi)})", ""] + [line(r) for r in sorted(nodoi, key=lambda r: (r["tier"], r["id"]))] + [""]
+import csv as _csv
+from urllib.parse import quote as _q
+_rows = list(_csv.DictReader(Path("ledger/records.csv").open()))
+_sup = {x["supersedes"] for x in _rows if x["supersedes"]}
+UNSURE_NOTES = {  # by DOI: free copies behind bot checks (OpenAlex, 22 Nov)
+    "10.3109/02699052.2016.1162060": "Free accepted manuscript in the University of Udine repository (air.uniud.it); Cloudflare check in Claude's browser",
+    "10.1176/appi.neuropsych.16030053": "Free to read at Psychiatry Online; Cloudflare check in Claude's browser",
+}
+unsure, _seen = [], set()
+for x in _rows:
+    if x["record_id"] in _sup or x["decision"] != "unsure":
+        continue
+    key = x["doi"] or x["pmid"] or x["title"].lower()[:80]
+    if key in _seen:
+        continue
+    _seen.add(key)
+    unsure.append(x)
+unsure.sort(key=lambda x: (x["year"] or "0"))
+def uline(x):
+    links = []
+    if x["doi"]:
+        links += [f"[CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url={_q('https://doi.org/' + x['doi'], safe='')})", f"[DOI](https://doi.org/{x['doi']})"]
+    if x["pmid"]:
+        links.append(f"[PubMed](https://pubmed.ncbi.nlm.nih.gov/{x['pmid']}/)")
+    note = UNSURE_NOTES.get(x["doi"], "")
+    return f"- **{x['record_id']}** · {x['title']} ({x['journal']} {x['year']}) · " + " · ".join(links) + (f" · *{note}*" if note else "")
+if unsure:
+    out += [f"## Unsure screening records: full text decides whether they're cases ({len(unsure)})", ""] + [uline(x) for x in unsure] + [""]
 Path("docs/fulltext_queue.md").write_text("\n".join(out) + "\n")
 
 # --- the same list as a page on the site (queue.html), so it opens on a phone ---
@@ -96,6 +127,18 @@ for title, prefixes in ROUTES:
     seen |= {r["id"] for r in rs}
 sec("Other publishers", sorted([r for r in todo if r["id"] not in seen and r["ids"].get("doi")], key=lambda r: (r["tier"], r["id"])))
 sec("No DOI: older or non-indexed papers (library or interlibrary loan)", sorted([r for r in todo if r["id"] not in seen and not r["ids"].get("doi")], key=lambda r: (r["tier"], r["id"])))
+def uhl(x):
+    links = []
+    if x["doi"]:
+        links += [f'<a href="https://go.openathens.net/redirector/ckn.qldhealth.com?url={_q("https://doi.org/" + x["doi"], safe="")}">CKN</a>', f'<a href="https://doi.org/{_h.escape(x["doi"])}">DOI</a>']
+    if x["pmid"]:
+        links.append(f'<a href="https://pubmed.ncbi.nlm.nih.gov/{x["pmid"]}/">PubMed</a>')
+    note = UNSURE_NOTES.get(x["doi"], "")
+    ex = f'<div class="ex">{_h.escape(note)}</div>' if note else ""
+    return (f'<li><div class="t">{_h.escape(x["title"])}</div><div class="m">{_h.escape(x["journal"])} {x["year"]} · <code>{x["record_id"]}</code></div>'
+            f'{ex}<div class="l">{" · ".join(links) or "no link: library or interlibrary loan"}</div></li>')
+if unsure:
+    secs.append(f'<section><h2>Unsure screening records <span>{len(unsure)}</span></h2><p class="note">Not cases yet: the full text decides whether each one is a case or an exclusion.</p><ol>' + "".join(uhl(x) for x in unsure) + "</ol></section>")
 page = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Full texts still needed · Serendipity library</title>

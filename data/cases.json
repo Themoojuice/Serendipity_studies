@@ -13980,21 +13980,21 @@
     "pages": ""
    },
    "ids": {
-    "doi": "",
+    "doi": "10.1097/01.adt.0000129084.99647.20",
     "pmid": "",
     "pmcid": ""
    },
    "links": {
     "full_text": null,
     "abstract": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1097/01.adt.0000129084.99647.20",
     "alternates": [
      {
       "label": "Embase record (CKN login)",
       "url": "https://www.embase.com/records?subaction=viewrecord&id=L39186957"
      }
     ],
-    "ckn": "http://resolver.ebscohost.com/openurl?sid=EMBASE&sid=EMBASE&issn=&id=doi:&atitle=Spontaneous+long-term+smoking+cessation+in+a+patient+with+schizophrenia+after+treatment+with+ziprasidone&stitle=Addict.+Disord.+Treat.&title=Addictive+Disorders+and+their+Treatment&volume=3&issue=3&spage=138&epage=143&aulast=Vartian&aufirst=Brian+A.&auinit=B.A.&aufull=Vartian+B.A.&coden=ADTTA&isbn=&pages=138-143&date=2004&auinit1=B&auinitm=A"
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1097%2F01.adt.0000129084.99647.20"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -14068,21 +14068,21 @@
     "pages": ""
    },
    "ids": {
-    "doi": "",
+    "doi": "10.1017/s0790966700014543",
     "pmid": "",
     "pmcid": ""
    },
    "links": {
     "full_text": null,
     "abstract": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1017/s0790966700014543",
     "alternates": [
      {
       "label": "Embase record (CKN login)",
       "url": "https://www.embase.com/records?subaction=viewrecord&id=L25281852"
      }
     ],
-    "ckn": "http://resolver.ebscohost.com/openurl?sid=EMBASE&sid=EMBASE&issn=&id=doi:&atitle=Resolution+of+panic+disorder+during+pregnancy&stitle=IR.+J.+PSYCHOL.+MED.&title=Irish+Journal+of+Psychological+Medicine&volume=12&issue=3&spage=107&epage=108&aulast=Curran&aufirst=S.&auinit=S.&aufull=Curran+S.&coden=IPMEE&isbn=&pages=107-108&date=1995&auinit1=S&auinitm="
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1017%2Fs0790966700014543"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -16330,7 +16330,7 @@
   {
    "id": "lauritsen-2015",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -16350,13 +16350,13 @@
     "pmcid": ""
    },
    "links": {
-    "full_text": null,
+    "full_text": "https://content.ugeskriftet.dk/sites/default/files/scientific_article_files/2015-01/artikel_13240.pdf",
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/25612950/",
     "doi": null,
     "alternates": [],
     "ckn": null
    },
-   "access": "Paywalled",
+   "access": "Free full text",
    "design": "Case report",
    "n_patients": 1,
    "syndrome": {
@@ -16384,7 +16384,7 @@
     "links": []
    },
    "summary": "Three years of treatment-resistant depression resolved abruptly after a subarachnoid haemorrhage.",
-   "caveat": "Danish-language paper with an English abstract.",
+   "caveat": "Lamotrigine 150 mg had been started shortly before the haemorrhage and was continued for the four years of remission.",
    "tags": [
     "depression",
     "haemorrhage"
@@ -16392,7 +16392,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-22: full text read (Full text, the journal's free PDF (ugeskriftet.dk), read in Danish)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -16400,13 +16400,147 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "The authors raise the unruptured aneurysm itself (mass effect or ischaemia) as a possible cause of the depression."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Three documented years of resistant depression, observed off medication; abrupt remission at the haemorrhage, sustained four years. No scale; lamotrigine was started shortly before and continued, and occasional cannabis stopped."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Full text read in Danish (two pages)."
+   },
+   "timeline": [
+    {
+     "patient": "65-year-old man",
+     "age": 65,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Anxiety without a trigger, then gradually deepening depression; one brief episode of depression and anxiety 30 years earlier"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "SSRIs, SNRIs and psychotherapy; lithium twice (side effects); nortriptyline with level monitoring plus reboxetine; aripiprazole for fatigue (no effect); isocarboxazid at therapeutic dose (side effects). Tertiary affective disorders clinic: treatment-resistant depression",
+       "to": -2
+      },
+      {
+       "kind": "assessment",
+       "t": -2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Off medication for a period: still moderate to severe depression, dominated by fatigue, low drive, overwhelm, mild sadness and tension; dementia, thyroid disease, lung and heart disease and sleep apnoea excluded"
+      },
+      {
+       "kind": "cointervention",
+       "t": -1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Lamotrigine 150 mg a day; the haemorrhage came 'shortly after'"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Subarachnoid haemorrhage from a right pericallosal aneurysm (sudden severe headache, no loss of consciousness); aneurysm clipped. Follow-up CT: a small right frontal infarct beside the clip"
+      },
+      {
+       "kind": "best_response",
+       "t": 0,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Symptoms vanished promptly after the haemorrhage; discharged from neurosurgery without sequelae and without psychiatric symptoms",
+       "state": "Remitted"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Stopped the small, occasional cannabis use he disclosed afterwards"
+      },
+      {
+       "kind": "assessment",
+       "t": 15,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Psychiatric outpatient follow-up throughout: full clinical remission; handed back to his GP",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 4,
+       "unit": "years",
+       "precision": "exact",
+       "label": "Still symptom-free after the stroke, on lamotrigine 200 mg a day",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Right",
+    "regions": [
+     "Frontal, other"
+    ],
+    "specific": "Subarachnoid blood in the basal cisterns and over the corpus callosum from a right pericallosal aneurysm; after clipping, a small right frontal infarct beside the clip (medial frontal, pericallosal territory)",
+    "aetiology": "Haemorrhage",
+    "imaging": "CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "baseline_years": 3.0,
+    "follow_up_days": 1461.0,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -30769,16 +30903,16 @@
     "pages": "557-560"
    },
    "ids": {
-    "doi": "",
+    "doi": "10.1002/1098-108x(198807)7:4<557::aid-eat2260070414>3.0.co;2-r",
     "pmid": "",
     "pmcid": ""
    },
    "links": {
     "full_text": null,
     "abstract": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1002/1098-108x(198807)7:4<557::aid-eat2260070414>3.0.co;2-r",
     "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fresearch.ebsco.com%2Fc%2Flrpoh2%2Fdetails%2F54dedabwvz%3Fdb%3Dpsyh"
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2F1098-108x%28198807%297%3A4%3C557%3A%3Aaid-eat2260070414%3E3.0.co%3B2-r"
    },
    "access": "Paywalled",
    "design": "Case series",
@@ -31139,16 +31273,16 @@
     "pages": "95-98"
    },
    "ids": {
-    "doi": "",
+    "doi": "10.1037/h0099655",
     "pmid": "",
     "pmcid": ""
    },
    "links": {
     "full_text": null,
     "abstract": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1037/h0099655",
     "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fresearch.ebsco.com%2Fc%2Flrpoh2%2Fdetails%2Fbvnz473cw5%3Fdb%3Dpsyh"
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1037%2Fh0099655"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -31307,16 +31441,16 @@
     "pages": "121-123"
    },
    "ids": {
-    "doi": "",
+    "doi": "10.1515/ijdhd-2015-0003",
     "pmid": "",
     "pmcid": ""
    },
    "links": {
     "full_text": null,
     "abstract": null,
-    "doi": null,
+    "doi": "https://doi.org/10.1515/ijdhd-2015-0003",
     "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fresearch.ebsco.com%2Fc%2Flrpoh2%2Fdetails%2F6wjalkratn%3Fdb%3Dpsyh"
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1515%2Fijdhd-2015-0003"
    },
    "access": "Paywalled",
    "design": "Case report",

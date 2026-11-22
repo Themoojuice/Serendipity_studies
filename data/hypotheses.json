@@ -7914,6 +7914,83 @@
      "why": "Midazolam for MRI lifting catatonia"
     }
    ]
+  },
+  {
+   "case_id": "lauritsen-2015",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Three years, moderate to severe even when observed off medication."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic, not a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "The authors wonder whether the unruptured aneurysm drove the depression; nothing else organic was found."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Lamotrigine reached 150 mg shortly before and was continued; cannabis stopped."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Discharged without sequelae; remission, not apathy, held for four years."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "A haemorrhage, not a treatment."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No rating scale; two-page report."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Three years of resistant depression stopped at a right pericallosal subarachnoid haemorrhage with a small right frontal infarct, and stayed gone for four years. It joins Etches 2009 and Wilcox 2008. Lamotrigine, started just before and kept going, is the competitor the paper can't rule out.",
+   "hypotheses": [
+    {
+     "claim": "A small right medial frontal infarct disconnected a depressive circuit.",
+     "chain": "Pericallosal haemorrhage → clip-related right medial frontal infarct (pericallosal territory, near the anterior cingulate) → loss of cingulate-prefrontal drive sustaining the depression → remission",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Abrupt at the event after three static years; matches other right frontal stroke remissions.",
+     "against": "Infarct site described only as frontal near the clip; no lesion-network data.",
+     "confidence": "Low",
+     "uncertainty_driver": "Lesion location is approximate and lamotrigine overlaps.",
+     "test": "Map the infarct against lesion-network maps of depression remission (Padmanabhan-style)."
+    },
+    {
+     "claim": "Lamotrigine responded, and the haemorrhage was coincidental.",
+     "chain": "Lamotrigine titrated to 150 mg → slow antidepressant effect in resistant depression → remission at about the same time",
+     "mechanisms": [
+      "Ion channels and excitability"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Within lamotrigine's onset window.",
+     "against": "The change was abrupt at the haemorrhage, and lamotrigine's evidence in unipolar resistant depression is weak.",
+     "confidence": "Low",
+     "uncertainty_driver": "Lamotrigine start date not given.",
+     "test": "Remission durability if lamotrigine were tapered."
+    }
+   ],
+   "related": [
+    {
+     "id": "etches-2009",
+     "why": "Bipolar II and panic gone after subarachnoid haemorrhage"
+    },
+    {
+     "id": "wilcox-2008",
+     "why": "Depression cured by a right frontal stroke"
+    }
+   ]
   }
  ]
 }
