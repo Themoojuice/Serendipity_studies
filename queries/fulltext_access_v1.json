@@ -1,7 +1,7 @@
 {
  "meta": {
   "date": "2026-11-22",
-  "method": "EBSCO Full Text Finder (CKN's link resolver) per DOI in the laptop browser, while Brendan was signed in; LibKey and the Springer link checked for two",
+  "method": "EBSCO Full Text Finder (CKN's link resolver) per DOI in the laptop browser, while Brendan was signed in; LibKey and the Springer link checked for two; the resolver also takes pmid= for records without a DOI",
   "note": "Keys are library ids, or doi:<doi> for unsure screening records. 'done' = read and settled; 'phone' = CKN holds it only on a platform that blocks Claude's browser; 'none' = CKN doesn't hold it."
  },
  "results": {
@@ -200,6 +200,94 @@
   "doi:10.4103/indianjpsychiatry.indianjpsychiatry_59_26": [
    "done",
    "read 22 Nov (open at Ovid), excluded"
+  ],
+  "ho-2001": [
+   "done",
+   "read 22 Nov (EBSCO, International Journal of Eating Disorders 1981 on), coded"
+  ],
+  "schweickert-1997": [
+   "done",
+   "read 22 Nov (EBSCO, International Journal of Eating Disorders 1981 on), coded"
+  ],
+  "ozawa-1999": [
+   "done",
+   "read 22 Nov (EBSCO, International Journal of Eating Disorders 1981 on), coded"
+  ],
+  "solmi-2013": [
+   "done",
+   "read 22 Nov (EBSCO, International Journal of Eating Disorders 1981 on), coded"
+  ],
+  "coutinho-2016": [
+   "done",
+   "read 22 Nov (EBSCO), coded"
+  ],
+  "mclaughlin-2013": [
+   "done",
+   "read 22 Nov (ClinicalKey), coded"
+  ],
+  "arora-2006": [
+   "done",
+   "read 22 Nov (EBSCO, ANZJP 1998-2011), excluded"
+  ],
+  "yates-1988": [
+   "done",
+   "read 22 Nov (EBSCO), excluded"
+  ],
+  "choo-2024": [
+   "phone",
+   "Wiley via CKN only"
+  ],
+  "feldinger-2013": [
+   "phone",
+   "Wiley via CKN only"
+  ],
+  "gong-2024": [
+   "phone",
+   "Wiley via CKN only"
+  ],
+  "hefzy-2011": [
+   "phone",
+   "Wiley via CKN only"
+  ],
+  "petersen-1956": [
+   "none",
+   "not held by CKN"
+  ],
+  "barbieri-2005": [
+   "none",
+   "not held by CKN"
+  ],
+  "fontana-2019": [
+   "none",
+   "not held by CKN"
+  ],
+  "moccia-2022": [
+   "none",
+   "not held by CKN"
+  ],
+  "fontenelle-2000": [
+   "none",
+   "not held by CKN"
+  ],
+  "borchardt-1987": [
+   "none",
+   "not held by CKN"
+  ],
+  "hemming-1993": [
+   "none",
+   "not held by CKN"
+  ],
+  "calache-1991": [
+   "none",
+   "not held by CKN"
+  ],
+  "odeh-1989": [
+   "none",
+   "not held by CKN"
+  ],
+  "jansson-1984": [
+   "none",
+   "not held by CKN"
   ]
  }
 }

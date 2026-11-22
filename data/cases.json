@@ -19355,8 +19355,8 @@
   {
    "id": "ho-2001",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "B",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1b"
    ],
@@ -19388,8 +19388,8 @@
     "categories": [
      "Eating"
     ],
-    "specific": "Anorexia nervosa (weight 37.8 kg)",
-    "chronic": null,
+    "specific": "Anorexia nervosa, binge-eating/purging subtype, for 12 years with repeated renourishment admissions (37.8 kg, body fat 7.5%)",
+    "chronic": true,
     "treatment_resistant": null
    },
    "trigger": {
@@ -19408,8 +19408,8 @@
     "note": "",
     "links": []
    },
-   "summary": "Anorexic behaviour vanished during encephalitis with hypoxic brain injury and came back once the neurological signs cleared.",
-   "caveat": "Weight gain may partly reflect inpatient care during the illness.",
+   "summary": "A 25-year-old woman with 12 years of binge-purge anorexia ate a full normal diet without distress while recovering from encephalitis with hypoxic brain injury, going from 37.8 to 51.1 kg over six months; once the neurological deficits cleared, the restriction came back and the weight went with it.",
+   "caveat": "Her aphasia and cognitive slowing could have removed the preoccupation along with much else, since the restriction returned exactly as cognition did.",
    "tags": [
     "anorexia",
     "encephalitis",
@@ -19419,7 +19419,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-22: full text read (Full text through CKN (EBSCO, ClinicalKey))",
    "era": {
     "label": "emerging",
     "note": "One of a small set of eating-disorder remissions after brain insults; the return with recovery is the informative part.",
@@ -19427,13 +19427,141 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "Twelve years of anorexia with repeated renourishment admissions; eating normally without distress during rehabilitation after the encephalitis, weight 37.8 to 51.1 kg; anorexic behaviour back once the neurological deficits cleared (natural off-on). Weight and skinfold only, no eating-disorder scale. Supervised inpatient rehabilitation and nasogastric feeding not addressed."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Three-page report, scanned back issue read by OCR. Brain findings (no lesion block, since the trigger is an infection): diffuse swelling and pallidal calcification on CT, atrophy and bilateral temporal white matter changes on MRI."
+   },
+   "timeline": [
+    {
+     "patient": "25-year-old woman",
+     "age": 25,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -12,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Anorexia nervosa, binge-eating/purging subtype, with multiple earlier admissions for renourishment"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Admitted after an outpatient check found extremely low weight and body fat (37.8 kg; body fat 7.5% by skinfold); a year of daily chest pain, abnormal ECG, no cardiac disease found",
+       "scores": [
+        {
+         "scale": "Weight (kg)",
+         "value": 37.8
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Shortly after admission: sudden fever, headache, photophobia and rash, aspiration pneumonia, rapid neurological decline; intubated in intensive care; three tonic-clonic seizures. CT: diffuse cerebral swelling and pallidal calcification consistent with anoxic injury; CSF pleocytosis with raised protein; MRI later: atrophy and bilateral temporal white matter changes (likely gliosis), consistent with encephalitis"
+      },
+      {
+       "kind": "first_change",
+       "t": 6,
+       "unit": "months",
+       "precision": "at most",
+       "label": "On the rehabilitation ward (date not given, within the six months), after nasogastric feeding, she began eating a full normal diet, which she had not done for many years; the whole team saw it consistently, and it did not seem to perturb her. Residual nonfluent aphasia, paraphasias and jargon, polyneuropathy and an abnormal gait"
+      },
+      {
+       "kind": "best_response",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Weight 51.1 kg, body fat 18.5%, gained steadily over six months",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "Weight (kg)",
+         "value": 51.1
+        }
+       ]
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 6,
+       "unit": "months",
+       "precision": "at least",
+       "label": "Neurological sequelae resolved and rehabilitation completed"
+      },
+      {
+       "kind": "relapse",
+       "t": 6,
+       "unit": "months",
+       "precision": "at least",
+       "label": "Began restricting again and returned to her premorbid anorexic behaviour; weight and body fat fell back to premorbid levels"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 182.625,
+    "latency_band": "Over 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 12.0,
+    "durability": "Lost",
+    "timeline_reversal": "Natural off-on",
+    "measures": [
+     {
+      "scale": "Weight (kg)",
+      "before": 37.8,
+      "after": 51.1,
+      "change_pct": 35.2
+     }
+    ],
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -22814,7 +22942,7 @@
   {
    "id": "solmi-2013",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "C",
    "collections": [
     "phase1c"
@@ -22867,8 +22995,8 @@
     "note": "",
     "links": []
    },
-   "summary": "Long-lasting anorexia nervosa improved in weight and psychopathology over the months a woman received anti-TNF therapy for Crohn's disease.",
-   "caveat": "She was referred to an eating disorders unit at the same time, and better bowel control alone could aid weight gain.",
+   "summary": "A 26-year-old woman with 12 years of untreated anorexia began anti-TNF therapy for Crohn's disease after a near-fatal admission and, over the following months, gained weight for the first time since her teens (BMI 17.6, menses back) while attending eating-disorder care for the first time.",
+   "caveat": "The improvement began alongside her first ever sustained eating-disorder treatment, after an admission at BMI 11.8, so ordinary treatment response is the obvious alternative.",
    "tags": [
     "adalimumab",
     "anorexia",
@@ -22879,7 +23007,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, first pass)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-22: full text read (Full text through CKN (EBSCO, ClinicalKey))",
    "era": {
     "label": "novel",
     "note": "",
@@ -22887,13 +23015,129 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 0,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Twelve years of anorexia at BMI 14.6–15.8; gradual improvement over months to BMI 17.6. Timing scored 0: the change was gradual and began alongside her first-ever sustained eating-disorder care after a near-fatal admission. BMI only; no reversal; confounders not separable."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Three-page clinical case report."
+   },
+   "timeline": [
+    {
+     "patient": "26-year-old woman",
+     "age": 26,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -12,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Anorexia nervosa from 14 after a failed ballet audition: binge-purge type for six months, then restrictive; dropped out of psychodynamic therapy at 15 after four sessions and refused all other treatment for over 10 years; BMI 14.6–15.8"
+      },
+      {
+       "kind": "cointervention",
+       "t": -1,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Admitted for acute Crohn's disease: weight 37 to 30 kg (BMI 11.8), transfusion, parenteral and enteral nutrition, prednisone and ciclosporin; discharged on day 25 at 37.2 kg (BMI 14.7). Accepted a dietary programme and regular eating-disorder and gastroenterology visits: her first sustained psychiatric care (a session every two to three weeks, psychoeducation)"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Infliximab at standard dose for Crohn's disease (interval later shortened from eight to six weeks for a perianal fistula)"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Within a few months of discharge: growing motivation to follow psychoeducation, better eating, gradual weight gain; shape and weight concerns persisted at first",
+       "state": "Partial"
+      },
+      {
+       "kind": "cointervention",
+       "t": 6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Switched to adalimumab after an allergic reaction to infliximab"
+      },
+      {
+       "kind": "best_response",
+       "t": 9,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Menses back; BMI 17.6, the first time above her illness range since onset; weight and shape concerns gradually easing",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "BMI",
+         "value": 17.6
+        }
+       ]
+      },
+      {
+       "kind": "follow_up",
+       "t": 9,
+       "unit": "months",
+       "precision": "at least",
+       "label": "Living alone; three mild Crohn's flares but no relapse of the eating disorder; better psychosocial functioning",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 91.312,
+    "latency_band": "Over 3 months",
+    "baseline_years": 12.0,
+    "follow_up_days": 273.938,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 1,
+    "attribution_grade": "D",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "C"
    }
   },
   {
@@ -24742,8 +24986,8 @@
   {
    "id": "mclaughlin-2013",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1c"
    ],
@@ -24757,16 +25001,16 @@
     "pages": "e29-31"
    },
    "ids": {
-    "doi": "",
+    "doi": "10.1016/j.biopsych.2012.09.015",
     "pmid": "23128051",
     "pmcid": ""
    },
    "links": {
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/23128051/",
-    "doi": null,
+    "doi": "https://doi.org/10.1016/j.biopsych.2012.09.015",
     "alternates": [],
-    "ckn": null
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.biopsych.2012.09.015"
    },
    "access": "Paywalled",
    "design": "Letter",
@@ -24775,8 +25019,8 @@
     "categories": [
      "Eating"
     ],
-    "specific": "Anorexia nervosa alongside intractable OCD",
-    "chronic": null,
+    "specific": "Long-standing anorexic restriction (lowest BMI 17.4, 18.5 at surgery) alongside intractable OCD (Y-BOCS 32)",
+    "chronic": true,
     "treatment_resistant": null
    },
    "trigger": {
@@ -24795,8 +25039,8 @@
     "note": "",
     "links": []
    },
-   "summary": "Anorexia symptoms improved after deep brain stimulation given for intractable OCD.",
-   "caveat": "The OCD improved too, and the eating disorder may have followed it.",
+   "summary": "A 48-year-old woman with intractable OCD and long-standing anorexic restriction had ventral capsule/ventral striatum stimulation for the OCD; early on she stopped minding what she ate, ate sweets and meals out for the first time in years, and kept her weight in the healthy range over four years.",
+   "caveat": "Her food rules overlapped with her contamination and perfectionism obsessions, and the OCD improved with the same stimulation, so the eating may simply have followed the OCD.",
    "tags": [
     "anorexia-nervosa",
     "comorbidity",
@@ -24806,7 +25050,7 @@
    "same_patient_as": null,
    "found_via": "Citation route v1 (Europe PMC citations and references)",
    "date_added": "2026-11-13",
-   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-22: full text read (Full text through CKN (EBSCO, ClinicalKey))",
    "era": {
     "label": "emerging",
     "note": "Deep brain stimulation for anorexia itself was being trialled from 2013 (recalled, not checked).",
@@ -24814,13 +25058,146 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-13",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Capsulotomy and limbic leucotomy had been reported to ease anorexia, which the authors cite, and subgenual stimulation remission of anorexia was reported in 2010."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Her restriction overlapped with contamination and perfectionism obsessions, and the OCD improved with the same stimulation, so the eating change may be part of the OCD response."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Long-standing anorexic restriction at low-normal weight; easier eating early in stimulation and BMI 18.9–19.6 over four years. Adding a second contact worsened anxiety, mood, OCD and weight together, and removing it reversed all of them: a configuration change, not a stop of the exposure, so not scored as a reversal. Weight only; OCD and mood changes not separated."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Correspondence in Biol Psychiatry, read in ClinicalKey."
+   },
+   "timeline": [
+    {
+     "patient": "48-year-old woman",
+     "age": 48,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Before implantation: intractable childhood-onset OCD (Y-BOCS 32) after extensive exposure therapy and drugs; long-standing anorexia: fear of weight gain, sees herself as overweight, avoids meat, bread and 'fattening' food, small portions, avoids eating at outings, resists clinicians. Lowest lifetime BMI 17.4; 44.4 kg (BMI 18.5) just before surgery; somewhat better during intensive OCD treatment",
+       "scores": [
+        {
+         "scale": "BMI",
+         "value": 18.5
+        }
+       ]
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Bilateral ventral capsule/ventral striatum DBS for intractable OCD in a controlled trial, programmed for OCD; final setting left unilateral, monopolar, dorsal contact in the ventral caudate, 7.5 V, 120 µs, 120 Hz"
+      },
+      {
+       "kind": "first_change",
+       "t": 0,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Early in stimulation: 'different' feelings about food, less bothered by what she ate; larger and broader portions, eats out and asks to, eats sweets she had avoided entirely",
+       "state": "Partial"
+      },
+      {
+       "kind": "assessment",
+       "t": 0,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Weight since surgery generally 45.4–47.2 kg (BMI 18.9–19.6); still says she has 'to be careful'",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "BMI",
+         "value": 19.6
+        }
+       ]
+      },
+      {
+       "kind": "assessment",
+       "t": 0,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Adjacent ventral contact (also ventral caudate) added: anxiety, mood and OCD worse and weight down to 41.7 kg",
+       "state": "Worse"
+      },
+      {
+       "kind": "best_response",
+       "t": 0,
+       "unit": "days",
+       "precision": "at least",
+       "label": "That contact switched off: symptoms better again, 1.8 kg gained in a month, notably less distressed about calories and weight",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 4,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Age 52 at the report: long-term reduction in concern about food and weight gain",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Stimulation target",
+    "side": "Left",
+    "regions": [
+     "Caudate",
+     "Internal capsule"
+    ],
+    "specific": "Ventral capsule/ventral striatum leads, bilateral, with only the left active: dorsal contact (#3) in the ventral caudate, placed relatively ventromedially, stimulation possibly spreading into the anterior limb of the internal capsule; plotted at −5.8 mm from the commissure in the Mai atlas",
+    "aetiology": "Not applicable",
+    "imaging": "MRI and CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "follow_up_days": 1461.0,
+    "durability": "Lost, then regained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -25393,7 +25770,7 @@
   {
    "id": "coutinho-2016",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1c"
@@ -25408,16 +25785,16 @@
     "pages": "339-345"
    },
    "ids": {
-    "doi": "",
+    "doi": "10.1080/13554794.2016.1194999",
     "pmid": "27351865",
     "pmcid": ""
    },
    "links": {
     "full_text": null,
     "abstract": "https://pubmed.ncbi.nlm.nih.gov/27351865/",
-    "doi": null,
+    "doi": "https://doi.org/10.1080/13554794.2016.1194999",
     "alternates": [],
-    "ckn": null
+    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1080%2F13554794.2016.1194999"
    },
    "access": "Paywalled",
    "design": "Case report",
@@ -25446,8 +25823,8 @@
     "note": "",
     "links": []
    },
-   "summary": "A 45-year-old woman's lifelong outbursts of aggression stopped for good after a bilateral temporal lobe injury.",
-   "caveat": "Personality change after brain injury can blunt drive in general, not aggression alone.",
+   "summary": "A 45-year-old preacher whose lifelong rages had her breaking furniture and throwing things was struck on the head while jogging; after recovering from bilateral temporal injuries she had no further outbursts, became flexible and affectionate, and was unchanged nearly three years on.",
+   "caveat": "A near-fatal assault followed by an outpouring of support from her church could reorganise a personality without any help from the lesion.",
    "tags": [
     "aggression",
     "bilateral",
@@ -25459,7 +25836,7 @@
    "same_patient_as": null,
    "found_via": "Citation route v1 (Europe PMC citations and references)",
    "date_added": "2026-11-13",
-   "verified": "2026-11-13: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-22: full text read (Full text through CKN (EBSCO, ClinicalKey))",
    "era": {
     "label": "novel",
     "note": "",
@@ -25467,13 +25844,122 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-13",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Lifelong outbursts by her husband's account; gone from the first assessment after the injury and still gone at nearly three years, with the Iowa scales rated twice against a retrospective premorbid rating. No reversal possible; the near-fatal assault and the religious community's response as psychological causes are not discussed."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Seven-page Neurocase report with imaging and tractography figures."
+   },
+   "timeline": [
+    {
+     "patient": "45-year-old woman",
+     "age": 45,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -40,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Lifelong: stubborn, inflexible, low frustration tolerance; lost verbal and physical control over trivial annoyances, breaking furniture and throwing objects; highly emotional, unplanned episodes"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "October 2012: struck from behind with a 1.1 m wooden fence post while jogging; right epidural and left temporal subdural haematomas, decompressive craniotomy, induced coma for a few days"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "months",
+       "precision": "at most",
+       "label": "First assessment (January 2013): episodes of dyscontrol gone; flexible, affectionate, apologised to her husband 'for the first time in her life'; memory complaints, dysarthria, high-pitched voice, unsteady gait",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 12,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Cognition, balance and gait back to premorbid levels; Iowa Scales of Personality Change rated by her husband (premorbid versus now): aggressiveness down moderately, the new traits stable; not manic",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 35,
+       "unit": "months",
+       "precision": "exact",
+       "label": "September 2015: Iowa ratings unchanged; no outbursts; more active at church than ever; MRI unchanged at 3, 12 and 36 months",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Injury",
+    "side": "Bilateral",
+    "regions": [
+     "Temporal, lateral",
+     "White matter, other"
+    ],
+    "specific": "Atrophy and gliosis of the superior, middle and inferior temporal gyri on both sides (BA 22, 21, 20, 37), sparing the left temporal pole and on the right extending into the posterior temporal pole; tractography: marked thinning of the right uncinate fasciculus, less of the right inferior fronto-occipital fascicle, slight thinning of the left superior longitudinal fascicle; amygdala, hippocampus and insula spared",
+    "aetiology": "Trauma",
+    "imaging": "MRI",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 91.312,
+    "latency_band": "Over 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 40.0,
+    "follow_up_days": 1065.312,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -29485,8 +29971,8 @@
   {
    "id": "ozawa-1999",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1e"
    ],
@@ -29518,7 +30004,7 @@
     "categories": [
      "Eating"
     ],
-    "specific": "Bulimia nervosa for over 10 years (binge eating, self-induced vomiting)",
+    "specific": "Bulimia nervosa, purging type, for 13 years (two to five binges a day), unhelped by psychotherapy and psychiatric treatment",
     "chronic": true,
     "treatment_resistant": true
    },
@@ -29538,7 +30024,7 @@
     "note": "",
     "links": []
    },
-   "summary": "A 29-year-old Japanese woman's bulimia of more than 10 years stopped completely once surgery cured her primary hyperparathyroidism; her depression and anxiety eased too.",
+   "summary": "A 29-year-old woman with 13 years of bulimia, unhelped by psychotherapy and psychiatric care, had a parathyroid adenoma removed for hyperparathyroidism found on admission; she never binged or vomited again over two years, and her depression and anxiety went too.",
    "caveat": "Hypercalcaemia causes nausea and vomiting, so part of the bulimic picture may have come from the hyperparathyroidism itself.",
    "tags": [
     "bulimia",
@@ -29550,7 +30036,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-22: full text read (Full text through CKN (EBSCO, ClinicalKey))",
    "era": {
     "label": "novel",
     "note": "",
@@ -29558,98 +30044,124 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
-   }
-  },
-  {
-   "id": "arora-2006",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "phase1e"
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "Hypercalcaemia causes nausea, vomiting, low mood and anxiety, and the authors suggest the hyperparathyroidism influenced the bulimia; its duration is unknown because calcium had never been checked."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Thirteen years of bulimia through a year of psychotherapy and later psychiatric treatment; binge-vomiting stopped after parathyroidectomy and stayed gone for two years. No scale; no reversal; the authors raise a placebo effect of surgery but cannot exclude it."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y"
+     ]
+    },
+    "note": "Four-page report, scanned back issue read by OCR."
+   },
+   "timeline": [
+    {
+     "patient": "29-year-old woman",
+     "age": 29,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -13,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Bulimic episodes from 16 after repeated diets; vomiting after large meals from 19; daily binge-vomiting by 21–22, then more often; almost uncontrollable craving and guilt"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -5,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Regular psychotherapy for a year at a hospital psychology department; bingeing and vomiting continued",
+       "to": -4
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Regular psychiatric treatment again, without effect"
+      },
+      {
+       "kind": "assessment",
+       "t": -1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Asked for admission to escape her distress: binges two to three times a day on weekdays, three to five at weekends; very depressed, wished to die; 41 kg, 155.5 cm; DSM-IV bulimia nervosa, purging type. Calcium 11.8 mg/dl, phosphate low, intact PTH 95 pg/ml: primary hyperparathyroidism; adenoma behind the right thyroid lobe on ultrasound and MIBI scan"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Removal of a 320 mg right parathyroid adenoma; serum calcium normalised"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "at most",
+       "label": "Eating became normal after surgery without any psychiatric treatment; depression and anxiety gone 'just after' the operation",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 2,
+       "unit": "years",
+       "precision": "exact",
+       "label": "No bingeing or vomiting since the operation; much better mentally; still fears being overweight",
+       "state": "Remitted"
+      }
+     ]
+    }
    ],
-   "citation": {
-    "authors": "Arora M, Praharaj SK",
-    "title": "Stevens-Johnson syndrome (SJS) leading to resolution of mania.",
-    "journal": "Aust N Z J Psychiatry",
-    "year": 2006,
-    "volume": "40",
-    "issue": "2",
-    "pages": "193-4"
-   },
-   "ids": {
-    "doi": "10.1111/j.1440-1614.2006.01774_2.x",
-    "pmid": "16476139",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/16476139/",
-    "doi": "https://doi.org/10.1111/j.1440-1614.2006.01774_2.x",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fj.1440-1614.2006.01774_2.x"
-   },
-   "access": "Paywalled",
-   "design": "Letter",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Mood"
-    ],
-    "specific": "Mania with psychotic features (YMRS 53), worsening again on carbamazepine, olanzapine and lithium after ECT",
-    "chronic": false,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Systemic illness",
-    "specific": "Stevens-Johnson syndrome",
-    "intent": "Injury or illness"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 0,
-    "note": "",
-    "links": []
-   },
-   "summary": "A 23-year-old man's psychotic mania, sliding back after ECT despite carbamazepine, olanzapine and lithium, resolved after he developed Stevens-Johnson syndrome.",
-   "caveat": "He had been getting worse on carbamazepine, so stopping it once the reaction appeared is a competing explanation.",
-   "tags": [
-    "carbamazepine",
-    "immune",
-    "intercurrent-illness",
-    "mania",
-    "stevens-johnson"
-   ],
-   "same_patient_as": null,
-   "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
-   "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
-   "era": {
-    "label": "novel",
-    "note": "",
-    "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+   "derived": {
+    "latency_days": 7,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 13.0,
+    "follow_up_days": 730.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -31175,89 +31687,6 @@
    }
   },
   {
-   "id": "yates-1988",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "phase1e"
-   ],
-   "citation": {
-    "authors": "Yates A, Shisslak CM, Allender JR, Wolman W",
-    "title": "Plastic surgery and the bulimic patient.",
-    "journal": "International Journal of Eating Disorders",
-    "year": 1988,
-    "volume": "7",
-    "issue": "4",
-    "pages": "557-560"
-   },
-   "ids": {
-    "doi": "10.1002/1098-108x(198807)7:4<557::aid-eat2260070414>3.0.co;2-r",
-    "pmid": "",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": null,
-    "doi": "https://doi.org/10.1002/1098-108x(198807)7:4<557::aid-eat2260070414>3.0.co;2-r",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1002%2F1098-108x%28198807%297%3A4%3C557%3A%3Aaid-eat2260070414%3E3.0.co%3B2-r"
-   },
-   "access": "Paywalled",
-   "design": "Case series",
-   "n_patients": 2,
-   "syndrome": {
-    "categories": [
-     "Eating"
-    ],
-    "specific": "Bulimia nervosa in two women aged 19 and 20",
-    "chronic": null,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Surgery or procedure (outside the brain)",
-    "specific": "Cosmetic surgery they sought to make their bodies more acceptable",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Temporary",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 0,
-    "note": "",
-    "links": []
-   },
-   "summary": "Two young women with bulimia had cosmetic surgery to make their bodies more acceptable to themselves; the bulimia remitted markedly afterwards, but only for a while.",
-   "caveat": "Post-operative recovery interrupts binge-purge routines and brings close supervision.",
-   "tags": [
-    "body-image",
-    "bulimia",
-    "cosmetic-surgery"
-   ],
-   "same_patient_as": null,
-   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
-   "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record)",
-   "era": {
-    "label": "novel",
-    "note": "",
-    "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
-   }
-  },
-  {
    "id": "nagata-2013",
    "record_type": "case",
    "status": "Provisional",
@@ -32755,8 +33184,8 @@
   {
    "id": "schweickert-1997",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1f"
    ],
@@ -32788,8 +33217,8 @@
     "categories": [
      "Eating"
     ],
-    "specific": "Bulimia nervosa (binge eating) with comorbid ADHD",
-    "chronic": null,
+    "specific": "Bulimia nervosa for 12 years (binge-purge, up to five times a day at worst) with comorbid ADHD",
+    "chronic": true,
     "treatment_resistant": null
    },
    "trigger": {
@@ -32798,7 +33227,7 @@
     "intent": "Treatment for another condition"
    },
    "outcome": {
-    "resolution": "Partial",
+    "resolution": "Complete",
     "time_to_resolution": null,
     "follow_up": null,
     "reversal": "None reported"
@@ -32808,8 +33237,8 @@
     "note": "",
     "links": []
    },
-   "summary": "A patient with bulimia nervosa binged much less after methylphenidate was prescribed for comorbid ADHD.",
-   "caveat": "Methylphenidate dulls appetite, so fewer binges need not mean the bulimia itself changed.",
+   "summary": "A 25-year-old woman who had binged and vomited since 13 stopped bingeing completely within about a week of starting low-dose methylphenidate for her ADHD, with her appetite unchanged; 16 weeks later it was her longest abstinence since the bulimia began.",
+   "caveat": "Methylphenidate has anorectic effects, so fewer binges could reflect appetite and impulse dampening rather than a change in the bulimia itself.",
    "tags": [
     "adhd",
     "binge-eating",
@@ -32820,7 +33249,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC citations (CIT_EPMC_v2)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (Europe PMC record); identifiers from PubMed",
+   "verified": "2026-11-22: full text read (Full text through CKN (EBSCO, ClinicalKey))",
    "era": {
     "label": "emerging",
     "note": "Methylphenidate and other stimulants given for ADHD were reported to curb binge eating from 1997 on (this record, Drimmer 2003, Dukarm 2005); lisdexamfetamine was later approved for binge-eating disorder in the US (recalled, not checked).",
@@ -32828,13 +33257,124 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "The authors cite small placebo-controlled reports of methylamphetamine and fenfluramine reducing bingeing in bulimia (Ong 1983, Robinson 1985)."
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "The authors' other reading: her bingeing was an expression of ADHD impulsivity, so treating the ADHD treated its consequence."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Twelve years of binge-purging with limited response to earlier treatment; bingeing stopped within about a week of methylphenidate and stayed stopped for 16 weeks. Self-reported binge counts only, no scale; no stop or rechallenge; nothing said about other changes."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
+    "note": "Three-page case report."
+   },
+   "timeline": [
+    {
+     "patient": "25-year-old woman",
+     "age": 25,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -12,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Binge eating from 13, after her parents' divorce, ended by self-induced vomiting; up to five binge-purge episodes a day at worst. Previous treatment nonspecific, with limited results"
+      },
+      {
+       "kind": "assessment",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Presented to an outpatient psychopharmacology clinic for ADHD (diagnosed at 7; stimulants stopped at 12). Bingeing at least three to five times a week, more with coursework demands; 115 lb at 5 ft 3 in; crying spells, hopelessness"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Methylphenidate 5 mg morning and noon for ADHD"
+      },
+      {
+       "kind": "first_change",
+       "t": 1,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "ADHD much improved; dose raised to 5 mg three times a day. Appetite unchanged, but a complete stop to her binges, which she put down to better concentration and less restlessness",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 5,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "No bingeing; weight stable",
+       "state": "Remitted"
+      },
+      {
+       "kind": "assessment",
+       "t": 9,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "No bingeing; weight stable",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 16,
+       "unit": "weeks",
+       "precision": "exact",
+       "label": "Still not bingeing, weight stable: her longest abstinence since 13",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 7,
+    "latency_band": "1-13 days",
+    "baseline_years": 12.0,
+    "follow_up_days": 112,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 6,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {

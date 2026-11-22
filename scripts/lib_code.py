@@ -123,6 +123,8 @@ class Batch:
                     w.writerow(c)
         self.d["records"] = [r for r in self.d["records"] if r["id"] not in self.excluded]
         self.h["entries"] = [e for e in self.h["entries"] if e["case_id"] not in self.excluded]
+        for e in self.h["entries"]:  # drop cross-references to records that no longer exist
+            e["related"] = [x for x in e.get("related", []) if x["id"] not in self.excluded]
 
     def save(self):
         self._write_exclusions()

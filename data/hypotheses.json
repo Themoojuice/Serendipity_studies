@@ -2934,12 +2934,7 @@
      "test": "Mood ratings through drug reactions in bipolar patients."
     }
    ],
-   "related": [
-    {
-     "id": "arora-2006",
-     "why": "Remission during Stevens-Johnson syndrome"
-    }
-   ]
+   "related": []
   },
   {
    "case_id": "felizardo-2023",
@@ -8152,6 +8147,446 @@
     {
      "id": "moussawi-2016",
      "why": "Pallidal lesion ending opioid and alcohol dependence (an opioid case seen from the other side)"
+    }
+   ]
+  },
+  {
+   "case_id": "ho-2001",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Twelve years and many admissions; the remission ended as the brain recovered."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Chronic, and the return is the opposite of regression."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-standing binge-purge anorexia; nothing suggests the eating disorder was secondary."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Six months of supervised inpatient rehabilitation with nasogastric feeding at first; the relapse came when rehabilitation ended."
+    },
+    "nonspecific": {
+     "rating": "Likely",
+     "why": "Nonfluent aphasia, jargon and cognitive slowing, and eating 'did not seem to perturb her': loss of the cognitive apparatus would remove the preoccupation with weight, and the anorexia returned exactly as cognition recovered."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "An illness, not a treatment."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Brief report; the first change is not dated, and the relapse is described without weights or times."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "The return of the anorexia as the brain recovered makes the brain injury the cause rather than chance, but what it shows is that the illness needs intact cognition, not that something specific was switched off: the aphasia and slowing explain the change without an anorexia-specific mechanism. Formal cognitive testing alongside the eating would have decided it.",
+   "hypotheses": [
+    {
+     "claim": "Diffuse hypoxic-encephalitic injury removed the cognitive and affective machinery that sustains restriction; recovery restored it.",
+     "chain": "Encephalitis and hypoxia → widespread cortical and white matter dysfunction (aphasia, slowing) → loss of weight-and-shape rumination and of the anxiety attached to eating → eats normally without distress → cognition recovers → restriction returns",
+     "mechanisms": [
+      "Global suppression (sedation, apathy, cognitive loss)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Indifference to eating while impaired; relapse timed to neurological recovery.",
+     "against": "She was not apathetic about everything that is reported; no cognitive measures were taken.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No cognitive or mood testing over the six months.",
+     "test": "Serial cognitive testing and eating-disorder ratings through recovery from a comparable diffuse injury."
+    },
+    {
+     "claim": "Bilateral temporal damage released feeding drive (a partial Klüver-Bucy picture) that overrode restriction.",
+     "chain": "Bilateral temporal white matter injury → disinhibited, hyperphagic feeding → weight gain → temporal function recovers → restriction re-emerges",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "The authors draw the parallel with hyperphagia after temporal encephalitis.",
+     "against": "No hyperphagia, orality or other Klüver-Bucy signs are described; she ate a normal diet, not excess.",
+     "confidence": "Low",
+     "uncertainty_driver": "Lesion described only as temporal white matter change.",
+     "test": "Detailed lesion mapping and feeding observation in post-encephalitic eating changes."
+    }
+   ],
+   "related": [
+    {
+     "id": "dusoir-2005",
+     "why": "Anorexia remitting after a stroke"
+    },
+    {
+     "id": "israel-2010",
+     "why": "Anorexia remitting after subgenual stimulation for depression"
+    }
+   ]
+  },
+  {
+   "case_id": "schweickert-1997",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Twelve years, longest abstinence ever."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "She presented at a time of high coursework demand, when bingeing rose; a quieter period would bring it down."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic binge-purge bulimia."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Nothing else is said to have changed, but nothing is said to have stayed the same either."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "A stimulant's anorectic effect could curb bingeing without touching the disorder, though she reported her appetite unchanged."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Open, self-reported, in a clinic that had just helped her ADHD."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-report only, no diary or scale, 16 weeks."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "The founding report of the stimulant-bulimia line: quick, complete and sustained for four months, with appetite reported unchanged. Self-report and a known anorectic drug class leave it short of separating a specific effect on bingeing from appetite or impulse dampening; a stop and restart would have settled it.",
+   "hypotheses": [
+    {
+     "claim": "Better prefrontal control of impulses removed the binge trigger.",
+     "chain": "Methylphenidate → more dopamine and noradrenaline in prefrontal-striatal circuits → better inhibitory control and less restlessness → urges to binge resisted → binge-purge cycle stops",
+     "mechanisms": [
+      "Dopamine",
+      "Noradrenaline"
+     ],
+     "latency_fit": "Fits",
+     "for": "Within a week, alongside the ADHD response; she attributed it to better concentration.",
+     "against": "Bulimia usually has drivers beyond impulsivity (shape concern), and these are not reported.",
+     "confidence": "Low",
+     "uncertainty_driver": "Single self-reported case with no measures.",
+     "test": "Binge diaries across a blinded methylphenidate on/off crossover in bulimia with ADHD."
+    },
+    {
+     "claim": "Stimulant appetite suppression reduced bingeing without changing the disorder.",
+     "chain": "Methylphenidate → reduced hunger and reward value of food → fewer binges",
+     "mechanisms": [
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Stimulants are anorectic; lisdexamfetamine later became a binge-eating treatment (recalled, not checked).",
+     "against": "She reported her appetite unchanged at that dose (5 mg three times a day).",
+     "confidence": "Low",
+     "uncertainty_driver": "No appetite or intake measure.",
+     "test": "Measure hunger and intake alongside binge frequency."
+    }
+   ],
+   "related": [
+    {
+     "id": "dukarm-2005",
+     "why": "Six women with bulimia abstinent on dextroamphetamine for ADHD"
+    },
+    {
+     "id": "miyazaki-2023",
+     "why": "Methylphenidate for ADHD easing kleptomania"
+    }
+   ]
+  },
+  {
+   "case_id": "ozawa-1999",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Thirteen years, daily bingeing; abrupt stop."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "She asked for admission at her worst, wishing to die."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Hypercalcaemia's nausea, vomiting and dysphoria may have fed the purging and distress; how long the calcium had been high is unknown."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Admission and an operation interrupt routines; the authors raise a surgical placebo effect."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "She improved in mood and energy, not the reverse."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "A dramatic intervention in a woman desperate for help; the authors name it."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-report, no scale or diary."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Thirteen years of bulimia gone for two years after a parathyroid adenoma came out. Whether the hyperparathyroidism was driving part of the picture (hypercalcaemic nausea, vomiting and dysphoria) can't be told from the report, which is what keeps this a secondary-cause question rather than a cure of primary bulimia.",
+   "hypotheses": [
+    {
+     "claim": "Hypercalcaemia was sustaining the binge-purge cycle through its effects on mood and gut.",
+     "chain": "Parathyroid adenoma → chronic hypercalcaemia → nausea, dysphoria, anxiety and neuronal excitability changes (calcium-sensing receptor) → amplified craving-purge cycle → calcium normalised → cycle stops",
+     "mechanisms": [
+      "Ion channels and excitability",
+      "Interoceptive and visceral input"
+     ],
+     "latency_fit": "Fits",
+     "for": "Abrupt after surgery; mood and anxiety cleared at the same time.",
+     "against": "The bulimia began at 16 with dieting, and calcium history is unknown, so the hyperparathyroidism may be much younger than the illness.",
+     "confidence": "Low",
+     "uncertainty_driver": "Onset of the hypercalcaemia unknown.",
+     "test": "Screen calcium in bulimia cohorts and follow those with hyperparathyroidism through surgery."
+    },
+    {
+     "claim": "The admission and operation acted as a psychological turning point.",
+     "chain": "Desperate admission → major operation and a medical explanation → hope and reattribution → stops bingeing",
+     "mechanisms": [
+      "Suggestion and belief update"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate change.",
+     "against": "Thirteen years of failed psychological treatment; two years sustained.",
+     "confidence": "Low",
+     "uncertainty_driver": "No measures of mood or expectation.",
+     "test": "None from one case."
+    }
+   ],
+   "related": [
+    {
+     "id": "achamrah-2020",
+     "why": "Anorexia remitting after a medical procedure"
+    }
+   ]
+  },
+  {
+   "case_id": "solmi-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Some chronic anorexia improves in the late twenties; the change was gradual."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "She started from a Crohn's-driven nadir (BMI 11.8)."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Anorexia began a decade before Crohn's disease."
+    },
+    "cointervention": {
+     "rating": "Likely",
+     "why": "Her first sustained eating-disorder care, a dietary programme and a frightening admission all began at the same time as the anti-TNF drug."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Functioning improved."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Newly engaged in treatment."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "BMI only, no eating-disorder scale; follow-up not dated."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A real and welcome recovery, but it began alongside her first ever eating-disorder treatment after a near-fatal admission, and it was gradual; nothing in the report separates the anti-TNF drug from ordinary treatment response.",
+   "hypotheses": [
+    {
+     "claim": "Lower TNF-alpha and IL-6 relieved cytokine-driven anorexigenic signalling.",
+     "chain": "Anti-TNF therapy → less systemic inflammation → less hypothalamic anorexigenic signalling and leptin sensitisation → hunger and intake recover → weight and cognitions follow",
+     "mechanisms": [
+      "Inflammation and cytokines",
+      "Neuropeptide (oxytocin, orexin, other)"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Plausible biology in inflammatory anorexia.",
+     "against": "Her anorexia predated Crohn's disease by ten years, and the change was gradual.",
+     "confidence": "Low",
+     "uncertainty_driver": "No inflammatory markers tracked against symptoms.",
+     "test": "Inflammatory markers and eating-disorder ratings in anorexia with and without biologic therapy for comorbid inflammatory disease."
+    }
+   ],
+   "related": [
+    {
+     "id": "ho-2001",
+     "why": "Anorexia remitting during encephalitis"
+    }
+   ]
+  },
+  {
+   "case_id": "coutinho-2016",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Lifelong, unchanged into her mid-forties."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "A trait-like pattern, not a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Episodic dyscontrol was never formally diagnosed or treated; it is reconstructed from her husband's account of a lifelong temperament."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "A near-fatal assault, long recovery and a church community praying for her: a life event big enough to change a person."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "She became more active and took more initiative, with cognition back to normal: not apathy."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "An injury, not a treatment."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Husband's retrospective ratings, endorsed by her; personal memoir published."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Lifelong rages gone after bilateral lateral temporal injury that spared the amygdala, with cognition recovered and initiative up rather than down, which argues against blunting. The rival is psychological: a near-death experience and a community's embrace can change a temperament. The selective, lesion-matched change tips it.",
+   "hypotheses": [
+    {
+     "claim": "Bilateral lateral temporal and right uncinate damage cut the fast temporal-orbitofrontal route that turned annoyance into rage.",
+     "chain": "Lateral temporal cortex and right uncinate fasciculus injury → weaker transfer of social-affective appraisal to orbitofrontal and anterior temporal cortex → less rapid escalation from irritation to dyscontrol → outbursts stop, warmth released",
+     "mechanisms": [
+      "Lesion disconnection"
+     ],
+     "latency_fit": "Fits",
+     "for": "Selective change in aggression with recovered cognition; tractography shows the right uncinate thinned.",
+     "against": "Amygdala spared, so the classic taming route is not the one damaged; a single case.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No premorbid imaging or behaviour measured before the injury.",
+     "test": "Compare lesion networks of post-traumatic calming with those of post-traumatic aggression."
+    },
+    {
+     "claim": "Surviving a near-fatal assault reorganised her priorities and self-view.",
+     "chain": "Near death → gratitude, faith testimony, community support → a new identity incompatible with rages → outbursts stop",
+     "mechanisms": [
+      "Meaning and life reorganisation"
+     ],
+     "latency_fit": "Fits",
+     "for": "She preached her story widely afterwards.",
+     "against": "Lifelong temper changing so completely and stably by meaning alone is unusual.",
+     "confidence": "Low",
+     "uncertainty_driver": "No psychological assessment of the experience.",
+     "test": "None from one case."
+    }
+   ],
+   "related": [
+    {
+     "id": "ohara-2004",
+     "why": "Personality change after brain injury"
+    }
+   ]
+  },
+  {
+   "case_id": "mclaughlin-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "The anorexia had already eased somewhat during intensive OCD treatment."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Long-standing, not a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Residual restriction at BMI 18.5 that may be driven by her OCD rather than a separate anorexia."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Trial follow-up and the parallel improvement in OCD and mood."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "More engaged, not blunted."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Open stimulation in a trial participant."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No eating-disorder scale; weights given as ranges; timing of changes not dated."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Easier eating and healthy weight over four years after ventral striatal stimulation for OCD. The contact change that worsened and then restored her eating moved her OCD, mood and anxiety too, so it doesn't isolate an anorexia-specific effect, and the restriction may have been part of the OCD all along.",
+   "hypotheses": [
+    {
+     "claim": "Stimulation at the ventral caudate–internal capsule junction reduced the anxiety and value attached to food through orbitofrontal connections.",
+     "chain": "Ventral caudate / anterior limb stimulation → modulated orbitofrontal and ventromedial prefrontal loops involved in food reward and threat → food less frightening and more rewarding → broader intake, weight gain",
+     "mechanisms": [
+      "Stimulation of a circuit"
+     ],
+     "latency_fit": "Fits",
+     "for": "Early change; a contact change moved eating and weight in both directions.",
+     "against": "The same contact change moved OCD, mood and anxiety, so specificity to eating is unshown.",
+     "confidence": "Low",
+     "uncertainty_driver": "Eating not measured separately from OCD and mood.",
+     "test": "Rate eating-disorder cognitions separately across blinded contact changes."
+    },
+    {
+     "claim": "The eating change was part of the OCD response.",
+     "chain": "Stimulation relieves OCD and anxiety → food rules driven by contamination and perfectionism loosen → eats more broadly",
+     "mechanisms": [
+      "Threat and arousal"
+     ],
+     "latency_fit": "Fits",
+     "for": "Her restriction overlapped with her obsessions; OCD and eating moved together.",
+     "against": "She described a change in how she felt about food itself, with sweets eaten for the first time.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Overlap of the two syndromes in one patient.",
+     "test": "Look for eating change in other VC/VS-treated OCD patients with comorbid anorexia."
+    }
+   ],
+   "related": [
+    {
+     "id": "israel-2010",
+     "why": "Anorexia remitting after subgenual stimulation for depression"
+    },
+    {
+     "id": "mallet-2002",
+     "why": "Subthalamic stimulation for Parkinson's disease ending lifelong OCD"
     }
    ]
   }

@@ -1,14 +1,14 @@
 {
  "updated": "2026-11-22",
- "cases": 210,
- "coded": 117,
+ "cases": 208,
+ "coded": 123,
  "coded_basis": {
-  "Full text": 117
+  "Full text": 123
  },
  "tiers": {
-  "A": 35,
-  "B": 90,
-  "C": 85
+  "A": 36,
+  "B": 92,
+  "C": 80
  },
  "queue": [
   {
@@ -33,7 +33,7 @@
   },
   {
    "route": "Download the PDF yourself (Wiley)",
-   "n": 13
+   "n": 7
   },
   {
    "route": "Download the PDF yourself (SAGE / Mary Ann Liebert)",
@@ -53,14 +53,14 @@
   },
   {
    "route": "No DOI: older or non-indexed papers, library or interlibrary loan",
-   "n": 21
+   "n": 19
   }
  ],
- "queue_total": 93,
+ "queue_total": 85,
  "unsure_rows": 30,
  "readings": {
-  "total": 117,
-  "draft": 117,
+  "total": 123,
+  "draft": 123,
   "reviewed": 0
  },
  "calibration": [

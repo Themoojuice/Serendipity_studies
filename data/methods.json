@@ -6,11 +6,11 @@
  "distinct": 58470,
  "screened": 22779,
  "not_screened": 35691,
- "excluded": 22420,
+ "excluded": 22422,
  "excluded_by_reason": {
-  "E1": 43,
+  "E1": 44,
   "E2": 67,
-  "E3": 238,
+  "E3": 239,
   "E4": 77,
   "E5": 79,
   "E6": 1,
@@ -29,27 +29,27 @@
   "Other": 15
  },
  "library": {
-  "cases": 210,
+  "cases": 208,
   "context": 19,
-  "coded": 117,
+  "coded": 123,
   "tiers": {
-   "A": 35,
-   "B": 90,
-   "C": 85
+   "A": 36,
+   "B": 92,
+   "C": 80
   },
   "antique": 13,
   "coded_basis": {
-   "Full text": 117
+   "Full text": 123
   }
  },
  "capture_recapture": {
-  "psycinfo": 84,
+  "psycinfo": 82,
   "other": 185,
   "both": 59,
-  "estimate": 262,
+  "estimate": 256,
   "ci95": [
-   233,
-   292
+   228,
+   284
   ]
  },
  "calibration": [
