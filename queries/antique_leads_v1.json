@@ -1,0 +1,53 @@
+{
+ "meta": {
+  "created": "2026-11-22",
+  "source": "Reference list of Zuschlag et al. 2016 (J Psychiatr Pract 22:410-415), read from Brendan's PDF; for roadmap step 7 (antique sources)",
+  "note": "Nineteenth- and early-twentieth-century reports on intercurrent fever and insanity, written before deliberate fever therapy, likely to hold individual cases. Not yet screened; not in the ledger as of 22 Nov 2026."
+ },
+ "leads": [
+  {
+   "cite": "Gaye JA. Schilderung eines in der Irrenanstalt bei Schleswig in den Jahren 1846 und 1847 epidemisch aufgetretenen gastrischen und typhösen Fiebers. Allg Z Psychiat 1852;9:173-199",
+   "why": "Typhoid epidemic in the Schleswig asylum, 1846-47: outcomes of inmates' insanity"
+  },
+  {
+   "cite": "Koster F. Quomodo in insaniam valeat febris intermittens. Bonn, 1848 (dissertation)",
+   "why": "Malarial (intermittent) fever and insanity"
+  },
+  {
+   "cite": "Nasse W. Ueber die Beziehungen zwischen Typhus und Irresein. Allg Z Psychiat 1870-71;27:11-42",
+   "why": "Typhus and insanity, case material"
+  },
+  {
+   "cite": "Krafft-Ebing R von. Arch Psychiatrie 1878;8:65-107",
+   "why": "Cited by Zuschlag among fever-and-insanity sources"
+  },
+  {
+   "cite": "Oks B. Ueber die Wirkung fieberhafter Krankheiten auf Heilung von Psychosen. Arch Psychiatr Nervenkr 1880;10:249-256",
+   "why": "Febrile illness curing psychoses: case series"
+  },
+  {
+   "cite": "Campbell CM. On the effects of enteric fever in the insane. J Ment Sci 1882-83;28:212-220",
+   "why": "Enteric fever in asylum patients, English; J Ment Sci back issues may be free at Cambridge Core"
+  },
+  {
+   "cite": "Kiernan JG. Variola and insanity. Am J Neurol Psychiat 1883;2:365-372",
+   "why": "Smallpox and insanity, American"
+  },
+  {
+   "cite": "Wagner-Jauregg J. Ueber die Einwirkung fieberhafter Erkrankungen auf Psychosen. Jb Psychiat Neurol 1887;7:94-131",
+   "why": "Wagner-Jauregg's own collection of spontaneous febrile remissions before malaria therapy (wagner-jauregg-1883 is in the library)"
+  },
+  {
+   "cite": "Rosenblum AS. Psychiatrische Heilbestrebungen. Wien klin Wschr 1895;8:155-159",
+   "why": "Early fever-and-psychosis observations (relapsing fever in Odessa, as usually told)"
+  },
+  {
+   "cite": "Rosenblum AS. Relation of febrile diseases to the psychoses. Arch Derm Syph 1943;48:52-58",
+   "why": "Later review with case references"
+  },
+  {
+   "cite": "Duffell E. Curative power of fever. Lancet 2001;358:1276",
+   "why": "Short historical piece; reference trail"
+  }
+ ]
+}

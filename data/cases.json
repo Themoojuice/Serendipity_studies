@@ -2134,91 +2134,6 @@
    }
   },
   {
-   "id": "de-santis-1997",
-   "record_type": "case",
-   "status": "Included",
-   "tier": "A",
-   "collections": [
-    "top12"
-   ],
-   "citation": {
-    "authors": "De Santis A, Addolorato G, Romito A, et al.",
-    "title": "Schizophrenic symptoms and SPECT abnormalities in a coeliac patient: regression after a gluten-free diet.",
-    "journal": "J Intern Med",
-    "year": 1997,
-    "volume": "242",
-    "issue": "5",
-    "pages": "421-423"
-   },
-   "ids": {
-    "doi": "10.1046/j.1365-2796.1997.00200.x",
-    "pmid": "9408073",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/9408073/",
-    "doi": "https://doi.org/10.1046/j.1365-2796.1997.00200.x",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1046%2Fj.1365-2796.1997.00200.x"
-   },
-   "access": "Paywalled",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Psychotic"
-    ],
-    "specific": "Established 'schizophrenic' disorder (possibly secondary to coeliac disease)",
-    "chronic": true,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Diet",
-    "specific": "Gluten-free diet for newly diagnosed coeliac disease",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "Later cases of gluten-related psychosis",
-    "links": []
-   },
-   "summary": "Psychiatric symptoms disappeared on a gluten-free diet, and frontal hypoperfusion on SPECT normalised with them.",
-   "caveat": "Arguably a misdiagnosed secondary psychosis.",
-   "tags": [
-    "coeliac",
-    "diet",
-    "gluten",
-    "imaging",
-    "psychosis"
-   ],
-   "same_patient_as": null,
-   "found_via": "Web search",
-   "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
-   "era": {
-    "label": "emerging",
-    "note": "",
-    "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
-   }
-  },
-  {
    "id": "solyom-1987",
    "record_type": "case",
    "status": "Included",
@@ -2727,28 +2642,28 @@
     "categories": [
      "Obsessive-compulsive & tic"
     ],
-    "specific": "Severe obsessive-compulsive disorder with substance use",
-    "chronic": null,
+    "specific": "Severe OCD for nine years with multiple substance use",
+    "chronic": true,
     "treatment_resistant": null
    },
    "trigger": {
     "category": "Recreational substance",
-    "specific": "LSD and psilocin",
+    "specific": "LSD, psilocybin mushrooms and mescaline, used recreationally",
     "intent": "Self-administered"
    },
    "outcome": {
-    "resolution": "Unclear",
+    "resolution": "Temporary",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "None reported"
+    "reversal": "On-off rechallenge"
    },
    "downstream": {
     "level": 2,
     "note": "Same pathway as Moreno & Delgado 1997",
     "links": []
    },
-   "summary": "An adolescent with severe OCD reported relief of symptoms after taking LSD and psilocin.",
-   "caveat": "Adolescent self-report; how long relief lasted is unclear.",
+   "summary": "A 17-year-old with severe OCD since 8 found that LSD, psilocybin and mescaline each made his obsessions vanish for four to five hours, every time; cocaine and amphetamine made them worse, and alcohol, cannabis, opioids and sedatives changed nothing.",
+   "caveat": "This is a teenager's own account of drug effects with no observer or measure, and hours of intoxication could crowd out obsessions without treating them.",
    "tags": [
     "lsd",
     "ocd",
@@ -2758,7 +2673,7 @@
    "same_patient_as": null,
    "found_via": "Web search",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-22: full text read (Full text supplied by Brendan)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -2766,13 +2681,122 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "Nine years of severe OCD; hours-long remission with each psychedelic use, returning as the drug wore off, over many uses. His own account only; no measure, doses or observer; intoxication itself not addressed. Within-person contrasts: cocaine and amphetamine worsened the obsessions; cannabis, phencyclidine, barbiturates, methaqualone, morphine, codeine and alcohol changed nothing."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "U",
+      "U",
+      "N",
+      "Y"
+     ]
+    },
+    "note": "Letter (Am J Psychiatry), read from Brendan's PDF."
+   },
+   "timeline": [
+    {
+     "patient": "17-year-old man",
+     "age": 17,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -9,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Severe OCD from 8; since 13 so preoccupied he could do nothing spontaneously: lathering 22 times in the shower, tapping walls a set number of times, unable to finish written work; aware the thoughts were irrational"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "hours",
+       "precision": "exact",
+       "label": "LSD (used more than 100 times since 14); psilocybin mushrooms and mescaline about 20 times each"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "hours",
+       "precision": "approx",
+       "label": "After about an hour of slightly worse obsessions, total remission for 4–5 hours (LSD); psilocin and mescaline also made the thoughts 'totally disappear'",
+       "state": "Remitted"
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 5,
+       "unit": "hours",
+       "precision": "approx",
+       "label": "Drug effect wears off"
+      },
+      {
+       "kind": "relapse",
+       "t": 6,
+       "unit": "hours",
+       "precision": "approx",
+       "label": "Obsessions back",
+       "state": "Unchanged"
+      },
+      {
+       "kind": "exposure_restart",
+       "t": 24,
+       "unit": "hours",
+       "precision": "at least",
+       "label": "Same sequence with each later use (his account of more than 100 LSD trips)"
+      },
+      {
+       "kind": "best_response",
+       "t": 25,
+       "unit": "hours",
+       "precision": "at least",
+       "label": "Remission again for hours",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0.042,
+    "latency_band": "Under a day",
+    "baseline_years": 9.0,
+    "durability": "Lost, then regained",
+    "timeline_reversal": "On-off rechallenge",
+    "attribution_score": 4,
+    "attribution_grade": "B",
+    "jbi_score": 4,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -4328,7 +4352,7 @@
    "id": "yeung-2020",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "B",
    "collections": [
     "round2"
    ],
@@ -4361,8 +4385,8 @@
      "Mood",
      "Psychotic"
     ],
-    "specific": "Depression with psychosis and suicidal ideation",
-    "chronic": null,
+    "specific": "Late-onset depression with psychotic features (paranoid and religious delusions) for about a year, largely untreated",
+    "chronic": true,
     "treatment_resistant": null
    },
    "trigger": {
@@ -4372,7 +4396,7 @@
    },
    "outcome": {
     "resolution": "Complete",
-    "time_to_resolution": "Immediate",
+    "time_to_resolution": null,
     "follow_up": null,
     "reversal": "None reported"
    },
@@ -4381,8 +4405,8 @@
     "note": "",
     "links": []
    },
-   "summary": "A 65-year-old's depression, psychosis and suicidal ideation resolved immediately after a left-hemisphere closed head injury.",
-   "caveat": "",
+   "summary": "A 65-year-old man, depressed for a year and deluded for eight months, ran in front of a truck; when he came round from the head injury the depression, psychosis and suicidal thinking were gone, along with any memory of having had them, and a year later he was still well.",
+   "caveat": "He has no memory of the illness, so its apparent absence partly rests on his own report; and a near-fatal suicide attempt can end a depressive episode psychologically.",
    "tags": [
     "depression",
     "psychosis",
@@ -4391,7 +4415,7 @@
    "same_patient_as": null,
    "found_via": "Consensus",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-22: full text read (Full text supplied by Brendan)",
    "era": {
     "label": "novel",
     "note": "",
@@ -4399,13 +4423,141 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 1,
+     "note": "A year of depression with eight months of untreated psychosis; complete remission from the moment he regained consciousness, holding a year. No rating before; the authors address the later antidepressant and antipsychotic (started when already well) and discuss amnesia and seizures as alternatives."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Four-page case report (Brain Injury), read from Brendan's PDF."
+   },
+   "timeline": [
+    {
+     "patient": "65-year-old man",
+     "age": 65,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -12,
+       "unit": "months",
+       "precision": "approx",
+       "label": "First depressive episode (low mood, anxiety); bupropion stopped after a few weeks without benefit"
+      },
+      {
+       "kind": "assessment",
+       "t": -8,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Paranoia, religious preoccupation and delusions (tracked through his phone, targeted by co-workers), forgetfulness; untreated for eight months while still working"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Stopped his car on a highway and ran in front of a truck (suicide attempt): struck at 90 km/h; Glasgow Coma Scale 12; multiple fractures; 5 mm left fronto-parieto-occipital subdural haematoma, managed conservatively"
+      },
+      {
+       "kind": "assessment",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Intensive care: inattentive and disorganised, Glasgow Coma Scale 12–14"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Once fully conscious (Glasgow Coma Scale 15 after about two weeks): no depression, psychosis or suicidal ideation over two further weeks of liaison psychiatry observation; amnesia for the accident and the five days before, and he cannot recall ever having had the symptoms",
+       "state": "Remitted"
+      },
+      {
+       "kind": "cointervention",
+       "t": 3,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Escitalopram 10 mg and olanzapine 5 mg started by a community psychiatrist for presumed psychotic depression, while symptom-free"
+      },
+      {
+       "kind": "follow_up",
+       "t": 12,
+       "unit": "months",
+       "precision": "exact",
+       "label": "No psychiatric symptoms or suicidal ideation, full range of affect, motivated; Montreal Cognitive Assessment 25/30; olanzapine halved at 8 months with a planned taper",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "MoCA",
+         "value": 25
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Injury",
+    "side": "Left",
+    "regions": [
+     "Frontal, other",
+     "Parietal",
+     "Occipital"
+    ],
+    "specific": "5 mm left fronto-parieto-occipital subdural haematoma with mild mass effect, no shift, resolving by day 28; MRI day 8: mild atrophy and white matter changes, no contusion or infarct seen (no diffusion imaging)",
+    "aetiology": "Trauma",
+    "imaging": "MRI and CT",
+    "mappable": "Description only"
+   },
+   "derived": {
+    "latency_days": 14,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 1.0,
+    "follow_up_days": 365.25,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 3,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -6037,7 +6189,7 @@
    "id": "klok-2025",
    "record_type": "case",
    "status": "Included",
-   "tier": "A",
+   "tier": "B",
    "collections": [
     "round2"
    ],
@@ -6069,7 +6221,7 @@
     "categories": [
      "Functional neurological"
     ],
-    "specific": "Chronic functional paralysis",
+    "specific": "Functional paralysis for eight years (paraparesis) and thirteen months (arm), through rehabilitation and hypnosis",
     "chronic": true,
     "treatment_resistant": null
    },
@@ -6089,8 +6241,8 @@
     "note": "",
     "links": []
    },
-   "summary": "Two patients' long-standing functional paralysis recovered after unplanned comatose states.",
-   "caveat": "In functional disorder, coma offers expectation and a face-saving route to recovery.",
+   "summary": "Two patients with functional paralysis (a man wheelchair-bound for eight years, a woman with a paralysed arm for thirteen months) recovered on waking from unplanned comas, one medically induced for COVID respiratory failure and one after an overdose; neither paralysis came back, over two and sixteen years.",
+   "caveat": "Waking in intensive care after a near-death event is itself a powerful context for expectation and a route to recovery in functional disorder.",
    "tags": [
     "anaesthesia",
     "coma",
@@ -6099,7 +6251,7 @@
    "same_patient_as": null,
    "found_via": "Consensus",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-22: full text read (Full text supplied by Brendan)",
    "era": {
     "label": "novel",
     "note": "",
@@ -6107,13 +6259,179 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Therapeutic sedation and abreaction for functional disorders go back to World War I and are cited by the authors; these comas were unplanned."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Eight years and thirteen months of functional paralysis through rehabilitation and hypnosis; recovery on waking from unplanned comas, lasting two and sixteen years. No scales; for functional disorder the intensive care context and expectation are rival mechanisms the authors discuss but can't separate."
+    },
+    "jbi": {
+     "checklist": "Case series",
+     "answers": [
+      "N",
+      "Y",
+      "Y",
+      "N",
+      "U",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "NA"
+     ]
+    },
+    "note": "Four-page 'neurological rarities' report (Pract Neurol), read from Brendan's PDF."
+   },
+   "timeline": [
+    {
+     "patient": "59-year-old man",
+     "age": 59,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -8,
+       "unit": "years",
+       "precision": "approx",
+       "label": "After a car crash at 49 (friend from the crash died soon after): subacute weakness and numbness of legs and hands over weeks, wheelchair-bound; internal inconsistency, normal brain and spinal MRI: functional paraparesis"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -8,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Education and rehabilitation without improvement; wheelchair user for eight years",
+       "to": 0
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Influenza A and SARS-CoV-2 respiratory distress: sedated, ventilated prone, medically induced coma for three weeks"
+      },
+      {
+       "kind": "cointervention",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Sedation weaned; hypoactive delirium treated with haloperidol"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "While sedation was weaned his feet began to move for the first time in years; motor and sensory function of the legs recovered considerably over 10 days",
+       "state": "Partial"
+      },
+      {
+       "kind": "best_response",
+       "t": 12,
+       "unit": "months",
+       "precision": "approx",
+       "label": "After a year of rehabilitation he could walk up to 500 m; some arm and hand impairment remained",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 24,
+       "unit": "months",
+       "precision": "approx",
+       "label": "No recurrence of the functional paraparesis (later a right cerebral haemorrhage left a left-sided paresis)",
+       "state": "Partial"
+      }
+     ]
+    },
+    {
+     "patient": "40-year-old woman",
+     "age": 40,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -13,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Left arm paralysis with pain and sensory loss developing over weeks, milder left leg weakness; positive Hoover's and hip abductor signs, normal MRI: functional disorder with chronic pain; bipolar disorder and agoraphobia with panic"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -12,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Physiotherapy, hypnotherapy and self-hypnosis without improvement",
+       "to": 0
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Overdose of gabapentin, amitriptyline, nitrazepam and dihydrocodeine (a suicide attempt): Glasgow Coma Scale 3, ventilated for several hours"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "days",
+       "precision": "at most",
+       "label": "After a couple of days of confusion: left arm completely recovered, normal strength, no pain; she was surprised",
+       "state": "Remitted"
+      },
+      {
+       "kind": "relapse",
+       "t": 3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "A mild relapse a few months later, recovering with mild leg weakness; the arm stayed normal",
+       "state": "Partial"
+      },
+      {
+       "kind": "follow_up",
+       "t": 16,
+       "unit": "years",
+       "precision": "approx",
+       "label": "No further significant relapse over 16 years, until death from an unrelated illness",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 14,
+    "latency_band": "2 weeks to 3 months",
+    "baseline_years": 8.0,
+    "follow_up_days": 730.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 5,
+    "jbi_of": 10,
+    "rule_tier": "B"
    }
   },
   {
@@ -6164,7 +6482,7 @@
    "outcome": {
     "resolution": "Complete",
     "time_to_resolution": null,
-    "follow_up": "5 months",
+    "follow_up": null,
     "reversal": "None reported"
    },
    "downstream": {
@@ -6172,8 +6490,8 @@
     "note": "",
     "links": []
    },
-   "summary": "A heavy smoker stopped without aids or intent after an insular stroke, replicating Naqvi.",
-   "caveat": "",
+   "summary": "A 58-year-old woman who had smoked a pack a day for 40 years had an insular stroke and simply never smoked again, without aids or any wish to stop; five months on her daughter said it was as if she had forgotten she used to smoke.",
+   "caveat": "A stroke is a strong reason to quit, and hospital admission enforces the first weeks of abstinence; nicotine use wasn't checked biochemically.",
    "tags": [
     "insula",
     "lesion",
@@ -6183,7 +6501,7 @@
    "same_patient_as": null,
    "found_via": "PubMed",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: Europe PMC record matched",
+   "verified": "2026-11-22: full text read (Full text supplied by Brendan)",
    "era": {
     "label": "known",
     "note": "Reported after the insula-smoking link was published (Naqvi 2007): a replication of an effect already known.",
@@ -6191,13 +6509,110 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Unrecorded",
-    "date": null,
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Reported after Naqvi 2007 showed insula damage disrupts smoking; the authors cite it. The stroke was not chosen, so the case is a replication with an insula-only lesion."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Forty years of heavy smoking; stopped at the stroke without intent or aids, still abstinent at five months. Self-report and daughter's account, no cotinine; the stroke and admission as a reason to quit not discussed."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Two-page case report (J Neuroimaging), read from Brendan's saved page."
+   },
+   "timeline": [
+    {
+     "patient": "58-year-old woman",
+     "age": 58,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -40,
+       "unit": "years",
+       "precision": "approx",
+       "label": "A pack of cigarettes a day for 40 years"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Sudden confusion and word-finding difficulty: new insular ischaemic stroke on CT (MRI not possible); no medications in the previous three months"
+      },
+      {
+       "kind": "first_change",
+       "t": 0,
+       "unit": "days",
+       "precision": "at least",
+       "label": "Never resumed smoking after discharge; no cessation aids, no intention to stop",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 5,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Five months after discharge: still not smoking; neurologically intact apart from mild expressive aphasia; her daughter: 'it was as if she forgot that she used to smoke'",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Lesion",
+    "side": "Unstated",
+    "regions": [
+     "Insula"
+    ],
+    "specific": "Insular ischaemic stroke on CT, insula only according to the authors; side not stated in the text (mild expressive aphasia afterwards); right internal carotid stenosis of 50–69%",
+    "aetiology": "Ischaemic stroke",
+    "imaging": "CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "baseline_years": 40.0,
+    "follow_up_days": 152.188,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -17129,7 +17544,7 @@
   {
    "id": "rosenblat-2013",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1a"
@@ -17168,7 +17583,7 @@
    },
    "trigger": {
     "category": "Seizures",
-    "specific": "Accidental hypoglycaemic seizure (type 1 diabetes)",
+    "specific": "Accidental hypoglycaemic seizure after insulin for hyperglycaemia (type 1 diabetes)",
     "intent": "Injury or illness"
    },
    "outcome": {
@@ -17182,8 +17597,8 @@
     "note": "",
     "links": []
    },
-   "summary": "Depression that 15 ECT treatments barely touched resolved completely after one accidental hypoglycaemic seizure.",
-   "caveat": "Delayed ECT response cannot be excluded.",
+   "summary": "A 74-year-old woman with long-standing, medication-refractory depression had barely improved after 15 ECT treatments when insulin for a high sugar left her hypoglycaemic with a vigorous tonic-clonic seizure; she woke saying the cloud had lifted, and a month later was still back to her old self.",
+   "caveat": "Her 15th ECT was given that same morning, and a late cumulative response to the course would look the same.",
    "tags": [
     "depression",
     "ect-refractory",
@@ -17193,7 +17608,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC",
    "date_added": "2026-11-09",
-   "verified": "2026-11-09: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-22: full text read (Full text supplied by Brendan)",
    "era": {
     "label": "known",
     "note": "Seizure as antidepressant is the ECT principle; striking here because ECT had failed.",
@@ -17201,13 +17616,123 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-09",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Seizures as antidepressants are the ECT principle; the surprise is that one hypoglycaemic seizure worked where 15 ECT seizures hadn't."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Long-standing refractory depression through 15 ECT; complete resolution within hours of a vigorous hypoglycaemic seizure, holding a month. No scale; the 15th ECT was given the same morning and a delayed cumulative ECT response is not discussed."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Two-page letter (J ECT), read from Brendan's PDF."
+   },
+   "timeline": [
+    {
+     "patient": "74-year-old woman",
+     "age": 74,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Long-standing major depression refractory to several medicines; type 1 diabetes"
+      },
+      {
+       "kind": "assessment",
+       "t": -2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Admitted with suicidal ideation (thinking of stopping food, fluids and insulin) and biological symptoms; no psychotic features"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -2,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Fifteen bifrontotemporal ECT treatments three times a week over two months: minor improvement; seizures 19–21 s with poor EEG morphology and little motor activity; no psychotropics during the course",
+       "to": 0
+      },
+      {
+       "kind": "cointervention",
+       "t": -5,
+       "unit": "hours",
+       "precision": "approx",
+       "label": "Morning of the 15th ECT: glucose 27.7 mmol/L after a late snack; 24 units of insulin, then the ECT an hour later"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "hours",
+       "precision": "exact",
+       "label": "Afternoon hypoglycaemia (glucose 1.1 mmol/L) with a 23-second vigorous tonic-clonic seizure; intravenous dextrose"
+      },
+      {
+       "kind": "best_response",
+       "t": 6,
+       "unit": "hours",
+       "precision": "approx",
+       "label": "Woke the same day oriented, giving an excellent history, with complete resolution of her depression: 'the cloud has been lifted'",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 1,
+       "unit": "months",
+       "precision": "exact",
+       "label": "Mood good, normal energy, concentration and sleep, no guilt or suicidal ideation, 'back to her old self'",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 0.25,
+    "latency_band": "Under a day",
+    "baseline_years": 1.0,
+    "follow_up_days": 30.438,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -19734,8 +20259,8 @@
   {
    "id": "spiers-2016",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1b"
    ],
@@ -19767,8 +20292,8 @@
     "categories": [
      "Psychotic"
     ],
-    "specific": "Organic (secondary) psychosis",
-    "chronic": null,
+    "specific": "Psychosis secondary to traumatic brain injury, relapsing over years",
+    "chronic": true,
     "treatment_resistant": null
    },
    "trigger": {
@@ -19777,7 +20302,7 @@
     "intent": "Injury or illness"
    },
    "outcome": {
-    "resolution": "Partial",
+    "resolution": "Temporary",
     "time_to_resolution": null,
     "follow_up": null,
     "reversal": "None reported"
@@ -19787,8 +20312,8 @@
     "note": "",
     "links": []
    },
-   "summary": "An organic psychosis improved after a spontaneous seizure (Australian and New Zealand report).",
-   "caveat": "Letter without an abstract; the underlying cause and its course need the full text.",
+   "summary": "A 32-year-old man with years of psychosis after a traumatic brain injury had his first tonic-clonic seizure on the ward; within a day he was sociable, speaking normally and free of hallucinations, though symptoms crept back, less severe, a few days later.",
+   "caveat": "Clonazepam was started at the seizure, and his perplexity and inappropriate laughter could be catatonic features that respond to a benzodiazepine.",
    "tags": [
     "australia",
     "psychosis",
@@ -19798,7 +20323,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, year-sliced reload)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-22: full text read (Full text supplied by Brendan)",
    "era": {
     "label": "known",
     "note": "Seizures relieving psychosis is the principle of convulsive therapy (Meduna, 1934).",
@@ -19806,13 +20331,122 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "That a seizure can relieve psychosis is the principle of convulsive therapy (Meduna, 1934); the authors note ECT has not been reported in psychosis after brain injury."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Years of post-traumatic psychosis with relapses; dramatic improvement right after a first seizure, partly back within days. No scale; clonazepam and levetiracetam were started at the seizure and amisulpride was being titrated, neither addressed."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "U",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "One-page letter (ANZJP), read from Brendan's saved page."
+   },
+   "timeline": [
+    {
+     "patient": "32-year-old man",
+     "age": 32,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -2,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Psychosis (irritability, aggression, hallucinations, paranoia) two years after a traumatic brain injury in a car crash in his 20s; good responses to treatment but repeated relapses with non-adherence; lost his job, moved home, isolated, alcohol dependence"
+      },
+      {
+       "kind": "assessment",
+       "t": -2,
+       "unit": "weeks",
+       "precision": "at least",
+       "label": "Admitted from the outreach team: thin, dishevelled, perplexed, smiling and laughing inappropriately, slurred speech, referential ideas and multimodal hallucinations, passive suicidal ideation; MRI unchanged (punctate frontal and parietal lesions)"
+      },
+      {
+       "kind": "cointervention",
+       "t": -1,
+       "unit": "weeks",
+       "precision": "at least",
+       "label": "Amisulpride titrated with gradual improvement, though still isolating; fluoxetine for comorbid depression"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "First tonic-clonic seizure, during a family meeting on the ward"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Clonazepam and levetiracetam started"
+      },
+      {
+       "kind": "best_response",
+       "t": 1,
+       "unit": "days",
+       "precision": "at most",
+       "label": "On the medical ward: dramatically better, sociable and interactive, speaking normally, no perceptual disturbance",
+       "state": "Remitted"
+      },
+      {
+       "kind": "relapse",
+       "t": 3,
+       "unit": "days",
+       "precision": "approx",
+       "label": "The former symptoms came back a few days later, less severe; discharged soon after with follow-up",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 1,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 2.0,
+    "durability": "Lost",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -23141,91 +23775,6 @@
    }
   },
   {
-   "id": "choo-2024",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "phase1c"
-   ],
-   "citation": {
-    "authors": "Choo K, Wan HL, Chandwani N",
-    "title": "Potential role of metformin cessation in bipolar mania relapse, with subsequent resolution upon re-initiation: A case report.",
-    "journal": "Bipolar Disord",
-    "year": 2024,
-    "volume": "26",
-    "issue": "5",
-    "pages": "496-499"
-   },
-   "ids": {
-    "doi": "10.1111/bdi.13437",
-    "pmid": "38656477",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": "https://pubmed.ncbi.nlm.nih.gov/38656477/",
-    "doi": "https://doi.org/10.1111/bdi.13437",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1111%2Fbdi.13437"
-   },
-   "access": "Paywalled",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Mood"
-    ],
-    "specific": "Bipolar disorder, manic relapse",
-    "chronic": null,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Medication for another condition",
-    "specific": "Metformin (indication not given in the title)",
-    "intent": "Treatment for another condition"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "Natural off-on"
-   },
-   "downstream": {
-    "level": 1,
-    "note": "",
-    "links": []
-   },
-   "summary": "Mania relapsed after metformin was stopped and resolved when it was restarted.",
-   "caveat": "Title-level appraisal (no abstract); concurrent psychiatric treatment and the metformin indication need the full text.",
-   "tags": [
-    "bipolar",
-    "insulin-resistance",
-    "mania",
-    "metformin",
-    "reversal"
-   ],
-   "same_patient_as": null,
-   "found_via": "Europe PMC (v1.2 broad query, first pass)",
-   "date_added": "2026-11-10",
-   "verified": "2026-11-10: title-level appraisal; identifiers from Europe PMC",
-   "era": {
-    "label": "emerging",
-    "note": "Fits proposals linking insulin resistance to treatment-resistant bipolar disorder (Calkin and colleagues).",
-    "basis": "judged"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Title",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
-   }
-  },
-  {
    "id": "basheikh-2017",
    "record_type": "case",
    "status": "Included",
@@ -23887,7 +24436,7 @@
   {
    "id": "zuschlag-2016",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1c"
@@ -23920,9 +24469,9 @@
     "categories": [
      "Psychotic"
     ],
-    "specific": "Schizoaffective disorder with severe psychotic symptoms",
+    "specific": "Schizoaffective disorder, bipolar type, with nearly three months of refractory psychosis",
     "chronic": true,
-    "treatment_resistant": null
+    "treatment_resistant": true
    },
    "trigger": {
     "category": "Fever / infection",
@@ -23930,7 +24479,7 @@
     "intent": "Injury or illness"
    },
    "outcome": {
-    "resolution": "Complete",
+    "resolution": "Partial",
     "time_to_resolution": null,
     "follow_up": null,
     "reversal": "None reported"
@@ -23940,8 +24489,8 @@
     "note": "",
     "links": []
    },
-   "summary": "A woman with schizoaffective disorder and severe psychosis had a striking remission of psychotic symptoms after a bacteraemia with high fever.",
-   "caveat": "Duration of remission and concurrent medication changes need the full text; the report is framed as a revival of pyrotherapy.",
+   "summary": "A 43-year-old woman with schizoaffective disorder, psychotic and agitated through nearly three months of admission and only partly helped by clozapine, developed streptococcal bacteraemia with high fever; for the 23 days she was in the general hospital, off her antipsychotics, she had no psychotic symptoms at all, and most of the gain held after she returned to psychiatry.",
+   "caveat": "Depot haloperidol given every two weeks was still active through the 'off' period, and clozapine had already started to help.",
    "tags": [
     "bacteraemia",
     "fever",
@@ -23952,7 +24501,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC (v1.2 broad query, re-ranked tail v1)",
    "date_added": "2026-11-10",
-   "verified": "2026-11-10: abstract-level appraisal; identifiers from Europe PMC",
+   "verified": "2026-11-22: full text read (Full text supplied by Brendan)",
    "era": {
     "label": "emerging",
     "note": "Fever-linked remission of psychosis has a long anecdotal history (Wagner-Jauregg, in library) but no modern controlled test.",
@@ -23960,13 +24509,147 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-10",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Three months of refractory psychosis in long-standing schizoaffective disorder; psychosis absent through a febrile bacteraemia with antipsychotics held, partly back afterwards. No scale; clozapine had begun to help, and depot haloperidol was still active through the 'off' period; neither separated."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Six-page clinical case discussion (J Psychiatr Pract), read from Brendan's PDF."
+   },
+   "timeline": [
+    {
+     "patient": "43-year-old woman",
+     "age": 43,
+     "sex": "F",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -1,
+       "unit": "years",
+       "precision": "at least",
+       "label": "Schizoaffective disorder, bipolar type, with many past admissions; living in residential care"
+      },
+      {
+       "kind": "assessment",
+       "t": -3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Admitted with suicidal ideation and worsening psychosis: paranoia, agitation, disorganisation, threats"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -3,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Nearly three months of refractory psychosis: haloperidol decanoate, quetiapine, divalproex and benzodiazepines titrated; frequent as-needed haloperidol, chlorpromazine, lorazepam and diphenhydramine",
+       "to": -1
+      },
+      {
+       "kind": "cointervention",
+       "t": -3,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Clozapine started and titrated, some improvement; at transfer on clozapine 300 mg a day, haloperidol decanoate 200 mg every two weeks, divalproex 750 mg twice daily",
+       "state": "Partial"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Fever to 39.3 °C, tachycardia to 160, sore throat; alpha-haemolytic streptococci in one of two blood cultures; transferred to the general hospital"
+      },
+      {
+       "kind": "cointervention",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Clozapine, haloperidol decanoate and benztropine held (22 days off antipsychotics, though the depot was still on board); divalproex continued; 14 days of intravenous antibiotics"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "days",
+       "precision": "at most",
+       "label": "From early in the medical stay: calm, cooperative, pleasant; no hallucinations, delusions or paranoia, linear thinking, no mood symptoms; constricted affect",
+       "state": "Remitted"
+      },
+      {
+       "kind": "best_response",
+       "t": 23,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Whole 23-day stay without psychosis; three doses of lorazepam, no as-needed antipsychotic",
+       "state": "Remitted"
+      },
+      {
+       "kind": "cointervention",
+       "t": 23,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Back on the psychiatric unit: clozapine restarted, divalproex continued; depot not restarted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 100,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Eleven more weeks inpatient: most psychotic symptoms still much better, but some bizarre behaviour (talking on a dead phone) and mood lability returned; discharged to the state hospital on clozapine 150 mg and divalproex 750 mg twice daily, lower than before",
+       "state": "Partial"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 2,
+    "latency_band": "1-13 days",
+    "latency_bound": "at most",
+    "baseline_years": 1.0,
+    "follow_up_days": 100,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -30253,8 +30936,8 @@
   {
    "id": "feldinger-2013",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "A",
    "collections": [
     "phase1e"
    ],
@@ -30286,28 +30969,28 @@
     "categories": [
      "Mood"
     ],
-    "specific": "New depression with cognitive decline in an 88-year-old",
+    "specific": "Depression with cognitive decline (Mini-Mental State 21) in an 88-year-old with Parkinson's disease, through four antidepressants",
     "chronic": null,
-    "treatment_resistant": null
+    "treatment_resistant": true
    },
    "trigger": {
     "category": "Medication for another condition",
-    "specific": "Short courses of enoxaparin (indexing lists a fall and hip fracture)",
+    "specific": "Enoxaparin given after hip surgery and again for a deep vein thrombosis",
     "intent": "Treatment for another condition"
    },
    "outcome": {
     "resolution": "Partial",
     "time_to_resolution": null,
     "follow_up": null,
-    "reversal": "None reported"
+    "reversal": "On-off rechallenge"
    },
    "downstream": {
     "level": 1,
     "note": "",
     "links": []
    },
-   "summary": "An 88-year-old man with new depression and cognitive decline improved after short courses of enoxaparin; the title reports the improvement recurring and consistent, so the full text may show repeated on-off courses.",
-   "caveat": "Delirium after a hip fracture can look like depression with cognitive decline and clear as the patient recovers.",
+   "summary": "An 88-year-old man with depression and cognitive decline that four antidepressants hadn't touched got routine enoxaparin after hip surgery: within five days his mood lifted and his Mini-Mental State rose from 21 to 24. Three days after it stopped he slid to 15 with delusions and hallucinations, and two days after it was restarted for a clot he was back to 24 and not depressed.",
+   "caveat": "Fluctuating cognition with hallucinations in Parkinson's disease suggests Lewy body dementia or delirium, where large swings happen on their own.",
    "tags": [
     "anticoagulant",
     "cognition",
@@ -30319,7 +31002,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-22: full text read (Full text supplied by Brendan)",
    "era": {
     "label": "emerging",
     "note": "Three separate reports (2002, 2013, 2018) of depression lifting on heparins given for clotting; no trial found so far.",
@@ -30327,13 +31010,209 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 1,
+     "timing": 1,
+     "reversal": 2,
+     "confounders": 0,
+     "note": "Months of depression and cognitive decline through four antidepressants; Mini-Mental State 21 → 24 on enoxaparin, 15 three days to a week after stopping, 24 two days after restarting: an on-off-on sequence timed in days. Depression itself was not rated; confounders not addressed: mirtazapine stopped before surgery, olanzapine stopped at the second response, a hip fracture and surgery."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
+    "note": "One-page letter (J Am Geriatr Soc), read from Brendan's saved page."
+   },
+   "timeline": [
+    {
+     "patient": "88-year-old man",
+     "age": 88,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -6,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Gradual cognitive decline and depressed mood developing over a short period; no psychiatric history; Parkinson's disease diagnosed the year before (carbidopa-levodopa)"
+      },
+      {
+       "kind": "assessment",
+       "t": -4,
+       "unit": "months",
+       "precision": "approx",
+       "label": "May 2012: Mini-Mental State 21; probable vascular dementia with a depressive state; CT and bloods normal",
+       "scores": [
+        {
+         "scale": "MMSE",
+         "value": 21
+        }
+       ]
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -4,
+       "unit": "months",
+       "precision": "approx",
+       "label": "Mirtazapine, sertraline, trazodone and maprotiline in turn: neither mood nor cognition improved",
+       "to": 0
+      },
+      {
+       "kind": "cointervention",
+       "t": -2,
+       "unit": "days",
+       "precision": "exact",
+       "label": "September 2012: fall and left femoral fracture, nailed two days later; mirtazapine stopped before surgery"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Enoxaparin 40 mg twice daily by injection after surgery, routine thromboprophylaxis"
+      },
+      {
+       "kind": "first_change",
+       "t": 5,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Home visit: remarkable improvement in mood and cognition; concentrating well, playing backgammon; Mini-Mental State 24",
+       "state": "Partial",
+       "scores": [
+        {
+         "scale": "MMSE",
+         "value": 24
+        }
+       ]
+      },
+      {
+       "kind": "assessment",
+       "t": 12,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Improvement maintained",
+       "state": "Partial"
+      },
+      {
+       "kind": "exposure_stop",
+       "t": 26,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Enoxaparin stopped"
+      },
+      {
+       "kind": "relapse",
+       "t": 29,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Three days later: depressed again, unable to concentrate, cognition falling fast",
+       "state": "Worse"
+      },
+      {
+       "kind": "assessment",
+       "t": 36,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Mini-Mental State 15 with delusions and hallucinations; olanzapine 5 mg added without effect; unchanged at three visits in November and early December",
+       "state": "Worse",
+       "scores": [
+        {
+         "scale": "MMSE",
+         "value": 15
+        }
+       ]
+      },
+      {
+       "kind": "exposure_restart",
+       "t": 99,
+       "unit": "days",
+       "precision": "approx",
+       "label": "18 December 2012: deep vein thrombosis; enoxaparin 40 mg twice daily restarted"
+      },
+      {
+       "kind": "best_response",
+       "t": 101,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Two days later: not depressed, playing backgammon again, Mini-Mental State 24; olanzapine stopped",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "MMSE",
+         "value": 24
+        }
+       ]
+      },
+      {
+       "kind": "assessment",
+       "t": 115,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Improvement holding; enoxaparin raised to 100 mg a day for the clot, with further cognitive gains",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 145,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Still better a month later",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 5,
+    "latency_band": "1-13 days",
+    "baseline_years": 0.5,
+    "follow_up_days": 145,
+    "durability": "Lost, then regained",
+    "timeline_reversal": "On-off rechallenge",
+    "measures": [
+     {
+      "scale": "MMSE",
+      "before": 21,
+      "after": 15,
+      "change_pct": -28.6
+     }
+    ],
+    "attribution_score": 5,
+    "attribution_grade": "A",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "A"
    }
   },
   {
@@ -30425,8 +31304,8 @@
   {
    "id": "nguyen-2021",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1e"
    ],
@@ -30459,9 +31338,9 @@
      "Psychotic",
      "Mood"
     ],
-    "specific": "Schizoaffective disorder, bipolar type",
-    "chronic": null,
-    "treatment_resistant": null
+    "specific": "Schizoaffective disorder, bipolar type, for 40 years; four manic episodes in the year before",
+    "chronic": true,
+    "treatment_resistant": true
    },
    "trigger": {
     "category": "Fever / infection",
@@ -30479,8 +31358,8 @@
     "note": "",
     "links": []
    },
-   "summary": "A 56-year-old man with schizoaffective disorder, partway through a switch to clozapine, developed presumed pneumosepsis; his symptoms remitted and he stayed well afterwards on a simpler regimen without clozapine.",
-   "caveat": "Infection raises clozapine levels (as in Grootendorst-van Mil 2018), so a brief clozapine surge may have done the work.",
+   "summary": "A 56-year-old man with 40 years of schizoaffective disorder and four manic episodes in a year had just started responding to clozapine when presumed pneumosepsis put him in intensive care; he came out of it with mood and psychosis in remission, and stayed well six weeks later with clozapine stopped.",
+   "caveat": "Clozapine had already stabilised his mood in the two to three weeks before the sepsis, so the illness may simply have arrived as he was responding.",
    "tags": [
     "clozapine",
     "intercurrent-illness",
@@ -30491,7 +31370,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_title_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-22: full text read (Full text supplied by Brendan)",
    "era": {
     "label": "emerging",
     "note": "",
@@ -30499,13 +31378,137 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Forty years of schizoaffective disorder with four manic episodes in the preceding year; remission at the end of a septic illness, holding six weeks off clozapine. Self-rated scales only after, none before; clozapine had already stabilised his mood two to three weeks before the sepsis, and the paper does not separate the two."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y"
+     ]
+    },
+    "note": "Three-page 'clinical curiosity' with a life chart, read from Brendan's saved page."
+   },
+   "timeline": [
+    {
+     "patient": "56-year-old man",
+     "age": 56,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -40,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Schizoaffective disorder, bipolar type, from 16: manic episodes with grandiose delusions and hallucinations; many antipsychotics, valproate and benzodiazepines over the years"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -1,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Mania poorly controlled: two admissions and two further manic episodes in the year",
+       "to": 0
+      },
+      {
+       "kind": "assessment",
+       "t": -6,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Admitted after a manic episode; irritability, insomnia, sexual preoccupation, dysphoria and disorganised thinking despite optimised divalproex, paliperidone, quetiapine, zuclopenthixol, oxazepam and zopiclone"
+      },
+      {
+       "kind": "cointervention",
+       "t": -3,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Clozapine started with cross-titration; within two to three weeks at 100 mg his mood stabilised and he could go on walks off the unit",
+       "state": "Partial"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "17 June 2020: high fever, respiratory distress, hypotension; intensive care for 5 days with intubation and vasopressors; presumed pneumosepsis treated with broad-spectrum antibiotics; febrile on 7 of 11 days"
+      },
+      {
+       "kind": "cointervention",
+       "t": 3,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Psychotropics held, then resumed after extubation; clozapine restarted at 25 mg and stopped during a myocarditis work-up (ruled out)"
+      },
+      {
+       "kind": "best_response",
+       "t": 11,
+       "unit": "days",
+       "precision": "approx",
+       "label": "Remarkable improvement in mood and psychotic symptoms by the end of the medical stay, holding on return to psychiatry: pleasant, no sexual preoccupation or irritability, sleeping well, better energy and concentration, normal speech, no disorganisation or grandiosity; clozapine not restarted",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 6,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "30 July 2020: still well on divalproex 2,000 mg, quetiapine 600 mg and zopiclone; Beck Depression Inventory 4, Altman Self-Rating Mania Scale 4, GAD-7 0",
+       "state": "Remitted",
+       "scores": [
+        {
+         "scale": "ASRM",
+         "value": 4
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 11,
+    "latency_band": "1-13 days",
+    "baseline_years": 40.0,
+    "follow_up_days": 42,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 8,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -31974,94 +32977,10 @@
    }
   },
   {
-   "id": "puente-1985",
-   "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
-   "collections": [
-    "phase1e"
-   ],
-   "citation": {
-    "authors": "Puente AE",
-    "title": "Research participation as therapeutic for schizophrenia: A case study.",
-    "journal": "Psychosocial Rehabilitation Journal",
-    "year": 1985,
-    "volume": "8",
-    "issue": "4",
-    "pages": "95-98"
-   },
-   "ids": {
-    "doi": "10.1037/h0099655",
-    "pmid": "",
-    "pmcid": ""
-   },
-   "links": {
-    "full_text": null,
-    "abstract": null,
-    "doi": "https://doi.org/10.1037/h0099655",
-    "alternates": [],
-    "ckn": "https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1037%2Fh0099655"
-   },
-   "access": "Paywalled",
-   "design": "Case report",
-   "n_patients": 1,
-   "syndrome": {
-    "categories": [
-     "Psychotic"
-    ],
-    "specific": "Schizophrenia",
-    "chronic": null,
-    "treatment_resistant": null
-   },
-   "trigger": {
-    "category": "Life event",
-    "specific": "Helping design and run a study of 200 psychiatric patients' understanding of their illness",
-    "intent": "Life event"
-   },
-   "outcome": {
-    "resolution": "Complete",
-    "time_to_resolution": null,
-    "follow_up": null,
-    "reversal": "None reported"
-   },
-   "downstream": {
-    "level": 0,
-    "note": "",
-    "links": []
-   },
-   "summary": "A 26-year-old man with schizophrenia improved, then remitted, after taking an active part in designing and running a study of how 200 psychiatric patients understood their illness, an idea that came from him.",
-   "caveat": "He was presumably on antipsychotics throughout, and remission at 26 is common enough to be coincidence.",
-   "tags": [
-    "meaning",
-    "psychological-trigger",
-    "research-participation",
-    "schizophrenia"
-   ],
-   "same_patient_as": null,
-   "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
-   "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record)",
-   "era": {
-    "label": "novel",
-    "note": "",
-    "basis": "from downstream level"
-   },
-   "flags": [],
-   "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
-   }
-  },
-  {
    "id": "godschalx-dekker-2014",
    "record_type": "case",
-   "status": "Provisional",
-   "tier": "C",
+   "status": "Included",
+   "tier": "B",
    "collections": [
     "phase1e"
    ],
@@ -32093,8 +33012,8 @@
     "categories": [
      "Psychotic"
     ],
-    "specific": "Persistent nocturnal visual hallucinations in a parkinsonian disorder despite reduced dopaminergic drugs, quetiapine, clozapine and rivastigmine",
-    "chronic": null,
+    "specific": "Parkinson's disease psychosis for three years (hallucinations, delusion of infidelity) through quetiapine, clozapine and rivastigmine",
+    "chronic": true,
     "treatment_resistant": true
    },
    "trigger": {
@@ -32113,7 +33032,7 @@
     "note": "",
     "links": []
    },
-   "summary": "A man's nocturnal visual hallucinations, which had outlasted quetiapine, clozapine and rivastigmine, stopped almost at once when mirtazapine was given for sleep, and his parkinsonism eased as well.",
+   "summary": "A 67-year-old man with 18 years of Parkinson's disease had been hallucinating for three years, latterly armed strangers day and night, despite quetiapine, clozapine and rivastigmine; two days after mirtazapine replaced clonazepam to help him sleep the hallucinations had almost stopped, and within two weeks his parkinsonism was better too.",
    "caveat": "Better sleep alone can quiet nocturnal hallucinations in parkinsonian disorders.",
    "tags": [
     "hallucinations",
@@ -32124,7 +33043,7 @@
    "same_patient_as": null,
    "found_via": "PsycInfo via CKN (EBSCO) (PSY_tiab_v1)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (PsycInfo record); identifiers from PubMed",
+   "verified": "2026-11-22: full text read (Full text supplied by Brendan)",
    "era": {
     "label": "emerging",
     "note": "Three separate reports (2007, 2013, 2014) of hallucinations stopping on mirtazapine given for depression or sleep; no trial found so far.",
@@ -32132,13 +33051,107 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "borderline",
+      "note": "Mianserin, a related 5-HT2 antagonist, had been reported to relieve Parkinson's psychosis (Ikeguchi 1995), and one case of mirtazapine easing hallucinations (Nagata) preceded this; the authors cite both."
+     },
+     "secondary": {
+      "result": "pass",
+      "note": ""
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Three years of worsening hallucinations through quetiapine, clozapine and rivastigmine; near-gone two days after mirtazapine. No scale; clonazepam stopped at the same time and sleep restored, not separated; follow-up beyond two weeks not reported."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
+    "note": "Three-page case report (Pharmacopsychiatry), read from Brendan's PDF."
+   },
+   "timeline": [
+    {
+     "patient": "67-year-old man",
+     "age": 67,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -3,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Visual hallucinations from year 15 of an 18-year Parkinson's disease, mostly at night; after two years continuous: armed strangers and wild animals, a man hunting him with a gun, accusing his wife of adultery; severe sleep deprivation"
+      },
+      {
+       "kind": "treatment_failed",
+       "t": -6,
+       "unit": "months",
+       "precision": "at least",
+       "label": "Parkinson medication cut to levodopa-benserazide 125 mg; quetiapine 400 mg, then clozapine 75 mg, each with rivastigmine 14.1 mg: no change; clonazepam 1 mg at night; Hoehn and Yahr stage 4, wheelchair, sleeping all afternoon. Lewy body dementia, delirium and depression judged unlikely"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Mirtazapine 30 mg at night in place of clonazepam, to restore sleep"
+      },
+      {
+       "kind": "first_change",
+       "t": 2,
+       "unit": "days",
+       "precision": "exact",
+       "label": "Sleeping through the night with only sporadic hallucinations",
+       "state": "Partial"
+      },
+      {
+       "kind": "best_response",
+       "t": 2,
+       "unit": "weeks",
+       "precision": "approx",
+       "label": "Psychotic symptoms gone and, without any change in dopaminergic drugs, parkinsonism better than two years before: less rigid, walking unaided, speech understandable, needing less help with self-care",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "derived": {
+    "latency_days": 2,
+    "latency_band": "1-13 days",
+    "baseline_years": 3.0,
+    "durability": "Unknown",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {
@@ -33380,7 +34393,7 @@
   {
    "id": "taira-2003",
    "record_type": "case",
-   "status": "Provisional",
+   "status": "Included",
    "tier": "B",
    "collections": [
     "phase1f"
@@ -33433,7 +34446,7 @@
     "note": "",
     "links": []
    },
-   "summary": "A 19-year-old man with Lesch-Nyhan syndrome given bilateral pallidal stimulation to control dystonia stopped self-mutilating, an effect the surgeons had not sought; the first report of its kind.",
+   "summary": "A 19-year-old man with Lesch-Nyhan syndrome, who had bitten his lips and fingers since he was four, had pallidal stimulators implanted for his dystonia; by three months the self-biting had stopped completely, and two years later it had not come back.",
    "caveat": "The authors allow that the self-injury may have been partly secondary to the dystonia, which the stimulation treated.",
    "tags": [
     "deep-brain-stimulation",
@@ -33445,7 +34458,7 @@
    "same_patient_as": null,
    "found_via": "Europe PMC citations (CIT_EPMC_v2)",
    "date_added": "2026-11-14",
-   "verified": "2026-11-14: abstract-level appraisal (Europe PMC record); identifiers from PubMed",
+   "verified": "2026-11-22: full text read (Full text supplied by Brendan)",
    "era": {
     "label": "known",
     "note": "Pallidal DBS in Lesch-Nyhan syndrome was repeated in later reports and series (Deon 2012; clinical outcome series 2021) and gathered in a 2023 systematic review; self-injury is now one of its aims.",
@@ -33453,13 +34466,113 @@
    },
    "flags": [],
    "appraisal": {
-    "basis": "Abstract",
-    "date": "2026-11-14",
-    "by": null,
-    "unexpectedness": null,
-    "attribution": null,
-    "jbi": null,
-    "note": ""
+    "basis": "Full text",
+    "date": "2026-11-22",
+    "by": "Claude",
+    "unexpectedness": {
+     "target": {
+      "result": "pass",
+      "note": ""
+     },
+     "era": {
+      "result": "pass",
+      "note": ""
+     },
+     "secondary": {
+      "result": "borderline",
+      "note": "The authors allow that the self-injury may have been partly secondary to the dystonia the stimulation treated."
+     },
+     "base_rate": {
+      "result": "pass",
+      "note": ""
+     }
+    },
+    "attribution": {
+     "baseline": 1,
+     "measure": 0,
+     "timing": 1,
+     "reversal": 0,
+     "confounders": 0,
+     "note": "Fifteen years of self-biting; gone by three months after pallidal stimulation and still gone at two years. Parents' report, no behaviour scale; no stimulation-off test (refused); the parallel relief of dystonia is not separated."
+    },
+    "jbi": {
+     "checklist": "Case report",
+     "answers": [
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "Y",
+      "N",
+      "Y"
+     ]
+    },
+    "note": "Three-page case report (J Neurosurg), read from Brendan's PDF."
+   },
+   "timeline": [
+    {
+     "patient": "19-year-old man",
+     "age": 19,
+     "sex": "M",
+     "events": [
+      {
+       "kind": "onset",
+       "t": -15,
+       "unit": "years",
+       "precision": "approx",
+       "label": "Lesch-Nyhan syndrome (diagnosed at 3); self-biting from 4, scarring lips, fingertips and forearms, deformed finger joints; wore gloves and arm protectors; dystonia from 10, wheelchair-bound from 15; levodopa tried without benefit"
+      },
+      {
+       "kind": "exposure_start",
+       "t": 0,
+       "unit": "days",
+       "precision": "exact",
+       "label": "April 2000: bilateral globus pallidus internus stimulation for dystonia (145 Hz, 60 µs, 3.5 V); dystonia and opisthotonos eased over several days"
+      },
+      {
+       "kind": "first_change",
+       "t": 3,
+       "unit": "months",
+       "precision": "at most",
+       "label": "Three-month review: parents report the self-mutilation gone completely; gloves and arm protectors no longer needed (onset gradual, the authors note)",
+       "state": "Remitted"
+      },
+      {
+       "kind": "follow_up",
+       "t": 24,
+       "unit": "months",
+       "precision": "exact",
+       "label": "No self-mutilation; dystonia movement score 33% better, disability 50% better; the family refused a stimulation-off test for fear of recurrence",
+       "state": "Remitted"
+      }
+     ]
+    }
+   ],
+   "lesion": {
+    "kind": "Stimulation target",
+    "side": "Bilateral",
+    "regions": [
+     "Globus pallidus"
+    ],
+    "specific": "Globus pallidus internus, 2 mm anterior to the midcommissural point, 4 mm below the intercommissural line, 20 mm from the midline; quadripolar leads under general anaesthesia without microelectrode recording; distal two contacts cathodal",
+    "aetiology": "Not applicable",
+    "imaging": "MRI and CT",
+    "mappable": "Figure"
+   },
+   "derived": {
+    "latency_days": 91.312,
+    "latency_band": "Over 3 months",
+    "latency_bound": "at most",
+    "baseline_years": 15.0,
+    "follow_up_days": 730.5,
+    "durability": "Sustained",
+    "timeline_reversal": "None reported",
+    "attribution_score": 2,
+    "attribution_grade": "C",
+    "jbi_score": 7,
+    "jbi_of": 8,
+    "rule_tier": "B"
    }
   },
   {

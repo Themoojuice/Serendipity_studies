@@ -22,16 +22,16 @@
    "ScienceDirect via CKN only (not found in ClinicalKey)"
   ],
   "klok-2025": [
-   "phone",
-   "BMJ Journals via CKN (bot check in Claude's browser)"
+   "done",
+   "read 22 Nov from Brendan's copy, coded"
   ],
   "taira-2003": [
-   "phone",
-   "Journal of Neurosurgery via CKN (thejns.org blocks Claude's browser)"
+   "done",
+   "read 22 Nov from Brendan's copy, coded"
   ],
   "de-santis-1997": [
-   "phone",
-   "Wiley via CKN only"
+   "done",
+   "read 22 Nov from Brendan's copy, excluded"
   ],
   "diamond-2006": [
    "phone",
@@ -59,19 +59,19 @@
   ],
   "mackillop-2026": [
    "none",
-   "not held by CKN (article in press)"
+   "not held by CKN; Brendan's saved page (22 Nov) showed the abstract only"
   ],
   "etches-2009": [
    "none",
    "not held by CKN"
   ],
   "rosenblat-2013": [
-   "none",
-   "not held by CKN"
+   "done",
+   "read 22 Nov from Brendan's copy, coded"
   ],
   "zuschlag-2016": [
-   "none",
-   "not held by CKN"
+   "done",
+   "read 22 Nov from Brendan's copy, coded"
   ],
   "abe-2016": [
    "none",
@@ -134,8 +134,8 @@
    "SAGE via CKN only"
   ],
   "spiers-2016": [
-   "phone",
-   "SAGE via CKN only"
+   "done",
+   "read 22 Nov from Brendan's copy, coded"
   ],
   "mantione-2010": [
    "none",
@@ -162,8 +162,8 @@
    "not held by CKN"
   ],
   "godschalx-dekker-2014": [
-   "none",
-   "not held by CKN"
+   "done",
+   "read 22 Nov from Brendan's copy, coded"
   ],
   "curran-1995": [
    "none",
@@ -178,8 +178,8 @@
    "not held by CKN"
   ],
   "puente-1985": [
-   "none",
-   "not held by CKN"
+   "done",
+   "read 22 Nov from Brendan's copy, excluded"
   ],
   "doi:10.1016/j.pediatrneurol.2005.10.023": [
    "phone",
@@ -234,24 +234,24 @@
    "read 22 Nov (EBSCO), excluded"
   ],
   "choo-2024": [
-   "phone",
-   "Wiley via CKN only"
+   "done",
+   "read 22 Nov from Brendan's copy, excluded"
   ],
   "feldinger-2013": [
-   "phone",
-   "Wiley via CKN only"
+   "done",
+   "read 22 Nov from Brendan's copy, coded"
   ],
   "gong-2024": [
    "phone",
    "Wiley via CKN only"
   ],
   "hefzy-2011": [
-   "phone",
-   "Wiley via CKN only"
+   "done",
+   "read 22 Nov from Brendan's copy, coded"
   ],
   "petersen-1956": [
    "none",
-   "not held by CKN"
+   "not held by CKN; Brendan's saved page (22 Nov) showed only the first page: psychosis began about five months before the embolism, at a tuberculosis sanatorium"
   ],
   "barbieri-2005": [
    "none",
@@ -320,6 +320,18 @@
   "rid:R065747": [
    "none",
    "not held by CKN (doi 10.1016/s0033-3182(91)72051-3; not in ClinicalKey)"
+  ],
+  "nguyen-2021": [
+   "done",
+   "read 22 Nov from Brendan's copy, coded"
+  ],
+  "leonard-rapoport-1987": [
+   "done",
+   "read 22 Nov from Brendan's copy, coded"
+  ],
+  "yeung-2020": [
+   "done",
+   "read 22 Nov from Brendan's copy, coded"
   ]
  }
 }

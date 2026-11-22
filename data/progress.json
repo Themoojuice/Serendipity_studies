@@ -1,27 +1,27 @@
 {
  "updated": "2026-11-22",
- "cases": 208,
- "coded": 123,
+ "cases": 205,
+ "coded": 134,
  "coded_basis": {
-  "Full text": 123
+  "Full text": 134
  },
  "tiers": {
-  "A": 36,
-  "B": 92,
-  "C": 80
+  "A": 34,
+  "B": 97,
+  "C": 74
  },
  "queue": [
   {
    "route": "Easy wins: free, one click in a normal browser",
-   "n": 10
+   "n": 7
   },
   {
    "route": "Psychiatry Online (tick the terms box)",
-   "n": 3
+   "n": 2
   },
   {
    "route": "CKN, Ovid / Lippincott (works once signed in)",
-   "n": 17
+   "n": 15
   },
   {
    "route": "CKN, Springer (works once signed in)",
@@ -33,34 +33,34 @@
   },
   {
    "route": "Download the PDF yourself (Wiley)",
-   "n": 7
-  },
-  {
-   "route": "Download the PDF yourself (SAGE / Mary Ann Liebert)",
-   "n": 5
-  },
-  {
-   "route": "Download the PDF yourself (Taylor & Francis / Informa)",
    "n": 3
   },
   {
+   "route": "Download the PDF yourself (SAGE / Mary Ann Liebert)",
+   "n": 4
+  },
+  {
+   "route": "Download the PDF yourself (Taylor & Francis / Informa)",
+   "n": 2
+  },
+  {
    "route": "Thieme / Karger / AMA / AAN / BMJ / JNS / other",
-   "n": 12
+   "n": 11
   },
   {
    "route": "Other publishers",
-   "n": 2
+   "n": 1
   },
   {
    "route": "No DOI: older or non-indexed papers, library or interlibrary loan",
    "n": 19
   }
  ],
- "queue_total": 85,
+ "queue_total": 71,
  "unsure_rows": 30,
  "readings": {
-  "total": 123,
-  "draft": 123,
+  "total": 134,
+  "draft": 134,
   "reviewed": 0
  },
  "calibration": [

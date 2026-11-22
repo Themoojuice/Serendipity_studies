@@ -8589,6 +8589,842 @@
      "why": "Subthalamic stimulation for Parkinson's disease ending lifelong OCD"
     }
    ]
+  },
+  {
+   "case_id": "spiers-2016",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Years of relapsing illness; abrupt change at the seizure."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Admitted at a low point, already improving slowly on amisulpride."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Post-traumatic psychosis with lesions on MRI."
+    },
+    "cointervention": {
+     "rating": "Likely",
+     "why": "Clonazepam started at the seizure; his perplexity, inappropriate smiling and laughter and slurred speech could be catatonic, which benzodiazepines relieve within hours."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He became more sociable, not less."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "An unplanned seizure."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Brief letter; no scale, no dates."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "A seizure followed within a day by dramatic improvement, fading in days, fits the convulsive-therapy story; but clonazepam started at the same moment, and the picture before it (perplexity, inappropriate laughter, slurred speech) is one benzodiazepines can lift quickly.",
+   "hypotheses": [
+    {
+     "claim": "A single generalised seizure acted like one ECT treatment.",
+     "chain": "Spontaneous tonic-clonic seizure → postictal network reset and monoamine release → transient relief of psychosis → fades without further seizures",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate, transient, as after a single ECT.",
+     "against": "One seizure rarely helps psychosis for long; the benzodiazepine arrived at the same time.",
+     "confidence": "Low",
+     "uncertainty_driver": "Clonazepam and the seizure are inseparable here.",
+     "test": "None from one case."
+    },
+    {
+     "claim": "Clonazepam relieved unrecognised catatonic features.",
+     "chain": "Clonazepam at the seizure → GABA-A potentiation → perplexity, odd affect and withdrawal lift → looks like remission of psychosis",
+     "mechanisms": [
+      "GABA"
+     ],
+     "latency_fit": "Fits",
+     "for": "Perplexity, inappropriate smiling and slurred speech before; sociable within a day.",
+     "against": "No catatonia rating; hallucinations also stopped.",
+     "confidence": "Low",
+     "uncertainty_driver": "No catatonia scale.",
+     "test": "A Bush-Francis rating before and after a lorazepam challenge."
+    }
+   ],
+   "related": [
+    {
+     "id": "rosenblat-2013",
+     "why": "Refractory depression gone after one accidental hypoglycaemic seizure"
+    },
+    {
+     "id": "silverstone-1991",
+     "why": "Spontaneous seizures after failed ECT"
+    }
+   ]
+  },
+  {
+   "case_id": "nguyen-2021",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Manic episodes end; this one was weeks old."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Admitted at the height of a manic episode."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-standing, well-characterised schizoaffective disorder."
+    },
+    "cointervention": {
+     "rating": "Likely",
+     "why": "Clozapine had stabilised his mood two to three weeks before the fever; antibiotics, intensive care and held medication followed."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Energy and concentration improved."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "An illness, not a treatment."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Six weeks of follow-up; scales only after."
+    }
+   },
+   "verdict": "Doesn't beat the null",
+   "verdict_note": "The case sits in the fever-and-psychosis tradition, but the clozapine response that began weeks before the sepsis is the simpler account, and six weeks of follow-up can't show the remission outlasted it.",
+   "hypotheses": [
+    {
+     "claim": "Fever and the inflammatory response damped mania and psychosis, as in pyrotherapy.",
+     "chain": "Sepsis → high fever and cytokine surge → heat-shock and immune signalling in the brain → mood and psychosis settle",
+     "mechanisms": [
+      "Fever and heat",
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Fits",
+     "for": "Remission at the end of a week of fever; the authors cite Zuschlag 2016.",
+     "against": "Already stabilising on clozapine; short follow-up.",
+     "confidence": "Low",
+     "uncertainty_driver": "Clozapine response and sepsis overlap.",
+     "test": "None from one case."
+    },
+    {
+     "claim": "Clozapine was the cause, and the sepsis coincided with its onset of action.",
+     "chain": "Clozapine titration → antimanic and antipsychotic effect over weeks → remission",
+     "mechanisms": [
+      "Drug level change"
+     ],
+     "latency_fit": "Fits",
+     "for": "Mood stabilised on clozapine before the fever.",
+     "against": "He stayed well after clozapine was stopped.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "No ratings across the transition.",
+     "test": "None from one case."
+    }
+   ],
+   "related": [
+    {
+     "id": "zuschlag-2016",
+     "why": "Schizoaffective psychosis remitting during bacteraemia with fever"
+    },
+    {
+     "id": "grootendorst-van-mil-2018",
+     "why": "Clozapine-resistant psychosis responding during pneumonia"
+    }
+   ]
+  },
+  {
+   "case_id": "feldinger-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Fluctuating cognition with hallucinations in Parkinson's disease is the signature of Lewy body dementia; swings of this size happen without a trigger."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "The sequence went both ways twice."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Delirium after a hip fracture, or Lewy body dementia, rather than depression with vascular dementia."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Mirtazapine stopped before surgery; olanzapine stopped at the second response; surgery and a clot."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "He became more engaged, not less."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Single author, unblinded ratings."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "A single observer; Mini-Mental State only, no depression scale."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Two transitions in each direction, each within days of starting or stopping enoxaparin, with a Mini-Mental State at each turn: the timing is the case's strength. A fluctuating dementia could produce swings by chance, but matching two of them to the drug is a stretch.",
+   "hypotheses": [
+    {
+     "claim": "Anticoagulation improved cerebral microcirculation in a prothrombotic, small-vessel brain.",
+     "chain": "Enoxaparin → less microthrombosis and better small-vessel perfusion → cortical and subcortical function recovers → cognition and mood lift; stopping lets microthrombosis resume",
+     "mechanisms": [
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Fits",
+     "for": "Fast on and off; probable vascular dementia; the author cites thrombin markers predicting decline.",
+     "against": "Days-scale reversal is fast for a microvascular account.",
+     "confidence": "Low",
+     "uncertainty_driver": "No imaging or coagulation markers tracked.",
+     "test": "Repeat the on-off with perfusion imaging and thrombin markers."
+    },
+    {
+     "claim": "Heparin's anti-inflammatory and anti-amyloid actions in the brain.",
+     "chain": "Low-molecular-weight heparin → reduced complement and microglial activation, less amyloid toxicity (animal data) → better cognition and mood",
+     "mechanisms": [
+      "Inflammation and cytokines",
+      "Microglia and glia"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Animal models cited by the author.",
+     "against": "Enoxaparin barely crosses the blood-brain barrier.",
+     "confidence": "Low",
+     "uncertainty_driver": "Mechanism only in mice.",
+     "test": "None from one case."
+    }
+   ],
+   "related": [
+    {
+     "id": "maluquer-2002",
+     "why": "Depression lifting on heparin given for a clot"
+    }
+   ]
+  },
+  {
+   "case_id": "hefzy-2011",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Forty years of daily smoking."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Not a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Plain tobacco dependence."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "A stroke and admission prompt quitting, though she says she had no intention to."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Confusion and aphasia early on; by five months she was neurologically intact apart from mild aphasia."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "An injury, not a treatment."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Self-report and a relative's account at one time point; no biochemical check."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "An insula-only stroke ending 40 years of smoking without intent or effort is what Naqvi's lesion series predicts, and the effortlessness ('as if she forgot') is the specific feature. Five months and no cotinine keep it modest.",
+   "hypotheses": [
+    {
+     "claim": "Insula damage removed the interoceptive drive that makes craving felt.",
+     "chain": "Insular infarct → loss of interoceptive representation of smoking's bodily effects → urges no longer arise → effortless abstinence",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Interoceptive and visceral input"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate, effortless; insula-only lesion; replicates Naqvi 2007.",
+     "against": "Side and exact extent unknown without MRI.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "CT only; insular subregion unknown.",
+     "test": "Lesion-network mapping of insular strokes with and without smoking cessation."
+    }
+   ],
+   "related": [
+    {
+     "id": "naqvi-2007",
+     "why": "Insula damage disrupting smoking addiction (the founding series)"
+    },
+    {
+     "id": "yousefzadeh-fard-2013",
+     "why": "Insular strokes ending opium dependence"
+    }
+   ]
+  },
+  {
+   "case_id": "taira-2003",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Self-injury is lifelong in Lesch-Nyhan syndrome."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Fifteen years, not a peak."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Genetically defined syndrome."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "The dystonia improved at the same time, and the self-biting may partly follow it."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "No sedation or apathy reported."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Self-injury in Lesch-Nyhan syndrome is compulsive and not under voluntary control."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Parents' report, no behaviour scale."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Fifteen years of compulsive self-biting gone and staying gone for two years after pallidal stimulation: in a syndrome where self-injury is relentless, that is hard to explain by chance. Later series confirmed it, so the case now reads as founding rather than lucky.",
+   "hypotheses": [
+    {
+     "claim": "Pallidal stimulation interrupted the basal ganglia loop driving compulsive self-injury, as it does levodopa-induced dyskinesia.",
+     "chain": "Dopamine-denervated, supersensitive striatum → abnormal pallidal output → compulsive self-biting; GPi stimulation regularises pallidal output → self-injury stops",
+     "mechanisms": [
+      "Stimulation of a circuit",
+      "Dopamine"
+     ],
+     "latency_fit": "Fits",
+     "for": "Gradual onset like dystonia response; durable; reproduced in later series.",
+     "against": "No stimulation-off test.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "One patient, parent-reported outcome.",
+     "test": "A blinded stimulation-off period with a self-injury count."
+    },
+    {
+     "claim": "Relief of dystonia removed the motor driver of self-injury.",
+     "chain": "Less dystonia and opisthotonos → fewer involuntary mouth and hand movements that end in biting → self-injury falls",
+     "mechanisms": [
+      "Stimulation of a circuit"
+     ],
+     "latency_fit": "Fits",
+     "for": "Both improved together.",
+     "against": "Dystonia improved only by a third while self-biting stopped entirely.",
+     "confidence": "Low",
+     "uncertainty_driver": "Not separable here.",
+     "test": "Compare dystonia and self-injury trajectories across patients."
+    }
+   ],
+   "related": [
+    {
+     "id": "deon-2012",
+     "why": "Pallidal stimulation in Lesch-Nyhan syndrome"
+    },
+    {
+     "id": "pozzi-2014",
+     "why": "Intrathecal baclofen improving Lesch-Nyhan behaviour"
+    }
+   ]
+  },
+  {
+   "case_id": "leonard-rapoport-1987",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Nine years; relief only during each trip."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Repeated, not a single swing."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Classic counting, washing and tapping OCD with insight."
+    },
+    "cointervention": {
+     "rating": "Unlikely",
+     "why": "Nothing else co-varied with each trip."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Intoxication can crowd out obsessions, though cannabis, sedatives, opioids and alcohol, equally intoxicating, did nothing to them."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Self-administered, self-reported."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Retrospective account by an adolescent, no observer."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Relief on every psychedelic trip and not with any other intoxicant he used, while stimulants made it worse: a within-person drug comparison that points at serotonin rather than intoxication. It foreshadows the psilocybin OCD reports, but it is still one teenager's account.",
+   "hypotheses": [
+    {
+     "claim": "Psychedelic 5-HT2A agonism transiently disrupted the obsessional loop.",
+     "chain": "LSD, psilocin, mescaline → 5-HT2A agonism in cortex → loosened top-down priors and orbitofrontal-striatal coupling → obsessions dissolve for the drug's duration",
+     "mechanisms": [
+      "Serotonin"
+     ],
+     "latency_fit": "Fits",
+     "for": "Only serotonergic psychedelics helped; stimulants worsened; depressants did nothing.",
+     "against": "Self-report only.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Doses, timing and ratings unknown.",
+     "test": "Psilocybin versus active placebo in OCD with Y-BOCS at 4–24 hours."
+    }
+   ],
+   "related": [
+    {
+     "id": "moreno-delgado-1997",
+     "why": "Obsessions gone during psilocybin intoxication, relief persisting with repeated use"
+    },
+    {
+     "id": "lugo-radillo-2021",
+     "why": "Lasting OCD improvement with chronic psilocybin use"
+    }
+   ]
+  },
+  {
+   "case_id": "godschalx-dekker-2014",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Three years, worsening."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Treated at his worst, after months of severe sleep deprivation."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Typical Parkinson's psychosis; Lewy body dementia and delirium considered and judged unlikely."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Clonazepam stopped at the same time, and the hallucinations were mostly nocturnal, so restored sleep alone could quiet them."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "More alert and mobile, not sedated."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "Given for sleep."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No hallucination scale; follow-up of two weeks."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Three years of hallucinations through clozapine, then near-silence within two days of mirtazapine given for sleep. It fits what 5-HT2A blockade later proved in Parkinson's psychosis (pimavanserin), with restored sleep as the competing route.",
+   "hypotheses": [
+    {
+     "claim": "5-HT2A and 5-HT2C blockade relieved the serotonergic driver of Parkinson's psychosis.",
+     "chain": "Mirtazapine → 5-HT2A antagonism in ventral visual pathways (where 5-HT2A binding is raised in hallucinating patients) and 5-HT2C antagonism → fewer visual hallucinations; frontal dopamine release eases parkinsonism",
+     "mechanisms": [
+      "Serotonin"
+     ],
+     "latency_fit": "Fits",
+     "for": "Fast, after failure of dopamine-blocking drugs; the mechanism pimavanserin later confirmed.",
+     "against": "Clozapine is also a strong 5-HT2A antagonist and failed, though at 75 mg.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "One patient, no rechallenge.",
+     "test": "Withdraw and restart mirtazapine with hallucination diaries."
+    },
+    {
+     "claim": "Restored sleep ended nocturnal hallucinations born of sleep deprivation.",
+     "chain": "Mirtazapine's antihistamine and 5-HT2A effects → consolidated sleep → fewer REM-intrusion hallucinations at night → daytime psychosis eases",
+     "mechanisms": [
+      "Sleep and circadian rhythm"
+     ],
+     "latency_fit": "Fits",
+     "for": "Mostly nocturnal hallucinations; sleeping through on day 2.",
+     "against": "Clonazepam had not restored sleep or helped.",
+     "confidence": "Low",
+     "uncertainty_driver": "No sleep measures.",
+     "test": "Polysomnography before and after."
+    }
+   ],
+   "related": [
+    {
+     "id": "nagata-2013",
+     "why": "Mirtazapine easing auditory hallucinations in Parkinson's disease"
+    },
+    {
+     "id": "koethe-2007",
+     "why": "Mirtazapine ending hallucinations"
+    }
+   ]
+  },
+  {
+   "case_id": "yeung-2020",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "A first late-life episode can remit, but not usually on the day of an injury."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "The suicide attempt marks the peak."
+    },
+    "misdiagnosis": {
+     "rating": "Possible",
+     "why": "Late-onset psychosis with memory lapses and white matter changes may be organic."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Intensive care and rehabilitation; the drugs came only after remission."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Motivated and engaged, Montreal Cognitive Assessment 25."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "An injury."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No ratings before; family's retrospective account."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Complete and immediate remission of a year-long psychotic depression on waking from a head injury, holding a year with only the drugs started afterwards. The amnesia for the illness is the intriguing part: forgetting may be part of the mechanism, as in other cases where a brain insult erased an addiction or obsession along with its memories.",
+   "hypotheses": [
+    {
+     "claim": "The injury disrupted fronto-parietal networks sustaining the depressive and delusional state, like an ECT course or leucotomy.",
+     "chain": "Subdural compression and possible diffuse axonal injury in left fronto-parietal regions → disconnection of networks maintaining negative and delusional beliefs → immediate remission",
+     "mechanisms": [
+      "Lesion disconnection",
+      "Network reset (seizure, coma, anaesthesia)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Immediate, durable; the authors raise both.",
+     "against": "No visible parenchymal lesion; no diffusion imaging.",
+     "confidence": "Low",
+     "uncertainty_driver": "No diffusion or functional imaging.",
+     "test": "Diffusion imaging in comparable cases."
+    },
+    {
+     "claim": "Retrograde amnesia erased the beliefs and their emotional load.",
+     "chain": "Amnesia for the illness → delusional and depressive content no longer retrieved or rehearsed → symptoms do not re-form",
+     "mechanisms": [
+      "Neuroplasticity"
+     ],
+     "latency_fit": "Fits",
+     "for": "He cannot recall the symptoms at all.",
+     "against": "Amnesia covered only five days of events.",
+     "confidence": "Low",
+     "uncertainty_driver": "Memory testing limited.",
+     "test": "Map autobiographical memory for illness content in such cases."
+    },
+    {
+     "claim": "Surviving the attempt ended the episode psychologically.",
+     "chain": "Near-death → catharsis and changed meaning → depression lifts",
+     "mechanisms": [
+      "Meaning and life reorganisation"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Seen in other failed-attempt remissions.",
+     "against": "He doesn't remember the attempt or the illness.",
+     "confidence": "Low",
+     "uncertainty_driver": "No psychological assessment.",
+     "test": "None from one case."
+    }
+   ],
+   "related": [
+    {
+     "id": "brieler-2014",
+     "why": "Schizophrenia's positive symptoms resolving after a head injury"
+    },
+    {
+     "id": "gota-garces-2017",
+     "why": "OCD remitting after a failed suicide attempt"
+    }
+   ]
+  },
+  {
+   "case_id": "zuschlag-2016",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Three months refractory, then abrupt change."
+    },
+    "regression": {
+     "rating": "Possible",
+     "why": "Admitted at a peak, though months had passed."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Long-standing schizoaffective disorder."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Clozapine had begun to help; depot haloperidol still active through the 'off' period."
+    },
+    "nonspecific": {
+     "rating": "Possible",
+     "why": "Sickness behaviour and constricted affect during sepsis could quiet agitation."
+    },
+    "expectancy": {
+     "rating": "Unlikely",
+     "why": "An illness."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No ratings; an enthusiastic pyrotherapy framing."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Psychosis absent for three weeks of febrile illness with antipsychotics held is striking, and some symptoms came back afterwards. But clozapine had started working, the depot was still on board, and sickness itself quiets agitation, so the report can't separate fever from the rest.",
+   "hypotheses": [
+    {
+     "claim": "Fever and the acute-phase response suppressed psychosis, as pyrotherapy claimed.",
+     "chain": "Bacteraemia → high fever, cytokines and heat-shock proteins → altered dopaminergic and glutamatergic signalling → psychosis remits during the fever, partly returns after",
+     "mechanisms": [
+      "Fever and heat",
+      "Inflammation and cytokines"
+     ],
+     "latency_fit": "Fits",
+     "for": "Remission during fever, partial return after; long tradition.",
+     "against": "Clozapine and depot confound; no ratings.",
+     "confidence": "Low",
+     "uncertainty_driver": "Confounded by clozapine and the depot.",
+     "test": "Controlled whole-body hyperthermia in refractory psychosis."
+    },
+    {
+     "claim": "Sickness behaviour damped agitation and disorganisation.",
+     "chain": "Systemic infection → sickness behaviour (withdrawal, low energy) → less agitation and fewer observed psychotic behaviours",
+     "mechanisms": [
+      "Sickness behaviour"
+     ],
+     "latency_fit": "Fits",
+     "for": "Constricted affect; quiet during illness.",
+     "against": "She denied hallucinations and was linear and organised, not merely quiet.",
+     "confidence": "Low",
+     "uncertainty_driver": "No ratings.",
+     "test": "None from one case."
+    }
+   ],
+   "related": [
+    {
+     "id": "nguyen-2021",
+     "why": "Schizoaffective disorder remitting after pneumosepsis"
+    },
+    {
+     "id": "wagner-jauregg-1883",
+     "why": "Psychosis clearing after erysipelas"
+    }
+   ]
+  },
+  {
+   "case_id": "rosenblat-2013",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Unlikely",
+     "why": "Long-standing, refractory."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Two months of steady illness through ECT."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Melancholic depression."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "The 15th ECT that morning; a cumulative response can come late, though rarely the same afternoon and completely."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Alert and oriented, giving an excellent history."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "Unblinded, after a dramatic event."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "No scale; one month of follow-up."
+    }
+   },
+   "verdict": "Beats the null",
+   "verdict_note": "Complete resolution within hours of a vigorous spontaneous seizure, after 14 poor-quality ECT seizures had done little: the timing and the contrast in seizure quality are the case. A late ECT response on the same day is the competing account, and a month is short.",
+   "hypotheses": [
+    {
+     "claim": "A full generalised seizure succeeded where weak ECT seizures had not.",
+     "chain": "Hypoglycaemic tonic-clonic seizure with full motor and EEG expression → stronger generalised discharge and postictal suppression than the brief, low-amplitude ECT seizures → antidepressant network reset",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Same-day remission; the authors contrast seizure quality.",
+     "against": "ECT the same morning.",
+     "confidence": "Moderate",
+     "uncertainty_driver": "Seizure quality difference documented only qualitatively.",
+     "test": "Relate ECT seizure quality (EEG postictal suppression) to response in refractory cases."
+    },
+    {
+     "claim": "Neuroglycopenia itself acted like insulin coma therapy.",
+     "chain": "Profound hypoglycaemia → metabolic stress and neuroendocrine surge → antidepressant effect",
+     "mechanisms": [
+      "Metabolic state (ketosis, insulin, glucose)"
+     ],
+     "latency_fit": "Can't judge",
+     "for": "Insulin coma was once used for depression with weight loss.",
+     "against": "Hypoglycaemia was brief.",
+     "confidence": "Low",
+     "uncertainty_driver": "One episode.",
+     "test": "None from one case."
+    }
+   ],
+   "related": [
+    {
+     "id": "kim-2016",
+     "why": "Refractory depression remitting after an accidental seizure during rTMS"
+    },
+    {
+     "id": "cotlar-1957",
+     "why": "Hypoglycaemic coma ending narcotic addiction"
+    }
+   ]
+  },
+  {
+   "case_id": "klok-2025",
+   "status": "draft",
+   "written_by": "Claude",
+   "date": "2026-11-22",
+   "based_on": "Full text",
+   "nulls": {
+    "natural_history": {
+     "rating": "Possible",
+     "why": "Functional paralysis can remit, more often at 13 months than at 8 years."
+    },
+    "regression": {
+     "rating": "Unlikely",
+     "why": "Both were stable for long periods."
+    },
+    "misdiagnosis": {
+     "rating": "Unlikely",
+     "why": "Positive signs, normal imaging."
+    },
+    "cointervention": {
+     "rating": "Possible",
+     "why": "Intensive care, haloperidol and a year of rehabilitation in the first; a psychiatric admission after the overdose in the second."
+    },
+    "nonspecific": {
+     "rating": "Unlikely",
+     "why": "Function improved."
+    },
+    "expectancy": {
+     "rating": "Possible",
+     "why": "In functional disorder, the meaning of waking in intensive care may be the mechanism itself, which the authors say."
+    },
+    "reporting": {
+     "rating": "Possible",
+     "why": "Narrative accounts without scales."
+    }
+   },
+   "verdict": "Undecided",
+   "verdict_note": "Two long-standing functional paralyses recovered on waking from comas nobody planned, and stayed recovered. In functional disorder the line between a brain 'reset' and a change of expectation is thin, and these accounts can't draw it.",
+   "hypotheses": [
+    {
+     "claim": "Coma and emergence reset the attentional and predictive processing that maintains functional paralysis.",
+     "chain": "Deep sedation or toxic coma → suspension of self-monitoring and abnormal motor predictions → on waking, movement is generated without the habitual attentional block → recovery",
+     "mechanisms": [
+      "Network reset (seizure, coma, anaesthesia)"
+     ],
+     "latency_fit": "Fits",
+     "for": "Recovery noticed during emergence in both; durable.",
+     "against": "Therapeutic sedation helps only some patients.",
+     "confidence": "Low",
+     "uncertainty_driver": "Two narrative cases.",
+     "test": "Planned brief anaesthesia with standardised motor assessment before and after."
+    },
+    {
+     "claim": "A near-death event changed expectation and gave a route to recovery.",
+     "chain": "Waking in intensive care after a catastrophe → strong expectation of change and a socially sanctioned reason to recover → functional symptoms resolve",
+     "mechanisms": [
+      "Suggestion and belief update"
+     ],
+     "latency_fit": "Fits",
+     "for": "The authors raise it; the woman was surprised, which argues against conscious expectation.",
+     "against": "The man's feet moved before he understood what was happening.",
+     "confidence": "Low",
+     "uncertainty_driver": "Not separable from the reset account.",
+     "test": "None from two cases."
+    }
+   ],
+   "related": [
+    {
+     "id": "corte-2025",
+     "why": "Functional seizures gone after ECT given for depression"
+    },
+    {
+     "id": "van-den-hoven-2021",
+     "why": "Propofol given for another reason"
+    }
+   ]
   }
  ]
 }
