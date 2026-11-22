@@ -41,6 +41,13 @@ ROUTES = [
     ("Thieme / Karger / AMA / AAN / BMJ / JNS / other", ("10.1055/", "10.1159/", "10.1001/", "10.1212/", "10.1136/", "10.3171/", "10.1161/", "10.1053/", "10.1227/", "10.2190/", "10.1192/", "10.1017/")),
 ]
 
+import json as _json
+_accp = Path("queries/fulltext_access_v1.json")
+ACCESS = _json.loads(_accp.read_text())["results"] if _accp.exists() else {}
+def access_note(r):
+    a = ACCESS.get(r["id"])
+    return f"CKN check 22 Nov: {a[1]}" if a else ""
+
 def line(r):
     c = r["citation"]
     au = (c.get("authors") or [c.get("first_author", "")])[0] if isinstance(c.get("authors"), list) else c.get("first_author", "")
@@ -49,7 +56,8 @@ def line(r):
     if r["links"].get("ckn"): links.append(f"[CKN]({r['links']['ckn']})")
     if doi: links.append(f"[DOI](https://doi.org/{doi})")
     if r["links"].get("abstract"): links.append(f"[PubMed]({r['links']['abstract']})")
-    return f"- **{r['id']}** · tier {r['tier']} · {c['title']} ({c.get('journal', '')} {c.get('year', '')}) · " + " · ".join(links)
+    acc = access_note(r)
+    return f"- **{r['id']}** · tier {r['tier']} · {c['title']} ({c.get('journal', '')} {c.get('year', '')}) · " + " · ".join(links) + (f" · *{acc}*" if acc else "")
 
 out = ["# Full texts still needed", "",
        f"{len(todo)} of {len(cases)} cases aren't fully coded yet because their full text couldn't be reached from this session "
@@ -111,6 +119,7 @@ def hl(r, extra=""):
     if r["links"].get("ckn"): links.append(f'<a href="{_h.escape(r["links"]["ckn"])}">CKN</a>')
     if doi: links.append(f'<a href="https://doi.org/{_h.escape(doi)}">DOI</a>')
     if r["links"].get("abstract"): links.append(f'<a href="{_h.escape(r["links"]["abstract"])}">PubMed</a>')
+    extra = " · ".join(x for x in (extra, access_note(r)) if x)
     ex = f'<div class="ex">{_h.escape(extra)}</div>' if extra else ""
     return (f'<li><div class="t">{_h.escape(c["title"])}</div><div class="m">{_h.escape(c.get("journal",""))} {c.get("year","")} · tier {r["tier"]} · <code>{r["id"]}</code></div>'
             f'{ex}<div class="l">{" · ".join(links)}</div></li>')

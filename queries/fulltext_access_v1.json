@@ -1,0 +1,116 @@
+{
+ "meta": {
+  "date": "2026-11-22",
+  "method": "EBSCO Full Text Finder (CKN's link resolver) per DOI in the laptop browser, while Brendan was signed in; LibKey and the Springer link checked for two"
+ },
+ "results": {
+  "kalenderoglu-2011": [
+   "ebsco",
+   "EBSCO full text"
+  ],
+  "mallet-2002": [
+   "ebsco",
+   "EBSCO full text (Lancet 1991-2006)"
+  ],
+  "graham-2018": [
+   "ebsco",
+   "EBSCO full text, also SAGE"
+  ],
+  "nagata-2013": [
+   "clinicalkey",
+   "ClinicalKey and ScienceDirect"
+  ],
+  "klok-2025": [
+   "publisher",
+   "BMJ Journals via CKN"
+  ],
+  "taira-2003": [
+   "publisher",
+   "Journal of Neurosurgery via CKN (thejns.org blocks Claude's browser)"
+  ],
+  "de-santis-1997": [
+   "phone",
+   "Wiley via CKN only"
+  ],
+  "diamond-2006": [
+   "phone",
+   "Wiley via CKN only"
+  ],
+  "ueki-2004": [
+   "phone",
+   "ScienceDirect via CKN only"
+  ],
+  "maluquer-2002": [
+   "phone",
+   "ScienceDirect via CKN only"
+  ],
+  "collyer-2020": [
+   "phone",
+   "open access at ScienceDirect"
+  ],
+  "richards-2024": [
+   "none",
+   "not held by CKN"
+  ],
+  "abdollahifard-2026": [
+   "none",
+   "not held by CKN (Springer offers only the abstract)"
+  ],
+  "mackillop-2026": [
+   "none",
+   "not held by CKN (article in press)"
+  ],
+  "etches-2009": [
+   "none",
+   "not held by CKN"
+  ],
+  "rosenblat-2013": [
+   "none",
+   "not held by CKN"
+  ],
+  "zuschlag-2016": [
+   "none",
+   "not held by CKN"
+  ],
+  "abe-2016": [
+   "none",
+   "not held by CKN"
+  ],
+  "morena-1994": [
+   "none",
+   "not held by CKN"
+  ],
+  "berner-2008": [
+   "none",
+   "not held by CKN"
+  ],
+  "cohen-lipton-1950": [
+   "none",
+   "not held by CKN"
+  ],
+  "guarnieri-2005": [
+   "none",
+   "not held by CKN"
+  ],
+  "levine-2003": [
+   "none",
+   "not held by CKN"
+  ],
+  "benazzi-1993": [
+   "none",
+   "not held by CKN"
+  ],
+  "rizzo-2008": [
+   "none",
+   "not held by CKN"
+  ],
+  "deon-2012": [
+   "none",
+   "not held by CKN"
+  ],
+  "najeeb-2016": [
+   "none",
+   "not held by CKN"
+  ]
+ }
+}
