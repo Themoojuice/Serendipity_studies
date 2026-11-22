@@ -2,7 +2,7 @@
  "meta": {
   "date": "2026-11-22",
   "method": "EBSCO Full Text Finder (CKN's link resolver) per DOI in the laptop browser, while Brendan was signed in; LibKey and the Springer link checked for two; the resolver also takes pmid= for records without a DOI",
-  "note": "Keys are library ids, or doi:<doi> for unsure screening records. 'done' = read and settled; 'phone' = CKN holds it only on a platform that blocks Claude's browser; 'none' = CKN doesn't hold it."
+  "note": "Keys are library ids, or doi:<doi>, pmid:<pmid> or rid:<ledger record id> for unsure screening records. 'done' = read and settled; 'phone' = CKN holds it only on a platform that blocks Claude's browser; 'none' = CKN doesn't hold it."
  },
  "results": {
   "kalenderoglu-2011": [
@@ -288,6 +288,38 @@
   "jansson-1984": [
    "none",
    "not held by CKN"
+  ],
+  "doi:10.1016/j.pain.2007.06.025": [
+   "phone",
+   "ScienceDirect via CKN only (not in ClinicalKey)"
+  ],
+  "doi:10.1016/s0899-9007(02)01045-6": [
+   "none",
+   "not held by CKN"
+  ],
+  "doi:10.1016/s1525-5050(03)00021-0": [
+   "none",
+   "not held by CKN"
+  ],
+  "doi:10.1097/00007611-197506000-00021": [
+   "none",
+   "not held by CKN"
+  ],
+  "doi:10.1016/s1082-7579(98)00003-x": [
+   "none",
+   "not held by CKN"
+  ],
+  "pmid:16547920": [
+   "phone",
+   "Wiley via CKN only"
+  ],
+  "rid:R066578": [
+   "none",
+   "not held by CKN (doi 10.1016/0006-3223(86)90334-3; not in ClinicalKey)"
+  ],
+  "rid:R065747": [
+   "none",
+   "not held by CKN (doi 10.1016/s0033-3182(91)72051-3; not in ClinicalKey)"
   ]
  }
 }
