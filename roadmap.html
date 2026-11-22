@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roadmap: coded and presentation-ready · Serendipity library</title>
+<style>
+:root { --bg:#faf9f5; --card:#fff; --ink:#1f1e1d; --muted:#6b6862; --line:#e6e2d8; --accent:#c96442; --ok:#2f7d4f; --wait:#b7791f; }
+@media (prefers-color-scheme: dark) { :root { --bg:#1f1e1d; --card:#292826; --ink:#f0eee6; --muted:#a8a49b; --line:#3a3835; --accent:#e08a6a; --ok:#5fbf86; --wait:#e0a84a; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width:760px; margin:0 auto; padding:16px 16px 60px; }
+a { color:var(--accent); }
+h1 { font-size:24px; margin:8px 0 4px; }
+h2 { font-size:18px; margin:30px 0 4px; border-top:1px solid var(--line); padding-top:16px; }
+.muted { color:var(--muted); } .small { font-size:14px; }
+.bar { height:10px; background:var(--line); border-radius:5px; overflow:hidden; margin:8px 0 4px; }
+.bar i { display:block; height:100%; background:var(--accent); }
+.big { font-size:30px; font-weight:700; }
+.ask { background:var(--card); border:2px solid var(--accent); border-radius:12px; padding:12px 14px; margin:16px 0; }
+.ask h3 { margin:0 0 6px; font-size:16px; }
+.ask ol { margin:0; padding-left:20px; } .ask li { margin:0 0 6px; }
+.task { display:grid; grid-template-columns:auto 1fr; gap:4px 10px; padding:10px 0; border-bottom:1px solid var(--line); }
+.task:last-child { border-bottom:0; }
+.id { font-weight:700; color:var(--muted); font-variant-numeric:tabular-nums; }
+.t { font-weight:650; } .d { grid-column:2; font-size:14px; color:var(--muted); }
+.chip { display:inline-block; font-size:12px; font-weight:650; padding:1px 8px; border-radius:10px; margin-left:6px; border:1px solid; vertical-align:1px; }
+.chip.done { color:var(--ok); border-color:var(--ok); } .chip.now { color:var(--accent); border-color:var(--accent); }
+.chip.you { color:var(--wait); border-color:var(--wait); } .chip.todo { color:var(--muted); border-color:var(--line); }
+.n { font-variant-numeric:tabular-nums; }
+</style></head><body><main>
+<p class="small"><a href="./">← Back to the library</a></p>
+<h1>Roadmap: every case coded, the site presentation-ready</h1>
+<p class="muted small" id="upd">Loading the live counts…</p>
+
+<div id="overall"></div>
+
+<div class="ask"><h3>What Claude needs from you</h3><ol>
+<li><b>Sign in to CKN on the laptop</b> (and tap Yes once on Psychiatry Online) and say so. Claude then works the sign-in routes one paper at a time while the session lasts, which is about a day.</li>
+<li><b>PDFs from your phone</b>: the Wiley, SAGE, Elsevier and Taylor &amp; Francis papers on the <a href="queue.html">full-text list</a>. Their bot checks block Claude's browser but not yours. Attach them here, ten at a time.</li>
+<li>Later: <b>calibration round 2</b> (about 30 minutes) and <b>a review of Claude's readings</b>, strongest cases first. Both on your phone.</li>
+</ol></div>
+
+<p class="small"><b>Done means:</b> every case coded in the full schema, from the full text wherever it can be had and from the abstract, labelled, where it can't; every case with a reading; the screening rules passing calibration (kappa 0.7 or more); and a site that reads well to someone who has never heard of the project.</p>
+
+<div id="phases"></div>
+
+<script>
+(function () {
+  var TASKS = [
+    { phase: "1 · Code every case", items: [
+      ["1a", "Sweep for free copies", "Claude", "OpenAlex and Crossref for every missing full text and every unsure row: open-access copies, DOIs for the papers listed without one.", function (p) { return p.milestones["1a"] ? "done" : "now"; }],
+      ["1b", "CKN sessions on the laptop", "Claude, while you're signed in", "EBSCO through LibKey, ClinicalKey, Springer, Embase record pages, Psychiatry Online.", function (p) { return "you"; }, function (p) { return routes(p, ["Psychiatry Online", "CKN", "Thieme"]); }],
+      ["1c", "PDFs from your phone", "You download, Claude codes", "Wiley, SAGE, Elsevier and Taylor & Francis papers, through CKN in your own browser.", function (p) { return "you"; }, function (p) { return routes(p, ["Download the PDF yourself"]); }],
+      ["1d", "Settle the unsure pile", "Claude", "Same routes as the cases; each row ends as a case or an exclusion with its reason.", function (p) { return p.unsure_rows ? "todo" : "done"; }, function (p) { return p.unsure_rows + " rows left"; }],
+      ["1e", "Cut-off for the unreachable", "Claude", "Anything still unreachable at the end is coded from its abstract, labelled abstract only, and listed for an upgrade. Nothing stays uncoded.", function (p) { return "todo"; }, function (p) { return routes(p, ["No DOI", "Easy wins"]); }]
+    ]},
+    { phase: "2 · Quality gates", items: [
+      ["2a", "Re-screen the reasoned exclusions", "Claude", "About 480 records excluded at abstract stage with a reason: check each for a second syndrome that improved off-target (the miss calibration found).", function (p) { return p.rescreen.total && p.rescreen.done >= p.rescreen.total ? "done" : "now"; }, function (p) { return p.rescreen.total ? p.rescreen.done + " of " + p.rescreen.total + " checked, " + p.rescreen.flagged + " flagged" : "not started"; }],
+      ["2b", "Calibration round 2", "You, about 30 minutes", "A fresh blind set under the tightened rules, with Claude's calls committed before you start. Target kappa 0.7.", function (p) { return p.milestones["2b"] ? "done" : "todo"; }, function (p) { return p.calibration.map(function (c) { return "round " + c.round + ": " + c.kappa.toFixed(2); }).join(" · "); }],
+      ["2c", "Review Claude's readings", "You", "A phone page like calibration: agree, or query with a note. Tier A first.", function (p) { return p.milestones["2c"] ? "done" : "todo"; }, function (p) { return p.readings.reviewed + " of " + p.readings.total + " reviewed"; }],
+      ["2d", "Final checks", "Claude", "Library audit, every link, every page rendered on a phone-sized screen.", function () { return "todo"; }]
+    ]},
+    { phase: "3 · Presentation (runs alongside phase 1)", items: [
+      ["3a", "A page for every case", "Claude", "One shareable page each: plain summary, timeline, appraisal, the reading (boring explanations first, then mechanisms and the test that would decide), related cases, sources.", function (p) { return p.milestones["3a"] ? "done" : "now"; }],
+      ["3b", "Patterns page", "Claude", "Latency and durability, triggers against syndromes, lesion sites and sides, tiers, how each finding has fared since.", function (p) { return p.milestones["3b"] ? "done" : "todo"; }],
+      ["3c", "Methods page", "Claude", "The rules in plain words, the search flow counted from the ledger, calibration, how many cases probably remain unfound, limitations.", function (p) { return p.milestones["3c"] ? "done" : "todo"; }],
+      ["3d", "Front page, downloads, how to cite", "Claude", "A short narrative intro, the strongest cases first, ways in by syndrome or trigger; CSV and JSON downloads.", function (p) { return p.milestones["3d"] ? "done" : "todo"; }]
+    ]},
+    { phase: "4 · Launch", items: [
+      ["4", "Freeze a version", "Both", "A tagged release, a README for outsiders, and an archived copy with its own DOI if you want one.", function (p) { return p.milestones["4"] ? "done" : "todo"; }]
+    ]}
+  ];
+  var LAB = { done: "done", now: "under way", you: "waiting on you", todo: "to do" };
+  function routes(p, prefixes) {
+    var n = 0; p.queue.forEach(function (q) { if (prefixes.some(function (x) { return q.route.indexOf(x) === 0; })) n += q.n; });
+    return n + " cases";
+  }
+  function esc(s) { var d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
+  fetch("data/progress.json?v=" + Date.now()).then(function (r) { return r.json(); }).then(function (p) {
+    document.getElementById("upd").textContent = "Live counts, updated " + p.updated + " with the last batch.";
+    var pct = Math.round(p.coded / p.cases * 100);
+    document.getElementById("overall").innerHTML = '<div class="big n">' + p.coded + ' of ' + p.cases + '</div>' +
+      '<div class="muted small">cases fully coded (' + pct + '%). ' + p.queue_total + ' wait on a full text; ' + p.unsure_rows + ' unsure screening rows to settle.</div>' +
+      '<div class="bar"><i style="width:' + pct + '%"></i></div>';
+    var html = "";
+    TASKS.forEach(function (ph) {
+      html += "<h2>" + esc(ph.phase) + "</h2>";
+      ph.items.forEach(function (t) {
+        var st = t[4](p), extra = t[5] ? t[5](p) : "";
+        html += '<div class="task"><span class="id">' + t[0] + '</span><span><span class="t">' + esc(t[1]) + '</span>' +
+          '<span class="chip ' + st + '">' + LAB[st] + '</span></span>' +
+          '<span class="d">' + esc(t[3]) + ' <i>' + esc(t[2]) + '.</i>' + (extra ? ' <b class="n">' + esc(extra) + '</b>' : '') + '</span></div>';
+      });
+    });
+    document.getElementById("phases").innerHTML = html;
+  }).catch(function () { document.getElementById("upd").textContent = "Couldn't load the live counts."; });
+})();
+</script>
+</main></body></html>
