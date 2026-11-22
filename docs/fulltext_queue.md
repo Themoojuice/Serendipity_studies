@@ -132,7 +132,7 @@
 - **taylor-1978** · tier C · Alpha-methyldopa in schizophrenia. (J Clin Psychiatry 1978) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/721785/)
 - **vieweg-1985** · tier C · Possible ameliorating effect of captopril treatment and hyperosmolar coma in a patient with psychosis, intermittent hyponatremia, and polydipsia (Psychiatric Hospital 1985) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fwww.embase.com%2Frecords%3Fsubaction%3Dviewrecord%26id%3DL16200416)
 
-## Unsure screening records: full text decides whether they're cases (25)
+## Unsure screening records: full text decides whether they're cases (26)
 
 - **R059395** · Early schizophrenia complicated by rheumatic fever. (Wis Med J 1948) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/18883777/)
 - **R060822** · Von der Besserung eines verbrecherischen Geisteskranken. (Psychologe: Berater für Gesunde und Praktische Lebensgestaltung 1952) · 
@@ -159,4 +159,5 @@
 - **R063797** · Treatment of depression in a former smoker with varenicline? A case report and discussion. (The Journal of Neuropsychiatry and Clinical Neurosciences 2014) · 
 - **R022398** · Dextromethorphan/quinidine leading to remission of 39 years of compulsive behaviour following traumatic brain injury (TBI) (Brain Injury 2016) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.3109%2F02699052.2016.1162060) · [DOI](https://doi.org/10.3109/02699052.2016.1162060) · *Free accepted manuscript in the University of Udine repository (air.uniud.it); Cloudflare check in Claude's browser*
 - **R067963** · Refractory OCD Due to Thalamic Infarct With Response to Dronabinol. (J Neuropsychiatry Clin Neurosci 2017) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.1176%2Fappi.neuropsych.16030053) · [DOI](https://doi.org/10.1176/appi.neuropsych.16030053) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/27539378/) · *Free to read at Psychiatry Online; Cloudflare check in Claude's browser*
+- **R072119** · Healing the hidden wound: How treating post-traumatic stress disorder led to unexpected recovery from alcohol dependence (Indian Journal of Psychiatry 2026) · [CKN](https://go.openathens.net/redirector/ckn.qldhealth.com?url=https%3A%2F%2Fdoi.org%2F10.4103%2Findianjpsychiatry.indianjpsychiatry_59_26) · [DOI](https://doi.org/10.4103/indianjpsychiatry.indianjpsychiatry_59_26)
 

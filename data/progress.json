@@ -57,7 +57,7 @@
   }
  ],
  "queue_total": 97,
- "unsure_rows": 30,
+ "unsure_rows": 31,
  "readings": {
   "total": 115,
   "draft": 115,
@@ -76,15 +76,15 @@
   }
  ],
  "rescreen": {
-  "total": 0,
-  "done": 0,
-  "flagged": 0
+  "total": 480,
+  "done": 270,
+  "flagged": 1
  },
  "milestones": {
   "1a": true,
   "2b": false,
   "2c": false,
-  "3a": false,
+  "3a": true,
   "3b": false,
   "3c": false,
   "3d": false,

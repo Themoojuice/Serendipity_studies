@@ -17,7 +17,7 @@ MILESTONES = {  # id: done?
     "1a": True,   # free-copy sweep (done 2026-11-22) (OpenAlex / Crossref) of the queue and unsure rows
     "2b": False,  # calibration round 2
     "2c": False,  # readings review page
-    "3a": False,  # case pages
+    "3a": True,   # case pages (v1 2026-11-22: #case/<id> on the library page)
     "3b": False,  # patterns page
     "3c": False,  # methods page
     "3d": False,  # front page restyle, downloads, how to cite

@@ -180,6 +180,8 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
   .reading td.rt::before { content: "\00a0\00b7\00a0"; color: var(--muted); font-weight: 400; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+body.single #tiles, body.single .controls, body.single nav.tabs { display:none; }
+.single-back { margin:6px 0 12px; font-size:15px; }
 </style>
 </head>
 <body>
@@ -322,7 +324,7 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
   };
   if (window.matchMedia && window.matchMedia("(max-width: 700px)").matches) { var fb = document.getElementById("filtersBox"); if (fb) fb.removeAttribute("open"); }
   var DATA = null, RECORDS = [], HDATA = null, HYP = {};
-  var state = { q: "", syn: new Set(), trig: new Set(), tags: new Set(), tier: "", era: "", period: "", coded: "", freeOnly: false, showCtx: false, sort: "compelling" };
+  var state = { single: null, q: "", syn: new Set(), trig: new Set(), tags: new Set(), tier: "", era: "", period: "", coded: "", freeOnly: false, showCtx: false, sort: "compelling" };
 
   function $(id) { return document.getElementById(id); }
   function el(tag, attrs, kids) {
@@ -689,6 +691,7 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
     else actions.appendChild(el("span", { class: "doi", text: "No DOI · PMID " + r.ids.pmid }));
     if (r.links.ckn) actions.appendChild(el("a", { class: "btn ckn", href: r.links.ckn, target: "_blank", rel: "noopener", title: "Opens through Queensland Health CKN (OpenAthens login)" }, ["Via CKN ↗"]));
     r.links.alternates.forEach(function (a) { actions.appendChild(el("a", { class: "btn", href: a.url, target: "_blank", rel: "noopener" }, [a.label + " ↗"])); });
+    if (!state.single) actions.appendChild(el("a", { class: "btn", href: "#case/" + r.id, title: "A page for this case alone, to read or share" }, ["Case page"]));
 
     var tags = el("div", { class: "tags" });
     r.tags.forEach(function (t) { tags.appendChild(el("button", { class: "tag", type: "button", "aria-pressed": state.tags.has(t) ? "true" : "false", onclick: function () { toggleTag(t); } }, ["#" + t])); });
@@ -708,7 +711,30 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
     ]);
   }
 
+  function renderSingle() {
+    var r = RECORDS.filter(function (x) { return x.id === state.single; })[0];
+    var list = $("list"); list.innerHTML = "";
+    $("count").textContent = "";
+    var back = el("p", { class: "single-back" }, [el("a", { href: "#library", text: "← All cases" })]);
+    list.appendChild(back);
+    if (!r) { list.appendChild(el("div", { class: "empty", text: "No case with the id " + state.single + ". It may have been excluded or renamed." })); return; }
+    var rk = r._rank; r._rank = null;
+    var c = card(r);
+    r._rank = rk;
+    Array.prototype.forEach.call(c.querySelectorAll("details"), function (d) { d.open = true; });
+    list.appendChild(c);
+    var share = el("button", { class: "btn", type: "button" }, ["Copy link to this case"]);
+    share.onclick = function () {
+      var done = function () { share.textContent = "Link copied"; };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(location.href).then(done, function () { prompt("Copy this link:", location.href); });
+      else prompt("Copy this link:", location.href);
+    };
+    list.appendChild(el("p", {}, [share]));
+    document.title = r.citation.title.replace(/[\[\]]/g, "") + " · Serendipity library";
+  }
+
   function renderList() {
+    if (state.single) return renderSingle();
     var rows = filtered();
     var totalCases = RECORDS.filter(function (r) { return r.record_type === "case"; }).length;
     $("count").textContent = "Showing " + rows.length + " of " + totalCases + " studies" + (state.showCtx ? " plus context records" : "") + (state.sort === "compelling" ? " · most compelling evidence first (rechallenge and strong appraisal at the top)" : "");
@@ -861,6 +887,10 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
 
   function route() {
     var v = (location.hash || "#library").slice(1);
+    var was = state.single;
+    state.single = v.indexOf("case/") === 0 ? decodeURIComponent(v.slice(5)) : null;
+    document.body.classList.toggle("single", !!state.single);
+    if (state.single || was) { if (!state.single) document.title = TITLE0; renderList(); window.scrollTo(0, 0); }
     if (["library", "stats", "data"].indexOf(v) < 0) v = "library";
     ["library", "stats", "data"].forEach(function (k) { $("view-" + k).hidden = k !== v; });
     Array.prototype.forEach.call(document.querySelectorAll("nav.tabs a"), function (a) {
@@ -868,6 +898,7 @@ details.reading { background-image: linear-gradient(90deg, var(--accent-soft), t
     });
   }
 
+  var TITLE0 = document.title;
   function init(data) {
     DATA = data;
     RECORDS = data.records.map(function (r) { r._hay = haystack(r); r._int = interest(r); return r; });

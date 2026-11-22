@@ -1,0 +1,2895 @@
+{
+ "meta": {
+  "set": "rescreen_second_syndrome_v1",
+  "date": "2026-11-22",
+  "rule": "protocol v1.8.6 rule 1: screen every syndrome that changed, not only the headline one",
+  "frame": "current ledger rows excluded at title/abstract stage with a reason code, deduplicated by PMID, DOI or title",
+  "total": 480,
+  "done": 270,
+  "title_only": 210,
+  "flagged": 1,
+  "method": "Abstracts fetched from Europe PMC in the laptop browser (never stored in the repo); scored for two or more syndrome families plus improvement and unexpectedness wording; every record scoring 3 or more read by Claude; records without an abstract in Europe PMC screened by title, pending their PsycInfo or Embase abstracts in a CKN session."
+ },
+ "records": [
+  {
+   "record_id": "R000631",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000640",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000645",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000647",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000667",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000670",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000682",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000687",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000690",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000704",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000731",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000747",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000769",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000783",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R000790",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R001090",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R001107",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R021644",
+   "reason": "E3",
+   "checked": "title",
+   "result": "unsure: second syndrome"
+  },
+  {
+   "record_id": "R021705",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R021813",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R022020",
+   "reason": "E8",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R022234",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R022254",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R022264",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R022287",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R022319",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R022370",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R022383",
+   "reason": "E8",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R022447",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R022473",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R022494",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R022500",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R023567",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R023646",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R023672",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R023903",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R023933",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R023934",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R023938",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R023939",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R023976",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045678",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045679",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045680",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045681",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045684",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045688",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045690",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045692",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045695",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045698",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045700",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045710",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045735",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045740",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045777",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045826",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045884",
+   "reason": "E5",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045885",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045886",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045887",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045888",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045889",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045890",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045891",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045892",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045895",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045896",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045897",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045898",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045899",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045900",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045901",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045902",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045903",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045904",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045905",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045906",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045907",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045908",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045909",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045910",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045911",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045912",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045913",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045914",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045915",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045916",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045917",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045918",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045919",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045920",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045921",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045922",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045923",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045924",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045925",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045926",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045927",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045928",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045929",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045930",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045931",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045932",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045933",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045934",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045935",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R045936",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R046572",
+   "reason": "E5",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R046586",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R046588",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R046612",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R046912",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R046984",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047065",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047303",
+   "reason": "E5",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047337",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047385",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047442",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047547",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047640",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047696",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047758",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047761",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047780",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047957",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R047972",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048000",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048001",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048015",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048036",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048060",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048061",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048074",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048123",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048209",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048247",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048251",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048259",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048274",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048278",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048294",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048420",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048441",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048463",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048864",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048877",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048889",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R048963",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049009",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049020",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049169",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049170",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049171",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049245",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049279",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049296",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049328",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049422",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049506",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049829",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049891",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R049966",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050040",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050058",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050072",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050094",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050112",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050120",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050178",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050191",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050234",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050241",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050339",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050487",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R050756",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R051038",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R051555",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R051756",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R051757",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R051760",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R051762",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R052787",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053085",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053086",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053141",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053157",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053195",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053222",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053320",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053420",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053442",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053450",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053464",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053508",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053557",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053587",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053589",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053595",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053610",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053647",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053674",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053684",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053739",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053751",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053763",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053808",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053848",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053870",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053898",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053953",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R053984",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R054011",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R054053",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R054055",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R054064",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R054328",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R054662",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R054754",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R054759",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R055053",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R055120",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R055992",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R056081",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R056370",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R057119",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R057437",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R058101",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R058259",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R058469",
+   "reason": "E8",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R058476",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R058523",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R058708",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R058836",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R059434",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R059546",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R059565",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R059910",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R059912",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R059963",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R059984",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R059996",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060047",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060048",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060055",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060060",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060070",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060080",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060086",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060093",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060129",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060170",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060172",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060347",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060356",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060426",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060821",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060829",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060835",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060853",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060870",
+   "reason": "E7",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060875",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060891",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060896",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060900",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060918",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060931",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060935",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060936",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060969",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060990",
+   "reason": "E7",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R060995",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061030",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061046",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061047",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061059",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061061",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061081",
+   "reason": "E5",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061090",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061092",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061100",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061109",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061164",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061173",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061217",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061238",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061239",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061242",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061304",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061363",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061409",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061410",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061437",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061438",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061451",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061461",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061475",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061479",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061503",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061516",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061590",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061721",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061756",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061761",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061768",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061789",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061790",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061802",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061803",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061817",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061824",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061834",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061835",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061858",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061860",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061897",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061909",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061910",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061921",
+   "reason": "E5",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R061961",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R062219",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R062618",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R062888",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R063042",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R063236",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R063341",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R063447",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R063463",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R063486",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R063572",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R063755",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R063830",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R063943",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R063973",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R064027",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R064080",
+   "reason": "E5",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R064087",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R064157",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R064251",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R064305",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R064553",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R064562",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R064762",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R064860",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R064945",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R064992",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065036",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065160",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065242",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065329",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065413",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065414",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065461",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065537",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065593",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065622",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065648",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065752",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065764",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065775",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065792",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065867",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065872",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065895",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065910",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065923",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065947",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R065974",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066004",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066028",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066059",
+   "reason": "E8",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066078",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066138",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066177",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066186",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066196",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066283",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066295",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066361",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066377",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066448",
+   "reason": "E5",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066455",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066676",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066798",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066813",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066820",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066952",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066969",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R066981",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067088",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067171",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067281",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067350",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067354",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067488",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067526",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067581",
+   "reason": "E8",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067659",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067709",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067753",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067813",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067823",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067826",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067851",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067857",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067894",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067935",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R067996",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068119",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068392",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068405",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068414",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068429",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068439",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068458",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068525",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068570",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068575",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068576",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068589",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068596",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068705",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068737",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068749",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068800",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068801",
+   "reason": "E7",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068802",
+   "reason": "E7",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068803",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068817",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068819",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068876",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068948",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068955",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068977",
+   "reason": "E7",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068987",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068991",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R068996",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069137",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069154",
+   "reason": "E4",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069172",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069277",
+   "reason": "E7",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069340",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069361",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069471",
+   "reason": "E8",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069581",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069585",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069616",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069662",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069742",
+   "reason": "E1",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069815",
+   "reason": "E6",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069913",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R069962",
+   "reason": "E7",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R070104",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R070106",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R070264",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R070298",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R070357",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R070460",
+   "reason": "E7",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R070482",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R071187",
+   "reason": "E1",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R071478",
+   "reason": "E4",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R071504",
+   "reason": "E2",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R071580",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R071597",
+   "reason": "E2",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R071980",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R071983",
+   "reason": "E7",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R071998",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072012",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072034",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072035",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072040",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072056",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072057",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072062",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072077",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072081",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072082",
+   "reason": "E5",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072083",
+   "reason": "E7",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072084",
+   "reason": "E3",
+   "checked": "title",
+   "result": "no off-target second syndrome"
+  },
+  {
+   "record_id": "R072117",
+   "reason": "E3",
+   "checked": "abstract",
+   "result": "no off-target second syndrome"
+  }
+ ]
+}
